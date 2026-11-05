@@ -95,7 +95,11 @@ def fit(games: pd.DataFrame, box: pd.DataFrame, teams: pd.DataFrame,
             prior_mean[idx[t]], prior_mean[n + idx[t]] = net / 2, -net / 2
     # Row weights are possessions, so the prior is worth TEAM_PRIOR_GAMES games of ~68 possessions.
     prec = config.TEAM_PRIOR_GAMES * 68.0
-    prior_prec = np.r_[np.full(2 * n, prec), 1e-4]
+    # Home court gets its own prior: early in the season, when strong teams host weak ones,
+    # the data can't separate "good team" from "home floor". Each game carries ~68 * 2 * 0.25 = 34
+    # units of information about H, so the prior is worth HCA_PRIOR_GAMES games.
+    prior_mean[2 * n] = config.HCA_PRIOR
+    prior_prec = np.r_[np.full(2 * n, prec), config.HCA_PRIOR_GAMES * 34.0]
     coef, A = _solve(X, y - mu, w, prior_mean, prior_prec)
     O, D, hca = coef[:n], coef[n:2 * n], coef[2 * n]
 

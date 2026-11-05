@@ -32,6 +32,8 @@ TEAM_PRIOR_GAMES = 4.0        # strength of the preseason prior, in games
 TEAM_PRIOR_REGRESS = 0.6      # how much of last season's rating carries over
 TEAM_HALF_LIFE_DAYS = 60      # recency weighting; older games count less
 MARGIN_SD = 11.0              # fallback game-to-game margin standard deviation
+HCA_PRIOR = 4.3               # home-court swing per 100 possessions (about 3 points a game), long-run college average
+HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth (a full season has ~5,500)
 
 # ---- Player model -----------------------------------------------------------
 PLAYER_LAMBDA = 3000.0        # ridge strength in possessions; re-tuned by cross-validation mid-season
