@@ -1,0 +1,59 @@
+# Every morning: pull yesterday's games, refit all ratings, publish the site.
+name: Daily update
+
+on:
+  schedule:
+    - cron: "17 10 * * *"   # 10:17 UTC = 3:17 am Mountain (4:17 am in summer)
+  workflow_dispatch:         # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300     # the first run backfills the whole season so far
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Basketball (Nov - Apr)
+        run: |
+          month=$(date -u +%-m)
+          if [ "$month" -ge 11 ] || [ "$month" -le 4 ]; then
+            python -m basketball.run --fetch
+          else
+            echo "Basketball is out of season; keeping last ratings."
+          fi
+
+      - name: Save new data
+        run: |
+          git config user.name  "sportsbynumbers-bot"
+          git config user.email "sportsbynumbers-bot@users.noreply.github.com"
+          git add data site
+          git diff --cached --quiet || git commit -m "Daily update $(date -u +%F)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

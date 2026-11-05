@@ -1,0 +1,202 @@
+"""Turn one ESPN game summary into three tables: game, player box score, lineup stints.
+
+A stint is a stretch of play with the same ten players on the floor. For each stint we
+record who was on court, points for each side, and an estimate of possessions. Stints are
+the raw material for the player impact model and the lineup tables.
+"""
+from __future__ import annotations
+
+FT_SHARE = 0.475  # possessions per free-throw attempt (standard college estimate)
+BOX_FIELDS = ["MIN", "PTS", "FG", "3PT", "FT", "REB", "AST", "TO", "STL", "BLK", "OREB", "DREB", "PF"]
+
+
+def _int(x, default=0):
+    try:
+        return int(float(x))
+    except (TypeError, ValueError):
+        return default
+
+
+def _split(x):
+    """'5-11' -> (5, 11)"""
+    if not isinstance(x, str) or "-" not in x:
+        return 0, 0
+    a, b = x.split("-", 1)
+    return _int(a), _int(b)
+
+
+def parse_header(summary: dict) -> dict | None:
+    comp = summary.get("header", {}).get("competitions", [{}])[0]
+    teams = {c.get("homeAway"): c for c in comp.get("competitors", [])}
+    if "home" not in teams or "away" not in teams:
+        return None
+    status = comp.get("status", {}).get("type", {})
+    return {
+        "game_id": str(summary.get("header", {}).get("id") or comp.get("id")),
+        "date": (comp.get("date") or "")[:10],
+        "neutral": bool(comp.get("neutralSite", False)),
+        "conference_game": bool(comp.get("conferenceCompetition", False)),
+        "completed": bool(status.get("completed", False)),
+        "home_id": str(teams["home"]["team"]["id"]),
+        "away_id": str(teams["away"]["team"]["id"]),
+        "home_pts": _int(teams["home"].get("score")),
+        "away_pts": _int(teams["away"].get("score")),
+    }
+
+
+def parse_box(summary: dict, game_id: str) -> list[dict]:
+    rows = []
+    for block in summary.get("boxscore", {}).get("players", []):
+        team_id = str(block.get("team", {}).get("id"))
+        for stat_group in block.get("statistics", [])[:1]:
+            names = stat_group.get("names") or stat_group.get("labels") or []
+            for a in stat_group.get("athletes", []):
+                if a.get("didNotPlay"):
+                    continue
+                vals = dict(zip(names, a.get("stats", [])))
+                fgm, fga = _split(vals.get("FG"))
+                tpm, tpa = _split(vals.get("3PT"))
+                ftm, fta = _split(vals.get("FT"))
+                ath = a.get("athlete", {})
+                rows.append({
+                    "game_id": game_id, "team_id": team_id,
+                    "player_id": str(ath.get("id")), "name": ath.get("displayName", ""),
+                    "pos": (ath.get("position") or {}).get("abbreviation", ""),
+                    "starter": bool(a.get("starter", False)),
+                    "min": _int(vals.get("MIN")), "pts": _int(vals.get("PTS")),
+                    "fgm": fgm, "fga": fga, "tpm": tpm, "tpa": tpa, "ftm": ftm, "fta": fta,
+                    "oreb": _int(vals.get("OREB")), "dreb": _int(vals.get("DREB")),
+                    "ast": _int(vals.get("AST")), "tov": _int(vals.get("TO")),
+                    "stl": _int(vals.get("STL")), "blk": _int(vals.get("BLK")), "pf": _int(vals.get("PF")),
+                })
+    return rows
+
+
+# ---- play-by-play -----------------------------------------------------------
+
+def _kind(play: dict) -> str:
+    t = (play.get("type") or {}).get("text", "") or ""
+    text = (play.get("text") or "").lower()
+    if t == "Substitution" or "subbing" in text:
+        return "sub_in" if "subbing in" in text else ("sub_out" if "subbing out" in text else "sub")
+    if "FreeThrow" in t.replace(" ", "") or "free throw" in text:
+        return "fta"
+    if t == "Offensive Rebound":
+        return "oreb"
+    if "Turnover" in t:
+        return "tov"
+    if play.get("shootingPlay"):
+        return "fga"
+    return "other"
+
+
+def _athlete(play: dict) -> str | None:
+    parts = play.get("participants") or []
+    if parts:
+        return str((parts[0].get("athlete") or {}).get("id"))
+    return None
+
+
+def parse_stints(summary: dict, game: dict, box: list[dict]) -> list[dict]:
+    plays = sorted(summary.get("plays", []), key=lambda p: _int(p.get("sequenceNumber"), 0))
+    if not plays:
+        return []
+    home, away = game["home_id"], game["away_id"]
+    team_of = {r["player_id"]: r["team_id"] for r in box}
+    starters = {home: {r["player_id"] for r in box if r["team_id"] == home and r["starter"]},
+                away: {r["player_id"] for r in box if r["team_id"] == away and r["starter"]}}
+
+    # Who is on the floor at the start of each period: anyone whose first action in
+    # that period is something other than subbing in. Fall back to previous lineup.
+    periods = {}
+    for p in plays:
+        periods.setdefault(_int((p.get("period") or {}).get("number"), 1), []).append(p)
+
+    def period_start_lineup(pplays, prev):
+        first = {}
+        for p in pplays:
+            pid = _athlete(p)
+            if pid and pid in team_of and pid not in first:
+                first[pid] = _kind(p)
+        lineup = {}
+        for tid in (home, away):
+            on = {pid for pid, k in first.items() if team_of[pid] == tid and k != "sub_in"}
+            if len(on) < 5:  # quiet players who never touched the ball: keep from previous lineup
+                for pid in prev.get(tid, set()):
+                    if len(on) >= 5:
+                        break
+                    if first.get(pid) != "sub_in":
+                        on.add(pid)
+            lineup[tid] = on
+        return lineup
+
+    stints = []
+    lineup = {home: set(starters[home]), away: set(starters[away])}
+    cur = None
+    last_score = (0, 0)
+
+    def open_stint():
+        return {"h": frozenset(lineup[home]), "a": frozenset(lineup[away]),
+                "pts": {home: 0, away: 0},
+                "cnt": {tid: {"fga": 0, "oreb": 0, "tov": 0, "fta": 0} for tid in (home, away)},
+                "events": 0}
+
+    def close(st):
+        if st is None or st["events"] == 0:
+            return
+        if len(st["h"]) != 5 or len(st["a"]) != 5:
+            return  # lineup tracking failed for this stretch; drop rather than guess
+        poss = []
+        for tid in (home, away):
+            c = st["cnt"][tid]
+            poss.append(max(0.0, c["fga"] - c["oreb"] + c["tov"] + FT_SHARE * c["fta"]))
+        n = (poss[0] + poss[1]) / 2
+        if n <= 0:
+            return
+        stints.append({
+            "game_id": game["game_id"], "home_id": home, "away_id": away, "neutral": game["neutral"],
+            "home_players": " ".join(sorted(st["h"])), "away_players": " ".join(sorted(st["a"])),
+            "home_pts": st["pts"][home], "away_pts": st["pts"][away], "poss": round(n, 2),
+        })
+
+    for period in sorted(periods):
+        if period > 1 or len(lineup[home]) != 5 or len(lineup[away]) != 5:
+            close(cur)
+            lineup = period_start_lineup(periods[period], lineup)
+            cur = None
+        dirty = cur is None
+        for p in periods[period]:
+            k = _kind(p)
+            pid = _athlete(p)
+            if k in ("sub_in", "sub_out"):
+                tid = team_of.get(pid)
+                if tid:
+                    (lineup[tid].add if k == "sub_in" else lineup[tid].discard)(pid)
+                    dirty = True
+                continue
+            if dirty:
+                close(cur)
+                cur = open_stint()
+                dirty = False
+            hs, as_ = _int(p.get("homeScore"), last_score[0]), _int(p.get("awayScore"), last_score[1])
+            cur["pts"][home] += max(0, hs - last_score[0])
+            cur["pts"][away] += max(0, as_ - last_score[1])
+            last_score = (max(hs, last_score[0]), max(as_, last_score[1]))
+            tid = str((p.get("team") or {}).get("id")) if p.get("team") else None
+            if tid in cur["cnt"] and k in cur["cnt"][tid]:
+                cur["cnt"][tid][k] += 1
+            cur["events"] += 1
+    close(cur)
+    return stints
+
+
+def parse_summary(summary: dict):
+    game = parse_header(summary)
+    if game is None:
+        return None, [], []
+    box = parse_box(summary, game["game_id"])
+    try:
+        stints = parse_stints(summary, game, box)
+    except Exception:
+        stints = []
+    return game, box, stints
