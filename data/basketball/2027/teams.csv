@@ -142,6 +142,7 @@ team_id,name,short,abbr,color,conf
 2330,Le Moyne Dolphins,Le Moyne,LEM,888888,neast
 2329,Lehigh Mountain Hawks,Lehigh,LEH,6c2b2a,pat
 2335,Liberty Flames,Liberty,LIB,0a254e,usa
+2815,Lindenwood Lions,Lindenwood,LIN,000000,ovc
 288,Lipscomb Bisons,Lipscomb,LIP,20366C,ASUN
 2031,Little Rock Trojans,Little Rock,LR,AD0000,UAC
 299,Long Beach State Beach,Long Beach St,LBSU,000000,bigw
@@ -237,6 +238,7 @@ team_id,name,short,abbr,color,conf
 2507,Providence Friars,Providence,PROV,000000,bige
 2509,Purdue Boilermakers,Purdue,PUR,ceb888,big10
 2870,Purdue Fort Wayne Mastodons,Purdue FW,PFW,cfb991,hor
+2511,Queens University Royals,Queens,QUC,192C66,ASUN
 2514,Quinnipiac Bobcats,Quinnipiac,QUIN,041B43,Metro
 2515,Radford Highlanders,Radford,RAD,BC1515,bsou
 227,Rhode Island Rams,Rhode Island,URI,091f3f,atl10
@@ -273,6 +275,7 @@ team_id,name,short,abbr,color,conf
 58,South Florida Bulls,South Florida,USF,006747,American
 2546,Southeast Missouri State Redhawks,SE Missouri,SEMO,c8102e,ovc
 79,Southern Illinois Salukis,S Illinois,SIU,85283D,mvc
+88,Southern Indiana Screaming Eagles,S Indiana,USI,888888,ovc
 2582,Southern Jaguars,Southern,SOU,004B97,swac
 2572,Southern Miss Golden Eagles,Southern Miss,USM,ffc72c,belt
 253,Southern Utah Thunderbirds,Southern Utah,SUU,c72026,bsky
