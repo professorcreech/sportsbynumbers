@@ -11,6 +11,7 @@ from datetime import date, datetime, timezone
 
 import numpy as np
 import pandas as pd
+from scipy.stats import norm
 
 from . import config, conferences, players, positions, scouting, teams
 
@@ -97,6 +98,28 @@ def player_value(p: pd.DataFrame, t: pd.DataFrame, season: int) -> dict | None:
             "players": players_v, "teams": teams_v}
 
 
+def _team_starts(games: pd.DataFrame, schedule: list) -> dict:
+    """Every team's game start times (finished and scheduled), for spotting back-to-backs."""
+    out: dict = {}
+    col = "start" if "start" in games else "date"
+    for h, a, st in zip(games.home_id, games.away_id, games[col]):
+        for t in (str(h), str(a)):
+            out.setdefault(t, set()).add(str(st))
+    for g in schedule:
+        st = str(g.get("start") or g.get("date"))
+        for t in (str(g["home_id"]), str(g["away_id"])):
+            out.setdefault(t, set()).add(st)
+    return {t: sorted(pd.to_datetime(list(v), utc=True, errors="coerce").dropna()) for t, v in out.items()}
+
+
+def _played_night_before(starts: dict, team: str, start) -> bool:
+    """True if the team's previous game began 12-36 hours before this one."""
+    t = pd.to_datetime(start, utc=True, errors="coerce")
+    if pd.isna(t):
+        return False
+    return any(pd.Timedelta(hours=12) <= t - s <= pd.Timedelta(hours=36) for s in starts.get(str(team), []))
+
+
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
           season: int | None = None, shots=None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
@@ -151,21 +174,31 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
                            "net": round(r.net, 1)})
 
     # Upcoming games with predictions
+    starts = _team_starts(games, schedule)
     up = []
     for g in schedule:
         pr = teams.predict(model, g["home_id"], g["away_id"], g.get("neutral", False))
+        b2b = ""
+        if pr and config.B2B_PENALTY:
+            st = g.get("start") or g.get("date")
+            bh, ba = _played_night_before(starts, g["home_id"], st), _played_night_before(starts, g["away_id"], st)
+            b2b = ("h" if bh else "") + ("a" if ba else "")
+            shift = config.B2B_PENALTY * (ba - bh) / 2  # in home-margin points, split across the scores
+            if shift:
+                pr["home_score"] += shift; pr["away_score"] -= shift
+                pr["home_win"] = float(norm.cdf((pr["home_score"] - pr["away_score"]) / model["sd"]))
         if pr:
             up.append({"id": g["game_id"], "start": g.get("start") or g.get("date"), "neutral": bool(g.get("neutral")),
                        "home": g["home_id"], "away": g["away_id"],
                        "home_name": names.get(g["home_id"], g.get("home_name")), "away_name": names.get(g["away_id"], g.get("away_name")),
                        "home_score": round(pr["home_score"], 1), "away_score": round(pr["away_score"], 1),
-                       "home_win": round(pr["home_win"], 3), "poss": round(pr["poss"], 1)})
+                       "home_win": round(pr["home_win"], 3), "poss": round(pr["poss"], 1), "b2b": b2b})
     up.sort(key=lambda g: str(g["start"]))
     # The Games tab opens on the next three days; the full schedule is a separate, compact file
     # that loads only when someone searches for a team.
     cutoff = (datetime.now(timezone.utc) + pd.Timedelta(days=3)).strftime("%Y-%m-%dT%H:%M")
     full = [[g["id"], g["start"], int(g["neutral"]), g["home"], g["away"], g["home_name"], g["away_name"],
-             g["home_score"], g["away_score"], g["home_win"], g["poss"]] for g in up]
+             g["home_score"], g["away_score"], g["home_win"], g["poss"], g["b2b"]] for g in up]
     up = [g for g in up if str(g["start"]) < cutoff]
 
     team_out = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": conferences.name(r.conf), "color": r.color,
@@ -173,6 +206,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
                  "d": round(r.adj_d, 1), "tempo": round(r.tempo, 1), "w": int(r.wins), "l": int(r.losses),
                  "o_rank": 0, "d_rank": 0, "t_rank": 0,
                  "ret": pre_info.get("returning", {}).get(r.team_id),
+                 "coach": pre_info.get("coach_changes", {}).get(r.team_id),
                  "pre": None if r.prior_net is None else round(r.prior_net, 2)} for r in t.itertuples()]
     for key, rk, rev in (("o", "o_rank", True), ("d", "d_rank", False), ("tempo", "t_rank", True)):
         for i, row in enumerate(sorted(team_out, key=lambda x: x[key], reverse=rev)):
@@ -182,9 +216,9 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "league": {"key": config.LEAGUE, "nba": config.IS_NBA, "level": "NBA" if config.IS_NBA else "Division I",
                        "short": "NBA" if config.IS_NBA else "D-I", "minutes": config.GAME_MINUTES}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
             "games": int(len(games)), "stints": int(len(stints)), "mu": round(model["mu"], 2), "tau": round(model["tau"], 2),
-            "hca": round(model["hca"], 2), "sd": round(model["sd"], 2),
+            "hca": round(model["hca"], 2), "sd": round(model["sd"], 2), "b2b": config.B2B_PENALTY,
             "lambda": float(p.attrs.get("lambda", config.PLAYER_LAMBDA)) if len(p) else None,
-            "preseason": {k: v for k, v in pre_info.items() if k not in ("returning", "player_proj")},
+            "preseason": {k: v for k, v in pre_info.items() if k not in ("returning", "player_proj", "coach_changes")},
             "player_carry_weight": config.PLAYER_CARRY_WEIGHT if pre_info.get("player_proj") else 0,
             # Spread of the preseason belief about a team's net rating (per 100 possessions):
             # offense and defense priors each have variance s2 / (games * 68)
@@ -195,7 +229,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
     stats_out = scouting.team_profiles(games, box, shots, set(t.team_id)) if len(box) else {"league": {}, "teams": {}}
     value_out = player_value(p, t, season) if (config.IS_NBA and season and len(p)) else None
     schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
-                               "home_score", "away_score", "home_win", "poss"], "games": full}
+                               "home_score", "away_score", "home_win", "poss", "b2b"], "games": full}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
                       ("schedule", schedule_out), ("teamstats", stats_out)) + ((("value", value_out),) if value_out else ()):
         (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))

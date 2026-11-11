@@ -44,6 +44,10 @@ TEAM_PRIOR_REGRESS = 0.6      # how much of last season's rating carries over
 TEAM_HALF_LIFE_DAYS = 60      # recency weighting; older games count less
 MARGIN_SD = 11.0              # fallback game-to-game margin standard deviation
 HCA_PRIOR = 2.4 if IS_NBA else 4.3   # home-court swing per 100 possessions (NBA ~2.3 points a game; college ~3)
+# Second night of a back-to-back (tests/factors.py, 2025-26 walk-forward): NBA teams lose about
+# 1.8 points of margin, consistently in both halves of the season. College back-to-backs are rare
+# outside holiday tournaments and showed no reliable effect, so none is applied there.
+B2B_PENALTY = 1.8 if IS_NBA else 0.0
 HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth (a full season has ~5,500)
 
 # ---- Preseason prior (see basketball/preseason.py and tests/preseason_study.py) ----------

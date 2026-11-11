@@ -102,6 +102,9 @@ th.sorted.asc::after { content: " ▴"; }
 th.l, td.l { text-align: left; }
 td { font-family: var(--font-data); font-variant-numeric: tabular-nums; font-size: 13px; }
 td.name { font-family: var(--font-body); font-size: 14px; font-weight: 600; }
+table.findings td { font-family: var(--font-body); font-size: 14px; white-space: normal; vertical-align: top; }
+table.findings td:first-child { font-weight: 600; min-width: 12em; }
+table.findings td:nth-child(2) { white-space: nowrap; }
 td.name a { color: var(--fg); text-decoration: none; }
 td.name a:hover { color: var(--accent); }
 td .sub { font-family: var(--font-body); font-weight: 400; color: var(--muted); font-size: 12px; margin-left: 6px; }

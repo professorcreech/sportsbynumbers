@@ -46,6 +46,8 @@ Every page carries the Google tag right after `<head>`; copy it from `site/index
 | NBA preseason prior | `preseason_study.py` (`SBN_LEAGUE=nba`) | Roster explains more than team results (0.25 program / 0.62 roster), worth 8 games |
 | NFL preseason prior | `football_backtest.py` (`SBN_LEAGUE=nfl`) | Carry only ~30% of last season, worth 6 games (pros regress hard) |
 | Replay of the 2026 NCAA tournament | `tournament_backtest.py` | 71.6% of games right (better seed: 68.7%); log loss 0.486 vs 0.580; champion Michigan was the 2nd favorite (14%); bracket 1,050 pts vs 1,000 chalk |
+| Which other factors predict games? (2025-26 walk-forward, fit on one half, tested on the other) | `factors.py` | Holds up: missing rotation players (college and NBA; needs injury reports), NBA back-to-backs (−1.8 pts, now applied). Doesn't: rest, travel, time zones, hot streaks, team-specific home court, style matchups, halftime "adjustment" teams, tip-off time. Recency half-life 60 days confirmed. The closing betting line beats the model (college 8.9 vs 9.1 MAE) |
+| Does the coach matter? | `coach_study.py` | A new coach lowers the team ~1.75 pts/game vs. last season's projection and last season carries less; his record elsewhere carries over. Helped 12 of 12 held-out seasons; now in the college preseason prior (`basketball/coaching.py`). A coach's record at his current school and his past NCAA tournament overperformance add nothing |
 | Football calibration | (inline replay of 2025) | College: actual margin = 1.01 × predicted on 1,677 games; NFL 1.15 on 269 |
 
 ## Run it yourself

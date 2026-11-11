@@ -207,7 +207,11 @@ def build_prior(season: int, rosters: pd.DataFrame | None, box_cur: pd.DataFrame
             "w_program": blend.w_program, "w_roster": blend.w_roster,
             "carry": {k: round(v, 2) for k, v in carry.beta.items()},
             "returning": dict(zip(roster.team_id, roster.returning_min.round(3)))}
-    return combine(prog, roster, blend), info
+    prior = combine(prog, roster, blend)
+    if not config.IS_NBA:
+        from . import coaching
+        prior, info["coach_changes"] = coaching.adjust(prior, season, list(prior))
+    return prior, info
 
 
 def player_projection(prev: pd.DataFrame, roster: pd.DataFrame, carry: Carry) -> dict:

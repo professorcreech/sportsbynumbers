@@ -306,6 +306,9 @@
       '<p class="lede">Before the season, the model\'s belief about ' + esc(t.short || t.name) + " was a net rating of <b>" + sgn(t.pre) + " ± " + psd.toFixed(1) +
       "</b>, built from last season and this year\'s roster. After " + gp + " game" + (gp === 1 ? "" : "s") + " it is <b>" + sgn(t.net) + " ± " + se.toFixed(1) +
       "</b>. The preseason opinion now carries about <b>" + Math.round(share * 100) + "%</b> of the weight; the games carry the rest.</p>" +
+      (t.coach ? '<p class="note">New head coach: ' + esc(t.coach.coach) + " replaced " + esc(t.coach.prev) + ". Teams with a new coach have tended to land below what last season predicts, and last season carries less" +
+        (t.coach.seasons ? "; " + esc(t.coach.coach) + (t.coach.record >= 0 ? " beat" : " fell short of") + " expectations at his previous stops by " + Math.abs(t.coach.record).toFixed(1) + " points a game (shrunk, " + t.coach.seasons + " season" + (t.coach.seasons === 1 ? "" : "s") + ")" : "") +
+        ". Together these moved the preseason rating " + sgn(t.coach.delta) + ".</p>" : "") +
       '<div class="chart-box"><svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Preseason belief ' + sgn(t.pre) + ", current belief " + sgn(t.net) + '">' +
       ticks.map((v) => '<line class="grid" x1="' + x(v) + '" x2="' + x(v) + '" y1="' + top + '" y2="' + (H - padB) + '"/>' +
         '<text class="tick" x="' + x(v) + '" y="' + (H - padB + 16) + '">' + (v > 0 ? "+" : "") + v + "</text>").join("") +
@@ -415,8 +418,11 @@
       "<p><b>Program.</b> Last season's full-season rating. Weighting last season toward its final weeks, or using only its last 15 games, predicted this season's early games worse: the full season is a bigger sample, and late-season form is mostly noise.</p>" +
       "<p><b>Roster.</b> Every player on this season's roster carries his own impact rating from last season, wherever he played it, so " + (LG.nba ? "trades and free-agent signings" : "transfers") + " bring their value with them. A returning rating is projected forward with a rule learned from consecutive seasons (players who stay and players who transfer are fit separately). " + (LG.nba ? "Rookies and players new to the league" : "Freshmen and players new to Division I") + " get the average newcomer rating. The team's projection weights each player by expected minutes.</p>" +
       '<span class="eq">preseason = ' + ((m.preseason || {}).w_program || 0.69) + " × program + " + ((m.preseason || {}).w_roster || 0.5) + " × roster</span>" +
+      (LG.nba ? "" : "<p><b>Coaching change.</b> When a school has a new head coach, the estimate moves down about 2 points per 100 possessions, last season counts about 10% less, and the new coach's record of beating or missing expectations at his previous school (last 5 seasons, shrunk toward zero) carries over at 1.5×. A coach's record at his current school adds nothing, because last season's rating already contains it. Tested on 4,139 team-seasons from 2015 to 2026, one season held out at a time: the adjustment helped in all 12 seasons.</p>") +
       "<p>The weights come from regressing 2025-26 full-season ratings on both ingredients and from replaying this season's games. The preseason estimate counts as about " + ((m.preseason || {}).games || 2.7) + " games of evidence, so by January it carries little weight beside 15 or more real games. It doesn't fade beyond that: forcing it to zero by mid-season made January–March predictions slightly worse. The Teams table shows each team's preseason rating (Pre) and the share of its projected minutes going to players who were on last season's team (Ret).</p>" +
       "<h2>Predictions</h2><p>Projected possessions are the two teams' tempo effects added to the average. Each side's points are possessions × its expected efficiency. The win chance treats the actual margin as normal around the projection with a standard deviation of " + m.sd + " points, measured from how far past games landed from their fitted margins.</p>" +
+      (LG.nba ? "<p><b>Back-to-backs.</b> A team playing the second night of a back-to-back loses about " + f1(m.b2b || 1.8) + " points of margin. This held up in both halves of the 2025-26 season when fit on one half and tested on the other.</p>" : "") +
+      factorTable() +
       "<h2>Player impact</h2><p>Play-by-play is cut into stints, stretches with the same ten players on the floor. Each stint again gives two rows:</p>" +
       '<span class="eq">100 × points / possessions − μ = Σ Off[5 on offense] + Σ Def[5 on defense] + h·H/2 + ε</span>' +
       "<p>Teammates who always play together are hard to separate, so each player gets a normal prior centered on a box-score estimate. That box-score model is itself learned from the data: a first, heavily shrunk pass of the regression is regressed on per-40-minute box stats (points, shot attempts, free throws, threes, assists, turnovers and offensive rebounds for offense; steals, blocks, defensive rebounds and fouls for defense). The final rating is the posterior mean</p>" +
@@ -580,7 +586,9 @@
   async function matchupPage(main, away, home, neutral, game) {
     const A = teamById[away], H = teamById[home];
     if (!A || !H) { main.innerHTML = '<p class="lede">That matchup isn’t available. <a href="#games">Back to games</a></p>'; return; }
-    const p = predict(home, away, neutral);
+    // A scheduled game carries the server's prediction, which includes any back-to-back adjustment
+    const p = game && game.home_score != null ? { home_score: game.home_score, away_score: game.away_score, poss: game.poss, home_win: game.home_win } : predict(home, away, neutral);
+    const tired = game && game.b2b ? [...game.b2b].map((s) => (s === "h" ? H : A).short) : [];
     const m = D.meta.model, idx = {};
     m.ids.forEach((id, i) => (idx[id] = i));
     const hi = idx[home], ai = idx[away], hf = neutral ? 0 : 1;
@@ -601,6 +609,8 @@
       "</dd></div><div><dt>Possessions</dt><dd>" + Math.round(p.poss) + "</dd></div></dl>" +
       '<p class="lede">The model expects ' + esc(fav.short) + " to win by about " + Math.abs(spread).toFixed(1) + ", but a single game is noisy: margins miss by about " + Math.round(sd) +
       " points on average. Eight times out of ten the final margin should land between " + rangeTxt(lo80) + " and " + rangeTxt(hi80) + ". The shaded areas below are each team's win chance.</p>" +
+      (tired.length ? '<p class="note">' + esc(tired.join(" and ")) + (tired.length > 1 ? " are both" : /s$/.test(tired[0]) ? " are" : " is") + " playing the second night of a back-to-back" +
+        (tired.length > 1 ? ", so the adjustments cancel." : ", which costs about " + f1(D.meta.b2b) + " points in this prediction (the effect held up across the 2025-26 season).") + "</p>" : "") +
       marginChart(spread, sd, H.short, A.short) +
       '<p class="legend"><span class="key prior"></span>' + esc(A.short) + " wins " + pct(1 - p.home_win) + ' <span class="key post"></span>' + esc(H.short) + " wins " + pct(p.home_win) + "</p>" +
       '<details class="how"><summary>How the prediction is built</summary><p>Each side’s points = possessions × expected points per 100 possessions ÷ 100.</p>' +
@@ -661,6 +671,41 @@
     if (!g) { const all = await loadSchedule(); g = all && all.find((x) => x.id === id); }
     if (!g) { main.innerHTML = '<p class="lede">That game isn’t on the schedule anymore. It may have been played already. <a href="#games">Back to games</a></p>'; return; }
     return matchupPage(main, g.away, g.home, !!g.neutral, g);
+  }
+
+  // What was tested for predictive power (tests/factors.py, tests/coach_study.py). A factor
+  // "holds up" only if, fit on one part of the data, it improved predictions on the rest.
+  function factorTable() {
+    const rows = LG.nba ? [
+      ["Missing rotation players (injuries, rest)", "Yes", "About 0.8 points per point of missing impact; biggest single gain. Needs reliable pregame injury reports, not yet wired in"],
+      ["Second night of a back-to-back", "Yes", "About −1.8 points; now in the predictions"],
+      ["Days of rest, travel distance, time zones", "No", "Nothing beyond the back-to-back"],
+      ["Hot or cold last five games", "No", "Significant in one half of the season, reversed in the other"],
+      ["Team-specific home court", "No", "One league-wide home edge predicts as well"],
+      ["Style matchups (pace, threes, rebounding, turnovers)", "No", "None of six improved predictions"],
+      ["Second-half “adjustment” teams", "No", "Halftime splits don't repeat (reliability 0.04). A first-half surprise is partly given back after the break, which matters only for live win chances"],
+      ["Tip-off time", "No", "Too few early or late games to show anything"],
+      ["Recency weighting", "Kept at 60 days", "Shorter and longer half-lives both did worse"],
+      ["Betting market", "Benchmark", "The closing line beats this model (11.2 vs 11.7 points); adding the model to the line doesn't help"],
+    ] : [
+      ["Coaching change and the new coach's record elsewhere", "Yes", "Helped all 12 held-out seasons; now in the preseason ratings"],
+      ["Missing rotation players (injuries)", "Yes", "About 0.5 points per point of missing impact when a key player sits; needs pregame injury reports, not yet wired in"],
+      ["A coach's record at his current school", "No", "Already inside last season's rating"],
+      ["Coach's past NCAA tournament overperformance", "No", "Helped 7 of 12 tournaments: no better than a coin flip"],
+      ["Program's tournament reputation", "No", "Not reliably"],
+      ["Distance from campus in the NCAA tournament", "Yes", "About 2 points for 50 vs. 1,000 miles; in the tournament odds"],
+      ["Days of rest, travel distance, time zones, back-to-backs", "No", "No consistent effect in college"],
+      ["Hot or cold last five games", "No", "Significant in one half of the season, reversed in the other"],
+      ["Team-specific home court", "No", "One national home edge predicts as well"],
+      ["Style matchups (pace, threes, rebounding, turnovers)", "No", "None of six improved predictions"],
+      ["Second-half “adjustment” teams", "No", "Halftime splits don't repeat (reliability 0.07). A first-half surprise is partly given back after the break, which matters only for live win chances"],
+      ["Tip-off time (early, afternoon, weekend, weekday)", "No", "No change in home edge by tip-off time"],
+      ["Recency weighting", "Kept at 60 days", "Shorter and longer half-lives both did worse"],
+      ["Betting market", "Benchmark", "The closing line beats this model (8.9 vs 9.1 points); adding the model to the line doesn't help"],
+    ];
+    return "<h2>What else was tested</h2><p>Each idea was fit on part of the " + (LG.nba ? "2025-26 season" : "data") + " and judged on games it hadn't seen. It counts only if it improved both the average miss and the win-probability score in every held-out part.</p>" +
+      '<div class="table-box"><table class="findings"><thead><tr><th class="l">Factor</th><th class="l">Holds up?</th><th class="l">Finding</th></tr></thead><tbody>' +
+      rows.map((r) => "<tr><td class='l'>" + esc(r[0]) + "</td><td class='l'>" + esc(r[1]) + "</td><td class='l'>" + esc(r[2]) + "</td></tr>").join("") + "</tbody></table></div>";
   }
 
   function route() {
