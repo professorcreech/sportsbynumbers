@@ -4,14 +4,23 @@ from pathlib import Path
 
 SITE_NAME = "Sports by Numbers"
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data" / "basketball"
-SITE_DATA_DIR = ROOT / "site" / "basketball" / "data"
+import os
 
-ESPN = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
-DIVISION_I_GROUP = 50
+# One engine, two leagues: SBN_LEAGUE=nba switches endpoints, folders, dates and constants.
+LEAGUE = os.environ.get("SBN_LEAGUE", "ncaam").lower()
+IS_NBA = LEAGUE == "nba"
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data" / ("nba" if IS_NBA else "basketball")
+SITE_DATA_DIR = ROOT / "site" / ("nba" if IS_NBA else "basketball") / "data"
+
+ESPN = ("https://site.api.espn.com/apis/site/v2/sports/basketball/nba" if IS_NBA
+        else "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball")
+DIVISION_I_GROUP = None if IS_NBA else 50
 FETCH_WORKERS = 6          # parallel game requests; keep modest to be polite
 REFETCH_DAYS = 2           # re-pull the last N days in case games were late or corrected
+FT_SHARE = 0.44 if IS_NBA else 0.475   # possessions per free-throw attempt (standard NBA / college estimates)
+GAME_MINUTES = 48 if IS_NBA else 40
 
 
 def season_for(d: date) -> int:
@@ -20,11 +29,11 @@ def season_for(d: date) -> int:
 
 
 def season_start(season: int) -> date:
-    return date(season - 1, 11, 1)
+    return date(season - 1, 10, 15) if IS_NBA else date(season - 1, 11, 1)
 
 
 def season_end(season: int) -> date:
-    return date(season, 4, 10)
+    return date(season, 6, 25) if IS_NBA else date(season, 4, 10)
 
 
 # ---- Team model -------------------------------------------------------------
@@ -32,7 +41,7 @@ TEAM_PRIOR_GAMES = 4.0        # strength of the preseason prior, in games
 TEAM_PRIOR_REGRESS = 0.6      # how much of last season's rating carries over
 TEAM_HALF_LIFE_DAYS = 60      # recency weighting; older games count less
 MARGIN_SD = 11.0              # fallback game-to-game margin standard deviation
-HCA_PRIOR = 4.3               # home-court swing per 100 possessions (about 3 points a game), long-run college average
+HCA_PRIOR = 2.4 if IS_NBA else 4.3   # home-court swing per 100 possessions (NBA ~2.3 points a game; college ~3)
 HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth (a full season has ~5,500)
 
 # ---- Preseason prior (see basketball/preseason.py and tests/preseason_study.py) ----------

@@ -92,7 +92,9 @@ def build(season: int, schedule: list[dict]) -> None:
                        "home_name": names.get(g["home_id"], g.get("home_name")), "away_name": names.get(g["away_id"], g.get("away_name")),
                        "home_score": round(p["home_score"], 1), "away_score": round(p["away_score"], 1),
                        "home_win": round(p["home_win"], 3), "note": g.get("note") or ""})
-    meta = {"season": f"{season}", "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
+    meta = {"season": f"{season}",
+            "league": {"key": config.LEAGUE, "nfl": config.IS_NFL, "level": "NFL" if config.IS_NFL else "Division I",
+                       "short": "NFL" if config.IS_NFL else "D-I"}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
             "games": int(len(games)), "drives": int(len(drives)), "mu": round(m["mu"], 2), "hfa": round(m["hfa"], 2),
             "sd": round(m["sd"], 2), "prior_games": config.PRIOR_GAMES, "prior_keep": config.PRIOR_KEEP,
             "model": {"ids": list(m["idx"]), "O": np.round(m["O"], 3).tolist(), "D": np.round(m["D"], 3).tolist()}}

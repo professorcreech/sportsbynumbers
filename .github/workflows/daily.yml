@@ -18,6 +18,10 @@ on:
         description: "Save the structure of sample ESPN responses (for building new sports). Leave blank normally."
         required: false
         default: ""
+      pro_backfill:
+        description: "Download past NBA/NFL seasons, e.g. 'nba:2026 nfl:2025'. Leave blank normally."
+        required: false
+        default: ""
       football_backfill:
         description: "Download past college football seasons, e.g. '2024 2025'. Leave blank normally."
         required: false
@@ -91,6 +95,36 @@ jobs:
             python -m football.run --fetch
           else
             echo "Football is out of season; keeping last ratings."
+          fi
+
+      - name: NBA / NFL backfill
+        if: ${{ github.event.inputs.pro_backfill != '' }}
+        continue-on-error: true
+        run: |
+          for item in ${{ github.event.inputs.pro_backfill }}; do
+            league=${item%%:*}; season=${item##*:}
+            if [ "$league" = nba ]; then SBN_LEAGUE=nba python -m basketball.run --backfill "$season"; fi
+            if [ "$league" = nfl ]; then SBN_LEAGUE=nfl python -m football.run --backfill "$season"; fi
+          done
+
+      - name: NBA (Oct - Jun)
+        continue-on-error: true   # a pro-league problem shouldn't block college
+        run: |
+          month=$(date -u +%-m)
+          if [ "$month" -ge 10 ] || [ "$month" -le 6 ]; then
+            SBN_LEAGUE=nba python -m basketball.run --fetch
+          else
+            echo "NBA is out of season; keeping last ratings."
+          fi
+
+      - name: NFL (Sep - Feb)
+        continue-on-error: true
+        run: |
+          month=$(date -u +%-m)
+          if [ "$month" -ge 9 ] || [ "$month" -le 2 ]; then
+            SBN_LEAGUE=nfl python -m football.run --fetch
+          else
+            echo "NFL is out of season; keeping last ratings."
           fi
 
       - name: Save new data

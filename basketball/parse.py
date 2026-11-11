@@ -6,7 +6,9 @@ the raw material for the player impact model and the lineup tables.
 """
 from __future__ import annotations
 
-FT_SHARE = 0.475  # possessions per free-throw attempt (standard college estimate)
+from . import config
+
+FT_SHARE = config.FT_SHARE  # possessions per free-throw attempt
 BOX_FIELDS = ["MIN", "PTS", "FG", "3PT", "FT", "REB", "AST", "TO", "STL", "BLK", "OREB", "DREB", "PF"]
 
 

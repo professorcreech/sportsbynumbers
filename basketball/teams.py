@@ -62,9 +62,9 @@ def fit(games: pd.DataFrame, box: pd.DataFrame, teams: pd.DataFrame,
     for c in ("home_id", "away_id"):
         g[c] = g[c].astype(str).where(g[c].astype(str).isin(d1), "NON_D1")  # pool non-D-I opponents
 
-    # Possessions per game from team box totals (FGA - OREB + TO + 0.475 FTA, averaged over both teams)
+    # Possessions per game from team box totals (FGA - OREB + TO + FT_SHARE x FTA, averaged over both teams)
     tb = box.groupby(["game_id", "team_id"])[["fga", "oreb", "tov", "fta"]].sum()
-    tb["poss"] = tb.fga - tb.oreb + tb.tov + 0.475 * tb.fta
+    tb["poss"] = tb.fga - tb.oreb + tb.tov + config.FT_SHARE * tb.fta
     poss = tb.groupby("game_id").poss.mean()
     if "poss" not in g:  # real data: possessions from box totals; the simulator supplies its own
         g["poss"] = g.game_id.astype(str).map(poss.rename(lambda x: str(x)))

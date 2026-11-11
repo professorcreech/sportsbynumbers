@@ -1,4 +1,4 @@
-/* Sports by Numbers — men's college basketball views. Reads the JSON the daily job writes. */
+/* Sports by Numbers — basketball views (college and NBA share this script). Reads the JSON the daily job writes. */
 (function () {
   "use strict";
   const $ = (s, el) => (el || document).querySelector(s);
@@ -10,6 +10,7 @@
   const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "method"];
 
   let D = {};
+  let LG = { nba: false, level: "Division I", short: "D-I", minutes: 40 };  // replaced by meta.league on load
   const teamById = {};
 
   function store(k, v) { try { v === undefined ? localStorage.getItem(k) : localStorage.setItem(k, v); } catch (e) { /* storage unavailable */ } }
@@ -21,9 +22,10 @@
     names.forEach((n, i) => (D[n] = res[i]));
     D.bracket = await fetch("data/bracket.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
     D.teams.forEach((t) => (teamById[t.id] = t));
+    if (D.meta.league) LG = D.meta.league;
     $("#stamp").textContent = D.meta.season + " · updated " + new Date(D.meta.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" });
     if (/simulat/i.test(D.meta.season)) {
-      $("#banner").hidden = false;
+      if ($("#banner")) $("#banner").hidden = false;
     }
     window.addEventListener("hashchange", route);
     document.addEventListener("click", (e) => {
@@ -215,7 +217,7 @@
       const q = $("#g-q").value.trim().toLowerCase(), mine = ++seq;
       if (!q) {
         $("#g-lede").textContent = "Projected scores and win chances for the next three days, from the current team ratings. Search for a team to see its whole remaining schedule.";
-        $("#g-l").innerHTML = D.games.length ? '<div class="grid">' + D.games.map(gameCard).join("") + "</div>" : '<p class="lede">No Division I games are scheduled in the next three days.</p>';
+        $("#g-l").innerHTML = D.games.length ? '<div class="grid">' + D.games.map(gameCard).join("") + "</div>" : '<p class="lede">No " + LG.level + " games are scheduled in the next three days.</p>';
         return;
       }
       const all = (await loadSchedule()) || D.games;
@@ -234,7 +236,7 @@
         (!hit.length && (low(g.home_name) + " " + low(g.away_name)).includes(q)));
       const matched = hit.map((t) => t.short);
       $("#g-lede").textContent = "Every remaining scheduled game" + (matched.length && matched.length <= 3 ? " for " + matched.join(", ") : "") +
-        ". Games further out use today's ratings, so their projections will change as the season goes on. Conference and NCAA tournament games appear once they're scheduled.";
+        ". Games further out use today's ratings, so their projections will change as the season goes on. " + (LG.nba ? "Playoff games appear once they're scheduled." : "Conference and NCAA tournament games appear once they're scheduled.") + "";
       $("#g-l").innerHTML = rows.length
         ? '<p class="note">' + rows.length + " game" + (rows.length === 1 ? "" : "s") + "</p>" + '<div class="grid">' + rows.map(gameCard).join("") + "</div>"
         : '<p class="lede">No scheduled games match “' + esc(q) + "”.</p>";
@@ -373,10 +375,10 @@
       "<h2>Team ratings</h2><p>Each game gives two observations, one per offense. For offense <i>o</i> facing defense <i>d</i>:</p>" +
       '<span class="eq">100 × points / possessions = μ + O[o] + D[d] + h·H/2 + ε</span>' +
       "<p>μ is the league average (" + m.mu + " this season). h is +1 for the home offense, −1 for the road offense and 0 at a neutral site, so H is the full home-court swing, currently estimated at " + m.hca + " points per 100 possessions. Possessions come from the box score: FGA − OREB + TO + 0.475 × FTA, averaged over both teams.</p>" +
-      "<p>The fit is Bayesian ridge regression. Games are weighted by possessions and by recency, with a 60-day half-life, and home court starts from the long-run college average until the data can pin it down. Tempo is fit the same way on possessions per game.</p>" +
+      "<p>The fit is Bayesian ridge regression. Games are weighted by possessions and by recency, with a 60-day half-life, and home court starts from the long-run " + (LG.nba ? "NBA" : "college") + " average until the data can pin it down. Tempo is fit the same way on possessions per game.</p>" +
       "<h2>Preseason ratings</h2><p>Each team's O and D start from a preseason estimate built from two ingredients:</p>" +
       "<p><b>Program.</b> Last season's full-season rating. Weighting last season toward its final weeks, or using only its last 15 games, predicted this season's early games worse: the full season is a bigger sample, and late-season form is mostly noise.</p>" +
-      "<p><b>Roster.</b> Every player on this season's roster carries his own impact rating from last season, wherever he played it, so transfers bring their value with them. A returning rating is projected forward with a rule learned from consecutive seasons (players who stay and players who transfer are fit separately). Freshmen and players new to Division I get the average newcomer rating. The team's projection weights each player by expected minutes.</p>" +
+      "<p><b>Roster.</b> Every player on this season's roster carries his own impact rating from last season, wherever he played it, so " + (LG.nba ? "trades and free-agent signings" : "transfers") + " bring their value with them. A returning rating is projected forward with a rule learned from consecutive seasons (players who stay and players who transfer are fit separately). " + (LG.nba ? "Rookies and players new to the league" : "Freshmen and players new to Division I") + " get the average newcomer rating. The team's projection weights each player by expected minutes.</p>" +
       '<span class="eq">preseason = ' + ((m.preseason || {}).w_program || 0.69) + " × program + " + ((m.preseason || {}).w_roster || 0.5) + " × roster</span>" +
       "<p>The weights come from regressing 2025-26 full-season ratings on both ingredients and from replaying this season's games. The preseason estimate counts as about " + ((m.preseason || {}).games || 2.7) + " games of evidence, so by January it carries little weight beside 15 or more real games. It doesn't fade beyond that: forcing it to zero by mid-season made January–March predictions slightly worse. The Teams table shows each team's preseason rating (Pre) and the share of its projected minutes going to players who were on last season's team (Ret).</p>" +
       "<h2>Predictions</h2><p>Projected possessions are the two teams' tempo effects added to the average. Each side's points are possessions × its expected efficiency. The win chance treats the actual margin as normal around the projection with a standard deviation of " + m.sd + " points, measured from how far past games landed from their fitted margins.</p>" +
@@ -384,9 +386,9 @@
       '<span class="eq">100 × points / possessions − μ = Σ Off[5 on offense] + Σ Def[5 on defense] + h·H/2 + ε</span>' +
       "<p>Teammates who always play together are hard to separate, so each player gets a normal prior centered on a box-score estimate. That box-score model is itself learned from the data: a first, heavily shrunk pass of the regression is regressed on per-40-minute box stats (points, shot attempts, free throws, threes, assists, turnovers and offensive rebounds for offense; steals, blocks, defensive rebounds and fouls for defense). The final rating is the posterior mean</p>" +
       '<span class="eq">β = prior + (XᵀWX + λI)⁻¹ XᵀW (y − X·prior)</span>' +
-      "<p>Returning players get a better starting point than the box score: their prior is " + Math.round((m.player_carry_weight || 0.8) * 100) + "% their own rating from last season, projected forward with the same carry-over rule as the preseason team ratings, and the rest the box-score estimate. Testing on held-out games this season, that beat the box score alone at every level of shrinkage.</p>" +
       "<p>with W the stint possessions. λ" + (m.lambda ? " (currently " + Math.round(m.lambda).toLocaleString() + " possessions)" : "") + " sets how much on-court evidence it takes to move a player off the box-score estimate. It is chosen by cross-validation: hold out every fifth game, fit on the rest, and keep the λ that best predicts scoring in the held-out stints. Defense is reported with the sign flipped so higher is better on both ends.</p>" +
-      "<h2>Tournament odds</h2><p>The Bracket tab simulates the projected field (the Bracket Matrix consensus until Selection Sunday) 20,000 times. Each simulation draws every team's true strength around its rating, with a spread measured from how much ratings moved between December and March in 2025-26, then plays each game by the prediction formula above at its announced site. Tests on every tournament from 2012 to 2026 decided what else counts. Distance from campus to arena does: margins shift about 0.75 points per unit of log(1 + miles). A team's road and neutral-court form during the season doesn't, beyond its overall rating. A program's record against expectations in recent tournaments showed a small effect that didn't hold up when each tournament was predicted from the others, so it's shown only as context.</p>" +
+      "<p>Returning players get a better starting point than the box score: their prior is " + Math.round((m.player_carry_weight || 0.8) * 100) + "% their own rating from last season, projected forward with the same carry-over rule as the preseason team ratings, and the rest the box-score estimate. Testing on held-out games this season, that beat the box score alone at every level of shrinkage.</p>" +
+      (LG.nba ? "" : "<h2>Tournament odds</h2><p>The Bracket tab simulates the projected field (the Bracket Matrix consensus until Selection Sunday) 20,000 times. Each simulation draws every team's true strength around its rating, with a spread measured from how much ratings moved between December and March in 2025-26, then plays each game by the prediction formula above at its announced site. Tests on every tournament from 2012 to 2026 decided what else counts. Distance from campus to arena does: margins shift about 0.75 points per unit of log(1 + miles). A team's road and neutral-court form during the season doesn't, beyond its overall rating. A program's record against expectations in recent tournaments showed a small effect that didn't hold up when each tournament was predicted from the others, so it's shown only as context.</p>") +
       "<h2>Lineups</h2><p>Lineup numbers are raw on-court results per 100 possessions, not adjusted for opponents. Use them to see how a coach deploys a roster, and lean on the player ratings for talent.</p>" +
       "<h2>Data</h2><p>Box scores and play-by-play come from ESPN's public scoreboard feed, pulled after each day's games. Stints with lineup gaps (a missed substitution in the feed) are dropped rather than guessed.</p></div>";
   }
@@ -440,13 +442,13 @@
       ["two_pct", "d_two_pct", "2-point %"], ["rim_rate", "d_rim_rate", "Share of shots at the rim"], ["rim_pct", "d_rim_pct", "FG% at the rim"]];
     const tag = (rk) => (rk ? '<span class="rk">' + ordinal(rk) + "</span>" : "");
     return '<div class="table-box"><table><thead><tr><th class="l">' + esc(offT.short) + " with the ball</th><th>" + esc(offT.short) + " offense</th><th>" +
-      esc(defT.short) + " defense allows</th><th>D-I average</th></tr></thead><tbody>" +
+      esc(defT.short) + " defense allows</th><th>" + LG.short + " average</th></tr></thead><tbody>" +
       rows.map(([o, d, label]) => "<tr><td class='l'>" + label + "</td><td>" + pctf(so[o]) + tag(so[o + "_rk"]) + "</td><td>" + pctf(sd[d]) + tag(sd[d + "_rk"]) + "</td><td>" + pctf((L[o] || {}).mean) + "</td></tr>").join("") +
       "</tbody></table></div>";
   }
 
   /* Plain-language edges for one side of the ball. o = how good the offense is at something,
-     d = how much the defense gives it up (z-scores vs. Division I, oriented so positive helps the
+     d = how much the defense gives it up (z-scores vs. the league, oriented so positive helps the
      offense). The sentence names whichever side actually drives the edge. */
   function edges(offT, defT, so, sd, L) {
     const z = (k, v) => (v == null || !L[k] || !L[k].sd ? 0 : (v - L[k].mean) / L[k].sd);
@@ -492,8 +494,8 @@
     if (s.d_tov_rk <= 60 && s.stl_rate_rk <= 70) out.push("Forces turnovers on " + pctf(s.d_tov) + " of possessions (" + ordinal(s.d_tov_rk) + ") with a high steal rate: likely heavy ball pressure, possibly full-court.");
     if (z("d_three_rate") > 0.7 && z("d_rim_rate") < -0.5) out.push("Opponents take lots of threes (" + pctf(s.d_three_rate, 0) + " of shots) but few at the rim: consistent with a zone or a packed-paint defense.");
     if (s.blk_rate_rk <= 50) out.push("Rim protection: blocks " + pctf(s.blk_rate, 0) + " of opponents' twos (" + ordinal(s.blk_rate_rk) + ").");
-    if (t.t_rank <= 60) out.push("Plays fast: " + f1(t.tempo) + " possessions per 40 minutes (" + ordinal(t.t_rank) + ").");
-    if (t.t_rank >= 305) out.push("Plays slow: " + f1(t.tempo) + " possessions per 40 minutes (" + ordinal(t.t_rank) + " of " + D.teams.length + ").");
+    if (t.t_rank <= 60) out.push("Plays fast: " + f1(t.tempo) + " possessions per " + LG.minutes + " minutes (" + ordinal(t.t_rank) + ").");
+    if (t.t_rank >= 305) out.push("Plays slow: " + f1(t.tempo) + " possessions per " + LG.minutes + " minutes (" + ordinal(t.t_rank) + " of " + D.teams.length + ").");
     if (z("ast_rate") > 1) out.push("Moves the ball: " + pctf(s.ast_rate, 0) + " of its baskets are assisted.");
     if (z("ast_rate") < -1) out.push("Creates its own shots: only " + pctf(s.ast_rate, 0) + " of baskets are assisted.");
     if (z("three_rate") > 1) out.push("Lives at the three-point line: " + pctf(s.three_rate, 0) + " of shots.");
@@ -576,7 +578,7 @@
       compareRow("Net rating (rank)", A.net, H.net, (x) => sgn(x), A.rank, H.rank) +
       compareRow("Offense, pts per 100", A.o, H.o, f1, A.o_rank, H.o_rank) +
       compareRow("Defense, pts per 100 allowed", A.d, H.d, f1, A.d_rank, H.d_rank) +
-      compareRow("Tempo, possessions per 40", A.tempo, H.tempo, f1) +
+      compareRow("Tempo, possessions per " + LG.minutes, A.tempo, H.tempo, f1) +
       compareRow("Preseason rating", A.pre, H.pre, (x) => (x == null ? "–" : sgn(x))) +
       "</tbody></table></div>" +
       '<div id="m-stats"><p class="lede">Loading season stats…</p></div>';

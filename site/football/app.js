@@ -1,4 +1,4 @@
-/* Sports by Numbers — college football views. Reads the JSON the daily job writes. */
+/* Sports by Numbers — football views (college and NFL share this script). Reads the JSON the daily job writes. */
 (function () {
   "use strict";
   const $ = (s, el) => (el || document).querySelector(s);
@@ -10,6 +10,7 @@
   const pct = (p) => (p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : Math.round(p * 100) + "%");
   const VIEWS = ["rankings", "games", "matchup", "method"];
   let D = {};
+  let LG = { nfl: false, level: "Division I", short: "D-I" };  // replaced by meta.league on load
   const teamById = {};
 
   function store(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage unavailable */ } }
@@ -20,6 +21,7 @@
     const res = await Promise.all(names.map((n) => fetch("data/" + n + ".json").then((r) => { if (!r.ok) throw new Error(n); return r.json(); })));
     names.forEach((n, i) => (D[n] = res[i]));
     D.teams.forEach((t) => (teamById[t.id] = t));
+    if (D.meta.league) LG = D.meta.league;
     $("#stamp").textContent = D.meta.season + " season · updated " + new Date(D.meta.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" });
     window.addEventListener("hashchange", route);
     document.addEventListener("click", (e) => {
@@ -33,7 +35,7 @@
     const t = teamById[id];
     if (!t) return esc(id);
     return '<span class="dot" style="background:#' + esc(t.color) + '"></span>' + esc(t.short || t.name) +
-      (withConf ? '<span class="sub">' + esc([t.conf, t.div].filter(Boolean).join(" · ")) + "</span>" : "");
+      (withConf ? '<span class="sub">' + esc([t.conf, LG.nfl ? "" : t.div].filter(Boolean).join(" · ")) + "</span>" : "");
   }
   function netBar(x, max) {
     const w = Math.min(Math.abs(x) / max, 1) * 50;
@@ -78,9 +80,9 @@
 
   function rankings(main) {
     const confs = [...new Set(D.teams.map((t) => t.conf).filter(Boolean))].sort();
-    main.innerHTML = '<div><h1>Team Ratings</h1><p class="lede">Expected margin, in points, against an average Division I team on a neutral field. Offense is points scored and defense points allowed against average opposition.</p></div>' +
+    main.innerHTML = '<div><h1>Team Ratings</h1><p class="lede">Expected margin, in points, against an average ' + LG.level + ' team on a neutral field. Offense is points scored and defense points allowed against average opposition.</p></div>' +
       '<div class="controls"><div class="field"><label for="r-q">Search</label><input type="search" id="r-q" placeholder="Team name"></div>' +
-      '<div class="field"><label for="r-v">Division</label><select id="r-v">' + options(["FBS", "FCS"], recall("sbnf-div") || "FBS", "All Division I") + "</select></div>" +
+      (LG.nfl ? "" : '<div class="field"><label for="r-v">Division</label><select id="r-v">' + options(["FBS", "FCS"], recall("sbnf-div") || "FBS", "All Division I") + "</select></div>") +
       '<div class="field"><label for="r-c">Conference</label><select id="r-c">' + options(confs, "", "All conferences") + "</select></div></div><div id='r-t'></div>";
     const max = Math.max(...D.teams.map((t) => Math.abs(t.net)), 1);
     const cols = [
@@ -96,11 +98,11 @@
       { key: "pre", label: "Pre", html: (t) => (t.pre == null ? "–" : '<span class="' + cls(t.pre) + '">' + sgn(t.pre) + "</span>") },
     ];
     const draw = () => {
-      const q = $("#r-q").value.trim().toLowerCase(), v = $("#r-v").value, c = $("#r-c").value;
-      store("sbnf-div", v);
+      const q = $("#r-q").value.trim().toLowerCase(), v = $("#r-v") ? $("#r-v").value : "", c = $("#r-c").value;
+      if ($("#r-v")) store("sbnf-div", v);
       table($("#r-t"), cols, D.teams.filter((t) => (!v || t.div === v) && (!c || t.conf === c) && (!q || (t.name + " " + t.abbr).toLowerCase().includes(q))), "net");
     };
-    ["#r-q", "#r-v", "#r-c"].forEach((s) => $(s).addEventListener("input", draw));
+    ["#r-q", "#r-v", "#r-c"].forEach((s) => $(s) && $(s).addEventListener("input", draw));
     draw();
   }
 
@@ -124,7 +126,7 @@
     const draw = () => {
       const q = $("#g-q").value.trim().toLowerCase();
       const rows = known.filter((g) => !q || ((g.home_name || "") + " " + (g.away_name || "")).toLowerCase().includes(q));
-      $("#g-l").innerHTML = rows.length ? '<div class="grid">' + rows.map(gameCard).join("") + "</div>" : '<p class="lede">No Division I games in the next week match.</p>';
+      $("#g-l").innerHTML = rows.length ? '<div class="grid">' + rows.map(gameCard).join("") + "</div>" : '<p class="lede">No ' + LG.level + ' games in the next week match.</p>';
     };
     $("#g-q").addEventListener("input", draw);
     draw();
@@ -147,7 +149,7 @@
 
   function matchup(main) {
     const a0 = recall("sbnf-away") || D.teams[1].id, h0 = recall("sbnf-home") || D.teams[0].id;
-    main.innerHTML = '<div><h1>Matchup</h1><p class="lede">Pick any two Division I teams to project a score, spread and win chance.</p></div>' +
+    main.innerHTML = '<div><h1>Matchup</h1><p class="lede">Pick any two ' + LG.level + ' teams to project a score, spread and win chance.</p></div>' +
       '<div class="controls"><div class="field"><label for="m-a">Away</label><select id="m-a">' + teamOptions(a0) + "</select></div>" +
       '<div class="field"><label for="m-h">Home</label><select id="m-h">' + teamOptions(h0) + "</select></div>" +
       '<div class="field"><label for="m-v">Site</label><select id="m-v"><option value="0">Home field</option><option value="1">Neutral</option></select></div></div><div id="m-out"></div>';
@@ -165,6 +167,17 @@
 
   function method(main) {
     const m = D.meta;
+    if (LG.nfl) {
+      main.innerHTML = '<div class="prose"><h1>How It Works</h1>' +
+        "<p>Ratings come from one regression over every NFL game this season, refit each morning. The current fit uses " + m.games.toLocaleString() + " games.</p>" +
+        "<h2>Team ratings</h2><p>Each game gives two observations, one per offense:</p>" +
+        '<span class="eq">points scored = μ + O[offense] + D[defense] + h·H/2 + ε</span>' +
+        "<p>μ is the average score (" + m.mu + " this season). h is +1 for the home offense, −1 for the road offense and 0 at a neutral site (London, Mexico City and other international games), so H is the full home-field edge, currently " + m.hfa + " points. Net = O − D is the expected margin against an average NFL team on a neutral field.</p>" +
+        "<p>The fit is Bayesian ridge regression. Each team starts from last season's final rating, with " + Math.round(m.prior_keep * 100) + "% carried over and worth about " + m.prior_games + " games of evidence. NFL rosters turn over more than college programs' reputations suggest, so less of last season carries forward than in college football.</p>" +
+        "<h2>Predictions</h2><p>Each side's projected points are μ plus its offense, the opponent's defense and its share of home field. The win chance treats the actual margin as normal around the projected spread with a standard deviation of " + m.sd + " points.</p>" +
+        "<h2>Coming next</h2><p>Player value and salary-cap efficiency: which teams get the most performance per cap dollar.</p></div>";
+      return;
+    }
     main.innerHTML = '<div class="prose"><h1>How It Works</h1>' +
       "<p>Ratings come from one regression over every Division I game this season (FBS and FCS on one scale, since they play each other), refit each morning. The current fit uses " + m.games.toLocaleString() + " games.</p>" +
       "<h2>Team ratings</h2><p>Each game gives two observations, one per offense:</p>" +
@@ -216,13 +229,13 @@
   function unitTable(offT, defT, so, sd, L) {
     const tag = (rk) => (rk ? '<span class="rk">' + ordinal(rk) + "</span>" : "");
     return '<div class="table-box"><table><thead><tr><th class="l">' + esc(offT.short) + " with the ball</th><th>" + esc(offT.short) + " offense</th><th>" +
-      esc(defT.short) + " defense allows</th><th>D-I average</th></tr></thead><tbody>" +
+      esc(defT.short) + " defense allows</th><th>" + LG.short + " average</th></tr></thead><tbody>" +
       UNIT_ROWS.map(([o, d, label, f]) => "<tr><td class='l'>" + label + "</td><td>" + f(so[o]) + tag(so[o + "_rk"]) + "</td><td>" + f(sd[d]) + tag(sd[d + "_rk"]) +
         "</td><td>" + f((L[o] || {}).mean) + "</td></tr>").join("") + "</tbody></table></div>";
   }
 
   /* Plain-language edges for one side of the ball. o = how good the offense is at something,
-     d = how much the defense gives it up (both z-scores vs. Division I, oriented so positive
+     d = how much the defense gives it up (both z-scores vs. the league, oriented so positive
      helps the offense). The sentence names whichever side actually drives the edge. */
   function edges(offT, defT, so, sd, L) {
     const z = (k, v) => (v == null || !L[k] || !L[k].sd ? 0 : (v - L[k].mean) / L[k].sd);

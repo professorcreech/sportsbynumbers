@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-K9MVJHC6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>NBA · Sports by Numbers</title>
+<meta name="description" content="Opponent-adjusted team ratings, player impact, lineups and game predictions for the NBA, updated daily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="../">Sports <span class="num">by</span> Numbers</a>
+    <span class="sport">NBA</span>
+    <span class="stamp" id="stamp"></span>
+    <nav class="tabs" aria-label="Views">
+      <a href="#rankings">Teams</a>
+      <a href="#players">Players</a>
+      <a href="#lineups">Lineups</a>
+      <a href="#games">Games</a>
+      <a href="#matchup">Matchup</a>
+      <a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <main id="main"><p class="lede">Loading ratings…</p></main>
+    <footer>Ratings refit every morning from ESPN’s public play-by-play. Not affiliated with ESPN or the NBA.</footer>
+</div>
+<script src="../basketball/app.js"></script>
+</body>
+</html>

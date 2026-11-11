@@ -9,6 +9,8 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+from . import config
+
 # name, label, side, higher_is_better (for the team whose stat it is)
 STATS = [
     ("efg", "Effective FG%", "off", True), ("tov", "Turnover rate", "off", False), ("orb", "Off. rebound rate", "off", True),
@@ -25,7 +27,7 @@ STATS = [
 def team_profiles(games: pd.DataFrame, box: pd.DataFrame, shots: pd.DataFrame | None, teams: set) -> dict:
     g = games[games.completed.astype(bool)] if "completed" in games else games
     t = box.groupby(["game_id", "team_id"])[["fgm", "fga", "tpm", "tpa", "ftm", "fta", "oreb", "dreb", "ast", "tov", "stl", "blk"]].sum().reset_index()
-    t["poss"] = t.fga - t.oreb + t.tov + 0.475 * t.fta
+    t["poss"] = t.fga - t.oreb + t.tov + config.FT_SHARE * t.fta
     # attach the opponent's line to each team-game
     opp = t.rename(columns={c: "o_" + c for c in t.columns if c not in ("game_id",)})
     m = t.merge(opp, on="game_id")

@@ -2,12 +2,21 @@
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data" / "football"
-SITE_DATA_DIR = ROOT / "site" / "football" / "data"
+import os
 
-ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/college-football"
-GROUPS = {"FBS": 80, "FCS": 81}
+# One engine, two leagues: SBN_LEAGUE=nfl switches endpoints, folders, dates and constants.
+LEAGUE = os.environ.get("SBN_LEAGUE", "ncaaf").lower()
+IS_NFL = LEAGUE == "nfl"
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data" / ("nfl" if IS_NFL else "football")
+SITE_DATA_DIR = ROOT / "site" / ("nfl" if IS_NFL else "football") / "data"
+
+ESPN = ("https://site.api.espn.com/apis/site/v2/sports/football/nfl" if IS_NFL
+        else "https://site.api.espn.com/apis/site/v2/sports/football/college-football")
+STANDINGS = ("https://site.api.espn.com/apis/v2/sports/football/nfl/standings" if IS_NFL
+             else "https://site.api.espn.com/apis/v2/sports/football/college-football/standings")
+GROUPS = {"NFL": None} if IS_NFL else {"FBS": 80, "FCS": 81}
 FETCH_WORKERS = 6
 REFETCH_DAYS = 3
 
@@ -18,17 +27,18 @@ def season_for(d: date) -> int:
 
 
 def season_start(season: int) -> date:
-    return date(season, 8, 20)
+    return date(season, 9, 1) if IS_NFL else date(season, 8, 20)
 
 
 def season_end(season: int) -> date:
-    return date(season + 1, 1, 25)
+    return date(season + 1, 2, 15) if IS_NFL else date(season + 1, 1, 25)
 
 
 # ---- Team model -------------------------------------------------------------
 HALF_LIFE_DAYS = 120          # football seasons are short; recency matters less week to week
-HFA_PRIOR = 2.5               # home-field edge in points, long-run college average
+HFA_PRIOR = 1.8 if IS_NFL else 2.5   # home-field edge in points (NFL has shrunk to ~1.5-2 in recent seasons)
 HFA_PRIOR_GAMES = 1500
 PRIOR_GAMES = 3.0             # preseason prior strength in games (best of 1/3/6 on 2025, tests/football_backtest.py)
-PRIOR_KEEP = 0.9              # share of last season's rating carried over (best of 50/70/90% on 2025)
-MARGIN_SD = 15.0
+PRIOR_KEEP = 0.5 if IS_NFL else 0.9  # share of last season's rating carried over (college: best of 50/70/90% on 2025;
+                                     # NFL starts at 0.5 and is re-tuned once two NFL seasons are on file)
+MARGIN_SD = 13.5 if IS_NFL else 15.0

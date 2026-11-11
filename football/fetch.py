@@ -67,7 +67,11 @@ def _standings_members(node: dict, conf: str | None = None, out: dict | None = N
     for child in node.get("children", []) or []:
         # The first level below the division is the conference; deeper levels are its divisions
         label = child.get("abbreviation") or child.get("shortName") or child.get("name")
-        _standings_members(child, conf or label, out)
+        if config.IS_NFL and conf:  # NFL: "AFC" then "AFC East"; keep the division
+            label = child.get("name") or label
+            _standings_members(child, label, out)
+        else:
+            _standings_members(child, conf or label, out)
     return out
 
 
@@ -75,8 +79,7 @@ def fetch_teams(season: int) -> None:
     """Division I = every team in the FBS and FCS conference standings (independents included)."""
     rows = {}
     for div, grp in config.GROUPS.items():
-        st = get("https://site.api.espn.com/apis/v2/sports/football/college-football/standings",
-                 {"season": season, "group": grp}) or {}
+        st = get(config.STANDINGS, {"season": season, **({"group": grp} if grp else {})}) or {}
         for tid, info in _standings_members(st).items():
             rows[tid] = {"team_id": tid, **info, "div": div, "color": "888888"}
     if not rows:

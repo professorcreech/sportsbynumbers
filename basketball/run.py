@@ -141,7 +141,9 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
         for i, row in enumerate(sorted(team_out, key=lambda x: x[key], reverse=rev)):
             row[rk] = i + 1
 
-    meta = {"site": config.SITE_NAME, "season": label, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
+    meta = {"site": config.SITE_NAME, "season": label,
+            "league": {"key": config.LEAGUE, "nba": config.IS_NBA, "level": "NBA" if config.IS_NBA else "Division I",
+                       "short": "NBA" if config.IS_NBA else "D-I", "minutes": config.GAME_MINUTES}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
             "games": int(len(games)), "stints": int(len(stints)), "mu": round(model["mu"], 2), "tau": round(model["tau"], 2),
             "hca": round(model["hca"], 2), "sd": round(model["sd"], 2),
             "lambda": float(p.attrs.get("lambda", config.PLAYER_LAMBDA)) if len(p) else None,
@@ -153,7 +155,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             # Everything the browser needs to predict any matchup on its own
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
-    stats_out = scouting.team_profiles(games, box, shots, set(t.team_id))
+    stats_out = scouting.team_profiles(games, box, shots, set(t.team_id)) if len(box) else {"league": {}, "teams": {}}
     schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
                                "home_score", "away_score", "home_win", "poss"], "games": full}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
