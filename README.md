@@ -8,7 +8,7 @@ Statistical ratings and predictions, refit every morning and published as a webs
 |---|---|---|---|
 | Men's college basketball | `basketball/` | Nov to Apr | Teams (adjusted efficiency, tempo), players (Bayesian plus-minus with a box-score prior), lineups, game predictions |
 
-Adding a sport means a new folder with its own `run.py`, a page under `site/<sport>/`, and one more step in `.github/workflows/daily.yml`.
+Adding a sport means a new folder with its own `run.py`, a page under `site/<sport>/`, and one more step in `.github/workflows/daily.yml`. Every new page needs the Google tag block copied from `site/index.html`, placed right after `<head>`.
 
 ## How it runs
 
