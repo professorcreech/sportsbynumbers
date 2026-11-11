@@ -112,6 +112,8 @@ def locate(scores: pd.DataFrame) -> None:
     g = gazetteer()
     cities["key"] = cities.city.map(_clean_city)
     places = cities.merge(g, on=["key", "state"], how="left")
+    places["lat"] = pd.to_numeric(places.lat, errors="coerce")
+    places["lon"] = pd.to_numeric(places.lon, errors="coerce")
     for i, r in places[places.lat.isna()].iterrows():
         if (r.key, r.state) in MANUAL:
             places.loc[i, ["lat", "lon"]] = MANUAL[(r.key, r.state)]
