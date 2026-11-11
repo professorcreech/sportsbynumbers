@@ -60,6 +60,43 @@ def load_shots(season: int):
     return shots.drop_duplicates() if shots is not None and len(shots) else None
 
 
+REPLACEMENT = -2.0    # a freely available player is ~2 points per 100 possessions below average
+POINTS_PER_WIN = 30.0  # NBA: ~2.7 wins per point of average margin over 82 games
+MIN_SALARY = 1.3e6     # roughly the league minimum; pay above it is what buys wins
+
+
+def player_value(p: pd.DataFrame, t: pd.DataFrame, season: int) -> dict | None:
+    """NBA: wins added over replacement and what each team pays for them."""
+    path = config.DATA_DIR / str(season) / "salaries.csv"
+    if not path.exists():
+        return None
+    sal = pd.read_csv(path, dtype={"player_id": str}).set_index("player_id").salary
+    v = p[["player_id", "name", "team_id", "gp", "poss", "total"]].copy()
+    v["salary"] = v.player_id.map(sal)
+    v["war"] = (v.total - REPLACEMENT) * v.poss / 100 / POINTS_PER_WIN
+    team_games = t.set_index("team_id").pipe(lambda d: d.wins + d.losses)
+    v["pace"] = v.war * 82 / v.team_id.map(team_games).clip(lower=1)
+    paid = v[v.salary.notna()]
+    above_min = (paid.salary - MIN_SALARY).clip(lower=0).sum()
+    total_war = paid.pace.clip(lower=0).sum()
+    per_win = above_min / total_war if total_war > 0 else None
+    v["surplus"] = v.pace * per_win - (v.salary - MIN_SALARY).clip(lower=0) if per_win else None
+    teams_v = []
+    for tid, g in v.groupby("team_id"):
+        if tid not in set(t.team_id):
+            continue
+        payroll = g.salary.sum()
+        teams_v.append({"id": tid, "payroll": round(float(payroll)), "war_pace": round(float(g.pace.sum()), 1),
+                        "per_win": round(float((payroll - MIN_SALARY * g.salary.notna().sum()) / g.pace.clip(lower=0).sum()))
+                        if g.pace.clip(lower=0).sum() > 0 else None})
+    players_v = [{"id": r.player_id, "name": r.name, "team": r.team_id, "salary": None if pd.isna(r.salary) else round(float(r.salary)),
+                  "war": round(float(r.war), 2), "pace": round(float(r.pace), 1),
+                  "surplus": None if pd.isna(r.surplus) else round(float(r.surplus))}
+                 for r in v[v.poss >= 100].itertuples()]
+    return {"per_win": None if per_win is None else round(per_win), "replacement": REPLACEMENT, "points_per_win": POINTS_PER_WIN,
+            "players": players_v, "teams": teams_v}
+
+
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
           season: int | None = None, shots=None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
@@ -156,10 +193,11 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
     stats_out = scouting.team_profiles(games, box, shots, set(t.team_id)) if len(box) else {"league": {}, "teams": {}}
+    value_out = player_value(p, t, season) if (config.IS_NBA and season and len(p)) else None
     schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
                                "home_score", "away_score", "home_win", "poss"], "games": full}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
-                      ("schedule", schedule_out), ("teamstats", stats_out)):
+                      ("schedule", schedule_out), ("teamstats", stats_out)) + ((("value", value_out),) if value_out else ()):
         (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     return {"model": model, "players": p, "teams": t}
 

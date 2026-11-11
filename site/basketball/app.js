@@ -7,7 +7,7 @@
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
   const pct = (p) => (p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : Math.round(p * 100) + "%");
-  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "method"];
+  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "value", "method"];
 
   let D = {};
   let LG = { nba: false, level: "Division I", short: "D-I", minutes: 40 };  // replaced by meta.league on load
@@ -21,6 +21,7 @@
     const res = await Promise.all(names.map((n) => fetch("data/" + n + ".json").then((r) => { if (!r.ok) throw new Error(n); return r.json(); })));
     names.forEach((n, i) => (D[n] = res[i]));
     D.bracket = await fetch("data/bracket.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    D.value = await fetch("data/value.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
     D.teams.forEach((t) => (teamById[t.id] = t));
     if (D.meta.league) LG = D.meta.league;
     $("#stamp").textContent = D.meta.season + " · updated " + new Date(D.meta.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" });
@@ -368,6 +369,39 @@
     draw();
   }
 
+  const money = (x) => (x == null ? "–" : (Math.abs(x) >= 1e6 ? (x < 0 ? "−$" : "$") + (Math.abs(x) / 1e6).toFixed(1) + "M" : (x < 0 ? "−$" : "$") + Math.round(Math.abs(x) / 1e3) + "K"));
+
+  function value(main) {
+    const V = D.value;
+    if (!V) { main.innerHTML = '<div><h1>Player Value</h1><p class="lede">Salary data will appear after the next weekly update.</p></div>'; return; }
+    main.innerHTML = '<div><h1>Player Value</h1><p class="lede">What each player adds in wins, and what teams pay for it. Wins added counts points above a replacement-level player (' + V.replacement +
+      " per 100 possessions vs. average) on both ends, from the impact ratings, at about " + V.points_per_win + " points per win. A win costs about <b>" + money(V.per_win) +
+      "</b> on today's market: teams' spending above the league minimum divided by the wins it buys. Surplus is a player's wins added at that price minus his salary above the minimum.</p></div>" +
+      '<p class="note">Wins added are on an 82-game pace from games so far; early in the season they swing a lot. Salaries are current-season figures from ESPN.</p>' +
+      '<div class="controls"><div class="field"><label for="v-q">Search</label><input type="search" id="v-q" placeholder="Player or team"></div></div><div id="v-p"></div>' +
+      "<h2>Teams</h2><p class='note'>Payroll against wins added: who gets the most for their money.</p><div id='v-t'></div>";
+    const pcols = [
+      { key: "name", label: "Player", left: true, cls: "name", html: (r) => esc(r.name), asc: true },
+      { key: "team", label: "Team", left: true, cls: "name", html: (r) => teamLink(r.team), val: (r) => (teamById[r.team] || {}).short, asc: true },
+      { key: "salary", label: "Salary", html: (r) => money(r.salary) },
+      { key: "pace", label: "Wins added (82-game pace)", html: (r) => '<span class="' + cls(r.pace) + '">' + f1(r.pace) + "</span>" },
+      { key: "surplus", label: "Surplus value", html: (r) => '<b class="' + cls(r.surplus) + '">' + money(r.surplus) + "</b>" },
+    ];
+    const draw = () => {
+      const q = $("#v-q").value.trim().toLowerCase();
+      table($("#v-p"), pcols, V.players.filter((r) => !q || (r.name + " " + ((teamById[r.team] || {}).name || "")).toLowerCase().includes(q)), "surplus");
+    };
+    $("#v-q").addEventListener("input", draw);
+    draw();
+    table($("#v-t"), [
+      { key: "team", label: "Team", left: true, cls: "name", html: (r) => teamLink(r.id), val: (r) => (teamById[r.id] || {}).short, asc: true },
+      { key: "payroll", label: "Payroll", html: (r) => money(r.payroll) },
+      { key: "war_pace", label: "Wins added (pace)", html: (r) => f1(r.war_pace) },
+      { key: "net", label: "Net rating", html: (r) => sgn((teamById[r.id] || {}).net), val: (r) => (teamById[r.id] || {}).net },
+      { key: "per_win", label: "Cost per win", asc: true, html: (r) => money(r.per_win) },
+    ], V.teams, "per_win");
+  }
+
   function method(main) {
     const m = D.meta;
     main.innerHTML = '<div class="prose"><h1>How It Works</h1>' +
@@ -390,6 +424,7 @@
       "<p>Returning players get a better starting point than the box score: their prior is " + Math.round((m.player_carry_weight || 0.8) * 100) + "% their own rating from last season, projected forward with the same carry-over rule as the preseason team ratings, and the rest the box-score estimate. Testing on held-out games this season, that beat the box score alone at every level of shrinkage.</p>" +
       (LG.nba ? "" : "<h2>Tournament odds</h2><p>The Bracket tab simulates the projected field (the Bracket Matrix consensus until Selection Sunday) 20,000 times. Each simulation draws every team's true strength around its rating, with a spread measured from how much ratings moved between December and March in 2025-26, then plays each game by the prediction formula above at its announced site. Tests on every tournament from 2012 to 2026 decided what else counts. Distance from campus to arena does: margins shift about 0.75 points per unit of log(1 + miles). A team's road and neutral-court form during the season doesn't, beyond its overall rating. A program's record against expectations in recent tournaments showed a small effect that didn't hold up when each tournament was predicted from the others, so it's shown only as context.</p>") +
       "<h2>Lineups</h2><p>Lineup numbers are raw on-court results per 100 possessions, not adjusted for opponents. Use them to see how a coach deploys a roster, and lean on the player ratings for talent.</p>" +
+      (LG.nba ? "<h2>Player value</h2><p>Wins added start from each player's impact rating: points per 100 possessions above an average player, at both ends. A replacement-level player (someone a team can sign for the minimum) is about 2 points per 100 below average, so points above replacement = (impact + 2) × possessions ÷ 100. In the NBA about 30 points of season-long margin make one win. The price of a win is set by the market: what all teams spend above the league minimum divided by all the wins it buys. A player's surplus value is his wins added at that price, minus what he's paid above the minimum. Salaries come from ESPN and update weekly.</p>" : "") +
       "<h2>Data</h2><p>Box scores and play-by-play come from ESPN's public scoreboard feed, pulled after each day's games. Stints with lineup gaps (a missed substitution in the feed) are dropped rather than guessed.</p></div>";
   }
 
@@ -636,7 +671,7 @@
     if (h.startsWith("team-")) team(main, h.slice(5));
     else if (h.startsWith("game-")) gamePage(main, h.slice(5));
     else if (h.startsWith("vs-")) { const [a, b, n] = h.slice(3).split("-"); matchupPage(main, a, b, n === "n", null); }
-    else ({ rankings, players, lineups, games, matchup, bracket, method })[view](main);
+    else ({ rankings, players, lineups, games, matchup, bracket, value, method })[view](main);
     window.scrollTo(0, 0);
   }
 

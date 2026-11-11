@@ -97,6 +97,40 @@ def fetch_rosters(season: int, max_age_days: int = 7) -> None:
         print(f"rosters: {len(rows)} players")
 
 
+CORE_NBA = "https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba"
+
+
+def fetch_salaries(season: int, max_age_days: int = 7) -> None:
+    """NBA only: each rostered player's current salary (weekly)."""
+    if not config.IS_NBA:
+        return
+    path = season_dir(season) / "salaries.csv"
+    if path.exists():
+        try:
+            last = date.fromisoformat(str(pd.read_csv(path, usecols=["fetched"]).fetched.max()))
+            if (date.today() - last).days < max_age_days:
+                return
+        except (ValueError, KeyError):
+            pass
+    rpath = season_dir(season) / "rosters.csv"
+    if not rpath.exists():
+        return
+    ids = pd.read_csv(rpath, dtype={"player_id": str}).player_id.unique().tolist()
+
+    def one(pid):
+        a = get(f"{CORE_NBA}/athletes/{pid}") or {}
+        c = a.get("contract") or {}
+        sal = c.get("salary")
+        return {"player_id": pid, "salary": float(sal) if sal not in (None, "") else None,
+                "min_exception": bool(c.get("minimumSalaryException"))}
+
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        rows = list(pool.map(one, ids))
+    df = pd.DataFrame(rows).assign(fetched=date.today().isoformat())
+    df.to_csv(path, index=False)
+    print(f"salaries: {df.salary.notna().sum()} of {len(df)} players")
+
+
 def scoreboard(day: date, group: int | None = None) -> list[dict]:
     data = get(f"{config.ESPN}/scoreboard",
                {"dates": day.strftime("%Y%m%d"), "groups": group or config.DIVISION_I_GROUP, "limit": 500})
@@ -196,6 +230,7 @@ def update(season: int | None = None, force: bool = False) -> None:
     fetch_teams(season)
     if season == config.season_for(today):
         fetch_rosters(season)  # rosters are only available for the current season
+        fetch_salaries(season)
     fetch_prior_scores(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
     day = config.season_start(season)
