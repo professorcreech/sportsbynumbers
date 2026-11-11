@@ -97,9 +97,9 @@ def fetch_rosters(season: int, max_age_days: int = 7) -> None:
         print(f"rosters: {len(rows)} players")
 
 
-def scoreboard(day: date) -> list[dict]:
+def scoreboard(day: date, group: int | None = None) -> list[dict]:
     data = get(f"{config.ESPN}/scoreboard",
-               {"dates": day.strftime("%Y%m%d"), "groups": config.DIVISION_I_GROUP, "limit": 500})
+               {"dates": day.strftime("%Y%m%d"), "groups": group or config.DIVISION_I_GROUP, "limit": 500})
     out = []
     for ev in (data or {}).get("events", []):
         comp = ev.get("competitions", [{}])[0]
@@ -114,6 +114,15 @@ def scoreboard(day: date) -> list[dict]:
             "home_name": teams["home"]["team"].get("shortDisplayName"),
             "away_name": teams["away"]["team"].get("shortDisplayName"),
             "home_pts": int(teams["home"].get("score") or 0), "away_pts": int(teams["away"].get("score") or 0),
+            # Context used by the tournament model
+            "season_type": (ev.get("season") or {}).get("type"),
+            "tourney_id": comp.get("tournamentId"),
+            "note": "; ".join(n.get("headline", "") for n in comp.get("notes", []) if n.get("headline")),
+            "venue": (comp.get("venue") or {}).get("fullName"),
+            "city": ((comp.get("venue") or {}).get("address") or {}).get("city"),
+            "state": ((comp.get("venue") or {}).get("address") or {}).get("state"),
+            "home_seed": (teams["home"].get("curatedRank") or {}).get("current"),
+            "away_seed": (teams["away"].get("curatedRank") or {}).get("current"),
         })
     return out
 
