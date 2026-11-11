@@ -41,7 +41,7 @@ HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth 
 # fading the prior by January made predictions worse, so it doesn't fade.
 PRESEASON_W_PROGRAM = 0.69
 PRESEASON_W_ROSTER = 0.5
-PRESEASON_GAMES = 2.7
+PRESEASON_GAMES = 5.0   # tuned on held-out games: best of 2.7/5/8/12/20 in Nov 2026, Nov-Dec 2025 and Jan-Mar 2026
 
 # ---- Tournament simulation ---------------------------------------------------------------
 # How far a team's true strength may be from today's rating on Selection Sunday (per 100 poss).

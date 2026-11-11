@@ -129,6 +129,9 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "hca": round(model["hca"], 2), "sd": round(model["sd"], 2),
             "lambda": float(p.attrs.get("lambda", config.PLAYER_LAMBDA)) if len(p) else None,
             "preseason": {k: v for k, v in pre_info.items() if k != "returning"},
+            # Spread of the preseason belief about a team's net rating (per 100 possessions):
+            # offense and defense priors each have variance s2 / (games * 68)
+            "prior_sd": round(float(np.sqrt(2 * model["s2"] / ((prior_games or config.TEAM_PRIOR_GAMES) * 68.0))), 2),
             # Everything the browser needs to predict any matchup on its own
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}

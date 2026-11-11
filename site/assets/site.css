@@ -147,6 +147,23 @@ abbr[title] { text-decoration: none; cursor: help; }
 #p-t, #t-p { display: grid; gap: 8px; }
 #p-note .note, #t-pn .note { margin-top: -10px; }
 
+/* Prior vs. current belief chart */
+.belief { display: grid; gap: 10px; }
+.chart-box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+.chart-box svg { width: 100%; height: auto; display: block; }
+.chart-box .grid { stroke: var(--line); stroke-width: 1; }
+.chart-box .axis { stroke: var(--muted); stroke-width: 1; }
+.chart-box .tick { fill: var(--muted); font: 11px var(--font-data); text-anchor: middle; }
+.chart-box .prior { fill: var(--muted); fill-opacity: .18; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.chart-box .post { fill: var(--accent); fill-opacity: .22; stroke: var(--accent); stroke-width: 2; }
+.chart-box .mark-prior { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 3; }
+.chart-box .mark-post { stroke: var(--accent); stroke-width: 1.5; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; color: var(--muted); font-size: 12px; margin: 0; }
+.legend .key { display: inline-block; width: 18px; height: 10px; border-radius: 2px; margin-right: -8px; }
+.legend .key.prior { background: var(--muted); opacity: .4; }
+.legend .key.post { background: var(--accent); opacity: .7; }
+.legend .axis-note { margin-left: auto; }
+
 footer { color: var(--muted); font-size: 12px; padding-block: 0 32px; }
 
 @media (prefers-reduced-motion: no-preference) {

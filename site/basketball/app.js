@@ -232,6 +232,40 @@
     draw();
   }
 
+  /* Prior vs. current belief about a team's net rating, as two normal curves */
+  function beliefChart(t) {
+    const psd = D.meta.prior_sd, se = t.net_se;
+    if (t.pre == null || !psd || !se) return "";
+    const W = 640, H = 190, padL = 12, padR = 12, padB = 30, top = 18;
+    const lo = Math.min(t.pre - 3 * psd, t.net - 3 * se), hi = Math.max(t.pre + 3 * psd, t.net + 3 * se);
+    const x = (v) => padL + (v - lo) / (hi - lo) * (W - padL - padR);
+    const dens = (v, m, s) => Math.exp(-0.5 * ((v - m) / s) ** 2) / s;
+    const peak = 1 / Math.min(psd, se);
+    const y = (d) => H - padB - d / peak * (H - padB - top);
+    const curve = (m, s) => {
+      let d = "M" + x(lo).toFixed(1) + " " + y(0).toFixed(1);
+      for (let i = 0; i <= 120; i++) { const v = lo + (hi - lo) * i / 120; d += " L" + x(v).toFixed(1) + " " + y(dens(v, m, s)).toFixed(1); }
+      return d + " L" + x(hi).toFixed(1) + " " + y(0).toFixed(1) + " Z";
+    };
+    const step = (hi - lo) > 40 ? 10 : 5, ticks = [];
+    for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) ticks.push(v);
+    const share = Math.min(1, (se * se) / (psd * psd));
+    const gp = t.w + t.l;
+    return '<section class="belief"><h2>From opinion to evidence</h2>' +
+      '<p class="lede">Before the season, the model\'s belief about ' + esc(t.short || t.name) + " was a net rating of <b>" + sgn(t.pre) + " ± " + psd.toFixed(1) +
+      "</b>, built from last season and this year\'s roster. After " + gp + " game" + (gp === 1 ? "" : "s") + " it is <b>" + sgn(t.net) + " ± " + se.toFixed(1) +
+      "</b>. The preseason opinion now carries about <b>" + Math.round(share * 100) + "%</b> of the weight; the games carry the rest.</p>" +
+      '<div class="chart-box"><svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Preseason belief ' + sgn(t.pre) + ", current belief " + sgn(t.net) + '">' +
+      ticks.map((v) => '<line class="grid" x1="' + x(v) + '" x2="' + x(v) + '" y1="' + top + '" y2="' + (H - padB) + '"/>' +
+        '<text class="tick" x="' + x(v) + '" y="' + (H - padB + 16) + '">' + (v > 0 ? "+" : "") + v + "</text>").join("") +
+      '<line class="axis" x1="' + padL + '" x2="' + (W - padR) + '" y1="' + (H - padB) + '" y2="' + (H - padB) + '"/>' +
+      '<path class="prior" d="' + curve(t.pre, psd) + '"/><path class="post" d="' + curve(t.net, se) + '"/>' +
+      '<line class="mark-prior" x1="' + x(t.pre) + '" x2="' + x(t.pre) + '" y1="' + y(dens(t.pre, t.pre, psd)) + '" y2="' + (H - padB) + '"/>' +
+      '<line class="mark-post" x1="' + x(t.net) + '" x2="' + x(t.net) + '" y1="' + y(dens(t.net, t.net, se)) + '" y2="' + (H - padB) + '"/>' +
+      "</svg></div>" +
+      '<p class="legend"><span class="key prior"></span>Preseason belief <span class="key post"></span>Current belief, after this season\'s games <span class="axis-note">Net points per 100 possessions vs. an average team</span></p></section>';
+  }
+
   function team(main, id) {
     const t = teamById[id];
     if (!t) { main.innerHTML = '<p class="lede">That team isn’t in the current ratings. <a href="#rankings">Back to rankings</a></p>'; return; }
@@ -241,6 +275,7 @@
       '<dl class="kv"><div><dt>Rank</dt><dd>' + t.rank + "</dd></div><div><dt>Net</dt><dd class='" + cls(t.net) + "'>" + sgn(t.net) + "</dd></div>" +
       "<div><dt>Offense</dt><dd>" + f1(t.o) + '<span class="rk">' + t.o_rank + "</span></dd></div><div><dt>Defense</dt><dd>" + f1(t.d) + '<span class="rk">' + t.d_rank + "</span></dd></div>" +
       "<div><dt>Tempo</dt><dd>" + f1(t.tempo) + "</dd></div></dl>" +
+      beliefChart(t) +
       (up.length ? "<h2>Next up</h2><div class='grid'>" + up.map(gameCard).join("") + "</div>" : "") +
       "<h2>Players</h2><div><div id='t-p'></div><div id='t-pn'></div></div><h2>Lineups</h2><div id='t-l'></div>";
     table($("#t-p"), playerCols(false), roster, "poss");
