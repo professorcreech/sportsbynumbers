@@ -113,6 +113,13 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
                        "home_name": names.get(g["home_id"], g.get("home_name")), "away_name": names.get(g["away_id"], g.get("away_name")),
                        "home_score": round(pr["home_score"], 1), "away_score": round(pr["away_score"], 1),
                        "home_win": round(pr["home_win"], 3), "poss": round(pr["poss"], 1)})
+    up.sort(key=lambda g: str(g["start"]))
+    # The Games tab opens on the next three days; the full schedule is a separate, compact file
+    # that loads only when someone searches for a team.
+    cutoff = (datetime.now(timezone.utc) + pd.Timedelta(days=3)).strftime("%Y-%m-%dT%H:%M")
+    full = [[g["id"], g["start"], int(g["neutral"]), g["home"], g["away"], g["home_name"], g["away_name"],
+             g["home_score"], g["away_score"], g["home_win"], g["poss"]] for g in up]
+    up = [g for g in up if str(g["start"]) < cutoff]
 
     team_out = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": r.conf, "color": r.color,
                  "rank": int(r.rank), "net": round(r.net, 2), "net_se": round(r.net_se, 2), "o": round(r.adj_o, 1),
@@ -135,7 +142,10 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             # Everything the browser needs to predict any matchup on its own
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
-    for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up)):
+    schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
+                               "home_score", "away_score", "home_win", "poss"], "games": full}
+    for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
+                      ("schedule", schedule_out)):
         (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     return {"model": model, "players": p, "teams": t}
 

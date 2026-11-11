@@ -191,16 +191,48 @@
       '<div class="probtxt"><span>' + pct(1 - g.home_win) + "</span><span>" + Math.round(g.poss) + " poss</span><span>" + pct(g.home_win) + "</span></div></article>";
   }
 
+  let SCHEDULE = null;  // full remaining schedule, loaded on first search
+  function loadSchedule() {
+    if (!SCHEDULE) {
+      SCHEDULE = fetch("data/schedule.json").then((r) => (r.ok ? r.json() : null)).then((d) =>
+        d ? d.games.map((row) => Object.fromEntries(d.fields.map((f, i) => [f, row[i]]))) : null).catch(() => null);
+    }
+    return SCHEDULE;
+  }
+
   function games(main) {
-    main.innerHTML = '<div><h1>Upcoming Games</h1><p class="lede">Projected scores and win chances for the next three days, from the current team ratings.</p></div>' +
+    main.innerHTML = '<div><h1>Upcoming Games</h1><p class="lede" id="g-lede">Projected scores and win chances for the next three days, from the current team ratings. Search for a team to see its whole remaining schedule.</p></div>' +
       '<div class="controls"><div class="field"><label for="g-q">Team</label><input type="search" id="g-q" placeholder="Search by team" autocomplete="off"></div></div>' +
       '<div id="g-l"></div>';
     const label = (id, fallback) => { const t = teamById[id]; return t ? [t.short, t.name, t.abbr].join(" ") : fallback || ""; };
-    const draw = () => {
-      const q = $("#g-q").value.trim().toLowerCase();
-      const rows = D.games.filter((g) => !q || (label(g.home, g.home_name) + " " + label(g.away, g.away_name)).toLowerCase().includes(q));
-      $("#g-l").innerHTML = rows.length ? '<div class="grid">' + rows.map(gameCard).join("") + "</div>" :
-        '<p class="lede">' + (q ? "No games in the next three days match “" + esc(q) + "”." : "No Division I games are scheduled in the next three days.") + "</p>";
+    let seq = 0;
+    const draw = async () => {
+      const q = $("#g-q").value.trim().toLowerCase(), mine = ++seq;
+      if (!q) {
+        $("#g-lede").textContent = "Projected scores and win chances for the next three days, from the current team ratings. Search for a team to see its whole remaining schedule.";
+        $("#g-l").innerHTML = D.games.length ? '<div class="grid">' + D.games.map(gameCard).join("") + "</div>" : '<p class="lede">No Division I games are scheduled in the next three days.</p>';
+        return;
+      }
+      const all = (await loadSchedule()) || D.games;
+      if (mine !== seq) return;  // a newer keystroke already redrew
+      // Exact school name first ("duke" means Duke, not the Duquesne Dukes), then names that
+      // start with the search, then any partial match (mascots, full names)
+      const low = (x) => String(x || "").toLowerCase();
+      const tiers = [
+        D.teams.filter((t) => [t.short, t.abbr].some((v) => low(v) === q)),
+        D.teams.filter((t) => [t.short, t.name].some((v) => low(v).startsWith(q))),
+        D.teams.filter((t) => low(label(t.id)).includes(q)),
+      ];
+      const hit = tiers.find((tier) => tier.length) || [];
+      const ids = new Set(hit.map((t) => t.id));
+      const rows = all.filter((g) => ids.has(g.home) || ids.has(g.away) ||
+        (!hit.length && (low(g.home_name) + " " + low(g.away_name)).includes(q)));
+      const matched = hit.map((t) => t.short);
+      $("#g-lede").textContent = "Every remaining scheduled game" + (matched.length && matched.length <= 3 ? " for " + matched.join(", ") : "") +
+        ". Games further out use today's ratings, so their projections will change as the season goes on. Conference and NCAA tournament games appear once they're scheduled.";
+      $("#g-l").innerHTML = rows.length
+        ? '<p class="note">' + rows.length + " game" + (rows.length === 1 ? "" : "s") + "</p>" + '<div class="grid">' + rows.map(gameCard).join("") + "</div>"
+        : '<p class="lede">No scheduled games match “' + esc(q) + "”.</p>";
     };
     $("#g-q").addEventListener("input", draw);
     draw();
