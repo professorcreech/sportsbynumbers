@@ -14,6 +14,10 @@ on:
         description: "Re-download every day of a season, e.g. 2027 (picks up newly saved details). Leave blank normally."
         required: false
         default: ""
+      coaches:
+        description: "Download college head coaches by season, e.g. '2012 2026'. Leave blank normally."
+        required: false
+        default: ""
       probe:
         description: "Save the structure of sample ESPN responses (for building new sports). Leave blank normally."
         required: false
@@ -75,6 +79,11 @@ jobs:
           else
             echo "Basketball is out of season; keeping last ratings."
           fi
+
+      - name: Download coaches
+        if: ${{ github.event.inputs.coaches != '' }}
+        continue-on-error: true
+        run: python -m tools.coaches ${{ github.event.inputs.coaches }}
 
       - name: Probe sample responses
         if: ${{ github.event.inputs.probe != '' }}
