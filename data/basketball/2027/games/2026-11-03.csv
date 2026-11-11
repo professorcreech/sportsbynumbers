@@ -7,6 +7,7 @@ game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
 401926180,2026-11-03,False,False,True,2430,2397,96,43
 401925779,2026-11-03,False,False,True,2184,2870,78,71
 401921819,2026-11-03,False,False,True,2579,56,81,55
+401921153,2026-11-03,False,False,True,2448,2684,92,53
 401920376,2026-11-03,False,False,True,259,2154,88,54
 401920304,2026-11-03,False,False,True,59,2261,75,55
 401920061,2026-11-03,False,False,True,227,107,103,59

@@ -1,441 +1,443 @@
 city,state,lat,lon
-Queens,NY,,
-Starkville,MS,33.463261,-88.827796                                                                                                                
-Tucson,AZ,32.153036,-110.870773                                                                                                               
-College Station,TX,30.58516,-96.29636                                                                                                           
-Lexington,KY,38.040678,-84.458272                                                                                            
-Columbus,OH,39.983938,-82.984882                                                                                                            
-Storrs,CT,41.808938,-72.251617                                                                                                                    
-Nashville,TN,36.1718,-86.785002                                                                     
-Gainesville,FL,29.679537,-82.346793                                                                                                           
-Louisville,KY,38.224728,-85.740614                                                                                                           
-Pittsburgh,PA,40.439936,-79.975676                                                                                                             
-Waco,TX,31.557994,-97.18975                                                                                                                 
-Cincinnati,OH,39.140183,-84.505829                                                                                                            
-Los Angeles,CA,34.019394,-118.410825                                                                                                       
-Ann Arbor,MI,42.276147,-83.73086                                                                                                                 
-Tuscaloosa,AL,33.234404,-87.5283                                                                                                             
-Milwaukee,WI,43.063348,-87.966695                                                                                                             
-Spokane,WA,47.666935,-117.433322                                                                                                               
-Berkeley,CA,37.865673,-122.298725                                                                                                             
-Columbia,MO,38.94729,-92.326387                                                                                                                 
-Albuquerque,NM,35.10478,-106.646809                                                                                                          
-Uncasville,CT,,
-Tempe,AZ,33.388414,-111.931782                                                                                                                  
-Terre Haute,IN,39.464152,-87.376036                                                                                                             
-Boston,MA,42.338551,-71.018253                                                                                                              
-Clinton,SC,34.473887,-81.860899                                                                                                                 
-Orem,UT,40.298065,-111.699445                                                                                                                           
-Knoxville,TN,35.97068,-83.94927                                                                                                              
-Columbia,SC,34.040519,-80.906099                                                                                                             
-Moon Township,PA,,
-Radford,VA,37.120119,-80.559147                                                                                                                  
-West Lafayette,IN,40.443707,-86.923616                                                                                                           
-Coral Gables,FL,25.683061,-80.261659                                                                                                         
-Farmville,VA,37.296115,-78.400447                                                                                                                
-Lynchburg,VA,37.399016,-79.195458                                                                                                             
-Philadelphia,PA,40.009376,-75.133346                                                                                                        
-Hempstead,NY,40.704374,-73.619445                                                                                                               
-Ypsilanti,MI,42.244354,-83.62116                                                                                                                 
-Detroit,MI,42.383037,-83.102237                                                                                                             
-Buffalo,NY,42.892492,-78.859686                                                                                                             
-Boone,NC,36.213842,-81.665197                                                                                                                      
-Conway,SC,33.84193,-79.045651                                                                                                                  
-Villanova,PA,40.040534,-75.341007                                                                                                                          
-Bowling Green,OH,41.377677,-83.649584                                                                                                           
-Saint Bonaventure,NY,42.079422,-78.474193                                                                                                            
-Durham,NH,43.142752,-70.925002                                                                                                                     
-Winston-Salem,NC,36.102863,-80.260829                                                                                                        
-Raleigh,NC,35.831868,-78.641042                                                                                                              
-Minneapolis,MN,44.963324,-93.26832                                                                                                               
-San Diego,CA,32.814977,-117.135562                                                                                                        
-Cambridge,MA,42.376043,-71.11868                                                                                                                
-Indianapolis,IN,39.776664,-86.145935                                                                                              
-Bloomington,IN,39.1637,-86.524264                                                                                                                
-Tallahassee,FL,30.453529,-84.252272                                                                                                          
-Washington,DC,38.904247,-77.016517                                                                                                           
-DeLand,FL,29.022663,-81.286498                                                                                                                  
-Richmond,VA,37.531399,-77.476009                                                                                                              
-Charlotte,NC,35.209045,-80.83099                                                                                                             
-Baltimore,MD,39.300032,-76.610476                                                                                                           
-Fairfax,VA,38.853183,-77.299025                                                                                                                   
-Buies Creek,NC,35.40785,-78.743178                                                                                                                 
-Statesboro,GA,32.437726,-81.775637                                                                                                              
-Huntington,WV,38.410651,-82.434689                                                                                                             
-Greenville,SC,34.836902,-82.362997                                                                                                              
-Piscataway,NJ,,
-Oxford,MS,34.351262,-89.536981                                                                                                                  
-Ashwaubenon,WI,44.479409,-88.08748                                                                                                          
-Fort Worth,TX,32.781954,-97.348573                                                                                                           
-Nacogdoches,TX,31.612364,-94.652046                                                                                                             
-Dallas,TX,32.793333,-96.766513                                                                                                            
-Natchitoches,LA,31.734775,-93.100942                                                                                                           
-Murfreesboro,TN,35.853915,-86.421224                                                                                                           
-Manhattan,KS,39.188307,-96.605864                                                                                                               
-Lawrence,KS,38.960029,-95.26293                                                                                                                
-Iowa City,IA,41.655661,-91.530859                                                                                                              
-Davidson,NC,35.480656,-80.820914                                                                                                                 
-Clemson,SC,34.683564,-82.810575                                                                                                                  
-Tulsa,OK,36.127949,-95.902316                                                                                                               
-Norman,OK,35.240569,-97.345299                                                                                                             
-Stillwater,OK,36.131496,-97.074464                                                                                                              
-Lincoln,NE,40.808943,-96.677895                                                                                                                
-Bowling Green,KY,36.975653,-86.435962                                                                                                           
-Athens,GA,33.949597,-83.370088                                                                         
-Duluth,GA,34.001517,-84.150464                                                                                                                  
-Fayetteville,AR,36.071455,-94.166564                                                                                                          
-Auburn,AL,32.607806,-85.494746                                                                                                                
-Omaha,NE,41.262705,-96.053475                                                                                                                 
-Baton Rouge,LA,30.440443,-91.133166                                                                                                           
-Beaumont,TX,30.084912,-94.14533                                                                                                               
-San Marcos,TX,29.872399,-97.936022                                                                                                             
-St. Louis,MO,38.635699,-90.244582                                                                                                             
-Murray,KY,36.614202,-88.322075                                                                                                                   
-New Orleans,LA,30.05342,-89.934502                                                                                                         
-San Francisco,CA,37.727239,-123.032229                                                                                                      
-Champaign,IL,40.114099,-88.274619                                                                                                               
-Chicago,IL,41.837045,-87.684939                                                                                                             
-Morgantown,WV,39.637487,-79.946856                                                                                                             
-Durham,NC,35.978061,-78.899497                                                                                                               
-Amherst,MA,42.363534,-72.507291                                                                                                            
-Jacksonville,AL,33.810066,-85.755217                                                                                                             
-Fort Collins,CO,40.548216,-105.064833                                                                                                         
-El Paso,TX,31.84778,-106.431106                                                                                                              
-Logan,UT,41.740256,-111.841764                                                                                                                 
-Lubbock,TX,33.561901,-101.888883                                                                                                             
-Orangeburg,SC,33.493596,-80.86688                                                                                                                 
-Denver,CO,39.76185,-104.881105                                                                                                               
-Colorado Springs,CO,38.867255,-104.760749                                                                                                      
-Boise,ID,43.600229,-116.231656                                                                                                            
-Ogden,UT,41.228391,-111.968147                                                                                                                    
-Moraga,CA,37.845693,-122.123217                                                                                                                   
-Santa Barbara,CA,34.403592,-119.713714                                                                                                        
-Reno,NV,39.549097,-119.849907                                                                                                                
-Las Vegas,NV,36.233499,-115.264037                                                                                                            
-Fresno,CA,36.782684,-119.793359                                                                                                              
-Boulder,CO,40.024431,-105.251251                                                                                                               
-Riverside,CA,33.938143,-117.393168                                                                                                             
-Stanford,CA,37.426933,-122.167741                                                                                                                   
-Fullerton,CA,33.885716,-117.928025                                                                                                                
-Santa Clara,CA,37.364621,-121.967973                                                                                                                    
-Syracuse,NY,43.040998,-76.143554                                                                                                               
-Madison,WI,43.087815,-89.429856                                                                                                             
-Hattiesburg,MS,31.307305,-89.317434                                                                                                           
-Brookings,SD,44.303364,-96.787339                                                                                                               
-Providence,RI,41.823056,-71.418784                                                                                                             
-Riverdale,NY,,
-Dayton,OH,39.784743,-84.199632                                                                                                                
-Blacksburg,VA,37.231264,-80.426745                                                                                                               
-South Bend,IN,41.676643,-86.268809                                                                                                            
-Ames,IA,42.026327,-93.621264                                                                                                                    
-Seattle,WA,47.619335,-122.351538                                                                                                              
-Macon,GA,32.808845,-83.694194                                                                                                        
-Evansville,IN,37.987737,-87.534705                                                                                                            
-Rock Hill,SC,34.938216,-81.019177                                                                                                              
-Dover,DE,39.160602,-75.521659                                                                                                                   
-University Park,PA,,
-Corvallis,OR,44.569949,-123.278285                                                                                                              
-Orlando,FL,28.40865,-81.254805                                                                                                              
-Princeton,NJ,40.358244,-74.666728                                                                                                                   
-San Luis Obispo,CA,35.266195,-120.668438                                                                                                        
-Long Beach,CA,33.780791,-118.16818                                                                                                          
-Newark,NJ,40.72422,-74.172574                                                                                                                  
-High Point,NC,35.990803,-79.992713                                                                                                            
-Hampton,VA,37.047961,-76.297293                                                                                                            
-Mount Pleasant,MI,43.59671,-84.775972                                                                                                            
-Akron,OH,41.080456,-81.521429                                                                                                                  
-Norfolk,VA,36.923015,-76.244641                                                                                                            
-Tampa,FL,27.966262,-82.477618                                                                                                              
-Homewood,AL,33.45855,-86.80965                                                                                                                   
-Lorman,MS,,
-Houston,TX,29.785743,-95.388806                                                                                                            
-Des Moines,IA,41.57259,-93.610243                                                                                                             
-Carbondale,IL,37.722062,-89.223664                                                                                                             
-Greeley,CO,40.414034,-104.771043                                                                                                               
-Laramie,WY,41.305955,-105.608637                                                                                                                 
-Malibu,CA,34.02586,-118.759643                                                                                                              
-Asheville,NC,35.570972,-82.552725                                                                                                              
-Charlottesville,VA,38.037658,-78.485381                                                                                                          
-Athens,OH,39.326286,-82.100187                                                                                                                   
-Little Rock,AR,34.725393,-92.358556                                                                                                          
-Wichita,KS,37.690638,-97.345836                                                                                                              
-Annapolis,MD,38.972152,-76.505332                                                                                                               
-Ruston,LA,32.532986,-92.635327                                                                                                                  
-Harrisonburg,VA,38.436255,-78.873303                                                                                                            
-Spartanburg,SC,34.945627,-81.925944                                                                                                             
-Prairie View,TX,30.082855,-95.977134                                                                                                               
-Peoria,IL,40.751641,-89.617198                                                                                                                
-Evanston,IL,42.046391,-87.694352                                                                                                                  
-Austin,TX,30.298622,-97.754134                                                                                                              
-Stockton,CA,37.977243,-121.308865                                                                                                             
-College Park,MD,38.996276,-76.935594                                                                                                              
-Williamsburg,VA,37.269481,-76.708193                                                                                                             
-Loretto,PA,40.508398,-78.635148                                                                                                                        
-Jacksonville,FL,30.336864,-81.661603                                                                                                    
-Princess Anne,MD,38.205137,-75.696384                                                                                                               
-Niagara Falls,NY,43.092841,-79.014743                                                                                                          
-Orono,ME,44.878261,-68.688144                                                                                                                     
-Ithaca,NY,42.443937,-76.503055                                                                                                                  
-New York,NY,40.662712,-73.938677                                                                                                         
-Chestnut Hill,MA,,
-Fort Myers,FL,26.620074,-81.829547                                                                                                           
-Bridgeport,CT,41.187393,-73.195757                                                                                                             
-Cape Girardeau,MO,37.309389,-89.558359                                                                                                          
-Dekalb,IL,41.928873,-88.746359                                                                                                                   
-Monroe,LA,32.518986,-92.07718                                                                                                                  
-Normal,AL,,
-Corpus Christi,TX,27.754252,-97.173385                                                                                                   
-Arlington,TX,32.700708,-97.124691                                                                                                             
-Valparaiso,IN,41.479812,-87.052273                                                                                                              
-Salt Lake City,UT,40.776928,-111.930991                                                                                                      
-Missoula,MT,46.874359,-114.026136                                                                                                                
-Moscow,ID,46.730609,-116.998909                                                                                                                    
-San Jose,CA,37.296011,-121.814552                                                                                                            
-Honolulu,HI,,
-Lawrenceville,NJ,40.302621,-74.73852                                                                                                                 
-Memphis,TN,35.109026,-89.967455                                                                                                             
-Cullowhee,NC,35.309726,-83.181548                                                                                                                          
-Lexington,VA,37.782332,-79.44432                                                                                                                   
-Jersey City,NJ,40.711417,-74.06476                                                                                                            
-Fairfield,CT,,
-Hamden,CT,,
-Elon,NC,36.102266,-79.508787                                                                                                                      
-Johnson City,TN,36.342325,-82.380915                                                                                                            
-Cleveland,OH,41.478462,-81.679435                                                                                                            
-Oxford,OH,39.505558,-84.744335                                                                                                                     
-Hackensack,NJ,40.889398,-74.045698                                                                                                               
-Worcester,MA,42.269478,-71.807783                                                                                                               
-Youngstown,OH,41.099095,-80.645902                                                                                                             
-Charleston,SC,32.828017,-79.972896                                                                                                         
-Cookeville,TN,36.146926,-85.512653                                                                                                               
-Hammond,LA,30.50565,-90.456493                                                                                                                    
-Lake Charles,LA,30.19902,-93.210835                                                                                                           
-Jonesboro,AR,35.819755,-90.679033                                                                                                              
-Provo,UT,40.245312,-111.645057                                                                                                                  
-Cheney,WA,47.49113,-117.581546                                                                                                                     
-Davis,CA,38.556147,-121.737793                                                                                                                    
-Portland,OR,45.536951,-122.649971                                                                                                          
-Savannah,GA,32.018043,-81.196492                                                                                                             
-Boiling Springs,NC,35.252053,-81.663595                                                                                                                  
-West Point,NY,41.360729,-74.019749                                                                                                              
-Easton,PA,40.685971,-75.218548                                                                                                                  
-Hanover,NH,43.71159,-72.273144                                                                                                                    
-West Hartford,CT,41.766568,-72.754944                                                                                                           
-Staten Island,NY,,
-Fargo,ND,46.8647,-96.82908                                                                                                                       
-Charleston,IL,39.48375,-88.177916                                                                                                                
-Conway,AR,35.074404,-92.467004                                                                                                                  
-Birmingham,AL,33.527174,-86.797036                                                                                                            
-Mobile,AL,30.668426,-88.100226                                                                                                            
-Hartford,CT,41.765933,-72.681579                                                                                                               
+Queens,NY,40.654658,-73.841209
+Starkville,MS,33.463261,-88.827796
+Tucson,AZ,32.153036,-110.870773
+College Station,TX,30.58516,-96.29636
+Lexington,KY,38.040678,-84.458272
+Columbus,OH,39.983938,-82.984882
+Storrs,CT,41.808938,-72.251617
+Nashville,TN,36.1718,-86.785002
+Gainesville,FL,29.679537,-82.346793
+Louisville,KY,38.224728,-85.740614
+Pittsburgh,PA,40.439936,-79.975676
+Waco,TX,31.557994,-97.18975
+Cincinnati,OH,39.140183,-84.505829
+Los Angeles,CA,34.019394,-118.410825
+Ann Arbor,MI,42.276147,-83.73086
+Tuscaloosa,AL,33.234404,-87.5283
+Milwaukee,WI,43.063348,-87.966695
+Spokane,WA,47.666935,-117.433322
+Berkeley,CA,37.865673,-122.298725
+Columbia,MO,38.94729,-92.326387
+Albuquerque,NM,35.10478,-106.646809
+Uncasville,CT,41.4343,-72.1098
+Tempe,AZ,33.388414,-111.931782
+Terre Haute,IN,39.464152,-87.376036
+Boston,MA,42.338551,-71.018253
+Clinton,SC,34.473887,-81.860899
+Orem,UT,40.298065,-111.699445
+Knoxville,TN,35.97068,-83.94927
+Columbia,SC,34.040519,-80.906099
+Moon Township,PA,40.509911,-80.207847
+Radford,VA,37.120119,-80.559147
+West Lafayette,IN,40.443707,-86.923616
+Coral Gables,FL,25.683061,-80.261659
+Farmville,VA,37.296115,-78.400447
+Lynchburg,VA,37.399016,-79.195458
+Philadelphia,PA,40.009376,-75.133346
+Hempstead,NY,40.704374,-73.619445
+Ypsilanti,MI,42.244354,-83.62116
+Detroit,MI,42.383037,-83.102237
+Buffalo,NY,42.892492,-78.859686
+Boone,NC,36.213842,-81.665197
+Conway,SC,33.84193,-79.045651
+Villanova,PA,40.040534,-75.341007
+Bowling Green,OH,41.377677,-83.649584
+Saint Bonaventure,NY,42.079422,-78.474193
+Durham,NH,43.142752,-70.925002
+Winston-Salem,NC,36.102863,-80.260829
+Raleigh,NC,35.831868,-78.641042
+Minneapolis,MN,44.963324,-93.26832
+San Diego,CA,32.814977,-117.135562
+Cambridge,MA,42.376043,-71.11868
+Indianapolis,IN,39.776664,-86.145935
+Bloomington,IN,39.1637,-86.524264
+Tallahassee,FL,30.453529,-84.252272
+Washington,DC,38.904247,-77.016517
+DeLand,FL,29.022663,-81.286498
+Richmond,VA,37.531399,-77.476009
+Charlotte,NC,35.209045,-80.83099
+Baltimore,MD,39.300032,-76.610476
+Fairfax,VA,38.853183,-77.299025
+Buies Creek,NC,35.40785,-78.743178
+Statesboro,GA,32.437726,-81.775637
+Huntington,WV,38.410651,-82.434689
+Greenville,SC,34.836902,-82.362997
+Piscataway,NJ,40.545539,-74.46072
+Oxford,MS,34.351262,-89.536981
+Ashwaubenon,WI,44.479409,-88.08748
+Fort Worth,TX,32.781954,-97.348573
+Nacogdoches,TX,31.612364,-94.652046
+Dallas,TX,32.793333,-96.766513
+Natchitoches,LA,31.734775,-93.100942
+Murfreesboro,TN,35.853915,-86.421224
+Manhattan,KS,39.188307,-96.605864
+Lawrence,KS,38.960029,-95.26293
+Iowa City,IA,41.655661,-91.530859
+Davidson,NC,35.480656,-80.820914
+Clemson,SC,34.683564,-82.810575
+Tulsa,OK,36.127949,-95.902316
+Norman,OK,35.240569,-97.345299
+Stillwater,OK,36.131496,-97.074464
+Lincoln,NE,40.808943,-96.677895
+Bowling Green,KY,36.975653,-86.435962
+Athens,GA,33.949597,-83.370088
+Duluth,GA,34.001517,-84.150464
+Fayetteville,AR,36.071455,-94.166564
+Auburn,AL,32.607806,-85.494746
+Omaha,NE,41.262705,-96.053475
+Baton Rouge,LA,30.440443,-91.133166
+Beaumont,TX,30.084912,-94.14533
+San Marcos,TX,29.872399,-97.936022
+St. Louis,MO,38.635699,-90.244582
+Murray,KY,36.614202,-88.322075
+New Orleans,LA,30.05342,-89.934502
+San Francisco,CA,37.727239,-123.032229
+Champaign,IL,40.114099,-88.274619
+Chicago,IL,41.837045,-87.684939
+Morgantown,WV,39.637487,-79.946856
+Durham,NC,35.978061,-78.899497
+Amherst,MA,42.363534,-72.507291
+Jacksonville,AL,33.810066,-85.755217
+Fort Collins,CO,40.548216,-105.064833
+El Paso,TX,31.84778,-106.431106
+Logan,UT,41.740256,-111.841764
+Lubbock,TX,33.561901,-101.888883
+Orangeburg,SC,33.493596,-80.86688
+Denver,CO,39.76185,-104.881105
+Colorado Springs,CO,38.867255,-104.760749
+Boise,ID,43.600229,-116.231656
+Ogden,UT,41.228391,-111.968147
+Moraga,CA,37.845693,-122.123217
+Santa Barbara,CA,34.403592,-119.713714
+Reno,NV,39.549097,-119.849907
+Las Vegas,NV,36.233499,-115.264037
+Fresno,CA,36.782684,-119.793359
+Boulder,CO,40.024431,-105.251251
+Riverside,CA,33.938143,-117.393168
+Stanford,CA,37.426933,-122.167741
+Fullerton,CA,33.885716,-117.928025
+Santa Clara,CA,37.364621,-121.967973
+Syracuse,NY,43.040998,-76.143554
+Madison,WI,43.087815,-89.429856
+Hattiesburg,MS,31.307305,-89.317434
+Brookings,SD,44.303364,-96.787339
+Providence,RI,41.823056,-71.418784
+Riverdale,NY,40.9005,-73.9064
+Dayton,OH,39.784743,-84.199632
+Blacksburg,VA,37.231264,-80.426745
+South Bend,IN,41.676643,-86.268809
+Ames,IA,42.026327,-93.621264
+Seattle,WA,47.619335,-122.351538
+Macon,GA,32.808845,-83.694194
+Evansville,IN,37.987737,-87.534705
+Rock Hill,SC,34.938216,-81.019177
+Dover,DE,39.160602,-75.521659
+University Park,PA,40.7982,-77.8599
+Corvallis,OR,44.569949,-123.278285
+Orlando,FL,28.40865,-81.254805
+Princeton,NJ,40.358244,-74.666728
+San Luis Obispo,CA,35.266195,-120.668438
+Long Beach,CA,33.780791,-118.16818
+Newark,NJ,40.72422,-74.172574
+High Point,NC,35.990803,-79.992713
+Hampton,VA,37.047961,-76.297293
+Mount Pleasant,MI,43.59671,-84.775972
+Akron,OH,41.080456,-81.521429
+Norfolk,VA,36.923015,-76.244641
+Tampa,FL,27.966262,-82.477618
+Homewood,AL,33.45855,-86.80965
+Lorman,MS,31.8202,-91.0587
+Houston,TX,29.785743,-95.388806
+Des Moines,IA,41.57259,-93.610243
+Carbondale,IL,37.722062,-89.223664
+Greeley,CO,40.414034,-104.771043
+Laramie,WY,41.305955,-105.608637
+Malibu,CA,34.02586,-118.759643
+Asheville,NC,35.570972,-82.552725
+Charlottesville,VA,38.037658,-78.485381
+Athens,OH,39.326286,-82.100187
+Little Rock,AR,34.725393,-92.358556
+Wichita,KS,37.690638,-97.345836
+Annapolis,MD,38.972152,-76.505332
+Ruston,LA,32.532986,-92.635327
+Harrisonburg,VA,38.436255,-78.873303
+Spartanburg,SC,34.945627,-81.925944
+Prairie View,TX,30.082855,-95.977134
+Peoria,IL,40.751641,-89.617198
+Evanston,IL,42.046391,-87.694352
+Austin,TX,30.298622,-97.754134
+Stockton,CA,37.977243,-121.308865
+College Park,MD,38.996276,-76.935594
+Williamsburg,VA,37.269481,-76.708193
+Loretto,PA,40.508398,-78.635148
+Jacksonville,FL,30.336864,-81.661603
+Princess Anne,MD,38.205137,-75.696384
+Niagara Falls,NY,43.092841,-79.014743
+Orono,ME,44.878261,-68.688144
+Ithaca,NY,42.443937,-76.503055
+New York,NY,40.662712,-73.938677
+Chestnut Hill,MA,42.3357,-71.1684
+Fort Myers,FL,26.620074,-81.829547
+Bridgeport,CT,41.187393,-73.195757
+Cape Girardeau,MO,37.309389,-89.558359
+Dekalb,IL,41.928873,-88.746359
+Monroe,LA,32.518986,-92.07718
+Normal,AL,34.7834,-86.5719
+Corpus Christi,TX,27.754252,-97.173385
+Arlington,TX,32.700708,-97.124691
+Valparaiso,IN,41.479812,-87.052273
+Salt Lake City,UT,40.776928,-111.930991
+Missoula,MT,46.874359,-114.026136
+Moscow,ID,46.730609,-116.998909
+San Jose,CA,37.296011,-121.814552
+Honolulu,HI,21.3069,-157.8583
+Lawrenceville,NJ,40.302621,-74.73852
+Memphis,TN,35.109026,-89.967455
+Cullowhee,NC,35.309726,-83.181548
+Lexington,VA,37.782332,-79.44432
+Jersey City,NJ,40.711417,-74.06476
+Fairfield,CT,41.17594,-73.272046
+Hamden,CT,41.397329,-72.922226
+Elon,NC,36.102266,-79.508787
+Johnson City,TN,36.342325,-82.380915
+Cleveland,OH,41.478462,-81.679435
+Oxford,OH,39.505558,-84.744335
+Hackensack,NJ,40.889398,-74.045698
+Worcester,MA,42.269478,-71.807783
+Youngstown,OH,41.099095,-80.645902
+Charleston,SC,32.828017,-79.972896
+Cookeville,TN,36.146926,-85.512653
+Hammond,LA,30.50565,-90.456493
+Lake Charles,LA,30.19902,-93.210835
+Jonesboro,AR,35.819755,-90.679033
+Provo,UT,40.245312,-111.645057
+Cheney,WA,47.49113,-117.581546
+Davis,CA,38.556147,-121.737793
+Portland,OR,45.536951,-122.649971
+Savannah,GA,32.018043,-81.196492
+Boiling Springs,NC,35.252053,-81.663595
+West Point,NY,41.360729,-74.019749
+Easton,PA,40.685971,-75.218548
+Hanover,NH,43.71159,-72.273144
+West Hartford,CT,41.766568,-72.754944
+Staten Island,NY,40.561263,-74.1399
+Fargo,ND,46.8647,-96.82908
+Charleston,IL,39.48375,-88.177916
+Conway,AR,35.074404,-92.467004
+Birmingham,AL,33.527174,-86.797036
+Mobile,AL,30.668426,-88.100226
+Hartford,CT,41.765933,-72.681579
 San Juan,Puerto Rico,,
-Greensboro,NC,36.09485,-79.823624                                                                                                           
-Morehead,KY,38.190026,-83.449072                                                                                                                 
-Daytona Beach,FL,29.19071,-81.097083                                                                                                          
-Montgomery,AL,32.348503,-86.267307                                                                                                           
-Normal,IL,40.51973,-88.990745                                                                                                                   
-Cedar City,UT,37.683767,-113.095484                                                                                                                     
-Eugene,OR,44.056848,-123.119019                                                                                                                
-Pullman,WA,46.733126,-117.168277                                                                                                                        
+Greensboro,NC,36.09485,-79.823624
+Morehead,KY,38.190026,-83.449072
+Daytona Beach,FL,29.19071,-81.097083
+Montgomery,AL,32.348503,-86.267307
+Normal,IL,40.51973,-88.990745
+Cedar City,UT,37.683767,-113.095484
+Eugene,OR,44.056848,-123.119019
+Pullman,WA,46.733126,-117.168277
 Saint Thomas,Virgin Islands,,
-Edinburg,TX,26.321056,-98.162837                                                                                                               
-Lafayette,LA,30.2056,-92.028058                                                                                                                
-East Lansing,MI,42.748913,-84.482442                                                                                                            
-Atlanta,GA,33.762909,-84.422675                                                                                                               
-Chattanooga,TN,35.065958,-85.248386                                                                                                         
-Pocatello,ID,42.872748,-112.463836                                                                                                               
-East Rutherford,NJ,40.817097,-74.085024                                                                                                        
+Edinburg,TX,26.321056,-98.162837
+Lafayette,LA,30.2056,-92.028058
+East Lansing,MI,42.748913,-84.482442
+Atlanta,GA,33.762909,-84.422675
+Chattanooga,TN,35.065958,-85.248386
+Pocatello,ID,42.872748,-112.463836
+East Rutherford,NJ,40.817097,-74.085024
 Vancouver,BC,,
-New Britain,CT,41.676555,-72.786161                                                                                                             
-Grambling,LA,32.526332,-92.708019                                                                                                                 
-Martin,TN,36.337885,-88.851365                                                                                                                  
-Kent,OH,41.147561,-81.361965                                                                                                                     
-Boca Raton,FL,26.37269,-80.103711                                                                                                              
-Lewisburg,PA,40.964126,-76.889957                                                                                                                      
-Emmitsburg,MD,39.705192,-77.321301                                                                                                                  
-Irvine,CA,33.678399,-117.771254                                                                                                                
-Las Cruces,NM,32.326444,-106.789695                                                                                                            
-Springfield,MO,37.194157,-93.292642                                                                                                           
-Bakersfield,CA,35.353171,-119.037919                                                                                                         
-Chapel Hill,NC,35.928328,-79.041375                                                                                                             
-Vermillion,SD,42.7814,-96.925402                                                                                                                         
-Cedar Falls,IA,42.51907,-92.454009                                                                                                             
-Jackson,MS,32.315834,-90.21285                                                                                                               
+New Britain,CT,41.676555,-72.786161
+Grambling,LA,32.526332,-92.708019
+Martin,TN,36.337885,-88.851365
+Kent,OH,41.147561,-81.361965
+Boca Raton,FL,26.37269,-80.103711
+Lewisburg,PA,40.964126,-76.889957
+Emmitsburg,MD,39.705192,-77.321301
+Irvine,CA,33.678399,-117.771254
+Las Cruces,NM,32.326444,-106.789695
+Springfield,MO,37.194157,-93.292642
+Bakersfield,CA,35.353171,-119.037919
+Chapel Hill,NC,35.928328,-79.041375
+Vermillion,SD,42.7814,-96.925402
+Cedar Falls,IA,42.51907,-92.454009
+Jackson,MS,32.315834,-90.21285
 Maui,HI,,
-Kansas City,MO,39.122361,-94.555117                                                                                                          
+Kansas City,MO,39.122361,-94.555117
 Cancun,Mexico,,
-Poughkeepsie,NY,41.694595,-73.919869                                                                                                            
-Wilmington,NC,34.209225,-77.885767                                                                                                            
-Charleston,WV,38.348692,-81.632324                                                                                                             
-Newark,DE,39.677649,-75.757479                                                                                                                           
-Macomb,IL,40.470149,-90.683114                                                                                                                 
+Poughkeepsie,NY,41.694595,-73.919869
+Wilmington,NC,34.209225,-77.885767
+Charleston,WV,38.348692,-81.632324
+Newark,DE,39.677649,-75.757479
+Macomb,IL,40.470149,-90.683114
 Northridge,CA,,
-Hamilton,NY,42.828457,-75.553015                                                                                                               
-Muncie,IN,40.198826,-85.395059                                                                                                                  
-Kennesaw,GA,34.027202,-84.61709                                                                                                                  
-New Rochelle,NY,40.923243,-73.779344                                                                                                           
-Anchorage,AK,61.17425,-149.284329                                                                                              
+Hamilton,NY,42.828457,-75.553015
+Muncie,IN,40.198826,-85.395059
+Kennesaw,GA,34.027202,-84.61709
+New Rochelle,NY,40.923243,-73.779344
+Anchorage,AK,61.17425,-149.284329
 Nassau,Bahamas,,
-Anaheim,CA,33.855502,-117.758657                                                                                                              
-Hoffman Estates,IL,42.065217,-88.152996                                                                                                       
-South Padre Island,TX,26.120465,-97.170703                                                                                                       
-Kingston,RI,41.473179,-71.524124                                                                                                                    
-Albany,NY,42.665745,-73.798353                                                                                                                 
-San Antonio,TX,29.462809,-98.524635                                                                                                        
-Burlington,VT,44.491927,-73.238882                                                                                                             
-Towson,MD,39.39421,-76.617751                                                                                                                    
-Toledo,OH,41.664071,-83.581861                                                                                                                
-Miami,FL,25.775163,-80.208615                                                                                                                
-Bethlehem,PA,40.626424,-75.367898                                                                                                               
-Thibodaux,LA,29.794874,-90.814578                                                                                                                        
-Kalamazoo,MI,42.275163,-85.588501                                                                                                              
-Edwardsville,IL,38.790835,-89.988605                                                                                                           
-Prescott Valley,AZ,34.59793,-112.318497                                                                                                                
-Smithfield,RI,,
-Brooklyn,NY,,
-Rosemont,IL,41.988978,-87.871739                                                                                                                       
-Springfield,MA,42.115454,-72.539978                                                                                                              
-Auburn Hills,MI,42.67472,-83.243606                                                                                                             
-West Long Branch,NJ,40.287904,-74.020019                                                                                                        
-Sunrise,FL,26.171601,-80.261633                                                                                                                
-Oklahoma City,OK,35.467079,-97.513657                                                                                                      
-Rochester,NY,43.169927,-77.616891                                                                                                               
-Nampa,ID,43.585541,-116.565631                                                                                                                  
-Itta Bena,MS,33.500868,-90.324288                                                                                                                 
-Pine Bluff,AR,34.211591,-92.017555                                                                                                            
-Sioux Falls,SD,43.540696,-96.731962                                                                                                           
-Hot Springs,AR,34.658069,-92.968643                                                                                                    
-Katy,TX,29.790915,-95.840711                                                                                                                     
-Garland,TX,32.909826,-96.630334                                                                                                                
-Atlantic City,NJ,39.377337,-74.45107                                                                                                           
-Stony Brook,NY,40.907804,-73.127479                                                                                                              
-South Orange,NJ,,
-Phoenix,AZ,33.572154,-112.090132                                                                                                            
+Anaheim,CA,33.855502,-117.758657
+Hoffman Estates,IL,42.065217,-88.152996
+South Padre Island,TX,26.120465,-97.170703
+Kingston,RI,41.473179,-71.524124
+Albany,NY,42.665745,-73.798353
+San Antonio,TX,29.462809,-98.524635
+Burlington,VT,44.491927,-73.238882
+Towson,MD,39.39421,-76.617751
+Toledo,OH,41.664071,-83.581861
+Miami,FL,25.775163,-80.208615
+Bethlehem,PA,40.626424,-75.367898
+Thibodaux,LA,29.794874,-90.814578
+Kalamazoo,MI,42.275163,-85.588501
+Edwardsville,IL,38.790835,-89.988605
+Prescott Valley,AZ,34.59793,-112.318497
+Smithfield,RI,41.900945,-71.52889
+Brooklyn,NY,40.635045,-73.95064
+Rosemont,IL,41.988978,-87.871739
+Springfield,MA,42.115454,-72.539978
+Auburn Hills,MI,42.67472,-83.243606
+West Long Branch,NJ,40.287904,-74.020019
+Sunrise,FL,26.171601,-80.261633
+Oklahoma City,OK,35.467079,-97.513657
+Rochester,NY,43.169927,-77.616891
+Nampa,ID,43.585541,-116.565631
+Itta Bena,MS,33.500868,-90.324288
+Pine Bluff,AR,34.211591,-92.017555
+Sioux Falls,SD,43.540696,-96.731962
+Hot Springs,AR,34.658069,-92.968643
+Katy,TX,29.790915,-95.840711
+Garland,TX,32.909826,-96.630334
+Atlantic City,NJ,39.377337,-74.45107
+Stony Brook,NY,40.907804,-73.127479
+South Orange,NJ,40.748811,-74.261512
+Phoenix,AZ,33.572154,-112.090132
 Ramstein,Germany,,
-Richmond,KY,37.729145,-84.299364                                                                                                                
-Oakland,CA,37.769846,-122.22569                                                                                                              
+Richmond,KY,37.729145,-84.299364
+Oakland,CA,37.769846,-122.22569
 Bayamon,Puerto Rico,,
-Lake Buena Vista,FL,28.377311,-81.524813                                                                                                          
+Lake Buena Vista,FL,28.377311,-81.524813
 Puerto Vallarta,Mexico,,
-Highland Heights,KY,39.035525,-84.45658                                                                                                                    
-Denton,TX,33.217449,-97.141346                                                                                                                
+Highland Heights,KY,39.035525,-84.45658
+Denton,TX,33.217449,-97.141346
 Camp Humphreys,South Korea,,
-Clarksville,TN,36.56643,-87.345216                                                                                                              
-Binghamton,NY,42.101331,-75.909369                                                                                                             
-Greenville,NC,35.596431,-77.375256                                                                                                              
-Bronx,NY,,
-Sacramento,CA,38.567694,-121.468161                                                                                                            
-Green Bay,WI,44.521542,-87.986568                                                                                                           
-Cedar Hill,TX,32.584326,-96.958898                                                                                                              
-Bozeman,MT,45.683155,-111.053782                                                                                                                 
-Fort Wayne,IN,41.089132,-85.1439                                                                                                              
-Troy,AL,31.80196,-85.96713                                                                                                                      
-Grand Forks,ND,47.919595,-97.087328                                                                                                              
-Huntsville,AL,34.69772,-86.67667                                                                                                             
-Greenwood,MS,33.51246,-90.198963                                                                                                                
-Grinnell,IA,41.735236,-92.724902                                                                                                                 
-Lowell,MA,42.638995,-71.32102                                                                                                                   
-New Haven,CT,41.310809,-72.924953                                                                                                               
-San Angelo,TX,31.441078,-100.450499                                                                                                           
-Georgetown,TX,30.668136,-97.698744                                                                                                            
-Flagstaff,AZ,35.185212,-111.620698                                                                                                             
-Estero,FL,26.425585,-81.799539                                                                                                              
-Rochester,MI,42.686639,-83.119721                                                                                                                         
-Abilene,TX,32.454514,-99.738147                                                                                                             
-Tupelo,MS,34.270604,-88.732455                                                                                                                 
-Lihue,HI,21.972582,-159.355807                                                                                                                   
-Kent,WA,47.38797,-122.212727                                                                                                                   
+Clarksville,TN,36.56643,-87.345216
+Binghamton,NY,42.101331,-75.909369
+Greenville,NC,35.596431,-77.375256
+Bronx,NY,40.848711,-73.852939
+Sacramento,CA,38.567694,-121.468161
+Green Bay,WI,44.521542,-87.986568
+Cedar Hill,TX,32.584326,-96.958898
+Bozeman,MT,45.683155,-111.053782
+Fort Wayne,IN,41.089132,-85.1439
+Troy,AL,31.80196,-85.96713
+Grand Forks,ND,47.919595,-97.087328
+Huntsville,AL,34.69772,-86.67667
+Greenwood,MS,33.51246,-90.198963
+Grinnell,IA,41.735236,-92.724902
+Lowell,MA,42.638995,-71.32102
+New Haven,CT,41.310809,-72.924953
+San Angelo,TX,31.441078,-100.450499
+Georgetown,TX,30.668136,-97.698744
+Flagstaff,AZ,35.185212,-111.620698
+Estero,FL,26.425585,-81.799539
+Rochester,MI,42.686639,-83.119721
+Abilene,TX,32.454514,-99.738147
+Tupelo,MS,34.270604,-88.732455
+Lihue,HI,21.972582,-159.355807
+Kent,WA,47.38797,-122.212727
 Tortola,Virgin Islands,,
-North Little Rock,AR,34.781752,-92.235057                                                                                                     
-Clarksdale,MS,34.193796,-90.568598                                                                                                                    
-Bangor,ME,44.829625,-68.788767                                                                                                                  
-Huntsville,TX,30.700542,-95.55489                                                                                                             
-Allentown,PA,40.593648,-75.478393                                                                                                              
+North Little Rock,AR,34.781752,-92.235057
+Clarksdale,MS,34.193796,-90.568598
+Bangor,ME,44.829625,-68.788767
+Huntsville,TX,30.700542,-95.55489
+Allentown,PA,40.593648,-75.478393
 Aguadilla,Puerto Rico,,
-Alexandria,LA,31.293449,-92.470189                                                                                                             
-Wailuku,HI,20.885467,-156.503627                                                                                                                 
-Niceville,FL,30.528825,-86.475995                                                                                                              
-Southaven,MS,34.951005,-89.977669                                                                                                              
-Springfield,IL,39.791063,-89.644572                                                                                                          
+Alexandria,LA,31.293449,-92.470189
+Wailuku,HI,20.885467,-156.503627
+Niceville,FL,30.528825,-86.475995
+Southaven,MS,34.951005,-89.977669
+Springfield,IL,39.791063,-89.644572
 Shanghai,China,,
-Elizabeth City,NC,36.294197,-76.237809                                                                                                                  
-Billings,MT,45.788538,-108.552475                                                                                                              
-Glassboro,NJ,39.700096,-75.111423                                                                                                               
+Elizabeth City,NC,36.294197,-76.237809
+Billings,MT,45.788538,-108.552475
+Glassboro,NJ,39.700096,-75.111423
 Pearl Harbor,HI,,
-Johnstown,PA,40.326132,-78.919139                                                                                                                
-Fort Hood,TX,31.136873,-97.784923                                                                                                                
-Dothan,AL,31.233698,-85.406823                                                                                                                 
-Shreveport,LA,32.466879,-93.792193                                                                                                         
-Portland,ME,43.633157,-70.185305                                                                                                             
-Rio Rancho,NM,35.28507,-106.698867                                                                                                             
-Kennewick,WA,46.197622,-119.175923                                                                                                             
-Lakeland,FL,28.055496,-81.954772                                                                                                             
-Tuba City,AZ,36.125076,-111.246654                                                                                                                        
-Cedar Park,TX,30.510177,-97.818626                                                                                                                
-Ave Maria,FL,26.322804,-81.439425                                                                                                               
-North Charleston,SC,32.917881,-80.065                                                                                                         
-Glens Falls,NY,43.31116,-73.645286                                                                                                                
-Bossier City,LA,32.523674,-93.655426                                                                                                           
-Glendale,AZ,33.533111,-112.189901                                                                                                             
-Uniondale,NY,40.717593,-73.594656                                                                                                                         
+Johnstown,PA,40.326132,-78.919139
+Fort Hood,TX,31.136873,-97.784923
+Dothan,AL,31.233698,-85.406823
+Shreveport,LA,32.466879,-93.792193
+Portland,ME,43.633157,-70.185305
+Rio Rancho,NM,35.28507,-106.698867
+Kennewick,WA,46.197622,-119.175923
+Lakeland,FL,28.055496,-81.954772
+Tuba City,AZ,36.125076,-111.246654
+Cedar Park,TX,30.510177,-97.818626
+Ave Maria,FL,26.322804,-81.439425
+North Charleston,SC,32.917881,-80.065
+Glens Falls,NY,43.31116,-73.645286
+Bossier City,LA,32.523674,-93.655426
+Glendale,AZ,33.533111,-112.189901
+Uniondale,NY,40.717593,-73.594656
 Freeport,Bahamas,,
 Montego Bay,Jamaica,,
 George Town,Cayman Islands,,
-Reading,PA,40.33922,-75.926277                                                                                                                   
+Reading,PA,40.33922,-75.926277
 Fort Campbell,KY,,
 Belfast,Northern Ireland,,
-Miami Shores,FL,25.867011,-80.178341                                                                                                          
-Midland,MI,43.624796,-84.231984                                                                                                                
-Frisco,TX,33.155427,-96.822596                                                                                                                
-Fort Bliss,TX,31.839666,-106.374652                                                                                                                      
-Florence,AL,34.830323,-87.666139                                                                                                                
+Miami Shores,FL,25.867011,-80.178341
+Midland,MI,43.624796,-84.231984
+Frisco,TX,33.155427,-96.822596
+Fort Bliss,TX,31.839666,-106.374652
+Florence,AL,34.830323,-87.666139
 Bimini,Bahamas,,
-Seaside,CA,36.625058,-121.817804                                                                                                                 
-Westwego,LA,29.905363,-90.143545                                                                                                                 
-St. Petersburg,FL,27.762727,-82.644131                                                                                                     
-Hobbs,NM,32.729088,-103.160828                                                                                                                   
-Berea,KY,37.589296,-84.294502                                                                                                                   
-Georgetown,KY,38.260181,-84.534921                                                                                                              
-Kissimmee,FL,28.30278,-81.417831                                                                                                               
-Midland,TX,32.024642,-102.113467                                                                                                               
+Seaside,CA,36.625058,-121.817804
+Westwego,LA,29.905363,-90.143545
+St. Petersburg,FL,27.762727,-82.644131
+Hobbs,NM,32.729088,-103.160828
+Berea,KY,37.589296,-84.294502
+Georgetown,KY,38.260181,-84.534921
+Kissimmee,FL,28.30278,-81.417831
+Midland,TX,32.024642,-102.113467
 Toronto,ON,,
-North Andover,MA,,
-Wilmington,DE,39.735651,-75.532104                                                                                                            
-Melbourne,FL,28.110438,-80.662717                                                                                                             
-Stephenville,TX,32.214544,-98.219885                                                                                                             
-St. George,UT,37.077006,-113.576534                                                                                                              
-Santa Cruz,CA,36.974385,-122.035268                                                                                                             
-Marietta,GA,33.953561,-84.542463                                                                                                                
-Pensacola,FL,30.440989,-87.191242                                                                                                            
-College Park,GA,33.641448,-84.463502                                                                                                            
-Naples,FL,26.150485,-81.795299                                                                                                                
-San Juan Capistrano,CA,33.500889,-117.654388                                                                                                             
-Destin,FL,30.404372,-86.47143                                                                                                                    
-Saint Paul,MN,44.948901,-93.104063                                                                                                             
-Elmont,NY,40.699176,-73.706166                                                                                                                       
-Henderson,NV,36.008958,-115.0268                                                                                                             
-Rosemont,PA,40.030639,-75.327036                                                                                                                           
+North Andover,MA,42.673909,-71.091334
+Wilmington,DE,39.735651,-75.532104
+Melbourne,FL,28.110438,-80.662717
+Stephenville,TX,32.214544,-98.219885
+St. George,UT,37.077006,-113.576534
+Santa Cruz,CA,36.974385,-122.035268
+Marietta,GA,33.953561,-84.542463
+Pensacola,FL,30.440989,-87.191242
+College Park,GA,33.641448,-84.463502
+Naples,FL,26.150485,-81.795299
+San Juan Capistrano,CA,33.500889,-117.654388
+Destin,FL,30.404372,-86.47143
+Saint Paul,MN,44.948901,-93.104063
+Elmont,NY,40.699176,-73.706166
+Henderson,NV,36.008958,-115.0268
+Rosemont,PA,40.030639,-75.327036
 South Easton,MA,,
-Saint Charles,MO,38.795702,-90.515364                                                                                                            
+Saint Charles,MO,38.795702,-90.515364
 Dublin,Ireland,,
-Laie,HI,21.645545,-157.922855                                                                                                                     
+Laie,HI,21.645545,-157.922855
 London,England,,
 Laval,PQ,,
-Commerce,TX,33.240992,-95.898869                                                                                                                 
-Union,NJ,40.767425,-74.032279                                                                                                                        
-Moline,IL,41.482333,-90.493407                                                                                                                  
-Trenton,NJ,40.223841,-74.763624                                                                                                                 
-White Sulphur Springs,WV,37.799327,-80.3009                                                                                                        
+Commerce,TX,33.240992,-95.898869
+Union,NJ,40.767425,-74.032279
+Moline,IL,41.482333,-90.493407
+Trenton,NJ,40.223841,-74.763624
+White Sulphur Springs,WV,37.799327,-80.3009
 Moncton,NB,,
-St. Augustine,FL,29.896152,-81.311128                                                                                                           
-Palm Springs,CA,33.803361,-116.53828                                                                                                           
-Idaho Falls,ID,43.488851,-112.036297                                                                                                           
-Hickory,NC,35.740092,-81.321818                                                                                                                 
-Biloxi,MS,30.426663,-88.935762                                                                                                              
-Xenia,OH,39.683133,-83.940808                                                                                                                    
-Erie,PA,42.116594,-80.073503                                                                                                                    
-Carrollton,GA,33.58169,-85.083983                                                                                                               
+St. Augustine,FL,29.896152,-81.311128
+Palm Springs,CA,33.803361,-116.53828
+Idaho Falls,ID,43.488851,-112.036297
+Hickory,NC,35.740092,-81.321818
+Biloxi,MS,30.426663,-88.935762
+Xenia,OH,39.683133,-83.940808
+Erie,PA,42.116594,-80.073503
+Carrollton,GA,33.58169,-85.083983
 Lethbridge,AB,,
 Wilkes Barre Township,PA,,
-Grand Rapids,MI,42.961156,-85.65557                                                                                                           
-Inglewood,CA,33.956068,-118.344274                                                                                                                
+Grand Rapids,MI,42.961156,-85.65557
+Inglewood,CA,33.956068,-118.344274
+West Haven,CT,41.272121,-72.967497
+Hershey,PA,40.28001,-76.644328
