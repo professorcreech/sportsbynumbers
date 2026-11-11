@@ -14,7 +14,7 @@ import pandas as pd
 import requests
 
 from . import config
-from .parse import parse_summary
+from .parse import parse_shots, parse_summary
 
 session = requests.Session()
 session.headers["User-Agent"] = "sportsbynumbers/1.0"
@@ -135,7 +135,7 @@ def fetch_day(season: int, day: date) -> int:
     summaries = []
     with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
         summaries = list(pool.map(lambda g: get(f"{config.ESPN}/summary", {"event": g["game_id"]}), games))
-    g_rows, b_rows, s_rows = [], [], []
+    g_rows, b_rows, s_rows, shot_rows = [], [], [], []
     for sb, summ in zip(games, summaries):
         game, box, stints = parse_summary(summ) if summ else (None, [], [])
         if game is None:  # fall back to scoreboard result so team ratings still see the game
@@ -145,6 +145,11 @@ def fetch_day(season: int, day: date) -> int:
         g_rows.append(game)
         b_rows += box
         s_rows += stints
+        if summ and stints is not None:
+            try:
+                shot_rows += parse_shots(summ, game)
+            except Exception:
+                pass
     d = season_dir(season)
     name = day.isoformat()
     pd.DataFrame(g_rows).to_csv(d / "games" / f"{name}.csv", index=False)
@@ -152,6 +157,9 @@ def fetch_day(season: int, day: date) -> int:
         pd.DataFrame(b_rows).to_csv(d / "box" / f"{name}.csv.gz", index=False)
     if s_rows:
         pd.DataFrame(s_rows).to_csv(d / "stints" / f"{name}.csv.gz", index=False)
+    if shot_rows:
+        (d / "shots").mkdir(exist_ok=True)
+        pd.DataFrame(shot_rows).to_csv(d / "shots" / f"{name}.csv.gz", index=False)
     return len(g_rows)
 
 
@@ -178,7 +186,7 @@ def fetch_prior_scores(season: int) -> None:
         pd.DataFrame(rows).to_csv(path, index=False)
 
 
-def update(season: int | None = None) -> None:
+def update(season: int | None = None, force: bool = False) -> None:
     today = date.today()
     season = season or config.season_for(today)
     d = season_dir(season)
@@ -191,7 +199,7 @@ def update(season: int | None = None) -> None:
     last = min(today - timedelta(days=1), config.season_end(season))
     recent = last - timedelta(days=config.REFETCH_DAYS - 1)
     while day <= last:
-        if day.isoformat() not in have or day >= recent:
+        if force or day.isoformat() not in have or day >= recent:
             n = fetch_day(season, day)
             print(f"{day}: {n} games")
         day += timedelta(days=1)

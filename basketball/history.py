@@ -26,7 +26,17 @@ from . import config
 from .fetch import scoreboard, session
 
 HIST = config.DATA_DIR / "history"
-GAZETTEER = "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_place_national.zip"
+GAZ = "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2023_Gazetteer/2023_Gaz_{}_national.zip"
+# Places the Census lists under another name (lat, lon)
+MANUAL = {
+    ("queens", "NY"): (40.7282, -73.7949), ("staten island", "NY"): (40.5795, -74.1502),
+    ("riverdale", "NY"): (40.9005, -73.9064), ("bronx", "NY"): (40.8448, -73.8648),
+    ("brooklyn", "NY"): (40.6782, -73.9442), ("jamaica", "NY"): (40.7027, -73.7890),
+    ("honolulu", "HI"): (21.3069, -157.8583), ("university park", "PA"): (40.7982, -77.8599),
+    ("chestnut hill", "MA"): (42.3357, -71.1684), ("normal", "AL"): (34.7834, -86.5719),
+    ("lorman", "MS"): (31.8202, -91.0587), ("uncasville", "CT"): (41.4343, -72.1098),
+}
+TOURNAMENT_ID = 22
 NCAA_TOURNAMENT_GROUP = 100
 
 
@@ -54,13 +64,13 @@ def season_scores(season: int) -> pd.DataFrame:
     df.insert(0, "season", season)
     HIST.mkdir(parents=True, exist_ok=True)
     df.to_csv(path, index=False)
-    t = df[df.note.fillna("").str.contains("Men's Basketball Championship")]
+    t = df[pd.to_numeric(df.tourney_id, errors="coerce") == TOURNAMENT_ID]
     print(f"{season}: {len(df)} games, {len(t)} NCAA tournament games")
     return df
 
 
 _SUFFIX = re.compile(r"\s+(city and borough|consolidated government \(balance\)|metropolitan government \(balance\)|"
-                     r"unified government \(balance\)|urban county|city|town|village|borough|CDP|municipality|"
+                     r"unified government \(balance\)|urban county|township|city|town|village|borough|CDP|municipality|"
                      r"\(balance\))$", re.I)
 
 
@@ -73,17 +83,26 @@ def _clean_city(s: str) -> str:
     return re.sub(r"\bst\.?\s+", "st. ", s)
 
 
-def gazetteer() -> pd.DataFrame:
-    r = session.get(GAZETTEER, timeout=120)
+def _gaz(kind: str) -> pd.DataFrame:
+    r = session.get(GAZ.format(kind), timeout=120)
     r.raise_for_status()
     z = zipfile.ZipFile(io.BytesIO(r.content))
     g = pd.read_csv(z.open(z.namelist()[0]), sep="\t", dtype=str)
     g.columns = [c.strip() for c in g.columns]
+    return g
+
+
+def gazetteer() -> pd.DataFrame:
+    """Census places (cities, towns, CDPs), then county subdivisions (townships, New England towns)."""
+    g = _gaz("place").assign(alt=0)
+    try:
+        g = pd.concat([g, _gaz("cousubs").assign(alt=2)])
+    except Exception as e:
+        print(f"county subdivisions not loaded: {e}")
     g["key"] = g.NAME.map(_clean_city)
     g["ALAND"] = pd.to_numeric(g.ALAND, errors="coerce")
-    g["alt"] = 0
     # "Nashville-Davidson", "Lexington-Fayette": also match on the first part
-    hy = g[g.key.str.contains("-")].assign(key=lambda d: d.key.str.split("-").str[0], alt=1)
+    hy = g[g.key.str.contains("-")].assign(key=lambda d: d.key.str.split("-").str[0], alt=lambda d: d.alt + 1)
     g = pd.concat([g, hy]).sort_values(["alt", "ALAND"], ascending=[True, False]).drop_duplicates(["key", "USPS"])
     return g.rename(columns={"USPS": "state", "INTPTLAT": "lat", "INTPTLONG": "lon"})[["key", "state", "lat", "lon"]]
 
@@ -92,7 +111,11 @@ def locate(scores: pd.DataFrame) -> None:
     cities = scores[["city", "state"]].dropna().drop_duplicates()
     g = gazetteer()
     cities["key"] = cities.city.map(_clean_city)
-    places = cities.merge(g, on=["key", "state"], how="left").drop(columns="key")
+    places = cities.merge(g, on=["key", "state"], how="left")
+    for i, r in places[places.lat.isna()].iterrows():
+        if (r.key, r.state) in MANUAL:
+            places.loc[i, ["lat", "lon"]] = MANUAL[(r.key, r.state)]
+    places = places.drop(columns="key")
     missing = places[places.lat.isna()]
     print(f"located {places.lat.notna().sum()} of {len(places)} venue cities; missing e.g. "
           f"{missing.head(15)[['city', 'state']].values.tolist()}")

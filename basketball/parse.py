@@ -200,3 +200,40 @@ def parse_summary(summary: dict):
     except Exception:
         stints = []
     return game, box, stints
+
+
+def parse_shots(summary: dict, game: dict) -> list[dict]:
+    """One row per shot attempt (free throws included), for style and scouting profiles.
+
+    ESPN coordinates are in feet on a half court; free throws carry placeholder values,
+    which are kept but flagged by kind == "ft"."""
+    rows = []
+    for p in summary.get("plays", []):
+        if not p.get("shootingPlay"):
+            continue
+        t = (p.get("type") or {}).get("text", "") or ""
+        text = p.get("text") or ""
+        low = text.lower()
+        team = str((p.get("team") or {}).get("id", "")) if p.get("team") else ""
+        parts = p.get("participants") or []
+        shooter = str((parts[0].get("athlete") or {}).get("id")) if parts else ""
+        assister = str((parts[1].get("athlete") or {}).get("id")) if len(parts) > 1 and "assist" in low else ""
+        is_ft = "freethrow" in t.replace(" ", "").lower() or "free throw" in low
+        pts_att = p.get("pointsAttempted")
+        three = (pts_att == 3) or ("three point" in low) or ("3-pt" in low)
+        kind = "ft" if is_ft else ("three" if three else
+                                   {"LayUpShot": "layup", "DunkShot": "dunk", "TipShot": "tip"}.get(t.replace(" ", ""), "jumper"))
+        c = p.get("coordinate") or {}
+        x, y = c.get("x"), c.get("y")
+        if not isinstance(x, (int, float)) or abs(x) > 1000:
+            x = y = None
+        rows.append({
+            "game_id": game["game_id"], "team_id": team,
+            "opp_id": game["away_id"] if team == game["home_id"] else game["home_id"],
+            "player_id": shooter, "assist_id": assister,
+            "period": _int((p.get("period") or {}).get("number"), 0),
+            "clock": (p.get("clock") or {}).get("displayValue", ""),
+            "kind": kind, "made": bool(p.get("scoringPlay")) or " made " in f" {low} ",
+            "x": x, "y": y,
+        })
+    return rows

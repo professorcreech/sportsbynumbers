@@ -52,7 +52,10 @@ def prior_from_last_season(prior_scores: pd.DataFrame | None, team_ids: list[str
 
 
 def fit(games: pd.DataFrame, box: pd.DataFrame, teams: pd.DataFrame,
-        prior_net: dict | None = None, as_of: date | None = None) -> dict:
+        prior_net: dict | None = None, as_of: date | None = None,
+        prior_games: float | None = None, prior_half_life: float | None = None) -> dict:
+    """prior_net: {team_id: net} or {team_id: (offense offset, defense offset)}.
+    prior_half_life: if set, the prior fades like a game played on Nov 1 (days)."""
     """Return ratings table plus everything needed to predict a game."""
     d1 = set(teams.team_id.astype(str))
     g = games.copy()
@@ -90,11 +93,17 @@ def fit(games: pd.DataFrame, box: pd.DataFrame, teams: pd.DataFrame,
     mu = np.average(y, weights=w)
     prior_net = prior_net or {}
     prior_mean = np.zeros(2 * n + 1)
-    for t, net in prior_net.items():
+    def _od(v):
+        return (float(v[0]), float(v[1])) if isinstance(v, (tuple, list)) else (v / 2, -v / 2)
+    for t, v in prior_net.items():
+        net = v
         if t in idx:
-            prior_mean[idx[t]], prior_mean[n + idx[t]] = net / 2, -net / 2
+            prior_mean[idx[t]], prior_mean[n + idx[t]] = _od(net)
     # Row weights are possessions, so the prior is worth TEAM_PRIOR_GAMES games of ~68 possessions.
-    prec = config.TEAM_PRIOR_GAMES * 68.0
+    prec = (config.TEAM_PRIOR_GAMES if prior_games is None else prior_games) * 68.0
+    if prior_half_life:
+        start = config.season_start(config.season_for(as_of))
+        prec *= 0.5 ** (max((as_of - start).days, 0) / prior_half_life)
     # Home court gets its own prior: early in the season, when strong teams host weak ones,
     # the data can't separate "good team" from "home floor". Each game carries ~68 * 2 * 0.25 = 34
     # units of information about H, so the prior is worth HCA_PRIOR_GAMES games.
@@ -138,10 +147,10 @@ def fit(games: pd.DataFrame, box: pd.DataFrame, teams: pd.DataFrame,
                     "color": str(m.get("color", "888888")),
                     "adj_o": mu + O[i], "adj_d": mu + D[i], "net": O[i] - D[i], "net_se": se,
                     "tempo": tau + 2 * T[i], "wins": rec.get(t, (0, 0))[0], "losses": rec.get(t, (0, 0))[1],
-                    "prior_net": prior_net.get(t)})
+                    "prior_net": (lambda v: None if v is None else (lambda o, d: o - d)(*_od(v)))(prior_net.get(t))})
     table = pd.DataFrame(out).sort_values("net", ascending=False).reset_index(drop=True)
     table["rank"] = np.arange(1, len(table) + 1)
-    return {"table": table, "idx": idx, "O": O, "D": D, "T": T, "mu": mu, "tau": tau, "hca": hca, "sd": sd}
+    return {"table": table, "s2": s2, "idx": idx, "O": O, "D": D, "T": T, "mu": mu, "tau": tau, "hca": hca, "sd": sd}
 
 
 def predict_margin_raw(hi, ai, hflag, O, D, T, mu, tau, hca):

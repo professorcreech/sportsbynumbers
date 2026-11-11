@@ -10,6 +10,10 @@ on:
         description: "Also download a past season first (e.g. 2026 for 2025-26). Leave blank for a normal run."
         required: false
         default: ""
+      refetch:
+        description: "Re-download every day of a season, e.g. 2027 (picks up newly saved details). Leave blank normally."
+        required: false
+        default: ""
       history:
         description: "Also download past seasons' scores for the tournament model, e.g. '2012 2025'. Leave blank normally."
         required: false
@@ -39,6 +43,11 @@ jobs:
       - name: Backfill a past season
         if: ${{ github.event.inputs.backfill != '' }}
         run: python -m basketball.run --backfill "${{ github.event.inputs.backfill }}"
+
+      - name: Re-download a season
+        if: ${{ github.event.inputs.refetch != '' }}
+        run: |
+          for s in ${{ github.event.inputs.refetch }}; do python -m basketball.run --backfill "$s" --force; done
 
       - name: Download past seasons' scores
         if: ${{ github.event.inputs.history != '' }}
