@@ -1,0 +1,10 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401705044,2025-01-04,False,False,True,17,20,94,123
+401705045,2025-01-04,False,False,True,8,16,119,105
+401705046,2025-01-04,False,False,True,11,21,126,108
+401705047,2025-01-04,False,False,True,14,26,100,136
+401705048,2025-01-04,False,False,True,4,18,139,126
+401705049,2025-01-04,False,False,True,15,22,102,105
+401705050,2025-01-04,False,False,True,24,7,111,122
+401705051,2025-01-04,False,False,True,9,29,121,113
+401705052,2025-01-04,False,False,True,12,1,131,105

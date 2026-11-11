@@ -1,0 +1,9 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401736802,2024-12-13,False,False,True,5,27,115,105
+401736803,2024-12-13,False,False,True,20,11,107,121
+401736804,2024-12-13,False,False,True,16,13,97,87
+401736805,2024-12-13,False,False,True,29,17,135,119
+401736806,2024-12-13,False,False,True,4,30,109,95
+401736807,2024-12-13,False,False,True,7,12,120,98
+401736808,2024-12-13,False,False,True,26,21,126,134
+401736809,2024-12-13,False,False,True,22,24,116,118

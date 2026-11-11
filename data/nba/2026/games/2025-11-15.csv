@@ -1,0 +1,6 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401810083,2025-11-15,False,False,True,5,29,108,100
+401810084,2025-11-15,False,False,True,30,25,96,109
+401810085,2025-11-15,False,False,True,11,28,111,129
+401810086,2025-11-15,False,False,True,15,13,95,119
+401810087,2025-11-15,False,False,True,16,7,112,123

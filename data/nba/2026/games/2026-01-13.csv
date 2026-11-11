@@ -1,0 +1,8 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401810419,2026-01-13,False,False,True,14,21,127,121
+401810420,2026-01-13,False,False,True,10,4,119,113
+401810421,2026-01-13,False,False,True,15,16,106,139
+401810422,2026-01-13,False,False,True,3,7,116,122
+401810423,2026-01-13,False,False,True,25,24,119,98
+401810424,2026-01-13,False,False,True,13,1,141,116
+401810425,2026-01-13,False,False,True,9,22,119,97
