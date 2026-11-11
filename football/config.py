@@ -38,7 +38,7 @@ def season_end(season: int) -> date:
 HALF_LIFE_DAYS = 120          # football seasons are short; recency matters less week to week
 HFA_PRIOR = 1.8 if IS_NFL else 2.5   # home-field edge in points (NFL has shrunk to ~1.5-2 in recent seasons)
 HFA_PRIOR_GAMES = 1500
-PRIOR_GAMES = 3.0             # preseason prior strength in games (best of 1/3/6 on 2025, tests/football_backtest.py)
-PRIOR_KEEP = 0.5 if IS_NFL else 0.9  # share of last season's rating carried over (college: best of 50/70/90% on 2025;
-                                     # NFL starts at 0.5 and is re-tuned once two NFL seasons are on file)
+PRIOR_GAMES = 6.0 if IS_NFL else 3.0   # prior strength in games (tests/football_backtest.py; NFL: plateau 4-6 on 2025)
+PRIOR_KEEP = 0.3 if IS_NFL else 0.9    # share of last season carried over (college: best of 50/70/90% on 2025;
+                                       # NFL: 15-45% all similar on 2025, 30% chosen; NFL teams regress hard)
 MARGIN_SD = 13.5 if IS_NFL else 15.0

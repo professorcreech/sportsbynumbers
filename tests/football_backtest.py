@@ -48,7 +48,7 @@ def replay(season: int, settings: dict) -> pd.DataFrame:
 def main(season: int = 2025):
     settings = {"none": (0.25, 0.0, None)}
     for k in (1, 3, 6):
-        for keep in (0.5, 0.7, 0.9):
+        for keep in (0.3, 0.5, 0.7, 0.9):
             settings[f"{k} games, keep {keep:.0%}"] = (k, keep, None)
     for cap in (21, 28, 35):
         settings[f"3 games, keep 70%, damp past {cap}"] = (3, 0.7, cap)
