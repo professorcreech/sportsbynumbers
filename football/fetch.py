@@ -163,9 +163,15 @@ def fetch_day(season: int, day: date) -> int:
     return len(games)
 
 
-def fetch_schedule(days_ahead: int = 8) -> list[dict]:
+def fetch_schedule(days_ahead: int | None = None) -> list[dict]:
+    """Every scheduled game from today through the end of the season (or the next N days)."""
     today = date.today()
-    return [g for i in range(days_ahead) for g in scoreboard(today + timedelta(days=i)) if not g["completed"]]
+    end = config.season_end(config.season_for(today))
+    n = (end - today).days + 1 if days_ahead is None else days_ahead
+    days = [today + timedelta(days=i) for i in range(max(n, 0))]
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        per_day = list(pool.map(scoreboard, days))
+    return [g for rows in per_day for g in rows if not g["completed"]]
 
 
 def fetch_rankings(season: int) -> None:

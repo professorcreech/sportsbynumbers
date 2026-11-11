@@ -14,7 +14,7 @@ import pandas as pd
 
 from basketball.conferences import name as conf_name
 from basketball.run import _clean
-from . import config, scouting, teams
+from . import config, playoff, scouting, teams
 
 
 def _read(folder, pattern):
@@ -54,6 +54,21 @@ def prior_for(season: int) -> dict:
     return teams.last_season_prior(g_p, tm_p) if len(g_p) else {}
 
 
+def _polls(season: int) -> dict:
+    """Committee (or AP) top 25 for display next to the odds."""
+    import json as _json
+    p = config.DATA_DIR / str(season) / "rankings.json"
+    if not p.exists():
+        return {}
+    polls = _json.loads(p.read_text())
+    pick = next((k for k in polls if "cfp" in str(k).lower() or "playoff" in str(polls[k].get("name", "")).lower()), None) or \
+        next((k for k in polls if str(k).lower() == "ap"), None)
+    if not pick:
+        return {}
+    return {"name": polls[pick].get("name"), "headline": polls[pick].get("headline"),
+            "ranks": {r["team_id"]: r["rank"] for r in polls[pick]["ranks"]}}
+
+
 def build(season: int, schedule: list[dict]) -> None:
     tm, games, drives = load(season)
     prior = prior_for(season)
@@ -83,8 +98,11 @@ def build(season: int, schedule: list[dict]) -> None:
         for k in ("ppd_o", "ppd_d"):
             row[k] = None if row[k] is None or not np.isfinite(row[k]) else round(float(row[k]), 2)
 
+    # The Games tab shows the next eight days; the playoff simulation uses everything left
+    horizon = (datetime.now(timezone.utc) + pd.Timedelta(days=8)).strftime("%Y-%m-%dT%H:%M")
+    remaining = pd.DataFrame(schedule)
     up = []
-    for g in schedule:
+    for g in [x for x in schedule if str(x.get("start") or x.get("date")) < horizon]:
         p = teams.predict(m, g["home_id"], g["away_id"], g.get("neutral", False))
         if p and (g["home_id"] in names or g["away_id"] in names):
             up.append({"id": g["game_id"], "start": g.get("start"), "neutral": bool(g.get("neutral")),
@@ -102,7 +120,19 @@ def build(season: int, schedule: list[dict]) -> None:
     out.mkdir(parents=True, exist_ok=True)
     plays = load_plays(season)
     stats = scouting.team_profiles(plays, drives, set(t.team_id)) if len(plays) and len(drives) else {"league": {}, "teams": {}}
-    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)):
+    po = None
+    if not config.IS_NFL and len(remaining) and "season_type" in remaining:
+        reg = remaining[pd.to_numeric(remaining.season_type, errors="coerce") == 2]
+        res = playoff.simulate(m, tm, games[pd.to_numeric(games.season_type, errors="coerce") == 2]
+                               if "season_type" in games else games, reg)
+        if res is not None:
+            keep = res[(res.playoff >= 0.005) | (res.index < 30)]
+            po = {"sims": 10000, "updated": meta["updated"], "polls": _polls(season),
+                  "teams": [{"id": r.team_id, **{k: round(float(getattr(r, k)), 4) for k in
+                             ("playoff", "bye", "conf_champ", "quarter", "semi", "final", "title")},
+                             "wins": round(float(r.wins), 1), "losses": round(float(r.losses), 1), "sor": round(float(r.sor), 2)}
+                            for r in keep.itertuples()]}
+    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)) + ((("playoff", po),) if po else ()):
         (out / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     print(f"football: {len(games)} games, {len(t)} teams rated, {len(up)} upcoming")
 

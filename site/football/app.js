@@ -8,7 +8,7 @@
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
   const pct = (p) => (p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : Math.round(p * 100) + "%");
-  const VIEWS = ["rankings", "games", "matchup", "method"];
+  const VIEWS = ["rankings", "games", "matchup", "playoff", "method"];
   let D = {};
   let LG = { nfl: false, level: "Division I", short: "D-I" };  // replaced by meta.league on load
   const teamById = {};
@@ -20,6 +20,7 @@
     const names = ["meta", "teams", "games"];
     const res = await Promise.all(names.map((n) => fetch("data/" + n + ".json").then((r) => { if (!r.ok) throw new Error(n); return r.json(); })));
     names.forEach((n, i) => (D[n] = res[i]));
+    D.playoff = await fetch("data/playoff.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
     D.teams.forEach((t) => (teamById[t.id] = t));
     if (D.meta.league) LG = D.meta.league;
     $("#stamp").textContent = D.meta.season + " season · updated " + new Date(D.meta.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" });
@@ -165,6 +166,29 @@
     draw();
   }
 
+  function playoff(main) {
+    const P = D.playoff;
+    if (LG.nfl || !P) { main.innerHTML = '<div><h1>Playoff Odds</h1><p class="lede">Playoff odds will appear after the next daily update.</p></div>'; return; }
+    const poll = P.polls || {};
+    main.innerHTML = '<div><h1>Playoff Odds</h1><p class="lede">Chances of making the 12-team College Football Playoff and advancing, from ' + P.sims.toLocaleString() +
+      " simulations of the rest of the season. Each one plays out the remaining schedule and conference title games, ranks teams by strength of record (how surprising their record would be for a top-25-caliber team against the same schedule) with a small credit for rating, then builds the field by the 2026 rules and plays the bracket.</p></div>" +
+      '<p class="note">An approximation of the committee, not a copy of it. ' + (poll.name ? "The " + esc(poll.name) + " rank is shown for comparison." : "") +
+      " Automatic bids go to the ACC, Big Ten, Big 12 and SEC champions, the highest-ranked team from the American, Conference USA, MAC, Mountain West, Pac-12 and Sun Belt, and Notre Dame if it ranks in the top 12; the top four get byes.</p><div id='po-t'></div>";
+    const p100 = (v) => (v >= 0.995 ? "✓" : v < 0.001 ? "–" : (v * 100).toFixed(v < 0.1 ? 1 : 0));
+    const cols = [
+      { key: "poll", label: poll.name && /playoff|cfp/i.test(poll.name) ? "CFP" : "AP", asc: true, val: (t) => (poll.ranks || {})[t.id] || null, html: (t) => (poll.ranks || {})[t.id] || "–" },
+      { key: "team", label: "Team", left: true, cls: "name", html: (t) => teamLink(t.id, true), val: (t) => (teamById[t.id] || {}).short, asc: true },
+      { key: "rec", label: "Proj. record", html: (t) => Math.round(t.wins) + "-" + Math.round(t.losses), val: (t) => t.wins - t.losses },
+      { key: "conf_champ", label: "Win conf.", html: (t) => p100(t.conf_champ) },
+      { key: "playoff", label: "Make CFP", html: (t) => "<b>" + p100(t.playoff) + "</b>" },
+      { key: "bye", label: "Bye", html: (t) => p100(t.bye) },
+      { key: "semi", label: "Semis", html: (t) => p100(t.semi) },
+      { key: "final", label: "Title game", html: (t) => p100(t.final) },
+      { key: "title", label: "Champion", html: (t) => p100(t.title) },
+    ];
+    table($("#po-t"), cols, P.teams, "playoff");
+  }
+
   function method(main) {
     const m = D.meta;
     if (LG.nfl) {
@@ -186,7 +210,17 @@
       "<p>The fit is Bayesian ridge regression. Each team starts from last season's final rating, with " + Math.round(m.prior_keep * 100) + "% carried over and worth about " + m.prior_games + " games of evidence, so September ratings are sensible and this season's results take over within a few weeks. Both settings were chosen by replaying the 2025 season week by week. Damping lopsided scores (counting a 63-0 win as something less) made those replayed predictions worse, so every score counts as played. Non-conference games are the only ones linking conferences, so they set how the conferences compare. Delen, Cogdell and Kasap (2012) found non-conference results and average margin were the two strongest predictors of bowl outcomes.</p>" +
       "<h2>Predictions</h2><p>Each side's projected points are μ plus its offense, the opponent's defense and its share of home field. The win chance treats the actual margin as normal around the projected spread with a standard deviation of " + m.sd + " points, measured from how far this season's games landed from their fitted margins.</p>" +
       "<h2>Points per drive</h2><p>The Teams table also shows raw points per drive for and against, from ESPN's drive charts. They aren't adjusted for opponents; they show how efficiently each side of the ball turns possessions into points.</p>" +
-      "<h2>Coming next</h2><p>Bowl and College Football Playoff projections, a bowl-specific model following Delen, Cogdell and Kasap, and efficiency ratings built on expected points per play.</p></div>";
+      "<h2>Playoff odds</h2><p>The Playoff tab simulates the rest of the season 10,000 times with these ratings, ranks teams by strength of record with a small credit for rating, builds the 12-team field by the 2026 rules (Power 4 champions, the top Group of Six team, Notre Dame if it ranks in the top 12, the rest at-large; byes for the top four) and plays the bracket. The committee is people, not a formula, so treat the selection step as an informed approximation.</p>" +
+      "<h2>Bowl games: a study</h2><p>Following Delen, Cogdell and Kasap (2012, <i>International Journal of Forecasting</i> 28(2), 543–552), we compared ways of predicting bowl winners on every FBS postseason game from 2018 to 2025 (319 games), training each season's model only on earlier seasons. Features were measured at the end of the regular season: these ratings, win percentage, non-conference and conference records, average margin, points for and against, schedule strength, last-three-games form, conference strength, games played and days off.</p>" +
+      '<div class="table-box"><table><thead><tr><th class="l">Method</th><th>Correct</th><th>Log loss</th><th>Brier</th></tr></thead><tbody>' +
+      "<tr><td class='l'>Random forest, all features</td><td>61.4%</td><td>0.658</td><td>0.233</td></tr>" +
+      "<tr><td class='l'>Logistic regression, rating gap only</td><td>60.2%</td><td>0.664</td><td>0.236</td></tr>" +
+      "<tr><td class='l'>This site's rating model</td><td>59.6%</td><td>0.666</td><td>0.237</td></tr>" +
+      "<tr><td class='l'>Gradient boosting, all features</td><td>61.1%</td><td>0.674</td><td>0.240</td></tr>" +
+      "<tr><td class='l'>Logistic regression, all features</td><td>59.2%</td><td>0.687</td><td>0.245</td></tr>" +
+      "<tr><td class='l'>Decision tree (as in the paper)</td><td>56.7%</td><td>0.739</td><td>0.258</td></tr></tbody></table></div>" +
+      "<p>Bowls are hard: every method lands near 60%, and the differences among the top four are within the noise of 319 games. The decision tree that led the paper's cross-validated results did worst when predicting future seasons, a reminder that cross-validation which mixes seasons can flatter a flexible model. On their own, the paper's two most important variables picked the winner 54% (non-conference record) and 57% (average margin) of the time, against 59% for the rating gap. Bowl predictions here use the rating model; the gain from the forest isn't large enough yet to trust.</p>" +
+      "<h2>Coming next</h2><p>Efficiency ratings built on expected points per play.</p></div>";
   }
 
   /* ===================== Matchup page ===================== */
@@ -360,7 +394,7 @@
     });
     if (h.startsWith("game-")) gamePage($("#main"), h.slice(5));
     else if (h.startsWith("vs-")) { const [a, b, n] = h.slice(3).split("-"); matchupPage($("#main"), a, b, n === "n", null); }
-    else ({ rankings, games, matchup, method })[view]($("#main"));
+    else ({ rankings, games, matchup, playoff, method })[view]($("#main"));
     window.scrollTo(0, 0);
   }
 
