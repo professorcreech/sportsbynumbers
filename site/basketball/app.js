@@ -94,6 +94,8 @@
       { key: "o", label: "Off", html: (t) => f1(t.o) + '<span class="rk">' + t.o_rank + "</span>" },
       { key: "d", label: "Def", asc: true, html: (t) => f1(t.d) + '<span class="rk">' + t.d_rank + "</span>" },
       { key: "tempo", label: "Tempo", html: (t) => f1(t.tempo) + '<span class="rk">' + t.t_rank + "</span>" },
+      { key: "pre", label: "Pre", html: (t) => (t.pre == null ? "–" : '<span class="' + cls(t.pre) + '">' + sgn(t.pre) + "</span>") },
+      { key: "ret", label: "Ret", html: (t) => (t.ret == null ? "–" : Math.round(t.ret * 100) + "%") },
     ];
     const draw = () => {
       const q = $("#r-q").value.trim().toLowerCase(), c = $("#r-c").value;
@@ -252,7 +254,12 @@
       "<h2>Team ratings</h2><p>Each game gives two observations, one per offense. For offense <i>o</i> facing defense <i>d</i>:</p>" +
       '<span class="eq">100 × points / possessions = μ + O[o] + D[d] + h·H/2 + ε</span>' +
       "<p>μ is the league average (" + m.mu + " this season). h is +1 for the home offense, −1 for the road offense and 0 at a neutral site, so H is the full home-court swing, currently estimated at " + m.hca + " points per 100 possessions. Possessions come from the box score: FGA − OREB + TO + 0.475 × FTA, averaged over both teams.</p>" +
-      "<p>The fit is Bayesian ridge regression. Each team's O and D start from a prior centered on last season's rating, regressed 40% toward average and worth about four games of evidence, so early-season ratings are sensible and fade toward this season's results as games accumulate. Games are weighted by possessions and by recency, with a 60-day half-life. Tempo is fit the same way on possessions per game.</p>" +
+      "<p>The fit is Bayesian ridge regression. Games are weighted by possessions and by recency, with a 60-day half-life, and home court starts from the long-run college average until the data can pin it down. Tempo is fit the same way on possessions per game.</p>" +
+      "<h2>Preseason ratings</h2><p>Each team's O and D start from a preseason estimate built from two ingredients:</p>" +
+      "<p><b>Program.</b> Last season's full-season rating. Weighting last season toward its final weeks, or using only its last 15 games, predicted this season's early games worse: the full season is a bigger sample, and late-season form is mostly noise.</p>" +
+      "<p><b>Roster.</b> Every player on this season's roster carries his own impact rating from last season, wherever he played it, so transfers bring their value with them. A returning rating is projected forward with a rule learned from consecutive seasons (players who stay and players who transfer are fit separately). Freshmen and players new to Division I get the average newcomer rating. The team's projection weights each player by expected minutes.</p>" +
+      '<span class="eq">preseason = ' + ((m.preseason || {}).w_program || 0.69) + " × program + " + ((m.preseason || {}).w_roster || 0.5) + " × roster</span>" +
+      "<p>The weights come from regressing 2025-26 full-season ratings on both ingredients and from replaying this season's games. The preseason estimate counts as about " + ((m.preseason || {}).games || 2.7) + " games of evidence, so by January it carries little weight beside 15 or more real games. It doesn't fade beyond that: forcing it to zero by mid-season made January–March predictions slightly worse. The Teams table shows each team's preseason rating (Pre) and the share of its projected minutes going to players who were on last season's team (Ret).</p>" +
       "<h2>Predictions</h2><p>Projected possessions are the two teams' tempo effects added to the average. Each side's points are possessions × its expected efficiency. The win chance treats the actual margin as normal around the projection with a standard deviation of " + m.sd + " points, measured from how far past games landed from their fitted margins.</p>" +
       "<h2>Player impact</h2><p>Play-by-play is cut into stints, stretches with the same ten players on the floor. Each stint again gives two rows:</p>" +
       '<span class="eq">100 × points / possessions − μ = Σ Off[5 on offense] + Σ Def[5 on defense] + h·H/2 + ε</span>' +

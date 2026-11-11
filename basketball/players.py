@@ -74,8 +74,17 @@ def box_rates(box: pd.DataFrame) -> pd.DataFrame:
     return agg
 
 
+MIN_STINTS_PER_GAME = 8  # fewer means the feed lacked substitutions for that game
+
+
+def usable(stints: pd.DataFrame) -> pd.DataFrame:
+    """Drop games whose lineup data is too sparse to trust (see parse.parse_stints)."""
+    n = stints.groupby("game_id").game_id.transform("size")
+    return stints[(n >= MIN_STINTS_PER_GAME) & (stints.poss > 0)]
+
+
 def _core(stints: pd.DataFrame, box: pd.DataFrame, lam: float):
-    stints = stints[stints.poss > 0]
+    stints = usable(stints)
     players = sorted({p for col in ("home_players", "away_players") for s in stints[col].astype(str) for p in s.split()})
     pidx = {p: i for i, p in enumerate(players)}
     n = len(players)
@@ -103,6 +112,7 @@ def _core(stints: pd.DataFrame, box: pd.DataFrame, lam: float):
 
 def tune_lambda(stints: pd.DataFrame, box: pd.DataFrame, grid=(250, 500, 1000, 2000, 4000, 8000, 16000)) -> float:
     """Pick the ridge strength that best predicts scoring in held-out games (1 in 5)."""
+    stints = usable(stints)
     games = stints.game_id.astype(str).unique()
     test_ids = set(games[np.arange(len(games)) % 5 == 0])
     is_test = stints.game_id.astype(str).isin(test_ids)
@@ -141,6 +151,7 @@ def fit(stints: pd.DataFrame, box: pd.DataFrame, lam: float | None = None) -> pd
 
 def lineups(stints: pd.DataFrame, min_poss: float | None = None) -> pd.DataFrame:
     min_poss = config.LINEUP_MIN_POSS if min_poss is None else min_poss
+    stints = usable(stints)
     rows = []
     for st in stints.itertuples(index=False):
         rows.append((st.home_id, st.home_players, st.home_pts, st.away_pts, st.poss))

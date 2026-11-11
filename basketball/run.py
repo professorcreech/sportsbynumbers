@@ -54,12 +54,19 @@ def load(season: int):
     return tm, games, box, stints, prior, rosters
 
 
-def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None) -> dict:
+def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
+          season: int | None = None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     games = games[games.completed.astype(bool)] if "completed" in games else games
-    prior_net = teams.prior_from_last_season(prior, tm.team_id.tolist()) if prior is not None else {}
-    model = teams.fit(games, box, tm, prior_net)
+    prior_games, pre_info = None, {}
+    if season is not None:
+        from . import preseason
+        prior_net, pre_info = preseason.build_prior(season, rosters, box)
+        prior_games = config.PRESEASON_GAMES if prior_net else None
+    if not prior_net:  # fall back to last season's scores
+        prior_net = teams.prior_from_last_season(prior, tm.team_id.tolist()) if prior is not None else {}
+    model = teams.fit(games, box, tm, prior_net, prior_games=prior_games)
     t = model["table"]
     names = dict(zip(t.team_id, t.short))
 
@@ -110,7 +117,9 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
     team_out = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": r.conf, "color": r.color,
                  "rank": int(r.rank), "net": round(r.net, 2), "net_se": round(r.net_se, 2), "o": round(r.adj_o, 1),
                  "d": round(r.adj_d, 1), "tempo": round(r.tempo, 1), "w": int(r.wins), "l": int(r.losses),
-                 "o_rank": 0, "d_rank": 0, "t_rank": 0} for r in t.itertuples()]
+                 "o_rank": 0, "d_rank": 0, "t_rank": 0,
+                 "ret": pre_info.get("returning", {}).get(r.team_id),
+                 "pre": None if r.prior_net is None else round(r.prior_net, 2)} for r in t.itertuples()]
     for key, rk, rev in (("o", "o_rank", True), ("d", "d_rank", False), ("tempo", "t_rank", True)):
         for i, row in enumerate(sorted(team_out, key=lambda x: x[key], reverse=rev)):
             row[rk] = i + 1
@@ -119,6 +128,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "games": int(len(games)), "stints": int(len(stints)), "mu": round(model["mu"], 2), "tau": round(model["tau"], 2),
             "hca": round(model["hca"], 2), "sd": round(model["sd"], 2),
             "lambda": float(p.attrs.get("lambda", config.PLAYER_LAMBDA)) if len(p) else None,
+            "preseason": {k: v for k, v in pre_info.items() if k != "returning"},
             # Everything the browser needs to predict any matchup on its own
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
@@ -156,7 +166,7 @@ def main():
         fetch.update(season)
         sched = fetch.fetch_schedule()
     tm, games, box, stints, prior, rosters = load(season)
-    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters)
+    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season)
 
 
 if __name__ == "__main__":

@@ -101,6 +101,10 @@ def parse_stints(summary: dict, game: dict, box: list[dict]) -> list[dict]:
     plays = sorted(summary.get("plays", []), key=lambda p: _int(p.get("sequenceNumber"), 0))
     if not plays:
         return []
+    # Without substitutions we can't know who was on the floor; guessing "starters all game" would
+    # bias every player rating, so record nothing for that game.
+    if sum(_kind(p) in ("sub_in", "sub_out") for p in plays) < 4:
+        return []
     home, away = game["home_id"], game["away_id"]
     team_of = {r["player_id"]: r["team_id"] for r in box}
     starters = {home: {r["player_id"] for r in box if r["team_id"] == home and r["starter"]},

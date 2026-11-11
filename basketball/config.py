@@ -35,6 +35,14 @@ MARGIN_SD = 11.0              # fallback game-to-game margin standard deviation
 HCA_PRIOR = 4.3               # home-court swing per 100 possessions (about 3 points a game), long-run college average
 HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth (a full season has ~5,500)
 
+# ---- Preseason prior (see basketball/preseason.py and tests/preseason_study.py) ----------
+# Fit on 2025-26 and checked on Nov 2026: last season's full-season rating beat recency-weighted
+# and last-15-game versions; adding the roster (players carry ratings across teams) helped most;
+# fading the prior by January made predictions worse, so it doesn't fade.
+PRESEASON_W_PROGRAM = 0.69
+PRESEASON_W_ROSTER = 0.5
+PRESEASON_GAMES = 2.7
+
 # ---- Player model -----------------------------------------------------------
 PLAYER_LAMBDA = 3000.0        # ridge strength in possessions; re-tuned by cross-validation mid-season
 PLAYER_MIN_POSS_DISPLAY = 150 # players below this are kept out of the main table
