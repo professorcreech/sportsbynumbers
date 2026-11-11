@@ -62,6 +62,41 @@ def fetch_teams(season: int) -> None:
         pd.DataFrame(teams).to_csv(season_dir(season) / "teams.csv", index=False)
 
 
+def fetch_rosters(season: int, max_age_days: int = 7) -> None:
+    """Heights and listed positions for every D-I player. Refreshed weekly; rosters rarely change."""
+    path = season_dir(season) / "rosters.csv"
+    # File times reset on every checkout, so the fetch date is stored inside the file
+    if path.exists():
+        try:
+            last = date.fromisoformat(str(pd.read_csv(path, usecols=["fetched"]).fetched.max()))
+            if (date.today() - last).days < max_age_days:
+                return
+        except (ValueError, KeyError):
+            pass
+    teams_csv = season_dir(season) / "teams.csv"
+    if not teams_csv.exists():
+        return
+    team_ids = pd.read_csv(teams_csv, dtype={"team_id": str}).team_id.tolist()
+
+    def one(tid):
+        data = get(f"{config.ESPN}/teams/{tid}/roster") or {}
+        rows = []
+        for a in data.get("athletes", []):
+            if not isinstance(a, dict) or "id" not in a:
+                continue
+            rows.append({"player_id": str(a["id"]), "team_id": tid, "name": a.get("displayName", ""),
+                         "pos": (a.get("position") or {}).get("abbreviation", ""),
+                         "height": a.get("height"), "weight": a.get("weight"),
+                         "class": (a.get("experience") or {}).get("abbreviation", "")})
+        return rows
+
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        rows = [r for team_rows in pool.map(one, team_ids) for r in team_rows]
+    if rows:
+        pd.DataFrame(rows).assign(fetched=date.today().isoformat()).to_csv(path, index=False)
+        print(f"rosters: {len(rows)} players")
+
+
 def scoreboard(day: date) -> list[dict]:
     data = get(f"{config.ESPN}/scoreboard",
                {"dates": day.strftime("%Y%m%d"), "groups": config.DIVISION_I_GROUP, "limit": 500})
@@ -139,6 +174,7 @@ def update(season: int | None = None) -> None:
     season = season or config.season_for(today)
     d = season_dir(season)
     fetch_teams(season)
+    fetch_rosters(season)
     fetch_prior_scores(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
     day = config.season_start(season)

@@ -105,9 +105,22 @@
     draw();
   }
 
+  function posLabel(p) {
+    if (!p.pos) return "";
+    return p.pos_inferred
+      ? '<abbr title="Position inferred from height; not officially listed">' + esc(p.pos) + "*</abbr>"
+      : esc(p.pos);
+  }
+  function htInches(ht) {
+    const m = /^(\d+)'(\d+)/.exec(ht || "");
+    return m ? +m[1] * 12 + +m[2] : null;
+  }
+  const POS_NOTE = '<p class="note">* Position inferred from height because none is officially listed.</p>';
+
   function playerCols(showTeam) {
     const c = [
-      { key: "name", label: "Player", left: true, cls: "name", html: (p) => esc(p.name) + '<span class="sub">' + esc(p.pos) + "</span>", asc: true },
+      { key: "name", label: "Player", left: true, cls: "name", html: (p) => esc(p.name) + '<span class="sub">' + posLabel(p) + "</span>", asc: true },
+      { key: "ht", label: "Ht", html: (p) => esc(p.ht || "–"), val: (p) => htInches(p.ht) },
     ];
     if (showTeam) c.push({ key: "team", label: "Team", left: true, cls: "name", html: (p) => teamLink(p.team), val: (p) => (teamById[p.team] || {}).short, asc: true });
     return c.concat([
@@ -127,7 +140,7 @@
     main.innerHTML = '<div><h1>Player Impact</h1><p class="lede">Estimated points per 100 possessions a player adds over an average player, at both ends, from who was on the floor when points were scored. Box est. is what the box score alone suggests.</p></div>' +
       '<div class="controls"><div class="field"><label for="p-q">Search</label><input type="search" id="p-q" placeholder="Player or team"></div>' +
       '<div class="field"><label for="p-c">Conference</label><select id="p-c">' + confOptions() + "</select></div>" +
-      '<div class="field"><label for="p-m">Min. possessions</label><input type="number" id="p-m" min="0" step="50" value="' + minDefault + '" style="width:110px"></div></div><div id="p-t"></div>';
+      '<div class="field"><label for="p-m">Min. possessions</label><input type="number" id="p-m" min="0" step="50" value="' + minDefault + '" style="width:110px"></div></div><div id="p-t"></div><div id="p-note"></div>';
     const draw = () => {
       const q = $("#p-q").value.trim().toLowerCase(), c = $("#p-c").value, m = +$("#p-m").value || 0;
       store("sbn-minposs", m);
@@ -136,6 +149,7 @@
         return p.poss >= m && (!c || t.conf === c) && (!q || (p.name + " " + (t.name || "")).toLowerCase().includes(q));
       });
       table($("#p-t"), playerCols(true), rows, "total");
+      $("#p-note").innerHTML = rows.some((p) => p.pos_inferred) ? POS_NOTE : "";
     };
     ["#p-q", "#p-c", "#p-m"].forEach((s) => $(s).addEventListener("input", draw));
     draw();
@@ -225,8 +239,9 @@
       "<div><dt>Offense</dt><dd>" + f1(t.o) + '<span class="rk">' + t.o_rank + "</span></dd></div><div><dt>Defense</dt><dd>" + f1(t.d) + '<span class="rk">' + t.d_rank + "</span></dd></div>" +
       "<div><dt>Tempo</dt><dd>" + f1(t.tempo) + "</dd></div></dl>" +
       (up.length ? "<h2>Next up</h2><div class='grid'>" + up.map(gameCard).join("") + "</div>" : "") +
-      "<h2>Players</h2><div id='t-p'></div><h2>Lineups</h2><div id='t-l'></div>";
+      "<h2>Players</h2><div><div id='t-p'></div><div id='t-pn'></div></div><h2>Lineups</h2><div id='t-l'></div>";
     table($("#t-p"), playerCols(false), roster, "poss");
+    $("#t-pn").innerHTML = roster.some((p) => p.pos_inferred) ? POS_NOTE : "";
     lineupTable($("#t-l"), D.lineups.filter((l) => l.team === id));
   }
 

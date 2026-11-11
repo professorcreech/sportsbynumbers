@@ -141,6 +141,11 @@ tbody tr:hover { background: var(--accent-soft); }
 .eq { display: block; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; overflow-x: auto; white-space: pre; }
 .prose h3 { font: 700 15px var(--font-body); margin: 8px 0 0; }
 
+abbr[title] { text-decoration: none; cursor: help; }
+.note { color: var(--muted); font-size: 12px; margin: 8px 2px 0; }
+#p-t, #t-p { display: grid; gap: 8px; }
+#p-note .note, #t-pn .note { margin-top: -10px; }
+
 footer { color: var(--muted); font-size: 12px; padding-block: 0 32px; }
 
 @media (prefers-reduced-motion: no-preference) {

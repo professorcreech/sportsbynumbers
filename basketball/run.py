@@ -12,7 +12,7 @@ from datetime import date, datetime, timezone
 import numpy as np
 import pandas as pd
 
-from . import config, players, teams
+from . import config, players, positions, teams
 
 
 def _clean(x):
@@ -49,10 +49,12 @@ def load(season: int):
     stints = _read(d / "stints", "*.csv.gz")
     prior = pd.read_csv(d / "prior_scores.csv", dtype={"home_id": str, "away_id": str}) \
         if (d / "prior_scores.csv").exists() else None
-    return tm, games, box, stints, prior
+    rosters = pd.read_csv(d / "rosters.csv", dtype={"player_id": str, "team_id": str}) \
+        if (d / "rosters.csv").exists() else None
+    return tm, games, box, stints, prior, rosters
 
 
-def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None) -> dict:
+def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     games = games[games.completed.astype(bool)] if "completed" in games else games
@@ -71,9 +73,13 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None) -> 
     p_out = []
     if len(p):
         p = p[p.team_id.isin(set(t.team_id))]
+        p = positions.fill(p, rosters)
+        print(f"positions: {int(p.pos_inferred.sum())} inferred from height, {int((p.pos == '').sum())} still blank, "
+              f"{int(p.height.notna().sum())} of {len(p)} players have a height")
         p["rank"] = np.arange(1, len(p) + 1)
         for r in p.rename(columns={"def": "dfn"}).itertuples():
-            p_out.append({"id": r.player_id, "name": r.name, "team": r.team_id, "pos": r.pos if isinstance(r.pos, str) else "", "gp": int(r.gp),
+            p_out.append({"id": r.player_id, "name": r.name, "team": r.team_id, "pos": r.pos, "pos_inferred": bool(r.pos_inferred),
+                          "ht": positions.display_height(r.height), "gp": int(r.gp),
                           "mpg": round(r.min / max(r.gp, 1), 1), "poss": int(r.poss),
                           "off": round(r.off, 2), "def": round(r.dfn, 2), "total": round(r.total, 2),
                           "prior": round(r.prior_off + r.prior_def, 2), "impact": round(r.impact, 2),
@@ -143,8 +149,8 @@ def main():
         from . import fetch
         fetch.update(season)
         sched = fetch.fetch_schedule()
-    tm, games, box, stints, prior = load(season)
-    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}")
+    tm, games, box, stints, prior, rosters = load(season)
+    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters)
 
 
 if __name__ == "__main__":
