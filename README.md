@@ -12,8 +12,8 @@ Every modeling choice below was tested on games the model hadn't seen.
 | Section | Engine | Season | What it has |
 |---|---|---|---|
 | Men's college basketball | `basketball/` | Nov–Apr | Team ratings, player impact, lineups, predictions, matchup reports, tournament odds |
-| College football (FBS + FCS) | `football/` | Aug–Jan | Team ratings, predictions, matchup reports, Playoff odds |
-| NBA | `basketball/` with `SBN_LEAGUE=nba` | Oct–Jun | Same views as college basketball, minus the bracket |
+| College football (FBS + FCS) | `football/` | Aug–Jan | Team ratings, predictions, matchup reports, Playoff odds (2026 12-team rules) |
+| NBA | `basketball/` with `SBN_LEAGUE=nba` | Oct–Jun | Same views as college basketball minus the bracket, plus player value vs. salary |
 | NFL | `football/` with `SBN_LEAGUE=nfl` | Sep–Feb | Team ratings, predictions, matchup reports |
 
 The pro leagues reuse the college engines; `SBN_LEAGUE` switches endpoints, folders, season
@@ -43,6 +43,9 @@ Every page carries the Google tag right after `<head>`; copy it from `site/index
 | What matters in the NCAA tournament beyond ratings? | `tournament_factors.py` | Distance from campus (yes, ~2 pts for 50 vs 1,000 miles); road/neutral form (no); tournament reputation (not reliably) |
 | Football prior and blowout damping | `football_backtest.py` | Carry 90% of last season, worth 3 games; damping margins hurt |
 | Bowl games: classifiers vs. ratings (after Delen, Cogdell & Kasap 2012) | `bowl_study.py` | All ~60% out of time; random forest 61.4%, ratings 59.6%; decision tree 56.7% |
+| NBA preseason prior | `preseason_study.py` (`SBN_LEAGUE=nba`) | Roster explains more than team results (0.25 program / 0.62 roster), worth 8 games |
+| NFL preseason prior | `football_backtest.py` (`SBN_LEAGUE=nfl`) | Carry only ~30% of last season, worth 6 games (pros regress hard) |
+| Football calibration | (inline replay of 2025) | College: actual margin = 1.01 × predicted on 1,677 games; NFL 1.15 on 269 |
 
 ## Run it yourself
 
