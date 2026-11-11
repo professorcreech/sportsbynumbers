@@ -1,0 +1,10 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401858206,2026-09-04,2026-09-05T01:00Z,1,2,True,False,True,24,2390,Stanford,Miami,6,45,,Stanford,CA
+401856664,2026-09-04,2026-09-05T00:00Z,1,2,True,False,False,201,2638,Oklahoma,UTEP,51,0,,Norman,OK
+401858436,2026-09-04,2026-09-05T01:00Z,1,2,True,False,False,30,278,USC,Fresno St,39,0,,Los Angeles,CA
+401864495,2026-09-04,2026-09-04T22:30Z,1,2,True,False,False,2199,23,E Michigan,San José St,21,27,,Ypsilanti,MI
+401858435,2026-09-04,2026-09-04T23:00Z,1,2,True,False,False,2509,282,Purdue,Indiana St,44,19,,West Lafayette,IN
+401866623,2026-09-04,2026-09-04T23:00Z,1,2,True,False,False,2247,2448,Georgia St,NC A&T,59,10,,Atlanta,GA
+401856769,2026-09-04,2026-09-05T00:00Z,1,2,True,False,False,2305,2341,Kansas,Long Island,51,6,,Lawrence,KS
+401858429,2026-09-04,2026-09-05T00:00Z,1,2,True,False,False,127,2649,Michigan St,Toledo,30,20,,East Lansing,MI
+401868262,2026-09-04,2026-09-04T23:00Z,1,2,True,False,False,2368,112334,Marist,Frnklin Pierce,27,18,,Poughkeepsie,NY

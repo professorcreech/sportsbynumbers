@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401673468,2024-12-06,2024-12-07T01:00Z,15,2,True,False,False,68,2439,Boise St,UNLV,21,7,Mountain West Championship,Boise,ID
+401673462,2024-12-06,2024-12-07T01:00Z,15,2,True,False,False,349,2655,Army,Tulane,35,14,American Athletic Championship,West Point,NY
+401673466,2024-12-06,2024-12-07T00:00Z,15,2,True,False,False,55,98,Jax State,Western KY,52,12,Conference USA Championship,Jacksonville,AL

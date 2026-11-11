@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401856826,2026-10-09,2026-10-10T02:30Z,6,2,True,False,True,252,66,BYU,Iowa State,24,10,,Provo,UT
+401858487,2026-10-09,2026-10-10T01:00Z,6,2,True,False,True,264,2294,Washington,Iowa,24,41,,Seattle,WA
+401858254,2026-10-09,2026-10-09T23:00Z,6,2,True,False,True,97,52,Louisville,Florida St,44,20,,Louisville,KY
+401860922,2026-10-09,2026-10-10T01:00Z,6,2,True,False,True,328,265,Utah State,Washington St,17,16,,Logan,UT
+401864519,2026-10-09,2026-10-10T01:00Z,6,2,True,False,True,23,2751,San José St,Wyoming,13,16,,San Jose,CA
+401868329,2026-10-09,2026-10-09T16:00Z,6,2,True,False,True,2011,50,Alabama St,Florida A&M,27,28,,Montgomery,AL
+401868265,2026-10-09,2026-10-09T23:00Z,6,2,True,False,False,2368,171,Marist,Columbia,28,41,,Poughkeepsie,NY

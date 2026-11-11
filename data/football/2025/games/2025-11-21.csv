@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754598,2025-11-21,2025-11-22T01:00Z,13,2,True,False,True,152,52,NC State,Florida St,21,11,,Raleigh,NC
+401760418,2025-11-21,2025-11-22T03:30Z,13,2,True,False,True,2439,62,UNLV,Hawai'i,38,10,,Las Vegas,NV

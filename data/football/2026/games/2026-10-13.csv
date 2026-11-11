@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401871067,2026-10-13,2026-10-13T23:00Z,7,2,True,False,True,2393,48,MTSU,Delaware,33,30,,Murfreesboro,TN
+401871053,2026-10-13,2026-10-14T00:00Z,7,2,True,False,True,55,2229,Jax State,FIU,27,24,,Jacksonville,AL

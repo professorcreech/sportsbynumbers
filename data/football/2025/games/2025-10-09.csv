@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401757280,2025-10-09,2025-10-09T23:00Z,7,2,True,False,True,338,2348,Kennesaw St,Louisiana Tech,35,7,,Kennesaw,GA
+401762480,2025-10-09,2025-10-09T23:30Z,7,2,True,False,True,2655,151,Tulane,East Carolina,26,19,,New Orleans,LA
+401757279,2025-10-09,2025-10-10T00:00Z,7,2,True,False,True,2534,55,Sam Houston,Jax State,27,29,,Houston,TX
+401761622,2025-10-09,2025-10-10T00:00Z,7,2,True,False,True,290,2572,GA Southern,Southern Miss,35,38,,Statesboro,GA

@@ -1,0 +1,60 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628569,2024-11-30,2024-12-01T00:30Z,14,2,True,False,True,2483,264,Oregon,Washington,49,21,,Eugene,OR
+401628566,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,194,130,Ohio State,Michigan,10,13,,Columbus,OH
+401628445,2024-11-30,2024-12-01T00:30Z,14,2,True,False,True,245,251,Texas A&M,Texas,7,17,,College Station,TX
+401628565,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,213,120,Penn State,Maryland,44,7,,University Park,PA
+401628571,2024-11-30,2024-11-30T20:30Z,14,2,True,False,False,30,87,USC,Notre Dame,35,49,,Los Angeles,CA
+401635623,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,183,2390,Syracuse,Miami,42,38,,Syracuse,NY
+401628446,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,238,2633,Vanderbilt,Tennessee,23,36,,Nashville,TN
+401635621,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,2567,25,SMU,California,38,6,,Dallas,TX
+401628564,2024-11-30,2024-12-01T00:00Z,14,2,True,False,True,84,2509,Indiana,Purdue,66,0,,Bloomington,IN
+401628444,2024-11-30,2024-11-30T17:00Z,14,2,True,False,False,228,2579,Clemson,South Carolina,14,17,,Clemson,SC
+401628437,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,333,2,Alabama,Auburn,28,14,,Tuscaloosa,AL
+401636940,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,12,9,Arizona,Arizona St,7,49,,Tucson,AZ
+401636944,2024-11-30,2024-12-01T00:30Z,14,2,True,False,True,66,2306,Iowa State,Kansas St,29,21,,Ames,IA
+401636942,2024-11-30,2024-12-01T03:15Z,14,2,True,False,True,252,248,BYU,Houston,30,18,,Provo,UT
+401628443,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,142,8,Missouri,Arkansas,28,21,,Columbia,MO
+401643772,2024-11-30,2024-12-01T01:00Z,14,2,True,False,True,2439,2440,UNLV,Nevada,38,14,,Las Vegas,NV
+401628563,2024-11-30,2024-11-30T17:00Z,14,2,True,True,True,77,356,Northwestern,Illinois,28,38,,Chicago,IL
+401628440,2024-11-30,2024-11-30T17:00Z,14,2,True,False,False,96,97,Kentucky,Louisville,14,41,,Lexington,KY
+401629038,2024-11-30,2024-11-30T17:00Z,14,2,True,False,False,113,41,UMass,UConn,42,47,,Amherst,MA
+401635622,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,154,150,Wake Forest,Duke,17,23,,Winston-Salem,NC
+401636941,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,239,2305,Baylor,Kansas,45,17,,Waco,TX
+401636945,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,2641,277,Texas Tech,West Virginia,52,15,,Lubbock,TX
+401643848,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,2433,309,UL Monroe,Louisiana,23,37,,Monroe,LA
+401645378,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,349,2636,Army,UTSA,29,24,,West Point,NY
+401645381,2024-11-30,2024-11-30T17:00Z,14,2,True,False,True,218,249,Temple,North Texas,17,24,,Philadelphia,PA
+401644780,2024-11-30,2024-11-30T18:30Z,14,2,True,False,True,2711,2199,W Michigan,E Michigan,26,18,,Kalamazoo,MI
+401640988,2024-11-30,2024-11-30T19:00Z,14,2,True,False,True,2229,2393,FIU,MTSU,35,24,,Miami,FL
+401643845,2024-11-30,2024-11-30T19:00Z,14,2,True,False,True,2247,324,Georgia St,Coastal,27,48,,Atlanta,GA
+401643849,2024-11-30,2024-11-30T19:00Z,14,2,True,False,True,2653,2572,Troy,Southern Miss,52,20,,Troy,AL
+401645382,2024-11-30,2024-11-30T19:00Z,14,2,True,False,True,242,58,Rice,South Florida,35,28,,Houston,TX
+401635620,2024-11-30,2024-11-30T20:00Z,14,2,True,False,True,103,221,Boston College,Pitt,34,23,,Chestnut Hill,MA
+401643847,2024-11-30,2024-11-30T20:00Z,14,2,True,False,True,2032,295,Arkansas St,Old Dominion,32,40,,Jonesboro,AR
+401628567,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,127,164,Michigan St,Rutgers,14,41,,East Lansing,MI
+401628570,2024-11-30,2024-11-30T20:30Z,14,2,True,False,False,26,278,UCLA,Fresno St,20,13,,Pasadena,CA
+401635624,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,153,152,North Carolina,NC State,30,35,,Chapel Hill,NC
+401644779,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,2459,2117,N Illinois,C Michigan,24,16,,Dekalb,IL
+401645377,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,2429,5,Charlotte,UAB,29,27,,Charlotte,NC
+401645380,2024-11-30,2024-11-30T20:30Z,14,2,True,False,True,202,2226,Tulsa,FAU,16,63,,Tulsa,OK
+401641006,2024-11-30,2024-11-30T21:00Z,14,2,True,False,True,98,55,Western KY,Jax State,19,17,,Bowling Green,KY
+401641014,2024-11-30,2024-11-30T21:00Z,14,2,True,False,True,2348,338,Louisiana Tech,Kennesaw St,33,0,,Ruston,LA
+401641031,2024-11-30,2024-11-30T21:00Z,14,2,True,False,True,166,2638,New Mexico St,UTEP,35,42,,Las Cruces,NM
+401636943,2024-11-30,2024-11-30T23:00Z,14,2,True,False,True,2132,2628,Cincinnati,TCU,13,20,,Cincinnati,OH
+401643844,2024-11-30,2024-11-30T23:00Z,14,2,True,False,True,290,2026,GA Southern,App State,29,20,,Statesboro,GA
+401643773,2024-11-30,2024-11-30T23:30Z,14,2,True,False,False,265,2751,Washington St,Wyoming,14,15,,Pullman,WA
+401628438,2024-11-30,2024-12-01T00:00Z,14,2,True,False,False,52,57,Florida St,Florida,11,31,,Tallahassee,FL
+401628441,2024-11-30,2024-12-01T00:00Z,14,2,True,False,True,99,201,LSU,Oklahoma,37,17,,Baton Rouge,LA
+401635640,2024-11-30,2024-12-01T01:00Z,14,2,True,False,True,259,258,Virginia Tech,Virginia,37,17,,Blacksburg,VA
+401643846,2024-11-30,2024-12-01T01:00Z,14,2,True,False,True,256,276,James Madison,Marshall,33,35,,Harrisonburg,VA
+401643768,2024-11-30,2024-12-01T03:30Z,14,2,True,False,True,21,2005,San Diego St,Air Force,20,31,,San Diego,CA
+401643771,2024-11-30,2024-12-01T04:00Z,14,2,True,False,True,62,167,Hawai'i,New Mexico,38,30,,Honolulu,HI
+401729731,2024-11-30,2024-11-30T17:00Z,14,2,True,False,False,2546,2287,SE Missouri,Illinois St,27,35,FCS Championship - First Round,Cape Girardeau,MO
+401729737,2024-11-30,2024-11-30T17:00Z,14,2,True,False,False,227,2115,Rhode Island,C Connecticut,21,17,FCS Championship - First Round,Kingston,RI
+401729729,2024-11-30,2024-11-30T18:00Z,14,2,True,False,False,160,2630,New Hampshire,UT Martin,10,41,FCS Championship - First Round,Durham,NH
+401636386,2024-11-30,2024-11-30T19:00Z,14,2,True,True,True,2582,2755,Southern,Grambling,24,14,,New Orleans,LA
+401729730,2024-11-30,2024-11-30T19:00Z,14,2,True,False,False,257,2329,Richmond,Lehigh,16,20,FCS Championship - First Round,Richmond,VA
+401729736,2024-11-30,2024-11-30T19:00Z,14,2,True,False,False,222,2198,Villanova,E Kentucky,22,17,FCS Championship - First Round,Philadelphia,PA
+401729732,2024-11-30,2024-11-30T20:00Z,14,2,True,False,False,2627,2181,Tarleton St,Drake,43,29,FCS Championship - First Round,Stephenville,TX
+401729738,2024-11-30,2024-11-30T20:00Z,14,2,True,False,False,2000,2464,Abilene Chrstn,N Arizona,24,0,FCS Championship - First Round,Abilene,TX
+401729734,2024-11-30,2024-12-01T03:15Z,14,2,True,False,False,149,2634,Montana,Tennessee St,41,27,FCS Championship - First Round,Missoula,MT

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401870766,2026-10-08,2026-10-08T23:00Z,6,2,True,False,True,2335,2534,Liberty,Sam Houston,35,3,,Lynchburg,VA
+401871052,2026-10-08,2026-10-08T23:00Z,6,2,True,False,True,98,2623,Western KY,Missouri St,34,13,,Bowling Green,KY
+401862794,2026-10-08,2026-10-08T23:30Z,6,2,True,False,True,2636,58,UTSA,South Florida,31,24,,San Antonio,TX
+401869933,2026-10-08,2026-10-08T23:30Z,6,2,True,False,True,2032,6,Arkansas St,South Alabama,49,56,,Jonesboro,AR

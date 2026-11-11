@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762492,2025-10-24,2025-10-24T23:00Z,9,2,True,False,True,2429,249,Charlotte,North Texas,20,54,,Charlotte,NC
+401754372,2025-10-24,2025-10-24T23:30Z,9,2,True,False,True,259,25,Virginia Tech,California,42,34,,Blacksburg,VA
+401760397,2025-10-24,2025-10-25T02:00Z,9,2,True,False,True,2440,68,Nevada,Boise St,3,24,,Reno,NV
+401767101,2025-10-24,2025-10-25T02:35Z,9,2,True,False,True,16,149,Sacramento St,Montana,35,49,,Sacramento,CA
+401767701,2025-10-24,2025-10-24T22:00Z,9,2,True,False,True,159,171,Dartmouth,Columbia,49,3,,Hanover,NH

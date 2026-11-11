@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628463,2024-09-06,2024-09-06T23:00Z,2,2,True,False,False,84,2710,Indiana,W Illinois,77,3,,Bloomington,IN
+401634765,2024-09-06,2024-09-06T23:00Z,2,2,True,False,False,2567,252,SMU,BYU,15,18,,Dallas,TX
+401635533,2024-09-06,2024-09-07T01:00Z,2,2,True,False,False,77,150,Northwestern,Duke,20,26,,Evanston,IL

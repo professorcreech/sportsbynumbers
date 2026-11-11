@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401729780,2024-12-13,2024-12-14T02:00Z,16,2,True,False,False,147,70,Montana St,Idaho,52,19,FCS Championship - Quarterfinals,Bozeman,MT

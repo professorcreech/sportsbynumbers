@@ -1,0 +1,95 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401856717,2026-10-10,2026-10-10T19:30Z,6,2,True,True,True,201,251,Oklahoma,Texas,27,24,,Dallas,TX
+401856712,2026-10-10,2026-10-10T23:30Z,6,2,True,False,True,333,61,Alabama,Georgia,17,20,,Tuscaloosa,AL
+401858257,2026-10-10,2026-10-10T19:30Z,6,2,True,False,False,87,24,Notre Dame,Stanford,58,7,,Notre Dame,IN
+401858483,2026-10-10,2026-10-10T20:15Z,6,2,True,False,True,194,120,Ohio State,Maryland,45,16,,Columbus,OH
+401858481,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,158,84,Nebraska,Indiana,17,20,,Lincoln,NE
+401856718,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,238,145,Vanderbilt,Ole Miss,17,52,,Nashville,TN
+401856715,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,96,99,Kentucky,LSU,35,34,,Lexington,KY
+401856827,2026-10-10,2026-10-11T00:00Z,6,2,True,False,True,254,2305,Utah,Kansas,41,24,,Salt Lake City,UT
+401858484,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2483,26,Oregon,UCLA,15,17,,Eugene,OR
+401856716,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,142,245,Missouri,Texas A&M,27,6,,Columbia,MO
+401856713,2026-10-10,2026-10-10T20:15Z,6,2,True,False,True,8,2633,Arkansas,Tennessee,17,24,,Fayetteville,AR
+401856714,2026-10-10,2026-10-10T16:45Z,6,2,True,False,True,57,2579,Florida,South Carolina,19,38,,Gainesville,FL
+401856824,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,197,2116,Oklahoma St,UCF,42,28,,Stillwater,OK
+401858485,2026-10-10,2026-10-10T23:30Z,6,2,True,False,True,213,30,Penn State,USC,23,31,,University Park,PA
+401856825,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2306,248,Kansas St,Houston,16,35,,Manhattan,KS
+401860901,2026-10-10,2026-10-11T02:30Z,6,2,True,False,True,278,68,Fresno St,Boise St,31,38,,Fresno,CA
+401858256,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,221,153,Pitt,North Carolina,17,21,,Pittsburgh,PA
+401856823,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,277,12,West Virginia,Arizona,31,52,,Morgantown,WV
+401858260,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,152,154,NC State,Wake Forest,14,38,,Raleigh,NC
+401862795,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,349,2655,Army,Tulane,20,17,,West Point,NY
+401866436,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,189,16,Bowling Green,Sacramento St,38,10,,Bowling Green,OH
+401858482,2026-10-10,2026-10-10T16:30Z,6,2,True,False,False,77,2050,Northwestern,Ball State,45,14,,Evanston,IL
+401862797,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,151,242,East Carolina,Rice,28,12,,Greenville,NC
+401869843,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,2026,295,App State,Old Dominion,3,10,,Boone,NC
+401866440,2026-10-10,2026-10-10T18:00Z,6,2,True,False,True,113,193,UMass,Miami OH,19,20,,Amherst,MA
+401858255,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,59,150,Georgia Tech,Duke,28,25,,Atlanta,GA
+401858259,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,25,259,California,Virginia Tech,25,20,,Berkeley,CA
+401858480,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,127,356,Michigan St,Illinois,37,38,,East Lansing,MI
+401862796,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,249,2429,North Texas,Charlotte,50,10,,Denton,TX
+401862799,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2426,202,Navy,Tulsa,34,26,,Annapolis,MD
+401866435,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2006,2199,Akron,E Michigan,23,25,,Akron,OH
+401866437,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2649,2084,Toledo,Buffalo,8,23,,Toledo,OH
+401866438,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,195,2117,Ohio,C Michigan,31,14,,Athens,OH
+401866439,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2711,2309,W Michigan,Kent State,38,7,,Kalamazoo,MI
+401861964,2026-10-10,2026-10-10T19:45Z,6,2,True,False,False,218,41,Temple,UConn,20,34,,Philadelphia,PA
+401860902,2026-10-10,2026-10-10T22:00Z,6,2,True,False,True,204,21,Oregon St,San Diego St,66,14,,Corvallis,OR
+401862798,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,235,5,Memphis,UAB,38,13,,Memphis,TN
+401864517,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,2638,2440,UTEP,Nevada,13,30,,El Paso,TX
+401864518,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,2439,2449,UNLV,N Dakota St,13,7,,Las Vegas,NV
+401869943,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,276,324,Marshall,Coastal,21,27,,Huntington,WV
+401858258,2026-10-10,2026-10-10T23:30Z,6,2,True,False,True,258,183,Virginia,Syracuse,28,25,,Charlottesville,VA
+401864516,2026-10-10,2026-10-10T23:30Z,6,2,True,False,True,2459,2005,N Illinois,Air Force,7,28,,Dekalb,IL
+401869965,2026-10-10,2026-10-10T23:30Z,6,2,True,False,True,2348,309,Louisiana Tech,Louisiana,32,31,,Ruston,LA
+401858486,2026-10-10,2026-10-11T00:00Z,6,2,True,False,True,2509,135,Purdue,Minnesota,41,13,,West Lafayette,IN
+401869949,2026-10-10,2026-10-11T00:10Z,6,2,True,False,True,290,256,GA Southern,James Madison,24,27,,Statesboro,GA
+401856808,2026-10-10,2026-10-11T02:30Z,6,2,True,False,False,9,62,Arizona St,Hawai'i,30,12,,Tempe,AZ
+401866658,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,2448,160,NC A&T,New Hampshire,30,27,,Greensboro,NC
+401866660,2026-10-10,2026-10-10T16:00Z,6,2,True,False,False,2529,284,Sacred Heart,Stonehill,7,28,,Fairfield,CT
+401866662,2026-10-10,2026-10-10T16:00Z,6,2,True,False,False,225,2803,Brown,Bryant,28,13,,Providence,RI
+401867836,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,43,159,Yale,Dartmouth,28,7,,New Haven,CT
+401867919,2026-10-10,2026-10-10T16:00Z,6,2,True,False,False,2415,2523,Morgan St,Robert Morris,28,27,,Baltimore,MD
+401867930,2026-10-10,2026-10-10T16:00Z,6,2,True,False,False,2681,163,Wagner,Princeton,13,28,,Staten Island,NY
+401868221,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,2506,2166,Presbyterian,Davidson,38,21,,Clinton,SC
+401868229,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,2168,2413,Dayton,Morehead St,56,28,,Dayton,OH
+401868347,2026-10-10,2026-10-10T16:00Z,6,2,True,False,True,2643,2193,The Citadel,ETSU,16,34,,Charleston,SC
+401867992,2026-10-10,2026-10-10T16:30Z,6,2,True,False,True,46,2083,Georgetown,Bucknell,21,14,,Washington,DC
+401867829,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,172,108,Cornell,Harvard,29,41,,Ithaca,NY
+401867860,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,282,2754,Indiana St,Youngstown St,24,57,,Terre Haute,IN
+401867907,2026-10-10,2026-10-10T17:00Z,6,2,True,False,False,2115,2022,C Connecticut,American Int'l,51,14,,New Britain,CT
+401867911,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,2184,2341,Duquesne,Long Island,14,17,,Pittsburgh,PA
+401867954,2026-10-10,2026-10-10T17:00Z,6,2,True,False,False,2169,112334,Delaware St,Frnklin Pierce,34,0,,Dover,DE
+401867960,2026-10-10,2026-10-10T17:00Z,6,2,True,False,False,219,47,Penn,Howard,24,20,,Philadelphia,PA
+401867980,2026-10-10,2026-10-10T17:00Z,6,2,True,False,False,2428,2729,NC Central,William & Mary,14,17,,Durham,NC
+401867987,2026-10-10,2026-10-10T17:00Z,6,2,True,False,False,2127,2569,Charleston So,SC State,49,39,,Charleston,SC
+401868212,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,2086,301,Butler,San Diego,41,10,,Indianapolis,IN
+401868300,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,2010,2065,Alabama A&M,Bethune,55,17,,Huntsville,AL
+401868340,2026-10-10,2026-10-10T17:00Z,6,2,True,False,True,236,2535,Chattanooga,Samford,19,3,,Chattanooga,TN
+401866661,2026-10-10,2026-10-10T18:00Z,6,2,True,False,False,2210,2747,Elon,Wofford,0,16,,Elon,NC
+401867886,2026-10-10,2026-10-10T18:00Z,6,2,True,False,True,233,79,South Dakota,S Illinois,31,10,,Vermillion,SD
+401867974,2026-10-10,2026-10-10T18:00Z,6,2,True,False,False,2450,2355,Norfolk St,VA Lynchburg,62,0,,Norfolk,VA
+401868256,2026-10-10,2026-10-10T18:00Z,6,2,True,False,True,2674,2181,Valparaiso,Drake,21,13,,Valparaiso,IN
+401868282,2026-10-10,2026-10-10T18:00Z,6,2,True,False,True,2900,56,St Thomas,Stetson,64,21,,Saint Paul,MN
+401871473,2026-10-10,2026-10-10T18:00Z,6,2,True,False,True,2815,2546,Lindenwood,SE Missouri,27,38,,Saint Charles,MO
+401868095,2026-10-10,2026-10-10T19:00Z,6,2,True,False,True,2692,70,Weber St,Idaho,38,27,,Ogden,UT
+401868360,2026-10-10,2026-10-10T19:00Z,6,2,True,False,False,2016,124386,Alcorn St,Ark Baptist,63,7,,Lorman,MS
+401868382,2026-10-10,2026-10-10T19:00Z,6,2,True,False,True,2382,2717,Mercer,W Carolina,17,14,,Macon,GA
+401868966,2026-10-10,2026-10-10T19:00Z,6,2,True,False,True,2640,2400,Texas Southern,Miss Valley St,34,38,,Houston,TX
+401868011,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2230,257,Fordham,Richmond,20,14,,Bronx,NY
+401868180,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2241,2197,Gardner-Webb,E Illinois,7,21,,Boiling Springs,NC
+401868198,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2634,2630,Tennessee St,UT Martin,28,42,,Nashville,TN
+401868376,2026-10-10,2026-10-10T19:30Z,6,2,True,False,True,2635,231,Tennessee Tech,Furman,20,15,,Cookeville,TN
+401866659,2026-10-10,2026-10-10T20:00Z,6,2,True,False,True,119,2619,Towson,Stony Brook,24,31,,Towson,MD
+401868156,2026-10-10,2026-10-10T20:00Z,6,2,True,False,True,2502,3101,Portland St,Utah Tech,30,14,,Portland,OR
+401868968,2026-10-10,2026-10-10T20:00Z,6,2,True,False,True,2504,2582,Prairie View,Southern,14,28,,Prairie View,TX
+401869144,2026-10-10,2026-10-10T20:00Z,6,2,True,False,True,2320,2916,Lamar,Incarnate Word,38,35,,Beaumont,TX
+401867877,2026-10-10,2026-10-10T21:00Z,6,2,True,False,True,2460,155,Northern Iowa,North Dakota,24,17,,Cedar Falls,IA
+401868115,2026-10-10,2026-10-10T21:00Z,6,2,True,False,True,2464,149,N Arizona,Montana,49,44,,Flagstaff,AZ
+401868955,2026-10-10,2026-10-10T21:00Z,6,2,True,False,True,2755,2296,Grambling,Jackson St,45,38,,Grambling,LA
+401868078,2026-10-10,2026-10-10T22:00Z,6,2,True,False,True,304,13,Idaho St,Cal Poly,24,25,,Pocatello,ID
+401868144,2026-10-10,2026-10-10T22:00Z,6,2,True,False,True,2198,2698,E Kentucky,West Georgia,30,20,,Richmond,KY
+401868065,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,2046,2627,Austin Peay,Tarleton St,32,40,,Clarksville,TN
+401868087,2026-10-10,2026-10-10T23:00Z,6,2,True,False,True,331,2458,E Washington,N Colorado,31,22,,Cheney,WA
+401868054,2026-10-10,2026-10-11T00:00Z,6,2,True,False,True,2000,2110,Abilene Chrstn,C Arkansas,20,14,,Abilene,TX
+401868249,2026-10-10,2026-10-11T00:00Z,6,2,True,False,True,292,2545,UT Rio Grande,SE Louisiana,13,3,,Edinburg,TX

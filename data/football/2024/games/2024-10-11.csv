@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401636892,2024-10-11,2024-10-12T02:30Z,7,2,True,False,True,9,254,Arizona St,Utah,27,19,,Tempe,AZ
+401628513,2024-10-11,2024-10-12T00:00Z,7,2,True,False,True,120,77,Maryland,Northwestern,10,37,,College Park,MD
+401643733,2024-10-11,2024-10-12T01:00Z,7,2,True,False,True,328,2439,Utah State,UNLV,34,50,,Logan,UT
+401644599,2024-10-11,2024-10-11T22:00Z,7,2,True,False,True,172,108,Cornell,Harvard,20,38,,Ithaca,NY
+401636357,2024-10-11,2024-10-12T01:15Z,7,2,True,False,True,2029,2504,AR-Pine Bluff,Prairie View,21,17,,Pine Bluff,AR

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401862800,2026-10-15,2026-10-15T23:30Z,7,2,True,False,True,5,151,UAB,East Carolina,30,17,,Birmingham,AL
+401869950,2026-10-15,2026-10-15T23:30Z,7,2,True,False,True,295,290,Old Dominion,GA Southern,15,23,,Norfolk,VA
+401860923,2026-10-15,2026-10-16T00:00Z,7,2,True,False,True,326,36,Texas St,Colorado St,66,27,,San Marcos,TX

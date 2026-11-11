@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401756900,2025-09-19,2025-09-19T23:30Z,4,2,True,False,False,197,202,Oklahoma St,Tulsa,12,19,,Stillwater,OK
+401752844,2025-09-19,2025-09-20T00:00Z,4,2,True,False,True,164,2294,Rutgers,Iowa,28,38,,Piscataway,NJ
+401767679,2025-09-19,2025-09-19T22:00Z,4,2,True,False,False,322,171,Lafayette,Columbia,38,14,,Easton,PA

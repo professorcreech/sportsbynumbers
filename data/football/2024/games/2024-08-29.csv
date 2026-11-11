@@ -1,0 +1,33 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628327,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,142,93,Missouri,Murray St,51,0,,Columbia,MO
+401636607,2024-08-29,2024-08-30T01:00Z,1,2,True,False,False,254,253,Utah,Southern Utah,49,0,,Salt Lake City,UT
+401636606,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,2305,2815,Kansas,Lindenwood,48,3,,Kansas City,KS
+401634299,2024-08-29,2024-08-29T23:32Z,1,2,True,False,False,152,2717,NC State,W Carolina,38,21,,Raleigh,NC
+401628458,2024-08-29,2024-08-29T22:00Z,1,2,True,False,False,164,47,Rutgers,Howard,44,7,,Piscataway,NJ
+401628579,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,48,2803,Delaware,Bryant,48,17,,Newark,DE
+401628581,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,154,2448,Wake Forest,NC A&T,45,13,,Winston-Salem,NC
+401628582,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2116,160,UCF,New Hampshire,57,3,,Orlando,FL
+401644727,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2084,322,Buffalo,Lafayette,30,13,,Buffalo,NY
+401644729,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,189,2230,Bowling Green,Fordham,41,17,,Bowling Green,OH
+401644730,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2117,2115,C Michigan,C Connecticut,66,10,,Mount Pleasant,MI
+401628320,2024-08-29,2024-08-29T23:30Z,1,2,True,True,False,8,2029,Arkansas,AR-Pine Bluff,70,0,,Little Rock,AR
+401644728,2024-08-29,2024-08-29T23:30Z,1,2,True,False,False,2649,2184,Toledo,Duquesne,49,10,,Toledo,OH
+401634206,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,38,2449,Colorado,N Dakota St,31,26,,Boulder,CO
+401640998,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,55,324,Jax State,Coastal,27,55,,Jacksonville,AL
+401645316,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,5,2016,UAB,Alcorn St,41,3,,Birmingham,AL
+401645317,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,2655,2545,Tulane,SE Louisiana,52,0,,New Orleans,LA
+401645318,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,202,2466,Tulsa,N'Western St,62,28,,Tulsa,OK
+401628448,2024-08-29,2024-08-30T01:00Z,1,2,True,False,False,135,153,Minnesota,North Carolina,17,19,,Minneapolis,MN
+401636387,2024-08-29,2024-08-30T01:00Z,1,2,True,False,False,2433,2296,UL Monroe,Jackson St,30,14,,Monroe,LA
+401654845,2024-08-29,2024-08-30T01:15Z,1,2,True,False,False,356,2197,Illinois,E Illinois,45,0,,Champaign,IL
+401643698,2024-08-29,2024-08-30T02:00Z,1,2,True,False,False,23,16,San José St,Sacramento St,42,24,,San Jose,CA
+401628580,2024-08-29,2024-08-29T22:00Z,1,2,True,False,False,222,2754,Villanova,Youngstown St,24,17,,Philadelphia,PA
+401628592,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2729,2678,William & Mary,VMI,41,7,,Williamsburg,VA
+401634152,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2241,2747,Gardner-Webb,Wofford,20,21,,Boiling Springs,NC
+401673041,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,2413,2119,Morehead St,Central St,17,10,,Morehead,KY
+401674305,2024-08-29,2024-08-29T23:00Z,1,2,True,False,False,112335,2385,Wheeling,Mercyhurst,25,28,,Wheeling,WV
+401654562,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,233,425,South Dakota,Northern St,45,3,,Vermillion,SD
+401675114,2024-08-29,2024-08-30T00:00Z,1,2,True,False,False,2617,123086,SF Austin,N American,77,0,,Nacogdoches,TX
+401634143,2024-08-29,2024-08-30T00:30Z,1,2,True,False,False,2382,2506,Mercer,Presbyterian,63,10,,Macon,GA
+401628583,2024-08-29,2024-08-30T01:00Z,1,2,True,False,False,331,2405,E Washington,Monmouth,42,27,,Cheney,WA
+401655860,2024-08-29,2024-08-30T01:00Z,1,2,True,False,False,2900,2894,St Thomas,Sioux Falls,13,34,,Saint Paul,MN

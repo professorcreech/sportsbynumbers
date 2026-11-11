@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401757282,2025-10-14,2025-10-14T23:00Z,8,2,True,False,True,2335,166,Liberty,New Mexico St,30,27,,Lynchburg,VA
+401761628,2025-10-14,2025-10-14T23:30Z,8,2,True,False,True,6,2032,South Alabama,Arkansas St,14,15,,Mobile,AL
+401757281,2025-10-14,2025-10-15T00:00Z,8,2,True,False,True,98,2229,Western KY,FIU,6,25,,Bowling Green,KY

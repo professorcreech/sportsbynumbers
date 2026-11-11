@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628439,2024-11-29,2024-11-30T00:30Z,14,2,True,False,False,61,59,Georgia,Georgia Tech,44,42,,Athens,GA
+401643769,2024-11-29,2024-11-29T17:00Z,14,2,True,False,False,68,204,Boise St,Oregon St,34,18,,Boise,ID
+401628442,2024-11-29,2024-11-29T20:30Z,14,2,True,False,True,145,344,Ole Miss,Mississippi St,26,14,,Oxford,MS
+401636938,2024-11-29,2024-11-29T17:00Z,14,2,True,False,True,38,197,Colorado,Oklahoma St,52,0,,Boulder,CO
+401628568,2024-11-29,2024-11-29T17:00Z,14,2,True,False,True,275,135,Wisconsin,Minnesota,7,24,,Madison,WI
+401644691,2024-11-29,2024-11-29T17:00Z,14,2,True,False,True,189,193,Bowling Green,Miami OH,12,28,,Bowling Green,OH
+401644777,2024-11-29,2024-11-29T17:00Z,14,2,True,False,True,195,2050,Ohio,Ball State,42,21,,Athens,OH
+401645379,2024-11-29,2024-11-29T17:00Z,14,2,True,False,True,151,2426,East Carolina,Navy,20,34,,Greenville,NC
+401640997,2024-11-29,2024-11-29T20:30Z,14,2,True,False,True,2534,2335,Sam Houston,Liberty,20,18,,Huntsville,TX
+401643770,2024-11-29,2024-11-29T20:30Z,14,2,True,False,True,36,328,Colorado St,Utah State,42,37,,Fort Collins,CO
+401643843,2024-11-29,2024-11-29T20:30Z,14,2,True,False,True,6,326,South Alabama,Texas St,38,45,,Mobile,AL
+401635625,2024-11-29,2024-11-29T21:00Z,14,2,True,False,False,23,24,San José St,Stanford,34,31,,San Jose,CA
+401628562,2024-11-29,2024-11-30T00:30Z,14,2,True,False,True,2294,158,Iowa,Nebraska,13,10,,Iowa City,IA
+401636939,2024-11-29,2024-11-30T01:00Z,14,2,True,False,True,2116,254,UCF,Utah,14,28,,Orlando,FL
+401634252,2024-11-29,2024-11-29T21:00Z,14,2,True,False,True,50,2010,Florida A&M,Alabama A&M,28,20,,Tallahassee,FL

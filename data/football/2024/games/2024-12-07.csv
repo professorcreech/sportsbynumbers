@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401673464,2024-12-07,2024-12-08T01:00Z,15,2,True,True,False,2483,213,Oregon,Penn State,45,37,Big Ten Championship,Indianapolis,IN
+401673469,2024-12-07,2024-12-07T21:00Z,15,2,True,True,False,251,61,Texas,Georgia,19,22,SEC Championship,Atlanta,GA
+401673463,2024-12-07,2024-12-08T01:00Z,15,2,True,True,False,2567,228,SMU,Clemson,31,34,ACC Championship,Charlotte,NC
+401673465,2024-12-07,2024-12-07T17:00Z,15,2,True,True,False,9,66,Arizona St,Iowa State,45,19,Dr Pepper Big 12 Championship,Arlington,TX
+401673467,2024-12-07,2024-12-07T17:00Z,15,2,True,True,False,193,195,Miami OH,Ohio,3,38,MAC Championship,Detroit,MI
+401729745,2024-12-07,2024-12-07T20:00Z,15,2,True,False,False,2449,2000,N Dakota St,Abilene Chrstn,51,31,FCS Championship - Second Round,Fargo,ND
+401673470,2024-12-07,2024-12-08T00:30Z,15,2,True,False,False,309,276,Louisiana,Marshall,3,31,Sun Belt Championship,Lafayette,LA
+401673471,2024-12-07,2024-12-07T19:00Z,15,2,True,False,False,2296,2582,Jackson St,Southern,41,13,SWAC Championship,Jackson,MS
+401729750,2024-12-07,2024-12-07T19:00Z,15,2,True,False,False,2571,149,S Dakota St,Montana,35,18,FCS Championship - Second Round,Brookings,SD
+401729754,2024-12-07,2024-12-07T19:00Z,15,2,True,False,False,2916,222,Incarnate Word,Villanova,13,6,FCS Championship - Second Round,San Antonio,TX
+401729756,2024-12-07,2024-12-07T19:00Z,15,2,True,False,False,2382,227,Mercer,Rhode Island,17,10,FCS Championship - Second Round,Macon,GA
+401729743,2024-12-07,2024-12-07T20:00Z,15,2,True,False,False,147,2630,Montana St,UT Martin,49,17,FCS Championship - Second Round,Bozeman,MT
+401729752,2024-12-07,2024-12-07T20:00Z,15,2,True,False,False,233,2627,South Dakota,Tarleton St,42,31,FCS Championship - Second Round,Vermillion,SD
+401729753,2024-12-07,2024-12-07T21:00Z,15,2,True,False,False,302,2287,UC Davis,Illinois St,42,10,FCS Championship - Second Round,Davis,CA
+401729759,2024-12-07,2024-12-08T02:00Z,15,2,True,False,False,70,2329,Idaho,Lehigh,34,13,FCS Championship - Second Round,Moscow,ID

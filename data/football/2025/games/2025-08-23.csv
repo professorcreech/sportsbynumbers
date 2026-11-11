@@ -1,0 +1,9 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401756846,2025-08-23,2025-08-23T16:00Z,1,2,True,True,True,2306,66,Kansas St,Iowa State,21,24,Aer Lingus College Football Classic,Dublin,
+401760371,2025-08-23,2025-08-23T20:00Z,1,2,True,False,False,2439,304,UNLV,Idaho St,38,31,,Las Vegas,NV
+401756847,2025-08-23,2025-08-23T22:30Z,1,2,True,False,False,2305,278,Kansas,Fresno St,31,7,,Lawrence,KS
+401757218,2025-08-23,2025-08-23T23:00Z,1,2,True,False,True,98,2534,Western KY,Sam Houston,41,24,,Bowling Green,KY
+401754516,2025-08-23,2025-08-23T23:30Z,1,2,True,False,False,62,24,Hawai'i,Stanford,23,20,,Honolulu,HI
+401767476,2025-08-23,2025-08-23T17:00Z,1,2,True,False,True,2447,2916,Nicholls,Incarnate Word,20,6,,Thibodaux,LA
+401767126,2025-08-23,2025-08-23T20:30Z,1,2,True,False,False,2502,2627,Portland St,Tarleton St,0,42,,Portland,OR
+401767410,2025-08-23,2025-08-23T23:30Z,1,2,True,True,False,2582,2428,Southern,NC Central,14,31,Cricket MEAC/SWAC Challenge Kickoff,Atlanta,GA

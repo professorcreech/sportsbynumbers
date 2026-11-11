@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628506,2024-10-04,2024-10-05T01:00Z,6,2,True,False,True,2483,127,Oregon,Michigan St,31,10,,Eugene,OR
+401634779,2024-10-04,2024-10-05T01:00Z,6,2,True,False,False,2439,183,UNLV,Syracuse,41,44,,Las Vegas,NV
+401641001,2024-10-04,2024-10-04T23:00Z,6,2,True,False,True,338,55,Kennesaw St,Jax State,24,63,,Kennesaw,GA
+401636891,2024-10-04,2024-10-04T23:30Z,6,2,True,False,True,2628,248,TCU,Houston,19,30,,Fort Worth,TX
+401644598,2024-10-04,2024-10-04T23:00Z,6,2,True,False,False,108,160,Harvard,New Hampshire,28,23,,Cambridge,MA

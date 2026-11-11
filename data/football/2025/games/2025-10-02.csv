@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401757275,2025-10-02,2025-10-03T01:00Z,6,2,True,False,True,166,2534,New Mexico St,Sam Houston,37,10,,Las Cruces,NM

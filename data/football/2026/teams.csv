@@ -1,0 +1,267 @@
+team_id,conf,name,abbr,short,div,color
+249,American,North Texas Mean Green,UNT,North Texas,FBS,068f33
+235,American,Memphis Tigers,MEM,Memphis,FBS,004991
+2636,American,UTSA Roadrunners,UTSA,UTSA,FBS,0c2340
+2226,American,Florida Atlantic Owls,FAU,FAU,FBS,003366
+58,American,South Florida Bulls,USF,South Florida,FBS,006747
+349,American,Army Black Knights,ARMY,Army,FBS,000000
+5,American,UAB Blazers,UAB,UAB,FBS,1a5632
+151,American,East Carolina Pirates,ECU,East Carolina,FBS,582c83
+202,American,Tulsa Golden Hurricane,TLSA,Tulsa,FBS,003595
+2655,American,Tulane Green Wave,TULN,Tulane,FBS,006747
+2426,American,Navy Midshipmen,NAVY,Navy,FBS,00225b
+218,American,Temple Owls,TEM,Temple,FBS,a41e35
+2429,American,Charlotte 49ers,CLT,Charlotte,FBS,005035
+242,American,Rice Owls,RICE,Rice,FBS,00205b
+2390,acc,Miami Hurricanes,MIA,Miami,FBS,f47423
+154,acc,Wake Forest Demon Deacons,WAKE,Wake Forest,FBS,ceb888
+2567,acc,SMU Mustangs,SMU,SMU,FBS,a80000
+150,acc,Duke Blue Devils,DUKE,Duke,FBS,00539b
+97,acc,Louisville Cardinals,LOU,Louisville,FBS,c9001f
+228,acc,Clemson Tigers,CLEM,Clemson,FBS,f56600
+221,acc,Pittsburgh Panthers,PITT,Pitt,FBS,003594
+259,acc,Virginia Tech Hokies,VT,Virginia Tech,FBS,6a2c3e
+153,acc,North Carolina Tar Heels,UNC,North Carolina,FBS,7bafd4
+52,acc,Florida State Seminoles,FSU,Florida St,FBS,782f40
+24,acc,Stanford Cardinal,STAN,Stanford,FBS,8c1515
+258,acc,Virginia Cavaliers,UVA,Virginia,FBS,232d4b
+152,acc,NC State Wolfpack,NCSU,NC State,FBS,cc0000
+103,acc,Boston College Eagles,BC,Boston College,FBS,8c2232
+183,acc,Syracuse Orange,SYR,Syracuse,FBS,000e54
+25,acc,California Golden Bears,CAL,California,FBS,041e42
+59,acc,Georgia Tech Yellow Jackets,GT,Georgia Tech,FBS,b3a369
+254,big12,Utah Utes,UTAH,Utah,FBS,be0000
+2641,big12,Texas Tech Red Raiders,TTU,Texas Tech,FBS,da291c
+252,big12,BYU Cougars,BYU,BYU,FBS,0047ba
+248,big12,Houston Cougars,HOU,Houston,FBS,c8102e
+12,big12,Arizona Wildcats,ARIZ,Arizona,FBS,cc0033
+239,big12,Baylor Bears,BAY,Baylor,FBS,154734
+197,big12,Oklahoma State Cowboys,OKST,Oklahoma St,FBS,fe5c00
+9,big12,Arizona State Sun Devils,ASU,Arizona St,FBS,ffc627
+2116,big12,UCF Knights,UCF,UCF,FBS,000000
+277,big12,West Virginia Mountaineers,WVU,West Virginia,FBS,eaaa00
+2132,big12,Cincinnati Bearcats,CIN,Cincinnati,FBS,000000
+66,big12,Iowa State Cyclones,ISU,Iowa State,FBS,ae192d
+2628,big12,TCU Horned Frogs,TCU,TCU,FBS,4d1979
+2306,big12,Kansas State Wildcats,KSU,Kansas St,FBS,330a57
+38,big12,Colorado Buffaloes,COLO,Colorado,FBS,cfb87c
+2305,big12,Kansas Jayhawks,KU,Kansas,FBS,0051ba
+26,big10,UCLA Bruins,UCLA,UCLA,FBS,2774ae
+84,big10,Indiana Hoosiers,IU,Indiana,FBS,970310
+2294,big10,Iowa Hawkeyes,IOWA,Iowa,FBS,231f20
+30,big10,USC Trojans,USC,USC,FBS,9d2235
+2483,big10,Oregon Ducks,ORE,Oregon,FBS,00934b
+194,big10,Ohio State Buckeyes,OSU,Ohio State,FBS,ba0c2f
+275,big10,Wisconsin Badgers,WIS,Wisconsin,FBS,a00000
+356,big10,Illinois Fighting Illini,ILL,Illinois,FBS,ff5f05
+77,big10,Northwestern Wildcats,NU,Northwestern,FBS,492f92
+135,big10,Minnesota Golden Gophers,MINN,Minnesota,FBS,5e0a2f
+213,big10,Penn State Nittany Lions,PSU,Penn State,FBS,061440
+264,big10,Washington Huskies,WASH,Washington,FBS,33006f
+130,big10,Michigan Wolverines,MICH,Michigan,FBS,00274c
+158,big10,Nebraska Cornhuskers,NEB,Nebraska,FBS,e31937
+2509,big10,Purdue Boilermakers,PUR,Purdue,FBS,ceb888
+120,big10,Maryland Terrapins,MD,Maryland,FBS,ce1126
+127,big10,Michigan State Spartans,MSU,Michigan St,FBS,173f35
+164,big10,Rutgers Scarlet Knights,RUTG,Rutgers,FBS,ce0e2d
+2335,usa,Liberty Flames,LIB,Liberty,FBS,0a254e
+55,usa,Jacksonville State Gamecocks,JXST,Jax State,FBS,cc0000
+2393,usa,Middle Tennessee Blue Raiders,MTSU,MTSU,FBS,036eb7
+48,usa,Delaware Blue Hens,DEL,Delaware,FBS,00539f
+2229,usa,Florida International Panthers,FIU,FIU,FBS,091f3f
+166,usa,New Mexico State Aggies,NMSU,New Mexico St,FBS,7e141b
+98,usa,Western Kentucky Hilltoppers,WKU,Western KY,FBS,e13a3e
+2623,usa,Missouri State Bears,MOST,Missouri St,FBS,5e0009
+338,usa,Kennesaw State Owls,KENN,Kennesaw St,FBS,fdbb30
+2534,usa,Sam Houston Bearkats,SHSU,Sam Houston,FBS,f56423
+87,ind,Notre Dame Fighting Irish,ND,Notre Dame,FBS,062340
+41,ind,UConn Huskies,CONN,UConn,FBS,0c2340
+2649,midam,Toledo Rockets,TOL,Toledo,FBS,0b2240
+195,midam,Ohio Bobcats,OHIO,Ohio,FBS,154734
+2711,midam,Western Michigan Broncos,WMU,W Michigan,FBS,532e1f
+2084,midam,Buffalo Bulls,BUF,Buffalo,FBS,005bbb
+193,midam,Miami (OH) RedHawks,M-OH,Miami OH,FBS,c41230
+113,midam,Massachusetts Minutemen,MASS,UMass,FBS,881c1c
+2117,midam,Central Michigan Chippewas,CMU,C Michigan,FBS,4c0027
+2199,midam,Eastern Michigan Eagles,EMU,E Michigan,FBS,006938
+2050,midam,Ball State Cardinals,BALL,Ball State,FBS,ba0c2f
+189,midam,Bowling Green Falcons,BGSU,Bowling Green,FBS,fd5000
+2309,midam,Kent State Golden Flashes,KENT,Kent State,FBS,002664
+16,midam,Sacramento State Hornets,SAC,Sacramento St,FBS,00573C
+2006,midam,Akron Zips,AKR,Akron,FBS,041e42
+167,mwest,New Mexico Lobos,UNM,New Mexico,FBS,ba0c2f
+2449,mwest,North Dakota State Bison,NDSU,N Dakota St,FBS,01402A
+2005,mwest,Air Force Falcons,AF,Air Force,FBS,003594
+2751,mwest,Wyoming Cowboys,WYO,Wyoming,FBS,492f24
+2439,mwest,UNLV Rebels,UNLV,UNLV,FBS,cf0a2c
+23,mwest,San José State Spartans,SJSU,San José St,FBS,0038a8
+2440,mwest,Nevada Wolf Pack,NEV,Nevada,FBS,041e42
+62,mwest,Hawai'i Rainbow Warriors,HAW,Hawai'i,FBS,005737
+2638,mwest,UTEP Miners,UTEP,UTEP,FBS,ff8200
+2459,mwest,Northern Illinois Huskies,NIU,N Illinois,FBS,c8102e
+68,pac12,Boise State Broncos,BOIS,Boise St,FBS,0033a0
+326,pac12,Texas State Bobcats,TXST,Texas St,FBS,501214
+204,pac12,Oregon State Beavers,ORST,Oregon St,FBS,dc4405
+278,pac12,Fresno State Bulldogs,FRES,Fresno St,FBS,b1102b
+21,pac12,San Diego State Aztecs,SDSU,San Diego St,FBS,a6192e
+328,pac12,Utah State Aggies,USU,Utah State,FBS,0f2439
+36,pac12,Colorado State Rams,CSU,Colorado St,FBS,004c23
+265,pac12,Washington State Cougars,WSU,Washington St,FBS,a60f2d
+61,sec,Georgia Bulldogs,UGA,Georgia,FBS,ba0c2f
+333,sec,Alabama Crimson Tide,ALA,Alabama,FBS,9e1b32
+96,sec,Kentucky Wildcats,UK,Kentucky,FBS,0033a0
+251,sec,Texas Longhorns,TEX,Texas,FBS,af5c37
+2633,sec,Tennessee Volunteers,TENN,Tennessee,FBS,ff8200
+145,sec,Ole Miss Rebels,MISS,Ole Miss,FBS,13294b
+2579,sec,South Carolina Gamecocks,SC,South Carolina,FBS,73000a
+99,sec,LSU Tigers,LSU,LSU,FBS,461d76
+142,sec,Missouri Tigers,MIZ,Missouri,FBS,f1b82d
+201,sec,Oklahoma Sooners,OU,Oklahoma,FBS,990000
+57,sec,Florida Gators,FLA,Florida,FBS,0021a5
+2,sec,Auburn Tigers,AUB,Auburn,FBS,002b5c
+344,sec,Mississippi State Bulldogs,MSST,Mississippi St,FBS,5d1725
+245,sec,Texas A&M Aggies,TA&M,Texas A&M,FBS,500000
+238,sec,Vanderbilt Commodores,VAN,Vanderbilt,FBS,000000
+8,sec,Arkansas Razorbacks,ARK,Arkansas,FBS,a32136
+256,belt,James Madison Dukes,JMU,James Madison,FBS,450084
+290,belt,Georgia Southern Eagles,GASO,GA Southern,FBS,041e42
+2247,belt,Georgia State Panthers,GAST,Georgia St,FBS,0039a6
+2026,belt,App State Mountaineers,APP,App State,FBS,000000
+276,belt,Marshall Thundering Herd,MRSH,Marshall,FBS,00b140
+324,belt,Coastal Carolina Chanticleers,CCU,Coastal,FBS,006f71
+295,belt,Old Dominion Monarchs,ODU,Old Dominion,FBS,003768
+2348,belt,Louisiana Tech Bulldogs,LT,Louisiana Tech,FBS,003087
+309,belt,Louisiana Ragin' Cajuns,UL,Louisiana,FBS,ce181e
+6,belt,South Alabama Jaguars,USA,South Alabama,FBS,00205b
+2032,belt,Arkansas State Red Wolves,ARST,Arkansas St,FBS,cc092f
+2653,belt,Troy Trojans,TROY,Troy,FBS,862633
+2572,belt,Southern Miss Golden Eagles,USM,Southern Miss,FBS,ffc72c
+2433,belt,UL Monroe Warhawks,ULM,UL Monroe,FBS,840029
+147,bsky,Montana State Bobcats,MTST,Montana St,FCS,00205c
+2464,bsky,Northern Arizona Lumberjacks,NAU,N Arizona,FCS,003976
+149,bsky,Montana Grizzlies,MONT,Montana,FCS,751D4A
+2692,bsky,Weber State Wildcats,WEB,Weber St,FCS,18005a
+302,bsky,UC Davis Aggies,UCD,UC Davis,FCS,002855
+304,bsky,Idaho State Bengals,IDST,Idaho St,FCS,ef8c00
+70,bsky,Idaho Vandals,IDHO,Idaho,FCS,000000
+253,bsky,Southern Utah Thunderbirds,SUU,Southern Utah,FCS,c72026
+13,bsky,Cal Poly Mustangs,CP,Cal Poly,FCS,1E4D2B
+2458,bsky,Northern Colorado Bears,UNCO,N Colorado,FCS,13558D
+2502,bsky,Portland State Vikings,PRST,Portland St,FCS,00311e
+331,bsky,Eastern Washington Eagles,EWU,E Washington,FCS,a10022
+3101,bsky,Utah Tech Trailblazers,UTU,Utah Tech,FCS,000000
+2405,caa,Monmouth Hawks,MONM,Monmouth,FCS,051844
+2097,caa,Campbell Fighting Camels,CAM,Campbell,FCS,000000
+2803,caa,Bryant Bulldogs,BRY,Bryant,FCS,000000
+399,caa,UAlbany Great Danes,UALB,UAlbany,FCS,3D2777
+2210,caa,Elon Phoenix,ELON,Elon,FCS,020303
+2619,caa,Stony Brook Seawolves,STBK,Stony Brook,FCS,990000
+227,caa,Rhode Island Rams,URI,Rhode Island,FCS,091f3f
+2529,caa,Sacred Heart Pioneers,SHU,Sacred Heart,FCS,a40012
+2448,caa,North Carolina A&T Aggies,NCAT,NC A&T,FCS,0505aa
+160,caa,New Hampshire Wildcats,UNH,New Hampshire,FCS,004990
+119,caa,Towson Tigers,TOW,Towson,FCS,FFC229
+311,caa,Maine Black Bears,ME,Maine,FCS,127dbe
+2261,caa,Hampton Pirates,HAMP,Hampton,FCS,0067AC
+2771,indaa,Merrimack Warriors,MRMK,Merrimack,FCS,000000
+2130,indaa,Chicago State Cougars,CHST,Chicago St,FCS,888888
+108,ivy,Harvard Crimson,HARV,Harvard,FCS,990000
+163,ivy,Princeton Tigers,PRIN,Princeton,FCS,000000
+225,ivy,Brown Bears,BRWN,Brown,FCS,411e09
+159,ivy,Dartmouth Big Green,DART,Dartmouth,FCS,005730
+219,ivy,Pennsylvania Quakers,PENN,Penn,FCS,082A74
+43,ivy,Yale Bulldogs,YALE,Yale,FCS,004a81
+171,ivy,Columbia Lions,COLU,Columbia,FCS,7ba4db
+172,ivy,Cornell Big Red,COR,Cornell,FCS,b31b1b
+2569,meac,South Carolina State Bulldogs,SCST,SC State,FCS,7d1315
+2169,meac,Delaware State Hornets,DSU,Delaware St,FCS,009cdb
+2428,meac,North Carolina Central Eagles,NCCU,NC Central,FCS,880023
+2415,meac,Morgan State Bears,MORG,Morgan St,FCS,014786
+47,meac,Howard Bison,HOW,Howard,FCS,003a63
+2450,meac,Norfolk State Spartans,NORF,Norfolk St,FCS,0c8968
+2754,mvfc,Youngstown State Penguins,YSU,Youngstown St,FCS,E51936
+2571,mvfc,South Dakota State Jackrabbits,SDST,S Dakota St,FCS,0033a0
+233,mvfc,South Dakota Coyotes,SDAK,South Dakota,FCS,CD1241
+2287,mvfc,Illinois State Redbirds,ILST,Illinois St,FCS,CE1126
+155,mvfc,North Dakota Fighting Hawks,UND,North Dakota,FCS,00A26B
+79,mvfc,Southern Illinois Salukis,SIU,S Illinois,FCS,85283D
+2460,mvfc,Northern Iowa Panthers,UNI,Northern Iowa,FCS,473282
+282,mvfc,Indiana State Sycamores,INST,Indiana St,FCS,00669a
+93,mvfc,Murray State Racers,MUR,Murray St,FCS,002148
+2115,neast,Central Connecticut Blue Devils,CCSU,C Connecticut,FCS,1B49A2
+2523,neast,Robert Morris Colonials,RMU,Robert Morris,FCS,00214D
+2184,neast,Duquesne Dukes,DUQ,Duquesne,FCS,002D62
+284,neast,Stonehill Skyhawks,STO,Stonehill,FCS,000000
+2341,neast,Long Island University Sharks,LIU,Long Island,FCS,888888
+2441,neast,New Haven Chargers,NHVN,New Haven,FCS,041e42
+2681,neast,Wagner Seahawks,WAG,Wagner,FCS,00483A
+2385,neast,Mercyhurst Lakers,MERC,Mercyhurst,FCS,000000
+2546,OVC,Southeast Missouri State Redhawks,SEMO,SE Missouri,FCS,c8102e
+2710,OVC,Western Illinois Leathernecks,WIU,W Illinois,FCS,4e1e8a
+2815,OVC,Lindenwood Lions,LIN,Lindenwood,FCS,000000
+2630,OVC,UT Martin Skyhawks,UTM,UT Martin,FCS,FF6700
+2127,OVC,Charleston Southern Buccaneers,CHSO,Charleston So,FCS,2e3192
+2197,OVC,Eastern Illinois Panthers,EIU,E Illinois,FCS,000000
+2241,OVC,Gardner-Webb Runnin' Bulldogs,GWEB,Gardner-Webb,FCS,c12535
+2634,OVC,Tennessee State Tigers,TNST,Tennessee St,FCS,171796
+2329,pat,Lehigh Mountain Hawks,LEH,Lehigh,FCS,6c2b2a
+222,pat,Villanova Wildcats,VILL,Villanova,FCS,00205b
+257,pat,Richmond Spiders,RICH,Richmond,FCS,9e0712
+107,pat,Holy Cross Crusaders,HC,Holy Cross,FCS,582c83
+2142,pat,Colgate Raiders,COLG,Colgate,FCS,821019
+322,pat,Lafayette Leopards,LAF,Lafayette,FCS,790000
+46,pat,Georgetown Hoyas,GTWN,Georgetown,FCS,110E42
+2230,pat,Fordham Rams,FOR,Fordham,FCS,830032
+2729,pat,William & Mary Tribe,W&M,William & Mary,FCS,115740
+2083,pat,Bucknell Bison,BUCK,Bucknell,FCS,000060
+2168,pfl,Dayton Flyers,DAY,Dayton,FCS,004B8D
+2086,pfl,Butler Bulldogs,BTLR,Butler,FCS,0d1361
+2900,pfl,St. Thomas Tommies,STMN,St Thomas,FCS,000000
+2368,pfl,Marist Red Foxes,MRST,Marist,FCS,e53730
+301,pfl,San Diego Toreros,USD,San Diego,FCS,2f99d4
+2674,pfl,Valparaiso Beacons,VAL,Valparaiso,FCS,794500
+2506,pfl,Presbyterian Blue Hose,PRES,Presbyterian,FCS,194896
+2166,pfl,Davidson Wildcats,DAV,Davidson,FCS,000000
+2181,pfl,Drake Bulldogs,DRKE,Drake,FCS,005596
+2413,pfl,Morehead State Eagles,MORE,Morehead St,FCS,094FA3
+56,pfl,Stetson Hatters,STET,Stetson,FCS,0a5640
+2635,south,Tennessee Tech Golden Eagles,TNTC,Tennessee Tech,FCS,5A4099
+2382,south,Mercer Bears,MER,Mercer,FCS,ff7f29
+236,south,Chattanooga Mocs,UTC,Chattanooga,FCS,00386b
+2193,south,East Tennessee State Buccaneers,ETSU,ETSU,FCS,002d61
+2717,south,Western Carolina Catamounts,WCU,W Carolina,FCS,492F91
+2747,south,Wofford Terriers,WOF,Wofford,FCS,533B23
+2535,south,Samford Bulldogs,SAM,Samford,FCS,005485
+231,south,Furman Paladins,FUR,Furman,FCS,582c83
+2643,south,The Citadel Bulldogs,CIT,The Citadel,FCS,7badd3
+2678,south,VMI Keydets,VMI,VMI,FCS,ae122a
+2617,land,Stephen F. Austin Lumberjacks,SFA,SF Austin,FCS,393996
+2320,land,Lamar Cardinals,LAM,Lamar,FCS,000000
+2916,land,Incarnate Word Cardinals,UIW,Incarnate Word,FCS,000000
+2377,land,McNeese Cowboys,MCN,McNeese,FCS,00529C
+292,land,UT Rio Grande Valley Vaqueros,RGV,UT Rio Grande,FCS,888888
+2277,land,Houston Christian Huskies,HCU,Hou Christian,FCS,00539c
+2447,land,Nicholls Colonels,NICH,Nicholls,FCS,C41230
+2545,land,SE Louisiana Lions,SELA,SE Louisiana,FCS,215732
+2837,land,East Texas A&M Lions,ETAM,East Texas A&M,FCS,000000
+2466,land,Northwestern State Demons,NWST,N'Western St,FCS,492F91
+2296,swac,Jackson State Tigers,JKST,Jackson St,FCS,123297
+2010,swac,Alabama A&M Bulldogs,AAMU,Alabama A&M,FCS,790000
+2011,swac,Alabama State Hornets,ALST,Alabama St,FCS,e9a900
+2065,swac,Bethune-Cookman Wildcats,BCU,Bethune,FCS,7b1831
+2400,swac,Mississippi Valley State Delta Devils,MVSU,Miss Valley St,FCS,005328
+50,swac,Florida A&M Rattlers,FAMU,Florida A&M,FCS,F89728
+2029,swac,Arkansas-Pine Bluff Golden Lions,UAPB,AR-Pine Bluff,FCS,e0aa0f
+2016,swac,Alcorn State Braves,ALCN,Alcorn St,FCS,4b0058
+2504,swac,Prairie View A&M Panthers,PV,Prairie View,FCS,582c83
+2582,swac,Southern Jaguars,SOU,Southern,FCS,004B97
+2755,swac,Grambling Tigers,GRAM,Grambling,FCS,ee8601
+2640,swac,Texas Southern Tigers,TXSO,Texas Southern,FCS,860038
+2627,UAC,Tarleton State Texans,TAR,Tarleton St,FCS,000000
+2046,UAC,Austin Peay Governors,APSU,Austin Peay,FCS,8e0b0b
+2453,UAC,North Alabama Lions,UNA,North Alabama,FCS,000000
+2000,UAC,Abilene Christian Wildcats,ACU,Abilene Chrstn,FCS,592d82
+110242,UAC,West Florida Argonauts,UWF,West Florida,FCS,888888
+2198,UAC,Eastern Kentucky Colonels,EKU,E Kentucky,FCS,660819
+2110,UAC,Central Arkansas Bears,CARK,C Arkansas,FCS,a7a9ac
+2698,UAC,West Georgia Wolves,WGA,West Georgia,FCS,0033a1

@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628523,2024-10-18,2024-10-19T00:00Z,8,2,True,False,True,2509,2483,Purdue,Oregon,0,35,,West Lafayette,IN
+401636898,2024-10-18,2024-10-19T02:15Z,8,2,True,False,True,252,197,BYU,Oklahoma St,38,35,,Provo,UT
+401634769,2024-10-18,2024-10-18T23:00Z,8,2,True,False,True,150,52,Duke,Florida St,23,16,,Durham,NC
+401643735,2024-10-18,2024-10-19T02:30Z,8,2,True,False,True,2440,278,Nevada,Fresno St,21,24,,Reno,NV
+401654457,2024-10-18,2024-10-18T23:00Z,8,2,True,False,True,163,225,Princeton,Brown,29,17,,Princeton,NJ

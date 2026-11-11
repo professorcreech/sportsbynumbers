@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401777353,2025-12-06,2025-12-07T01:00Z,15,2,True,True,False,194,84,Ohio State,Indiana,10,13,Big Ten Championship,Indianapolis,IN
+401777351,2025-12-06,2025-12-06T21:00Z,15,2,True,True,False,333,61,Alabama,Georgia,7,28,SEC Championship,Atlanta,GA
+401777327,2025-12-06,2025-12-06T17:00Z,15,2,True,True,False,2641,252,Texas Tech,BYU,34,7,Big 12 Championship,Arlington,TX
+401777328,2025-12-06,2025-12-07T01:00Z,15,2,True,True,False,258,150,Virginia,Duke,20,27,ACC Championship,Charlotte,NC
+401777329,2025-12-06,2025-12-06T17:00Z,15,2,True,True,False,2711,193,W Michigan,Miami OH,23,13,MAC Championship,Detroit,MI
+401836198,2025-12-06,2025-12-06T18:00Z,15,2,True,False,False,2449,2287,N Dakota St,Illinois St,28,29,FCS Championship - Second Round,Fargo,ND
+401833978,2025-12-06,2025-12-06T17:00Z,15,2,True,False,False,2329,222,Lehigh,Villanova,7,14,FCS Championship - Second Round,Bethlehem,PA
+401836218,2025-12-06,2025-12-06T17:00Z,15,2,True,False,False,2382,233,Mercer,South Dakota,0,47,FCS Championship - Second Round,Macon,GA
+401836217,2025-12-06,2025-12-06T18:00Z,15,2,True,False,False,2627,155,Tarleton St,North Dakota,31,13,FCS Championship - Second Round,Stephenville,TX
+401777350,2025-12-06,2025-12-06T19:00Z,15,2,True,False,False,2296,2504,Jackson St,Prairie View,21,23,SWAC Championship,Jackson,MS
+401836196,2025-12-06,2025-12-06T19:00Z,15,2,True,False,False,147,43,Montana St,Yale,21,13,FCS Championship - Second Round,Bozeman,MT
+401836197,2025-12-06,2025-12-06T19:00Z,15,2,True,False,False,149,2571,Montana,S Dakota St,50,29,FCS Championship - Second Round,Missoula,MT
+401836216,2025-12-06,2025-12-06T19:00Z,15,2,True,False,False,2617,2000,SF Austin,Abilene Chrstn,41,34,FCS Championship - Second Round,Nacogdoches,TX
+401833977,2025-12-06,2025-12-07T03:00Z,15,2,True,False,False,302,227,UC Davis,Rhode Island,47,26,FCS Championship - Second Round,Davis,CA

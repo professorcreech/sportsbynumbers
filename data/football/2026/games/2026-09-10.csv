@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401858213,2026-09-10,2026-09-11T00:00Z,2,2,True,False,False,2390,50,Miami,Florida A&M,77,7,,Miami Gardens,FL

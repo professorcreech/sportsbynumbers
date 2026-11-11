@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401871055,2026-10-20,2026-10-20T23:00Z,8,2,True,False,True,2229,2393,FIU,MTSU,23,26,,Miami,FL
+401871069,2026-10-20,2026-10-20T23:00Z,8,2,True,False,True,48,2623,Delaware,Missouri St,61,38,,Newark,DE
+401871092,2026-10-20,2026-10-20T23:30Z,8,2,True,False,True,276,6,Marshall,South Alabama,20,13,,Huntington,WV

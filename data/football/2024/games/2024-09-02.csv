@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401634306,2024-09-02,2024-09-02T23:30Z,1,2,True,False,True,52,103,Florida St,Boston College,13,28,,Tallahassee,FL

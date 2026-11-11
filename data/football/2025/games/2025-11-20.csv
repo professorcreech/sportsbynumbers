@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401761655,2025-11-20,2025-11-21T00:30Z,13,2,True,False,True,2032,309,Arkansas St,Louisiana,30,34,,Jonesboro,AR
+401767520,2025-11-20,2025-11-21T00:00Z,13,2,True,False,True,2545,2447,SE Louisiana,Nicholls,38,26,,Hammond,LA
+401767522,2025-11-20,2025-11-21T00:30Z,13,2,True,False,True,2466,2617,N'Western St,SF Austin,14,62,,Natchitoches,LA

@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401756909,2025-10-03,2025-10-04T02:30Z,6,2,True,False,True,252,277,BYU,West Virginia,38,24,,Provo,UT
+401757276,2025-10-03,2025-10-03T23:00Z,6,2,True,False,True,48,98,Delaware,Western KY,24,27,,Newark,DE
+401762475,2025-10-03,2025-10-03T23:00Z,6,2,True,False,True,58,2429,South Florida,Charlotte,54,26,,Tampa,FL
+401760384,2025-10-03,2025-10-04T02:00Z,6,2,True,False,True,23,167,San José St,New Mexico,35,28,,San Jose,CA
+401760382,2025-10-03,2025-10-04T02:30Z,6,2,True,False,True,21,36,San Diego St,Colorado St,45,24,,San Diego,CA
+401767320,2025-10-03,2025-10-03T23:00Z,6,2,True,True,False,225,227,Brown,Rhode Island,28,21,,Pawtucket,RI
+401767681,2025-10-03,2025-10-03T23:30Z,6,2,True,False,True,163,171,Princeton,Columbia,17,10,,Princeton,NJ

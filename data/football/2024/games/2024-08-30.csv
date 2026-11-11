@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628328,2024-08-30,2024-08-30T23:00Z,1,2,True,False,False,201,218,Oklahoma,Temple,51,3,,Norman,OK
+401645319,2024-08-30,2024-08-30T22:00Z,1,2,True,False,False,349,2329,Army,Lehigh,42,7,,West Point,NY
+401628453,2024-08-30,2024-08-30T23:00Z,1,2,True,False,False,127,2226,Michigan St,FAU,16,10,,East Lansing,MI
+401628584,2024-08-30,2024-08-30T23:30Z,1,2,True,False,False,150,2210,Duke,Elon,26,3,,Durham,NC
+401628461,2024-08-30,2024-08-31T01:00Z,1,2,True,False,False,275,2711,Wisconsin,W Michigan,28,14,,Madison,WI
+401634300,2024-08-30,2024-08-31T02:30Z,1,2,True,False,False,24,2628,Stanford,TCU,27,34,,Stanford,CA
+401656600,2024-08-30,2024-08-30T23:00Z,1,2,True,False,False,311,2142,Maine,Colgate,17,14,,Orono,ME

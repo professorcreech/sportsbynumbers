@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401856678,2026-09-11,2026-09-12T00:00Z,2,2,True,False,False,2305,142,Kansas,Missouri,21,38,,Lawrence,KS
+401858215,2026-09-11,2026-09-11T23:00Z,2,2,True,False,False,97,222,Louisville,Villanova,59,13,,Louisville,KY
+401858220,2026-09-11,2026-09-11T23:00Z,2,2,True,False,False,258,2450,Virginia,Norfolk St,59,3,,Charlottesville,VA
+401858222,2026-09-11,2026-09-11T23:00Z,2,2,True,False,False,152,257,NC State,Richmond,73,0,,Raleigh,NC
+401858214,2026-09-11,2026-09-11T23:30Z,2,2,True,False,False,103,164,Boston College,Rutgers,28,21,,Chestnut Hill,MA

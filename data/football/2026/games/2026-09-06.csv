@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401858438,2026-09-06,2026-09-06T23:30Z,1,2,True,True,False,87,275,Notre Dame,Wisconsin,41,13,,Green Bay,WI
+401856661,2026-09-06,2026-09-06T23:30Z,1,2,True,True,False,145,97,Ole Miss,Louisville,41,38,Liberty Mutual Music City Kickoff,Nashville,TN
+401858437,2026-09-06,2026-09-06T20:00Z,1,2,True,False,False,264,265,Washington,Washington St,24,10,,Seattle,WA
+401917058,2026-09-06,2026-09-06T15:00Z,1,2,True,False,False,2097,2717,Campbell,W Carolina,28,19,,Buies Creek,NC
+401868967,2026-09-06,2026-09-06T16:00Z,1,2,True,False,True,2504,2640,Prairie View,Texas Southern,52,14,Labor Day Classic,Prairie View,TX
+401867939,2026-09-06,2026-09-06T19:00Z,1,2,True,True,False,50,2569,Florida A&M,SC State,13,31,Orange Blossom Classic,Miami Gardens,FL

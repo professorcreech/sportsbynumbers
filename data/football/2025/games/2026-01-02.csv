@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401831583,2026-01-02,2026-01-03T01:00Z,1,3,True,True,False,2567,12,SMU,Arizona,24,19,Trust & Will Holiday Bowl,San Diego,CA
+401778332,2026-01-02,2026-01-02T18:00Z,1,3,True,True,False,326,242,Texas St,Rice,41,10,Lockheed Martin Armed Forces Bowl,Fort Worth,TX
+401778333,2026-01-02,2026-01-02T21:30Z,1,3,True,True,False,2132,2426,Cincinnati,Navy,13,35,AutoZone Liberty Bowl,Memphis,TN
+401778334,2026-01-02,2026-01-03T01:00Z,1,3,True,True,False,344,154,Mississippi St,Wake Forest,29,43,Duke's Mayo Bowl,Charlotte,NC

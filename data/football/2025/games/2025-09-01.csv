@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754523,2025-09-01,2025-09-02T00:00Z,1,2,True,False,False,153,2628,North Carolina,TCU,14,48,,Chapel Hill,NC

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401643740,2024-10-25,2024-10-26T02:30Z,9,2,True,False,True,2439,68,UNLV,Boise St,24,29,,Las Vegas,NV
+401634771,2024-10-25,2024-10-25T23:30Z,9,2,True,False,True,103,97,Boston College,Louisville,27,31,,Chestnut Hill,MA
+401628532,2024-10-25,2024-10-26T03:00Z,9,2,True,False,True,30,164,USC,Rutgers,42,20,,Los Angeles,CA
+401673036,2024-10-25,2024-10-25T23:00Z,9,2,True,False,True,219,43,Penn,Yale,10,31,,Philadelphia,PA

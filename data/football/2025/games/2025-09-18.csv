@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762468,2025-09-18,2025-09-18T23:30Z,4,2,True,False,True,2429,242,Charlotte,Rice,17,28,,Charlotte,NC

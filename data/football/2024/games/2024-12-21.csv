@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401677176,2024-12-21,2024-12-21T21:00Z,1,3,True,False,False,251,228,Texas,Clemson,38,24,College Football Playoff First Round Presented by Allstate,Austin,TX
+401677178,2024-12-21,2024-12-21T17:00Z,1,3,True,False,False,213,2567,Penn State,SMU,38,10,College Football Playoff First Round Presented by Allstate,University Park,PA
+401677177,2024-12-21,2024-12-22T01:00Z,1,3,True,False,False,194,2633,Ohio State,Tennessee,42,17,College Football Playoff First Round Presented by Allstate,Columbus,OH
+401729786,2024-12-21,2024-12-21T17:00Z,1,3,True,False,False,2449,2571,N Dakota St,S Dakota St,28,21,FCS Championship - Semifinals,Fargo,ND
+401729787,2024-12-21,2024-12-21T20:30Z,1,3,True,False,False,147,233,Montana St,South Dakota,31,17,FCS Championship - Semifinals,Bozeman,MT

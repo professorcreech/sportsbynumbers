@@ -1,0 +1,63 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401752921,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,130,194,Michigan,Ohio State,9,27,,Ann Arbor,MI
+401756968,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,277,2641,West Virginia,Texas Tech,0,49,,Morgantown,WV
+401752917,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,264,2483,Washington,Oregon,14,26,,Seattle,WA
+401752789,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,201,99,Oklahoma,LSU,17,13,,Norman,OK
+401754614,2025-11-29,2025-11-30T03:30Z,14,2,True,False,False,24,87,Stanford,Notre Dame,20,49,,Stanford,CA
+401752784,2025-11-29,2025-11-30T00:30Z,14,2,True,False,True,2,333,Auburn,Alabama,20,27,,Auburn,AL
+401756963,2025-11-29,2025-11-29T18:00Z,14,2,True,False,True,252,2116,BYU,UCF,41,21,,Provo,UT
+401754611,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,221,2390,Pitt,Miami,7,38,,Pittsburgh,PA
+401752791,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,2633,238,Tennessee,Vanderbilt,24,45,,Knoxville,TN
+401752919,2025-11-29,2025-11-30T00:30Z,14,2,True,False,True,30,26,USC,UCLA,29,10,,Los Angeles,CA
+401754613,2025-11-29,2025-11-30T00:00Z,14,2,True,False,True,258,259,Virginia,Virginia Tech,27,7,,Charlottesville,VA
+401754609,2025-11-29,2025-11-30T01:00Z,14,2,True,False,True,25,2567,California,SMU,38,35,,Berkeley,CA
+401762518,2025-11-29,2025-11-30T00:30Z,14,2,True,False,True,2655,2429,Tulane,Charlotte,27,0,,New Orleans,LA
+401752787,2025-11-29,2025-11-29T17:00Z,14,2,True,False,False,97,96,Louisville,Kentucky,41,0,,Louisville,KY
+401752790,2025-11-29,2025-11-29T17:00Z,14,2,True,False,False,2579,228,South Carolina,Clemson,14,28,,Columbia,SC
+401756962,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,239,248,Baylor,Houston,24,31,,Waco,TX
+401756965,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,2306,38,Kansas St,Colorado,24,14,,Manhattan,KS
+401756966,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,197,66,Oklahoma St,Iowa State,13,20,,Stillwater,OK
+401762519,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,2226,151,FAU,East Carolina,3,42,,Boca Raton,FL
+401762872,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,2117,2649,C Michigan,Toledo,3,21,,Mount Pleasant,MI
+401762875,2025-11-29,2025-11-29T17:00Z,14,2,True,False,True,193,2050,Miami OH,Ball State,45,24,,Oxford,OH
+401757310,2025-11-29,2025-11-29T18:00Z,14,2,True,False,True,48,2638,Delaware,UTEP,61,31,,Newark,DE
+401757311,2025-11-29,2025-11-29T18:00Z,14,2,True,False,True,2534,2229,Sam Houston,FIU,16,56,,Houston,TX
+401761663,2025-11-29,2025-11-29T18:30Z,14,2,True,False,True,276,290,Marshall,GA Southern,19,24,,Huntington,WV
+401757312,2025-11-29,2025-11-29T19:00Z,14,2,True,False,True,55,98,Jax State,Western KY,37,34,,Jacksonville,AL
+401757314,2025-11-29,2025-11-29T19:00Z,14,2,True,False,True,2623,2348,Missouri St,Louisiana Tech,30,42,,Springfield,MO
+401761664,2025-11-29,2025-11-29T19:00Z,14,2,True,False,True,295,2247,Old Dominion,Georgia St,27,10,,Norfolk,VA
+401761661,2025-11-29,2025-11-29T19:30Z,14,2,True,False,True,2026,2032,App State,Arkansas St,29,30,,Boone,NC
+401754608,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,183,103,Syracuse,Boston College,12,34,,Syracuse,NY
+401757315,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,166,2393,New Mexico St,MTSU,24,31,,Las Cruces,NM
+401761665,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,309,2433,Louisiana,UL Monroe,30,27,,Lafayette,LA
+401761667,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,326,6,Texas St,South Alabama,49,26,,San Marcos,TX
+401762517,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,202,5,Tulsa,UAB,24,31,,Tulsa,OK
+401752783,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,8,142,Arkansas,Missouri,17,31,,Fayetteville,AR
+401752918,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,135,275,Minnesota,Wisconsin,17,7,,Minneapolis,MN
+401752920,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,164,213,Rutgers,Penn State,36,40,,Piscataway,NJ
+401754610,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,150,154,Duke,Wake Forest,49,32,,Durham,NC
+401756967,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,2628,2132,TCU,Cincinnati,45,23,,Fort Worth,TX
+401757313,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,2335,338,Liberty,Kennesaw St,42,48,,Lynchburg,VA
+401761666,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,2572,2653,Southern Miss,Troy,18,28,,Hattiesburg,MS
+401762441,2025-11-29,2025-11-29T20:30Z,14,2,True,False,True,2636,349,UTSA,Army,24,27,,San Antonio,TX
+401761662,2025-11-29,2025-11-29T20:45Z,14,2,True,False,True,324,256,Coastal,James Madison,10,59,,Conway,SC
+401752785,2025-11-29,2025-11-29T21:30Z,14,2,True,False,False,57,52,Florida,Florida St,40,21,,Gainesville,FL
+401752946,2025-11-29,2025-11-29T23:30Z,14,2,True,False,True,265,204,Washington St,Oregon St,32,8,,Pullman,WA
+401752923,2025-11-29,2025-11-30T00:00Z,14,2,True,True,True,127,120,Michigan St,Maryland,38,28,,Detroit,MI
+401762520,2025-11-29,2025-11-30T00:00Z,14,2,True,False,True,58,242,South Florida,Rice,52,3,,Tampa,FL
+401752922,2025-11-29,2025-11-30T00:30Z,14,2,True,False,True,356,77,Illinois,Northwestern,20,13,,Champaign,IL
+401754612,2025-11-29,2025-11-30T00:30Z,14,2,True,False,True,152,153,NC State,North Carolina,42,19,,Raleigh,NC
+401760425,2025-11-29,2025-11-30T02:00Z,14,2,True,False,True,2440,2439,Nevada,UNLV,17,42,,Reno,NV
+401760423,2025-11-29,2025-11-30T03:30Z,14,2,True,False,True,23,278,San José St,Fresno St,14,41,,San Jose,CA
+401760424,2025-11-29,2025-11-30T04:00Z,14,2,True,False,True,62,2751,Hawai'i,Wyoming,27,7,,Honolulu,HI
+401833975,2025-11-29,2025-11-29T17:00Z,14,2,True,False,False,2754,43,Youngstown St,Yale,42,43,FCS Championship - First Round,Youngstown,OH
+401836055,2025-11-29,2025-11-29T17:00Z,14,2,True,False,False,222,108,Villanova,Harvard,52,7,FCS Championship - First Round,Philadelphia,PA
+401836102,2025-11-29,2025-11-29T17:00Z,14,2,True,False,False,227,2115,Rhode Island,C Connecticut,27,19,FCS Championship - First Round,Kingston,RI
+401833969,2025-11-29,2025-11-29T18:00Z,14,2,True,False,False,2000,2320,Abilene Chrstn,Lamar,38,20,FCS Championship - First Round,Abilene,TX
+401836095,2025-11-29,2025-11-29T18:00Z,14,2,True,False,False,2545,2287,SE Louisiana,Illinois St,3,21,FCS Championship - First Round,Hammond,LA
+401836115,2025-11-29,2025-11-29T18:00Z,14,2,True,False,False,2635,155,Tennessee Tech,North Dakota,6,31,FCS Championship - First Round,Cookeville,TN
+401836116,2025-11-29,2025-11-29T18:00Z,14,2,True,False,False,2571,160,S Dakota St,New Hampshire,41,3,FCS Championship - First Round,Brookings,SD
+401836195,2025-11-29,2025-11-29T18:00Z,14,2,True,False,False,233,2181,South Dakota,Drake,38,17,FCS Championship - First Round,Vermillion,SD
+401767420,2025-11-29,2025-11-29T19:00Z,14,2,True,True,True,2755,2582,Grambling,Southern,27,28,,New Orleans,LA
+401836040,2025-11-29,2025-11-29T19:00Z,14,2,True,False,False,110242,2444,W Florida,Newberry,17,24,Division II Championship - Second Round,Pensacola,FL
+401767428,2025-11-29,2025-11-29T20:00Z,14,2,True,False,True,2400,50,Miss Valley St,Florida A&M,35,31,,Itta Bena,MS

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401866455,2026-11-04,2026-11-05T00:00Z,10,2,True,False,True,113,2050,UMass,Ball State,31,30,,Amherst,MA
+401866457,2026-11-04,2026-11-05T00:00Z,10,2,True,False,True,16,2649,Sacramento St,Toledo,17,20,,Sacramento,CA
+401866456,2026-11-04,2026-11-05T00:30Z,10,2,True,True,True,2199,2117,E Michigan,C Michigan,7,35,,Detroit,MI

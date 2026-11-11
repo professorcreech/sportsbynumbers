@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401833680,2026-01-05,2026-01-06T00:30Z,1,3,True,True,False,147,2287,Montana St,Illinois St,35,34,FCS Championship,Nashville,TN

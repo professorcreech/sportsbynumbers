@@ -1,0 +1,49 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401864494,2026-08-29,2026-08-29T19:00Z,1,2,True,False,False,30,23,USC,San José St,42,26,,Los Angeles,CA
+401856766,2026-08-29,2026-08-29T16:00Z,1,2,True,True,False,2628,153,TCU,North Carolina,10,15,Aer Lingus College Football Classic,Dublin,
+401858202,2026-08-29,2026-08-29T19:30Z,1,2,True,False,True,258,152,Virginia,NC State,34,8,,Charlottesville,VA
+401864577,2026-08-29,2026-08-29T21:30Z,1,2,True,False,False,2449,55,N Dakota St,Jax State,33,7,,Fargo,ND
+401866408,2026-08-29,2026-08-29T22:30Z,1,2,True,False,True,2199,16,E Michigan,Sacramento St,28,17,,Ypsilanti,MI
+401858201,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,24,62,Stanford,Hawai'i,37,27,,Stanford,CA
+401864570,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,52,166,Florida St,New Mexico St,34,17,,Tallahassee,FL
+401862693,2026-08-29,2026-08-30T02:00Z,1,2,True,False,False,2439,235,UNLV,Memphis,21,27,,Las Vegas,NV
+401867916,2026-08-29,2026-08-29T16:00Z,1,2,True,False,True,2681,2523,Wagner,Robert Morris,7,28,,Staten Island,NY
+401868792,2026-08-29,2026-08-29T16:00Z,1,2,True,False,False,2168,2986,Dayton,Fairmont St,43,20,,Dayton,OH
+401868209,2026-08-29,2026-08-29T17:00Z,1,2,True,False,False,2086,2245,Butler,Georgetown KY,27,23,,Indianapolis,IN
+401869156,2026-08-29,2026-08-29T17:00Z,1,2,True,False,False,2130,127991,Chicago St,Roosevelt,28,44,,Bridgeview,IL
+401867882,2026-08-29,2026-08-29T18:00Z,1,2,True,False,False,233,2115,South Dakota,C Connecticut,59,20,,Vermillion,SD
+401868288,2026-08-29,2026-08-29T18:00Z,1,2,True,False,False,2674,102071,Valparaiso,Lawrence Tech,59,13,,Valparaiso,IN
+401868154,2026-08-29,2026-08-29T19:00Z,1,2,True,False,True,2502,302,Portland St,UC Davis,24,31,,Portland,OR
+401868324,2026-08-29,2026-08-29T19:00Z,1,2,True,True,False,2582,2011,Southern,Alabama St,17,30,,Birmingham,AL
+401868022,2026-08-29,2026-08-29T19:30Z,1,2,True,False,True,107,2329,Holy Cross,Lehigh,10,35,,Worcester,MA
+401868084,2026-08-29,2026-08-29T21:00Z,1,2,True,False,True,2464,331,N Arizona,E Washington,34,27,,Flagstaff,AZ
+401866620,2026-08-29,2026-08-29T21:30Z,1,2,True,False,False,2193,2097,ETSU,Campbell,37,49,,Johnson City,TN
+401866613,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,2261,2355,Hampton,VA Lynchburg,45,0,,Hampton,VA
+401866618,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,2448,2415,NC A&T,Morgan St,7,17,,Greensboro,NC
+401866619,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,284,2803,Stonehill,Bryant,6,24,,North Easton,MA
+401867855,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,282,2546,Indiana St,SE Missouri,21,23,,Terre Haute,IN
+401867972,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,2450,2736,Norfolk St,Winston-Salem,56,0,,Norfolk,VA
+401867982,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,2569,2542,SC State,Savannah St,87,0,,Orangeburg,SC
+401867988,2026-08-29,2026-08-29T22:00Z,1,2,True,False,True,257,2083,Richmond,Bucknell,35,14,,Richmond,VA
+401868101,2026-08-29,2026-08-29T22:00Z,1,2,True,False,False,304,2678,Idaho St,VMI,38,10,,Pocatello,ID
+401868394,2026-08-29,2026-08-29T22:00Z,1,2,True,False,True,2747,2643,Wofford,The Citadel,42,14,,Spartanburg,SC
+401866621,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2635,2405,Tennessee Tech,Monmouth,38,14,,Cookeville,TN
+401867977,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2640,2428,Texas Southern,NC Central,42,30,,Houston,TX
+401868049,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2320,2000,Lamar,Abilene Chrstn,21,14,,Beaumont,TX
+401868139,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2717,2198,W Carolina,E Kentucky,45,21,,Cullowhee,NC
+401868149,2026-08-29,2026-08-29T23:00Z,1,2,True,True,False,2453,2535,North Alabama,Samford,22,10,,Huntsville,AL
+401868305,2026-08-29,2026-08-29T23:00Z,1,2,True,False,True,2377,2617,McNeese,SF Austin,27,38,,Lake Charles,LA
+401868934,2026-08-29,2026-08-29T23:00Z,1,2,True,True,False,2029,60,AR-Pine Bluff,Morehouse,35,15,,Little Rock,AR
+401868948,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,50,2013,Florida A&M,Albany St,20,7,,Tallahassee,FL
+401868952,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2755,2805,Grambling,Clark (GA),49,7,,Grambling,LA
+401872615,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2571,56,S Dakota St,Stetson,70,7,,Brookings,SD
+401874042,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2382,2837,Mercer,East Texas A&M,23,15,FCS Kickoff,Macon,GA
+401891332,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2287,2595,Illinois St,St Francis IL,76,0,,Normal,IL
+401896385,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2016,2396,Alcorn St,Miles,56,7,,Lorman,MS
+401913104,2026-08-29,2026-08-29T23:00Z,1,2,True,False,False,2916,2824,Incarnate Word,OK Panhandle,76,14,,San Antonio,TX
+401867935,2026-08-29,2026-08-29T23:30Z,1,2,True,True,False,2010,47,Alabama A&M,Howard,24,31,Cricket MEAC/SWAC Challenge Kickoff,Atlanta,GA
+401868245,2026-08-29,2026-08-30T00:00Z,1,2,True,False,False,292,110243,UT Rio Grande,UT Prmian Basn,44,0,,Edinburg,TX
+401868194,2026-08-29,2026-08-30T00:30Z,1,2,True,False,False,2634,2296,Tennessee St,Jackson St,24,26,,Nashville,TN
+401868110,2026-08-29,2026-08-30T01:00Z,1,2,True,False,True,149,253,Montana,Southern Utah,28,21,,Missoula,MT
+401868235,2026-08-29,2026-08-30T01:00Z,1,2,True,False,False,2627,2504,Tarleton St,Prairie View,49,30,,Stephenville,TX
+401868118,2026-08-29,2026-08-30T02:00Z,1,2,True,False,True,3101,147,Utah Tech,Montana St,0,54,,Saint George,UT

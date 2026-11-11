@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762862,2025-11-18,2025-11-19T00:00Z,13,2,True,False,True,189,2006,Bowling Green,Akron,16,19,,Bowling Green,OH
+401762864,2025-11-18,2025-11-19T00:00Z,13,2,True,False,True,2459,2711,N Illinois,W Michigan,19,35,,Dekalb,IL
+401762863,2025-11-18,2025-11-19T00:15Z,13,2,True,False,True,195,113,Ohio,UMass,42,14,,Athens,OH

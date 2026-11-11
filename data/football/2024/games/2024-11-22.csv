@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401643767,2024-11-22,2024-11-23T03:00Z,13,2,True,False,True,23,2439,San José St,UNLV,16,27,,San Jose,CA
+401645374,2024-11-22,2024-11-23T00:00Z,13,2,True,False,True,2636,218,UTSA,Temple,51,27,,San Antonio,TX
+401628558,2024-11-22,2024-11-23T01:00Z,13,2,True,False,True,127,2509,Michigan St,Purdue,24,17,,East Lansing,MI

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401677180,2024-12-26,2024-12-26T19:00Z,1,3,True,True,False,2649,221,Toledo,Pitt,48,46,GameAbove Sports Bowl,Detroit,MI
+401677088,2024-12-26,2024-12-26T22:40Z,1,3,True,True,False,2306,164,Kansas St,Rutgers,44,41,Rate Bowl,Phoenix,AZ
+401677089,2024-12-26,2024-12-27T02:10Z,1,3,True,True,False,189,2032,Bowling Green,Arkansas St,31,38,68 Ventures Bowl,Mobile,AL

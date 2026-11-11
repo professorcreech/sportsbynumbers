@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762497,2025-10-31,2025-10-31T23:00Z,10,2,True,False,True,242,235,Rice,Memphis,14,38,,Houston,TX
+401754575,2025-10-31,2025-10-31T23:30Z,10,2,True,False,True,183,153,Syracuse,North Carolina,10,27,,Syracuse,NY
+401757290,2025-10-31,2025-11-01T00:00Z,10,2,True,False,True,2348,2534,Louisiana Tech,Sam Houston,55,14,,Ruston,LA
+401767555,2025-10-31,2025-10-31T23:00Z,10,2,True,False,True,219,225,Penn,Brown,28,21,,Philadelphia,PA
+401767094,2025-10-31,2025-11-01T02:30Z,10,2,True,False,True,2464,70,N Arizona,Idaho,32,35,,Flagstaff,AZ

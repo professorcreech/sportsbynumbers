@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401640985,2024-10-29,2024-10-29T23:00Z,10,2,True,False,True,2229,166,FIU,New Mexico St,34,13,,Miami,FL
+401643820,2024-10-29,2024-10-29T23:30Z,10,2,True,False,True,326,309,Texas St,Louisiana,17,23,,San Marcos,TX
+401641012,2024-10-29,2024-10-30T00:00Z,10,2,True,False,True,2534,2348,Sam Houston,Louisiana Tech,9,3,,Huntsville,TX

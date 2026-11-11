@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401862812,2026-10-29,2026-10-29T23:30Z,9,2,True,False,True,249,2226,North Texas,FAU,48,41,,Denton,TX
+401869963,2026-10-29,2026-10-29T23:30Z,9,2,True,False,True,256,2653,James Madison,Troy,21,24,,Harrisonburg,VA
+401867969,2026-10-29,2026-10-29T23:00Z,9,2,True,False,True,2415,2569,Morgan St,SC State,10,51,,Baltimore,MD

@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401866617,2026-08-28,2026-08-28T22:00Z,1,2,True,False,False,2771,227,Merrimack,Rhode Island,7,34,,North Andover,MA
+401868007,2026-08-28,2026-08-28T22:00Z,1,2,True,False,True,2230,2142,Fordham,Colgate,14,24,,Bronx,NY
+401868040,2026-08-28,2026-08-28T22:00Z,1,2,True,False,True,222,2729,Villanova,William & Mary,32,35,,Philadelphia,PA
+401868261,2026-08-28,2026-08-28T22:00Z,1,2,True,False,False,2441,2368,New Haven,Marist,22,21,,West Haven,CT
+401866616,2026-08-28,2026-08-28T23:00Z,1,2,True,False,True,399,160,UAlbany,New Hampshire,28,14,,Albany,NY
+401868129,2026-08-28,2026-08-29T01:00Z,1,2,True,False,True,2458,2692,N Colorado,Weber St,29,30,,Greeley,CO
+401868073,2026-08-28,2026-08-29T02:00Z,1,2,True,False,True,13,70,Cal Poly,Idaho,38,34,,San Luis Obispo,CA

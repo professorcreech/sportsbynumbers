@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401869845,2026-10-22,2026-10-22T23:00Z,8,2,True,False,True,2026,256,App State,James Madison,34,31,,Boone,NC
+401871056,2026-10-22,2026-10-22T23:00Z,8,2,True,False,True,338,2335,Kennesaw St,Liberty,6,34,,Kennesaw,GA
+401862807,2026-10-22,2026-10-22T23:30Z,8,2,True,False,True,235,151,Memphis,East Carolina,41,34,,Memphis,TN

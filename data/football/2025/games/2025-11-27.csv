@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762516,2025-11-27,2025-11-28T00:30Z,14,2,True,False,True,235,2426,Memphis,Navy,17,28,,Memphis,TN
+401767368,2025-11-27,2025-11-27T20:00Z,14,2,True,False,False,2011,2657,Alabama St,Tuskegee,58,21,,Montgomery,AL

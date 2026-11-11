@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628485,2024-09-20,2024-09-21T00:00Z,4,2,True,False,True,158,356,Nebraska,Illinois,24,31,,Lincoln,NE
+401634766,2024-09-20,2024-09-20T23:30Z,4,2,True,False,True,183,24,Syracuse,Stanford,24,26,,Syracuse,NY
+401643714,2024-09-20,2024-09-21T02:00Z,4,2,True,False,False,265,23,Washington St,San José St,54,52,,Pullman,WA

@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401752795,2025-08-29,2025-08-29T23:30Z,1,2,True,False,False,356,2710,Illinois,W Illinois,52,3,,Champaign,IL
+401762432,2025-08-29,2025-08-29T22:00Z,1,2,True,False,False,349,2627,Army,Tarleton St,27,30,,West Point,NY
+401752802,2025-08-29,2025-08-29T23:00Z,1,2,True,False,False,127,2711,Michigan St,W Michigan,23,6,,East Lansing,MI
+401754374,2025-08-29,2025-08-29T23:00Z,1,2,True,False,False,154,338,Wake Forest,Kennesaw St,10,9,,Winston-Salem,NC
+401761589,2025-08-29,2025-08-29T23:00Z,1,2,True,True,False,2429,2026,Charlotte,App State,11,34,Duke’s Mayo Classic,Charlotte,NC
+401756854,2025-08-29,2025-08-29T23:30Z,1,2,True,False,False,2305,2681,Kansas,Wagner,46,7,,Lawrence,KS
+401752667,2025-08-29,2025-08-30T00:00Z,1,2,True,False,False,239,2,Baylor,Auburn,24,38,,Waco,TX
+401754375,2025-08-29,2025-08-30T00:00Z,1,2,True,False,False,38,59,Colorado,Georgia Tech,20,27,,Boulder,CO
+401766898,2025-08-29,2025-08-30T00:15Z,1,2,True,False,False,2229,2065,FIU,Bethune,42,9,,Miami,FL
+401757224,2025-08-29,2025-08-30T01:30Z,1,2,True,False,False,2534,2439,Sam Houston,UNLV,21,38,,Houston,TX
+401760358,2025-08-29,2025-08-30T02:30Z,1,2,True,False,False,23,2117,San José St,C Michigan,14,16,,San Jose,CA
+401767140,2025-08-29,2025-08-29T22:00Z,1,2,True,False,True,227,2097,Rhode Island,Campbell,31,20,,Kingston,RI
+401773529,2025-08-29,2025-08-29T22:00Z,1,2,True,False,False,110242,2331,W Florida,Len-Rhyne,48,21,,Pensacola,FL
+401767256,2025-08-29,2025-08-29T23:00Z,1,2,True,False,False,2142,2405,Colgate,Monmouth,39,42,,Hamilton,NY
+401779329,2025-08-29,2025-08-29T23:00Z,1,2,True,False,False,2368,2441,Marist,New Haven,31,14,,Poughkeepsie,NY

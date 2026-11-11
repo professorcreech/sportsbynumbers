@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754528,2025-09-05,2025-09-05T23:00Z,2,2,True,False,False,97,256,Louisville,James Madison,28,14,,Louisville,KY
+401752817,2025-09-05,2025-09-05T23:30Z,2,2,True,False,False,77,2710,Northwestern,W Illinois,42,7,,Evanston,IL
+401752826,2025-09-05,2025-09-05T23:30Z,2,2,True,False,False,120,2459,Maryland,N Illinois,20,9,,College Park,MD
+401760363,2025-09-05,2025-09-06T01:00Z,2,2,True,False,False,68,331,Boise St,E Washington,51,14,,Boise,ID

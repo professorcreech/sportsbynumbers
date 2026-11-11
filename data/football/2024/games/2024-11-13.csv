@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401644689,2024-11-13,2024-11-14T00:00Z,12,2,True,False,True,193,2309,Miami OH,Kent State,34,7,,Oxford,OH
+401644766,2024-11-13,2024-11-14T00:00Z,12,2,True,False,True,2459,2006,N Illinois,Akron,29,16,,Dekalb,IL
+401644767,2024-11-13,2024-11-14T00:00Z,12,2,True,False,True,195,2199,Ohio,E Michigan,35,10,,Athens,OH

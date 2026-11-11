@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401777324,2025-12-05,2025-12-06T01:00Z,15,2,True,False,False,2655,249,Tulane,North Texas,34,21,American Championship,New Orleans,LA
+401777352,2025-12-05,2025-12-06T00:00Z,15,2,True,False,False,256,2653,James Madison,Troy,31,14,Sun Belt Championship,Harrisonburg,VA
+401777325,2025-12-05,2025-12-06T00:00Z,15,2,True,False,False,55,338,Jax State,Kennesaw St,15,19,Conference USA Championship,Jacksonville,AL
+401777326,2025-12-05,2025-12-06T01:00Z,15,2,True,False,False,68,2439,Boise St,UNLV,38,21,Mountain West Championship,Boise,ID

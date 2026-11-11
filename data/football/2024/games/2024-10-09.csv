@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401641002,2024-10-09,2024-10-09T23:30Z,7,2,True,False,True,55,166,Jax State,New Mexico St,54,13,,Jacksonville,AL

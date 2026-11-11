@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401752896,2025-11-07,2025-11-08T02:00Z,11,2,True,False,True,30,77,USC,Northwestern,38,17,,Los Angeles,CA
+401756946,2025-11-07,2025-11-08T01:15Z,11,2,True,False,True,2116,248,UCF,Houston,27,30,,Orlando,FL
+401762501,2025-11-07,2025-11-08T02:10Z,11,2,True,False,True,235,2655,Memphis,Tulane,32,38,,Memphis,TN
+401767347,2025-11-07,2025-11-08T00:00Z,11,2,True,False,True,2415,2169,Morgan St,Delaware St,12,14,,Baltimore,MD
+401767706,2025-11-07,2025-11-08T00:00Z,11,2,True,False,True,171,108,Columbia,Harvard,14,31,,New York,NY

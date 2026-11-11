@@ -1,0 +1,104 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401628398,2024-10-19,2024-10-19T23:49Z,8,2,True,False,True,251,61,Texas,Georgia,15,30,,Austin,TX
+401635589,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,97,2390,Louisville,Miami,45,52,,Louisville,KY
+401628397,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2633,333,Tennessee,Alabama,24,17,,Knoxville,TN
+401628392,2024-10-19,2024-10-19T23:00Z,8,2,True,False,True,8,99,Arkansas,LSU,10,34,,Fayetteville,AR
+401636900,2024-10-19,2024-10-19T23:30Z,8,2,True,False,True,66,2116,Iowa State,UCF,38,35,,Ames,IA
+401635588,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,228,258,Clemson,Virginia,48,31,,Clemson,SC
+401628982,2024-10-19,2024-10-19T19:30Z,8,2,True,True,False,59,87,Georgia Tech,Notre Dame,13,31,,Atlanta,GA
+401628394,2024-10-19,2024-10-19T20:15Z,8,2,True,False,True,344,245,Mississippi St,Texas A&M,24,34,,Starkville,MS
+401628519,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,84,158,Indiana,Nebraska,56,7,,Bloomington,IN
+401636904,2024-10-19,2024-10-19T23:30Z,8,2,True,False,True,277,2306,West Virginia,Kansas St,18,45,,Morgantown,WV
+401628395,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,142,2,Missouri,Auburn,21,17,,Columbia,MO
+401635590,2024-10-19,2024-10-20T00:00Z,8,2,True,False,True,24,2567,Stanford,SMU,10,40,,Stanford,CA
+401628518,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,356,130,Illinois,Michigan,21,7,,Champaign,IL
+401645346,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,349,151,Army,East Carolina,45,28,,West Point,NY
+401645347,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2426,2429,Navy,Charlotte,51,17,,Annapolis,MD
+401628522,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,77,275,Northwestern,Wisconsin,3,23,,Evanston,IL
+401628524,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,164,26,Rutgers,UCLA,32,35,,Piscataway,NJ
+401629034,2024-10-19,2024-10-19T16:00Z,8,2,True,False,False,41,154,UConn,Wake Forest,20,23,,East Hartford,CT
+401636899,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,2132,9,Cincinnati,Arizona St,24,14,,Cincinnati,OH
+401643811,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,324,309,Coastal,Louisiana,24,34,,Conway,SC
+401628396,2024-10-19,2024-10-19T16:45Z,8,2,True,False,True,201,2579,Oklahoma,South Carolina,9,35,,Norman,OK
+401644750,2024-10-19,2024-10-19T18:00Z,8,2,True,False,True,2199,2117,E Michigan,C Michigan,38,34,,Ypsilanti,MI
+401645351,2024-10-19,2024-10-19T18:00Z,8,2,True,False,True,218,202,Temple,Tulsa,20,10,,Philadelphia,PA
+401634175,2024-10-19,2024-10-19T19:00Z,8,2,True,False,True,2623,282,Missouri St,Indiana St,46,21,,Springfield,MO
+401628658,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,257,48,Richmond,Delaware,28,9,,Richmond,VA
+401635587,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,25,152,California,NC State,23,24,,Berkeley,CA
+401636901,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2305,248,Kansas,Houston,42,14,,Kansas City,MO
+401643736,2024-10-19,2024-10-19T19:30Z,8,2,True,False,False,265,62,Washington St,Hawai'i,42,10,,Pullman,WA
+401643813,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,295,326,Old Dominion,Texas St,24,14,,Norfolk,VA
+401644686,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,193,195,Miami OH,Ohio,30,20,,Oxford,OH
+401644748,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,189,2309,Bowling Green,Kent State,27,6,,Bowling Green,OH
+401644749,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2084,2711,Buffalo,W Michigan,41,48,,Buffalo,NY
+401644751,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2459,2649,N Illinois,Toledo,6,13,,Dekalb,IL
+401645345,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,58,5,South Florida,UAB,35,25,,Tampa,FL
+401645348,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2636,2226,UTSA,FAU,38,24,,San Antonio,TX
+401645350,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2655,242,Tulane,Rice,24,10,,New Orleans,LA
+401628521,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,120,30,Maryland,USC,29,28,,College Park,MD
+401636897,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,12,38,Arizona,Colorado,7,34,,Tucson,AZ
+401636902,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2641,239,Texas Tech,Baylor,35,59,,Lubbock,TX
+401643737,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,328,167,Utah State,New Mexico,45,50,,Logan,UT
+401643738,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,23,2751,San José St,Wyoming,24,14,,San Jose,CA
+401643812,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,290,256,GA Southern,James Madison,28,14,,Statesboro,GA
+401628399,2024-10-19,2024-10-19T23:00Z,8,2,True,False,False,238,2050,Vanderbilt,Ball State,24,14,,Nashville,TN
+401643814,2024-10-19,2024-10-19T23:00Z,8,2,True,False,True,2572,2032,Southern Miss,Arkansas St,28,44,,Hattiesburg,MS
+401628520,2024-10-19,2024-10-19T23:30Z,8,2,True,False,True,127,2294,Michigan St,Iowa,32,20,,East Lansing,MI
+401645349,2024-10-19,2024-10-19T23:30Z,8,2,True,False,True,235,249,Memphis,North Texas,52,44,,Memphis,TN
+401628393,2024-10-19,2024-10-19T23:45Z,8,2,True,False,True,57,96,Florida,Kentucky,48,20,,Gainesville,FL
+401634209,2024-10-19,2024-10-20T00:00Z,8,2,True,False,True,2449,2571,N Dakota St,S Dakota St,13,9,,Fargo,ND
+401643734,2024-10-19,2024-10-20T00:00Z,8,2,True,False,True,2005,36,Air Force,Colorado St,13,21,,USAF Academy,CO
+401634106,2024-10-19,2024-10-20T01:00Z,8,2,True,False,True,16,2692,Sacramento St,Weber St,51,48,,Sacramento,CA
+401643739,2024-10-19,2024-10-20T02:00Z,8,2,True,False,False,204,2439,Oregon St,UNLV,25,33,,Corvallis,OR
+401636903,2024-10-19,2024-10-20T02:30Z,8,2,True,False,True,254,2628,Utah,TCU,7,13,,Salt Lake City,UT
+401634034,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,2447,2466,Nicholls,N'Western St,20,0,,Thibodaux,LA
+401644600,2024-10-19,2024-10-19T16:00Z,8,2,True,False,False,108,107,Harvard,Holy Cross,35,34,,Cambridge,MA
+401654597,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,2523,2341,Robert Morris,Long Island,45,31,,Moon Township,PA
+401654618,2024-10-19,2024-10-19T16:00Z,8,2,True,False,False,43,2329,Yale,Lehigh,38,23,,New Haven,CT
+401654647,2024-10-19,2024-10-19T16:00Z,8,2,True,False,True,2681,2598,Wagner,Saint Francis,14,0,,Staten Island,NY
+401654627,2024-10-19,2024-10-19T16:30Z,8,2,True,False,False,322,2529,Lafayette,Sacred Heart,31,17,,Easton,PA
+401628655,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,311,222,Maine,Villanova,35,7,,Orono,ME
+401628656,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2448,2261,NC A&T,Hampton,17,59,,Greensboro,NC
+401628657,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,119,2619,Towson,Stony Brook,24,52,,Towson,MD
+401628659,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,160,227,New Hampshire,Rhode Island,9,26,,Durham,NH
+401628660,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2405,2803,Monmouth,Bryant,55,17,,West Long Branch,NJ
+401638673,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2086,2168,Butler,Dayton,14,21,,Indianapolis,IN
+401638674,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2506,2181,Presbyterian,Drake,16,19,,Clinton,SC
+401638676,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2166,56,Davidson,Stetson,70,48,,Davidson,NC
+401654474,2024-10-19,2024-10-19T17:00Z,8,2,True,False,False,159,2115,Dartmouth,C Connecticut,20,16,,Hanover,NH
+401654491,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,219,171,Penn,Columbia,17,23,,Philadelphia,PA
+401654507,2024-10-19,2024-10-19T17:00Z,8,2,True,False,False,2083,172,Bucknell,Cornell,21,34,,Lewisburg,PA
+401654612,2024-10-19,2024-10-19T17:00Z,8,2,True,False,False,2771,284,Merrimack,Stonehill,48,28,,North Andover,MA
+401654643,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2142,46,Colgate,Georgetown,38,28,,Hamilton,NY
+401675472,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2804,110242,Chowan,West Florida,6,35,,Murfreesboro,NC
+401676726,2024-10-19,2024-10-19T17:00Z,8,2,True,False,True,2583,2441,S Conn St,New Haven,0,21,,New Haven,CT
+401632464,2024-10-19,2024-10-19T17:30Z,8,2,True,False,True,236,2747,Chattanooga,Wofford,37,5,,Chattanooga,TN
+401633993,2024-10-19,2024-10-19T17:30Z,8,2,True,False,True,2241,2815,Gardner-Webb,Lindenwood,42,35,,Boiling Springs,NC
+401638346,2024-10-19,2024-10-19T17:30Z,8,2,True,False,True,2678,2643,VMI,The Citadel,10,13,,Lexington,VA
+401632118,2024-10-19,2024-10-19T18:00Z,8,2,True,False,False,2698,2560,West Georgia,Shorter,41,13,,Carrollton,GA
+401634202,2024-10-19,2024-10-19T18:00Z,8,2,True,False,True,155,2460,North Dakota,Northern Iowa,31,7,,Grand Forks,ND
+401638345,2024-10-19,2024-10-19T18:00Z,8,2,True,False,True,231,2717,Furman,W Carolina,20,52,,Greenville,SC
+401638677,2024-10-19,2024-10-19T18:00Z,8,2,True,False,True,2674,2900,Valparaiso,St Thomas,14,42,,Valparaiso,IN
+401654540,2024-10-19,2024-10-19T18:00Z,8,2,True,False,False,2569,2232,SC State,Fort Valley St,30,3,,Orangeburg,SC
+401634148,2024-10-19,2024-10-19T19:00Z,8,2,True,False,True,2535,2382,Samford,Mercer,55,35,,Birmingham,AL
+401634164,2024-10-19,2024-10-19T19:00Z,8,2,True,False,True,93,2287,Murray St,Illinois St,32,40,,Murray,KY
+401636358,2024-10-19,2024-10-19T19:00Z,8,2,True,False,True,2755,2029,Grambling,AR-Pine Bluff,31,21,,Grambling,LA
+401636366,2024-10-19,2024-10-19T19:00Z,8,2,True,False,True,2400,2065,Miss Valley St,Bethune,10,20,,Itta Bena,MS
+401628654,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2729,2097,William & Mary,Campbell,35,28,,Williamsburg,VA
+401628661,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,399,2210,UAlbany,Elon,14,30,,Albany,NY
+401636375,2024-10-19,2024-10-19T19:30Z,8,2,True,False,True,2296,50,Jackson St,Florida A&M,35,21,,Jackson,MS
+401655635,2024-10-19,2024-10-19T19:30Z,8,2,True,False,False,47,2634,Howard,Tennessee St,14,27,,Washington,DC
+401632134,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,3101,2046,Utah Tech,Austin Peay,7,13,,Saint George,UT
+401632137,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2000,2198,Abilene Chrstn,E Kentucky,34,20,,Abilene,TX
+401633992,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2127,2546,Charleston So,SE Missouri,13,26,,Charleston,SC
+401633994,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2710,2635,W Illinois,Tennessee Tech,37,21,,Macomb,IL
+401634102,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,70,13,Idaho,Cal Poly,34,29,,Moscow,ID
+401634104,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2464,304,N Arizona,Idaho St,30,26,,Flagstaff,AZ
+401634105,2024-10-19,2024-10-19T20:00Z,8,2,True,False,True,2502,147,Portland St,Montana St,14,44,,Portland,OR
+401634033,2024-10-19,2024-10-19T20:30Z,8,2,True,False,True,2837,2320,East Texas A&M,Lamar,20,29,,Commerce,TX
+401634022,2024-10-19,2024-10-19T21:00Z,8,2,True,False,True,2916,2377,Incarnate Word,McNeese,30,17,,San Antonio,TX
+401638675,2024-10-19,2024-10-19T21:00Z,8,2,True,False,True,301,2368,San Diego,Marist,34,6,,San Diego,CA
+401675119,2024-10-19,2024-10-19T21:00Z,8,2,True,False,True,2545,2617,SE Louisiana,SF Austin,24,23,,Hammond,LA
+401634248,2024-10-19,2024-10-19T22:00Z,8,2,True,False,True,2754,233,Youngstown St,South Dakota,17,27,,Youngstown,OH
+401634103,2024-10-19,2024-10-19T23:00Z,8,2,True,False,True,331,302,E Washington,UC Davis,38,48,,Cheney,WA
+401654561,2024-10-19,2024-10-19T23:00Z,8,2,True,False,True,2582,2016,Southern,Alcorn St,24,14,,Baton Rouge,LA

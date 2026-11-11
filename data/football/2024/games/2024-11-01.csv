@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401643747,2024-11-01,2024-11-02T00:00Z,10,2,True,False,True,68,21,Boise St,San Diego St,56,24,,Boise,ID
+401629036,2024-11-01,2024-11-01T23:00Z,10,2,True,False,False,41,2247,UConn,Georgia St,34,27,,East Hartford,CT
+401645357,2024-11-01,2024-11-01T23:30Z,10,2,True,False,True,2226,58,FAU,South Florida,21,44,,Boca Raton,FL
+401654493,2024-11-01,2024-11-01T23:00Z,10,2,True,False,True,171,43,Columbia,Yale,13,10,,New York,NY

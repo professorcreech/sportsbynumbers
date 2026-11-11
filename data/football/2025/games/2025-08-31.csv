@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754522,2025-08-31,2025-08-31T23:30Z,1,2,True,False,False,2390,87,Miami,Notre Dame,27,24,,Miami Gardens,FL
+401752680,2025-08-31,2025-08-31T19:00Z,1,2,True,True,False,2579,259,South Carolina,Virginia Tech,24,11,Aflac Kickoff,Atlanta,GA

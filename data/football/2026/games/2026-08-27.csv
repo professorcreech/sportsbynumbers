@@ -1,0 +1,22 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401866532,2026-08-27,2026-08-27T22:00Z,1,2,True,False,True,119,311,Towson,Maine,18,21,,Towson,MD
+401866615,2026-08-27,2026-08-27T22:00Z,1,2,True,False,False,2169,2619,Delaware St,Stony Brook,41,34,,Dover,DE
+401867894,2026-08-27,2026-08-27T22:00Z,1,2,True,False,False,2754,2385,Youngstown St,Mercyhurst,43,10,,Youngstown,OH
+401896383,2026-08-27,2026-08-27T22:00Z,1,2,True,False,False,2413,2477,Morehead St,Ohio Dominican,40,42,,Morehead,KY
+401866614,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2210,2249,Elon,Glenville St,42,7,,Elon,NC
+401867865,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,93,2197,Murray St,E Illinois,14,28,,Murray,KY
+401868060,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2046,2241,Austin Peay,Gardner-Webb,35,17,,Clarksville,TN
+401868169,2026-08-27,2026-08-27T23:00Z,1,2,True,False,True,2815,2127,Lindenwood,Charleston So,20,17,,Saint Charles,MO
+401868204,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2710,2471,W Illinois,N'Western (IA),65,14,,Macomb,IL
+401868240,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2698,236,West Georgia,Chattanooga,10,24,,Carrollton,GA
+401868273,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2506,2842,Presbyterian,UVA Wise,47,37,,Clinton,SC
+401868279,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2900,2851,St Thomas,Winona St,15,9,,Saint Paul,MN
+401868315,2026-08-27,2026-08-27T23:00Z,1,2,True,False,True,2545,2277,SE Louisiana,Hou Christian,28,34,,Hammond,LA
+401868373,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,231,129469,Furman,Anderson (SC),20,3,,Greenville,SC
+401868962,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2447,2400,Nicholls,Miss Valley St,44,10,,Thibodaux,LA
+401874035,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,110242,79,West Florida,S Illinois,34,31,,Pensacola,FL
+401896384,2026-08-27,2026-08-27T23:00Z,1,2,True,False,False,2166,2148,Davidson,Concord,35,41,,Davidson,NC
+401868070,2026-08-27,2026-08-27T23:30Z,1,2,True,False,False,2630,2110,UT Martin,C Arkansas,24,36,,Martin,TN
+401868254,2026-08-27,2026-08-27T23:30Z,1,2,True,False,False,2181,613,Drake,SD Mines,35,38,,Des Moines,IA
+401867874,2026-08-27,2026-08-28T00:00Z,1,2,True,False,False,155,2341,North Dakota,Long Island,42,21,,Grand Forks,ND
+401869128,2026-08-27,2026-08-28T00:00Z,1,2,True,False,False,2466,2347,N'Western St,LA Christian,37,42,,Natchitoches,LA

@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401856855,2026-11-06,2026-11-07T03:15Z,10,2,True,False,True,12,2628,Arizona,TCU,29,28,,Tucson,AZ
+401858288,2026-11-06,2026-11-07T00:00Z,10,2,True,False,True,2567,259,SMU,Virginia Tech,51,28,,Dallas,TX
+401862818,2026-11-06,2026-11-07T00:30Z,10,2,True,False,True,151,58,East Carolina,South Florida,20,17,,Greenville,NC
+401858510,2026-11-06,2026-11-07T01:00Z,10,2,True,False,True,356,158,Illinois,Nebraska,24,13,,Champaign,IL
+401864533,2026-11-06,2026-11-07T02:00Z,10,2,True,False,True,2440,167,Nevada,New Mexico,3,31,,Reno,NV

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401862817,2026-11-05,2026-11-06T00:30Z,10,2,True,False,True,2226,2636,FAU,UTSA,60,29,,Boca Raton,FL
+401869964,2026-11-05,2026-11-06T01:00Z,10,2,True,False,True,2572,256,Southern Miss,James Madison,23,54,,Hattiesburg,MS
+401867964,2026-11-05,2026-11-06T00:30Z,10,2,True,False,True,47,2569,Howard,SC State,28,35,,Washington,DC

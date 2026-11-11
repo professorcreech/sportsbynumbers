@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754564,2025-10-17,2025-10-17T23:00Z,8,2,True,False,True,2390,97,Miami,Louisville,21,24,,Miami Gardens,FL
+401752872,2025-10-17,2025-10-18T00:00Z,8,2,True,False,True,135,158,Minnesota,Nebraska,24,6,,Minneapolis,MN
+401760396,2025-10-17,2025-10-18T01:00Z,8,2,True,False,True,328,23,Utah State,San José St,30,25,,Logan,UT
+401754371,2025-10-17,2025-10-18T02:30Z,8,2,True,False,True,25,153,California,North Carolina,21,18,,Berkeley,CA

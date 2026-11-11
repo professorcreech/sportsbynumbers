@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401871090,2026-10-06,2026-10-07T00:00Z,6,2,True,False,True,2653,2572,Troy,Southern Miss,55,34,,Troy,AL

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762858,2025-11-12,2025-11-13T00:00Z,12,2,True,False,True,2117,2084,C Michigan,Buffalo,38,19,,Mount Pleasant,MI
+401762859,2025-11-12,2025-11-13T00:00Z,12,2,True,False,True,113,2459,UMass,N Illinois,3,45,,Amherst,MA
+401762860,2025-11-12,2025-11-13T00:00Z,12,2,True,False,True,193,2649,Miami OH,Toledo,3,24,,Oxford,OH

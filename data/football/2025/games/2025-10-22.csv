@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401757287,2025-10-22,2025-10-22T23:30Z,9,2,True,False,True,48,2393,Delaware,MTSU,31,28,,Newark,DE
+401757288,2025-10-22,2025-10-23T01:00Z,9,2,True,False,True,166,2623,New Mexico St,Missouri St,17,24,,Las Cruces,NM

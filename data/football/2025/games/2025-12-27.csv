@@ -1,0 +1,9 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401778319,2025-12-27,2025-12-27T20:40Z,1,3,True,True,False,252,59,BYU,Georgia Tech,25,21,Pop-Tarts Bowl,Orlando,FL
+401778322,2025-12-27,2025-12-28T00:30Z,1,3,True,True,False,142,258,Missouri,Virginia,7,13,TaxSlayer Gator Bowl,Jacksonville,FL
+401778323,2025-12-27,2025-12-28T02:20Z,1,3,True,True,False,248,99,Houston,LSU,38,35,Kinder's Texas Bowl,Houston,TX
+401778321,2025-12-27,2025-12-27T22:45Z,1,3,True,True,False,21,249,San Diego St,North Texas,47,49,Isleta New Mexico Bowl,Albuquerque,NM
+401778316,2025-12-27,2025-12-27T16:00Z,1,3,True,True,False,151,221,East Carolina,Pitt,23,17,Go Bowling Military Bowl,Annapolis,MD
+401778317,2025-12-27,2025-12-27T17:00Z,1,3,True,True,False,228,213,Clemson,Penn State,10,22,Bad Boy Mowers Pinstripe Bowl,Bronx,NY
+401778318,2025-12-27,2025-12-27T19:15Z,1,3,True,True,False,349,41,Army,UConn,41,16,Wasabi Fenway Bowl,Boston,MA
+401778320,2025-12-27,2025-12-27T21:30Z,1,3,True,True,False,278,193,Fresno St,Miami OH,18,3,Snoop Dogg Arizona Bowl,Tucson,AZ

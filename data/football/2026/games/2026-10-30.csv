@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401862813,2026-10-30,2026-10-30T23:00Z,9,2,True,False,True,2429,2655,Charlotte,Tulane,31,38,,Charlotte,NC
+401856844,2026-10-30,2026-10-30T23:30Z,9,2,True,False,True,2116,239,UCF,Baylor,9,41,,Orlando,FL
+401866451,2026-10-30,2026-10-31T02:30Z,9,2,True,False,True,16,2309,Sacramento St,Kent State,31,10,,Sacramento,CA
+401867838,2026-10-30,2026-10-30T23:00Z,9,2,True,False,True,159,108,Dartmouth,Harvard,24,14,,Hanover,NH

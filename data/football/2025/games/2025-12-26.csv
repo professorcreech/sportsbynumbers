@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401778313,2025-12-26,2025-12-26T18:00Z,1,3,True,True,False,77,2117,Northwestern,C Michigan,34,7,GameAbove Sports Bowl,Detroit,MI
+401778314,2025-12-26,2025-12-26T21:30Z,1,3,True,True,False,135,167,Minnesota,New Mexico,20,17,Rate Bowl,Phoenix,AZ
+401778315,2025-12-26,2025-12-27T01:00Z,1,3,True,True,False,2636,2229,UTSA,FIU,57,20,SERVPRO First Responder Bowl,Dallas,TX

@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401752836,2025-09-12,2025-09-12T22:30Z,3,2,True,False,False,84,282,Indiana,Indiana St,73,0,,Bloomington,IN
+401754532,2025-09-12,2025-09-12T23:00Z,3,2,True,False,False,183,2142,Syracuse,Colgate,66,24,,Syracuse,NY
+401756893,2025-09-12,2025-09-12T23:30Z,3,2,True,False,True,248,38,Houston,Colorado,36,20,,Houston,TX
+401756888,2025-09-12,2025-09-13T01:00Z,3,2,True,False,False,12,2306,Arizona,Kansas St,23,17,,Tucson,AZ
+401752837,2025-09-12,2025-09-13T02:00Z,3,2,True,False,False,26,167,UCLA,New Mexico,10,35,,Pasadena,CA

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401643809,2024-10-15,2024-10-15T23:30Z,8,2,True,False,True,6,2653,South Alabama,Troy,25,9,,Mobile,AL
+401641019,2024-10-15,2024-10-16T00:00Z,8,2,True,False,True,2393,338,MTSU,Kennesaw St,14,5,,Murfreesboro,TN
+401641010,2024-10-15,2024-10-16T01:00Z,8,2,True,False,True,166,2348,New Mexico St,Louisiana Tech,33,30,,Las Cruces,NM

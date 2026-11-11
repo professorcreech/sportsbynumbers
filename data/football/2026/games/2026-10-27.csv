@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401871071,2026-10-27,2026-10-27T23:00Z,9,2,True,False,True,98,48,Western KY,Delaware,21,35,,Bowling Green,KY
+401871072,2026-10-27,2026-10-28T00:00Z,9,2,True,False,True,2623,2534,Missouri St,Sam Houston,24,3,,Springfield,MO

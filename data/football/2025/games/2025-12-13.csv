@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762521,2025-12-13,2025-12-13T20:00Z,16,2,True,True,False,2426,349,Navy,Army,17,16,,Baltimore,MD
+401778302,2025-12-13,2025-12-14T01:00Z,1,3,True,True,False,264,68,Washington,Boise St,38,10,Bucked Up LA Bowl,Inglewood,CA
+401778123,2025-12-13,2025-12-13T17:00Z,1,3,True,True,False,2504,2569,Prairie View,SC State,38,40,Cricket Celebration Bowl,Atlanta,GA
+401833986,2025-12-13,2025-12-13T17:00Z,1,3,True,False,False,2627,222,Tarleton St,Villanova,21,26,FCS Championship - Quarterfinals,Stephenville,TX
+401833987,2025-12-13,2025-12-13T20:30Z,1,3,True,False,False,149,233,Montana,South Dakota,52,22,FCS Championship - Quarterfinals,Missoula,MT
+401836219,2025-12-13,2025-12-13T22:00Z,1,3,True,False,False,302,2287,UC Davis,Illinois St,31,42,FCS Championship - Quarterfinals,Davis,CA

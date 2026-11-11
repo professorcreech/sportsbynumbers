@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401778304,2025-12-17,2025-12-17T22:00Z,1,3,True,True,False,58,295,South Florida,Old Dominion,10,24,StaffDNA Cure Bowl,Orlando,FL
+401778305,2025-12-17,2025-12-18T01:40Z,1,3,True,True,False,48,309,Delaware,Louisiana,20,13,68 Ventures Bowl,Mobile,AL

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401636864,2024-09-13,2024-09-14T00:00Z,3,2,True,False,False,2306,12,Kansas St,Arizona,31,7,,Manhattan,KS
+401636863,2024-09-13,2024-09-13T23:00Z,3,2,True,False,False,2305,2439,Kansas,UNLV,20,23,,Kansas City,KS
+401676723,2024-09-13,2024-09-13T23:00Z,3,2,True,False,False,2487,2441,Pace,New Haven,17,47,,Pleasantville,NY

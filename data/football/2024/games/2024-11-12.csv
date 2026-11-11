@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401644763,2024-11-12,2024-11-13T00:00Z,12,2,True,False,True,2084,2050,Buffalo,Ball State,51,48,,Buffalo,NY
+401644764,2024-11-12,2024-11-13T00:00Z,12,2,True,False,True,189,2711,Bowling Green,W Michigan,31,13,,Bowling Green,OH
+401644765,2024-11-12,2024-11-13T00:00Z,12,2,True,False,True,2649,2117,Toledo,C Michigan,37,10,,Toledo,OH

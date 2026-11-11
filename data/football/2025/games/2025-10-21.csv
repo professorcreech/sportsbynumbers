@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401757285,2025-10-21,2025-10-21T23:00Z,9,2,True,False,True,2229,338,FIU,Kennesaw St,26,45,,Miami,FL
+401757286,2025-10-21,2025-10-21T23:30Z,9,2,True,False,True,2348,98,Louisiana Tech,Western KY,27,28,,Ruston,LA

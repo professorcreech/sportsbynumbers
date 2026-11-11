@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401754543,2025-09-26,2025-09-26T23:00Z,5,2,True,False,True,258,52,Virginia,Florida St,46,38,,Charlottesville,VA
+401756902,2025-09-26,2025-09-27T01:00Z,5,2,True,False,True,9,2628,Arizona St,TCU,27,24,,Tempe,AZ
+401752939,2025-09-26,2025-09-27T02:35Z,5,2,True,False,False,204,248,Oregon St,Houston,24,27,,Corvallis,OR

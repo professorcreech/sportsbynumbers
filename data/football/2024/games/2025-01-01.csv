@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401677183,2025-01-01,2025-01-01T22:00Z,1,3,True,True,False,2483,194,Oregon,Ohio State,21,41,College Football Playoff Quarterfinal at the Rose Bowl Presented by Prudential,Pasadena,CA
+401677182,2025-01-01,2025-01-01T18:00Z,1,3,True,True,False,9,251,Arizona St,Texas,31,39,College Football Playoff Quarterfinal at the Chick-fil-A Peach Bowl,Atlanta,GA

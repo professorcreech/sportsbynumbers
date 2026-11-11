@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762481,2025-10-10,2025-10-10T23:30Z,7,2,True,False,True,249,58,North Texas,South Florida,36,63,,Denton,TX
+401752862,2025-10-10,2025-10-11T01:00Z,7,2,True,False,True,264,164,Washington,Rutgers,38,19,,Seattle,WA
+401760388,2025-10-10,2025-10-11T01:00Z,7,2,True,False,True,36,278,Colorado St,Fresno St,49,21,,Fort Collins,CO
+401767034,2025-10-10,2025-10-10T23:00Z,7,2,True,False,False,2803,225,Bryant,Brown,19,29,,Smithfield,RI
+401767629,2025-10-10,2025-10-10T23:00Z,7,2,True,False,False,219,2368,Penn,Marist,28,9,,Philadelphia,PA
+401767691,2025-10-10,2025-10-10T23:00Z,7,2,True,False,True,108,172,Harvard,Cornell,34,10,,Cambridge,MA

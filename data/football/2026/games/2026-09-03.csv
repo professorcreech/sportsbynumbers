@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401856768,2026-09-03,2026-09-04T01:00Z,1,2,True,False,False,254,70,Utah,Idaho,66,14,,Salt Lake City,UT
+401856663,2026-09-03,2026-09-04T00:00Z,1,2,True,False,False,142,2029,Missouri,AR-Pine Bluff,54,14,,Columbia,MO
+401858423,2026-09-03,2026-09-03T22:00Z,1,2,True,False,False,164,113,Rutgers,UMass,21,37,,Piscataway,NJ
+401856767,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,2116,2065,UCF,Bethune,73,6,,Orlando,FL
+401858204,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,154,2006,Wake Forest,Akron,38,16,,Winston-Salem,NC
+401864424,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,48,2771,Delaware,Merrimack,42,7,,Newark,DE
+401864425,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,338,2698,Kennesaw St,West Georgia,47,0,,Kennesaw,GA
+401866409,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,2084,399,Buffalo,UAlbany,21,17,,Buffalo,NY
+401856776,2026-09-03,2026-09-04T00:00Z,1,2,True,False,False,59,38,Georgia Tech,Colorado,13,14,,Atlanta,GA
+401858422,2026-09-03,2026-09-04T00:00Z,1,2,True,False,False,135,2197,Minnesota,E Illinois,59,7,,Minneapolis,MN
+401858424,2026-09-03,2026-09-04T01:00Z,1,2,True,False,False,356,5,Illinois,UAB,42,23,,Champaign,IL
+401868269,2026-09-03,2026-09-03T22:00Z,1,2,True,False,False,2413,3077,Morehead St,KCU,75,24,,Morehead,KY
+401866622,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,2619,2815,Stony Brook,Lindenwood,36,32,,Stony Brook,NY
+401867889,2026-09-03,2026-09-03T23:00Z,1,2,True,False,False,2535,79,Samford,S Illinois,18,22,,Birmingham,AL

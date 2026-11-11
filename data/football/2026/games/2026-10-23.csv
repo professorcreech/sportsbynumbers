@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401858271,2026-10-23,2026-10-23T23:00Z,8,2,True,False,True,258,150,Virginia,Duke,16,19,,Charlottesville,VA
+401861965,2026-10-23,2026-10-23T23:00Z,8,2,True,False,False,41,113,UConn,UMass,35,16,,East Hartford,CT
+401862808,2026-10-23,2026-10-24T00:30Z,8,2,True,False,True,202,349,Tulsa,Army,35,38,,Tulsa,OK
+401864525,2026-10-23,2026-10-24T01:00Z,8,2,True,False,True,2751,2005,Wyoming,Air Force,28,14,,Laramie,WY
+401858272,2026-10-23,2026-10-24T02:30Z,8,2,True,False,True,24,152,Stanford,NC State,31,28,,Stanford,CA
+401867955,2026-10-23,2026-10-23T21:00Z,8,2,True,False,True,2169,2428,Delaware St,NC Central,12,31,,Dover,DE
+401870841,2026-10-23,2026-10-23T23:00Z,8,2,True,False,True,219,43,Penn,Yale,24,21,,Philadelphia,PA

@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401778303,2025-12-16,2025-12-17T02:00Z,1,3,True,True,False,55,2653,Jax State,Troy,17,13,IS4S Salute to Veterans Bowl,Montgomery,AL

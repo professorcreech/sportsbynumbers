@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401858245,2026-10-02,2026-10-02T23:00Z,5,2,True,False,True,259,221,Virginia Tech,Pitt,33,35,,Blacksburg,VA
+401871050,2026-10-02,2026-10-02T23:00Z,5,2,True,False,True,48,2335,Delaware,Liberty,14,30,,Newark,DE
+401858476,2026-10-02,2026-10-03T00:00Z,5,2,True,False,True,77,213,Northwestern,Penn State,34,13,,Evanston,IL
+401868094,2026-10-02,2026-10-03T02:30Z,5,2,True,False,True,70,147,Idaho,Montana St,35,34,,Moscow,ID

@@ -1,0 +1,27 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401762522,2025-08-28,2025-08-28T21:30Z,1,2,True,False,False,58,68,South Florida,Boise St,34,7,,Tampa,FL
+401752794,2025-08-28,2025-08-28T22:00Z,1,2,True,False,False,164,195,Rutgers,Ohio,34,31,,Piscataway,NJ
+401762790,2025-08-28,2025-08-28T22:00Z,1,2,True,False,False,189,322,Bowling Green,Lafayette,26,7,,Bowling Green,OH
+401754373,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,152,151,NC State,East Carolina,24,17,,Raleigh,NC
+401756848,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2116,55,UCF,Jax State,17,10,,Orlando,FL
+401757219,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,48,2169,Delaware,Delaware St,35,17,,Newark,DE
+401761588,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2433,2598,UL Monroe,Saint Francis,29,0,,Monroe,LA
+401762789,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2006,2751,Akron,Wyoming,0,10,,Akron,OH
+401752674,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,142,2110,Missouri,C Arkansas,61,6,,Columbia,MO
+401754517,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,150,2210,Duke,Elon,45,17,,Durham,NC
+401756876,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,197,2630,Oklahoma St,UT Martin,27,7,,Stillwater,OK
+401752793,2025-08-28,2025-08-29T00:00Z,1,2,True,False,False,135,2084,Minnesota,Buffalo,23,10,,Minneapolis,MN
+401756852,2025-08-28,2025-08-29T00:00Z,1,2,True,False,False,248,2617,Houston,SF Austin,27,0,,Houston,TX
+401762430,2025-08-28,2025-08-29T00:30Z,1,2,True,False,False,5,2011,UAB,Alabama St,52,42,,Birmingham,AL
+401752796,2025-08-28,2025-08-29T01:00Z,1,2,True,True,False,2132,158,Cincinnati,Nebraska,17,20,,Kansas City,MO
+401762791,2025-08-28,2025-08-29T01:00Z,1,2,True,False,False,275,193,Wisconsin,Miami OH,17,0,,Madison,WI
+401760357,2025-08-28,2025-08-29T02:00Z,1,2,True,False,False,21,2619,San Diego St,Stony Brook,42,0,,San Diego,CA
+401767446,2025-08-28,2025-08-28T22:00Z,1,2,True,False,False,282,2816,Indiana St,McKendree,41,24,,Terre Haute,IN
+401767549,2025-08-28,2025-08-28T22:00Z,1,2,True,False,False,2754,2385,Youngstown St,Mercyhurst,24,15,,Youngstown,OH
+401767171,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2197,2168,E Illinois,Dayton,24,14,,Charleston,IL
+401767209,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2900,2815,St Thomas (MN),Lindenwood,35,13,,Saint Paul,MN
+401767327,2025-08-28,2025-08-28T23:00Z,1,2,True,False,False,2450,119,Norfolk St,Towson,7,27,,Norfolk,VA
+401767298,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,2535,2698,Samford,West Georgia,3,34,,Birmingham,AL
+401767468,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,2277,124386,Hou Christian,Arkansas Bapti,69,0,,Houston,TX
+401767620,2025-08-28,2025-08-28T23:30Z,1,2,True,False,False,2181,389,Drake,Upper Iowa,41,7,,Des Moines,IA
+401767369,2025-08-28,2025-08-29T00:00Z,1,2,True,False,False,2466,2016,N'Western St,Alcorn St,20,10,,Natchitoches,LA

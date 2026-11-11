@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401778324,2025-12-29,2025-12-29T19:00Z,1,3,True,True,False,2026,290,App State,GA Southern,10,29,JLab Birmingham Bowl,Birmingham,AL
