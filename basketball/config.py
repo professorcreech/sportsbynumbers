@@ -48,9 +48,11 @@ HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth 
 # Fit on 2025-26 and checked on Nov 2026: last season's full-season rating beat recency-weighted
 # and last-15-game versions; adding the roster (players carry ratings across teams) helped most;
 # fading the prior by January made predictions worse, so it doesn't fade.
-PRESEASON_W_PROGRAM = 0.69
-PRESEASON_W_ROSTER = 0.5
-PRESEASON_GAMES = 5.0   # tuned on held-out games: best of 2.7/5/8/12/20 in Nov 2026, Nov-Dec 2025 and Jan-Mar 2026
+# NBA (tests/preseason_study.py on 2025-26 plus Oct-Nov 2026 replay): the roster explains far more
+# than last season's team results (pros are their players); worth ~8 games.
+PRESEASON_W_PROGRAM = 0.25 if IS_NBA else 0.69
+PRESEASON_W_ROSTER = 0.62 if IS_NBA else 0.5
+PRESEASON_GAMES = 8.0 if IS_NBA else 5.0   # college: best of 2.7/5/8/12/20 in Nov 2026, Nov-Dec 2025, Jan-Mar 2026
 
 # ---- Tournament simulation ---------------------------------------------------------------
 # How far a team's true strength may be from today's rating on Selection Sunday (per 100 poss).
