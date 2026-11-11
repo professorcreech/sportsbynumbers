@@ -51,6 +51,19 @@ def main():
         "nfl_summary": get(f"{NFL}/summary", {"event": nfl_ev}) if nfl_ev else None,
         "nfl_teams": get(f"{NFL}/teams"),
     }
+    # Contracts: does ESPN publish salaries? Try one player from each league
+    roster = probes.get("nba_roster") or {}
+    ath = next((a for a in roster.get("athletes", []) if isinstance(a, dict) and a.get("id")), None)
+    if ath:
+        probes["nba_athlete"] = get(f"{CORE}/basketball/leagues/nba/athletes/{ath['id']}")
+        probes["nba_contracts"] = get(f"{CORE}/basketball/leagues/nba/athletes/{ath['id']}/contracts")
+    nfl_roster = get(f"{NFL}/teams/12/roster") or {}
+    groups = nfl_roster.get("athletes", []) or []
+    items = [i for g in groups if isinstance(g, dict) for i in (g.get("items") or [])] or groups
+    nath = next((a for a in items if isinstance(a, dict) and a.get("id")), None)
+    probes["nfl_roster"] = nfl_roster
+    if nath:
+        probes["nfl_contracts"] = get(f"{CORE}/football/leagues/nfl/athletes/{nath['id']}/contracts")
     for name, data in probes.items():
         text = outline(data) if data is not None else "NO RESPONSE\n"
         if name.endswith("summary") and isinstance(data, dict):

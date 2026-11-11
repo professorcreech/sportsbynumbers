@@ -168,11 +168,30 @@ def fetch_schedule(days_ahead: int = 8) -> list[dict]:
     return [g for i in range(days_ahead) for g in scoreboard(today + timedelta(days=i)) if not g["completed"]]
 
 
+def fetch_rankings(season: int) -> None:
+    """Current polls (AP, coaches, and the Playoff committee's rankings when released), compactly."""
+    if config.IS_NFL:
+        return
+    data = get(f"{config.ESPN}/rankings") or {}
+    polls = {}
+    for r in data.get("rankings", []) or []:
+        ranks = [{"rank": e.get("current"), "team_id": str((e.get("team") or {}).get("id")),
+                  "record": (e.get("recordSummary") or "")} for e in r.get("ranks", []) or []]
+        polls[r.get("type") or r.get("shortName") or r.get("name")] = {
+            "name": r.get("name"), "headline": r.get("headline"), "date": r.get("date"), "ranks": ranks}
+    if polls:
+        import json
+        (season_dir(season) / "rankings.json").write_text(json.dumps(polls, indent=0))
+        print(f"rankings: {', '.join(f'{k} ({len(v["ranks"])})' for k, v in polls.items())}")
+
+
 def update(season: int | None = None, force: bool = False) -> None:
     today = date.today()
     season = season or config.season_for(today)
     d = season_dir(season)
     fetch_teams(season)
+    if season == config.season_for(today):
+        fetch_rankings(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
     day, last = config.season_start(season), min(today - timedelta(days=1), config.season_end(season))
     recent = last - timedelta(days=config.REFETCH_DAYS - 1)
