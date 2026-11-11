@@ -43,7 +43,26 @@ def parse_header(summary: dict) -> dict | None:
         "away_id": str(teams["away"]["team"]["id"]),
         "home_pts": _int(teams["home"].get("score")),
         "away_pts": _int(teams["away"].get("score")),
+        "start": comp.get("date"),
+        # points by period ("38|41" or "25|28|30|27"), for halftime and quarter analysis
+        "home_periods": "|".join(str(_int(x.get("displayValue", x.get("value")))) for x in teams["home"].get("linescores") or []),
+        "away_periods": "|".join(str(_int(x.get("displayValue", x.get("value")))) for x in teams["away"].get("linescores") or []),
+        **parse_odds(summary),
     }
+
+
+def parse_odds(summary: dict) -> dict:
+    """Pregame betting line from ESPN's pickcenter (first provider listed)."""
+    pc = summary.get("pickcenter") or []
+    if not pc:
+        return {}
+    o = pc[0]
+    num = lambda x: float(x) if isinstance(x, (int, float)) or (isinstance(x, str) and x.replace(".", "", 1).lstrip("+-").isdigit()) else None
+    return {"line_provider": (o.get("provider") or {}).get("name"), "line_details": o.get("details"),
+            "line_spread": num(o.get("spread")), "line_total": num(o.get("overUnder")),
+            "line_home_ml": num((o.get("homeTeamOdds") or {}).get("moneyLine")),
+            "line_away_ml": num((o.get("awayTeamOdds") or {}).get("moneyLine")),
+            "line_home_fav": (o.get("homeTeamOdds") or {}).get("favorite")}
 
 
 def parse_box(summary: dict, game_id: str) -> list[dict]:
