@@ -103,8 +103,8 @@ jobs:
         run: |
           for item in ${{ github.event.inputs.pro_backfill }}; do
             league=${item%%:*}; season=${item##*:}
-            if [ "$league" = nba ]; then SBN_LEAGUE=nba python -m basketball.run --backfill "$season"; fi
-            if [ "$league" = nfl ]; then SBN_LEAGUE=nfl python -m football.run --backfill "$season"; fi
+            if [ "$league" = nba ]; then SBN_LEAGUE=nba python -m basketball.run --backfill "$season" --force; fi
+            if [ "$league" = nfl ]; then SBN_LEAGUE=nfl python -m football.run --backfill "$season" --force; fi
           done
 
       - name: NBA (Oct - Jun)

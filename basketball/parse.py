@@ -79,7 +79,9 @@ def parse_box(summary: dict, game_id: str) -> list[dict]:
 def _kind(play: dict) -> str:
     t = (play.get("type") or {}).get("text", "") or ""
     text = (play.get("text") or "").lower()
-    if t == "Substitution" or "subbing" in text:
+    if t == "Substitution" or "subbing" in text or "enters the game" in text:
+        if "enters the game" in text:
+            return "sub_swap"  # NBA: one play, participants = [player in, player out]
         return "sub_in" if "subbing in" in text else ("sub_out" if "subbing out" in text else "sub")
     if "FreeThrow" in t.replace(" ", "") or "free throw" in text:
         return "fta"
@@ -105,7 +107,7 @@ def parse_stints(summary: dict, game: dict, box: list[dict]) -> list[dict]:
         return []
     # Without substitutions we can't know who was on the floor; guessing "starters all game" would
     # bias every player rating, so record nothing for that game.
-    if sum(_kind(p) in ("sub_in", "sub_out") for p in plays) < 4:
+    if sum(_kind(p) in ("sub_in", "sub_out", "sub_swap") for p in plays) < 4:
         return []
     home, away = game["home_id"], game["away_id"]
     team_of = {r["player_id"]: r["team_id"] for r in box}
@@ -121,9 +123,17 @@ def parse_stints(summary: dict, game: dict, box: list[dict]) -> list[dict]:
     def period_start_lineup(pplays, prev):
         first = {}
         for p in pplays:
+            k = _kind(p)
+            if k == "sub_swap":  # the player coming in wasn't on the floor; the one going out was
+                parts = p.get("participants") or []
+                ids = [str((x.get("athlete") or {}).get("id")) for x in parts[:2]]
+                for pid, role in zip(ids, ("sub_in", "sub_out")):
+                    if pid in team_of and pid not in first:
+                        first[pid] = role
+                continue
             pid = _athlete(p)
             if pid and pid in team_of and pid not in first:
-                first[pid] = _kind(p)
+                first[pid] = k
         lineup = {}
         for tid in (home, away):
             on = {pid for pid, k in first.items() if team_of[pid] == tid and k != "sub_in"}
@@ -174,6 +184,15 @@ def parse_stints(summary: dict, game: dict, box: list[dict]) -> list[dict]:
         for p in periods[period]:
             k = _kind(p)
             pid = _athlete(p)
+            if k == "sub_swap":
+                parts = p.get("participants") or []
+                ids = [str((x.get("athlete") or {}).get("id")) for x in parts[:2]]
+                if len(ids) == 2 and ids[0] in team_of:
+                    tid = team_of[ids[0]]
+                    lineup[tid].discard(ids[1])
+                    lineup[tid].add(ids[0])
+                    dirty = True
+                continue
             if k in ("sub_in", "sub_out"):
                 tid = team_of.get(pid)
                 if tid:
