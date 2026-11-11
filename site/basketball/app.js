@@ -193,7 +193,17 @@
 
   function games(main) {
     main.innerHTML = '<div><h1>Upcoming Games</h1><p class="lede">Projected scores and win chances for the next three days, from the current team ratings.</p></div>' +
-      (D.games.length ? '<div class="grid">' + D.games.map(gameCard).join("") + "</div>" : '<p class="lede">No Division I games are scheduled in the next three days.</p>');
+      '<div class="controls"><div class="field"><label for="g-q">Team</label><input type="search" id="g-q" placeholder="Search by team" autocomplete="off"></div></div>' +
+      '<div id="g-l"></div>';
+    const label = (id, fallback) => { const t = teamById[id]; return t ? [t.short, t.name, t.abbr].join(" ") : fallback || ""; };
+    const draw = () => {
+      const q = $("#g-q").value.trim().toLowerCase();
+      const rows = D.games.filter((g) => !q || (label(g.home, g.home_name) + " " + label(g.away, g.away_name)).toLowerCase().includes(q));
+      $("#g-l").innerHTML = rows.length ? '<div class="grid">' + rows.map(gameCard).join("") + "</div>" :
+        '<p class="lede">' + (q ? "No games in the next three days match “" + esc(q) + "”." : "No Division I games are scheduled in the next three days.") + "</p>";
+    };
+    $("#g-q").addEventListener("input", draw);
+    draw();
   }
 
   function predict(h, a, neutral) {
