@@ -90,11 +90,14 @@ jobs:
           git config user.email "sportsbynumbers-bot@users.noreply.github.com"
           git add data site
           git diff --cached --quiet || git commit -m "Daily update $(date -u +%F)"
-          # Code may have been pushed while this ran; data and code never touch the same files
+          # Code or another run may have pushed meanwhile. Rebase onto it; where both changed the
+          # same data file, keep this run's copy (it was downloaded last).
           for i in 1 2 3; do
-            git pull --rebase origin main && git push && break
-            sleep 5
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
           done
+          echo "Could not save data to the repository"; exit 1
 
       - uses: actions/upload-pages-artifact@v3
         with:

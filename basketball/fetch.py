@@ -154,12 +154,12 @@ def fetch_day(season: int, day: date) -> int:
     name = day.isoformat()
     pd.DataFrame(g_rows).to_csv(d / "games" / f"{name}.csv", index=False)
     if b_rows:
-        pd.DataFrame(b_rows).to_csv(d / "box" / f"{name}.csv.gz", index=False)
+        pd.DataFrame(b_rows).to_csv(d / "box" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     if s_rows:
-        pd.DataFrame(s_rows).to_csv(d / "stints" / f"{name}.csv.gz", index=False)
+        pd.DataFrame(s_rows).to_csv(d / "stints" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     if shot_rows:
         (d / "shots").mkdir(exist_ok=True)
-        pd.DataFrame(shot_rows).to_csv(d / "shots" / f"{name}.csv.gz", index=False)
+        pd.DataFrame(shot_rows).to_csv(d / "shots" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     return len(g_rows)
 
 

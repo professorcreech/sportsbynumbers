@@ -55,27 +55,45 @@ def scoreboard(day: date) -> list[dict]:
     return list(out.values())
 
 
+def _standings_members(node: dict, conf: str | None = None, out: dict | None = None) -> dict:
+    """Walk a standings tree (conferences, sometimes split into divisions) -> {team_id: conference}."""
+    out = {} if out is None else out
+    name = node.get("abbreviation") or node.get("shortName") or node.get("name")
+    for e in (node.get("standings") or {}).get("entries", []):
+        t = e.get("team") or {}
+        if t.get("id"):
+            out[str(t["id"])] = {"conf": conf or name, "name": t.get("displayName"), "abbr": t.get("abbreviation"),
+                                 "short": t.get("shortDisplayName") or t.get("location")}
+    for child in node.get("children", []) or []:
+        # The first level below the division is the conference; deeper levels are its divisions
+        label = child.get("abbreviation") or child.get("shortName") or child.get("name")
+        _standings_members(child, conf or label, out)
+    return out
+
+
 def fetch_teams(season: int) -> None:
+    """Division I = every team in the FBS and FCS conference standings (independents included)."""
     rows = {}
     for div, grp in config.GROUPS.items():
-        data = get(f"{config.ESPN}/teams", {"groups": grp, "limit": 400})
-        for t in (data or {}).get("sports", [{}])[0].get("leagues", [{}])[0].get("teams", []):
-            t = t.get("team", {})
-            rows[str(t.get("id"))] = {"team_id": str(t.get("id")), "name": t.get("displayName"),
-                                      "short": t.get("shortDisplayName") or t.get("location"),
-                                      "abbr": t.get("abbreviation"), "color": t.get("color") or "888888", "div": div}
-    # Conference names from standings (optional)
-    conf = {}
-    for div, grp in config.GROUPS.items():
         st = get("https://site.api.espn.com/apis/v2/sports/football/college-football/standings",
-                 {"season": season, "group": grp})
-        for child in (st or {}).get("children", []):
-            for e in child.get("standings", {}).get("entries", []):
-                conf[str(e.get("team", {}).get("id"))] = child.get("abbreviation") or child.get("name")
-    for t in rows.values():
-        t["conf"] = conf.get(t["team_id"], "")
-    if rows:
-        pd.DataFrame(rows.values()).to_csv(season_dir(season) / "teams.csv", index=False)
+                 {"season": season, "group": grp}) or {}
+        for tid, info in _standings_members(st).items():
+            rows[tid] = {"team_id": tid, **info, "div": div, "color": "888888"}
+    if not rows:
+        print("football: standings unavailable; keeping previous team list")
+        return
+    # Colors and short names from the team directory
+    data = get(f"{config.ESPN}/teams", {"limit": 2000})
+    for t in (data or {}).get("sports", [{}])[0].get("leagues", [{}])[0].get("teams", []):
+        t = t.get("team", {})
+        r = rows.get(str(t.get("id")))
+        if r:
+            r["color"] = t.get("color") or "888888"
+            r["short"] = t.get("shortDisplayName") or r.get("short")
+            r["abbr"] = t.get("abbreviation") or r.get("abbr")
+    df = pd.DataFrame(rows.values())
+    print(f"football teams: {dict(df['div'].value_counts())}")
+    df.to_csv(season_dir(season) / "teams.csv", index=False)
 
 
 def parse_summary(summ: dict, game: dict):
@@ -136,9 +154,9 @@ def fetch_day(season: int, day: date) -> int:
     name = day.isoformat()
     pd.DataFrame(games).to_csv(d / "games" / f"{name}.csv", index=False)
     if drv:
-        pd.DataFrame(drv).to_csv(d / "drives" / f"{name}.csv.gz", index=False)
+        pd.DataFrame(drv).to_csv(d / "drives" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     if ply:
-        pd.DataFrame(ply).to_csv(d / "plays" / f"{name}.csv.gz", index=False)
+        pd.DataFrame(ply).to_csv(d / "plays" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     return len(games)
 
 

@@ -63,7 +63,7 @@ def season_scores(season: int) -> pd.DataFrame:
     df = df[df.completed].drop_duplicates("game_id")
     df.insert(0, "season", season)
     HIST.mkdir(parents=True, exist_ok=True)
-    df.to_csv(path, index=False)
+    df.to_csv(path, index=False, compression={"method": "gzip", "mtime": 0})
     t = df[pd.to_numeric(df.tourney_id, errors="coerce") == TOURNAMENT_ID]
     print(f"{season}: {len(df)} games, {len(t)} NCAA tournament games")
     return df
