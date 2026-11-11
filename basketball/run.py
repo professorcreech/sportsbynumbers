@@ -132,7 +132,12 @@ def main():
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--simulate", action="store_true")
     ap.add_argument("--season", type=int)
+    ap.add_argument("--backfill", type=int, help="download a past season (e.g. 2026 for 2025-26); no site build")
     a = ap.parse_args()
+    if a.backfill:
+        from . import fetch
+        fetch.update(a.backfill)
+        return
     if a.simulate:
         from .simulate import season as sim
         tm, games, box, stints, *_ = sim()

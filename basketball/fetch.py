@@ -174,7 +174,8 @@ def update(season: int | None = None) -> None:
     season = season or config.season_for(today)
     d = season_dir(season)
     fetch_teams(season)
-    fetch_rosters(season)
+    if season == config.season_for(today):
+        fetch_rosters(season)  # rosters are only available for the current season
     fetch_prior_scores(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
     day = config.season_start(season)
