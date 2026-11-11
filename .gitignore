@@ -5,3 +5,4 @@ __pycache__/
 data/basketball/history/tournament_games.csv
 data/*/preseason_study_novdec.csv
 data/*/bowl_games.csv
+data/basketball/history/tournament_2026_backtest.csv

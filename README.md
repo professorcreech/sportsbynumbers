@@ -45,6 +45,7 @@ Every page carries the Google tag right after `<head>`; copy it from `site/index
 | Bowl games: classifiers vs. ratings (after Delen, Cogdell & Kasap 2012) | `bowl_study.py` | All ~60% out of time; random forest 61.4%, ratings 59.6%; decision tree 56.7% |
 | NBA preseason prior | `preseason_study.py` (`SBN_LEAGUE=nba`) | Roster explains more than team results (0.25 program / 0.62 roster), worth 8 games |
 | NFL preseason prior | `football_backtest.py` (`SBN_LEAGUE=nfl`) | Carry only ~30% of last season, worth 6 games (pros regress hard) |
+| Replay of the 2026 NCAA tournament | `tournament_backtest.py` | 71.6% of games right (better seed: 68.7%); log loss 0.486 vs 0.580; champion Michigan was the 2nd favorite (14%); bracket 1,050 pts vs 1,000 chalk |
 | Football calibration | (inline replay of 2025) | College: actual margin = 1.01 × predicted on 1,677 games; NFL 1.15 on 269 |
 
 ## Run it yourself
