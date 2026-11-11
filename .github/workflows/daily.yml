@@ -14,6 +14,10 @@ on:
         description: "Re-download every day of a season, e.g. 2027 (picks up newly saved details). Leave blank normally."
         required: false
         default: ""
+      football_backfill:
+        description: "Download past college football seasons, e.g. '2024 2025'. Leave blank normally."
+        required: false
+        default: ""
       history:
         description: "Also download past seasons' scores for the tournament model, e.g. '2012 2025'. Leave blank normally."
         required: false
@@ -61,6 +65,22 @@ jobs:
             python -m basketball.run --fetch
           else
             echo "Basketball is out of season; keeping last ratings."
+          fi
+
+      - name: Football backfill
+        continue-on-error: true   # a football problem shouldn't block basketball
+        if: ${{ github.event.inputs.football_backfill != '' }}
+        run: |
+          for s in ${{ github.event.inputs.football_backfill }}; do python -m football.run --backfill "$s"; done
+
+      - name: Football (Aug - Jan)
+        continue-on-error: true   # a football problem shouldn't block basketball
+        run: |
+          month=$(date -u +%-m)
+          if [ "$month" -ge 8 ] || [ "$month" -le 1 ]; then
+            python -m football.run --fetch
+          else
+            echo "Football is out of season; keeping last ratings."
           fi
 
       - name: Save new data
