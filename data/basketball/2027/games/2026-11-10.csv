@@ -1,10 +1,10 @@
 game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401909786,2026-11-10,True,False,True,96,2305,69,89
 401906771,2026-11-10,False,False,True,52,57,72,81
 401909564,2026-11-10,True,False,True,150,127,73,79
 401913527,2026-11-10,False,False,True,2641,356,84,78
 401920425,2026-11-10,False,False,True,258,2083,95,61
 401909740,2026-11-10,False,False,True,12,2464,90,59
+401909786,2026-11-10,True,False,True,96,2305,69,89
 401918987,2026-11-10,False,False,True,238,235,105,81
 401921740,2026-11-10,False,False,True,252,2511,98,82
 401920866,2026-11-10,False,False,True,164,2885,101,64
@@ -67,3 +67,4 @@ game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
 401917979,2026-11-10,False,False,True,2628,2433,100,92
 401909761,2026-11-10,False,False,True,38,301,83,75
 401909492,2026-11-10,False,False,True,2306,156,89,82
+401921062,2026-11-10,False,False,True,2539,149,63,58

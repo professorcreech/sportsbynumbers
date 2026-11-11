@@ -1,0 +1,5 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401856570,2026-03-27,True,False,True,150,2599,80,75
+401856572,2026-03-27,True,False,True,130,333,90,77
+401856571,2026-03-27,True,False,True,41,127,67,63
+401856573,2026-03-27,True,False,True,66,2633,62,76
