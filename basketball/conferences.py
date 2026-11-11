@@ -8,7 +8,7 @@ NAMES = {
     "meac": "MEAC", "midam": "MAC", "mvc": "Missouri Valley", "mvfc": "Missouri Valley", "mwest": "Mountain West",
     "neast": "NEC", "ovc": "OVC", "pac12": "Pac-12", "pat": "Patriot", "pfl": "Pioneer", "sec": "SEC",
     "south": "SoCon", "summ": "Summit", "swac": "SWAC", "uac": "UAC", "usa": "Conference USA", "wac": "WAC",
-    "wcc": "WCC",
+    "wcc": "WCC", "eastern": "East", "western": "West", "east": "East", "west": "West",
 }
 
 

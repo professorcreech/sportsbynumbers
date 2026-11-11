@@ -246,8 +246,11 @@ def parse_shots(summary: dict, game: dict) -> list[dict]:
         is_ft = "freethrow" in t.replace(" ", "").lower() or "free throw" in low
         pts_att = p.get("pointsAttempted")
         three = (pts_att == 3) or ("three point" in low) or ("3-pt" in low)
-        kind = "ft" if is_ft else ("three" if three else
-                                   {"LayUpShot": "layup", "DunkShot": "dunk", "TipShot": "tip"}.get(t.replace(" ", ""), "jumper"))
+        tl = t.lower()
+        # College types are "LayUpShot"/"DunkShot"/"TipShot"; the NBA's are "Driving Layup Shot",
+        # "Cutting Dunk Shot", "Alley Oop Layup", "Putback Dunk", "Tip Shot" and so on.
+        rim = "dunk" if "dunk" in tl else "layup" if ("layup" in tl or "lay up" in tl or "alley" in tl) else "tip" if "tip" in tl else None
+        kind = "ft" if is_ft else ("three" if three else (rim or "jumper"))
         c = p.get("coordinate") or {}
         x, y = c.get("x"), c.get("y")
         if not isinstance(x, (int, float)) or abs(x) > 1000:
@@ -258,7 +261,7 @@ def parse_shots(summary: dict, game: dict) -> list[dict]:
             "player_id": shooter, "assist_id": assister,
             "period": _int((p.get("period") or {}).get("number"), 0),
             "clock": (p.get("clock") or {}).get("displayValue", ""),
-            "kind": kind, "made": bool(p.get("scoringPlay")) or " made " in f" {low} ",
+            "kind": kind, "type": t, "made": bool(p.get("scoringPlay")) or " made " in f" {low} ",
             "x": x, "y": y,
         })
     return rows

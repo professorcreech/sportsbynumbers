@@ -51,11 +51,11 @@ def fetch_teams(season: int) -> None:
                       "abbr": t.get("abbreviation"), "color": t.get("color") or "888888"})
     # Conference names come from the standings feed; it is optional.
     conf_of = {}
-    st = get("https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings",
-             {"season": season})
+    st = get(config.STANDINGS, {"season": season})
     for child in (st or {}).get("children", []):
+        label = (child.get("name") or "").replace(" Conference", "") if config.IS_NBA else (child.get("abbreviation") or child.get("name"))
         for e in child.get("standings", {}).get("entries", []):
-            conf_of[str(e.get("team", {}).get("id"))] = child.get("abbreviation") or child.get("name")
+            conf_of[str(e.get("team", {}).get("id"))] = label
     for t in teams:
         t["conf"] = conf_of.get(t["team_id"], "")
     if teams:

@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 .DS_Store
 data/basketball/history/tournament_games.csv
+data/*/preseason_study_novdec.csv
+data/*/bowl_games.csv

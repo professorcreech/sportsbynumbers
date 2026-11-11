@@ -16,6 +16,8 @@ SITE_DATA_DIR = ROOT / "site" / ("nba" if IS_NBA else "basketball") / "data"
 
 ESPN = ("https://site.api.espn.com/apis/site/v2/sports/basketball/nba" if IS_NBA
         else "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball")
+STANDINGS = ("https://site.api.espn.com/apis/v2/sports/basketball/nba/standings" if IS_NBA
+             else "https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings")
 DIVISION_I_GROUP = None if IS_NBA else 50
 FETCH_WORKERS = 6          # parallel game requests; keep modest to be polite
 REFETCH_DAYS = 2           # re-pull the last N days in case games were late or corrected
