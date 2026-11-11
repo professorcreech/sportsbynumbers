@@ -119,7 +119,7 @@ tbody tr:hover { background: var(--accent-soft); }
 
 /* Cards used for games and the matchup tool */
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; min-width: 0; align-content: start; }
 .card .when { font: 12px var(--font-data); color: var(--muted); }
 .row { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
 .row .t { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -146,6 +146,19 @@ abbr[title] { text-decoration: none; cursor: help; }
 .note { color: var(--muted); font-size: 12px; margin: 8px 2px 0; }
 #p-t, #t-p { display: grid; gap: 8px; }
 #p-note .note, #t-pn .note { margin-top: -10px; }
+
+/* Game cards open the matchup page */
+.card.game { cursor: pointer; transition: border-color .15s; }
+.card.game:hover { border-color: var(--accent); }
+.more-link { font: 600 12px var(--font-body); text-decoration: none; justify-self: end; }
+.card h3 { font: 700 15px var(--font-body); margin: 0; }
+.card ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.card p { margin: 0; }
+td.lead { font-weight: 700; color: var(--fg); background: var(--accent-soft); }
+details.how { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+details.how summary { cursor: pointer; font-weight: 600; }
+details.how[open] { display: grid; gap: 8px; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
 
 /* Prior vs. current belief chart */
 .belief { display: grid; gap: 10px; }

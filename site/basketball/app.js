@@ -6,7 +6,7 @@
   const f1 = (x) => (x == null ? "–" : Number(x).toFixed(1));
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
-  const pct = (p) => Math.round(p * 100) + "%";
+  const pct = (p) => (p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : Math.round(p * 100) + "%");
   const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "method"];
 
   let D = {};
@@ -26,6 +26,10 @@
       $("#banner").hidden = false;
     }
     window.addEventListener("hashchange", route);
+    document.addEventListener("click", (e) => {
+      const card = e.target.closest(".card.game");
+      if (card && !e.target.closest("a")) location.hash = card.dataset.href;
+    });
     route();
   }
 
@@ -184,11 +188,12 @@
   function gameCard(g) {
     const when = g.start ? new Date(g.start) : null;
     const whenTxt = when && !isNaN(when) ? when.toLocaleString(undefined, { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : "";
-    return '<article class="card"><div class="when">' + esc(whenTxt) + (g.neutral ? " · neutral site" : "") + "</div>" +
+    return '<article class="card game" data-href="' + gameHref(g) + '"><div class="when">' + esc(whenTxt) + (g.neutral ? " · neutral site" : "") + "</div>" +
       '<div class="row"><span class="t">' + teamLink(g.away) + '</span><span class="s">' + f1(g.away_score) + "</span></div>" +
       '<div class="row"><span class="t">' + (g.neutral ? "" : "@ ") + teamLink(g.home) + '</span><span class="s">' + f1(g.home_score) + "</span></div>" +
       '<div class="prob" role="img" aria-label="Win probability: ' + esc((teamById[g.home] || {}).short) + " " + pct(g.home_win) + '"><span class="a" style="width:' + (100 - g.home_win * 100) + '%"></span><span class="h" style="width:' + g.home_win * 100 + '%"></span></div>' +
-      '<div class="probtxt"><span>' + pct(1 - g.home_win) + "</span><span>" + Math.round(g.poss) + " poss</span><span>" + pct(g.home_win) + "</span></div></article>";
+      '<div class="probtxt"><span>' + pct(1 - g.home_win) + "</span><span>" + Math.round(g.poss) + " poss</span><span>" + pct(g.home_win) + "</span></div>" +
+      '<a class="more-link" href="' + gameHref(g) + '">Matchup details →</a></article>';
   }
 
   let SCHEDULE = null;  // full remaining schedule, loaded on first search
@@ -385,15 +390,239 @@
       "<h2>Data</h2><p>Box scores and play-by-play come from ESPN's public scoreboard feed, pulled after each day's games. Stints with lineup gaps (a missed substitution in the feed) are dropped rather than guessed.</p></div>";
   }
 
+  /* ===================== Matchup page: prediction, comparison, scouting, lineups ===================== */
+  let STATS = null;
+  function loadStats() {
+    if (!STATS) STATS = fetch("data/teamstats.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    return STATS;
+  }
+  const pctf = (x, d = 1) => (x == null ? "–" : (x * 100).toFixed(d) + "%");
+  const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+
+  function gameHref(g) {
+    return g.id ? "#game-" + g.id : "#vs-" + g.away + "-" + g.home + (g.neutral ? "-n" : "");
+  }
+
+  /* Distribution of the final margin (home minus away) as a normal curve; shaded areas are each side's win chance */
+  function marginChart(spread, sd, homeName, awayName) {
+    const W = 640, H = 170, padB = 30, top = 14, padX = 12;
+    const lo = Math.min(spread - 3 * sd, -6), hi = Math.max(spread + 3 * sd, 6);
+    const x = (v) => padX + (v - lo) / (hi - lo) * (W - 2 * padX);
+    const dens = (v) => Math.exp(-0.5 * ((v - spread) / sd) ** 2);
+    const y = (d) => H - padB - d * (H - padB - top);
+    const area = (a, b) => {
+      let p = "M" + x(a).toFixed(1) + " " + y(0);
+      for (let i = 0; i <= 80; i++) { const v = a + (b - a) * i / 80; p += " L" + x(v).toFixed(1) + " " + y(dens(v)).toFixed(1); }
+      return p + " L" + x(b).toFixed(1) + " " + y(0) + " Z";
+    };
+    const step = hi - lo > 60 ? 10 : 5, ticks = [];
+    for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) ticks.push(v);
+    return '<div class="chart-box"><svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Range of likely final margins">' +
+      ticks.map((v) => '<line class="grid" x1="' + x(v) + '" x2="' + x(v) + '" y1="' + top + '" y2="' + (H - padB) + '"/><text class="tick" x="' + x(v) + '" y="' + (H - padB + 16) + '">' +
+        (v === 0 ? "0" : (v > 0 ? esc(homeName) + " +" + v : esc(awayName) + " +" + -v)) + "</text>").join("") +
+      '<path class="prior" d="' + area(lo, Math.min(0, hi)) + '"/><path class="post" d="' + area(Math.max(0, lo), hi) + '"/>' +
+      '<line class="axis" x1="' + padX + '" x2="' + (W - padX) + '" y1="' + (H - padB) + '" y2="' + (H - padB) + '"/>' +
+      '<line class="mark-post" x1="' + x(spread) + '" x2="' + x(spread) + '" y1="' + top + '" y2="' + (H - padB) + '"/>' +
+      '<line class="mark-prior" x1="' + x(0) + '" x2="' + x(0) + '" y1="' + top + '" y2="' + (H - padB) + '"/></svg></div>';
+  }
+
+  function compareRow(label, a, b, fmt, rkA, rkB, n) {
+    const tag = (rk) => (rk ? '<span class="rk">' + ordinal(rk) + "</span>" : "");
+    const better = rkA && rkB ? (rkA < rkB ? 0 : rkB < rkA ? 1 : -1) : -1;
+    return "<tr><td class='l'>" + label + "</td><td" + (better === 0 ? " class='lead'" : "") + ">" + fmt(a) + tag(rkA) + "</td><td" + (better === 1 ? " class='lead'" : "") + ">" + fmt(b) + tag(rkB) + "</td></tr>";
+  }
+
+  /* When `off` has the ball against `def`: offense stat vs what the defense allows */
+  function possessionTable(offT, defT, so, sd, L) {
+    const rows = [["efg", "d_efg", "Effective FG%"], ["tov", "d_tov", "Turnover rate"], ["orb", "d_orb", "Off. rebound rate"],
+      ["ftr", "d_ftr", "Free-throw rate"], ["three_rate", "d_three_rate", "Share of shots from three"], ["three_pct", "d_three_pct", "3-point %"],
+      ["two_pct", "d_two_pct", "2-point %"], ["rim_rate", "d_rim_rate", "Share of shots at the rim"], ["rim_pct", "d_rim_pct", "FG% at the rim"]];
+    const tag = (rk) => (rk ? '<span class="rk">' + ordinal(rk) + "</span>" : "");
+    return '<div class="table-box"><table><thead><tr><th class="l">' + esc(offT.short) + " with the ball</th><th>" + esc(offT.short) + " offense</th><th>" +
+      esc(defT.short) + " defense allows</th><th>D-I average</th></tr></thead><tbody>" +
+      rows.map(([o, d, label]) => "<tr><td class='l'>" + label + "</td><td>" + pctf(so[o]) + tag(so[o + "_rk"]) + "</td><td>" + pctf(sd[d]) + tag(sd[d + "_rk"]) + "</td><td>" + pctf((L[o] || {}).mean) + "</td></tr>").join("") +
+      "</tbody></table></div>";
+  }
+
+  /* Plain-language edges for one side of the ball. Each edge combines how good the offense is at
+     something with how much the defense gives it up, both as z-scores against Division I. */
+  function edges(offT, defT, so, sd, L) {
+    const z = (k, v) => (v == null || !L[k] || !L[k].sd ? 0 : (v - L[k].mean) / L[k].sd);
+    const items = [
+      { k: "shooting", s: (z("efg", so.efg) + z("d_efg", sd.d_efg)) / 2,
+        good: () => esc(offT.short) + " shoots well (" + pctf(so.efg) + " effective FG%, " + ordinal(so.efg_rk) + ") and " + esc(defT.short) + " gives up good looks (" + pctf(sd.d_efg) + ", " + ordinal(sd.d_efg_rk) + " in defense).",
+        bad: () => esc(defT.short) + "'s defense holds teams to " + pctf(sd.d_efg) + " effective FG% (" + ordinal(sd.d_efg_rk) + "), a tough test for an offense shooting " + pctf(so.efg) + "." },
+      { k: "threes", s: ((z("three_pct", so.three_pct) + z("d_three_pct", sd.d_three_pct)) / 2) * (0.6 + Math.max(0, z("three_rate", so.three_rate)) * 0.4),
+        good: () => "Three-point line: " + esc(offT.short) + " makes " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ") and takes " + pctf(so.three_rate, 0) + " of its shots from deep; " + esc(defT.short) + " allows " + pctf(sd.d_three_pct) + ".",
+        bad: () => esc(defT.short) + " defends the arc well (opponents make " + pctf(sd.d_three_pct) + ", " + ordinal(sd.d_three_pct_rk) + "), against " + esc(offT.short) + "'s " + pctf(so.three_pct) + " shooting." },
+      { k: "rim", s: (z("rim_pct", so.rim_pct) + z("d_rim_pct", sd.d_rim_pct)) / 2 + 0.3 * z("rim_rate", so.rim_rate),
+        good: () => "At the rim: " + esc(offT.short) + " gets " + pctf(so.rim_rate, 0) + " of its shots there and finishes " + pctf(so.rim_pct) + "; " + esc(defT.short) + " allows " + pctf(sd.d_rim_pct) + " at the rim.",
+        bad: () => esc(defT.short) + " protects the rim (opponents finish " + pctf(sd.d_rim_pct) + ", block rate " + ordinal(sd.blk_rate_rk || 0) + "), which cuts into " + esc(offT.short) + "'s inside game." },
+      { k: "turnovers", s: -(z("tov", so.tov) + z("d_tov", sd.d_tov)) / 2,
+        good: () => "Ball security: " + esc(offT.short) + " turns it over on just " + pctf(so.tov) + " of possessions (" + ordinal(so.tov_rk) + ") and " + esc(defT.short) + " rarely forces them (" + pctf(sd.d_tov) + ").",
+        bad: () => "Turnovers: " + esc(defT.short) + " forces them on " + pctf(sd.d_tov) + " of possessions (" + ordinal(sd.d_tov_rk) + "); " + esc(offT.short) + " gives it away on " + pctf(so.tov) + "." },
+      { k: "glass", s: (z("orb", so.orb) + z("d_orb", sd.d_orb)) / 2,
+        good: () => "Second chances: " + esc(offT.short) + " grabs " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ") and " + esc(defT.short) + " allows " + pctf(sd.d_orb, 0) + ".",
+        bad: () => esc(defT.short) + " cleans the defensive glass (opponents rebound only " + pctf(sd.d_orb, 0) + " of misses, " + ordinal(sd.d_orb_rk) + ")." },
+      { k: "line", s: (z("ftr", so.ftr) + z("d_ftr", sd.d_ftr)) / 2,
+        good: () => "Free throws: " + esc(offT.short) + " gets to the line often (" + Math.round(so.ftr * 100) + " FTA per 100 shots, " + ordinal(so.ftr_rk) + ") and " + esc(defT.short) + " fouls a lot (" + Math.round(sd.d_ftr * 100) + ").",
+        bad: () => esc(defT.short) + " defends without fouling (" + Math.round(sd.d_ftr * 100) + " opponent FTA per 100 shots, " + ordinal(sd.d_ftr_rk) + ")." },
+    ];
+    const sorted = items.filter((i) => isFinite(i.s)).sort((a, b) => b.s - a.s);
+    const pros = sorted.filter((i) => i.s > 0.35).slice(0, 2).map((i) => ({ txt: i.good(), s: i.s, k: i.k }));
+    const cons = sorted.slice().reverse().filter((i) => i.s < -0.35).slice(0, 2).map((i) => ({ txt: i.bad(), s: i.s, k: i.k }));
+    return { pros, cons, all: sorted };
+  }
+
+  /* Tendencies we can only infer from the numbers */
+  function tendencies(t, s, L) {
+    const z = (k) => (s[k] == null || !L[k] ? 0 : (s[k] - L[k].mean) / L[k].sd);
+    const out = [];
+    if (s.d_tov_rk <= 60 && s.stl_rate_rk <= 70) out.push("Forces turnovers on " + pctf(s.d_tov) + " of possessions (" + ordinal(s.d_tov_rk) + ") with a high steal rate: likely heavy ball pressure, possibly full-court.");
+    if (z("d_three_rate") > 0.7 && z("d_rim_rate") < -0.5) out.push("Opponents take lots of threes (" + pctf(s.d_three_rate, 0) + " of shots) but few at the rim: consistent with a zone or a packed-paint defense.");
+    if (s.blk_rate_rk <= 50) out.push("Rim protection: blocks " + pctf(s.blk_rate, 0) + " of opponents' twos (" + ordinal(s.blk_rate_rk) + ").");
+    if (t.t_rank <= 60) out.push("Plays fast: " + f1(t.tempo) + " possessions per 40 minutes (" + ordinal(t.t_rank) + ").");
+    if (t.t_rank >= 305) out.push("Plays slow: " + f1(t.tempo) + " possessions per 40 minutes (" + ordinal(t.t_rank) + " of " + D.teams.length + ").");
+    if (z("ast_rate") > 1) out.push("Moves the ball: " + pctf(s.ast_rate, 0) + " of its baskets are assisted.");
+    if (z("ast_rate") < -1) out.push("Creates its own shots: only " + pctf(s.ast_rate, 0) + " of baskets are assisted.");
+    if (z("three_rate") > 1) out.push("Lives at the three-point line: " + pctf(s.three_rate, 0) + " of shots.");
+    if (z("orb") > 1) out.push("Crashes the offensive glass (" + ordinal(s.orb_rk) + ").");
+    return out;
+  }
+
+  /* Suggested five against this opponent: best total impact, nudged toward what counters the
+     opponent's main strengths, with at least one guard and one forward or center */
+  function suggestLineup(teamId, opp, so) {
+    const pool = D.players.filter((p) => p.team === teamId && p.poss >= 20).sort((a, b) => b.poss - a.poss).slice(0, 9);
+    if (pool.length < 5) return null;
+    const ref = D.players.filter((p) => p.poss >= 150 && p.r40);
+    const stat = (k) => { const v = ref.map((p) => p.r40[k]); const m = v.reduce((a, b) => a + b, 0) / v.length; const sd = Math.sqrt(v.reduce((a, b) => a + (b - m) ** 2, 0) / v.length) || 1; return (p) => ((p.r40 || {})[k] - m) / sd; };
+    const L = (STATS_DATA || {}).league || {}, zo = (k) => (so[k] == null || !L[k] ? 0 : (so[k] - L[k].mean) / L[k].sd);
+    const needs = [];
+    if (zo("orb") > 0.9) needs.push({ size: zo("orb"), why: "defensive rebounding against " + esc(opp.short) + "'s offensive glass", f: stat("dreb") });
+    if (zo("d_tov") > 0.9) needs.push({ size: zo("d_tov"), why: "ball handling against " + esc(opp.short) + "'s pressure", f: (p) => -stat("tov")(p) + 0.5 * stat("ast")(p) });
+    if (Math.max(zo("rim_rate"), zo("rim_pct")) > 0.9) needs.push({ size: Math.max(zo("rim_rate"), zo("rim_pct")), why: "rim protection against " + esc(opp.short) + "'s inside scoring", f: stat("blk") });
+    if (Math.max(-zo("d_rim_pct"), zo("blk_rate")) > 0.9) needs.push({ size: Math.max(-zo("d_rim_pct"), zo("blk_rate")), why: "outside shooting to pull " + esc(opp.short) + "'s shot blockers away from the rim", f: stat("tpm") });
+    needs.sort((a, b) => b.size - a.size);
+    needs.splice(2);  // only the opponent's two biggest strengths
+    const bonus = (p) => needs.reduce((a, n) => a + 0.6 * n.f(p), 0);
+    let best = null;
+    const n = pool.length;
+    for (let a = 0; a < n; a++) for (let b = a + 1; b < n; b++) for (let c = b + 1; c < n; c++) for (let d = c + 1; d < n; d++) for (let e = d + 1; e < n; e++) {
+      const five = [pool[a], pool[b], pool[c], pool[d], pool[e]];
+      const pos = five.map((p) => p.pos || "");
+      if (pos.some(Boolean) && (!pos.includes("G") || !pos.some((x) => x === "F" || x === "C"))) continue;
+      const score = five.reduce((s, p) => s + p.total + bonus(p), 0);
+      if (!best || score > best.score) best = { five, score };
+    }
+    return best && { five: best.five, needs };
+  }
+  let STATS_DATA = null;
+
+  function playerList(teamId) {
+    const rows = D.players.filter((p) => p.team === teamId).sort((a, b) => b.poss - a.poss).slice(0, 8);
+    return '<div class="table-box"><table><thead><tr><th class="l">Player</th><th>Ht</th><th>MPG</th><th>PPG</th><th>Impact</th></tr></thead><tbody>' +
+      rows.map((p) => "<tr><td class='l name'>" + esc(p.name) + '<span class="sub">' + posLabel(p) + "</span></td><td>" + esc(p.ht || "–") + "</td><td>" + f1(p.mpg) +
+        "</td><td>" + f1(p.ppg) + "</td><td class='" + cls(p.total) + "'>" + sgn(p.total, 2) + "</td></tr>").join("") + "</tbody></table></div>";
+  }
+
+  async function matchupPage(main, away, home, neutral, game) {
+    const A = teamById[away], H = teamById[home];
+    if (!A || !H) { main.innerHTML = '<p class="lede">That matchup isn’t available. <a href="#games">Back to games</a></p>'; return; }
+    const p = predict(home, away, neutral);
+    const m = D.meta.model, idx = {};
+    m.ids.forEach((id, i) => (idx[id] = i));
+    const hi = idx[home], ai = idx[away], hf = neutral ? 0 : 1;
+    const effH = D.meta.mu + m.O[hi] + m.D[ai] + hf * D.meta.hca / 2, effA = D.meta.mu + m.O[ai] + m.D[hi] - hf * D.meta.hca / 2;
+    const spread = p.home_score - p.away_score, sd = D.meta.sd;
+    const fav = spread >= 0 ? H : A, favWin = spread >= 0 ? p.home_win : 1 - p.home_win;
+    const when = game && game.start ? new Date(game.start) : null;
+    const whenTxt = when && !isNaN(when) ? when.toLocaleString(undefined, { weekday: "long", month: "long", day: "numeric", hour: "numeric", minute: "2-digit" }) : "";
+    const lo80 = spread - 1.2816 * sd, hi80 = spread + 1.2816 * sd;
+    const rangeTxt = (v) => (v >= 0 ? esc(H.short) + " by " + Math.abs(v).toFixed(0) : esc(A.short) + " by " + Math.abs(v).toFixed(0));
+
+    main.innerHTML = '<div><p class="note" style="margin:0"><a href="#games">← Games</a></p><h1>' + esc(A.short) + (neutral ? " vs. " : " at ") + esc(H.short) + "</h1>" +
+      '<p class="lede">' + esc(whenTxt) + (neutral ? " · neutral site" : "") + "</p></div>" +
+      // Prediction
+      '<section class="belief"><h2>Prediction</h2>' +
+      '<dl class="kv"><div><dt>' + esc(A.short) + "</dt><dd>" + f1(p.away_score) + "</dd></div><div><dt>" + esc(H.short) + "</dt><dd>" + f1(p.home_score) +
+      "</dd></div><div><dt>Spread</dt><dd>" + esc(fav.abbr || fav.short) + " −" + Math.abs(spread).toFixed(1) + "</dd></div><div><dt>Win chance</dt><dd>" + esc(fav.abbr || fav.short) + " " + pct(favWin) +
+      "</dd></div><div><dt>Possessions</dt><dd>" + Math.round(p.poss) + "</dd></div></dl>" +
+      '<p class="lede">The model expects ' + esc(fav.short) + " to win by about " + Math.abs(spread).toFixed(1) + ", but a single game is noisy: margins miss by about " + Math.round(sd) +
+      " points on average. Eight times out of ten the final margin should land between " + rangeTxt(lo80) + " and " + rangeTxt(hi80) + ". The shaded areas below are each team's win chance.</p>" +
+      marginChart(spread, sd, H.short, A.short) +
+      '<p class="legend"><span class="key prior"></span>' + esc(A.short) + " wins " + pct(1 - p.home_win) + ' <span class="key post"></span>' + esc(H.short) + " wins " + pct(p.home_win) + "</p>" +
+      '<details class="how"><summary>How the prediction is built</summary><p>Each side’s points = possessions × expected points per 100 possessions ÷ 100.</p>' +
+      '<div class="table-box"><table><tbody>' +
+      "<tr><td class='l'>Possessions: average " + D.meta.tau + " + both teams’ tempo effects</td><td>" + p.poss.toFixed(1) + "</td></tr>" +
+      "<tr><td class='l'>" + esc(H.short) + ": average " + D.meta.mu + " + its offense " + sgn(m.O[hi]) + " + " + esc(A.short) + "’s defense " + sgn(m.D[ai]) + (hf ? " + half of home court " + sgn(D.meta.hca / 2) : "") + "</td><td>" + effH.toFixed(1) + " per 100 → " + p.home_score.toFixed(1) + "</td></tr>" +
+      "<tr><td class='l'>" + esc(A.short) + ": average " + D.meta.mu + " + its offense " + sgn(m.O[ai]) + " + " + esc(H.short) + "’s defense " + sgn(m.D[hi]) + (hf ? " − half of home court " + sgn(D.meta.hca / 2) : "") + "</td><td>" + effA.toFixed(1) + " per 100 → " + p.away_score.toFixed(1) + "</td></tr>" +
+      "</tbody></table></div></details></section>" +
+      // Ratings
+      "<h2>Team comparison</h2>" +
+      '<div class="table-box"><table><thead><tr><th class="l"></th><th>' + esc(A.short) + "</th><th>" + esc(H.short) + "</th></tr></thead><tbody>" +
+      compareRow("Record", A.w + "-" + A.l, H.w + "-" + H.l, (x) => x) +
+      compareRow("Net rating (rank)", A.net, H.net, (x) => sgn(x), A.rank, H.rank) +
+      compareRow("Offense, pts per 100", A.o, H.o, f1, A.o_rank, H.o_rank) +
+      compareRow("Defense, pts per 100 allowed", A.d, H.d, f1, A.d_rank, H.d_rank) +
+      compareRow("Tempo, possessions per 40", A.tempo, H.tempo, f1) +
+      compareRow("Preseason rating", A.pre, H.pre, (x) => (x == null ? "–" : sgn(x))) +
+      "</tbody></table></div>" +
+      '<div id="m-stats"><p class="lede">Loading season stats…</p></div>';
+
+    const S = await loadStats();
+    STATS_DATA = S;
+    const box = $("#m-stats");
+    if (!box) return;
+    if (!S || !S.teams[away] || !S.teams[home]) { box.innerHTML = '<p class="lede">Season stat profiles aren’t available for this matchup yet.</p>'; return; }
+    const L = S.league, sa = S.teams[away], sh = S.teams[home];
+    const eA = edges(A, H, sa, sh, L), eH = edges(H, A, sh, sa, L);
+    const li = (x) => "<li>" + x.txt + "</li>";
+    const tA = tendencies(A, sa, L), tH = tendencies(H, sh, L);
+    const sugA = suggestLineup(away, H, sh), sugH = suggestLineup(home, A, sa);
+    const mostUsed = (id) => D.lineups.filter((l) => l.team === id).sort((a, b) => b.poss - a.poss)[0];
+    const lineupBlock = (T, sug, mu) => '<div class="card"><h3>' + esc(T.short) + "</h3>" +
+      (sug ? "<p><b>Suggested five:</b> " + sug.five.map((p) => esc(p.name) + ' <span class="sub">' + esc(p.pos || "") + "</span>").join(", ") + "</p>" +
+        '<p class="note" style="margin:0">' + (sug.needs.length ? "Chosen for impact ratings plus " + sug.needs.map((n) => n.why).join(" and ") + "." : "Chosen for the highest combined impact ratings with a balanced frontcourt and backcourt.") + "</p>" : "<p class='note'>Not enough playing time yet to suggest a lineup.</p>") +
+      (mu ? "<p><b>Most-used five:</b> " + mu.players.map(esc).join(", ") + ' <span class="sub">' + Math.round(mu.poss) + " poss, net " + sgn(mu.net) + "</span></p>" : "") + "</div>";
+
+    box.innerHTML =
+      "<h2>When " + esc(A.short) + " has the ball</h2>" + possessionTable(A, H, sa, sh, L) +
+      "<h2>When " + esc(H.short) + " has the ball</h2>" + possessionTable(H, A, sh, sa, L) +
+      '<section class="prose" style="max-width:none"><h2>Scouting report</h2>' +
+      '<p class="note">Based on ' + sa.games + " and " + sh.games + " games. Season averages, not adjusted for opponents" + (Math.min(sa.games, sh.games) < 8 ? "; early-season numbers swing a lot from game to game" : "") + ".</p>" +
+      '<div class="grid">' +
+      '<div class="card"><h3>' + esc(A.short) + " on offense</h3>" + (eA.pros.length ? "<p><b>Where it can attack</b></p><ul>" + eA.pros.map(li).join("") + "</ul>" : "") +
+      (eA.cons.length ? "<p><b>What could slow it down</b></p><ul>" + eA.cons.map(li).join("") + "</ul>" : "") + (eA.pros.length + eA.cons.length ? "" : "<p>No clear edges either way.</p>") + "</div>" +
+      '<div class="card"><h3>' + esc(H.short) + " on offense</h3>" + (eH.pros.length ? "<p><b>Where it can attack</b></p><ul>" + eH.pros.map(li).join("") + "</ul>" : "") +
+      (eH.cons.length ? "<p><b>What could slow it down</b></p><ul>" + eH.cons.map(li).join("") + "</ul>" : "") + (eH.pros.length + eH.cons.length ? "" : "<p>No clear edges either way.</p>") + "</div>" +
+      "</div>" +
+      "<h3>Likely tendencies</h3><p class='note'>Inferred from the stats, not observed: play-by-play doesn't record zone, man or press.</p>" +
+      '<div class="grid"><div class="card"><h3>' + esc(A.short) + "</h3>" + (tA.length ? "<ul>" + tA.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "<p>No strong tendencies stand out yet.</p>") + "</div>" +
+      '<div class="card"><h3>' + esc(H.short) + "</h3>" + (tH.length ? "<ul>" + tH.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "<p>No strong tendencies stand out yet.</p>") + "</div></div>" +
+      "<h3>Lineups for this matchup</h3><p class='note'>A starting point for game planning, not a substitute for film: built from player impact ratings and box-score profiles, with extra weight on what counters the opponent's strengths.</p>" +
+      '<div class="grid">' + lineupBlock(A, sugA, mostUsed(away)) + lineupBlock(H, sugH, mostUsed(home)) + "</div></section>" +
+      "<h2>Key players</h2>" + '<div class="grid two"><div><h3>' + esc(A.short) + "</h3>" + playerList(away) + "</div><div><h3>" + esc(H.short) + "</h3>" + playerList(home) + "</div></div>";
+  }
+
+  async function gamePage(main, id) {
+    let g = D.games.find((x) => x.id === id);
+    if (!g) { const all = await loadSchedule(); g = all && all.find((x) => x.id === id); }
+    if (!g) { main.innerHTML = '<p class="lede">That game isn’t on the schedule anymore. It may have been played already. <a href="#games">Back to games</a></p>'; return; }
+    return matchupPage(main, g.away, g.home, !!g.neutral, g);
+  }
+
   function route() {
     const h = location.hash.slice(1) || "rankings";
     const main = $("#main");
-    const view = h.startsWith("team-") ? "rankings" : (VIEWS.includes(h) ? h : "rankings");
+    const view = h.startsWith("team-") ? "rankings" : (h.startsWith("game-") || h.startsWith("vs-")) ? "games" : (VIEWS.includes(h) ? h : "rankings");
     document.querySelectorAll(".tabs a").forEach((a) => {
       if (a.getAttribute("href") === "#" + view) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
     if (h.startsWith("team-")) team(main, h.slice(5));
+    else if (h.startsWith("game-")) gamePage(main, h.slice(5));
+    else if (h.startsWith("vs-")) { const [a, b, n] = h.slice(3).split("-"); matchupPage(main, a, b, n === "n", null); }
     else ({ rankings, players, lineups, games, matchup, bracket, method })[view](main);
     window.scrollTo(0, 0);
   }

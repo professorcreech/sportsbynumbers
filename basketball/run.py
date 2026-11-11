@@ -12,7 +12,7 @@ from datetime import date, datetime, timezone
 import numpy as np
 import pandas as pd
 
-from . import config, players, positions, teams
+from . import config, players, positions, scouting, teams
 
 
 def _clean(x):
@@ -49,13 +49,17 @@ def load(season: int):
     stints = _read(d / "stints", "*.csv.gz")
     prior = pd.read_csv(d / "prior_scores.csv", dtype={"home_id": str, "away_id": str}) \
         if (d / "prior_scores.csv").exists() else None
+    shots = _read(d / "shots", "*.csv.gz") if (d / "shots").exists() else None
+    if shots is not None and len(shots):
+        shots = shots.drop_duplicates()
     rosters = pd.read_csv(d / "rosters.csv", dtype={"player_id": str, "team_id": str}) \
         if (d / "rosters.csv").exists() else None
+    load.shots = shots  # kept off the return value so existing callers don't change
     return tm, games, box, stints, prior, rosters
 
 
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
-          season: int | None = None) -> dict:
+          season: int | None = None, shots=None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     games = games[games.completed.astype(bool)] if "completed" in games else games
@@ -90,7 +94,10 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
                           "mpg": round(r.min / max(r.gp, 1), 1), "poss": int(r.poss),
                           "off": round(r.off, 2), "def": round(r.dfn, 2), "total": round(r.total, 2),
                           "prior": round(r.prior_off + r.prior_def, 2), "impact": round(r.impact, 2),
-                          "ppg": round(r.pts / max(r.gp, 1), 1), "ts": None if pd.isna(r.ts) else round(r.ts, 3)})
+                          "ppg": round(r.pts / max(r.gp, 1), 1), "ts": None if pd.isna(r.ts) else round(r.ts, 3),
+                          # per-40-minute rates used to fit lineups to an opponent
+                          "r40": {k: round(float(getattr(r, k + "_40")), 1) for k in ("oreb", "dreb", "ast", "tov", "stl", "blk", "tpm", "fta")},
+                          "tp_pct": None if not r.tpa else round(r.tpm / r.tpa, 3)})
 
     # Lineups
     lu_out = []
@@ -142,10 +149,11 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             # Everything the browser needs to predict any matchup on its own
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
+    stats_out = scouting.team_profiles(games, box, shots, set(t.team_id))
     schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
                                "home_score", "away_score", "home_win", "poss"], "games": full}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
-                      ("schedule", schedule_out)):
+                      ("schedule", schedule_out), ("teamstats", stats_out)):
         (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     return {"model": model, "players": p, "teams": t}
 
@@ -179,7 +187,8 @@ def main():
         fetch.update(season)
         sched = fetch.fetch_schedule()
     tm, games, box, stints, prior, rosters = load(season)
-    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season)
+    build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season,
+          shots=load.shots)
 
 
 if __name__ == "__main__":
