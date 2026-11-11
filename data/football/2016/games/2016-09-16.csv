@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869361,2016-09-16,2016-09-17T00:00Z,3,2,True,False,False,242,239,Rice,Baylor,10,38,,Houston,TX
+400869193,2016-09-16,2016-09-17T01:00Z,3,2,True,False,False,328,2032,Utah State,Arkansas State,34,20,,Logan,UT
+400869109,2016-09-16,2016-09-17T01:30Z,3,2,True,False,False,2636,9,UTSA,Arizona State,28,32,,San Antonio,TX
+400871336,2016-09-16,2016-09-16T23:00Z,3,2,True,False,False,108,227,Harvard,URI,51,21,,Cambridge,MA
+400892093,2016-09-16,2016-09-16T23:00Z,3,2,True,False,True,2060,2771,Bentley,Merrimack,41,22,,,

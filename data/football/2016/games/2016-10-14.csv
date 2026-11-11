@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869461,2016-10-14,2016-10-14T23:00Z,7,2,True,False,True,97,150,Louisville,Duke,24,14,,Louisville,KY
+400869538,2016-10-14,2016-10-15T00:00Z,7,2,True,False,True,2655,235,Tulane,Memphis,14,24,,New Orleans,LA
+400869221,2016-10-14,2016-10-15T02:00Z,7,2,True,False,True,278,21,Fresno State,San Diego State,3,17,,Fresno,CA
+400868928,2016-10-14,2016-10-15T02:15Z,7,2,True,False,False,252,344,BYU,Miss St,28,21,,Provo,UT

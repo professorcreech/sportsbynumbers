@@ -1,0 +1,9 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331168,2021-12-18,2021-12-18T20:30Z,1,3,True,True,False,252,5,BYU,UAB,28,31,Radiance Technologies Independence Bowl,Shreveport,LA
+401331171,2021-12-18,2021-12-19T02:15Z,1,3,True,True,False,276,309,Marshall,Louisiana,21,36,R+L Carriers New Orleans Bowl,New Orleans,LA
+401331166,2021-12-18,2021-12-18T16:00Z,1,3,True,True,False,2026,98,App State,Western KY,38,59,RoofClaim.com Boca Raton Bowl,Boca Raton,FL
+401331167,2021-12-18,2021-12-18T19:15Z,1,3,True,True,False,278,2638,Fresno St,UTEP,31,24,PUBG MOBILE New Mexico Bowl,Albuquerque,NM
+401331169,2021-12-18,2021-12-18T23:00Z,1,3,True,True,False,2335,2199,Liberty,E Michigan,56,20,LendingTree Bowl,Mobile,AL
+401331170,2021-12-18,2021-12-19T00:30Z,1,3,True,True,False,204,328,Oregon St,Utah State,13,24,Jimmy Kimmel LA Bowl Presented by Stifel,Inglewood,CA
+401391091,2021-12-18,2021-12-18T17:00Z,1,3,True,True,False,2296,2569,Jackson St,SC State,10,31,Cricket Celebration Bowl,Atlanta,GA
+401391354,2021-12-18,2021-12-18T19:00Z,1,3,True,False,False,147,2571,Montana St,S Dakota St,31,17,FCS Championship - Semifinals,Bozeman,MT

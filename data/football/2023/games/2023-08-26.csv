@@ -1,0 +1,11 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401523986,2023-08-26,2023-08-27T00:00Z,1,2,True,False,False,30,23,USC,San José St,56,28,,Los Angeles,CA
+401525434,2023-08-26,2023-08-26T18:30Z,1,2,True,True,False,87,2426,Notre Dame,Navy,42,3,,Dublin,
+401520145,2023-08-26,2023-08-26T21:30Z,1,2,True,False,True,55,2638,Jax State,UTEP,17,14,,Jacksonville,AL
+401525450,2023-08-26,2023-08-26T23:00Z,1,2,True,False,False,166,113,New Mexico St,UMass,30,41,,Las Cruces,NM
+401532392,2023-08-26,2023-08-26T23:00Z,1,2,True,False,False,21,195,San Diego St,Ohio,20,13,,San Diego,CA
+401520146,2023-08-26,2023-08-27T01:00Z,1,2,True,False,True,2348,2229,Louisiana Tech,FIU,22,17,,Ruston,LA
+401520147,2023-08-26,2023-08-27T01:10Z,1,2,True,False,False,238,62,Vanderbilt,Hawai'i,35,28,,Nashville,TN
+401540199,2023-08-26,2023-08-26T19:30Z,1,2,True,True,False,2382,2453,Mercer,North Alabama,17,7,FCS Kickoff,Montgomery,AL
+401540628,2023-08-26,2023-08-26T23:00Z,1,2,True,False,False,399,2230,UAlbany,Fordham,34,13,,Albany,NY
+401539999,2023-08-26,2023-08-26T23:30Z,1,2,True,True,False,2296,2569,Jackson St,SC State,37,7,Cricket MEAC/SWAC Challenge Kickoff,Atlanta,GA

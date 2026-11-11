@@ -1,0 +1,122 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869635,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,194,164,OSU,Rutgers,58,0,,Columbus,OH
+400869453,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,228,97,Clemson,Louisville,42,36,,Clemson,SC
+400869664,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,130,275,Michigan,Wisconsin,14,7,,Ann Arbor,MI
+400869016,2016-10-01,2016-10-01T20:00Z,5,2,True,False,True,2579,245,South Carolina,Texas A&M,13,24,,Columbia,SC
+400869013,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,61,2633,Georgia,Tennessee,31,34,,Athens,GA
+400869455,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,52,153,FSU,UNC,35,37,,Tallahassee,FL
+400868879,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,66,239,Iowa State,Baylor,42,45,,Ames,IA
+400869721,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,59,2390,Georgia Tech,Miami,21,35,,Atlanta,GA
+400869665,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,158,356,Nebraska,Illinois,31,16,,Lincoln,NE
+400869015,2016-10-01,2016-10-01T23:00Z,5,2,True,False,False,145,235,Ole Miss,Memphis,48,28,,Oxford,MS
+400869661,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,84,127,Indiana,Michigan State,24,21,,Bloomington,IN
+400869128,2016-10-01,2016-10-01T22:00Z,5,2,True,False,True,25,254,California,Utah,28,23,,Berkeley,CA
+400869212,2016-10-01,2016-10-02T00:00Z,5,2,True,False,False,6,21,South Alabama,San Diego State,42,24,,Mobile,AL
+400869011,2016-10-01,2016-10-01T16:00Z,5,2,True,False,False,8,2016,Arkansas,Alcorn State,52,10,,Little Rock,AR
+400869614,2016-10-01,2016-10-01T21:00Z,5,2,True,False,True,2628,201,TCU,Oklahoma,46,52,,Fort Worth,TX
+400869620,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,197,251,Oklahoma State,Texas,49,31,,Stillwater,OK
+400869017,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,238,57,Vanderbilt,Florida,6,13,,Nashville,TN
+400869207,2016-10-01,2016-10-02T02:15Z,5,2,True,False,True,68,328,Boise St,Utah State,21,10,,Boise,ID
+400868950,2016-10-01,2016-10-01T16:00Z,5,2,True,True,False,183,87,Syracuse,Notre Dame,33,50,,East Rutherford,NJ
+400869528,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,151,2116,ECU,UCF,29,47,,Greenville,NC
+400869530,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,218,2567,Temple,SMU,45,20,,Philadelphia,PA
+400869662,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,2294,77,Iowa,Northwestern,31,38,,Iowa City,IA
+400869818,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,2026,2247,Appalachian St,Georgia State,17,3,,Boone,NC
+400869454,2016-10-01,2016-10-01T16:30Z,5,2,True,False,True,150,258,Duke,UVA,20,34,,Durham,NC
+400869294,2016-10-01,2016-10-01T17:00Z,5,2,True,False,False,103,2084,Boston College,Buffalo,35,3,,Chestnut Hill,MA
+400872708,2016-10-01,2016-10-01T17:30Z,5,2,True,False,True,256,48,JMU,Delaware,43,20,,Harrisonburg,VA
+400871342,2016-10-01,2016-10-01T18:00Z,5,2,True,False,True,2449,2287,North Dakota St,Illinois State,31,10,,Fargo,ND
+400869127,2016-10-01,2016-10-01T18:30Z,5,2,True,False,True,38,204,Colorado,Oregon State,47,6,,Boulder,CO
+400869296,2016-10-01,2016-10-01T18:30Z,5,2,True,False,True,193,195,Miami (OH),Ohio,7,17,,Oxford,OH
+400871351,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,282,2623,Indiana State,Missouri State,24,45,,Terre Haute,IN
+400871432,2016-10-01,2016-10-01T19:00Z,5,2,True,False,False,231,338,Furman,Kennesaw St,42,52,,Greenville,SC
+400869295,2016-10-01,2016-10-01T19:20Z,5,2,True,False,True,189,2199,Bowling Green,E Michigan,25,28,,Bowling Green,OH
+400868961,2016-10-01,2016-10-01T19:30Z,5,2,True,False,False,113,2655,UMass,Tulane,24,31,,Amherst,MA
+400869012,2016-10-01,2016-10-01T19:30Z,5,2,True,False,False,2,2433,Auburn,UL Monroe,58,7,,Auburn,AL
+400869206,2016-10-01,2016-10-01T19:30Z,5,2,True,False,False,2005,2426,Air Force,Navy,28,14,,USAF Academy,CO
+400869293,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,2309,2006,Kent State,Akron,27,31,,Kent,OH
+400869297,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,2050,2459,Ball State,N Illinois,24,31,,Muncie,IN
+400869456,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,152,154,NC State,Wake Forest,33,16,,Raleigh,NC
+400869606,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,277,2306,West Virginia,Kansas State,17,16,,Morgantown,WV
+400869663,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,120,2509,Maryland,Purdue,50,7,,College Park,MD
+400869666,2016-10-01,2016-10-01T19:40Z,5,2,True,False,True,213,135,Penn State,Minnesota,29,26,,University Park,PA
+400869209,2016-10-01,2016-10-01T20:00Z,5,2,True,False,True,167,23,New Mexico,San Jose State,48,41,,Albuquerque,NM
+400872518,2016-10-01,2016-10-01T20:00Z,5,2,True,True,True,2534,2617,Sam Houston,SF Austin,63,28,,Houston,TX
+400869819,2016-10-01,2016-10-01T21:00Z,5,2,True,False,True,70,2653,Idaho,Troy,13,34,,Moscow,ID
+400868938,2016-10-01,2016-10-01T22:00Z,5,2,True,False,False,324,2127,C. Carolina,Charleston So,58,59,,Conway,SC
+400869370,2016-10-01,2016-10-01T22:00Z,5,2,True,False,True,2429,295,Charlotte,Old Dominion,17,52,,Charlotte,NC
+400869010,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,333,96,Alabama,Kentucky,34,6,,Tuscaloosa,AL
+400869298,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2117,2711,Cent Michigan,W Michigan,10,49,,Mount Pleasant,MI
+400869371,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2229,2226,FIU,FAU,33,31,,Miami,FL
+400869372,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2348,2638,LA Tech,UTEP,28,7,,Ruston,LA
+400869374,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,249,2393,North Texas,Mid Tennessee,13,30,,Denton,TX
+400869375,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2572,242,Southern Miss,Rice,44,28,,Hattiesburg,MS
+400869376,2016-10-01,2016-10-01T23:00Z,5,2,True,False,False,98,2277,W Kentucky,Houston Baptist,50,3,,Bowling Green,KY
+400869529,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2132,58,Cincinnati,USF,20,45,,Cincinnati,OH
+400872688,2016-10-01,2016-10-01T23:00Z,5,2,True,False,False,2335,2523,Liberty,Robert Morris,41,7,,Lynchburg,VA
+400869014,2016-10-01,2016-10-01T23:30Z,5,2,True,False,True,99,142,LSU,Missouri,42,7,,Baton Rouge,LA
+400869373,2016-10-01,2016-10-01T23:30Z,5,2,True,False,False,221,276,Pitt,Marshall,43,27,,Pittsburgh,PA
+400869821,2016-10-01,2016-10-01T23:30Z,5,2,True,False,False,326,2916,Texas State,Incarnate Word,48,17,,San Marcos,TX
+400869820,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,166,309,New Mexico St,Louisiana,37,31,,Las Cruces,NM
+400869126,2016-10-01,2016-10-02T00:30Z,5,2,True,False,True,30,9,USC,Arizona State,41,20,,Los Angeles,CA
+400869799,2016-10-01,2016-10-02T01:00Z,5,2,True,False,True,16,147,Sacramento St,Montana State,41,38,,Sacramento,CA
+400869129,2016-10-01,2016-10-02T01:30Z,5,2,True,False,True,265,2483,Washington St,Oregon,51,33,,Pullman,WA
+400869208,2016-10-01,2016-10-02T02:15Z,5,2,True,False,True,36,2751,Colorado State,Wyoming,17,38,,Fort Collins,CO
+400869125,2016-10-01,2016-10-02T02:30Z,5,2,True,False,True,26,12,UCLA,Arizona,45,24,,Pasadena,CA
+400869210,2016-10-01,2016-10-02T02:30Z,5,2,True,False,True,2439,278,UNLV,Fresno State,45,20,,Las Vegas,NV
+400869211,2016-10-01,2016-10-02T03:59Z,5,2,True,False,True,62,2440,Hawai'i,Nevada,38,17,,Honolulu,HI
+400871269,2016-10-01,2016-10-01T16:00Z,5,2,True,False,False,227,225,URI,Brown,28,13,,Kingston,RI
+400871299,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,171,163,Columbia,Princeton,13,48,,New York,NY
+400871417,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,2193,236,ETSU,Chattanooga,7,37,,Johnson City,TN
+400892176,2016-10-01,2016-10-01T16:00Z,5,2,True,False,True,367,2385,Gannon,Mercyhurst,35,38,,Erie,PA
+400871316,2016-10-01,2016-10-01T17:00Z,5,2,True,False,False,2142,172,Colgate,Cornell,38,39,,Hamilton,NY
+400872771,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2415,2169,Morgan State,Delaware State,20,17,,Baltimore,MD
+400872881,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2086,301,Butler,San Diego,10,44,,Indianapolis,IN
+400872890,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2368,2097,Marist,Campbell,24,7,,Poughkeepsie,NY
+400872900,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2168,2181,Dayton,Drake,35,10,,Dayton,OH
+400872922,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2413,2674,Morehead State,Valparaiso,29,26,,Morehead,KY
+400873074,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2166,56,Davidson,Stetson,27,31,,Davidson,NC
+400873096,2016-10-01,2016-10-01T17:00Z,5,2,True,False,False,2405,2230,Monmouth,Fordham,42,41,,West Long Branch,NJ
+400874033,2016-10-01,2016-10-01T17:00Z,5,2,True,False,False,294,2184,Jacksonville,Duquesne,35,54,,Jacksonville,FL
+400892105,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,284,2771,Stonehill,Merrimack,31,6,,,
+400892113,2016-10-01,2016-10-01T17:00Z,5,2,True,False,True,2441,2583,New Haven,S Conn St,38,20,,,
+400871333,2016-10-01,2016-10-01T17:30Z,5,2,True,False,False,43,2329,Yale,Lehigh,35,63,,New Haven,CT
+400871404,2016-10-01,2016-10-01T17:30Z,5,2,True,False,True,2678,2382,VMI,Mercer,30,33,,Lexington,VA
+400869756,2016-10-01,2016-10-01T18:00Z,5,2,True,False,True,155,13,North Dakota,Cal Poly,31,24,,Grand Forks,ND
+400872799,2016-10-01,2016-10-01T18:00Z,5,2,True,False,True,2450,47,Norfolk State,Howard,28,33,,Norfolk,VA
+400891278,2016-10-01,2016-10-01T18:00Z,5,2,True,False,False,2824,2837,OK Panhandle St,TX A&M-Commerce,13,35,,,
+400890349,2016-10-01,2016-10-01T18:10Z,5,2,True,False,True,2900,124,St. Thomas (MN),Augsburg,55,7,,Saint Paul,MN
+400869757,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,2458,2464,N Colorado,N Arizona,21,18,,Greeley,CO
+400871394,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,2535,2747,Samford,Wofford,28,26,,Birmingham,AL
+400872871,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,2634,2630,Tennessee St,UT Martin,34,30,,Nashville,TN
+400873120,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,2011,2029,Alabama State,AR-Pine Bluff,41,21,,Montgomery,AL
+400892975,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,2231,2815,Fort Hays St,Lindenwood,37,6,,,
+400893030,2016-10-01,2016-10-01T19:00Z,5,2,True,False,True,3101,2714,Dixie St,Western St.,28,20,,Saint George,UT
+400871438,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,2717,2643,W Carolina,The Citadel,14,37,,Cullowhee,NC
+400872472,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,2000,2110,Abil Christian,Cent Arkansas,27,58,,Abilene,TX
+400872717,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,2210,222,Elon,Villanova,7,42,,Elon,NC
+400872731,2016-10-01,2016-10-01T19:30Z,5,2,True,False,False,311,2803,Maine,Bryant,35,31,,Orono,ME
+400872739,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,160,2729,UNH,William & Mary,21,12,,Durham,NH
+400872752,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,257,119,Richmond,Towson,31,28,,Richmond,VA
+400873101,2016-10-01,2016-10-01T19:30Z,5,2,True,False,True,322,107,Lafayette,Holy Cross,28,38,,Easton,PA
+400871381,2016-10-01,2016-10-01T20:00Z,5,2,True,False,True,2754,233,Youngstown St,South Dakota,30,20,,Youngstown,OH
+400872763,2016-10-01,2016-10-01T20:00Z,5,2,True,False,True,2065,2428,Bethune-Cookman,NC Central,14,31,,Daytona Beach,FL
+400869754,2016-10-01,2016-10-01T20:05Z,5,2,True,False,True,331,302,E Washington,UC Davis,63,30,,Cheney,WA
+400869755,2016-10-01,2016-10-01T20:30Z,5,2,True,False,True,149,253,Montana,Southern Utah,43,20,,Missoula,MT
+400871371,2016-10-01,2016-10-01T21:00Z,5,2,True,False,True,2460,79,Northern Iowa,S Illinois,42,21,,Cedar Falls,IA
+400872840,2016-10-01,2016-10-01T21:00Z,5,2,True,False,True,2046,93,Austin Peay,Murray State,17,45,,Clarksville,TN
+400873142,2016-10-01,2016-10-01T21:00Z,5,2,True,True,True,2755,2504,Grambling,PV A&M,36,16,,Dallas,TX
+400869758,2016-10-01,2016-10-01T21:30Z,5,2,True,False,True,2502,304,Portland State,Idaho State,45,20,,Portland,OR
+400872672,2016-10-01,2016-10-01T22:00Z,5,2,True,False,False,2241,490,Gardner-Webb,Benedict,45,0,,Boiling Springs,NC
+400872780,2016-10-01,2016-10-01T22:00Z,5,2,True,False,True,50,2542,Florida A&M,Savannah State,19,14,,Tallahassee,FL
+400874863,2016-10-01,2016-10-01T22:00Z,5,2,True,False,True,2681,2529,Wagner,Sacred Heart,45,20,,Staten Island,NY
+400871377,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2571,2710,South Dakota St,W Illinois,52,14,,Brookings,SD
+400872507,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2377,2447,McNeese,Nicholls,38,13,,Lake Charles,LA
+400872664,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2546,2197,SE Missouri St,E Illinois,21,14,,Cape Girardeau,MO
+400872854,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2635,2198,Tenn Tech,E Kentucky,33,30,,Cookeville,TN
+400873129,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2296,2400,Jackson State,Miss Valley St,16,14,,Jackson,MS
+400892879,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,110242,53,W Fla,Florida Tech,42,39,,,
+400892894,2016-10-01,2016-10-01T23:00Z,5,2,True,False,True,2453,2698,North Alabama,West Georgia,24,23,,,
+400872495,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,2320,2545,Lamar,SE Louisiana,38,14,,Beaumont,TX
+400873111,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,2640,2010,Texas Southern,Alabama A&M,34,31,,Houston,TX
+400891285,2016-10-01,2016-10-02T00:00Z,5,2,True,False,True,2627,110243,Tarleton St,UT Perm Basin,48,20,,Stephenville,TX

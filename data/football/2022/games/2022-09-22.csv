@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401411116,2022-09-22,2022-09-22T23:30Z,4,2,True,False,False,259,277,Virginia Tech,West Virginia,10,33,,Blacksburg,VA
+401426334,2022-09-22,2022-09-22T23:30Z,4,2,True,False,True,2247,324,Georgia St,Coastal Car,24,41,,Atlanta,GA
+401421129,2022-09-22,2022-09-23T00:30Z,4,2,True,False,False,356,236,Illinois,Chattanooga,31,0,,Champaign,IL

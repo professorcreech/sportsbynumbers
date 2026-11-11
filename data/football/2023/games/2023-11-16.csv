@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401525553,2023-11-16,2023-11-17T00:00Z,12,2,True,False,True,221,103,Pitt,Boston College,24,16,,Pittsburgh,PA
+401540114,2023-11-16,2023-11-17T00:00Z,12,2,True,False,True,2010,2400,Alabama A&M,Miss Valley St,30,21,,Huntsville,AL
+401540437,2023-11-16,2023-11-17T00:00Z,12,2,True,False,True,2545,2447,SE Louisiana,Nicholls,16,21,,Hammond,LA

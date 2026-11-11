@@ -1,0 +1,33 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400868977,2016-09-01,2016-09-01T23:30Z,1,2,True,False,False,2633,2026,Tennessee,Appalachian St,20,13,,Knoxville,TN
+400869341,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,97,2429,Louisville,Charlotte,70,14,,Louisville,KY
+400869257,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2117,2506,Cent Michigan,Presbyterian,49,3,,Mount Pleasant,MI
+400869421,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,154,2655,Wake Forest,Tulane,7,3,,Winston-Salem,NC
+400869502,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2132,2630,Cincinnati,UT Martin,28,7,,Cincinnati,OH
+400869503,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,41,311,UConn,Maine,24,21,,East Hartford,CT
+400871358,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2623,616,Missouri State,SW,57,0,,Springfield,MO
+400872706,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,48,2169,Delaware,Delaware State,56,14,,Newark,DE
+400872860,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,55,2453,Jacksonville St,North Alabama,31,12,,Jacksonville,AL
+400869342,2016-09-01,2016-09-01T23:30Z,1,2,True,False,False,2229,84,FIU,Indiana,13,34,,Miami,FL
+400869422,2016-09-01,2016-09-01T23:30Z,1,2,True,False,False,152,2729,NC State,William & Mary,48,14,,Raleigh,NC
+400868968,2016-09-01,2016-09-02T00:00Z,1,2,True,False,True,238,2579,Vanderbilt,South Carolina,10,13,,Nashville,TN
+400869091,2016-09-01,2016-09-02T00:00Z,1,2,True,False,False,254,253,Utah,Southern Utah,24,0,,Salt Lake City,UT
+400869173,2016-09-01,2016-09-02T00:00Z,1,2,True,False,False,328,2692,Utah State,Weber State,45,6,,Logan,UT
+400869347,2016-09-01,2016-09-02T00:00Z,1,2,True,False,True,98,242,W Kentucky,Rice,46,14,,Bowling Green,KY
+400869092,2016-09-01,2016-09-02T01:00Z,1,2,True,False,False,135,204,Minnesota,Oregon State,30,23,,Minneapolis,MN
+400869177,2016-09-01,2016-09-02T01:00Z,1,2,True,False,False,167,233,New Mexico,South Dakota,48,21,,Albuquerque,NM
+400869174,2016-09-01,2016-09-02T02:00Z,1,2,True,False,False,2439,2296,UNLV,Jackson State,63,13,,Las Vegas,NV
+400874861,2016-09-01,2016-09-01T22:00Z,1,2,True,False,False,2681,2830,Wagner,St. Anselm,38,16,,Staten Island,NY
+400891170,2016-09-01,2016-09-01T22:00Z,1,2,True,False,False,308,2385,Ashland,Mercyhurst,48,0,,Ashland,OH
+400869731,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2619,155,Stony Brook,North Dakota,13,9,,Stony Brook,NY
+400871388,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2197,2710,E Illinois,W Illinois,21,38,,Charleston,IL
+400871391,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2535,2369,Samford,Mars Hill,77,7,,Birmingham,AL
+400871402,2016-09-01,2016-09-01T23:00Z,1,2,True,False,True,2382,2643,Mercer,The Citadel,23,24,,Macon,GA
+400871414,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,236,2560,Chattanooga,Shorter,66,0,,Chattanooga,TN
+400871448,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2635,2747,Tenn Tech,Wofford,7,21,,Cookeville,TN
+400872479,2016-09-01,2016-09-01T23:00Z,1,2,True,False,True,2110,2277,Cent Arkansas,Houston Baptist,56,13,,Conway,AR
+400872827,2016-09-01,2016-09-01T23:00Z,1,2,True,False,False,2523,2017,Robert Morris,Alderson-Brodus,7,14,,Moon Township,PA
+400871389,2016-09-01,2016-09-01T23:30Z,1,2,True,False,False,2754,2184,Youngstown St,Duquesne,45,10,,Youngstown,OH
+400892954,2016-09-01,2016-09-02T00:00Z,1,2,True,False,True,2815,2122,Lindenwood,Cent Oklahoma,49,26,,Saint Charles,MO
+400893009,2016-09-01,2016-09-02T00:00Z,1,2,True,False,True,3101,2424,Dixie St,New Mexico Highlands,21,14,,Saint George,UT
+400869725,2016-09-01,2016-09-02T01:00Z,1,2,True,False,False,70,147,Idaho,Montana State,20,17,,Moscow,ID

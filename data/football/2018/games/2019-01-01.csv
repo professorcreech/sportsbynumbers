@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032086,2019-01-01,2019-01-02T01:45Z,1,3,True,True,False,61,251,Georgia,Texas,21,28,Allstate Sugar Bowl,New Orleans,LA
+401032085,2019-01-01,2019-01-01T22:00Z,1,3,True,True,False,194,264,Ohio State,Washington,28,23,Rose Bowl Game Pres. by Northwestern Mutual,Pasadena,CA
+401032084,2019-01-01,2019-01-01T18:00Z,1,3,True,True,False,2116,99,UCF,LSU,32,40,PlayStation Fiesta Bowl,Glendale,AZ
+401032088,2019-01-01,2019-01-01T18:00Z,1,3,True,True,False,213,96,Penn State,Kentucky,24,27,VRBO CITRUS BOWL,Orlando,FL
+401032083,2019-01-01,2019-01-01T17:00Z,1,3,True,True,False,2294,344,Iowa,Miss St,27,22,OUTBACK BOWL,Tampa,FL

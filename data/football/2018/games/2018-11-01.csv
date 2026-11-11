@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401019517,2018-11-01,2018-11-01T23:30Z,10,2,True,False,True,2116,218,UCF,Temple,52,40,,Orlando,FL
+401020772,2018-11-01,2018-11-01T23:00Z,10,2,True,False,True,2006,2459,Akron,N Illinois,26,36,,Akron,OH
+401020773,2018-11-01,2018-11-01T23:00Z,10,2,True,False,True,2711,195,W Michigan,Ohio,14,59,,Kalamazoo,MI

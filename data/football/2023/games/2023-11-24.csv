@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401524063,2023-11-24,2023-11-25T01:30Z,13,2,True,False,True,2483,204,Oregon,Oregon St,31,7,,Eugene,OR
+401525901,2023-11-24,2023-11-25T00:30Z,13,2,True,False,True,251,2641,Texas,Texas Tech,57,7,,Austin,TX
+401520426,2023-11-24,2023-11-24T21:00Z,13,2,True,False,True,8,142,Arkansas,Missouri,14,48,,Fayetteville,AR
+401520435,2023-11-24,2023-11-25T00:30Z,13,2,True,False,True,127,213,Michigan St,Penn State,0,42,,Detroit,MI
+401525900,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,201,2628,Oklahoma,TCU,69,45,,Norman,OK
+401520425,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,158,2294,Nebraska,Iowa,10,13,,Lincoln,NE
+401531376,2023-11-24,2023-11-24T20:30Z,13,2,True,False,True,2655,2636,Tulane,UTSA,29,16,,New Orleans,LA
+401525560,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,103,2390,Boston College,Miami,20,45,,Chestnut Hill,MA
+401531394,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,218,235,Temple,Memphis,21,45,,Philadelphia,PA
+401532451,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,2117,2649,C Michigan,Toledo,17,32,,Mount Pleasant,MI
+401532452,2023-11-24,2023-11-24T17:00Z,13,2,True,False,True,2006,195,Akron,Ohio,14,25,,Akron,OH
+401532629,2023-11-24,2023-11-24T20:30Z,13,2,True,False,True,167,328,New Mexico,Utah State,41,44,,Albuquerque,NM
+401532625,2023-11-24,2023-11-24T21:00Z,13,2,True,False,True,68,2005,Boise St,Air Force,27,19,,Boise,ID

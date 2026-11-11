@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520266,2023-09-22,2023-09-22T23:00Z,4,2,True,False,True,2509,275,Purdue,Wisconsin,17,38,,West Lafayette,IN
+401525505,2023-09-22,2023-09-22T23:30Z,4,2,True,False,True,258,152,Virginia,NC State,21,24,,Charlottesville,VA
+401532583,2023-09-22,2023-09-23T02:30Z,4,2,True,False,True,21,68,San Diego St,Boise St,31,34,,San Diego,CA
+401532584,2023-09-22,2023-09-23T02:30Z,4,2,True,False,True,23,2005,San José St,Air Force,20,45,,San Jose,CA
+401540291,2023-09-22,2023-09-22T23:00Z,4,2,True,False,True,108,225,Harvard,Brown,34,31,,Cambridge,MA

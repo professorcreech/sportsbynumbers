@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401013138,2018-10-05,2018-10-05T23:00Z,6,2,True,False,True,97,59,Louisville,Georgia Tech,31,66,,Louisville,KY
+401015010,2018-10-05,2018-10-05T23:30Z,6,2,True,False,True,276,2393,Marshall,Mid Tennessee,24,34,,Huntington,WV
+401016407,2018-10-05,2018-10-06T01:00Z,6,2,True,False,False,252,328,BYU,Utah State,20,45,,Provo,UT
+401029856,2018-10-05,2018-10-05T22:00Z,6,2,True,False,True,43,159,Yale,Dartmouth,18,41,,New Haven,CT

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400953390,2017-12-23,2017-12-23T17:00Z,1,3,True,True,False,58,2641,USF,Texas Tech,38,34,BIRMINGHAM BOWL,Birmingham,AL
+400953391,2017-12-23,2017-12-23T20:30Z,1,3,True,True,False,349,21,Army,San Diego State,42,35,LOCKHEED MARTIN ARMED FORCES BOWL,Fort Worth,TX
+400953392,2017-12-23,2017-12-24T00:00Z,1,3,True,True,False,2649,2026,Toledo,Appalachian St,0,34,DOLLAR GENERAL BOWL,Mobile,AL

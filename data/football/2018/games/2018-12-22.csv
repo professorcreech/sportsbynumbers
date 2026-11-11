@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032063,2018-12-22,2018-12-22T17:00Z,1,3,True,True,False,154,235,Wake Forest,Memphis,37,34,JARED BIRMINGHAM BOWL,Birmingham,AL
+401032064,2018-12-22,2018-12-22T20:30Z,1,3,True,True,False,349,248,Army,Houston,70,14,LOCKHEED MARTIN ARMED FORCES BOWL,Fort Worth,TX
+401032065,2018-12-22,2018-12-23T00:00Z,1,3,True,True,False,2653,2084,Troy,Buffalo,42,32,DOLLAR GENERAL BOWL,Mobile,AL
+401032066,2018-12-22,2018-12-23T03:30Z,1,3,True,True,False,2348,62,LA Tech,Hawai'i,31,14,SOFI HAWAI'I BOWL,Honolulu,HI

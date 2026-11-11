@@ -1,0 +1,20 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401241282,2020-09-19,2020-09-19T18:30Z,3,2,True,False,False,87,58,Notre Dame,South Florida,52,0,,Notre Dame,IN
+401236041,2020-09-19,2020-09-19T16:00Z,3,2,True,False,False,197,202,Oklahoma St,Tulsa,16,7,,Stillwater,OK
+401212541,2020-09-19,2020-09-19T16:00Z,3,2,True,False,False,2132,2046,Cincinnati,Austin Peay,55,20,,Cincinnati,OH
+401234568,2020-09-19,2020-09-19T19:30Z,3,2,True,False,False,59,2116,Georgia Tech,UCF,21,49,,Atlanta,GA
+401234569,2020-09-19,2020-09-19T23:30Z,3,2,True,False,True,97,2390,Louisville,Miami,34,47,,Louisville,KY
+401215301,2020-09-19,2020-09-19T16:00Z,3,2,True,False,True,2247,309,Georgia St,Louisiana,31,34,,Atlanta,GA
+401236939,2020-09-19,2020-09-19T19:30Z,3,2,True,False,False,276,2026,Marshall,App State,17,7,,Huntington,WV
+401234571,2020-09-19,2020-09-19T16:00Z,3,2,True,False,True,221,183,Pitt,Syracuse,21,10,,Pittsburgh,PA
+401207124,2020-09-19,2020-09-19T16:00Z,3,2,True,False,False,98,2335,Western KY,Liberty,24,30,,Bowling Green,KY
+401212522,2020-09-19,2020-09-19T16:00Z,3,2,True,False,True,2655,2426,Tulane,Navy,24,27,,New Orleans,LA
+401234567,2020-09-19,2020-09-19T16:00Z,3,2,True,False,True,150,103,Duke,Boston College,6,26,,Durham,NC
+401240041,2020-09-19,2020-09-19T19:30Z,3,2,True,False,False,2636,2617,UTSA,SF Austin,24,10,,San Antonio,TX
+401240640,2020-09-19,2020-09-19T19:30Z,3,2,True,False,False,2393,2653,MTSU,Troy,14,47,,Murfreesboro,TN
+401237492,2020-09-19,2020-09-19T20:00Z,3,2,True,False,False,228,2643,Clemson,The Citadel,49,0,,Clemson,SC
+401207120,2020-09-19,2020-09-19T22:00Z,3,2,True,False,False,249,2567,North Texas,SMU,35,65,,Denton,TX
+401207106,2020-09-19,2020-09-19T23:30Z,3,2,True,False,True,2572,2348,Southern Miss,Louisiana Tech,30,31,,Hattiesburg,MS
+401215302,2020-09-19,2020-09-19T23:30Z,3,2,True,False,True,2433,326,UL Monroe,Texas St,17,38,,Monroe,LA
+401234570,2020-09-19,2020-09-20T00:00Z,3,2,True,False,True,152,154,NC State,Wake Forest,45,42,,Raleigh,NC
+401239885,2020-09-19,2020-09-20T01:00Z,3,2,True,False,False,2638,2000,UTEP,Abilene Chrstn,17,13,,El Paso,TX

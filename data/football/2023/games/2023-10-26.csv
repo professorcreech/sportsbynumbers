@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401525533,2023-10-26,2023-10-26T23:30Z,9,2,True,False,True,259,183,Virginia Tech,Syracuse,38,10,,Blacksburg,VA
+401531929,2023-10-26,2023-10-26T23:30Z,9,2,True,False,True,290,2247,GA Southern,Georgia St,44,27,,Statesboro,GA
+401540008,2023-10-26,2023-10-26T23:00Z,9,2,True,False,True,2115,2341,C Connecticut,Long Island,23,24,,New Britain,CT
+401541861,2023-10-26,2023-10-26T23:00Z,9,2,True,False,True,2560,2698,Shorter,West Georgia,35,41,,Rome,GA
+401539998,2023-10-26,2023-10-26T23:30Z,9,2,True,False,True,2428,2569,NC Central,SC State,62,28,,Durham,NC

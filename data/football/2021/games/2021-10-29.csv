@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401301030,2021-10-29,2021-10-29T23:30Z,9,2,True,False,True,202,2426,Tulsa,Navy,17,20,,Tulsa,OK
+401310734,2021-10-29,2021-10-30T02:00Z,9,2,True,False,True,2440,2439,Nevada,UNLV,51,20,,Reno,NV
+401328254,2021-10-29,2021-10-29T23:00Z,9,2,True,False,True,172,163,Cornell,Princeton,16,34,,Ithaca,NY

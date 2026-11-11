@@ -1,0 +1,118 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401012338,2018-11-17,2018-11-17T17:00Z,12,2,True,False,False,333,2643,Alabama,The Citadel,50,17,,Tuscaloosa,AL
+401013182,2018-11-17,2018-11-17T19:30Z,12,2,True,True,False,87,183,Notre Dame,Syracuse,36,3,,Bronx,NY
+401012860,2018-11-17,2018-11-17T21:00Z,12,2,True,False,True,130,84,Michigan,Indiana,31,20,,Ann Arbor,MI
+401012341,2018-11-17,2018-11-17T21:00Z,12,2,True,False,False,61,113,Georgia,UMass,66,27,,Athens,GA
+401013055,2018-11-17,2018-11-18T00:30Z,12,2,True,False,True,201,2305,Oklahoma,Kansas,55,40,,Norman,OK
+401012343,2018-11-17,2018-11-18T00:30Z,12,2,True,False,False,99,242,LSU,Rice,42,10,,Baton Rouge,LA
+401012795,2018-11-17,2018-11-18T03:30Z,12,2,True,False,True,265,12,Washington St,Arizona,69,28,,Pullman,WA
+401013327,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,197,277,Oklahoma State,West Virginia,45,41,,Stillwater,OK
+401019531,2018-11-17,2018-11-18T01:00Z,12,2,True,False,True,2116,2132,UCF,Cincinnati,38,13,,Orlando,FL
+401012340,2018-11-17,2018-11-17T17:00Z,12,2,True,False,False,57,70,Florida,Idaho,63,10,,Gainesville,FL
+401012849,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,164,213,Rutgers,Penn State,7,20,,Piscataway,NJ
+401013046,2018-11-17,2018-11-18T01:00Z,12,2,True,False,True,251,66,Texas,Iowa State,24,10,,Austin,TX
+401012342,2018-11-17,2018-11-17T17:00Z,12,2,True,False,False,96,2393,Kentucky,Mid Tennessee,34,23,,Lexington,KY
+401012794,2018-11-17,2018-11-17T21:30Z,12,2,True,False,True,264,204,Washington,Oregon St,42,23,,Seattle,WA
+401012792,2018-11-17,2018-11-17T18:30Z,12,2,True,False,True,38,254,Colorado,Utah,7,30,,Boulder,CO
+401013175,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,52,103,FSU,Boston College,22,21,,Tallahassee,FL
+401012344,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,344,8,Miss St,Arkansas,52,6,,Starkville,MS
+401013334,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,135,77,Minnesota,Northwestern,14,24,,Minneapolis,MN
+401022561,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,36,328,Colorado State,Utah State,24,29,,Fort Collins,CO
+401012878,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,120,194,Maryland,Ohio State,51,52,,College Park,MD
+401012887,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,158,127,Nebraska,Mich. St.,9,6,,Lincoln,NE
+401013036,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,239,2628,Baylor,TCU,9,16,,Waco,TX
+401013181,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,154,221,Wake Forest,Pitt,13,34,,Winston-Salem,NC
+401013375,2018-11-17,2018-11-17T17:00Z,12,2,True,False,False,349,2142,Army,Colgate,28,14,,West Point,NY
+401019533,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,218,58,Temple,USF,27,17,,Philadelphia,PA
+401029902,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,48,222,Delaware,Villanova,21,42,,Newark,DE
+401013178,2018-11-17,2018-11-17T17:20Z,12,2,True,False,True,97,152,Louisville,NC State,10,52,,Louisville,KY
+401015044,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2429,2229,Charlotte,Florida Intl,35,42,,Charlotte,NC
+401015048,2018-11-17,2018-11-17T19:00Z,12,2,True,False,False,295,2678,Old Dominion,VMI,77,14,,Norfolk,VA
+401029920,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,119,256,Towson,JMU,17,38,,Towson,MD
+401015047,2018-11-17,2018-11-17T19:30Z,12,2,True,False,True,276,2636,Marshall,UTSA,23,0,,Huntington,WV
+401021692,2018-11-17,2018-11-17T19:30Z,12,2,True,False,True,2026,2247,Appalachian St,Georgia State,45,17,,Boone,NC
+401013180,2018-11-17,2018-11-17T20:00Z,12,2,True,False,False,153,2717,UNC,W Carolina,49,26,,Chapel Hill,NC
+401021693,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2032,2433,Arkansas State,UL Monroe,31,17,,Jonesboro,AR
+401022562,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,23,2440,San Jose State,Nevada,12,21,,San Jose,CA
+401030000,2018-11-17,2018-11-17T20:00Z,12,2,True,True,False,338,55,Kennesaw St,Jacksonville St,60,52,,Atlanta,GA
+401030182,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2277,2534,Houston Baptist,Sam Houston,20,42,,Houston,TX
+401030429,2018-11-17,2018-11-17T20:00Z,12,2,True,True,True,302,16,UC Davis,Sacramento St,56,13,,Reno,NV
+401012346,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2633,142,Tennessee,Missouri,17,50,,Knoxville,TN
+401012791,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,26,30,UCLA,USC,34,27,,Pasadena,CA
+401012814,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,356,2294,Illinois,Iowa,0,63,,Champaign,IL
+401013064,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2306,2641,Kansas State,Texas Tech,21,6,,Manhattan,KS
+401013177,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,59,258,Georgia Tech,UVA,30,27,,Atlanta,GA
+401013179,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,259,2390,Virginia Tech,Miami,14,38,,Blacksburg,VA
+401013353,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2509,275,Purdue,Wisconsin,44,47,,West Lafayette,IN
+401015046,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2572,2348,Southern Miss,LA Tech,21,20,,Hattiesburg,MS
+401019534,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2426,202,Navy,Tulsa,37,29,,Annapolis,MD
+401020784,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2006,189,Akron,Bowling Green,6,21,,Akron,OH
+401021696,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2653,326,Troy,Texas State,12,7,,Troy,AL
+401029754,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,2449,79,North Dakota St,S Illinois,65,17,,Fargo,ND
+401012339,2018-11-17,2018-11-17T21:00Z,12,2,True,False,False,2,2335,Auburn,Liberty,53,0,,Auburn,AL
+401022559,2018-11-17,2018-11-17T21:00Z,12,2,True,False,True,2751,2005,Wyoming,Air Force,35,27,,Laramie,WY
+401021694,2018-11-17,2018-11-17T22:00Z,12,2,True,False,True,324,290,C. Carolina,Ga Southern,17,41,,Conway,SC
+401021695,2018-11-17,2018-11-17T22:00Z,12,2,True,False,True,309,6,Louisiana,South Alabama,48,38,,Lafayette,LA
+401030111,2018-11-17,2018-11-17T22:00Z,12,2,True,False,True,2460,2623,Northern Iowa,Missouri State,37,0,,Cedar Falls,IA
+401012347,2018-11-17,2018-11-18T00:00Z,12,2,True,False,False,245,5,Texas A&M,UAB,41,20,,College Station,TX
+401013176,2018-11-17,2018-11-18T00:00Z,12,2,True,False,True,228,150,Clemson,Duke,35,6,,Clemson,SC
+401019532,2018-11-17,2018-11-18T00:00Z,12,2,True,False,True,151,41,ECU,UConn,55,21,,Greenville,NC
+401012345,2018-11-17,2018-11-18T00:30Z,12,2,True,False,False,2579,236,S Carolina,Chattanooga,49,9,,Columbia,SC
+401012348,2018-11-17,2018-11-18T00:30Z,12,2,True,False,True,238,145,Vanderbilt,Ole Miss,36,29,,Nashville,TN
+401015049,2018-11-17,2018-11-18T00:30Z,12,2,True,False,True,98,2638,W Kentucky,UTEP,40,16,,Bowling Green,KY
+401013446,2018-11-17,2018-11-18T03:15Z,12,2,True,False,False,252,166,BYU,New Mexico St,45,10,,Provo,UT
+401012793,2018-11-17,2018-11-18T03:30Z,12,2,True,False,True,2483,9,Oregon,Arizona State,31,29,,Eugene,OR
+401022563,2018-11-17,2018-11-18T03:30Z,12,2,True,False,True,278,21,Fresno State,San Diego State,23,14,,Fresno,CA
+401022564,2018-11-17,2018-11-18T04:00Z,12,2,True,False,True,62,2439,Hawai'i,UNLV,35,28,,Honolulu,HI
+401029911,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,311,2210,Maine,Elon,27,26,,Orono,ME
+401029950,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,227,160,URI,UNH,24,21,,Kingston,RI
+401030446,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,2400,2010,Miss Valley St,Alabama A&M,14,42,,Itta Bena,MS
+401030550,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,2115,2184,Cent Conn St,Duquesne,31,38,,New Britain,CT
+401030562,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,2523,2681,Robert Morris,Wagner,7,41,,Moon Township,PA
+401030564,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,2529,2598,Sacred Heart,St Francis (PA),13,7,,Fairfield,CT
+401030599,2018-11-17,2018-11-17T17:00Z,12,2,True,False,True,2368,301,Marist,San Diego,14,31,,Poughkeepsie,NY
+401035274,2018-11-17,2018-11-17T17:00Z,12,2,True,True,True,108,43,Harvard,Yale,45,27,,Boston,MA
+401099217,2018-11-17,2018-11-17T17:00Z,12,2,True,False,False,2698,351,West Georgia,Wingate,31,41,DIVISION II FOOTBALL CHAMPIONSHIP - FIRST ROUND,Carrollton,GA
+401030350,2018-11-17,2018-11-17T17:30Z,12,2,True,False,True,46,107,Georgetown,Holy Cross,31,32,,Washington,DC
+401030354,2018-11-17,2018-11-17T17:30Z,12,2,True,False,True,322,2329,Lafayette,Lehigh,3,34,,Easton,PA
+401029844,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,171,172,Columbia,Cornell,24,21,,New York,NY
+401029871,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,163,219,Princeton,Penn,42,14,,Princeton,NJ
+401030096,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,2287,2754,Illinois State,Youngstown St,35,28,,Normal,IL
+401030314,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,2193,2535,ETSU,Samford,27,38,,Johnson City,TN
+401030365,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,2166,2086,Davidson,Butler,41,38,,Davidson,NC
+401030518,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,2450,2415,Norfolk State,Morgan State,27,44,,Norfolk,VA
+401030544,2018-11-17,2018-11-17T18:00Z,12,2,True,False,False,47,2803,Howard,Bryant,55,56,,Washington,DC
+401030580,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,294,2168,Jacksonville,Dayton,7,34,,Jacksonville,FL
+401030608,2018-11-17,2018-11-17T18:00Z,12,2,True,False,True,56,2674,Stetson,Valparaiso,45,31,,DeLand,FL
+401034164,2018-11-17,2018-11-17T18:00Z,12,2,True,False,False,2261,111610,Hampton,St Andrews,44,17,,Hampton,VA
+401099215,2018-11-17,2018-11-17T18:00Z,12,2,True,False,False,223,2441,West Chester,New Haven,28,35,DIVISION II FOOTBALL CHAMPIONSHIP - FIRST ROUND,West Chester,PA
+401030588,2018-11-17,2018-11-17T18:05Z,12,2,True,False,True,2413,2181,Morehead State,Drake,6,43,,Morehead,KY
+401029835,2018-11-17,2018-11-17T18:30Z,12,2,True,False,True,159,225,Dartmouth,Brown,49,7,,Hanover,NH
+401029888,2018-11-17,2018-11-17T18:30Z,12,2,True,False,True,2083,2230,Bucknell,Fordham,14,17,,Lewisburg,PA
+401029993,2018-11-17,2018-11-17T18:30Z,12,2,True,False,True,2241,2405,Gardner-Webb,Monmouth,42,56,,Boiling Springs,NC
+401030009,2018-11-17,2018-11-17T18:30Z,12,2,True,False,False,2747,2506,Wofford,Presbyterian,45,21,,Spartanburg,SC
+401030534,2018-11-17,2018-11-17T18:30Z,12,2,True,False,True,2569,2542,S Carolina St,Savannah State,21,17,,Orangeburg,SC
+401029955,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2729,257,William & Mary,Richmond,6,10,,Williamsburg,VA
+401029977,2018-11-17,2018-11-17T19:00Z,12,2,True,False,False,2097,2127,Campbell,Charleston So,7,12,,Buies Creek,NC
+401030105,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2710,282,W Illinois,Indiana State,13,15,,Macomb,IL
+401030233,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2546,2197,SE Missouri St,E Illinois,38,32,,Cape Girardeau,MO
+401030396,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,149,147,Montana,Montana State,25,29,,Missoula,MT
+401030452,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2504,2011,PV A&M,Alabama State,66,13,,Prairie View,TX
+401030505,2018-11-17,2018-11-17T19:00Z,12,2,True,False,False,2169,2355,Delaware State,VA Lynchburg,41,7,,Dover,DE
+401030527,2018-11-17,2018-11-17T19:00Z,12,2,True,False,True,2428,2448,NC Central,NC A&T,0,45,,Durham,NC
+401099223,2018-11-17,2018-11-17T19:00Z,12,2,True,False,False,2627,2049,Tarleton St,Azusa Pacific,58,0,DIVISION II FOOTBALL CHAMPIONSHIP - FIRST ROUND,Stephenville,TX
+401099224,2018-11-17,2018-11-17T19:00Z,12,2,True,False,False,134,2837,Minnesota-Duluth,TX A&M-Commerce,17,33,DIVISION II FOOTBALL CHAMPIONSHIP - FIRST ROUND,Moorhead,MN
+401030240,2018-11-17,2018-11-17T19:30Z,12,2,True,False,True,2635,2198,Tenn Tech,E Kentucky,6,37,,Cookeville,TN
+401030124,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2571,233,South Dakota St,South Dakota,49,27,,Brookings,SD
+401030154,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2000,2110,Abil Christian,Cent Arkansas,7,16,,Abilene,TX
+401030281,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2382,231,Mercer,Furman,30,35,,Macon,GA
+401030290,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2634,2630,Tennessee St,UT Martin,31,28,,Nashville,TN
+401030460,2018-11-17,2018-11-17T20:00Z,12,2,True,False,True,2016,2296,Alcorn State,Jackson State,24,3,,Lorman,MS
+401029894,2018-11-17,2018-11-17T20:30Z,12,2,True,False,True,399,2619,Albany,Stony Brook,25,23,,Albany,NY
+401030198,2018-11-17,2018-11-17T21:00Z,12,2,True,False,True,2377,2320,McNeese,Lamar,17,21,,Lake Charles,LA
+401030407,2018-11-17,2018-11-17T21:30Z,12,2,True,False,True,2464,155,N Arizona,North Dakota,31,16,,Flagstaff,AZ
+401030329,2018-11-17,2018-11-17T21:35Z,12,2,True,False,True,304,2692,Idaho State,Weber State,13,26,,Pocatello,ID
+401030207,2018-11-17,2018-11-17T22:00Z,12,2,True,False,True,2046,93,Austin Peay,Murray State,48,23,,Clarksville,TN
+401030018,2018-11-17,2018-11-18T00:05Z,12,2,True,False,True,13,253,Cal Poly,Southern Utah,38,24,,San Luis Obispo,CA
+401030487,2018-11-17,2018-11-18T01:30Z,12,2,True,False,True,2640,2029,Texas Southern,AR-Pine Bluff,10,15,,Houston,TX
+401030496,2018-11-17,2018-11-17T19:00Z,12,2,True,True,False,50,2065,Florida A&M,Bethune-Cookman,19,33,FLORIDA CLASSIC PRESENTED BY MCDONALD'S,Orlando,FL

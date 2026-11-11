@@ -1,0 +1,10 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401234650,2020-11-27,2020-11-27T20:30Z,13,2,True,False,True,153,87,North Carolina,Notre Dame,17,31,,Chapel Hill,NC
+401236029,2020-11-27,2020-11-27T17:00Z,13,2,True,False,True,251,66,Texas,Iowa State,20,23,,Austin,TX
+401249418,2020-11-27,2020-11-28T00:30Z,13,2,True,False,True,204,2483,Oregon St,Oregon,41,38,,Corvallis,OR
+401247332,2020-11-27,2020-11-27T18:00Z,13,2,True,False,True,2294,158,Iowa,Nebraska,26,20,,Iowa City,IA
+401251926,2020-11-27,2020-11-27T17:00Z,13,2,True,False,False,2335,113,Liberty,UMass,45,0,,Lynchburg,VA
+401212483,2020-11-27,2020-11-27T20:30Z,13,2,True,False,True,58,2116,South Florida,UCF,46,58,,Tampa,FL
+401249028,2020-11-27,2020-11-27T21:00Z,13,2,True,False,True,2439,2751,UNLV,Wyoming,14,45,,Las Vegas,NV
+401249874,2020-11-27,2020-11-27T21:00Z,13,2,True,False,True,2199,2117,E Michigan,C Michigan,23,31,,Ypsilanti,MI
+401249417,2020-11-27,2020-11-27T21:30Z,13,2,True,False,True,25,24,California,Stanford,23,24,,Berkeley,CA

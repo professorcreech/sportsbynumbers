@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401234576,2020-09-07,2020-09-08T00:00Z,1,2,True,False,False,2426,252,Navy,BYU,3,55,,Annapolis,MD

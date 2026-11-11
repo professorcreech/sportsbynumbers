@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869236,2016-11-04,2016-11-05T02:15Z,10,2,True,False,True,68,23,Boise St,San Jose State,45,31,,Boise,ID
+400869324,2016-11-04,2016-11-04T22:00Z,10,2,True,False,True,193,2117,Miami (OH),Cent Michigan,37,17,,Oxford,OH
+400869554,2016-11-04,2016-11-04T23:00Z,10,2,True,False,True,41,218,UConn,Temple,0,21,,East Hartford,CT

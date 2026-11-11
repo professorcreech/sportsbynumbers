@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869118,2016-09-23,2016-09-24T01:00Z,4,2,True,False,True,254,30,Utah,USC,31,27,,Salt Lake City,UT
+400869201,2016-09-23,2016-09-23T23:30Z,4,2,True,False,False,2199,2751,E Michigan,Wyoming,27,24,,Ypsilanti,MI
+400869524,2016-09-23,2016-09-24T00:00Z,4,2,True,False,False,2567,2628,SMU,TCU,3,33,,Dallas,TX

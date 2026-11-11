@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032078,2018-12-29,2018-12-30T01:00Z,1,3,True,True,False,333,201,Alabama,Oklahoma,45,34,Capital One Orange Bowl - CFP Semifinal,Miami Gardens,FL
+401032076,2018-12-29,2018-12-29T17:00Z,1,3,True,True,False,130,57,Michigan,Florida,15,41,Chick-fil-A Peach Bowl,Atlanta,GA
+401032077,2018-12-29,2018-12-29T17:00Z,1,3,True,True,False,258,2579,UVA,S Carolina,28,0,BELK BOWL,Charlotte,NC
+401035252,2018-12-29,2018-12-29T18:15Z,1,3,True,True,False,2440,2032,Nevada,Arkansas State,16,13,NOVA HOME LOANS ARIZONA BOWL,Tucson,AZ
+401032079,2018-12-29,2018-12-29T21:00Z,1,3,True,True,False,228,87,Clemson,Notre Dame,30,3,Goodyear Cotton Bowl Classic - CFP Semifinal,Arlington,TX

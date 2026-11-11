@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401013071,2018-11-23,2018-11-24T01:00Z,13,2,True,False,True,277,201,West Virginia,Oklahoma,56,59,,Morgantown,WV
+401012798,2018-11-23,2018-11-24T01:30Z,13,2,True,False,True,265,264,Washington St,Washington,15,28,,Pullman,WA
+401019535,2018-11-23,2018-11-23T21:15Z,13,2,True,False,True,58,2116,USF,UCF,10,38,,Tampa,FL
+401013056,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,2305,251,Kansas,Texas,17,24,,Lawrence,KS
+401012871,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,2294,158,Iowa,Nebraska,31,28,,Iowa City,IA
+401019537,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,235,248,Memphis,Houston,52,31,,Memphis,TN
+401020787,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,195,2006,Ohio,Akron,49,28,,Athens,OH
+401020788,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,189,2084,Bowling Green,Buffalo,14,44,,Bowling Green,OH
+401020789,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,2649,2117,Toledo,Cent Michigan,51,13,,Toledo,OH
+401020790,2018-11-23,2018-11-23T17:00Z,13,2,True,False,True,2309,2199,Kent State,E Michigan,20,28,,Kent,OH
+401012354,2018-11-23,2018-11-23T19:30Z,13,2,True,False,True,142,8,Missouri,Arkansas,38,0,,Columbia,MO
+401021699,2018-11-23,2018-11-23T20:00Z,13,2,True,False,True,6,324,South Alabama,C. Carolina,31,28,,Mobile,AL
+401013183,2018-11-23,2018-11-23T20:30Z,13,2,True,False,True,259,258,Virginia Tech,UVA,34,31,,Blacksburg,VA
+401019536,2018-11-23,2018-11-23T20:30Z,13,2,True,False,True,2132,151,Cincinnati,ECU,56,6,,Cincinnati,OH
+401012797,2018-11-23,2018-11-23T21:00Z,13,2,True,False,True,204,2483,Oregon St,Oregon,15,55,,Corvallis,OR

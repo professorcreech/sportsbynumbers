@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401155540,2020-01-18,2020-01-18T20:00Z,1,4,True,True,False,3147,3146,West,East,27,31,EAST-WEST SHRINE GAME,St. Petersburg,FL
+401155538,2020-01-18,2020-01-19T00:00Z,1,4,True,True,False,3194,3193,National,American,30,20,NFLPA COLLEGIATE BOWL,Pasadena,CA

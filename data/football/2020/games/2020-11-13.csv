@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401212545,2020-11-13,2020-11-14T00:30Z,11,2,True,False,True,2132,151,Cincinnati,East Carolina,55,17,,Cincinnati,OH
+401207174,2020-11-13,2020-11-14T00:00Z,11,2,True,False,True,2229,2226,FIU,FAU,19,38,,Miami,FL
+401247317,2020-11-13,2020-11-14T00:00Z,11,2,True,False,True,135,2294,Minnesota,Iowa,7,35,,Minneapolis,MN

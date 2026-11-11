@@ -1,0 +1,59 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520430,2023-11-25,2023-11-26T00:30Z,13,2,True,False,False,59,61,Georgia Tech,Georgia,23,31,,Atlanta,GA
+401520434,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,130,194,Michigan,Ohio State,30,24,,Ann Arbor,MI
+401524068,2023-11-25,2023-11-25T21:00Z,13,2,True,False,True,264,265,Washington,Washington St,24,21,,Seattle,WA
+401520429,2023-11-25,2023-11-26T00:00Z,13,2,True,False,False,57,52,Florida,Florida St,15,24,,Gainesville,FL
+401520427,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,2,333,Auburn,Alabama,24,27,,Auburn,AL
+401520432,2023-11-25,2023-11-25T17:00Z,13,2,True,False,False,97,96,Louisville,Kentucky,31,38,,Louisville,KY
+401520433,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,99,245,LSU,Texas A&M,42,30,,Baton Rouge,LA
+401524064,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,9,12,Arizona St,Arizona,23,59,,Tempe,AZ
+401524065,2023-11-25,2023-11-26T00:00Z,13,2,True,False,False,24,87,Stanford,Notre Dame,23,56,,Stanford,CA
+401525904,2023-11-25,2023-11-26T01:00Z,13,2,True,False,True,2306,66,Kansas St,Iowa State,35,42,,Manhattan,KS
+401525905,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,197,252,Oklahoma St,BYU,40,34,,Stillwater,OK
+401520442,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,2633,238,Tennessee,Vanderbilt,48,24,,Knoxville,TN
+401525562,2023-11-25,2023-11-26T01:00Z,13,2,True,False,True,152,153,NC State,North Carolina,39,20,,Raleigh,NC
+401520441,2023-11-25,2023-11-26T00:30Z,13,2,True,False,False,2579,228,South Carolina,Clemson,7,16,,Columbia,SC
+401520444,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,2638,2335,UTEP,Liberty,28,42,,El Paso,TX
+401520438,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2509,84,Purdue,Indiana,35,31,,West Lafayette,IN
+401520440,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2534,2393,Sam Houston,MTSU,23,20,,Huntsville,TX
+401520443,2023-11-25,2023-11-25T17:00Z,13,2,True,False,False,113,41,UMass,UConn,18,31,,Amherst,MA
+401525561,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,150,221,Duke,Pitt,30,19,,Durham,NC
+401525906,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2116,248,UCF,Houston,27,13,,Orlando,FL
+401531435,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2567,2426,SMU,Navy,59,14,,Dallas,TX
+401531927,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2572,2653,Southern Miss,Troy,17,35,,Hattiesburg,MS
+401532453,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2309,2459,Kent State,N Illinois,27,37,,Kent,OH
+401532454,2023-11-25,2023-11-25T17:00Z,13,2,True,False,True,2050,193,Ball State,Miami OH,15,17,,Muncie,IN
+401531421,2023-11-25,2023-11-25T18:00Z,13,2,True,False,True,242,2226,Rice,FAU,24,21,,Houston,TX
+401614603,2023-11-25,2023-11-25T18:00Z,13,2,True,False,False,155,16,North Dakota,Sacramento St,35,42,FCS Championship - First Round,Grand Forks,ND
+401525563,2023-11-25,2023-11-25T19:00Z,13,2,True,False,True,183,154,Syracuse,Wake Forest,35,31,,Syracuse,NY
+401531346,2023-11-25,2023-11-25T19:00Z,13,2,True,False,True,151,202,East Carolina,Tulsa,27,29,,Greenville,NC
+401531386,2023-11-25,2023-11-25T19:00Z,13,2,True,False,True,249,5,North Texas,UAB,45,42,,Denton,TX
+401531925,2023-11-25,2023-11-25T19:00Z,13,2,True,False,True,295,2247,Old Dominion,Georgia St,25,24,,Norfolk,VA
+401614616,2023-11-25,2023-11-25T19:00Z,13,2,True,False,False,48,322,Delaware,Lafayette,36,34,FCS Championship - First Round,Newark,DE
+401520428,2023-11-25,2023-11-25T20:00Z,13,2,True,False,True,2229,98,FIU,Western KY,28,41,,Miami,FL
+401524067,2023-11-25,2023-11-25T20:00Z,13,2,True,False,True,254,38,Utah,Colorado,23,17,,Salt Lake City,UT
+401531926,2023-11-25,2023-11-25T20:00Z,13,2,True,False,True,309,2433,Louisiana,UL Monroe,52,21,,Lafayette,LA
+401532628,2023-11-25,2023-11-25T20:00Z,13,2,True,False,True,2439,23,UNLV,San José St,31,37,,Las Vegas,NV
+401520431,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,356,77,Illinois,Northwestern,43,45,,Champaign,IL
+401520436,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,135,275,Minnesota,Wisconsin,14,28,,Minneapolis,MN
+401520439,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,164,120,Rutgers,Maryland,24,42,,Piscataway,NJ
+401525564,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,258,259,Virginia,Virginia Tech,17,55,,Charlottesville,VA
+401531922,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,2026,290,App State,GA Southern,55,27,,Boone,NC
+401531923,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,324,256,Coastal,James Madison,14,56,,Conway,SC
+401531924,2023-11-25,2023-11-25T20:30Z,13,2,True,False,True,276,2032,Marshall,Arkansas St,35,21,,Huntington,WV
+401614604,2023-11-25,2023-11-25T20:30Z,13,2,True,False,False,2449,2181,N Dakota St,Drake,66,3,FCS Championship - First Round,Fargo,ND
+401520437,2023-11-25,2023-11-25T21:00Z,13,2,True,False,True,166,55,New Mexico St,Jax State,20,17,,Las Cruces,NM
+401525902,2023-11-25,2023-11-26T00:00Z,13,2,True,False,True,239,277,Baylor,West Virginia,31,34,,Waco,TX
+401531928,2023-11-25,2023-11-26T00:00Z,13,2,True,False,True,326,6,Texas St,South Alabama,52,44,,San Marcos,TX
+401525903,2023-11-25,2023-11-26T00:30Z,13,2,True,False,True,2132,2305,Cincinnati,Kansas,16,49,,Cincinnati,OH
+401531410,2023-11-25,2023-11-26T00:30Z,13,2,True,False,True,58,2429,South Florida,Charlotte,48,14,,Tampa,FL
+401532630,2023-11-25,2023-11-26T02:00Z,13,2,True,False,True,2440,2751,Nevada,Wyoming,6,42,,Reno,NV
+401524066,2023-11-25,2023-11-26T03:30Z,13,2,True,False,True,26,25,UCLA,California,7,33,,Pasadena,CA
+401532627,2023-11-25,2023-11-26T03:30Z,13,2,True,False,True,21,278,San Diego St,Fresno St,33,18,,San Diego,CA
+401532626,2023-11-25,2023-11-26T04:00Z,13,2,True,False,True,62,36,Hawai'i,Colorado St,27,24,,Honolulu,HI
+401540159,2023-11-25,2023-11-25T19:00Z,13,2,True,True,True,2755,2582,Grambling,Southern,22,27,,New Orleans,LA
+401614601,2023-11-25,2023-11-25T19:00Z,13,2,True,False,False,257,2428,Richmond,NC Central,49,27,FCS Championship - First Round,Richmond,VA
+401614599,2023-11-25,2023-11-25T20:00Z,13,2,True,False,False,2382,2241,Mercer,Gardner-Webb,17,7,FCS Championship - First Round,Macon,GA
+401614602,2023-11-25,2023-11-25T20:00Z,13,2,True,False,False,79,2447,S Illinois,Nicholls,35,0,FCS Championship - First Round,Carbondale,IL
+401614615,2023-11-25,2023-11-25T20:00Z,13,2,True,False,False,2046,236,Austin Peay,Chattanooga,21,24,FCS Championship - First Round,Clarksville,TN
+401614600,2023-11-25,2023-11-25T22:00Z,13,2,True,False,False,2754,2184,Youngstown St,Duquesne,40,7,FCS Championship - First Round,Youngstown,OH

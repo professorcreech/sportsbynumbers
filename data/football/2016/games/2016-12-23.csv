@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876047,2016-12-23,2016-12-23T21:30Z,1,3,True,True,False,2426,2348,Navy,LA Tech,45,48,LOCKHEED MARTIN ARMED FORCES BOWL,Fort Worth,TX
+400876046,2016-12-23,2016-12-23T18:00Z,1,3,True,True,False,295,2199,Old Dominion,E Michigan,24,20,POPEYES BAHAMAS BOWL,Nassau,
+400876048,2016-12-23,2016-12-24T01:00Z,1,3,True,True,False,2653,195,Troy,Ohio,28,23,DOLLAR GENERAL BOWL,Mobile,AL

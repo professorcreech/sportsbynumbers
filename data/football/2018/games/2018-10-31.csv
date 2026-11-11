@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401020771,2018-10-31,2018-10-31T23:30Z,10,2,True,False,True,2649,2050,Toledo,Ball State,45,13,,Toledo,OH

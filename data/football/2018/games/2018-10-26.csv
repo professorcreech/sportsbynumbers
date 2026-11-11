@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401012774,2018-10-26,2018-10-27T02:30Z,9,2,True,False,True,26,254,UCLA,Utah,10,41,,Pasadena,CA
+401015028,2018-10-26,2018-10-26T22:30Z,9,2,True,False,True,2226,2348,FAU,LA Tech,13,21,,Boca Raton,FL
+401013154,2018-10-26,2018-10-26T23:00Z,9,2,True,False,True,103,2390,Boston College,Miami,27,14,,Chestnut Hill,MA
+401012858,2018-10-26,2018-10-27T00:00Z,9,2,True,False,True,135,84,Minnesota,Indiana,38,31,,Minneapolis,MN
+401022546,2018-10-26,2018-10-27T02:00Z,9,2,True,False,True,36,2751,Colorado State,Wyoming,21,34,,Fort Collins,CO

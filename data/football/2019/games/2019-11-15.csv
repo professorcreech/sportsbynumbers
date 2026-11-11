@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401114309,2019-11-15,2019-11-16T00:00Z,12,2,True,False,True,276,2348,Marshall,LA Tech,31,10,,Huntington,WV
+401117547,2019-11-15,2019-11-16T02:30Z,12,2,True,False,True,21,278,San Diego St,Fresno St,17,7,,San Diego,CA
+401136615,2019-11-15,2019-11-16T00:00Z,12,2,True,False,False,222,2341,Villanova,Long Island,35,7,,Philadelphia,PA

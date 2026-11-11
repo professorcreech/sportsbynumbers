@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032068,2018-12-26,2018-12-26T22:15Z,1,3,True,True,False,59,135,Georgia Tech,Minnesota,10,34,QUICK LANE BOWL,Detroit,MI
+401032069,2018-12-26,2018-12-27T02:00Z,1,3,True,True,False,2628,25,TCU,California,10,7,CHEEZ-IT BOWL,Phoenix,AZ

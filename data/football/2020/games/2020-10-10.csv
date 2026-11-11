@@ -1,0 +1,29 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237100,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,145,333,Ole Miss,Alabama,48,63,,Oxford,MS
+401237103,2020-10-10,2020-10-10T19:30Z,6,2,True,False,True,61,2633,Georgia,Tennessee,44,21,,Athens,GA
+401237102,2020-10-10,2020-10-10T16:00Z,6,2,True,False,True,245,57,Texas A&M,Florida,41,38,,College Station,TX
+401234606,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,87,52,Notre Dame,Florida St,42,26,,Notre Dame,IN
+401234607,2020-10-10,2020-10-10T16:00Z,6,2,True,False,True,153,259,North Carolina,Virginia Tech,56,45,,Chapel Hill,NC
+401237101,2020-10-10,2020-10-10T20:00Z,6,2,True,False,True,2,8,Auburn,Arkansas,30,28,,Auburn,AL
+401240997,2020-10-10,2020-10-10T19:30Z,6,2,True,False,False,252,2636,BYU,UTSA,27,20,,Provo,UT
+401236005,2020-10-10,2020-10-10T16:00Z,6,2,True,True,True,201,251,Oklahoma,Texas,53,45,,Dallas,TX
+401236003,2020-10-10,2020-10-10T19:30Z,6,2,True,False,True,66,2641,Iowa State,Texas Tech,31,15,,Ames,IA
+401207215,2020-10-10,2020-10-10T16:00Z,6,2,True,False,False,2335,2433,Liberty,UL Monroe,40,7,,Lynchburg,VA
+401234608,2020-10-10,2020-10-10T16:00Z,6,2,True,False,True,258,152,Virginia,NC State,21,38,,Charlottesville,VA
+401237106,2020-10-10,2020-10-10T16:00Z,6,2,True,False,True,238,2579,Vanderbilt,South Carolina,7,41,,Nashville,TN
+401234605,2020-10-10,2020-10-10T16:30Z,6,2,True,False,True,183,150,Syracuse,Duke,24,38,,Syracuse,NY
+401240114,2020-10-10,2020-10-10T17:30Z,6,2,True,False,False,349,2643,Army,The Citadel,14,9,,West Point,NY
+401240117,2020-10-10,2020-10-10T19:00Z,6,2,True,False,False,55,2382,Jax State,Mercer,34,28,,Jacksonville,AL
+401215308,2020-10-10,2020-10-10T19:30Z,6,2,True,False,True,2653,326,Troy,Texas St,37,17,,Troy,AL
+401246425,2020-10-10,2020-10-10T19:30Z,6,2,True,False,False,2032,2110,Arkansas St,C Arkansas,50,27,,Jonesboro,AR
+401207143,2020-10-10,2020-10-10T20:00Z,6,2,True,False,True,2229,2393,FIU,MTSU,28,31,,Miami,FL
+401234603,2020-10-10,2020-10-10T20:00Z,6,2,True,False,True,103,221,Boston College,Pitt,31,30,,Chestnut Hill,MA
+401236004,2020-10-10,2020-10-10T20:00Z,6,2,True,False,True,2628,2306,TCU,Kansas St,14,21,,Fort Worth,TX
+401212515,2020-10-10,2020-10-10T22:00Z,6,2,True,False,True,2426,218,Navy,Temple,31,29,,Annapolis,MD
+401212477,2020-10-10,2020-10-10T23:00Z,6,2,True,False,True,58,151,South Florida,East Carolina,24,44,,Tampa,FL
+401207145,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,2348,2638,Louisiana Tech,UTEP,21,17,,Ruston,LA
+401207146,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,98,276,Western KY,Marshall,14,38,,Bowling Green,KY
+401234604,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,228,2390,Clemson,Miami,42,17,,Clemson,SC
+401237104,2020-10-10,2020-10-10T23:30Z,6,2,True,False,True,96,344,Kentucky,Mississippi St,24,2,,Lexington,KY
+401207142,2020-10-10,2020-10-11T00:00Z,6,2,True,False,True,249,2429,North Texas,Charlotte,21,49,,Denton,TX
+401237105,2020-10-10,2020-10-10T16:00Z,6,2,True,False,True,142,99,Missouri,LSU,45,41,,Columbia,MO

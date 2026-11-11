@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401265703,2020-12-03,2020-12-03T23:00Z,14,2,True,False,True,249,2348,North Texas,Louisiana Tech,31,42,,Denton,TX
+401249029,2020-12-03,2020-12-04T02:30Z,14,2,True,False,True,328,2005,Utah State,Air Force,7,35,,Logan,UT

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869467,2016-10-20,2016-10-20T23:00Z,8,2,True,False,True,259,2390,Virginia Tech,Miami,37,16,,Blacksburg,VA
+400869830,2016-10-20,2016-10-20T23:30Z,8,2,True,False,True,6,2653,South Alabama,Troy,21,28,,Mobile,AL
+400869224,2016-10-20,2016-10-21T02:15Z,8,2,True,False,False,68,252,Boise St,BYU,28,27,,Boise,ID
+400871427,2016-10-20,2016-10-20T23:30Z,8,2,True,False,False,2193,455,ETSU,WV Wesleyan,38,7,,Johnson City,TN

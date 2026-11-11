@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331159,2021-12-03,2021-12-04T01:00Z,14,2,True,True,False,254,2483,Utah,Oregon,38,10,Pac-12 Championship Game,Las Vegas,NV
+401282156,2021-12-03,2021-12-04T00:00Z,14,2,True,False,False,2636,98,UTSA,Western KY,49,41,Ryan Conference USA Championship,San Antonio,TX
+401389821,2021-12-03,2021-12-04T00:00Z,14,2,True,False,False,222,107,Villanova,Holy Cross,21,16,FCS Championship - Second Round,Philadelphia,PA
+401389822,2021-12-03,2021-12-04T02:00Z,14,2,True,False,False,149,331,Montana,E Washington,57,41,FCS Championship - Second Round,Missoula,MT

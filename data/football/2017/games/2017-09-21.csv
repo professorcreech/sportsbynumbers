@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941803,2017-09-21,2017-09-21T23:30Z,4,2,True,False,True,58,218,USF,Temple,43,7,,Tampa,FL
+400952247,2017-09-21,2017-09-21T23:30Z,4,2,True,False,True,2428,2569,NC Central,S Carolina St,33,28,,Durham,NC

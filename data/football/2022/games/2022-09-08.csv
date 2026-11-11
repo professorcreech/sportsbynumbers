@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401420807,2022-09-08,2022-09-09T00:00Z,2,2,True,False,False,2623,2630,Missouri St,UT Martin,35,30,,Springfield,MO

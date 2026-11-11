@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401121954,2019-10-17,2019-10-17T23:30Z,8,2,True,False,True,2032,309,Arkansas State,Louisiana,20,37,,Jonesboro,AR
+401114210,2019-10-17,2019-10-18T01:00Z,8,2,True,False,True,24,26,Stanford,UCLA,16,34,,Stanford,CA
+401128493,2019-10-17,2019-10-17T23:00Z,8,2,True,False,True,236,2193,Chattanooga,ETSU,16,13,,Chattanooga,TN

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401249861,2020-11-10,2020-11-11T00:00Z,11,2,True,False,True,195,2006,Ohio,Akron,24,10,,Athens,OH
+401249862,2020-11-10,2020-11-11T00:30Z,11,2,True,False,True,189,2309,Bowling Green,Kent State,24,62,,Bowling Green,OH
+401249890,2020-11-10,2020-11-11T01:00Z,11,2,True,False,True,2084,193,Buffalo,Miami OH,42,10,,Buffalo,NY

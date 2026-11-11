@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876098,2016-12-28,2016-12-28T22:30Z,1,3,True,True,False,2390,277,Miami,West Virginia,31,14,RUSSELL ATHLETIC BOWL,Orlando,FL
+400903226,2016-12-28,2016-12-29T01:30Z,1,3,True,True,False,254,84,Utah,Indiana,26,24,FOSTER FARMS BOWL,Santa Clara,CA
+400876097,2016-12-28,2016-12-28T19:00Z,1,3,True,True,False,77,221,Northwestern,Pitt,31,24,NEW ERA PINSTRIPE BOWL,Bronx,NY
+400876099,2016-12-28,2016-12-29T02:00Z,1,3,True,True,False,2306,245,Kansas State,Texas A&M,33,28,ADVOCARE V100 TEXAS BOWL,Houston,TX

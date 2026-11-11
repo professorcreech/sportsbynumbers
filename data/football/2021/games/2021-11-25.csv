@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282151,2021-11-25,2021-11-26T00:30Z,13,2,True,False,True,344,145,Mississippi St,Ole Miss,21,31,,Starkville,MS
+401310757,2021-11-25,2021-11-25T20:30Z,13,2,True,False,True,23,278,San José St,Fresno St,9,40,,San Jose,CA
+401328625,2021-11-25,2021-11-25T20:00Z,13,2,True,False,False,2011,2657,Alabama St,Tuskegee,43,9,,Montgomery,AL

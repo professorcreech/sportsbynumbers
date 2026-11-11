@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520330,2023-10-17,2023-10-17T23:00Z,8,2,True,False,True,2335,2393,Liberty,MTSU,42,35,,Lynchburg,VA
+401520329,2023-10-17,2023-10-17T23:30Z,8,2,True,False,True,55,98,Jax State,Western KY,20,17,,Jacksonville,AL
+401531892,2023-10-17,2023-10-17T23:30Z,8,2,True,False,True,6,2572,South Alabama,Southern Miss,55,3,,Mobile,AL

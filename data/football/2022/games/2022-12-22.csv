@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401442040,2022-12-22,2022-12-23T00:30Z,1,3,True,True,False,2005,239,Air Force,Baylor,30,15,Lockheed Martin Armed Forces Bowl,Fort Worth,TX

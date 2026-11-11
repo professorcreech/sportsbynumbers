@@ -1,0 +1,11 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401416591,2022-09-02,2022-09-02T23:00Z,1,2,True,False,False,127,2711,Michigan St,W Michigan,35,13,,East Lansing,MI
+401416590,2022-09-02,2022-09-02T23:00Z,1,2,True,False,False,2199,2198,E Michigan,E Kentucky,42,34,,Ypsilanti,MI
+401426330,2022-09-02,2022-09-02T23:00Z,1,2,True,False,False,295,259,Old Dominion,Virginia Tech,20,17,,Norfolk,VA
+401426535,2022-09-02,2022-09-02T23:00Z,1,2,True,False,False,2429,2729,Charlotte,William & Mary,24,41,,Charlotte,NC
+401411094,2022-09-02,2022-09-02T23:30Z,1,2,True,False,False,150,218,Duke,Temple,30,0,,Durham,NC
+401404052,2022-09-02,2022-09-03T00:00Z,1,2,True,False,False,2305,2635,Kansas,Tennessee Tech,56,10,,Lawrence,KS
+401405061,2022-09-02,2022-09-03T00:00Z,1,2,True,False,True,84,356,Indiana,Illinois,23,20,,Bloomington,IN
+401403966,2022-09-02,2022-09-03T02:00Z,1,2,True,False,False,38,2628,Colorado,TCU,13,38,,Boulder,CO
+401424415,2022-09-02,2022-09-02T22:00Z,1,2,True,False,False,222,2329,Villanova,Lehigh,45,17,,Philadelphia,PA
+401435072,2022-09-02,2022-09-02T23:00Z,1,2,True,False,False,2771,107,Merrimack,Holy Cross,17,31,,North Andover,MA

@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400945256,2017-09-14,2017-09-15T00:00Z,3,2,True,False,True,68,167,Boise St,New Mexico,28,14,,Boise,ID

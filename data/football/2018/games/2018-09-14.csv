@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401019484,2018-09-14,2018-09-14T23:00Z,3,2,True,False,False,235,2247,Memphis,Georgia State,59,22,,Memphis,TN
+401030259,2018-09-14,2018-09-14T18:30Z,3,2,True,False,True,2678,2193,VMI,ETSU,24,27,Moved from Sept. 15,Lexington,VA
+401029988,2018-09-14,2018-09-14T22:00Z,3,2,True,False,False,2241,2717,Gardner-Webb,W Carolina,10,28,MOVED FROM SEPT. 15,Boiling Springs,NC
+401029826,2018-09-14,2018-09-15T02:05Z,3,2,True,False,False,13,225,Cal Poly,Brown,44,15,,San Luis Obispo,CA

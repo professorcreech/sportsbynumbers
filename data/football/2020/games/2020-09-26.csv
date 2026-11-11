@@ -1,0 +1,31 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401236951,2020-09-26,2020-09-26T23:00Z,4,2,True,False,True,142,333,Missouri,Alabama,19,38,,Columbia,MO
+401235996,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,201,2306,Oklahoma,Kansas St,35,38,,Norman,OK
+401237033,2020-09-26,2020-09-26T20:00Z,4,2,True,False,True,8,61,Arkansas,Georgia,10,37,,Fayetteville,AR
+401236952,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,145,57,Ole Miss,Florida,35,51,,Oxford,MS
+401237035,2020-09-26,2020-09-26T19:30Z,4,2,True,False,True,99,344,LSU,Mississippi St,34,44,,Baton Rouge,LA
+401237034,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,2,96,Auburn,Kentucky,29,13,,Auburn,AL
+401235995,2020-09-26,2020-09-26T19:30Z,4,2,True,False,True,2641,251,Texas Tech,Texas,56,63,,Lubbock,TX
+401212536,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,151,2116,East Carolina,UCF,28,51,,Greenville,NC
+401240996,2020-09-26,2020-09-26T19:30Z,4,2,True,False,False,2132,349,Cincinnati,Army,24,10,,Cincinnati,OH
+401235997,2020-09-26,2020-09-26T19:30Z,4,2,True,False,True,197,277,Oklahoma St,West Virginia,27,13,,Stillwater,OK
+401237036,2020-09-26,2020-09-26T23:30Z,4,2,True,False,True,2579,2633,South Carolina,Tennessee,27,31,,Columbia,SC
+401236223,2020-09-26,2020-09-27T02:15Z,4,2,True,False,False,252,2653,BYU,Troy,48,7,,Provo,UT
+401215303,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,309,290,Louisiana,GA Southern,20,18,,Lafayette,LA
+401234566,2020-09-26,2020-09-27T00:00Z,4,2,True,False,True,259,152,Virginia Tech,NC State,45,24,,Blacksburg,VA
+401234595,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,221,97,Pitt,Louisville,23,20,,Pittsburgh,PA
+401234594,2020-09-26,2020-09-26T16:00Z,4,2,True,False,True,183,59,Syracuse,Georgia Tech,37,20,,Syracuse,NY
+401236253,2020-09-26,2020-09-26T16:00Z,4,2,True,False,False,2026,2097,App State,Campbell,52,21,,Boone,NC
+401207126,2020-09-26,2020-09-26T17:00Z,4,2,True,False,False,2335,2229,Liberty,FIU,36,34,,Lynchburg,VA
+401235994,2020-09-26,2020-09-26T17:30Z,4,2,True,False,True,2628,66,TCU,Iowa State,34,37,,Fort Worth,TX
+401234734,2020-09-26,2020-09-26T18:30Z,4,2,True,False,False,2572,2655,Southern Miss,Tulane,24,66,,Hattiesburg,MS
+401240194,2020-09-26,2020-09-26T19:30Z,4,2,True,False,False,2433,2638,UL Monroe,UTEP,6,31,,Monroe,LA
+401234638,2020-09-26,2020-09-26T20:00Z,4,2,True,False,True,258,150,Virginia,Duke,38,20,,Charlottesville,VA
+401241303,2020-09-26,2020-09-26T22:00Z,4,2,True,False,False,103,326,Boston College,Texas St,24,21,,Chestnut Hill,MA
+401212485,2020-09-26,2020-09-26T23:00Z,4,2,True,False,False,2567,2617,SMU,SF Austin,50,7,,Dallas,TX
+401232157,2020-09-26,2020-09-26T23:00Z,4,2,True,False,False,2348,2277,Louisiana Tech,Houston Baptist,66,38,,Ruston,LA
+401234593,2020-09-26,2020-09-26T23:30Z,4,2,True,False,True,2390,52,Miami,Florida St,52,10,,Miami Gardens,FL
+401235993,2020-09-26,2020-09-26T23:30Z,4,2,True,False,True,239,2305,Baylor,Kansas,47,14,,Waco,TX
+401237037,2020-09-26,2020-09-26T23:30Z,4,2,True,False,True,245,238,Texas A&M,Vanderbilt,17,12,,College Station,TX
+401236381,2020-09-26,2020-09-27T00:00Z,4,2,True,False,False,2110,2623,C Arkansas,Missouri St,27,20,,Conway,AR
+401237493,2020-09-26,2020-09-26T17:00Z,4,2,True,False,False,2643,2198,The Citadel,E Kentucky,14,37,,Charleston,SC

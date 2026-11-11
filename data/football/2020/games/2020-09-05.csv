@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237353,2020-09-05,2020-09-05T17:00Z,1,2,True,False,False,276,2198,Marshall,E Kentucky,59,0,,Huntington,WV
+401235700,2020-09-05,2020-09-05T17:30Z,1,2,True,False,False,349,2393,Army,MTSU,42,0,,West Point,NY
+401212484,2020-09-05,2020-09-05T20:30Z,1,2,True,False,False,326,2567,Texas St,SMU,24,31,,San Marcos,TX
+401207098,2020-09-05,2020-09-05T23:30Z,1,2,True,False,False,249,2277,North Texas,Houston Baptist,57,31,,Denton,TX
+401212553,2020-09-05,2020-09-06T00:00Z,1,2,True,False,False,235,2032,Memphis,Arkansas St,37,24,,Memphis,TN
+401239884,2020-09-05,2020-09-06T01:00Z,1,2,True,False,False,2638,2617,UTEP,SF Austin,24,14,,El Paso,TX

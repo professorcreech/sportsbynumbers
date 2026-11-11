@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876107,2016-12-31,2016-12-31T20:00Z,1,3,True,True,False,333,264,Alabama,Washington,24,7,Chick-fil-A Peach Bowl - CFP Semifinal,Atlanta,GA
+400876108,2016-12-31,2017-01-01T00:00Z,1,3,True,True,False,228,194,Clemson,OSU,31,0,PlayStation Fiesta Bowl - CFP Semifinal,Glendale,AZ
+400876106,2016-12-31,2016-12-31T16:00Z,1,3,True,True,False,97,99,Louisville,LSU,9,29,BUFFALO WILD WINGS CITRUS BOWL,Orlando,FL
+400876113,2016-12-31,2016-12-31T16:00Z,1,3,True,True,False,96,59,Kentucky,Georgia Tech,18,33,TAXSLAYER BOWL,Jacksonville,FL

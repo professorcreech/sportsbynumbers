@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401013466,2018-09-27,2018-09-28T00:00Z,5,2,True,False,True,2390,153,Miami,UNC,47,10,,Miami Gardens,FL
+401030099,2018-09-27,2018-09-27T23:00Z,5,2,True,False,True,282,2460,Indiana State,Northern Iowa,0,33,,Terre Haute,IN
+401030525,2018-09-27,2018-09-27T23:00Z,5,2,True,False,True,2448,2569,NC A&T,S Carolina St,31,16,,Greensboro,NC
+401083849,2018-09-27,2018-09-27T23:00Z,5,2,True,False,False,2506,2877,Presbyterian,Lindsey Wilson,10,0,,Clinton,SC

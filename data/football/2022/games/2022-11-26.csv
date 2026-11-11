@@ -1,0 +1,58 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401403959,2022-11-26,2022-11-26T17:00Z,13,2,True,False,False,61,59,Georgia,Georgia Tech,37,14,,Athens,GA
+401405153,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,194,130,Ohio State,Michigan,23,45,,Columbus,OH
+401404120,2022-11-26,2022-11-26T21:00Z,13,2,True,False,True,2628,66,TCU,Iowa State,62,14,,Fort Worth,TX
+401403963,2022-11-26,2022-11-27T00:00Z,13,2,True,False,True,245,99,Texas A&M,LSU,38,23,,College Station,TX
+401404133,2022-11-26,2022-11-27T00:30Z,13,2,True,False,False,30,87,USC,Notre Dame,38,27,,Los Angeles,CA
+401403957,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,333,2,Alabama,Auburn,49,27,,Tuscaloosa,AL
+401403962,2022-11-26,2022-11-26T17:00Z,13,2,True,False,False,228,2579,Clemson,South Carolina,30,31,,Clemson,SC
+401404047,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,204,2483,Oregon St,Oregon,38,34,,Corvallis,OR
+401403964,2022-11-26,2022-11-27T00:30Z,13,2,True,False,True,238,2633,Vanderbilt,Tennessee,0,56,,Nashville,TN
+401405154,2022-11-26,2022-11-26T21:00Z,13,2,True,False,True,213,127,Penn State,Michigan St,35,16,,University Park,PA
+401404121,2022-11-26,2022-11-27T01:00Z,13,2,True,False,True,2306,2305,Kansas St,Kansas,47,27,,Manhattan,KS
+401404051,2022-11-26,2022-11-27T03:30Z,13,2,True,False,True,265,264,Washington St,Washington,33,51,,Pullman,WA
+401404048,2022-11-26,2022-11-26T21:00Z,13,2,True,False,True,38,254,Colorado,Utah,21,63,,Boulder,CO
+401415667,2022-11-26,2022-11-27T00:00Z,13,2,True,False,True,58,2116,South Florida,UCF,39,46,,Tampa,FL
+401403960,2022-11-26,2022-11-26T20:00Z,13,2,True,False,False,96,97,Kentucky,Louisville,26,13,,Lexington,KY
+401404123,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,197,277,Oklahoma St,West Virginia,19,24,,Stillwater,OK
+401404144,2022-11-26,2022-11-26T17:00Z,13,2,True,False,False,113,349,UMass,Army,7,44,,Amherst,MA
+401404166,2022-11-26,2022-11-26T17:00Z,13,2,True,False,False,2335,166,Liberty,New Mexico St,14,49,,Lynchburg,VA
+401405152,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,120,164,Maryland,Rutgers,37,0,,College Park,MD
+401426383,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,256,324,James Madison,Coastal Car,47,7,,Harrisonburg,VA
+401426389,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,6,295,South Alabama,Old Dominion,27,20,,Mobile,AL
+401426390,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,276,2247,Marshall,Georgia St,28,23,,Huntington,WV
+401426615,2022-11-26,2022-11-26T17:00Z,13,2,True,False,True,2226,98,FAU,Western KY,31,32,,Boca Raton,FL
+401415664,2022-11-26,2022-11-26T18:00Z,13,2,True,False,True,218,151,Temple,East Carolina,46,49,,Philadelphia,PA
+401416653,2022-11-26,2022-11-26T18:00Z,13,2,True,False,True,2084,2309,Buffalo,Kent State,27,30,,Buffalo,NY
+401416652,2022-11-26,2022-11-26T18:30Z,13,2,True,False,True,2459,2006,N Illinois,Akron,12,44,,Dekalb,IL
+401426617,2022-11-26,2022-11-26T19:00Z,13,2,True,False,True,249,242,North Texas,Rice,21,17,,Denton,TX
+401505430,2022-11-26,2022-11-26T19:00Z,13,2,True,False,False,48,2598,Delaware,Saint Francis,56,17,FCS Championship - First Round,Newark,DE
+401405149,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,77,356,Northwestern,Illinois,3,41,,Evanston,IL
+401405150,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,275,135,Wisconsin,Minnesota,16,23,,Madison,WI
+401405151,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,84,2509,Indiana,Purdue,16,30,,Bloomington,IN
+401411174,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,150,154,Duke,Wake Forest,34,31,,Durham,NC
+401415271,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,23,62,San José St,Hawai'i,27,14,,San Jose,CA
+401415666,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,2567,235,SMU,Memphis,34,31,,Dallas,TX
+401426384,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,2032,2653,Arkansas St,Troy,19,48,,Jonesboro,AR
+401426616,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,2348,5,Louisiana Tech,UAB,27,37,,Ruston,LA
+401426618,2022-11-26,2022-11-26T20:30Z,13,2,True,False,True,2636,2638,UTSA,UTEP,34,31,,San Antonio,TX
+401426385,2022-11-26,2022-11-26T22:00Z,13,2,True,False,True,2433,2572,UL Monroe,Southern Miss,10,20,,Monroe,LA
+401426386,2022-11-26,2022-11-26T22:00Z,13,2,True,False,True,326,309,Texas St,Louisiana,13,41,,San Marcos,TX
+401415272,2022-11-26,2022-11-26T23:00Z,13,2,True,False,True,2439,2440,UNLV,Nevada,27,22,,Las Vegas,NV
+401426382,2022-11-26,2022-11-26T23:00Z,13,2,True,False,True,290,2026,GA Southern,App State,51,48,,Statesboro,GA
+401426614,2022-11-26,2022-11-26T23:00Z,13,2,True,False,True,2229,2393,FIU,MTSU,28,33,,Miami,FL
+401404122,2022-11-26,2022-11-27T00:30Z,13,2,True,False,True,2641,201,Texas Tech,Oklahoma,51,48,,Lubbock,TX
+401411173,2022-11-26,2022-11-27T00:30Z,13,2,True,False,True,103,183,Boston College,Syracuse,23,32,,Chestnut Hill,MA
+401415668,2022-11-26,2022-11-27T00:30Z,13,2,True,False,True,248,202,Houston,Tulsa,30,37,,Houston,TX
+401411175,2022-11-26,2022-11-27T01:00Z,13,2,True,False,True,2390,221,Miami,Pitt,16,42,,Miami Gardens,FL
+401415267,2022-11-26,2022-11-27T02:00Z,13,2,True,False,True,21,2005,San Diego St,Air Force,3,13,,San Diego,CA
+401404049,2022-11-26,2022-11-27T04:00Z,13,2,True,False,False,24,252,Stanford,BYU,26,35,,Stanford,CA
+401505436,2022-11-26,2022-11-26T17:00Z,13,2,True,False,False,231,2210,Furman,Elon,31,6,FCS Championship - First Round,Greenville,SC
+401423953,2022-11-26,2022-11-26T19:00Z,13,2,True,True,True,2582,2755,Southern,Grambling,34,17,,New Orleans,LA
+401505431,2022-11-26,2022-11-26T19:00Z,13,2,True,False,False,160,2230,New Hampshire,Fordham,52,42,FCS Championship - First Round,Durham,NH
+401505437,2022-11-26,2022-11-26T19:00Z,13,2,True,False,False,257,2166,Richmond,Davidson,41,0,FCS Championship - First Round,Richmond,VA
+401505363,2022-11-26,2022-11-26T19:30Z,13,2,True,False,True,2170,110242,Delta St,West Florida,27,38,Division II Championship - Second Round,Cleveland,MS
+401505433,2022-11-26,2022-11-26T21:00Z,13,2,True,False,False,2692,155,Weber St,North Dakota,38,31,FCS Championship - First Round,Ogden,UT
+401505432,2022-11-26,2022-11-26T22:00Z,13,2,True,False,False,2198,2241,E Kentucky,Gardner-Webb,41,52,FCS Championship - First Round,Richmond,KY
+401505435,2022-11-26,2022-11-27T00:00Z,13,2,True,False,False,2545,70,SE Louisiana,Idaho,45,42,FCS Championship - First Round,Hammond,LA
+401505434,2022-11-26,2022-11-27T03:00Z,13,2,True,False,False,149,2546,Montana,SE Missouri St,34,24,FCS Championship - First Round,Missoula,MT

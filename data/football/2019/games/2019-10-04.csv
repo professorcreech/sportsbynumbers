@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401117875,2019-10-04,2019-10-05T00:00Z,6,2,True,False,True,2132,2116,Cincinnati,UCF,27,24,,Cincinnati,OH
+401117519,2019-10-04,2019-10-05T02:00Z,6,2,True,False,True,23,167,San Jose State,New Mexico,32,21,,San Jose,CA
+401128689,2019-10-04,2019-10-04T23:00Z,6,2,True,False,True,219,159,Penn,Dartmouth,15,28,,Philadelphia,PA

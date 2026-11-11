@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401261454,2020-11-15,2020-11-15T17:00Z,11,2,True,False,True,26,25,UCLA,California,34,10,,Pasadena,CA

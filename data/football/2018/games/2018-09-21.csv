@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401012807,2018-09-21,2018-09-22T01:00Z,4,2,True,False,True,356,213,Illinois,Penn State,24,63,,Champaign,IL
+401019490,2018-09-21,2018-09-21T23:00Z,4,2,True,False,False,2116,2226,UCF,FAU,56,36,,Orlando,FL
+401012748,2018-09-21,2018-09-22T02:30Z,4,2,True,False,True,30,265,USC,Washington St,39,36,,Los Angeles,CA
+401029827,2018-09-21,2018-09-21T23:00Z,4,2,True,False,True,225,108,Brown,Harvard,17,31,,Providence,RI

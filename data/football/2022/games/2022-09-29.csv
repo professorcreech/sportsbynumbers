@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401415226,2022-09-29,2022-09-30T00:00Z,5,2,True,False,False,252,328,BYU,Utah State,38,26,,Provo,UT
+401403908,2022-09-29,2022-09-29T23:00Z,5,2,True,False,False,2579,2569,South Carolina,SC State,50,10,Moved from Oct 1,Columbia,SC

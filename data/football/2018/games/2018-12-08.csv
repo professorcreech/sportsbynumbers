@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401101694,2018-12-08,2018-12-08T17:00Z,15,2,True,False,False,2449,2142,North Dakota St,Colgate,35,0,FCS CHAMPIONSHIP - QUARTERFINALS,Fargo,ND
+401101695,2018-12-08,2018-12-08T19:00Z,15,2,True,False,False,338,2571,Kennesaw St,South Dakota St,17,27,FCS CHAMPIONSHIP - QUARTERFINALS,Kennesaw,GA
+401013376,2018-12-08,2018-12-08T20:00Z,15,2,True,True,False,349,2426,Army,Navy,17,10,,Philadelphia,PA
+401101696,2018-12-08,2018-12-08T21:00Z,15,2,True,False,False,331,302,E Washington,UC Davis,34,29,FCS CHAMPIONSHIP - QUARTERFINALS,Cheney,WA

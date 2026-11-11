@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401207134,2020-09-25,2020-09-26T00:00Z,4,2,True,False,True,2636,2393,UTSA,MTSU,37,35,,San Antonio,TX

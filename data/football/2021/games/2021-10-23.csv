@@ -1,0 +1,108 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401301027,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2426,2132,Navy,Cincinnati,20,27,,Annapolis,MD
+401287926,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2305,201,Kansas,Oklahoma,23,35,,Lawrence,KS
+401282111,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,333,2633,Alabama,Tennessee,52,24,,Tuscaloosa,AL
+401282779,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,130,77,Michigan,Northwestern,33,7,,Ann Arbor,MI
+401287925,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,66,197,Iowa State,Oklahoma St,24,21,,Ames,IA
+401309879,2021-10-23,2021-10-23T19:41Z,8,2,True,False,True,26,2483,UCLA,Oregon,31,34,,Pasadena,CA
+401282709,2021-10-23,2021-10-23T23:30Z,8,2,True,False,False,87,30,Notre Dame,USC,31,16,,Notre Dame,IN
+401282662,2021-10-23,2021-10-23T16:00Z,8,2,True,False,False,349,154,Army,Wake Forest,56,70,,West Point,NY
+401282114,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,245,2579,Texas A&M,South Carolina,44,14,,College Station,TX
+401282665,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,2390,152,Miami,NC State,31,30,,Miami Gardens,FL
+401310724,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2005,21,Air Force,San Diego St,14,20,,USAF Academy,CO
+401282666,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,221,228,Pitt,Clemson,27,17,,Pittsburgh,PA
+401282237,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2348,2636,Louisiana Tech,UTSA,16,45,,Ruston,LA
+401282821,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,2509,275,Purdue,Wisconsin,13,30,,West Lafayette,IN
+401282112,2021-10-23,2021-10-23T16:00Z,8,2,True,False,False,8,2029,Arkansas,AR-Pine Bluff,45,3,,Little Rock,AR
+401282663,2021-10-23,2021-10-23T16:00Z,8,2,True,False,False,52,113,Florida St,UMass,59,3,,Tallahassee,FL
+401282717,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,213,356,Penn State,Illinois,18,20,,University Park,PA
+401287928,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2641,2306,Texas Tech,Kansas St,24,25,,Lubbock,TX
+401309574,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,189,2199,Bowling Green,E Michigan,24,55,,Bowling Green,OH
+401309577,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2117,2459,C Michigan,N Illinois,38,39,,Mount Pleasant,MI
+401282668,2021-10-23,2021-10-23T16:30Z,8,2,True,False,True,259,183,Virginia Tech,Syracuse,36,41,,Blacksburg,VA
+401309576,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,195,2309,Ohio,Kent State,27,34,,Athens,OH
+401309625,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2247,326,Georgia St,Texas St,28,16,,Atlanta,GA
+401328001,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,2534,55,Sam Houston,J'Ville St,42,7,,Huntsville,TX
+401328179,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,48,256,Delaware,James Madison,10,22,,Newark,DE
+401282113,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,145,99,Ole Miss,LSU,31,17,,Oxford,MS
+401282238,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,5,242,UAB,Rice,24,30,,Birmingham,AL
+401282767,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,135,120,Minnesota,Maryland,34,16,,Minneapolis,MN
+401308838,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2050,193,Ball State,Miami OH,17,24,,Muncie,IN
+401309573,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2649,2711,Toledo,W Michigan,34,15,,Toledo,OH
+401309575,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2006,2084,Akron,Buffalo,10,45,,Akron,OH
+401309878,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,25,38,California,Colorado,26,3,,Berkeley,CA
+401309881,2021-10-23,2021-10-23T19:30Z,8,2,True,False,False,265,252,Washington St,BYU,19,21,,Pullman,WA
+401310726,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2751,167,Wyoming,New Mexico,3,14,,Laramie,WY
+401328356,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2449,2623,N Dakota St,Missouri St,27,20,,Fargo,ND
+401282115,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,238,344,Vanderbilt,Mississippi St,6,45,,Nashville,TN
+401282240,2021-10-23,2021-10-23T20:00Z,8,2,True,False,False,249,2335,North Texas,Liberty,26,35,,Denton,TX
+401282664,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,97,103,Louisville,Boston College,28,14,,Louisville,KY
+401301028,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,248,151,Houston,East Carolina,31,24,,Houston,TX
+401328113,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,2097,338,Campbell,Kennesaw St,7,30,,Buies Creek,NC
+401282236,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2229,98,FIU,Western KY,19,34,,Miami,FL
+401301029,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,58,218,South Florida,Temple,34,14,,Tampa,FL
+401309626,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2433,6,UL Monroe,South Alabama,41,31,,Monroe,LA
+401310727,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,278,2440,Fresno St,Nevada,34,32,,Fresno,CA
+401282667,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,258,59,Virginia,Georgia Tech,48,40,,Charlottesville,VA
+401282730,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,84,194,Indiana,Ohio State,7,54,,Bloomington,IN
+401287927,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,2628,277,TCU,West Virginia,17,29,,Fort Worth,TX
+401309880,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,204,254,Oregon St,Utah,42,34,,Corvallis,OR
+401328078,2021-10-23,2021-10-24T01:00Z,8,2,True,False,True,16,2464,Sacramento St,N Arizona,44,0,,Sacramento,CA
+401310728,2021-10-23,2021-10-24T03:59Z,8,2,True,False,False,62,166,Hawai'i,New Mexico St,48,34,,Honolulu,HI
+401328272,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,43,219,Yale,Penn,42,28,,New Haven,CT
+401328517,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2368,2413,Marist,Morehead St,24,27,,Poughkeepsie,NY
+401329415,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2385,215,Mercyhurst,Slippery Rock,17,20,,Erie,PA
+401332294,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2529,2184,Sacred Heart,Duquesne,31,13,,Fairfield,CT
+401332312,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2681,2803,Wagner,Bryant,10,31,,Staten Island,NY
+401333440,2021-10-23,2021-10-23T16:00Z,8,2,True,False,True,2115,2341,C Connecticut,Long Island,13,30,,New Britain,CT
+401328164,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,399,311,UAlbany,Maine,16,19,,Albany,NY
+401328187,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2210,160,Elon,New Hampshire,24,10,,Elon,NC
+401328253,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,172,225,Cornell,Brown,45,49,,Ithaca,NY
+401328301,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2415,2428,Morgan St,NC Central,17,28,,Baltimore,MD
+401328306,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,47,2450,Howard,Norfolk St,31,45,,Washington,DC
+401328342,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,282,2754,Indiana St,Youngstown St,28,17,,Terre Haute,IN
+401328481,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2083,46,Bucknell,Georgetown,21,29,,Lewisburg,PA
+401328503,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2086,2166,Butler,Davidson,35,49,,Indianapolis,IN
+401328511,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2674,2168,Valparaiso,Dayton,45,28,,Valparaiso,IN
+401328540,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2535,236,Samford,Chattanooga,13,55,,Birmingham,AL
+401328590,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2377,2916,McNeese,Incarnate Word,28,20,,Lake Charles,LA
+401328929,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,284,2441,Stonehill,New Haven,20,42,,North Easton,MA
+401332317,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2181,56,Drake,Stetson,0,1,Drake unable to play due to COVID-19,Des Moines,IA
+401334822,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2506,301,Presbyterian,San Diego,28,69,,Clinton,SC
+401336487,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,2230,2329,Fordham,Lehigh,35,28,,Bronx,NY
+401344316,2021-10-23,2021-10-23T17:00Z,8,2,True,False,True,163,108,Princeton,Harvard,18,16,,Princeton,NJ
+401328128,2021-10-23,2021-10-23T17:30Z,8,2,True,False,True,2241,2523,Gardner-Webb,Robert Morris,28,17,,Boiling Springs,NC
+401328135,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2261,2448,Hampton,NC A&T,30,9,,Hampton,VA
+401328292,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2169,2569,Delaware St,SC State,7,13,,Dover,DE
+401328550,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2643,2717,The Citadel,W Carolina,31,45,,Charleston,SC
+401328557,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,231,2193,Furman,ETSU,13,17,,Greenville,SC
+401328612,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2815,2586,Lindenwood,SW Baptist,48,24,,Saint Charles,MO
+401328644,2021-10-23,2021-10-23T18:00Z,8,2,True,False,True,2296,2065,Jackson St,Bethune,42,12,,Jackson,MS
+401328461,2021-10-23,2021-10-23T18:30Z,8,2,True,False,False,2635,2355,Tennessee Tech,VA Lynchburg,56,13,,Cookeville,TN
+401328062,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,147,304,Montana St,Idaho St,27,9,,Bozeman,MT
+401328123,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,2453,2127,North Alabama,Charleston So,45,22,,Florence,AL
+401328364,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,155,2710,North Dakota,W Illinois,34,10,,Grand Forks,ND
+401328375,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,2571,2460,S Dakota St,Northern Iowa,17,26,,Brookings,SD
+401328408,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,93,2046,Murray St,Austin Peay,6,47,,Murray,KY
+401328417,2021-10-23,2021-10-23T19:00Z,8,2,True,False,True,2197,2634,E Illinois,Tennessee St,0,28,,Charleston,IL
+401328465,2021-10-23,2021-10-23T19:00Z,8,2,True,False,False,2630,2546,UT Martin,SE Missouri,38,30,,Martin,TN
+401328214,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,222,227,Villanova,Rhode Island,44,0,,Philadelphia,PA
+401328223,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2619,257,Stony Brook,Richmond,27,14,,Stony Brook,NY
+401328232,2021-10-23,2021-10-23T19:30Z,8,2,True,False,True,2729,119,William & Mary,Towson,40,14,,Williamsburg,VA
+401328044,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,331,2692,E Washington,Weber St,34,35,,Cheney,WA
+401328602,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,2466,2545,N'Western St,SE Louisiana,14,51,,Natchitoches,LA
+401328660,2021-10-23,2021-10-23T20:00Z,8,2,True,False,True,2400,50,Miss Valley St,Florida A&M,28,31,,Itta Bena,MS
+401328474,2021-10-23,2021-10-23T21:00Z,8,2,True,False,True,107,2142,Holy Cross,Colgate,42,10,,Worcester,MA
+401328996,2021-10-23,2021-10-23T21:00Z,8,2,True,False,True,110242,2560,West Florida,Shorter,45,23,,Pensacola,FL
+401328575,2021-10-23,2021-10-23T22:00Z,8,2,True,False,True,2382,2747,Mercer,Wofford,45,14,,Macon,GA
+401329014,2021-10-23,2021-10-23T22:00Z,8,2,True,False,True,2698,2822,West Georgia,N Greenville,34,12,,Carrollton,GA
+401327972,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2320,2110,Lamar,C Arkansas,38,49,,Beaumont,TX
+401328026,2021-10-23,2021-10-23T23:00Z,8,2,True,False,False,2627,2395,Tarleton St,Midwestern St,17,14,,Stephenville,TX
+401328580,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2277,2447,Hou Christian,Nicholls,14,44,,Houston,TX
+401328680,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2582,2504,Southern,Prairie View,21,48,,Baton Rouge,LA
+401329157,2021-10-23,2021-10-23T23:00Z,8,2,True,False,True,2704,2837,West Texas A&M,East Texas A&M,3,15,,Canyon,TX
+401328052,2021-10-23,2021-10-23T23:30Z,8,2,True,False,True,70,149,Idaho,Montana,14,34,,Moscow,ID
+401328033,2021-10-23,2021-10-24T00:00Z,8,2,True,False,True,13,302,Cal Poly,UC Davis,13,24,,San Luis Obispo,CA
+401328082,2021-10-23,2021-10-24T00:00Z,8,2,True,False,True,253,2458,Southern Utah,N Colorado,9,17,,Cedar City,UT
+401328629,2021-10-23,2021-10-24T00:00Z,8,2,True,False,True,2640,2016,Texas Southern,Alcorn St,27,44,,Houston,TX
+401327983,2021-10-23,2021-10-24T01:00Z,8,2,True,False,False,3101,2617,Dixie State,SF Austin,20,37,,Saint George,UT

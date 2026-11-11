@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869542,2016-10-21,2016-10-21T23:00Z,8,2,True,False,True,218,58,Temple,USF,46,30,,Philadelphia,PA
+400869140,2016-10-21,2016-10-22T02:30Z,8,2,True,False,True,25,2483,California,Oregon,52,49,,Berkeley,CA
+400869230,2016-10-21,2016-10-22T02:30Z,8,2,True,False,True,21,23,San Diego State,San Jose State,42,3,,San Diego,CA
+400871330,2016-10-21,2016-10-21T23:00Z,8,2,True,False,True,43,219,Yale,Penn,7,42,,New Haven,CT
+400872835,2016-10-21,2016-10-21T23:00Z,8,2,True,False,True,2598,2184,St Francis (PA),Duquesne,14,10,,Loretto,PA

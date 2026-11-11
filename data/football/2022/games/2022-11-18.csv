@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401415659,2022-11-18,2022-11-19T02:00Z,12,2,True,False,True,202,58,Tulsa,South Florida,48,42,,Tulsa,OK
+401415264,2022-11-18,2022-11-19T02:45Z,12,2,True,False,True,167,21,New Mexico,San Diego St,10,34,,Albuquerque,NM

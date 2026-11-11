@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032075,2018-12-28,2018-12-29T02:00Z,1,3,True,True,False,265,66,Washington St,Iowa State,28,26,VALERO ALAMO BOWL,San Antonio,TX
+401032074,2018-12-28,2018-12-28T22:15Z,1,3,True,True,False,183,277,Syracuse,West Virginia,34,18,CAMPING WORLD BOWL,Orlando,FL
+401032073,2018-12-28,2018-12-28T18:30Z,1,3,True,True,False,2,2509,Auburn,Purdue,63,14,FRANKLIN AMERICAN MORTGAGE MUSIC CITY BOWL,Nashville,TN

@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400951510,2017-09-07,2017-09-07T23:30Z,2,2,True,False,False,2504,2534,PV A&M,Sam Houston,31,44,,Prairie View,TX
+400945253,2017-09-07,2017-09-08T00:00Z,2,2,True,False,False,328,304,Utah State,Idaho State,51,13,,Logan,UT
+400951387,2017-09-07,2017-09-07T23:00Z,2,2,True,False,False,2535,2695,Samford,West Alabama,49,41,,Birmingham,AL
+400977068,2017-09-07,2017-09-08T00:00Z,2,2,True,False,True,2815,196,Lindenwood,NE St,49,10,,Saint Charles,MO
+400952323,2017-09-07,2017-09-08T00:30Z,2,2,True,False,False,2640,2277,Texas Southern,Houston Baptist,17,24,,Houston,TX

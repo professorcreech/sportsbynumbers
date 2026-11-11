@@ -1,0 +1,27 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401019470,2018-08-30,2018-08-30T23:00Z,1,2,True,False,True,41,2116,UConn,UCF,17,56,,East Hartford,CT
+401013328,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,135,166,Minnesota,New Mexico St,48,10,,Minneapolis,MN
+401020671,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,2050,2115,Ball State,Cent Conn St,42,6,,Muncie,IN
+401021651,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,2247,338,Georgia State,Kennesaw St,24,20,,Atlanta,GA
+401029895,2018-08-30,2018-08-30T23:00Z,1,2,True,False,True,48,227,Delaware,URI,19,21,,Newark,DE
+401012675,2018-08-30,2018-08-31T00:00Z,1,2,True,False,False,254,2692,Utah,Weber State,41,10,,Salt Lake City,UT
+401013086,2018-08-30,2018-08-31T00:00Z,1,2,True,False,False,2655,154,Tulane,Wake Forest,17,23,,New Orleans,LA
+401013342,2018-08-30,2018-08-31T00:00Z,1,2,True,False,True,2509,77,Purdue,Northwestern,27,31,,West Lafayette,IN
+401013489,2018-08-30,2018-08-31T00:00Z,1,2,True,False,False,197,2623,Oklahoma State,Missouri State,58,17,,Stillwater,OK
+401014979,2018-08-30,2018-08-31T00:00Z,1,2,True,False,False,5,2542,UAB,Savannah State,52,0,,Birmingham,AL
+401021655,2018-08-30,2018-08-31T00:00Z,1,2,True,False,False,2433,2545,UL Monroe,SE Louisiana,34,31,,Monroe,LA
+401012258,2018-08-30,2018-08-31T00:30Z,1,2,True,False,False,245,2466,Texas A&M,Northwestern St,59,7,,College Station,TX
+401022511,2018-08-30,2018-08-31T02:00Z,1,2,True,False,False,23,302,San Jose State,UC Davis,38,44,,San Jose,CA
+401030567,2018-08-30,2018-08-30T22:00Z,1,2,True,False,False,2681,2075,Wagner,Bowie State,40,23,,Staten Island,NY
+401029921,2018-08-30,2018-08-30T23:00Z,1,2,True,False,True,311,160,Maine,UNH,35,7,,Orono,ME
+401029968,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,2097,2804,Campbell,Chowan,49,26,,Buies Creek,NC
+401030097,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,282,2825,Indiana State,Quincy,49,0,,Terre Haute,IN
+401030159,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,93,79,Murray State,S Illinois,10,49,,Murray,KY
+401030234,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,2198,2413,E Kentucky,Morehead State,49,23,,Richmond,KY
+401030248,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,236,2635,Chattanooga,Tenn Tech,34,10,,Chattanooga,TN
+401040148,2018-08-30,2018-08-30T23:00Z,1,2,True,False,False,110242,2105,W Fla,Carson-Newman,19,9,,,
+401030318,2018-08-30,2018-08-30T23:30Z,1,2,True,False,False,2535,2560,Samford,Shorter,66,9,,Birmingham,AL
+401030402,2018-08-30,2018-08-30T23:30Z,1,2,True,False,False,155,2400,North Dakota,Miss Valley St,35,7,,Grand Forks,ND
+401040529,2018-08-30,2018-08-31T00:00Z,1,2,True,False,True,2837,2658,TX A&M-Commerce,Texas A&M-Kingsville,37,36,,,
+401040582,2018-08-30,2018-08-31T00:00Z,1,2,True,False,True,2815,2687,Lindenwood,Washburn,14,27,,Saint Charles,MO
+401030172,2018-08-30,2018-08-31T01:00Z,1,2,True,False,False,147,2710,Montana State,W Illinois,26,23,,Bozeman,MT

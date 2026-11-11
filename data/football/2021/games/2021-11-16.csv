@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401309589,2021-11-16,2021-11-17T00:00Z,12,2,True,False,True,195,2649,Ohio,Toledo,23,35,,Athens,OH
+401309588,2021-11-16,2021-11-17T00:30Z,12,2,True,False,True,2199,2711,E Michigan,W Michigan,22,21,,Ypsilanti,MI
+401308841,2021-11-16,2021-11-17T01:00Z,12,2,True,False,True,193,189,Miami OH,Bowling Green,34,7,,Oxford,OH

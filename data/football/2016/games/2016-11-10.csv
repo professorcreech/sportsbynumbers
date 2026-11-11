@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869155,2016-11-10,2016-11-11T02:30Z,11,2,True,False,True,9,254,Arizona State,Utah,26,49,,Tempe,AZ
+400869483,2016-11-10,2016-11-11T00:30Z,11,2,True,False,True,150,153,Duke,UNC,28,27,,Durham,NC
+400869844,2016-11-10,2016-11-11T00:30Z,11,2,True,False,True,290,309,Ga Southern,Louisiana,26,33,,Statesboro,GA

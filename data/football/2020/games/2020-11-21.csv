@@ -1,0 +1,36 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237135,2020-11-21,2020-11-21T21:00Z,12,2,True,False,True,333,96,Alabama,Kentucky,63,3,,Tuscaloosa,AL
+401247326,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,194,84,Ohio State,Indiana,42,35,,Columbus,OH
+401237138,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,238,57,Vanderbilt,Florida,17,38,,Nashville,TN
+401212540,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,2116,2132,UCF,Cincinnati,33,36,,Orlando,FL
+401209818,2020-11-21,2020-11-21T20:00Z,12,2,True,False,False,252,2453,BYU,North Alabama,66,14,,Provo,UT
+401247323,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,77,275,Northwestern,Wisconsin,17,7,,Evanston,IL
+401249415,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,2483,26,Oregon,UCLA,38,35,,Eugene,OR
+401237139,2020-11-21,2020-11-22T00:30Z,12,2,True,False,True,61,344,Georgia,Mississippi St,31,24,,Athens,GA
+401236027,2020-11-21,2020-11-22T00:30Z,12,2,True,False,True,201,197,Oklahoma,Oklahoma St,41,13,,Norman,OK
+401215333,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,324,2026,Coastal,App State,34,23,,Conway,SC
+401236025,2020-11-21,2020-11-21T21:00Z,12,2,True,False,True,66,2306,Iowa State,Kansas St,45,0,,Ames,IA
+401249410,2020-11-21,2020-11-22T03:30Z,12,2,True,False,True,254,30,Utah,USC,17,33,,Salt Lake City,UT
+401234647,2020-11-21,2020-11-22T00:30Z,12,2,True,False,False,152,2335,NC State,Liberty,15,14,,Raleigh,NC
+401237137,2020-11-21,2020-11-22T00:00Z,12,2,True,False,True,2,2633,Auburn,Tennessee,30,17,,Auburn,AL
+401212519,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,218,151,Temple,East Carolina,3,28,,Philadelphia,PA
+401215334,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,326,2032,Texas St,Arkansas St,47,45,,San Marcos,TX
+401235975,2020-11-21,2020-11-21T17:00Z,12,2,True,False,False,349,290,Army,GA Southern,28,27,,West Point,NY
+401237136,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,8,99,Arkansas,LSU,24,27,,Fayetteville,AR
+401247321,2020-11-21,2020-11-21T17:00Z,12,2,True,False,True,158,356,Nebraska,Illinois,23,41,,Lincoln,NE
+401247374,2020-11-21,2020-11-21T17:00Z,12,2,True,False,False,235,2617,Memphis,SF Austin,56,14,,Memphis,TN
+401207181,2020-11-21,2020-11-21T19:00Z,12,2,True,False,True,98,2229,Western KY,FIU,38,21,,Bowling Green,KY
+401207184,2020-11-21,2020-11-21T19:00Z,12,2,True,False,True,249,242,North Texas,Rice,27,17,,Denton,TX
+401207185,2020-11-21,2020-11-21T20:00Z,12,2,True,False,True,2572,2636,Southern Miss,UTSA,20,23,,Hattiesburg,MS
+401215335,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,6,2247,South Alabama,Georgia St,14,31,,Mobile,AL
+401240641,2020-11-21,2020-11-21T20:30Z,12,2,True,False,False,2653,2393,Troy,MTSU,17,20,,Troy,AL
+401247327,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,213,2294,Penn State,Iowa,21,41,,University Park,PA
+401249019,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,2440,21,Nevada,San Diego St,26,21,,Reno,NV
+401249411,2020-11-21,2020-11-21T20:30Z,12,2,True,False,True,204,25,Oregon St,California,31,27,,Corvallis,OR
+401234648,2020-11-21,2020-11-21T21:00Z,12,2,True,False,True,221,259,Pitt,Virginia Tech,47,14,,Pittsburgh,PA
+401248275,2020-11-21,2020-11-21T21:00Z,12,2,True,False,False,258,2000,Virginia,Abilene Chrstn,55,15,,Charlottesville,VA
+401237141,2020-11-21,2020-11-22T00:30Z,12,2,True,False,True,2579,142,South Carolina,Missouri,10,17,,Columbia,SC
+401247324,2020-11-21,2020-11-22T00:30Z,12,2,True,False,True,164,130,Rutgers,Michigan,42,48,,Piscataway,NJ
+401249413,2020-11-21,2020-11-22T01:00Z,12,2,True,False,True,264,12,Washington,Arizona,44,27,,Seattle,WA
+401249017,2020-11-21,2020-11-22T04:00Z,12,2,True,False,True,62,68,Hawai'i,Boise St,32,40,,,
+401239875,2020-11-21,2020-11-21T20:00Z,12,2,True,False,False,2198,2717,E Kentucky,W Carolina,49,17,,Richmond,KY

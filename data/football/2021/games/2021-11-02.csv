@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401309579,2021-11-02,2021-11-02T23:00Z,10,2,True,False,True,2006,2050,Akron,Ball State,25,31,,Akron,OH
+401308839,2021-11-02,2021-11-02T23:30Z,10,2,True,False,True,195,193,Ohio,Miami OH,35,33,,Athens,OH
+401309580,2021-11-02,2021-11-02T23:30Z,10,2,True,False,True,2649,2199,Toledo,E Michigan,49,52,,Toledo,OH

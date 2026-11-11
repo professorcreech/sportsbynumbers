@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941838,2017-09-24,2017-09-24T16:00Z,4,2,True,False,True,41,151,UConn,ECU,38,41,,East Hartford,CT

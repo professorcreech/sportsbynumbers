@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400935304,2017-10-26,2017-10-27T01:00Z,9,2,True,False,True,204,24,Oregon State,Stanford,14,15,,Corvallis,OR
+400945005,2017-10-26,2017-10-26T23:00Z,9,2,True,False,True,2459,2199,N Illinois,E Michigan,30,27,,Dekalb,IL
+400945006,2017-10-26,2017-10-26T23:00Z,9,2,True,False,True,2050,2649,Ball State,Toledo,17,58,,Muncie,IN
+400944861,2017-10-26,2017-10-26T23:30Z,9,2,True,False,True,2247,6,Georgia State,South Alabama,21,13,,Atlanta,GA
+400976605,2017-10-26,2017-10-26T23:00Z,9,2,True,False,True,2698,2560,West Georgia,Shorter,42,6,,,

@@ -1,0 +1,18 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401539483,2023-12-02,2023-12-02T21:00Z,14,2,True,True,False,333,61,Alabama,Georgia,27,24,SEC Championship,Atlanta,GA
+401539480,2023-12-02,2023-12-03T01:00Z,14,2,True,True,False,2294,130,Iowa,Michigan,0,26,Big Ten Championship,Indianapolis,IN
+401539478,2023-12-02,2023-12-03T01:00Z,14,2,True,True,False,52,97,Florida St,Louisville,16,6,ACC Championship,Charlotte,NC
+401539479,2023-12-02,2023-12-02T17:00Z,14,2,True,True,False,251,197,Texas,Oklahoma St,49,21,Dr Pepper Big 12 Championship,Arlington,TX
+401539477,2023-12-02,2023-12-02T21:00Z,14,2,True,False,False,2655,2567,Tulane,SMU,14,26,American Athletic Championship,New Orleans,LA
+401539481,2023-12-02,2023-12-02T17:00Z,14,2,True,True,False,2649,193,Toledo,Miami OH,14,23,MAC Championship,Detroit,MI
+401615819,2023-12-02,2023-12-02T19:00Z,14,2,True,False,False,233,16,South Dakota,Sacramento St,34,24,FCS Championship - Second Round,Vermillion,SD
+401539482,2023-12-02,2023-12-02T20:00Z,14,2,True,False,False,2439,68,UNLV,Boise St,20,44,Mountain West Championship,Las Vegas,NV
+401615900,2023-12-02,2023-12-02T20:00Z,14,2,True,False,False,147,2449,Montana St,N Dakota St,34,35,FCS Championship - Second Round,Bozeman,MT
+401539484,2023-12-02,2023-12-02T21:00Z,14,2,True,False,False,2653,2026,Troy,App State,49,23,Sun Belt Championship,Troy,AL
+401615859,2023-12-02,2023-12-03T02:00Z,14,2,True,False,False,149,48,Montana,Delaware,49,19,FCS Championship - Second Round,Missoula,MT
+401615860,2023-12-02,2023-12-02T17:00Z,14,2,True,False,False,399,257,UAlbany,Richmond,41,13,FCS Championship - Second Round,Albany,NY
+401615939,2023-12-02,2023-12-02T17:00Z,14,2,True,False,False,222,2754,Villanova,Youngstown St,45,28,FCS Championship - Second Round,Philadelphia,PA
+401615901,2023-12-02,2023-12-02T18:00Z,14,2,True,False,False,231,236,Furman,Chattanooga,26,7,FCS Championship - Second Round,Greenville,SC
+401615899,2023-12-02,2023-12-02T19:00Z,14,2,True,False,False,2571,2382,S Dakota St,Mercer,41,0,FCS Championship - Second Round,Brookings,SD
+401539485,2023-12-02,2023-12-02T21:00Z,14,2,True,False,False,50,2504,Florida A&M,Prairie View,35,14,SWAC Championship,Tallahassee,FL
+401615879,2023-12-02,2023-12-03T03:00Z,14,2,True,False,False,70,79,Idaho,S Illinois,20,17,FCS Championship - Second Round,Moscow,ID

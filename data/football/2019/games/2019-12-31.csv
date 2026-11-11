@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135285,2019-12-31,2020-01-01T00:30Z,1,3,True,True,False,251,254,Texas,Utah,38,10,VALERO ALAMO BOWL,San Antonio,TX
+401135284,2019-12-31,2019-12-31T20:45Z,1,3,True,True,False,2306,2426,Kansas St,Navy,17,20,AUTOZONE LIBERTY BOWL,Memphis,TN
+401135283,2019-12-31,2019-12-31T17:00Z,1,3,True,True,False,96,259,Kentucky,Virginia Tech,37,30,BELK BOWL,Charlotte,NC
+401136255,2019-12-31,2019-12-31T19:00Z,1,3,True,True,False,9,52,Arizona St,Florida St,20,14,TONY THE TIGER SUN BOWL,El Paso,TX
+401147695,2019-12-31,2019-12-31T21:30Z,1,3,True,True,False,2247,2751,Georgia St,Wyoming,17,38,NOVA HOME LOANS ARIZONA BOWL,Tucson,AZ

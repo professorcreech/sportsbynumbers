@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869214,2016-10-07,2016-10-08T01:00Z,6,2,True,False,True,167,68,New Mexico,Boise St,21,49,,Albuquerque,NM
+400869457,2016-10-07,2016-10-07T23:30Z,6,2,True,False,True,103,228,Boston College,Clemson,10,56,,Chestnut Hill,MA
+400868962,2016-10-07,2016-10-08T00:00Z,6,2,True,False,False,295,113,Old Dominion,UMass,36,16,RESCHEDULED FROM OCT. 8,Norfolk,VA
+400869533,2016-10-07,2016-10-08T00:00Z,6,2,True,False,True,202,2567,Tulsa,SMU,43,40,,Tulsa,OK
+400872718,2016-10-07,2016-10-07T23:00Z,6,2,True,False,True,2210,160,Elon,UNH,10,13,RESCHEDULED FROM OCT. 8.,Elon,NC

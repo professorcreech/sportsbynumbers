@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282677,2021-11-05,2021-11-05T23:30Z,10,2,True,False,True,103,259,Boston College,Virginia Tech,17,3,,Chestnut Hill,MA
+401309888,2021-11-05,2021-11-06T02:30Z,10,2,True,False,True,24,254,Stanford,Utah,7,52,,Stanford,CA
+401328267,2021-11-05,2021-11-05T22:00Z,10,2,True,False,True,159,163,Dartmouth,Princeton,31,7,,Hanover,NH

@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282714,2021-08-28,2021-08-28T17:20Z,1,2,True,False,True,356,158,Illinois,Nebraska,30,22,,Champaign,IL
+401286187,2021-08-28,2021-08-28T18:00Z,1,2,True,False,False,278,41,Fresno St,UConn,45,0,,Fresno,CA
+401309833,2021-08-28,2021-08-28T19:30Z,1,2,True,False,False,26,62,UCLA,Hawai'i,44,10,,Pasadena,CA
+401282049,2021-08-28,2021-08-29T01:30Z,1,2,True,False,False,166,2638,New Mexico St,UTEP,3,30,,Las Cruces,NM
+401310693,2021-08-28,2021-08-29T02:00Z,1,2,True,False,False,23,253,San José St,Southern Utah,45,14,,San Jose,CA
+401328337,2021-08-28,2021-08-28T22:00Z,1,2,True,False,False,282,2197,Indiana St,E Illinois,26,21,,Terre Haute,IN
+401327539,2021-08-28,2021-08-28T23:00Z,1,2,True,True,False,2428,2016,NC Central,Alcorn St,23,14,Cricket MEAC/SWAC Challenge,Atlanta,GA

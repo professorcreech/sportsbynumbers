@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282646,2021-09-30,2021-09-30T23:30Z,5,2,True,False,True,2390,258,Miami,Virginia,28,30,,Miami Gardens,FL
+401328635,2021-09-30,2021-09-30T23:30Z,5,2,True,False,True,2504,2029,Prairie View,AR-Pine Bluff,27,17,,Prairie View,TX

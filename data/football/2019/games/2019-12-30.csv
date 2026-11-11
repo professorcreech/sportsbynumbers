@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135282,2019-12-30,2019-12-31T01:00Z,1,3,True,True,False,258,57,Virginia,Florida,28,36,Capital One Orange Bowl,Miami Gardens,FL
+401135280,2019-12-30,2019-12-30T17:30Z,1,3,True,True,False,2711,98,W Michigan,Western KY,20,23,SERVPRO FIRST RESPONDER BOWL,Dallas,TX
+401135281,2019-12-30,2019-12-30T21:00Z,1,3,True,True,False,97,344,Louisville,Mississippi St,38,28,FRANKLIN AMERICAN MORTGAGE MUSIC CITY BOWL,Nashville,TN
+401136254,2019-12-30,2019-12-30T21:00Z,1,3,True,True,False,356,25,Illinois,California,20,35,REDBOX BOWL,Santa Clara,CA

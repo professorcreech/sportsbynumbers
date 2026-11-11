@@ -1,0 +1,30 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282789,2021-09-02,2021-09-03T00:00Z,1,2,True,False,True,135,194,Minnesota,Ohio State,31,45,,Minneapolis,MN
+401328545,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,324,2643,Coast Carolina,The Citadel,52,14,,Conway,SC
+401309834,2021-09-02,2021-09-02T23:30Z,1,2,True,False,False,254,2692,Utah,Weber St,40,17,,Salt Lake City,UT
+401309835,2021-09-02,2021-09-03T02:30Z,1,2,True,False,False,9,253,Arizona St,Southern Utah,41,14,,Tempe,AZ
+401300995,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2116,68,UCF,Boise St,36,31,,Orlando,FL
+401309540,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2050,2710,Ball State,W Illinois,31,21,,Muncie,IN
+401309542,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2084,2681,Buffalo,Wagner,69,7,,Buffalo,NY
+401328175,2021-09-02,2021-09-02T23:00Z,1,2,True,False,True,311,48,Maine,Delaware,24,34,,Orono,ME
+401282607,2021-09-02,2021-09-02T23:30Z,1,2,True,False,False,152,58,NC State,South Florida,45,0,,Raleigh,NC
+401300993,2021-09-02,2021-09-02T23:30Z,1,2,True,True,False,2026,151,App State,East Carolina,33,19,Duke’s Mayo Classic,Charlotte,NC
+401300994,2021-09-02,2021-09-02T23:30Z,1,2,True,False,False,202,302,Tulsa,UC Davis,17,19,,Tulsa,OK
+401281952,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,2633,189,Tennessee,Bowling Green,38,6,,Knoxville,TN
+401282180,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,98,2630,Western KY,UT Martin,59,21,,Bowling Green,KY
+401310696,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,167,2277,New Mexico,Hou Christian,27,17,,Albuquerque,NM
+401328138,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,338,2890,Kennesaw St,Reinhardt,35,25,,Kennesaw,GA
+401282051,2021-09-02,2021-09-03T00:05Z,1,2,True,False,False,2229,2341,FIU,Long Island,48,10,,Miami,FL
+401328011,2021-09-02,2021-09-03T01:00Z,1,2,True,False,False,2464,2534,N Arizona,Sam Houston,16,42,,Flagstaff,AZ
+401310694,2021-09-02,2021-09-03T02:00Z,1,2,True,False,False,2439,331,UNLV,E Washington,33,35,,Las Vegas,NV
+401328204,2021-09-02,2021-09-02T22:00Z,1,2,True,False,True,2619,160,Stony Brook,New Hampshire,21,27,,Stony Brook,NY
+401328388,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2754,2916,Youngstown St,Incarnate Word,44,41,,Youngstown,OH
+401328458,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2535,2635,Samford,Tennessee Tech,52,14,,Birmingham,AL
+401328605,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2815,2025,Lindenwood,Angelo St,20,40,,Saint Charles,MO
+401329056,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2105,2698,Carson Newman,West Georgia,7,45,,Jefferson City,TN
+401332315,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2181,455,Drake,WV Wesleyan,45,3,,Des Moines,IA
+401357797,2021-09-02,2021-09-02T23:00Z,1,2,True,False,False,2382,3179,Mercer,Point,69,0,,Macon,GA
+401328383,2021-09-02,2021-09-02T23:30Z,1,2,True,False,False,2546,79,SE Missouri,S Illinois,21,47,,Cape Girardeau,MO
+401328404,2021-09-02,2021-09-02T23:30Z,1,2,True,False,False,236,2046,Chattanooga,Austin Peay,20,30,,Chattanooga,TN
+401328420,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,93,2400,Murray St,Miss Valley St,35,0,,Murray,KY
+401329153,2021-09-02,2021-09-03T00:00Z,1,2,True,False,False,2570,2837,CSU Pueblo,East Texas A&M,6,12,,Pueblo,CO

@@ -1,0 +1,9 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401441999,2022-12-17,2022-12-17T19:30Z,1,3,True,True,False,204,57,Oregon St,Florida,30,3,SRS Distribution Las Vegas Bowl,Las Vegas,NV
+401441995,2022-12-17,2022-12-17T16:00Z,1,3,True,True,False,97,2132,Louisville,Cincinnati,24,7,Wasabi Fenway Bowl,Boston,MA
+401442038,2022-12-17,2022-12-17T20:30Z,1,3,True,True,False,278,265,Fresno St,Washington St,29,6,Jimmy Kimmel LA Bowl Presented by Stifel,Inglewood,CA
+401442041,2022-12-17,2022-12-17T22:45Z,1,3,True,True,False,2572,242,Southern Miss,Rice,38,24,LendingTree Bowl,Mobile,AL
+401441997,2022-12-17,2022-12-18T00:30Z,1,3,True,True,False,252,2567,BYU,SMU,24,23,New Mexico Bowl,Albuquerque,NM
+401442001,2022-12-17,2022-12-18T02:15Z,1,3,True,True,False,68,249,Boise St,North Texas,35,32,Frisco Bowl Presented by SERVPRO,Frisco,TX
+401441996,2022-12-17,2022-12-17T17:00Z,1,3,True,True,False,2428,2296,NC Central,Jackson St,41,34,Cricket Celebration Bowl,Atlanta,GA
+401508851,2022-12-17,2022-12-17T21:00Z,1,3,True,False,False,2571,147,S Dakota St,Montana St,39,18,FCS Championship - Semifinals,Brookings,SD

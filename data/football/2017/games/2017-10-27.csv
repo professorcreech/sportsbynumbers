@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941830,2017-10-27,2017-10-28T00:00Z,9,2,True,False,True,235,2655,Memphis,Tulane,56,26,,Memphis,TN
+400937504,2017-10-27,2017-10-28T00:00Z,9,2,True,False,True,103,52,Boston College,FSU,35,3,,Chestnut Hill,MA
+400941831,2017-10-27,2017-10-28T01:00Z,9,2,True,False,True,2567,202,SMU,Tulsa,38,34,,Dallas,TX

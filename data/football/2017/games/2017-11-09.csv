@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400945018,2017-11-09,2017-11-10T00:00Z,11,2,True,False,True,2459,2050,N Illinois,Ball State,63,17,,Dekalb,IL
+400937514,2017-11-09,2017-11-10T00:30Z,11,2,True,False,True,221,153,Pitt,UNC,31,34,,Pittsburgh,PA
+400944871,2017-11-09,2017-11-10T00:30Z,11,2,True,False,True,2026,290,Appalachian St,Ga Southern,27,6,,Boone,NC

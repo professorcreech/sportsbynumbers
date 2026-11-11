@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400934521,2017-09-28,2017-09-29T00:00Z,5,2,True,False,True,66,251,Iowa State,Texas,7,17,,Ames,IA
+400952248,2017-09-28,2017-09-28T23:30Z,5,2,True,False,True,50,2428,Florida A&M,NC Central,14,21,,Tallahassee,FL

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941835,2017-11-03,2017-11-04T00:00Z,10,2,True,False,True,202,235,Tulsa,Memphis,14,41,,Tulsa,OK
+400938675,2017-11-03,2017-11-03T22:00Z,10,2,True,False,True,2226,276,FAU,Marshall,30,25,,Boca Raton,FL
+400935310,2017-11-03,2017-11-04T01:30Z,10,2,True,False,True,254,26,Utah,UCLA,48,17,,Salt Lake City,UT
+400951043,2017-11-03,2017-11-04T00:00Z,10,2,True,False,True,43,225,Yale,Brown,34,7,,New Haven,CT

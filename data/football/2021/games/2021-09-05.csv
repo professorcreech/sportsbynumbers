@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282614,2021-09-05,2021-09-05T23:30Z,1,2,True,False,False,52,87,Florida St,Notre Dame,38,41,,Tallahassee,FL
+401328657,2021-09-05,2021-09-05T19:00Z,1,2,True,True,True,50,2296,Florida A&M,Jackson St,6,7,Denny's Orange Blossom Classic,Miami Gardens,FL
+401328426,2021-09-05,2021-09-05T20:00Z,1,2,True,True,False,2755,2634,Grambling,Tennessee St,16,10,,Canton,OH

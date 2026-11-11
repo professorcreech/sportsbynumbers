@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401021676,2018-10-18,2018-10-18T23:30Z,8,2,True,False,True,2032,2247,Arkansas State,Georgia State,51,35,,Jonesboro,AR
+401012768,2018-10-18,2018-10-19T01:00Z,8,2,True,False,True,9,24,Arizona State,Stanford,13,20,,Tempe,AZ

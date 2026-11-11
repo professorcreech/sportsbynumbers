@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135278,2019-12-28,2019-12-28T21:20Z,1,3,True,True,False,99,201,LSU,Oklahoma,63,28,Chick-fil-A Peach Bowl - CFP Semifinal,Atlanta,GA
+401135277,2019-12-28,2019-12-28T17:00Z,1,3,True,True,False,213,235,Penn State,Memphis,53,39,Goodyear Cotton Bowl Classic,Arlington,TX
+401135276,2019-12-28,2019-12-28T17:00Z,1,3,True,True,False,66,87,Iowa State,Notre Dame,9,33,CAMPING WORLD BOWL,Orlando,FL
+401135279,2019-12-28,2019-12-29T01:20Z,1,3,True,True,False,194,228,Ohio State,Clemson,23,29,PlayStation Fiesta Bowl - CFP Semifinal,Glendale,AZ

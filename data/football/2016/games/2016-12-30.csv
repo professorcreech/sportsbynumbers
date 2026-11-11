@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876105,2016-12-30,2016-12-31T01:00Z,1,3,True,True,False,52,130,FSU,Michigan,33,32,Capital One Orange Bowl,Miami Gardens,FL
+400876104,2016-12-30,2016-12-30T20:30Z,1,3,True,True,False,2633,158,Tennessee,Nebraska,38,24,FRANKLIN AMERICAN MORTGAGE MUSIC CITY BOWL,Nashville,TN
+400876103,2016-12-30,2016-12-30T17:00Z,1,3,True,True,False,2628,61,TCU,Georgia,23,31,AutoZone LIBERTY BOWL,Memphis,TN
+400878692,2016-12-30,2016-12-30T19:00Z,1,3,True,True,False,153,24,UNC,Stanford,23,25,HYUNDAI SUN BOWL,El Paso,TX
+400928102,2016-12-30,2016-12-30T22:30Z,1,3,True,True,False,2005,6,Air Force,South Alabama,45,21,NOVA HOME LOANS ARIZONA BOWL,Tucson,AZ

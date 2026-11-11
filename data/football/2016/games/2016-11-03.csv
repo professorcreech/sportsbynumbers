@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869593,2016-11-03,2016-11-03T23:30Z,10,2,True,False,True,66,201,Iowa State,Oklahoma,24,34,,Ames,IA
+400869150,2016-11-03,2016-11-04T01:00Z,10,2,True,False,True,38,26,Colorado,UCLA,20,10,,Boulder,CO
+400869323,2016-11-03,2016-11-03T22:00Z,10,2,True,False,True,195,2084,Ohio,Buffalo,34,10,,Athens,OH
+400869838,2016-11-03,2016-11-03T23:30Z,10,2,True,False,True,2247,2032,Georgia State,Arkansas State,16,31,,Atlanta,GA
+400872497,2016-11-03,2016-11-03T23:00Z,10,2,True,False,True,2447,2320,Nicholls,Lamar,35,10,,Thibodaux,LA

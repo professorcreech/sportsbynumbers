@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401309872,2021-10-15,2021-10-16T02:30Z,7,2,True,False,True,2483,25,Oregon,California,24,17,,Eugene,OR
+401310723,2021-10-15,2021-10-16T02:30Z,7,2,True,False,True,23,21,San José St,San Diego St,13,19,,San Jose,CA
+401282231,2021-10-15,2021-10-15T23:00Z,7,2,True,False,True,249,276,North Texas,Marshall,21,49,,Denton,TX
+401282657,2021-10-15,2021-10-15T23:00Z,7,2,True,False,True,183,228,Syracuse,Clemson,14,17,,Syracuse,NY
+401328252,2021-10-15,2021-10-15T23:00Z,7,2,True,False,False,172,2142,Cornell,Colgate,34,20,,Ithaca,NY
+401328068,2021-10-15,2021-10-16T02:00Z,7,2,True,False,True,2692,147,Weber St,Montana St,7,13,,Ogden,UT

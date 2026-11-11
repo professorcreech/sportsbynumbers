@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401391158,2021-12-23,2021-12-23T20:30Z,1,3,True,True,False,193,249,Miami OH,North Texas,27,14,Frisco Football Classic Presented by Ryan,Frisco,TX
+401331216,2021-12-23,2021-12-24T00:00Z,1,3,True,True,False,57,2116,Florida,UCF,17,29,Union Home Mortgage Gasparilla Bowl,Tampa,FL

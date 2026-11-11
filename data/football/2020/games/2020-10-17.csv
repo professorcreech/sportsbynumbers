@@ -1,0 +1,28 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237107,2020-10-17,2020-10-18T00:00Z,7,2,True,False,True,333,61,Alabama,Georgia,41,24,,Tuscaloosa,AL
+401234613,2020-10-17,2020-10-17T18:30Z,7,2,True,False,True,87,97,Notre Dame,Louisville,12,7,,Notre Dame,IN
+401234612,2020-10-17,2020-10-17T23:30Z,7,2,True,False,True,52,153,Florida St,North Carolina,31,28,,Tallahassee,FL
+401237112,2020-10-17,2020-10-17T20:00Z,7,2,True,False,True,344,245,Mississippi St,Texas A&M,14,28,,Starkville,MS
+401234614,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,2390,221,Miami,Pitt,31,19,,Miami Gardens,FL
+401237109,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,2579,2,South Carolina,Auburn,30,22,,Columbia,SC
+401237111,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,2633,96,Tennessee,Kentucky,7,34,,Knoxville,TN
+401234609,2020-10-17,2020-10-18T00:00Z,7,2,True,False,True,259,103,Virginia Tech,Boston College,40,14,,Blacksburg,VA
+401212478,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,218,58,Temple,South Florida,39,37,,Philadelphia,PA
+401212548,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,151,2426,East Carolina,Navy,23,27,,Greenville,NC
+401215313,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,6,326,South Alabama,Texas St,30,20,,Mobile,AL
+401234610,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,59,228,Georgia Tech,Clemson,7,73,,Atlanta,GA
+401234615,2020-10-17,2020-10-17T16:00Z,7,2,True,False,False,183,2335,Syracuse,Liberty,21,38,,Syracuse,NY
+401236007,2020-10-17,2020-10-17T16:00Z,7,2,True,False,True,277,2305,West Virginia,Kansas,38,17,,Morgantown,WV
+401207153,2020-10-17,2020-10-17T17:30Z,7,2,True,False,True,5,98,UAB,Western KY,37,14,,Birmingham,AL
+401240115,2020-10-17,2020-10-17T17:30Z,7,2,True,False,False,2636,349,UTSA,Army,16,28,,San Antonio,TX
+401240034,2020-10-17,2020-10-17T18:00Z,7,2,True,False,False,2453,55,North Alabama,Jax State,17,24,,Florence,AL
+401212537,2020-10-17,2020-10-17T19:30Z,7,2,True,False,True,235,2116,Memphis,UCF,50,49,,Memphis,TN
+401234611,2020-10-17,2020-10-17T19:30Z,7,2,True,False,True,152,150,NC State,Duke,31,20,,Raleigh,NC
+401237108,2020-10-17,2020-10-17T19:30Z,7,2,True,False,True,8,145,Arkansas,Ole Miss,33,21,,Fayetteville,AR
+401239872,2020-10-17,2020-10-17T19:30Z,7,2,True,False,False,2653,2198,Troy,E Kentucky,31,29,,Troy,AL
+401234616,2020-10-17,2020-10-17T20:00Z,7,2,True,False,True,154,258,Wake Forest,Virginia,40,23,,Winston-Salem,NC
+401250215,2020-10-17,2020-10-17T20:00Z,7,2,True,False,False,290,113,GA Southern,UMass,41,0,,Statesboro,GA
+401207150,2020-10-17,2020-10-17T21:00Z,7,2,True,False,True,2393,249,MTSU,North Texas,35,52,,Murfreesboro,TN
+401207149,2020-10-17,2020-10-17T22:00Z,7,2,True,False,True,2348,276,Louisiana Tech,Marshall,17,35,,Ruston,LA
+401236382,2020-10-17,2020-10-18T00:00Z,7,2,True,False,False,2623,2110,Missouri St,C Arkansas,24,33,,Springfield,MO
+401249652,2020-10-17,2020-10-17T21:00Z,7,2,True,False,False,2617,2025,SF Austin,Angelo St,31,12,,Nacogdoches,TX

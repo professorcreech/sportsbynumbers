@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401117869,2019-09-19,2019-09-20T00:00Z,4,2,True,False,True,2655,248,Tulane,Houston,38,31,,New Orleans,LA

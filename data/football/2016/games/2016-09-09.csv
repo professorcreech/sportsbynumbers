@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869429,2016-09-09,2016-09-10T00:00Z,2,2,True,False,True,183,97,Syracuse,Louisville,28,62,,Syracuse,NY
+400869351,2016-09-09,2016-09-09T23:30Z,2,2,True,False,False,2229,120,FIU,Maryland,14,41,,Miami,FL
+400892122,2016-09-09,2016-09-09T23:00Z,2,2,True,False,True,2583,284,S Conn St,Stonehill,31,27,,,

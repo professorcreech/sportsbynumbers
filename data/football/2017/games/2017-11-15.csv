@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400945021,2017-11-15,2017-11-16T00:00Z,12,2,True,False,True,193,2199,Miami (OH),E Michigan,24,27,,Oxford,OH
+400945023,2017-11-15,2017-11-16T00:00Z,12,2,True,False,True,2459,2711,N Illinois,W Michigan,35,31,,Dekalb,IL
+400945022,2017-11-15,2017-11-16T01:00Z,12,2,True,False,True,189,2649,Bowling Green,Toledo,37,66,,Bowling Green,OH

@@ -1,0 +1,34 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237093,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,333,245,Alabama,Texas A&M,52,24,,Tuscaloosa,AL
+401237096,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,57,2579,Florida,South Carolina,38,24,,Gainesville,FL
+401237095,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,61,2,Georgia,Auburn,27,6,,Athens,GA
+401236002,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,251,2628,Texas,TCU,31,33,,Austin,TX
+401212531,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,2116,202,UCF,Tulsa,26,34,,Orlando,FL
+401234597,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,103,153,Boston College,North Carolina,22,26,,Chestnut Hill,MA
+401212476,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,2132,58,Cincinnati,South Florida,28,7,,Cincinnati,OH
+401237094,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,344,8,Mississippi St,Arkansas,14,21,,Starkville,MS
+401236000,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,2305,197,Kansas,Oklahoma St,7,47,,Lawrence,KS
+401235999,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,66,201,Iowa State,Oklahoma,37,30,,Ames,IA
+401237098,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,238,99,Vanderbilt,LSU,7,41,,Nashville,TN
+401237099,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,2633,142,Tennessee,Missouri,35,12,,Knoxville,TN
+401234600,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,221,152,Pitt,NC State,29,30,,Pittsburgh,PA
+401212486,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,2567,235,SMU,Memphis,30,27,,Dallas,TX
+401212547,2020-10-03,2020-10-03T16:00Z,5,2,True,False,False,2247,151,Georgia St,East Carolina,49,29,,Atlanta,GA
+401215304,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,324,2032,Coastal,Arkansas St,52,23,,Conway,SC
+401235998,2020-10-03,2020-10-03T16:00Z,5,2,True,False,True,277,239,West Virginia,Baylor,27,21,,Morgantown,WV
+401207141,2020-10-03,2020-10-03T16:30Z,5,2,True,False,True,5,2636,UAB,UTSA,21,13,,Birmingham,AL
+401237513,2020-10-03,2020-10-03T17:00Z,5,2,True,False,False,2335,2453,Liberty,North Alabama,28,7,,Lynchburg,VA
+401240040,2020-10-03,2020-10-03T17:30Z,5,2,True,False,False,349,2000,Army,Abilene Chrstn,55,23,,West Point,NY
+401236001,2020-10-03,2020-10-03T19:30Z,5,2,True,False,True,2306,2641,Kansas St,Texas Tech,31,21,,Manhattan,KS
+401240124,2020-10-03,2020-10-03T19:30Z,5,2,True,False,False,2449,2110,N Dakota St,C Arkansas,39,28,,Fargo,ND
+401207136,2020-10-03,2020-10-03T20:00Z,5,2,True,False,True,2226,2429,FAU,Charlotte,21,17,,Boca Raton,FL
+401234599,2020-10-03,2020-10-03T20:00Z,5,2,True,False,True,150,259,Duke,Virginia Tech,31,38,,Durham,NC
+401237097,2020-10-03,2020-10-03T20:00Z,5,2,True,False,True,96,145,Kentucky,Ole Miss,41,42,,Lexington,KY
+401238034,2020-10-03,2020-10-03T20:00Z,5,2,True,False,False,52,55,Florida St,Jax State,41,24,,Tallahassee,FL
+401207138,2020-10-03,2020-10-03T21:00Z,5,2,True,False,True,2393,98,MTSU,Western KY,17,20,,Murfreesboro,TN
+401212557,2020-10-03,2020-10-03T22:00Z,5,2,True,False,False,2005,2426,Air Force,Navy,40,7,,USAF Academy,CO
+401215305,2020-10-03,2020-10-03T23:00Z,5,2,True,False,True,2433,290,UL Monroe,GA Southern,30,35,,Monroe,LA
+401207139,2020-10-03,2020-10-03T23:30Z,5,2,True,False,True,249,2572,North Texas,Southern Miss,31,41,,Denton,TX
+401234598,2020-10-03,2020-10-04T00:00Z,5,2,True,False,True,228,258,Clemson,Virginia,41,23,,Clemson,SC
+401246566,2020-10-03,2020-10-03T19:00Z,5,2,True,False,False,2198,2277,E Kentucky,Houston Baptist,30,33,,Richmond,KY
+401240042,2020-10-03,2020-10-03T21:00Z,5,2,True,False,False,2617,2704,SF Austin,West Texas A&M,34,6,,Nacogdoches,TX

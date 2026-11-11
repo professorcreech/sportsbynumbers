@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401551735,2023-12-19,2023-12-20T02:00Z,1,3,True,True,False,276,2636,Marshall,UTSA,17,35,Scooter's Coffee Frisco Bowl,Frisco,TX

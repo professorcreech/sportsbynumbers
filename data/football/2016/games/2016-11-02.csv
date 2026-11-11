@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869322,2016-11-02,2016-11-02T23:30Z,10,2,True,False,True,2006,2649,Akron,Toledo,17,48,,Akron,OH

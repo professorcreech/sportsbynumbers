@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520193,2023-09-08,2023-09-08T23:00Z,2,2,True,False,False,84,282,Indiana,Indiana St,41,7,,Bloomington,IN
+401520195,2023-09-08,2023-09-08T23:30Z,2,2,True,False,False,2305,356,Kansas,Illinois,34,23,,Lawrence,KS
+401540397,2023-09-08,2023-09-08T23:00Z,2,2,True,False,False,2166,122666,Davidson,Barton,31,33,,Davidson,NC
+401540548,2023-09-08,2023-09-08T23:00Z,2,2,True,False,True,227,2619,Rhode Island,Stony Brook,35,14,,Kingston,RI

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401551773,2023-12-30,2023-12-30T21:00Z,1,3,True,True,False,52,61,Florida St,Georgia,3,63,Capital One Orange Bowl,Miami Gardens,FL
+401551769,2023-12-30,2023-12-30T17:00Z,1,3,True,True,False,213,145,Penn State,Ole Miss,25,38,Chick-fil-A Peach Bowl,Atlanta,GA
+401551770,2023-12-30,2023-12-30T19:00Z,1,3,True,True,False,120,2,Maryland,Auburn,31,13,TransPerfect Music City Bowl,Nashville,TN
+401554566,2023-12-30,2023-12-30T21:30Z,1,3,True,True,False,2751,2649,Wyoming,Toledo,16,15,Barstool Sports Arizona Bowl,Tucson,AZ

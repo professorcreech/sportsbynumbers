@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876090,2016-12-26,2016-12-26T16:00Z,1,3,True,True,False,344,193,Miss St,Miami (OH),17,16,ST. PETERSBURG BOWL,St. Petersburg,FL
+400876091,2016-12-26,2016-12-26T19:30Z,1,3,True,True,False,103,120,Boston College,Maryland,36,30,QUICK LANE BOWL,Detroit,MI
+400876092,2016-12-26,2016-12-26T22:00Z,1,3,True,True,False,238,152,Vanderbilt,NC State,17,41,CAMPING WORLD INDEPENDENCE BOWL,Shreveport,LA

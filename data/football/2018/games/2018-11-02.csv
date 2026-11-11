@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401013160,2018-11-02,2018-11-02T23:30Z,10,2,True,False,True,258,221,UVA,Pitt,13,23,,Charlottesville,VA
+401015034,2018-11-02,2018-11-03T00:00Z,10,2,True,False,True,2393,98,Mid Tennessee,W Kentucky,29,10,,Murfreesboro,TN
+401012780,2018-11-02,2018-11-03T02:30Z,10,2,True,False,True,12,38,Arizona,Colorado,42,34,,Tucson,AZ
+401029851,2018-11-02,2018-11-02T22:00Z,10,2,True,False,True,172,219,Cornell,Penn,7,20,,Ithaca,NY

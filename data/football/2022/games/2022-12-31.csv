@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401442015,2022-12-31,2023-01-01T01:00Z,1,3,True,True,False,61,194,Georgia,Ohio State,42,41,CFP Semifinal at the Chick-fil-A Peach Bowl,Atlanta,GA
+401442016,2022-12-31,2022-12-31T21:00Z,1,3,True,True,False,130,2628,Michigan,TCU,45,51,CFP Semifinal at the Vrbo Fiesta Bowl,Glendale,AZ
+401442018,2022-12-31,2022-12-31T17:00Z,1,3,True,True,False,2306,333,Kansas St,Alabama,20,45,Allstate Sugar Bowl,New Orleans,LA
+401442017,2022-12-31,2022-12-31T17:00Z,1,3,True,True,False,96,2294,Kentucky,Iowa,0,21,TransPerfect Music City Bowl,Nashville,TN

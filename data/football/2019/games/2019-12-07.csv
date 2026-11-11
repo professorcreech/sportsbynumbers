@@ -1,0 +1,21 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401132983,2019-12-07,2019-12-08T01:00Z,15,2,True,True,False,275,194,Wisconsin,Ohio State,21,34,Big Ten Championship Game,Indianapolis,IN
+401132981,2019-12-07,2019-12-07T21:00Z,15,2,True,True,False,99,61,LSU,Georgia,37,10,SEC Championship Game,Atlanta,GA
+401132974,2019-12-07,2019-12-07T17:00Z,15,2,True,True,False,201,239,Oklahoma,Baylor,30,23,Dr Pepper Big 12 Championship,Arlington,TX
+401132976,2019-12-07,2019-12-07T20:30Z,15,2,True,False,False,235,2132,Memphis,Cincinnati,29,24,American Athletic Conference Championship Game,Memphis,TN
+401132979,2019-12-07,2019-12-07T21:00Z,15,2,True,False,False,68,62,Boise St,Hawai'i,31,10,Mountain West Championship Game,Boise,ID
+401132984,2019-12-07,2019-12-07T17:00Z,15,2,True,False,False,2026,309,App State,Louisiana,45,38,Sun Belt Conference Championship Game,Boone,NC
+401132982,2019-12-07,2019-12-07T17:00Z,15,2,True,True,False,2117,193,C Michigan,Miami OH,21,26,Marathon MAC Football Championship Game,Detroit,MI
+401187253,2019-12-07,2019-12-07T18:00Z,15,2,True,False,False,256,2405,James Madison,Monmouth,66,21,FCS CHAMPIONSHIP - SECOND ROUND,Harrisonburg,VA
+401132980,2019-12-07,2019-12-07T18:30Z,15,2,True,False,False,2226,5,FAU,UAB,49,6,Conference USA Championship,Boca Raton,FL
+401187315,2019-12-07,2019-12-07T20:00Z,15,2,True,False,False,2692,338,Weber St,Kennesaw St,26,20,FCS CHAMPIONSHIP - SECOND ROUND,Ogden,UT
+401187313,2019-12-07,2019-12-07T20:30Z,15,2,True,False,False,2449,2447,N Dakota St,Nicholls,37,13,FCS CHAMPIONSHIP - SECOND ROUND,Fargo,ND
+401132975,2019-12-07,2019-12-08T00:30Z,15,2,True,True,False,228,258,Clemson,Virginia,62,17,ACC Championship Game,Charlotte,NC
+401187314,2019-12-07,2019-12-08T02:00Z,15,2,True,False,False,16,2046,Sacramento St,Austin Peay,28,42,FCS CHAMPIONSHIP - SECOND ROUND,Sacramento,CA
+401187273,2019-12-07,2019-12-07T18:00Z,15,2,True,False,False,2331,110242,Lenoir Rhyne,West Florida,38,43,DIVISION II CHAMPIONSHIP - QUARTERFINAL,Hickory,NC
+401187275,2019-12-07,2019-12-07T18:00Z,15,2,True,False,False,2364,2837,Minnesota St,TX A&M-Commerce,42,21,DIVISION II CHAMPIONSHIP - QUARTERFINAL,Mankato,MN
+401187277,2019-12-07,2019-12-07T19:00Z,15,2,True,False,False,2571,2460,South Dakota St,Northern Iowa,10,13,FCS CHAMPIONSHIP - SECOND ROUND,Brookings,SD
+401187252,2019-12-07,2019-12-07T20:00Z,15,2,True,False,False,147,399,Montana St,Albany,47,21,FCS CHAMPIONSHIP - SECOND ROUND,Bozeman,MT
+401187276,2019-12-07,2019-12-07T20:00Z,15,2,True,False,False,2110,2287,Cent Arkansas,Illinois St,14,24,FCS CHAMPIONSHIP - SECOND ROUND,Conway,AR
+401187316,2019-12-07,2019-12-07T20:00Z,15,2,True,False,False,149,2545,Montana,SE Louisiana,73,28,FCS CHAMPIONSHIP - SECOND ROUND,Missoula,MT
+401187336,2019-12-07,2019-12-07T21:00Z,15,2,True,False,False,2016,2582,Alcorn St,Southern,39,24,SWAC Championship Game,Lorman,MS

@@ -1,0 +1,41 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401247310,2020-11-07,2020-11-08T00:30Z,10,2,True,False,True,194,164,Ohio State,Rutgers,49,27,,Columbus,OH
+401237125,2020-11-07,2020-11-07T20:30Z,10,2,True,True,True,61,57,Georgia,Florida,28,44,,Jacksonville,FL
+401212544,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,2132,248,Cincinnati,Houston,38,10,,Cincinnati,OH
+401237127,2020-11-07,2020-11-08T00:00Z,10,2,True,False,True,2579,245,South Carolina,Texas A&M,3,48,,Columbia,SC
+401249399,2020-11-07,2020-11-08T00:30Z,10,2,True,False,True,2483,24,Oregon,Stanford,35,14,,Eugene,OR
+401247309,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,84,130,Indiana,Michigan,38,21,,Bloomington,IN
+401236020,2020-11-07,2020-11-07T21:00Z,10,2,True,False,True,2306,197,Kansas St,Oklahoma St,18,20,,Manhattan,KS
+401215325,2020-11-07,2020-11-08T01:00Z,10,2,True,False,True,324,6,Coastal,South Alabama,23,6,,Conway,SC
+401251931,2020-11-07,2020-11-07T19:30Z,10,2,True,False,False,276,113,Marshall,UMass,51,10,,Huntington,WV
+401236018,2020-11-07,2020-11-08T00:00Z,10,2,True,False,True,66,239,Iowa State,Baylor,38,31,,Ames,IA
+401212490,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,218,2567,Temple,SMU,23,47,,Philadelphia,PA
+401249400,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,30,9,USC,Arizona St,28,27,,Los Angeles,CA
+401236022,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,251,277,Texas,West Virginia,17,13,,Austin,TX
+401234636,2020-11-07,2020-11-07T17:00Z,10,2,True,False,False,259,2335,Virginia Tech,Liberty,35,38,,Blacksburg,VA
+401212480,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,235,58,Memphis,South Florida,34,33,,Memphis,TN
+401212525,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,151,2655,East Carolina,Tulane,21,38,,Greenville,NC
+401215327,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,2247,2433,Georgia St,UL Monroe,52,34,,Atlanta,GA
+401234633,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,150,153,Duke,North Carolina,24,56,,Durham,NC
+401247307,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,77,158,Northwestern,Nebraska,21,13,,Evanston,IL
+401247313,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,2294,127,Iowa,Michigan St,49,7,,Iowa City,IA
+401253924,2020-11-07,2020-11-07T17:00Z,10,2,True,False,True,309,2032,Louisiana,Arkansas St,27,20,,Lafayette,LA
+401215326,2020-11-07,2020-11-07T18:00Z,10,2,True,False,True,290,2653,GA Southern,Troy,20,13,,Statesboro,GA
+401234631,2020-11-07,2020-11-07T19:00Z,10,2,True,False,True,183,103,Syracuse,Boston College,13,16,,Syracuse,NY
+401215324,2020-11-07,2020-11-07T20:00Z,10,2,True,False,True,326,2026,Texas St,App State,17,38,,San Marcos,TX
+401240035,2020-11-07,2020-11-07T20:00Z,10,2,True,False,False,2572,2453,Southern Miss,North Alabama,24,13,,Hattiesburg,MS
+401236019,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,201,2305,Oklahoma,Kansas,62,9,,Norman,OK
+401236021,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,2628,2641,TCU,Texas Tech,34,18,,Fort Worth,TX
+401237126,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,344,238,Mississippi St,Vanderbilt,24,17,,Starkville,MS
+401247308,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,356,135,Illinois,Minnesota,14,41,,Champaign,IL
+401247312,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,213,120,Penn State,Maryland,19,35,,University Park,PA
+401249006,2020-11-07,2020-11-07T20:30Z,10,2,True,False,True,2439,278,UNLV,Fresno St,27,40,,Las Vegas,NV
+401234634,2020-11-07,2020-11-07T21:00Z,10,2,True,False,True,52,221,Florida St,Pitt,17,41,,Tallahassee,FL
+401207169,2020-11-07,2020-11-07T23:00Z,10,2,True,False,True,2226,98,FAU,Western KY,10,6,,Boca Raton,FL
+401249402,2020-11-07,2020-11-08T00:00Z,10,2,True,False,True,38,26,Colorado,UCLA,48,42,,Boulder,CO
+401234632,2020-11-07,2020-11-08T00:30Z,10,2,True,False,True,87,228,Notre Dame,Clemson,47,40,,Notre Dame,IN
+401237124,2020-11-07,2020-11-08T00:30Z,10,2,True,False,True,8,2633,Arkansas,Tennessee,24,13,,Fayetteville,AR
+401249397,2020-11-07,2020-11-08T03:30Z,10,2,True,False,True,204,265,Oregon St,Washington St,28,38,,Corvallis,OR
+401249007,2020-11-07,2020-11-08T04:00Z,10,2,True,False,True,62,167,Hawai'i,New Mexico,39,33,,,
+401239874,2020-11-07,2020-11-07T20:00Z,10,2,True,False,False,2198,2617,E Kentucky,SF Austin,6,24,,Richmond,KY
+401248273,2020-11-07,2020-11-07T21:00Z,10,2,True,False,False,2000,2025,Abilene Chrstn,Angelo St,21,34,,Abilene,TX

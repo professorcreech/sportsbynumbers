@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401112248,2019-10-18,2019-10-19T00:30Z,8,2,True,False,True,77,194,Northwestern,Ohio State,3,52,,Evanston,IL
+401114288,2019-10-18,2019-10-18T22:30Z,8,2,True,False,True,2226,276,FAU,Marshall,31,36,,Boca Raton,FL
+401112483,2019-10-18,2019-10-18T23:00Z,8,2,True,False,True,183,221,Syracuse,Pittsburgh,20,27,,Syracuse,NY
+401117528,2019-10-18,2019-10-19T02:00Z,8,2,True,False,True,278,2439,Fresno St,UNLV,56,27,,Fresno,CA

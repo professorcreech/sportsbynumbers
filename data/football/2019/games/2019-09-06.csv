@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401114251,2019-09-06,2019-09-07T01:00Z,2,2,True,False,False,68,276,Boise St,Marshall,14,7,,Boise,ID
+401112437,2019-09-06,2019-09-07T00:00Z,2,2,True,False,False,258,2729,Virginia,William & Mary,52,17,,Charlottesville,VA
+401112447,2019-09-06,2019-09-07T00:00Z,2,2,True,False,False,242,154,Rice,Wake Forest,21,41,,Houston,TX
+401114154,2019-09-06,2019-09-07T02:00Z,2,2,True,False,False,9,16,Arizona St,Sacramento St,19,7,,Tempe,AZ

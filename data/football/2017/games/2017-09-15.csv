@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941799,2017-09-15,2017-09-15T23:00Z,3,2,True,False,False,58,356,USF,Illinois,47,23,,Tampa,FL
+400941800,2017-09-15,2017-09-15T23:00Z,3,2,True,False,False,218,113,Temple,UMass,29,21,,Philadelphia,PA
+400935269,2017-09-15,2017-09-16T02:15Z,3,2,True,False,False,2638,12,UTEP,Arizona,16,63,,El Paso,TX

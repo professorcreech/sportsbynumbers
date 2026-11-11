@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520182,2023-09-03,2023-09-03T23:30Z,1,2,True,True,False,52,99,Florida St,LSU,45,24,Camping World Kickoff,Orlando,FL
+401532573,2023-09-03,2023-09-03T19:30Z,1,2,True,False,False,23,204,San José St,Oregon St,17,42,,San Jose,CA
+401520171,2023-09-03,2023-09-03T16:00Z,1,2,True,False,True,164,77,Rutgers,Northwestern,24,7,,Piscataway,NJ
+401540148,2023-09-03,2023-09-03T19:00Z,1,2,True,True,True,50,2296,Florida A&M,Jackson St,28,10,Denny's Orange Blossom Classic,Miami Gardens,FL

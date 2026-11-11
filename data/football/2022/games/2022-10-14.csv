@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401415635,2022-10-14,2022-10-14T23:30Z,7,2,True,False,True,2567,2426,SMU,Navy,40,34,,Dallas,TX
+401426584,2022-10-14,2022-10-15T00:00Z,7,2,True,False,True,2229,2636,FIU,UTSA,10,30,,Miami,FL
+401455633,2022-10-14,2022-10-14T23:00Z,7,2,True,False,True,163,225,Princeton,Brown,35,19,,Princeton,NJ

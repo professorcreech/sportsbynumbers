@@ -1,0 +1,42 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237119,2020-10-31,2020-10-31T23:00Z,9,2,True,False,True,333,344,Alabama,Mississippi St,41,0,,Tuscaloosa,AL
+401247306,2020-10-31,2020-10-31T23:30Z,9,2,True,False,True,213,194,Penn State,Ohio State,25,38,,University Park,PA
+401234626,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,59,87,Georgia Tech,Notre Dame,13,31,,Atlanta,GA
+401237117,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,96,61,Kentucky,Georgia,3,14,,Lexington,KY
+401236017,2020-10-31,2020-10-31T20:00Z,9,2,True,False,True,197,251,Oklahoma St,Texas,34,41,,Stillwater,OK
+401212543,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,2132,235,Cincinnati,Memphis,49,10,,Cincinnati,OH
+401237120,2020-10-31,2020-10-31T23:30Z,9,2,True,False,True,245,8,Texas A&M,Arkansas,42,31,,College Station,TX
+401237116,2020-10-31,2020-10-31T23:30Z,9,2,True,False,True,57,142,Florida,Missouri,41,17,,Gainesville,FL
+401239887,2020-10-31,2020-11-01T02:15Z,9,2,True,False,False,252,98,BYU,Western KY,41,10,,Provo,UT
+401247305,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,130,127,Michigan,Michigan St,24,27,,Ann Arbor,MI
+401234628,2020-10-31,2020-11-01T00:00Z,9,2,True,False,True,258,153,Virginia,North Carolina,44,41,,Charlottesville,VA
+401236015,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,277,2306,West Virginia,Kansas St,37,10,,Morgantown,WV
+401247300,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,164,84,Rutgers,Indiana,21,37,,Piscataway,NJ
+401215318,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,2247,324,Georgia St,Coastal,0,51,,Atlanta,GA
+401212489,2020-10-31,2020-10-31T23:30Z,9,2,True,False,True,2567,2426,SMU,Navy,51,37,,Dallas,TX
+401236014,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,2305,66,Kansas,Iowa State,22,52,,Lawrence,KS
+401236016,2020-10-31,2020-11-01T00:00Z,9,2,True,False,True,2641,201,Texas Tech,Oklahoma,28,62,,Lubbock,TX
+401248999,2020-10-31,2020-10-31T22:00Z,9,2,True,False,True,2005,68,Air Force,Boise St,30,49,,USAF Academy,CO
+401207162,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,2226,2636,FAU,UTSA,24,3,,Boca Raton,FL
+401212517,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,2655,218,Tulane,Temple,38,3,,New Orleans,LA
+401234624,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,228,103,Clemson,Boston College,34,28,,Clemson,SC
+401234629,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,183,154,Syracuse,Wake Forest,14,38,,Syracuse,NY
+401247301,2020-10-31,2020-10-31T16:00Z,9,2,True,False,True,356,2509,Illinois,Purdue,24,31,,Champaign,IL
+401212538,2020-10-31,2020-10-31T18:00Z,9,2,True,False,True,248,2116,Houston,UCF,21,44,,Houston,TX
+401207166,2020-10-31,2020-10-31T19:00Z,9,2,True,False,True,2572,242,Southern Miss,Rice,6,30,,Hattiesburg,MS
+401215320,2020-10-31,2020-10-31T19:00Z,9,2,True,False,True,2032,2653,Arkansas St,Troy,10,38,,Jonesboro,AR
+401207163,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,2348,5,Louisiana Tech,UAB,37,34,,Ruston,LA
+401236013,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,239,2628,Baylor,TCU,23,33,,Waco,TX
+401237121,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,2,99,Auburn,LSU,48,11,,Auburn,AL
+401247303,2020-10-31,2020-10-31T19:30Z,9,2,True,False,True,2294,77,Iowa,Northwestern,20,21,,Iowa City,IA
+401215319,2020-10-31,2020-10-31T20:00Z,9,2,True,False,True,2433,2026,UL Monroe,App State,13,31,,Monroe,LA
+401234627,2020-10-31,2020-10-31T20:00Z,9,2,True,False,True,97,259,Louisville,Virginia Tech,35,42,,Louisville,KY
+401237123,2020-10-31,2020-10-31T20:00Z,9,2,True,False,True,238,145,Vanderbilt,Ole Miss,21,54,,Nashville,TN
+401234625,2020-10-31,2020-10-31T23:00Z,9,2,True,False,False,150,2429,Duke,Charlotte,53,19,,Durham,NC
+401249003,2020-10-31,2020-10-31T23:00Z,9,2,True,False,True,23,167,San José State,New Mexico,38,21,,San Jose,CA
+401215322,2020-10-31,2020-11-01T00:00Z,9,2,True,False,True,326,309,Texas St,Louisiana,34,44,,San Marcos,TX
+401249004,2020-10-31,2020-11-01T01:30Z,9,2,True,False,True,328,21,Utah State,San Diego St,7,38,,Logan,UT
+401249002,2020-10-31,2020-11-01T02:30Z,9,2,True,False,True,2439,2440,UNLV,Nevada,19,37,,Las Vegas,NV
+401248073,2020-10-31,2020-10-31T19:00Z,9,2,True,False,False,2382,2000,Mercer,Abilene Chrstn,17,20,,Macon,GA
+401250213,2020-10-31,2020-10-31T19:00Z,9,2,True,False,False,2617,2714,SF Austin,W Colorado,64,7,,Nacogdoches,TX
+401239873,2020-10-31,2020-10-31T20:00Z,9,2,True,False,False,2110,137,C Arkansas,MO Western,52,10,,Conway,AR

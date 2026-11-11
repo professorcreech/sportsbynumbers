@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032070,2018-12-27,2018-12-27T18:30Z,1,3,True,True,False,150,218,Duke,Temple,56,27,WALK-ON'S INDEPENDENCE BOWL,Shreveport,LA
+401032071,2018-12-27,2018-12-27T22:15Z,1,3,True,True,False,275,2390,Wisconsin,Miami,35,3,NEW ERA PINSTRIPE BOWL,Bronx,NY
+401032072,2018-12-27,2018-12-28T02:00Z,1,3,True,True,False,238,239,Vanderbilt,Baylor,38,45,ACADEMY SPORTS + OUTDOORS TEXAS BOWL,Houston,TX

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400935316,2017-11-10,2017-11-11T03:30Z,11,2,True,False,True,24,264,Stanford,Washington,30,22,,Stanford,CA
+400941840,2017-11-10,2017-11-11T00:00Z,11,2,True,False,True,2132,218,Cincinnati,Temple,24,35,,Cincinnati,OH
+400945299,2017-11-10,2017-11-11T03:30Z,11,2,True,False,False,2439,252,UNLV,BYU,21,31,,Las Vegas,NV
+400953826,2017-11-10,2017-11-11T01:00Z,11,2,True,True,True,225,159,Brown,Dartmouth,10,33,,Boston,MA

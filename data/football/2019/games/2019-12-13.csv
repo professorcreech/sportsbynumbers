@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401188397,2019-12-13,2019-12-14T00:00Z,16,2,True,False,False,256,2460,James Madison,Northern Iowa,17,0,FCS CHAMPIONSHIP - QUARTERFINALS,Harrisonburg,VA
+401188398,2019-12-13,2019-12-14T01:00Z,16,2,True,False,False,147,2046,Montana St,Austin Peay,24,10,FCS CHAMPIONSHIP - QUARTERFINALS,Bozeman,MT
+401188399,2019-12-13,2019-12-14T03:00Z,16,2,True,False,False,2692,149,Weber St,Montana,17,10,FCS CHAMPIONSHIP - QUARTERFINALS,Ogden,UT

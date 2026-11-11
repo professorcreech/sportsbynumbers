@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401532394,2023-09-01,2023-09-01T22:30Z,1,2,True,False,False,2199,47,E Michigan,Howard,33,23,,Ypsilanti,MI
+401520163,2023-09-01,2023-09-01T23:00Z,1,2,True,False,False,127,2117,Michigan St,C Michigan,31,7,,East Lansing,MI
+401525463,2023-09-01,2023-09-01T23:00Z,1,2,True,False,False,2390,193,Miami,Miami OH,38,3,,Miami Gardens,FL
+401525462,2023-09-01,2023-09-01T23:30Z,1,2,True,True,True,59,97,Georgia Tech,Louisville,34,39,Aflac Kickoff Game,Atlanta,GA
+401525815,2023-09-01,2023-09-02T00:00Z,1,2,True,False,False,2305,2623,Kansas,Missouri St,48,17,,Lawrence,KS
+401523988,2023-09-01,2023-09-02T03:00Z,1,2,True,False,False,62,24,Hawai'i,Stanford,24,37,,Honolulu,HI
+401541826,2023-09-01,2023-09-01T22:00Z,1,2,True,False,False,110242,2316,West Florida,KY Wesleyn,35,3,,Pensacola,FL

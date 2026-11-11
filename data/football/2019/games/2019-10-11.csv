@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401114186,2019-10-11,2019-10-12T02:00Z,7,2,True,False,True,2483,38,Oregon,Colorado,45,3,,Eugene,OR
+401112478,2019-10-11,2019-10-12T00:00Z,7,2,True,False,True,2390,258,Miami,Virginia,17,9,,Miami Gardens,FL
+401117522,2019-10-11,2019-10-12T00:00Z,7,2,True,False,True,167,36,New Mexico,Colorado St,21,35,,Albuquerque,NM
+401128645,2019-10-11,2019-10-11T23:00Z,7,2,True,False,False,163,322,Princeton,Lafayette,28,3,,Princeton,NJ

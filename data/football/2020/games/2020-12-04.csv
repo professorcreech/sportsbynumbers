@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401252117,2020-12-04,2020-12-05T01:30Z,14,2,True,False,True,2026,309,App State,Louisiana,21,24,,Boone,NC

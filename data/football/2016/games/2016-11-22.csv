@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869335,2016-11-22,2016-11-23T00:00Z,13,2,True,False,True,195,2006,Ohio,Akron,9,3,,Athens,OH
+400869336,2016-11-22,2016-11-23T00:00Z,13,2,True,False,True,193,2050,Miami (OH),Ball State,21,20,,Oxford,OH
+400869337,2016-11-22,2016-11-23T00:00Z,13,2,True,False,True,2199,2117,E Michigan,Cent Michigan,26,21,,Ypsilanti,MI

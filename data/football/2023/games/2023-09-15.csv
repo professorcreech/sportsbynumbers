@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520231,2023-09-15,2023-09-15T23:00Z,3,2,True,False,False,120,258,Maryland,Virginia,42,14,,College Park,MD
+401531396,2023-09-15,2023-09-15T23:00Z,3,2,True,False,False,2636,349,UTSA,Army,29,37,,San Antonio,TX
+401532581,2023-09-15,2023-09-16T00:00Z,3,2,True,False,True,2005,328,Air Force,Utah State,39,21,,USAF Academy,CO
+401540488,2023-09-15,2023-09-15T22:30Z,3,2,True,False,True,311,227,Maine,Rhode Island,17,34,,Orono,ME

@@ -1,0 +1,20 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401437036,2022-12-03,2022-12-03T21:00Z,14,2,True,True,False,61,99,Georgia,LSU,50,30,SEC Championship Game,Atlanta,GA
+401437031,2022-12-03,2022-12-04T01:00Z,14,2,True,True,False,130,2509,Michigan,Purdue,43,22,Big Ten Championship Game,Indianapolis,IN
+401437030,2022-12-03,2022-12-03T17:00Z,14,2,True,True,False,2628,2306,TCU,Kansas St,28,31,Dr Pepper Big 12 Championship,Arlington,TX
+401437009,2022-12-03,2022-12-04T01:00Z,14,2,True,True,False,153,228,North Carolina,Clemson,10,39,Subway ACC Championship,Charlotte,NC
+401437008,2022-12-03,2022-12-03T21:00Z,14,2,True,False,False,2655,2116,Tulane,UCF,45,28,American Athletic Championship,New Orleans,LA
+401437033,2022-12-03,2022-12-03T17:00Z,14,2,True,True,False,195,2649,Ohio,Toledo,7,17,MAC Championship,Detroit,MI
+401506578,2022-12-03,2022-12-03T20:00Z,14,2,True,False,False,2571,48,S Dakota St,Delaware,42,6,FCS Championship - Second Round,Brookings,SD
+401437037,2022-12-03,2022-12-03T20:30Z,14,2,True,False,False,2653,324,Troy,Coastal Car,45,26,Sun Belt Championship,Troy,AL
+401506690,2022-12-03,2022-12-03T20:30Z,14,2,True,False,False,2449,149,N Dakota St,Montana,49,26,FCS Championship - Second Round,Fargo,ND
+401437034,2022-12-03,2022-12-03T21:00Z,14,2,True,False,False,68,278,Boise St,Fresno St,16,28,Mountain West Championship Game,Boise,ID
+401506577,2022-12-03,2022-12-03T22:00Z,14,2,True,False,False,16,257,Sacramento St,Richmond,38,31,FCS Championship - Second Round,Sacramento,CA
+401507088,2022-12-03,2022-12-03T20:00Z,14,2,True,False,False,166,2674,New Mexico St,Valparaiso,65,3,,Las Cruces,NM
+401506610,2022-12-03,2022-12-03T17:00Z,14,2,True,False,False,107,160,Holy Cross,New Hampshire,35,19,FCS Championship - Second Round,Worcester,MA
+401506612,2022-12-03,2022-12-03T18:00Z,14,2,True,False,False,110242,351,West Florida,Wingate,45,14,Division II Championship - Quarterfinal,Pensacola,FL
+401506571,2022-12-03,2022-12-03T19:00Z,14,2,True,False,False,2916,231,Incarnate Word,Furman,41,38,FCS Championship - Second Round,San Antonio,TX
+401506630,2022-12-03,2022-12-03T19:00Z,14,2,True,False,False,2729,2241,William & Mary,Gardner-Webb,54,14,FCS Championship - Second Round,Williamsburg,VA
+401506611,2022-12-03,2022-12-03T20:00Z,14,2,True,False,False,147,2692,Montana St,Weber St,33,25,FCS Championship - Second Round,Bozeman,MT
+401506655,2022-12-03,2022-12-03T20:00Z,14,2,True,False,False,2535,2545,Samford,SE Louisiana,48,42,FCS Championship - Second Round,Birmingham,AL
+401437132,2022-12-03,2022-12-03T21:00Z,14,2,True,False,False,2296,2582,Jackson St,Southern,43,24,SWAC Championship Game,Jackson,MS

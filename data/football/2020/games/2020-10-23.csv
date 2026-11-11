@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401247297,2020-10-23,2020-10-24T00:00Z,8,2,True,False,True,275,356,Wisconsin,Illinois,45,7,,Madison,WI
+401250783,2020-10-23,2020-10-23T23:00Z,8,2,True,False,False,2229,55,FIU,Jax State,10,19,,Miami,FL
+401212479,2020-10-23,2020-10-23T23:30Z,8,2,True,False,True,58,202,South Florida,Tulsa,13,42,,Tampa,FL
+401238036,2020-10-23,2020-10-24T00:00Z,8,2,True,False,False,5,309,UAB,Louisiana,20,24,,Birmingham,AL

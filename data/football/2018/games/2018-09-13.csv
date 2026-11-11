@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401014993,2018-09-13,2018-09-13T20:00Z,3,2,True,False,True,2429,295,Charlotte,Old Dominion,28,25,MOVED FROM SEPT. 15,Charlotte,NC
+401013109,2018-09-13,2018-09-13T21:30Z,3,2,True,False,True,154,103,Wake Forest,Boston College,34,41,,Winston-Salem,NC
+401029913,2018-09-13,2018-09-13T23:00Z,3,2,True,False,False,256,2523,JMU,Robert Morris,73,7,,Harrisonburg,VA
+401022519,2018-09-13,2018-09-14T00:00Z,3,2,True,False,False,328,2635,Utah State,Tenn Tech,73,12,,Logan,UT
+401029952,2018-09-13,2018-09-13T21:00Z,3,2,True,False,False,2598,257,St Francis (PA),Richmond,27,35,MOVED FROM SEPT. 15,Loretto,PA
+401030368,2018-09-13,2018-09-13T23:00Z,3,2,True,False,False,2166,2258,Davidson,Guilford,91,61,RESCHEDULED FROM SEPT. 15,Davidson,NC

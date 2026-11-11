@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400944852,2017-10-12,2017-10-12T23:30Z,7,2,True,False,True,309,326,Louisiana,Texas State,24,7,,Lafayette,LA

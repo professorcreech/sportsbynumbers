@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401020775,2018-11-06,2018-11-07T00:30Z,11,2,True,False,True,2084,2309,Buffalo,Kent State,48,14,,Buffalo,NY

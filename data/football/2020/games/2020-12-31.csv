@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401268773,2020-12-31,2020-12-31T19:00Z,1,3,True,True,False,23,2050,San José State,Ball State,13,34,Offerpad Arizona Bowl,Tucson,AZ
+401256196,2020-12-31,2020-12-31T17:00Z,1,3,True,True,False,344,202,Mississippi St,Tulsa,28,26,Lockheed Martin Armed Forces Bowl,Fort Worth,TX
+401256197,2020-12-31,2020-12-31T21:00Z,1,3,True,True,False,349,277,Army,West Virginia,21,24,AutoZone Liberty Bowl,Memphis,TN

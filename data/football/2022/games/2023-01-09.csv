@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401442010,2023-01-09,2023-01-10T00:30Z,1,3,True,True,False,61,2628,Georgia,TCU,65,7,CFP National Championship pres. by AT&T,Inglewood,CA

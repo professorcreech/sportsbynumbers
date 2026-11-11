@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401415638,2022-10-21,2022-10-21T23:30Z,8,2,True,False,True,218,202,Temple,Tulsa,16,27,,Philadelphia,PA
+401426592,2022-10-21,2022-10-22T00:00Z,8,2,True,False,True,98,5,Western KY,UAB,20,17,,Bowling Green,KY
+401418599,2022-10-21,2022-10-21T23:00Z,8,2,True,False,True,108,163,Harvard,Princeton,10,37,,Cambridge,MA
+401423435,2022-10-21,2022-10-21T23:00Z,8,2,True,False,True,2681,2341,Wagner,Long Island,37,26,,Staten Island,NY

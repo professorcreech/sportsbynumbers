@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401256135,2020-12-21,2020-12-21T19:30Z,1,3,True,True,False,249,2026,North Texas,App State,28,56,Myrtle Beach Bowl,Conway,SC

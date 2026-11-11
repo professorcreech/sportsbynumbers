@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032061,2018-12-21,2018-12-21T17:30Z,1,3,True,True,False,2649,2229,Toledo,Florida Intl,32,35,MAKERS WANTED BAHAMAS BOWL,Nassau,
+401032062,2018-12-21,2018-12-21T21:00Z,1,3,True,True,False,252,2711,BYU,W Michigan,49,18,FAMOUS IDAHO POTATO BOWL,Boise,ID

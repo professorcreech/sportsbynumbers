@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401403958,2022-11-25,2022-11-26T00:30Z,13,2,True,False,False,52,57,Florida St,Florida,45,38,,Tallahassee,FL
+401411172,2022-11-25,2022-11-25T20:30Z,13,2,True,False,True,153,152,North Carolina,NC State,27,30,,Chapel Hill,NC
+401404046,2022-11-25,2022-11-25T21:30Z,13,2,True,False,True,25,26,California,UCLA,28,35,,Berkeley,CA
+401415665,2022-11-25,2022-11-25T17:00Z,13,2,True,False,True,2132,2655,Cincinnati,Tulane,24,27,,Cincinnati,OH
+401404119,2022-11-25,2022-11-25T17:00Z,13,2,True,False,True,251,239,Texas,Baylor,38,27,,Austin,TX
+401415269,2022-11-25,2022-11-25T17:00Z,13,2,True,False,True,68,328,Boise St,Utah State,42,23,,Boise,ID
+401416650,2022-11-25,2022-11-25T17:00Z,13,2,True,False,True,2199,2117,E Michigan,C Michigan,38,19,,Ypsilanti,MI
+401416651,2022-11-25,2022-11-25T17:00Z,13,2,True,False,True,2711,2649,W Michigan,Toledo,20,14,,Kalamazoo,MI
+401404045,2022-11-25,2022-11-25T20:00Z,13,2,True,False,True,12,9,Arizona,Arizona St,38,35,,Tucson,AZ
+401403961,2022-11-25,2022-11-25T20:30Z,13,2,True,False,True,142,8,Missouri,Arkansas,29,27,,Columbia,MO
+401415268,2022-11-25,2022-11-25T20:30Z,13,2,True,False,True,36,167,Colorado St,New Mexico,17,0,,Fort Collins,CO
+401405148,2022-11-25,2022-11-25T21:00Z,13,2,True,False,True,2294,158,Iowa,Nebraska,17,24,,Iowa City,IA
+401415270,2022-11-25,2022-11-26T03:00Z,13,2,True,False,True,278,2751,Fresno St,Wyoming,30,0,,Fresno,CA

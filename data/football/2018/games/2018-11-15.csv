@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401020783,2018-11-15,2018-11-15T23:00Z,12,2,True,False,True,2309,2649,Kent State,Toledo,34,56,,Kent,OH
+401019529,2018-11-15,2018-11-16T01:00Z,12,2,True,False,True,248,2655,Houston,Tulane,48,17,,Houston,TX
+401015045,2018-11-15,2018-11-16T02:30Z,12,2,True,False,True,249,2226,North Texas,FAU,41,38,,Denton,TX
+401030218,2018-11-15,2018-11-16T00:00Z,12,2,True,False,True,2617,2466,SF Austin,Northwestern St,23,35,,Nacogdoches,TX
+401030223,2018-11-15,2018-11-16T00:00Z,12,2,True,False,True,2447,2545,Nicholls,SE Louisiana,44,0,,Thibodaux,LA

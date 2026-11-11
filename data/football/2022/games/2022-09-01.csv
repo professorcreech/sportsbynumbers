@@ -1,0 +1,33 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401416569,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,197,2117,Oklahoma St,C Michigan,58,44,,Stillwater,OK
+401411092,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,221,277,Pitt,West Virginia,38,31,,Pittsburgh,PA
+401411093,2022-09-01,2022-09-01T23:30Z,1,2,True,False,False,154,2678,Wake Forest,VMI,44,10,,Winston-Salem,NC
+401416568,2022-09-01,2022-09-01T22:00Z,1,2,True,False,False,2006,2598,Akron,Saint Francis,30,23,,Akron,OH
+401403864,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2633,2050,Tennessee,Ball State,59,10,,Knoxville,TN
+401415610,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2116,2569,UCF,SC State,56,10,,Orlando,FL
+401418645,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2535,338,Samford,Kennesaw St,27,17,,Birmingham,AL
+401426533,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2229,2803,FIU,Bryant,38,37,,Miami,FL
+401441990,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2649,2341,Toledo,Long Island,37,0,,Toledo,OH
+401405064,2022-09-01,2022-09-02T00:00Z,1,2,True,False,True,2509,213,Purdue,Penn State,31,35,,West Lafayette,IN
+401416592,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2459,2197,N Illinois,E Illinois,34,27,,Dekalb,IL
+401420806,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2110,2623,C Arkansas,Missouri St,14,27,,Conway,AR
+401426534,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,5,2010,UAB,Alabama A&M,59,0,,Birmingham,AL
+401426537,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,142,2348,Missouri,Louisiana Tech,52,24,,Columbia,MO
+401405060,2022-09-01,2022-09-02T01:00Z,1,2,True,False,False,135,166,Minnesota,New Mexico St,38,0,,Minneapolis,MN
+401403965,2022-09-01,2022-09-02T02:00Z,1,2,True,False,False,9,2464,Arizona St,N Arizona,40,3,,Tempe,AZ
+401413224,2022-09-01,2022-09-02T02:30Z,1,2,True,False,False,278,13,Fresno St,Cal Poly,35,7,,Fresno,CA
+401415213,2022-09-01,2022-09-02T02:30Z,1,2,True,False,False,23,2502,San José St,Portland St,21,17,,San Jose,CA
+401418776,2022-09-01,2022-09-01T22:00Z,1,2,True,False,False,282,2453,Indiana St,North Alabama,17,14,,Terre Haute,IN
+401421137,2022-09-01,2022-09-01T22:00Z,1,2,True,False,False,2097,2643,Campbell,The Citadel,29,10,,Buies Creek,NC
+401428480,2022-09-01,2022-09-01T22:00Z,1,2,True,False,False,2681,2230,Wagner,Fordham,31,48,,Staten Island,NY
+401421156,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,231,2822,Furman,N Greenville,52,0,,Greenville,SC
+401424402,2022-09-01,2022-09-01T23:00Z,1,2,True,False,True,160,2405,New Hampshire,Monmouth,31,21,,Durham,NH
+401424414,2022-09-01,2022-09-01T23:00Z,1,2,True,False,True,2619,227,Stony Brook,Rhode Island,14,35,,Stony Brook,NY
+401432239,2022-09-01,2022-09-01T23:00Z,1,2,True,False,False,2241,2336,Gardner-Webb,Limestone,56,21,,Boiling Springs,NC
+401420840,2022-09-01,2022-09-01T23:30Z,1,2,True,False,False,2630,2710,UT Martin,W Illinois,42,25,,Martin,TN
+401425510,2022-09-01,2022-09-01T23:30Z,1,2,True,False,False,2193,2369,ETSU,Mars Hill,44,7,,Johnson City,TN
+401418782,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2000,2320,Abilene Chrstn,Lamar,28,14,,Abilene,TX
+401420877,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,253,2900,Southern Utah,St Thomas,44,13,,Cedar City,UT
+401420880,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2627,2400,Tarleton St,Miss Valley St,29,13,,Stephenville,TX
+401421125,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2837,124179,TX A&M-Commerce,Lincoln (CA),52,7,,Commerce,TX
+401431610,2022-09-01,2022-09-02T00:00Z,1,2,True,False,False,2692,2848,Weber St,West Oregon,41,5,,Ogden,UT

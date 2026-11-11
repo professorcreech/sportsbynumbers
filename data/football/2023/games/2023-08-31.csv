@@ -1,0 +1,31 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520176,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,254,57,Utah,Florida,24,11,,Salt Lake City,UT
+401525461,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,154,2210,Wake Forest,Elon,37,17,,Winston-Salem,NC
+401525816,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2116,2309,UCF,Kent State,56,6,,Orlando,FL
+401531834,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2247,227,Georgia St,Rhode Island,42,35,,Atlanta,GA
+401532393,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2711,2598,W Michigan,Saint Francis,35,17,,Kalamazoo,MI
+401540285,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2447,16,Nicholls,Sacramento St,24,38,,Thibodaux,LA
+401540323,2023-08-31,2023-08-31T23:00Z,1,2,True,False,True,2619,48,Stony Brook,Delaware,13,37,,Stony Brook,NY
+401540607,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,338,2839,Kennesaw St,Tusculum,38,7,,Kennesaw,GA
+401520174,2023-08-31,2023-08-31T23:30Z,1,2,True,False,False,41,152,UConn,NC State,14,24,,East Hartford,CT
+401520148,2023-08-31,2023-09-01T00:00Z,1,2,True,False,True,135,158,Minnesota,Nebraska,13,10,,Minneapolis,MN
+401520165,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,142,233,Missouri,South Dakota,35,10,,Columbia,MO
+401531337,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,202,2029,Tulsa,AR-Pine Bluff,42,7,,Tulsa,OK
+401531377,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,5,2448,UAB,NC A&T,35,6,,Birmingham,AL
+401523987,2023-08-31,2023-09-01T02:00Z,1,2,True,False,False,9,253,Arizona St,Southern Utah,24,21,,Tempe,AZ
+401540299,2023-08-31,2023-08-31T22:00Z,1,2,True,False,False,282,2197,Indiana St,E Illinois,0,27,,Terre Haute,IN
+401540470,2023-08-31,2023-08-31T22:00Z,1,2,True,False,False,2127,2822,Charleston So,N Greenville,13,10,,Charleston,SC
+401540527,2023-08-31,2023-08-31T22:00Z,1,2,True,False,False,2413,2707,Morehead St,W Virginia St,37,35,,Morehead,KY
+401545743,2023-08-31,2023-08-31T22:00Z,1,2,True,False,False,2441,341,New Haven,Frostburg St,24,27,,West Haven,CT
+401540311,2023-08-31,2023-08-31T23:00Z,1,2,True,False,True,2097,2729,Campbell,William & Mary,24,34,,Buies Creek,NC
+401540534,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,231,2635,Furman,Tennessee Tech,45,10,,Greenville,SC
+401541855,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2535,2560,Samford,Shorter,69,14,,Birmingham,AL
+401541881,2023-08-31,2023-08-31T23:00Z,1,2,True,False,False,2698,2336,West Georgia,Limestone,21,19,,Carrollton,GA
+401540451,2023-08-31,2023-08-31T23:30Z,1,2,True,False,False,2754,2674,Youngstown St,Valparaiso,52,10,,Youngstown,OH
+401540244,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2320,70,Lamar,Idaho,17,42,,Beaumont,TX
+401540278,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2000,2458,Abilene Chrstn,N Colorado,31,11,,Abilene,TX
+401540288,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2837,302,East Texas A&M,UC Davis,10,48,,Commerce,TX
+401540463,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2571,2848,S Dakota St,Western Oregon,45,7,,Brookings,SD
+401541923,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2692,2120,Weber St,C Washington,35,10,,Ogden,UT
+401549695,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2222,2385,Ferris St,Mercyhurst,54,12,,Big Rapids,MI
+401550428,2023-08-31,2023-09-01T00:00Z,1,2,True,False,False,2815,2743,Lindenwood,UW-Stevens Pt,77,9,,Saint Charles,MO

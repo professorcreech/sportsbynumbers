@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869562,2016-11-17,2016-11-18T01:00Z,12,2,True,False,False,248,97,Houston,Louisville,36,10,,Houston,TX
+400868944,2016-11-17,2016-11-18T00:00Z,12,2,True,False,False,324,2335,C. Carolina,Liberty,42,7,,Conway,SC
+400869847,2016-11-17,2016-11-18T02:30Z,12,2,True,False,True,2653,2032,Troy,Arkansas State,3,35,,Troy,AL
+400872511,2016-11-17,2016-11-18T00:00Z,12,2,True,False,True,2447,2545,Nicholls,SE Louisiana,42,44,,Thibodaux,LA
+400872486,2016-11-17,2016-11-18T01:00Z,12,2,True,False,True,2916,2277,Incarnate Word,Houston Baptist,28,26,,San Antonio,TX

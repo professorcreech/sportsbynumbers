@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135289,2020-01-01,2020-01-02T01:45Z,1,3,True,True,False,239,61,Baylor,Georgia,14,26,Allstate Sugar Bowl,New Orleans,LA
+401135288,2020-01-01,2020-01-01T22:10Z,1,3,True,True,False,275,2483,Wisconsin,Oregon,27,28,Rose Bowl Game Pres. by Northwestern Mutual,Pasadena,CA
+401135287,2020-01-01,2020-01-01T18:00Z,1,3,True,True,False,2,135,Auburn,Minnesota,24,31,OUTBACK BOWL,Tampa,FL
+401135286,2020-01-01,2020-01-01T18:00Z,1,3,True,True,False,333,130,Alabama,Michigan,35,16,Vrbo CITRUS BOWL,Orlando,FL

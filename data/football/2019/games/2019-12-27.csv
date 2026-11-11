@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401136253,2019-12-27,2019-12-28T01:00Z,1,3,True,True,False,2294,30,Iowa,USC,49,24,SAN DIEGO COUNTY CREDIT UNION HOLIDAY BOWL,San Diego,CA
+401135274,2019-12-27,2019-12-27T23:45Z,1,3,True,True,False,245,197,Texas A&M,Oklahoma St,24,21,ACADEMY SPORTS + OUTDOORS TEXAS BOWL,Houston,TX
+401135272,2019-12-27,2019-12-27T17:00Z,1,3,True,True,False,218,153,Temple,North Carolina,13,55,MILITARY BOWL PRESENTED BY NORTHROP GRUMMAN,Annapolis,MD
+401135273,2019-12-27,2019-12-27T20:20Z,1,3,True,True,False,154,127,Wake Forest,Michigan St,21,27,NEW ERA PINSTRIPE BOWL,Bronx,NY
+401135275,2019-12-27,2019-12-28T03:15Z,1,3,True,True,False,265,2005,Washington St,Air Force,21,31,CHEEZ-IT BOWL,Phoenix,AZ

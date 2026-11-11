@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401524020,2023-09-29,2023-09-30T01:00Z,5,2,True,False,True,204,254,Oregon St,Utah,21,7,,Corvallis,OR
+401525512,2023-09-29,2023-09-29T23:00Z,5,2,True,False,True,152,97,NC State,Louisville,10,13,,Raleigh,NC
+401520278,2023-09-29,2023-09-30T01:00Z,5,2,True,False,True,2638,2348,UTEP,Louisiana Tech,10,24,,El Paso,TX
+401525851,2023-09-29,2023-09-30T02:15Z,5,2,True,False,True,252,2132,BYU,Cincinnati,35,27,,Provo,UT
+401541632,2023-09-29,2023-09-29T23:00Z,5,2,True,False,True,163,171,Princeton,Columbia,10,7,,Princeton,NJ
+401551495,2023-09-29,2023-09-29T23:00Z,5,2,True,False,True,2022,2441,American Int'l,New Haven,14,33,,Springfield,MA

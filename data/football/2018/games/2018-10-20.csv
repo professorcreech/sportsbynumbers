@@ -1,0 +1,114 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401012318,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2633,333,Tennessee,Alabama,21,58,,Knoxville,TN
+401013348,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,2509,194,Purdue,Ohio State,49,20,,West Lafayette,IN
+401012315,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,99,344,LSU,Miss St,19,3,,Baton Rouge,LA
+401012884,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,127,130,Mich. St.,Michigan,7,21,,East Lansing,MI
+401013068,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2628,201,TCU,Oklahoma,27,52,,Fort Worth,TX
+401019509,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,151,2116,ECU,UCF,10,37,,Greenville,NC
+401012773,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,265,2483,Washington St,Oregon,34,20,,Pullman,WA
+401012314,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,96,238,Kentucky,Vanderbilt,14,7,,Lexington,KY
+401012772,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,264,38,Washington,Colorado,27,13,,Seattle,WA
+401012857,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,84,213,Indiana,Penn State,28,33,,Bloomington,IN
+401012867,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2294,120,Iowa,Maryland,23,0,,Iowa City,IA
+401019510,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,218,2132,Temple,Cincinnati,24,17,,Philadelphia,PA
+401019511,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,58,41,USF,UConn,38,30,,Tampa,FL
+401012810,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,275,356,Wisconsin,Illinois,49,20,,Madison,WI
+401012313,2018-10-20,2018-10-20T16:00Z,8,2,True,False,False,8,202,Arkansas,Tulsa,23,0,,Fayetteville,AR
+401012316,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,145,2,Ole Miss,Auburn,16,31,,Oxford,MS
+401012846,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,164,77,Rutgers,Northwestern,15,18,,Piscataway,NJ
+401013371,2018-10-20,2018-10-20T16:00Z,8,2,True,False,False,349,193,Army,Miami (OH),31,30,,West Point,NY
+401020763,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2649,2084,Toledo,Buffalo,17,31,,Toledo,OH
+401013152,2018-10-20,2018-10-20T16:20Z,8,2,True,False,True,183,153,Syracuse,UNC,40,37,,Syracuse,NY
+401013150,2018-10-20,2018-10-20T16:30Z,8,2,True,False,True,150,258,Duke,UVA,14,28,,Durham,NC
+401013453,2018-10-20,2018-10-20T18:00Z,8,2,True,False,False,2335,304,Liberty,Idaho State,48,41,,Lynchburg,VA
+401020762,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,195,189,Ohio,Bowling Green,49,14,,Athens,OH
+401030244,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2546,55,SE Missouri St,Jacksonville St,37,14,,Cape Girardeau,MO
+401015021,2018-10-20,2018-10-20T18:30Z,8,2,True,False,True,276,2226,Marshall,FAU,31,7,,Huntington,WV
+401022540,2018-10-20,2018-10-20T18:30Z,8,2,True,False,True,2751,328,Wyoming,Utah State,16,24,,Laramie,WY
+401015019,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2393,2429,Mid Tennessee,Charlotte,21,13,,Murfreesboro,TN
+401020764,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2050,2199,Ball State,E Michigan,20,42,,Muncie,IN
+401020765,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2117,2711,Cent Michigan,W Michigan,10,35,,Mount Pleasant,MI
+401030108,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2623,2710,Missouri State,W Illinois,14,31,,Springfield,MO
+401013052,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2641,2305,Texas Tech,Kansas,48,16,,Lubbock,TX
+401013149,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,228,152,Clemson,NC State,41,7,,Clemson,SC
+401013151,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,52,154,FSU,Wake Forest,38,17,,Tallahassee,FL
+401013332,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,158,135,Nebraska,Minnesota,53,28,,Lincoln,NE
+401013363,2018-10-20,2018-10-20T19:30Z,8,2,True,False,False,113,324,UMass,C. Carolina,13,24,,Amherst,MA
+401015022,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2348,2638,LA Tech,UTEP,31,24,,Ruston,LA
+401019512,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2426,248,Navy,Houston,36,49,,Annapolis,MD
+401019513,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2655,2567,Tulane,SMU,23,27,,New Orleans,LA
+401020761,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2309,2006,Kent State,Akron,23,24,,Kent,OH
+401021677,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2026,309,Appalachian St,Louisiana,27,17,,Boone,NC
+401029750,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2449,2287,North Dakota St,Illinois State,28,14,,Fargo,ND
+401029899,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,160,48,UNH,Delaware,14,38,,Durham,NH
+401012317,2018-10-20,2018-10-20T20:00Z,8,2,True,False,False,142,235,Missouri,Memphis,65,33,,Columbia,MO
+401012771,2018-10-20,2018-10-20T20:00Z,8,2,True,False,True,204,25,Oregon St,California,7,49,,Corvallis,OR
+401030196,2018-10-20,2018-10-20T20:00Z,8,2,True,False,True,2320,2534,Lamar,Sam Houston,41,23,,Beaumont,TX
+401013443,2018-10-20,2018-10-20T22:00Z,8,2,True,False,False,166,290,New Mexico St,Ga Southern,31,48,,Las Cruces,NM
+401015025,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2572,2636,Southern Miss,UTSA,27,17,,Hattiesburg,MS
+401021678,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2433,326,UL Monroe,Texas State,20,14,,Monroe,LA
+401015020,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,2229,242,Florida Intl,Rice,36,17,,Miami,FL
+401015023,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,5,249,UAB,North Texas,29,21,,Birmingham,AL
+401015024,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,98,295,W Kentucky,Old Dominion,34,37,,Bowling Green,KY
+401022541,2018-10-20,2018-10-20T23:30Z,8,2,True,False,True,167,278,New Mexico,Fresno State,7,38,,Albuquerque,NM
+401012770,2018-10-20,2018-10-21T00:00Z,8,2,True,False,True,254,30,Utah,USC,41,28,,Salt Lake City,UT
+401030404,2018-10-20,2018-10-21T01:00Z,8,2,True,False,True,16,155,Sacramento St,North Dakota,15,41,,Sacramento,CA
+401012769,2018-10-20,2018-10-21T02:30Z,8,2,True,False,True,26,12,UCLA,Arizona,31,30,,Pasadena,CA
+401022543,2018-10-20,2018-10-21T02:30Z,8,2,True,False,True,21,23,San Diego State,San Jose State,16,13,,San Diego,CA
+401022542,2018-10-20,2018-10-21T03:59Z,8,2,True,False,True,62,2440,Hawai'i,Nevada,22,40,,Honolulu,HI
+401029864,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,108,163,Harvard,Princeton,21,29,,Cambridge,MA
+401029885,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2083,322,Bucknell,Lafayette,27,29,,Lewisburg,PA
+401030361,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2086,301,Butler,San Diego,13,42,,Indianapolis,IN
+401030555,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2598,2184,St Francis (PA),Duquesne,20,27,,Loretto,PA
+401030559,2018-10-20,2018-10-20T16:00Z,8,2,True,False,False,2523,2119,Robert Morris,Central St,49,45,,Moon Township,PA
+401040688,2018-10-20,2018-10-20T16:00Z,8,2,True,False,True,2830,2771,St. Anselm,Merrimack,28,31,,,
+401029831,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,225,172,Brown,Cornell,16,34,,Providence,RI
+401029973,2018-10-20,2018-10-20T17:00Z,8,2,True,False,False,2405,2097,Monmouth,Campbell,38,21,,West Long Branch,NJ
+401030344,2018-10-20,2018-10-20T17:00Z,8,2,True,False,False,2230,2803,Fordham,Bryant,41,42,,Bronx,NY
+401030373,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,2368,2166,Marist,Davidson,48,41,,Poughkeepsie,NY
+401030547,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,2115,2529,Cent Conn St,Sacred Heart,25,28,,New Britain,CT
+401030578,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,2168,2181,Dayton,Drake,17,28,,Dayton,OH
+401040682,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,2060,284,Bentley,Stonehill,38,10,,,
+401040705,2018-10-20,2018-10-20T17:00Z,8,2,True,False,True,2441,2038,New Haven,Assumption,27,21,,,
+401029841,2018-10-20,2018-10-20T17:30Z,8,2,True,False,True,171,159,Columbia,Dartmouth,12,28,,New York,NY
+401029908,2018-10-20,2018-10-20T17:30Z,8,2,True,False,True,2210,257,Elon,Richmond,38,28,,Elon,NC
+401030263,2018-10-20,2018-10-20T17:30Z,8,2,True,False,True,2678,2643,VMI,The Citadel,32,34,,Lexington,VA
+401030312,2018-10-20,2018-10-20T17:30Z,8,2,True,False,True,2747,2193,Wofford,ETSU,30,17,,Spartanburg,SC
+401030501,2018-10-20,2018-10-20T17:30Z,8,2,True,False,True,2569,2169,S Carolina St,Delaware State,30,19,,Orangeburg,SC
+401030317,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,231,2535,Furman,Samford,25,38,,Greenville,SC
+401030356,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,46,2329,Georgetown,Lehigh,22,16,,Washington,DC
+401030413,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2458,2464,N Colorado,N Arizona,42,14,,Greeley,CO
+401030521,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2450,2428,Norfolk State,NC Central,6,36,,Norfolk,VA
+401030602,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2413,2674,Morehead State,Valparaiso,31,24,,Morehead,KY
+401040276,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2123,3101,Chadron St,Dixie St,30,18,,,
+401040409,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2698,2695,West Georgia,West Alabama,27,25,,,
+401040530,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2703,2837,W New Mexico,TX A&M-Commerce,7,55,,Silver City,NM
+401040587,2018-10-20,2018-10-20T18:00Z,8,2,True,False,True,2815,138,Lindenwood,NW Missouri St,17,38,,Saint Charles,MO
+401042161,2018-10-20,2018-10-20T18:10Z,8,2,True,False,True,2900,2101,St. Thomas (MN),Carleton,68,0,,Saint Paul,MN
+401030102,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,79,282,S Illinois,Indiana State,21,24,,Carbondale,IL
+401030231,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2197,2630,E Illinois,UT Martin,24,21,,Charleston,IL
+401030238,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2198,93,E Kentucky,Murray State,6,34,,Richmond,KY
+401030458,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2016,2755,Alcorn State,Grambling,33,26,,Lorman,MS
+401030465,2018-10-20,2018-10-20T19:00Z,8,2,True,False,True,2400,2029,Miss Valley St,AR-Pine Bluff,48,47,,Itta Bena,MS
+401030475,2018-10-20,2018-10-20T19:00Z,8,2,True,False,False,2296,2453,Jackson State,North Alabama,7,24,,Jackson,MS
+401030483,2018-10-20,2018-10-20T19:00Z,8,2,True,True,True,2582,2640,Southern,Texas Southern,21,7,,Dallas,TX
+401029890,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,399,119,Albany,Towson,28,56,,Albany,NY
+401029924,2018-10-20,2018-10-20T19:30Z,8,2,True,False,True,2729,311,William & Mary,Maine,27,20,,Williamsburg,VA
+401030278,2018-10-20,2018-10-20T20:00Z,8,2,True,False,True,2382,2717,Mercer,W Carolina,59,46,,Macon,GA
+401030493,2018-10-20,2018-10-20T20:00Z,8,2,True,False,True,2065,2448,Bethune-Cookman,NC A&T,10,35,,Daytona Beach,FL
+401030024,2018-10-20,2018-10-20T21:00Z,8,2,True,False,True,70,253,Idaho,Southern Utah,31,12,,Moscow,ID
+401030115,2018-10-20,2018-10-20T21:00Z,8,2,True,False,True,2460,2571,Northern Iowa,South Dakota St,24,9,,Cedar Falls,IA
+401040394,2018-10-20,2018-10-20T21:00Z,8,2,True,False,True,110242,53,W Fla,Florida Tech,28,30,,,
+401030289,2018-10-20,2018-10-20T21:30Z,8,2,True,False,True,2634,2635,Tennessee St,Tenn Tech,41,14,,Nashville,TN
+401029928,2018-10-20,2018-10-20T22:00Z,8,2,True,False,True,2619,227,Stony Brook,URI,52,14,,Stony Brook,NY
+401029982,2018-10-20,2018-10-20T22:00Z,8,2,True,False,True,2127,2506,Charleston So,Presbyterian,41,7,,Charleston,SC
+401030122,2018-10-20,2018-10-20T22:00Z,8,2,True,False,True,2754,233,Youngstown St,South Dakota,29,17,,Youngstown,OH
+401030400,2018-10-20,2018-10-20T22:00Z,8,2,True,False,True,2692,147,Weber State,Montana State,34,24,,Ogden,UT
+401030592,2018-10-20,2018-10-20T22:00Z,8,2,True,False,True,56,294,Stetson,Jacksonville,38,35,,DeLand,FL
+401030168,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2110,2466,Cent Arkansas,Northwestern St,38,17,,Conway,AR
+401030178,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2277,2617,Houston Baptist,SF Austin,14,42,,Houston,TX
+401030188,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2916,2377,Incarnate Word,McNeese,45,17,,San Antonio,TX
+401030517,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2415,47,Morgan State,Howard,26,35,,Baltimore,MD
+401040526,2018-10-20,2018-10-20T23:00Z,8,2,True,False,True,2627,2658,Tarleton St,Texas A&M-Kingsville,59,21,,Stephenville,TX
+401030014,2018-10-20,2018-10-20T23:05Z,8,2,True,False,True,13,302,Cal Poly,UC Davis,10,52,,San Luis Obispo,CA
+401030151,2018-10-20,2018-10-21T00:00Z,8,2,True,False,True,2545,2000,SE Louisiana,Abil Christian,27,48,,Hammond,LA

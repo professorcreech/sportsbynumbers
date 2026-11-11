@@ -1,0 +1,33 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401267164,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,8,333,Arkansas,Alabama,3,52,,Fayetteville,AR
+401251100,2020-12-12,2020-12-13T00:00Z,15,2,True,False,True,57,99,Florida,LSU,34,37,,Gainesville,FL
+401234661,2020-12-12,2020-12-12T20:30Z,15,2,True,False,True,2390,153,Miami,North Carolina,26,62,,Miami Gardens,FL
+401259671,2020-12-12,2020-12-12T20:00Z,15,2,True,False,True,2653,324,Troy,Coastal,38,42,,Troy,AL
+401247344,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,77,356,Northwestern,Illinois,28,10,,Evanston,IL
+401249431,2020-12-12,2020-12-13T00:30Z,15,2,True,False,True,26,30,UCLA,USC,38,43,,Pasadena,CA
+401247347,2020-12-12,2020-12-12T20:30Z,15,2,True,False,True,2294,275,Iowa,Wisconsin,28,7,,Iowa City,IA
+401249435,2020-12-12,2020-12-13T03:00Z,15,2,True,False,False,252,21,BYU,San Diego St,28,14,,Provo,UT
+401249428,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,38,254,Colorado,Utah,21,38,,Boulder,CO
+401250713,2020-12-12,2020-12-12T20:30Z,15,2,True,False,True,239,197,Baylor,Oklahoma St,3,42,,Waco,TX
+401247342,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,120,164,Maryland,Rutgers,24,27,,College Park,MD
+401247345,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,158,135,Nebraska,Minnesota,17,24,,Lincoln,NE
+401247346,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,213,127,Penn State,Michigan St,39,24,,University Park,PA
+401249884,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,2199,2459,E Michigan,N Illinois,41,33,,Ypsilanti,MI
+401249885,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,2050,2711,Ball State,W Michigan,30,27,,Muncie,IN
+401266696,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,97,154,Louisville,Wake Forest,45,21,,Louisville,KY
+401267161,2020-12-12,2020-12-12T17:00Z,15,2,True,False,True,142,61,Missouri,Georgia,14,49,,Columbia,MO
+401257815,2020-12-12,2020-12-12T18:00Z,15,2,True,False,True,242,5,Rice,UAB,16,21,,Houston,TX
+401249886,2020-12-12,2020-12-12T19:30Z,15,2,True,False,True,2084,2006,Buffalo,Akron,56,7,,Buffalo,NY
+401207203,2020-12-12,2020-12-12T20:00Z,15,2,True,False,False,349,2426,Army,Navy,15,0,,West Point,NY
+401249883,2020-12-12,2020-12-12T20:00Z,15,2,True,False,True,2649,2117,Toledo,C Michigan,24,23,,Toledo,OH
+401264084,2020-12-12,2020-12-12T20:30Z,15,2,True,False,True,235,248,Memphis,Houston,30,27,,Memphis,TN
+401266694,2020-12-12,2020-12-12T21:00Z,15,2,True,False,True,52,150,Florida St,Duke,56,35,,Tallahassee,FL
+401267163,2020-12-12,2020-12-12T21:00Z,15,2,True,False,True,238,2633,Vanderbilt,Tennessee,17,42,,Nashville,TN
+401215309,2020-12-12,2020-12-12T23:00Z,15,2,True,False,True,290,2026,GA Southern,App State,26,34,,Statesboro,GA
+401249035,2020-12-12,2020-12-12T23:00Z,15,2,True,False,True,2751,68,Wyoming,Boise St,9,17,,Laramie,WY
+401266711,2020-12-12,2020-12-13T00:00Z,15,2,True,False,False,2628,2348,TCU,Louisiana Tech,52,10,,Fort Worth,TX
+401260157,2020-12-12,2020-12-13T00:30Z,15,2,True,False,True,344,2,Mississippi St,Auburn,10,24,,Starkville,MS
+401234572,2020-12-12,2020-12-13T01:00Z,15,2,True,False,True,259,258,Virginia Tech,Virginia,33,15,,Blacksburg,VA
+401249432,2020-12-12,2020-12-13T03:00Z,15,2,True,False,True,204,24,Oregon St,Stanford,24,27,,Corvallis,OR
+401249036,2020-12-12,2020-12-13T03:30Z,15,2,True,True,True,167,278,New Mexico,Fresno St,49,39,,Las Vegas,NV
+401249038,2020-12-12,2020-12-13T04:00Z,15,2,True,False,True,62,2439,Hawai'i,UNLV,38,21,,,

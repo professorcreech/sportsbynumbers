@@ -1,0 +1,35 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237142,2020-11-28,2020-11-28T20:30Z,13,2,True,False,True,333,2,Alabama,Auburn,42,13,,Tuscaloosa,AL
+401237146,2020-11-28,2020-11-29T00:00Z,13,2,True,False,True,245,99,Texas A&M,LSU,20,7,,College Station,TX
+401237144,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,57,96,Florida,Kentucky,34,10,,Gainesville,FL
+401247330,2020-11-28,2020-11-28T20:30Z,13,2,True,False,True,127,77,Michigan St,Northwestern,29,20,,East Lansing,MI
+401247329,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,84,120,Indiana,Maryland,27,11,,Bloomington,IN
+401215338,2020-11-28,2020-11-28T20:00Z,13,2,True,False,True,326,324,Texas St,Coastal,14,49,,San Marcos,TX
+401236032,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,197,2641,Oklahoma St,Texas Tech,50,44,,Stillwater,OK
+401212513,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,151,2567,East Carolina,SMU,52,38,,Greenville,NC
+401215339,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,2247,290,Georgia St,GA Southern,30,24,,Atlanta,GA
+401234655,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,183,152,Syracuse,NC State,29,36,,Syracuse,NY
+401237143,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,142,238,Missouri,Vanderbilt,41,0,,Columbia,MO
+401247333,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,130,213,Michigan,Penn State,17,27,,Ann Arbor,MI
+401249873,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,2649,2050,Toledo,Ball State,24,27,,Toledo,OH
+401249875,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,2711,2459,W Michigan,N Illinois,30,27,,Kalamazoo,MI
+401249876,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,195,189,Ohio,Bowling Green,52,10,,Athens,OH
+401249877,2020-11-28,2020-11-28T17:00Z,13,2,True,False,True,2084,2309,Buffalo,Kent State,70,41,,Buffalo,NY
+401249892,2020-11-28,2020-11-28T18:00Z,13,2,True,False,True,2006,193,Akron,Miami OH,7,38,,Akron,OH
+401207191,2020-11-28,2020-11-28T20:00Z,13,2,True,False,True,2636,249,UTSA,North Texas,49,17,,San Antonio,TX
+401215337,2020-11-28,2020-11-28T20:00Z,13,2,True,False,True,2032,6,Arkansas St,South Alabama,31,38,,Jonesboro,AR
+401215340,2020-11-28,2020-11-28T20:00Z,13,2,True,False,True,2433,309,UL Monroe,Louisiana,20,70,,Monroe,LA
+401215336,2020-11-28,2020-11-28T20:30Z,13,2,True,False,True,2026,2653,App State,Troy,47,10,,Boone,NC
+401234651,2020-11-28,2020-11-28T20:30Z,13,2,True,False,True,228,221,Clemson,Pitt,52,17,,Clemson,SC
+401234649,2020-11-28,2020-11-28T21:00Z,13,2,True,False,True,103,97,Boston College,Louisville,34,27,,Chestnut Hill,MA
+401237147,2020-11-28,2020-11-28T21:00Z,13,2,True,False,True,145,344,Ole Miss,Mississippi St,31,24,,Oxford,MS
+401247328,2020-11-28,2020-11-28T21:00Z,13,2,True,False,True,2509,164,Purdue,Rutgers,30,37,,West Lafayette,IN
+401265734,2020-11-28,2020-11-28T22:37Z,13,2,True,False,False,38,21,Colorado,San Diego St,20,10,,Boulder,CO
+401234652,2020-11-28,2020-11-29T00:00Z,13,2,True,False,True,59,150,Georgia Tech,Duke,56,33,,Atlanta,GA
+401236028,2020-11-28,2020-11-29T00:00Z,13,2,True,False,True,239,2306,Baylor,Kansas St,32,31,,Waco,TX
+401264080,2020-11-28,2020-11-29T00:00Z,13,2,True,False,True,2426,235,Navy,Memphis,7,10,,Annapolis,MD
+401237145,2020-11-28,2020-11-29T00:30Z,13,2,True,False,True,2579,61,South Carolina,Georgia,16,45,,Columbia,SC
+401265458,2020-11-28,2020-11-29T00:30Z,13,2,True,False,True,264,254,Washington,Utah,24,21,,Seattle,WA
+401236030,2020-11-28,2020-11-29T01:00Z,13,2,True,False,True,2305,2628,Kansas,TCU,23,59,,Lawrence,KS
+401249421,2020-11-28,2020-11-29T01:00Z,13,2,True,False,True,26,12,UCLA,Arizona,27,10,,Pasadena,CA
+401249024,2020-11-28,2020-11-29T04:00Z,13,2,True,False,True,62,2440,Hawai'i,Nevada,24,21,,,

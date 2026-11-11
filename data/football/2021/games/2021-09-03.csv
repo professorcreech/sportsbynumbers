@@ -1,0 +1,10 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401309937,2021-09-03,2021-09-03T22:00Z,1,2,True,False,True,259,153,Virginia Tech,North Carolina,17,10,,Blacksburg,VA
+401282052,2021-09-03,2021-09-03T23:00Z,1,2,True,False,False,2429,150,Charlotte,Duke,31,28,,Charlotte,NC
+401282608,2021-09-03,2021-09-03T23:00Z,1,2,True,False,False,154,295,Wake Forest,Old Dominion,42,10,,Winston-Salem,NC
+401309541,2021-09-03,2021-09-03T23:00Z,1,2,True,False,False,2199,2598,E Michigan,St Francis PA,35,15,,Ypsilanti,MI
+401287888,2021-09-03,2021-09-04T00:00Z,1,2,True,False,False,2305,233,Kansas,South Dakota,17,14,,Lawrence,KS
+401282782,2021-09-03,2021-09-04T01:00Z,1,2,True,False,True,77,127,Northwestern,Michigan State,21,38,,Evanston,IL
+401309836,2021-09-03,2021-09-04T01:00Z,1,2,True,False,False,38,2458,Colorado,N Colorado,35,7,,Boulder,CO
+401310695,2021-09-03,2021-09-04T01:00Z,1,2,True,False,False,36,2571,Colorado State,S Dakota St,23,42,,Fort Collins,CO
+401335299,2021-09-03,2021-09-03T22:00Z,1,2,True,False,False,2115,2583,C Connecticut,S Conn St,21,28,,New Britain,CT

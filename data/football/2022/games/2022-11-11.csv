@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401404033,2022-11-11,2022-11-12T02:30Z,11,2,True,False,True,30,38,USC,Colorado,55,17,,Los Angeles,CA
+401415654,2022-11-11,2022-11-12T01:00Z,11,2,True,False,True,2132,151,Cincinnati,East Carolina,27,25,,Cincinnati,OH
+401425458,2022-11-11,2022-11-12T02:00Z,11,2,True,False,True,2502,16,Portland St,Sacramento St,17,45,,Portland,OR
+401415259,2022-11-11,2022-11-12T03:30Z,11,2,True,False,True,2439,278,UNLV,Fresno St,30,37,,Las Vegas,NV

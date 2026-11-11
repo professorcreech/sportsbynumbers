@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401532441,2023-11-08,2023-11-09T00:00Z,11,2,True,False,True,193,2006,Miami OH,Akron,19,0,,Oxford,OH
+401532442,2023-11-08,2023-11-09T00:00Z,11,2,True,False,True,2309,189,Kent State,Bowling Green,19,49,,Kent,OH
+401532440,2023-11-08,2023-11-09T00:30Z,11,2,True,False,True,2649,2199,Toledo,E Michigan,49,23,,Toledo,OH

@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282239,2021-10-22,2021-10-22T22:00Z,8,2,True,False,False,41,2393,UConn,MTSU,13,44,,East Hartford,CT
+401301026,2021-10-22,2021-10-22T23:00Z,8,2,True,False,True,2116,235,UCF,Memphis,24,7,,Orlando,FL
+401310725,2021-10-22,2021-10-23T01:30Z,8,2,True,False,True,328,36,Utah State,Colorado State,26,24,,Logan,UT
+401309877,2021-10-22,2021-10-23T02:30Z,8,2,True,False,True,12,264,Arizona,Washington,16,21,,Tucson,AZ
+401328243,2021-10-22,2021-10-22T22:00Z,8,2,True,False,True,159,171,Dartmouth,Columbia,0,19,,Hanover,NH

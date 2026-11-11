@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401234643,2020-11-20,2020-11-21T00:00Z,12,2,True,False,True,97,183,Louisville,Syracuse,30,0,,Louisville,KY
+401247325,2020-11-20,2020-11-21T00:30Z,12,2,True,False,True,135,2509,Minnesota,Purdue,34,31,,Minneapolis,MN
+401261674,2020-11-20,2020-11-21T01:00Z,12,2,True,False,False,2226,113,FAU,UMass,24,2,,Boca Raton,FL
+401249018,2020-11-20,2020-11-21T02:30Z,12,2,True,False,True,2005,167,Air Force,New Mexico,28,0,,USAF Academy,CO

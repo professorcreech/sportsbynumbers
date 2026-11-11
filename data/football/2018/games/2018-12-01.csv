@@ -1,0 +1,25 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401056705,2018-12-01,2018-12-01T21:00Z,14,2,True,True,False,61,333,Georgia,Alabama,28,35,SEC Championship Game,Atlanta,GA
+401056698,2018-12-01,2018-12-01T17:00Z,14,2,True,True,False,201,251,Oklahoma,Texas,39,27,Dr Pepper Big 12 Championship,Arlington,TX
+401056702,2018-12-01,2018-12-02T01:00Z,14,2,True,True,False,194,77,Ohio State,Northwestern,45,24,Big Ten Championship Game,Indianapolis,IN
+401056700,2018-12-01,2018-12-02T00:45Z,14,2,True,False,False,68,278,Boise St,Fresno State,16,19,Mountain West Championship Game,Boise,ID
+401082044,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,66,2181,Iowa State,Drake,27,24,,Ames,IA
+401056701,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,2026,309,Appalachian St,Louisiana,30,19,Sun Belt Conference Championship Game,Boone,NC
+401088766,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,152,151,NC State,ECU,58,3,,Raleigh,NC
+401098253,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,2579,2006,S Carolina,Akron,28,3,,Columbia,SC
+401100049,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,311,55,Maine,Jacksonville St,55,27,FCS CHAMPIONSHIP - SECOND ROUND,Orono,ME
+401100159,2018-12-01,2018-12-01T17:00Z,14,2,True,False,False,259,276,Virginia Tech,Marshall,41,20,,Blacksburg,VA
+401100044,2018-12-01,2018-12-01T18:00Z,14,2,True,False,False,2142,256,Colgate,JMU,23,20,FCS CHAMPIONSHIP - SECOND ROUND,Hamilton,NY
+401056703,2018-12-01,2018-12-01T18:30Z,14,2,True,False,False,2393,5,Mid Tennessee,UAB,25,27,Conference USA Championship,Murfreesboro,TN
+401081953,2018-12-01,2018-12-01T19:00Z,14,2,True,False,False,2335,2450,Liberty,Norfolk State,52,17,,Lynchburg,VA
+401100046,2018-12-01,2018-12-01T19:00Z,14,2,True,False,False,338,2747,Kennesaw St,Wofford,13,10,FCS CHAMPIONSHIP - SECOND ROUND,Kennesaw,GA
+401099853,2018-12-01,2018-12-01T20:00Z,14,2,True,False,True,25,24,California,Stanford,13,23,,Berkeley,CA
+401100043,2018-12-01,2018-12-01T20:00Z,14,2,True,False,False,2449,147,North Dakota St,Montana State,52,10,FCS CHAMPIONSHIP - SECOND ROUND,Fargo,ND
+401056699,2018-12-01,2018-12-01T20:45Z,14,2,True,False,False,2116,235,UCF,Memphis,56,41,American Athletic Conference Championship Game,Orlando,FL
+401056697,2018-12-01,2018-12-02T01:00Z,14,2,True,True,False,221,228,Pitt,Clemson,10,42,Dr Pepper ACC Championship Game,Charlotte,NC
+401100861,2018-12-01,2018-12-01T18:00Z,14,2,True,False,False,2364,2627,Minnesota State,Tarleton St,13,10,DIVISION II FOOTBALL CHAMPIONSHIP - QUARTERFINAL,Mankato,MN
+401100045,2018-12-01,2018-12-01T20:00Z,14,2,True,False,False,2571,2184,South Dakota St,Duquesne,51,6,FCS CHAMPIONSHIP - SECOND ROUND,Brookings,SD
+401100050,2018-12-01,2018-12-01T21:00Z,14,2,True,False,False,2692,2546,Weber State,SE Missouri St,48,23,FCS CHAMPIONSHIP - SECOND ROUND,Ogden,UT
+401100833,2018-12-01,2018-12-01T21:30Z,14,2,True,False,False,2016,2582,Alcorn State,Southern,37,28,SWAC Championship Game,Lorman,MS
+401100047,2018-12-01,2018-12-01T22:00Z,14,2,True,False,False,331,2447,E Washington,Nicholls,42,21,FCS CHAMPIONSHIP - SECOND ROUND,Cheney,WA
+401100048,2018-12-01,2018-12-02T00:00Z,14,2,True,False,False,302,2460,UC Davis,Northern Iowa,23,16,FCS CHAMPIONSHIP - SECOND ROUND,Davis,CA

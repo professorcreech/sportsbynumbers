@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401019496,2018-09-28,2018-09-29T00:00Z,5,2,True,False,True,2655,235,Tulane,Memphis,40,24,,New Orleans,LA
+401012752,2018-09-28,2018-09-29T01:00Z,5,2,True,False,True,38,26,Colorado,UCLA,38,16,,Boulder,CO
+401029838,2018-09-28,2018-09-28T22:00Z,5,2,True,False,True,171,163,Columbia,Princeton,10,45,,New York,NY
+401029927,2018-09-28,2018-09-28T23:00Z,5,2,True,False,False,108,227,Harvard,URI,16,23,,Cambridge,MA

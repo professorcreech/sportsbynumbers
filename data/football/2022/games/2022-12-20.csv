@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401442004,2022-12-20,2022-12-20T20:30Z,1,3,True,True,False,23,2199,San José St,E Michigan,27,41,Famous Idaho Potato Bowl,Boise,ID
+401442006,2022-12-20,2022-12-21T00:30Z,1,3,True,True,False,2649,2335,Toledo,Liberty,21,19,RoofClaim.com Boca Raton Bowl,Boca Raton,FL

@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401032055,2018-12-15,2018-12-15T20:30Z,1,3,True,True,False,278,9,Fresno State,Arizona State,31,20,MITSUBISHI MOTORS LAS VEGAS BOWL,Las Vegas,NV
+401035253,2018-12-15,2018-12-15T18:30Z,1,3,True,True,False,309,2655,Louisiana,Tulane,24,41,AUTONATION CURE BOWL,Orlando,FL
+401032054,2018-12-15,2018-12-15T19:00Z,1,3,True,True,False,249,328,North Texas,Utah State,13,52,NEW MEXICO BOWL PRESENTED BY PROGRESSIVE,Albuquerque,NM
+401032056,2018-12-15,2018-12-15T22:30Z,1,3,True,True,False,2199,290,E Michigan,Ga Southern,21,23,RAYCOM MEDIA CAMELLIA BOWL,Montgomery,AL
+401032057,2018-12-15,2018-12-16T02:00Z,1,3,True,True,False,2026,2393,Appalachian St,Mid Tennessee,45,13,R+L CARRIERS NEW ORLEANS BOWL,New Orleans,LA
+401032053,2018-12-15,2018-12-15T17:00Z,1,3,True,True,False,2016,2448,Alcorn State,NC A&T,22,24,AIR FORCE RESERVE CELEBRATION BOWL,Atlanta,GA
+401102914,2018-12-15,2018-12-15T19:00Z,1,3,True,False,False,331,311,E Washington,Maine,50,19,FCS CHAMPIONSHIP - SEMIFINALS,Cheney,WA

@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401404007,2022-09-30,2022-10-01T02:30Z,5,2,True,False,True,26,264,UCLA,Washington,40,32,,Pasadena,CA
+401415625,2022-09-30,2022-09-30T23:00Z,5,2,True,False,True,248,2655,Houston,Tulane,24,27,,Houston,TX
+401426576,2022-09-30,2022-09-30T23:30Z,5,2,True,False,True,2393,2636,MTSU,UTSA,30,45,,Murfreesboro,TN
+401415228,2022-09-30,2022-10-01T00:00Z,5,2,True,False,True,68,21,Boise St,San Diego St,35,13,,Boise,ID
+401415229,2022-09-30,2022-10-01T03:00Z,5,2,True,False,True,2439,167,UNLV,New Mexico,31,20,,Las Vegas,NV
+401418605,2022-09-30,2022-09-30T23:00Z,5,2,True,False,True,159,219,Dartmouth,Penn,17,23,,Hanover,NH

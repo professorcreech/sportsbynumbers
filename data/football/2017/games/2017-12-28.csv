@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400953401,2017-12-28,2017-12-29T02:00Z,1,3,True,True,False,2628,24,TCU,Stanford,39,37,VALERO ALAMO BOWL,San Antonio,TX
+400959397,2017-12-28,2017-12-29T02:00Z,1,3,True,True,False,127,265,Michigan State,Washington St,42,17,SAN DIEGO COUNTY CREDIT UNION HOLIDAY BOWL,San Diego,CA
+400953416,2017-12-28,2017-12-28T22:15Z,1,3,True,True,False,197,259,Oklahoma State,Virginia Tech,30,21,CAMPING WORLD BOWL,Orlando,FL
+400953400,2017-12-28,2017-12-28T18:30Z,1,3,True,False,False,2426,258,Navy,UVA,49,7,MILITARY BOWL PRESENTED BY NORTHROP GRUMMAN,Annapolis,MD

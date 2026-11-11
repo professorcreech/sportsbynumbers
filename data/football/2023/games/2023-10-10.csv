@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520313,2023-10-10,2023-10-10T23:00Z,7,2,True,False,True,2393,2348,MTSU,Louisiana Tech,31,23,,Murfreesboro,TN
+401520312,2023-10-10,2023-10-10T23:30Z,7,2,True,False,True,55,2335,Jax State,Liberty,13,31,,Jacksonville,AL
+401531888,2023-10-10,2023-10-10T23:30Z,7,2,True,False,True,2026,324,App State,Coastal,24,27,,Boone,NC

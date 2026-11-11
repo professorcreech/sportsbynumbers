@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401411117,2022-09-23,2022-09-23T23:00Z,4,2,True,False,True,183,258,Syracuse,Virginia,22,20,,Syracuse,NY
+401415220,2022-09-23,2022-09-24T00:00Z,4,2,True,False,True,2005,2440,Air Force,Nevada,48,20,,USAF Academy,CO
+401426571,2022-09-23,2022-09-24T01:00Z,4,2,True,False,False,2638,68,UTEP,Boise St,27,10,,El Paso,TX
+401455577,2022-09-23,2022-09-23T22:00Z,4,2,True,False,True,2060,2441,Bentley,New Haven,13,21,,Waltham,MA

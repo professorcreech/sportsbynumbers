@@ -1,0 +1,37 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401234637,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,103,87,Boston College,Notre Dame,31,45,,Chestnut Hill,MA
+401237129,2020-11-14,2020-11-15T00:00Z,11,2,True,False,True,57,8,Florida,Arkansas,63,35,,Gainesville,FL
+401234641,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,259,2390,Virginia Tech,Miami,24,25,,Blacksburg,VA
+401247316,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,127,84,Michigan St,Indiana,0,24,,East Lansing,MI
+401249405,2020-11-14,2020-11-15T00:00Z,11,2,True,False,True,265,2483,Washington St,Oregon,29,43,,Pullman,WA
+401247319,2020-11-14,2020-11-15T00:30Z,11,2,True,False,True,130,275,Michigan,Wisconsin,11,49,,Ann Arbor,MI
+401207176,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,276,2393,Marshall,MTSU,42,14,,Huntington,WV
+401212491,2020-11-14,2020-11-15T00:00Z,11,2,True,False,True,202,2567,Tulsa,SMU,28,24,,Tulsa,OK
+401249403,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,12,30,Arizona,USC,30,34,,Tucson,AZ
+401247315,2020-11-14,2020-11-14T22:00Z,11,2,True,False,True,2509,77,Purdue,Northwestern,20,27,,West Lafayette,IN
+401215332,2020-11-14,2020-11-14T19:00Z,11,2,True,False,True,309,6,Louisiana,South Alabama,38,10,,Lafayette,LA
+401207200,2020-11-14,2020-11-14T17:00Z,11,2,True,False,False,2655,349,Tulane,Army,38,12,,New Orleans,LA
+401207218,2020-11-14,2020-11-14T17:00Z,11,2,True,False,False,2335,2717,Liberty,W Carolina,58,14,,Lynchburg,VA
+401234642,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,153,154,North Carolina,Wake Forest,59,53,,Chapel Hill,NC
+401236024,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,277,2628,West Virginia,TCU,24,6,,Morgantown,WV
+401237132,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,96,238,Kentucky,Vanderbilt,38,35,,Lexington,KY
+401247320,2020-11-14,2020-11-14T17:00Z,11,2,True,False,True,158,213,Nebraska,Penn State,30,23,,Lincoln,NE
+401247314,2020-11-14,2020-11-14T18:00Z,11,2,True,False,True,164,356,Rutgers,Illinois,20,23,,Piscataway,NJ
+401215328,2020-11-14,2020-11-14T19:30Z,11,2,True,False,True,2026,2247,App State,Georgia St,17,13,,Boone,NC
+401249013,2020-11-14,2020-11-14T19:30Z,11,2,True,False,True,328,278,Utah State,Fresno St,16,35,,Logan,UT
+401207179,2020-11-14,2020-11-14T20:00Z,11,2,True,False,True,2636,2638,UTSA,UTEP,52,21,,San Antonio,TX
+401207178,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,98,2572,Western KY,Southern Miss,10,7,,Bowling Green,KY
+401212481,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,248,58,Houston,South Florida,56,21,,Houston,TX
+401215331,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,290,326,GA Southern,Texas St,40,38,,Statesboro,GA
+401249406,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,24,38,Stanford,Colorado,32,35,,Stanford,CA
+401257934,2020-11-14,2020-11-14T20:30Z,11,2,True,False,True,258,97,Virginia,Louisville,31,17,,Charlottesville,VA
+401236023,2020-11-14,2020-11-14T21:00Z,11,2,True,False,True,2641,239,Texas Tech,Baylor,24,23,,Lubbock,TX
+401249014,2020-11-14,2020-11-14T21:00Z,11,2,True,False,True,21,62,San Diego St,Hawai'i,34,10,,Carson,CA
+401249015,2020-11-14,2020-11-14T23:30Z,11,2,True,True,True,167,2440,New Mexico,Nevada,20,27,,Las Vegas,NV
+401212518,2020-11-14,2020-11-15T00:30Z,11,2,True,False,True,2116,218,UCF,Temple,38,13,,Orlando,FL
+401234639,2020-11-14,2020-11-15T00:30Z,11,2,True,False,True,152,52,NC State,Florida St,38,22,,Raleigh,NC
+401237133,2020-11-14,2020-11-15T00:30Z,11,2,True,False,True,145,2579,Ole Miss,South Carolina,59,42,,Oxford,MS
+401249016,2020-11-14,2020-11-15T03:30Z,11,2,True,False,True,23,2439,San José State,UNLV,34,17,,San Jose,CA
+401249404,2020-11-14,2020-11-15T04:00Z,11,2,True,False,True,264,204,Washington,Oregon St,27,21,,Seattle,WA
+401248074,2020-11-14,2020-11-14T21:00Z,11,2,True,False,False,2110,2198,C Arkansas,E Kentucky,37,25,,Conway,AR
+401247413,2020-11-14,2020-11-14T22:00Z,11,2,True,False,False,2617,90,SF Austin,Pittsburg St,26,7,,Nacogdoches,TX

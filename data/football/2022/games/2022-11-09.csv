@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401416639,2022-11-09,2022-11-10T00:00Z,11,2,True,False,True,2711,2459,W Michigan,N Illinois,21,24,,Kalamazoo,MI
+401416640,2022-11-09,2022-11-10T00:00Z,11,2,True,False,True,2117,2084,C Michigan,Buffalo,31,27,,Mount Pleasant,MI
+401416641,2022-11-09,2022-11-10T00:00Z,11,2,True,False,True,189,2309,Bowling Green,Kent State,6,40,,Bowling Green,OH

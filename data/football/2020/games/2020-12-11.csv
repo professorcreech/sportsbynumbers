@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401257816,2020-12-11,2020-12-11T23:00Z,15,2,True,False,True,2638,249,UTEP,North Texas,43,45,,Denton,TX
+401249429,2020-12-11,2020-12-12T00:00Z,15,2,True,False,True,12,9,Arizona,Arizona St,7,70,,Tucson,AZ
+401249037,2020-12-11,2020-12-12T03:00Z,15,2,True,True,True,23,2440,San José State,Nevada,30,20,,Las Vegas,NV

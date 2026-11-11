@@ -1,0 +1,9 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401551733,2023-12-16,2023-12-16T16:00Z,1,3,True,True,False,195,290,Ohio,GA Southern,41,21,Myrtle Beach Bowl,Conway,SC
+401551751,2023-12-16,2023-12-16T19:15Z,1,3,True,True,False,309,55,Louisiana,Jax State,31,34,R+L Carriers New Orleans Bowl,New Orleans,LA
+401551731,2023-12-16,2023-12-16T20:30Z,1,3,True,True,False,2026,193,App State,Miami OH,13,9,Avocados From Mexico Cure Bowl,Orlando,FL
+401618099,2023-12-16,2023-12-16T21:30Z,1,3,True,False,False,149,2449,Montana,N Dakota St,31,29,FCS Championship - Semifinals,Missoula,MT
+401551732,2023-12-16,2023-12-16T22:45Z,1,3,True,True,False,278,166,Fresno St,New Mexico St,37,10,Isleta New Mexico Bowl,Albuquerque,NM
+401551752,2023-12-16,2023-12-17T00:30Z,1,3,True,True,False,68,26,Boise St,UCLA,22,35,Starco Brands LA Bowl,Inglewood,CA
+401551753,2023-12-16,2023-12-17T02:15Z,1,3,True,True,False,2641,25,Texas Tech,California,34,14,Radiance Technologies Independence Bowl,Shreveport,LA
+401551470,2023-12-16,2023-12-16T17:00Z,1,3,True,True,False,50,47,Florida A&M,Howard,30,26,Cricket Celebration Bowl,Atlanta,GA

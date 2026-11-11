@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400868921,2016-12-10,2016-12-10T20:00Z,15,2,True,True,False,349,2426,Army,Navy,21,17,,Baltimore,MD
+400928064,2016-12-10,2016-12-10T17:00Z,15,2,True,False,False,2449,2571,North Dakota St,South Dakota St,36,10,NCAA DIVISION I FOOTBALL CHAMPIONSHIP - QUARTERFINAL,Fargo,ND
+400928022,2016-12-10,2016-12-10T17:00Z,15,2,True,False,False,2974,2453,Shepherd,North Alabama,13,23,NCAA DIVISION II FOOTBALL CHAMPIONSHIP - SEMIFINAL,Shepherdstown,WV
+400928062,2016-12-10,2016-12-10T19:00Z,15,2,True,False,False,2754,2747,Youngstown St,Wofford,30,23,NCAA DIVISION I FOOTBALL CHAMPIONSHIP - QUARTERFINAL,Youngstown,OH
+400928063,2016-12-10,2016-12-10T21:00Z,15,2,True,False,False,331,257,E Washington,Richmond,38,0,NCAA DIVISION I FOOTBALL CHAMPIONSHIP - QUARTERFINAL,Cheney,WA

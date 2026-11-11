@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869379,2016-10-06,2016-10-07T00:00Z,6,2,True,False,True,2348,98,LA Tech,W Kentucky,55,52,,Ruston,LA
+400869531,2016-10-06,2016-10-07T00:00Z,6,2,True,False,True,235,218,Memphis,Temple,34,27,,Memphis,TN
+400871439,2016-10-06,2016-10-06T23:00Z,6,2,True,False,False,2643,2822,The Citadel,N Greenville,38,14,RESCHEDULED FROM OCT. 8,,
+400872800,2016-10-06,2016-10-06T23:30Z,6,2,True,False,True,2448,2450,NC A&T,Norfolk State,35,0,,Greensboro,NC

@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401020769,2018-10-30,2018-10-31T00:00Z,10,2,True,False,True,189,2309,Bowling Green,Kent State,28,35,,Bowling Green,OH
+401020770,2018-10-30,2018-10-31T00:00Z,10,2,True,False,True,2084,193,Buffalo,Miami (OH),51,42,,Buffalo,NY

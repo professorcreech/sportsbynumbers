@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331164,2021-12-17,2021-12-17T17:00Z,1,3,True,True,False,2649,2393,Toledo,MTSU,24,31,Bahamas Bowl,Nassau,
+401331165,2021-12-17,2021-12-17T23:00Z,1,3,True,True,False,324,2459,Coast Carolina,N Illinois,47,41,Tailgreeter Cure Bowl,Orlando,FL
+401391353,2021-12-17,2021-12-18T02:15Z,1,3,True,False,False,2449,256,N Dakota St,James Madison,20,14,FCS Championship - Semifinals,Fargo,ND

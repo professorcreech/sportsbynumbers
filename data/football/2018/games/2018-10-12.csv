@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401019505,2018-10-12,2018-10-12T23:00Z,7,2,True,False,True,202,58,Tulsa,USF,24,25,,Tulsa,OK
+401022533,2018-10-12,2018-10-13T01:00Z,7,2,True,False,True,21,2005,San Diego State,Air Force,21,17,,San Diego,CA
+401012764,2018-10-12,2018-10-13T02:00Z,7,2,True,False,True,254,12,Utah,Arizona,42,10,,Salt Lake City,UT
+401029863,2018-10-12,2018-10-12T23:00Z,7,2,True,False,False,108,107,Harvard,Holy Cross,33,31,,Cambridge,MA

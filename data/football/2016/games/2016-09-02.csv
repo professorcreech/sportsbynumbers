@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869094,2016-09-02,2016-09-03T01:00Z,1,2,True,False,False,24,2306,Stanford,Kansas State,26,13,,Stanford,CA
+400869651,2016-09-02,2016-09-02T23:00Z,1,2,True,False,False,127,231,Michigan State,Furman,28,13,,East Lansing,MI
+400868876,2016-09-02,2016-09-02T23:30Z,1,2,True,False,False,239,2466,Baylor,Northwestern St,55,7,,Waco,TX
+400869263,2016-09-02,2016-09-02T22:00Z,1,2,True,False,False,2199,2400,E Michigan,Miss Valley St,61,14,,Ypsilanti,MI
+400868910,2016-09-02,2016-09-02T23:00Z,1,2,True,False,False,218,349,Temple,Army,13,28,,Philadelphia,PA
+400869258,2016-09-02,2016-09-02T23:00Z,1,2,True,False,False,2247,2050,Georgia State,Ball State,21,31,,Atlanta,GA
+400869259,2016-09-02,2016-09-02T23:00Z,1,2,True,False,False,2084,399,Buffalo,Albany,16,22,,Buffalo,NY
+400869423,2016-09-02,2016-09-02T23:00Z,1,2,True,False,False,183,2142,Syracuse,Colgate,33,7,,Syracuse,NY
+400869093,2016-09-02,2016-09-03T00:00Z,1,2,True,True,False,38,36,Colorado,Colorado State,44,7,,Denver,CO
+400869265,2016-09-02,2016-09-03T01:00Z,1,2,True,False,False,2032,2649,Arkansas State,Toledo,10,31,,Jonesboro,AR
+400869181,2016-09-02,2016-09-03T01:30Z,1,2,True,False,False,2440,13,Nevada,Cal Poly,30,27,,Reno,NV
+400872820,2016-09-02,2016-09-02T22:00Z,1,2,True,False,False,2115,322,Cent Conn St,Lafayette,10,24,,New Britain,CT
+400892123,2016-09-02,2016-09-02T22:00Z,1,2,True,False,False,284,2071,Stonehill,Bloomsburg,20,24,,,

@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869168,2016-11-25,2016-11-25T20:30Z,13,2,True,False,True,265,264,Washington St,Washington,17,45,,Pullman,WA
+400869699,2016-11-25,2016-11-25T20:30Z,13,2,True,False,True,2294,158,Iowa,Nebraska,40,10,,Iowa City,IA
+400869252,2016-11-25,2016-11-25T20:30Z,13,2,True,False,True,2005,68,Air Force,Boise St,27,20,,USAF Academy,CO
+400869568,2016-11-25,2016-11-25T17:00Z,13,2,True,False,True,235,248,Memphis,Houston,48,44,,Memphis,TN
+400869340,2016-11-25,2016-11-25T22:00Z,13,2,True,False,True,2711,2649,W Michigan,Toledo,55,35,,Kalamazoo,MI
+400869339,2016-11-25,2016-11-25T17:00Z,13,2,True,False,True,2309,2459,Kent State,N Illinois,21,31,,Kent,OH
+400869497,2016-11-25,2016-11-25T17:00Z,13,2,True,False,True,153,152,UNC,NC State,21,28,,Chapel Hill,NC
+400869073,2016-11-25,2016-11-25T19:30Z,13,2,True,False,True,142,8,Missouri,Arkansas,28,24,,Columbia,MO
+400869338,2016-11-25,2016-11-25T19:30Z,13,2,True,False,True,189,2084,Bowling Green,Buffalo,27,19,,Bowling Green,OH
+400869632,2016-11-25,2016-11-25T20:30Z,13,2,True,False,True,251,2628,Texas,TCU,9,31,,Austin,TX
+400869418,2016-11-25,2016-11-25T21:00Z,13,2,True,False,True,2572,2348,Southern Miss,LA Tech,39,24,,Hattiesburg,MS
+400868885,2016-11-25,2016-11-25T23:00Z,13,2,True,True,True,2641,239,Texas Tech,Baylor,54,35,,Arlington,TX
+400869567,2016-11-25,2016-11-26T01:30Z,13,2,True,False,True,202,2132,Tulsa,Cincinnati,40,37,,Tulsa,OK
+400869167,2016-11-25,2016-11-26T02:30Z,13,2,True,False,True,12,9,Arizona,Arizona State,56,35,,Tucson,AZ

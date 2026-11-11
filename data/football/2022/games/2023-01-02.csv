@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401442014,2023-01-02,2023-01-02T22:00Z,1,3,True,True,False,254,213,Utah,Penn State,21,35,Rose Bowl Game Presented by Prudential,Pasadena,CA
+401442013,2023-01-02,2023-01-02T18:00Z,1,3,True,True,False,30,2655,USC,Tulane,45,46,Goodyear Cotton Bowl Classic,Arlington,TX
+401442012,2023-01-02,2023-01-02T18:00Z,1,3,True,True,False,2509,99,Purdue,LSU,7,63,Cheez-It Citrus Bowl,Orlando,FL
+401442011,2023-01-02,2023-01-02T17:00Z,1,3,True,True,False,356,344,Illinois,Mississippi St,10,19,ReliaQuest Bowl,Tampa,FL

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401287896,2021-09-10,2021-09-10T23:30Z,2,2,True,False,False,324,2305,Coast Carolina,Kansas,49,22,,Conway,SC
+401282616,2021-09-10,2021-09-11T00:00Z,2,2,True,False,False,150,2448,Duke,NC A&T,45,17,,Durham,NC
+401282191,2021-09-10,2021-09-11T01:30Z,2,2,True,False,False,68,2638,Boise St,UTEP,54,13,,Boise,ID
+401310701,2021-09-10,2021-09-11T02:20Z,2,2,True,False,False,328,155,Utah State,North Dakota,48,24,,Logan,UT

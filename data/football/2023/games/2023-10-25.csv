@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520347,2023-10-25,2023-10-25T23:00Z,9,2,True,False,True,2229,55,FIU,Jax State,16,41,,Miami,FL
+401520348,2023-10-25,2023-10-26T00:00Z,9,2,True,False,True,2534,2638,Sam Houston,UTEP,34,37,,Huntsville,TX

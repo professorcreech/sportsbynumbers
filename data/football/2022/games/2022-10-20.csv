@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401411141,2022-10-20,2022-10-20T23:30Z,8,2,True,False,True,59,258,Georgia Tech,Virginia,9,16,,Atlanta,GA
+401426354,2022-10-20,2022-10-20T23:30Z,8,2,True,False,True,6,2653,South Alabama,Troy,6,10,,Mobile,AL

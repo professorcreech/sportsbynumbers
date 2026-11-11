@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401551789,2024-01-08,2024-01-09T00:30Z,1,3,True,True,False,130,264,Michigan,Washington,34,13,CFP National Championship Pres. by AT&T,Houston,TX

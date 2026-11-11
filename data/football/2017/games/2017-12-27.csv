@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400953397,2017-12-27,2017-12-27T18:30Z,1,3,True,True,False,52,2572,FSU,Southern Miss,42,13,WALK-ON'S INDEPENDENCE BOWL,Shreveport,LA
+400953398,2017-12-27,2017-12-27T22:15Z,1,3,True,True,False,103,2294,Boston College,Iowa,20,27,NEW ERA PINSTRIPE BOWL,Bronx,NY
+400959398,2017-12-27,2017-12-28T01:30Z,1,3,True,True,False,2509,12,Purdue,Arizona,38,35,FOSTER FARMS BOWL,Santa Clara,CA
+400953399,2017-12-27,2017-12-28T02:00Z,1,3,True,True,False,142,251,Missouri,Texas,16,33,ACADEMY SPORTS + OUTDOORS TEXAS BOWL,Houston,TX

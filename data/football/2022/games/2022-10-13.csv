@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401404092,2022-10-13,2022-10-13T23:00Z,7,2,True,False,True,277,239,West Virginia,Baylor,43,40,,Morgantown,WV
+401415634,2022-10-13,2022-10-13T23:00Z,7,2,True,False,True,2116,218,UCF,Temple,70,13,,Orlando,FL
+401420782,2022-10-13,2022-10-13T23:30Z,7,2,True,False,True,2428,2415,NC Central,Morgan St,59,20,,Durham,NC

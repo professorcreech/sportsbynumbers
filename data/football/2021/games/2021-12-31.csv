@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331235,2021-12-31,2021-12-31T20:30Z,1,3,True,True,False,333,2132,Alabama,Cincinnati,27,6,CFP Semifinal at the Goodyear Cotton Bowl Classic,Arlington,TX
+401331234,2021-12-31,2022-01-01T00:30Z,1,3,True,True,False,130,61,Michigan,Georgia,11,34,CFP Semifinal at the Capital One Orange Bowl,Miami Gardens,FL
+401331233,2021-12-31,2021-12-31T16:00Z,1,3,True,True,False,164,154,Rutgers,Wake Forest,10,38,TaxSlayer Gator Bowl,Jacksonville,FL
+401331654,2021-12-31,2021-12-31T17:00Z,1,3,True,True,False,2117,265,C Michigan,Washington St,24,21,Tony the Tiger Sun Bowl,El Paso,TX

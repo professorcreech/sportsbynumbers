@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237074,2020-12-19,2020-12-20T01:00Z,16,2,True,True,False,57,333,Florida,Alabama,46,52,SEC Championship Game,Atlanta,GA
+401260158,2020-12-19,2020-12-19T17:00Z,16,2,True,False,True,2633,245,Tennessee,Texas A&M,13,34,,Knoxville,TN
+401262060,2020-12-19,2020-12-19T17:00Z,16,2,True,True,False,66,201,Iowa State,Oklahoma,21,27,Dr Pepper Big 12 Championship,Arlington,TX
+401264085,2020-12-19,2020-12-20T01:00Z,16,2,True,False,False,2132,202,Cincinnati,Tulsa,27,24,American Athletic Conference Championship Game,Cincinnati,OH
+401247349,2020-12-19,2020-12-19T17:00Z,16,2,True,True,False,194,77,Ohio State,Northwestern,22,10,Big Ten Championship Game,Indianapolis,IN
+401269375,2020-12-19,2020-12-19T18:30Z,16,2,True,False,True,254,265,Utah,Washington St,45,28,,Salt Lake City,UT
+401265699,2020-12-19,2020-12-19T20:00Z,16,2,True,False,False,349,2005,Army,Air Force,10,7,,West Point,NY
+401267165,2020-12-19,2020-12-19T20:30Z,16,2,True,False,True,99,145,LSU,Ole Miss,53,48,,Baton Rouge,LA
+401267166,2020-12-19,2020-12-19T20:30Z,16,2,True,False,True,344,142,Mississippi St,Missouri,51,32,,Starkville,MS
+401256001,2020-12-19,2020-12-19T21:00Z,16,2,True,True,False,87,228,Notre Dame,Clemson,10,34,ACC Championship Game,Charlotte,NC
+401269384,2020-12-19,2020-12-19T21:00Z,16,2,True,False,True,275,135,Wisconsin,Minnesota,20,17,,Madison,WI
+401249043,2020-12-19,2020-12-19T21:40Z,16,2,True,True,False,23,68,San José State,Boise St,34,20,Mountain West Championship Game,Las Vegas,NV
+401269381,2020-12-19,2020-12-19T22:30Z,16,2,True,False,True,213,356,Penn State,Illinois,56,21,,University Park,PA
+401269376,2020-12-19,2020-12-20T00:00Z,16,2,True,False,True,26,24,UCLA,Stanford,47,48,,Pasadena,CA
+401269378,2020-12-19,2020-12-20T03:30Z,16,2,True,False,True,204,9,Oregon St,Arizona St,33,46,,Corvallis,OR

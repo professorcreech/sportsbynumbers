@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401056704,2018-11-30,2018-12-01T01:00Z,14,2,True,True,False,264,254,Washington,Utah,10,3,Pac-12 Championship Game,Santa Clara,CA
+401056696,2018-11-30,2018-12-01T00:00Z,14,2,True,True,False,2084,2459,Buffalo,N Illinois,29,30,Marathon MAC Football Championship Game,Detroit,MI

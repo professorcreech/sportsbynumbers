@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401520277,2023-09-28,2023-09-28T23:30Z,5,2,True,False,True,98,2393,Western KY,MTSU,31,10,,Bowling Green,KY
+401531339,2023-09-28,2023-09-28T23:30Z,5,2,True,False,True,202,218,Tulsa,Temple,48,26,,Tulsa,OK
+401520276,2023-09-28,2023-09-29T00:00Z,5,2,True,False,True,2534,55,Sam Houston,Jax State,28,35,,Huntsville,TX

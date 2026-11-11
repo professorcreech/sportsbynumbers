@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401416637,2022-11-08,2022-11-09T00:00Z,11,2,True,False,True,2006,2199,Akron,E Michigan,28,34,,Akron,OH
+401416638,2022-11-08,2022-11-09T00:30Z,11,2,True,False,True,193,195,Miami OH,Ohio,21,37,,Oxford,OH
+401416636,2022-11-08,2022-11-09T01:00Z,11,2,True,False,True,2649,2050,Toledo,Ball State,28,21,,Toledo,OH

@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401617310,2023-12-08,2023-12-09T02:00Z,15,2,True,False,False,149,231,Montana,Furman,35,28,FCS Championship - Quarterfinals,Missoula,MT

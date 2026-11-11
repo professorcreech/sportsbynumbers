@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401404026,2022-10-27,2022-10-28T02:00Z,9,2,True,False,True,265,254,Washington St,Utah,17,21,,Pullman,WA
+401411146,2022-10-27,2022-10-27T23:30Z,9,2,True,False,True,152,259,NC State,Virginia Tech,22,21,,Raleigh,NC
+401426359,2022-10-27,2022-10-27T23:30Z,9,2,True,False,True,2572,309,Southern Miss,Louisiana,39,24,,Hattiesburg,MS

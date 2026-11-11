@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401112200,2019-11-29,2019-11-29T19:30Z,14,2,True,False,True,158,2294,Nebraska,Iowa,24,27,,Lincoln,NE
+401117913,2019-11-29,2019-11-29T20:30Z,14,2,True,False,True,235,2132,Memphis,Cincinnati,34,24,,Memphis,TN
+401117554,2019-11-29,2019-11-29T20:30Z,14,2,True,False,True,36,68,Colorado St,Boise St,24,31,,Fort Collins,CO
+401112521,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,258,259,Virginia,Virginia Tech,39,30,,Charlottesville,VA
+401121978,2019-11-29,2019-11-29T23:00Z,14,2,True,False,True,2653,2026,Troy,App State,13,48,,Troy,AL
+401112138,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,251,2641,Texas,Texas Tech,49,24,,Austin,TX
+401119312,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,2084,189,Buffalo,Bowling Green,49,7,,Buffalo,NY
+401119313,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,2199,2309,E Michigan,Kent State,26,34,,Ypsilanti,MI
+401119314,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,2050,193,Ball State,Miami OH,41,27,,Muncie,IN
+401119315,2019-11-29,2019-11-29T17:00Z,14,2,True,False,True,2117,2649,C Michigan,Toledo,49,7,,Mount Pleasant,MI
+401110864,2019-11-29,2019-11-29T19:30Z,14,2,True,False,True,8,142,Arkansas,Missouri,14,24,,Little Rock,AR
+401114232,2019-11-29,2019-11-29T21:00Z,14,2,True,False,True,264,265,Washington,Washington St,31,13,,Seattle,WA
+401112134,2019-11-29,2019-11-29T21:15Z,14,2,True,False,True,2628,277,TCU,West Virginia,17,20,,Fort Worth,TX
+401121979,2019-11-29,2019-11-29T22:00Z,14,2,True,False,True,6,2032,South Alabama,Arkansas State,34,30,,Mobile,AL
+401117912,2019-11-29,2019-11-30T01:00Z,14,2,True,False,True,2116,58,UCF,South Florida,34,7,,Orlando,FL

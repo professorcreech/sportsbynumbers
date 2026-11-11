@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135292,2020-01-03,2020-01-03T20:30Z,1,3,True,True,False,2440,195,Nevada,Ohio,21,30,FAMOUS IDAHO POTATO BOWL,Boise,ID

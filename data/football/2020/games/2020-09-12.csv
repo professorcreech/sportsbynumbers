@@ -1,0 +1,20 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401236054,2020-09-12,2020-09-12T23:00Z,2,2,True,False,False,201,2623,Oklahoma,Missouri St,48,0,,Norman,OK
+401234574,2020-09-12,2020-09-12T18:30Z,2,2,True,False,True,87,150,Notre Dame,Duke,27,13,,Notre Dame,IN
+401236222,2020-09-12,2020-09-13T00:00Z,2,2,True,False,False,251,2638,Texas,UTEP,59,3,,Austin,TX
+401234565,2020-09-12,2020-09-12T16:00Z,2,2,True,False,True,153,183,North Carolina,Syracuse,31,6,,Chapel Hill,NC
+401236221,2020-09-12,2020-09-12T16:00Z,2,2,True,False,False,66,309,Iowa State,Louisiana,14,31,,Ames,IA
+401236038,2020-09-12,2020-09-12T16:00Z,2,2,True,False,False,277,2198,West Virginia,E Kentucky,56,10,,Morgantown,WV
+401236053,2020-09-12,2020-09-12T16:00Z,2,2,True,False,False,2306,2032,Kansas St,Arkansas St,31,35,,Manhattan,KS
+401236081,2020-09-12,2020-09-12T16:00Z,2,2,True,False,False,2026,2429,App State,Charlotte,35,20,,Boone,NC
+401240113,2020-09-12,2020-09-12T17:30Z,2,2,True,False,False,349,2433,Army,UL Monroe,37,7,,West Point,NY
+401207113,2020-09-12,2020-09-12T19:30Z,2,2,True,False,False,326,2636,Texas St,UTSA,48,51,,San Marcos,TX
+401234563,2020-09-12,2020-09-12T20:00Z,2,2,True,False,True,52,59,Florida St,Georgia Tech,13,16,,Tallahassee,FL
+401215298,2020-09-12,2020-09-12T20:14Z,2,2,True,False,False,290,2097,GA Southern,Campbell,27,26,,Statesboro,GA
+401240039,2020-09-12,2020-09-12T23:00Z,2,2,True,False,False,58,2643,South Florida,The Citadel,27,6,,Tampa,FL
+401234562,2020-09-12,2020-09-12T23:30Z,2,2,True,False,True,154,228,Wake Forest,Clemson,13,37,,Winston-Salem,NC
+401239973,2020-09-12,2020-09-12T23:30Z,2,2,True,False,False,6,2655,South Alabama,Tulane,24,27,,Mobile,AL
+401234564,2020-09-12,2020-09-13T00:00Z,2,2,True,False,False,97,98,Louisville,Western KY,35,21,,Louisville,KY
+401236039,2020-09-12,2020-09-13T00:00Z,2,2,True,False,False,2641,2277,Texas Tech,Houston Baptist,35,33,,Lubbock,TX
+401236658,2020-09-12,2020-09-13T02:00Z,2,2,True,False,False,2305,324,Kansas,Coastal,23,38,,Lawrence,KS
+401240233,2020-09-12,2020-09-12T20:00Z,2,2,True,False,False,221,2046,Pitt,Austin Peay,55,0,,Pittsburgh,PA

@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401135290,2020-01-02,2020-01-02T20:00Z,1,3,True,True,False,2132,103,Cincinnati,Boston College,38,6,TICKETSMARTER BIRMINGHAM BOWL,Birmingham,AL
+401135291,2020-01-02,2020-01-03T00:00Z,1,3,True,True,False,2633,84,Tennessee,Indiana,23,22,TAXSLAYER GATOR BOWL,Jacksonville,FL

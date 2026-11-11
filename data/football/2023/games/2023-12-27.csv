@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401581109,2023-12-27,2023-12-28T01:00Z,1,3,True,True,False,30,97,USC,Louisville,42,28,DirecTV Holiday Bowl,San Diego,CA
+401551749,2023-12-27,2023-12-28T02:00Z,1,3,True,True,False,197,245,Oklahoma St,Texas A&M,31,23,TaxAct Texas Bowl,Houston,TX
+401551758,2023-12-27,2023-12-27T19:00Z,1,3,True,True,False,2655,259,Tulane,Virginia Tech,20,41,Military Bowl Presented by GoBowling.com,Annapolis,MD
+401551761,2023-12-27,2023-12-27T22:30Z,1,3,True,True,False,277,153,West Virginia,North Carolina,30,10,Duke's Mayo Bowl,Charlotte,NC

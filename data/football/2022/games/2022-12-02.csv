@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401437035,2022-12-02,2022-12-03T01:00Z,14,2,True,True,False,30,254,USC,Utah,24,47,Pac-12 Championship Game,Las Vegas,NV
+401506450,2022-12-02,2022-12-02T18:00Z,14,2,True,False,True,2084,2006,Buffalo,Akron,23,22,,Buffalo,NY
+401437032,2022-12-02,2022-12-03T00:30Z,14,2,True,False,False,2636,249,UTSA,North Texas,48,27,Conference USA Championship,San Antonio,TX

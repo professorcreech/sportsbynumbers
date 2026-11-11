@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869471,2016-10-27,2016-10-27T23:00Z,9,2,True,False,True,221,259,Pitt,Virginia Tech,36,39,,Pittsburgh,PA
+400869317,2016-10-27,2016-10-27T23:30Z,9,2,True,False,True,2084,2006,Buffalo,Akron,41,20,,Buffalo,NY
+400869318,2016-10-27,2016-10-27T23:30Z,9,2,True,False,True,2649,195,Toledo,Ohio,26,31,,Toledo,OH
+400869835,2016-10-27,2016-10-27T23:30Z,9,2,True,False,True,290,2026,Ga Southern,Appalachian St,10,34,,Statesboro,GA
+400869145,2016-10-27,2016-10-28T02:30Z,9,2,True,False,True,30,25,USC,California,45,24,,Los Angeles,CA

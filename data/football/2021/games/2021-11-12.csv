@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401301040,2021-11-12,2021-11-12T23:00Z,11,2,True,False,True,58,2132,South Florida,Cincinnati,28,45,,Tampa,FL
+401310742,2021-11-12,2021-11-13T02:00Z,11,2,True,False,True,68,2751,Boise St,Wyoming,23,13,,Boise,ID

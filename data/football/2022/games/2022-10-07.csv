@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401405111,2022-10-07,2022-10-07T23:00Z,6,2,True,False,True,164,158,Rutgers,Nebraska,13,14,,Piscataway,NJ
+401415630,2022-10-07,2022-10-07T23:30Z,6,2,True,False,True,235,248,Memphis,Houston,32,33,,Memphis,TN
+401415233,2022-10-07,2022-10-08T02:30Z,6,2,True,False,True,2440,36,Nevada,Colorado St,14,17,,Reno,NV
+401415236,2022-10-07,2022-10-08T02:30Z,6,2,True,False,True,23,2439,San José St,UNLV,40,7,,San Jose,CA
+401415407,2022-10-07,2022-10-07T23:00Z,6,2,True,False,True,172,108,Cornell,Harvard,28,35,,Ithaca,NY

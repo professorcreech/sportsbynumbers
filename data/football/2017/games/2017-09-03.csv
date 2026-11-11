@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400934497,2017-09-03,2017-09-03T23:30Z,1,2,True,True,False,259,277,Virginia Tech,West Virginia,31,24,,Landover,MD
+400933838,2017-09-03,2017-09-03T23:30Z,1,2,True,False,False,26,245,UCLA,Texas A&M,45,44,,Pasadena,CA
+400952251,2017-09-03,2017-09-03T18:30Z,1,2,True,False,False,2582,2569,Southern,S Carolina St,14,8,MEAC/SWAC CHALLENGE,Baton Rouge,LA

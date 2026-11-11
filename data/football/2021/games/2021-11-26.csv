@@ -1,0 +1,17 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401301051,2021-11-26,2021-11-26T20:50Z,13,2,True,False,True,151,2132,East Carolina,Cincinnati,13,35,,Greenville,NC
+401282761,2021-11-26,2021-11-26T18:30Z,13,2,True,False,True,158,2294,Nebraska,Iowa,21,28,,Lincoln,NE
+401309906,2021-11-26,2021-11-26T21:00Z,13,2,True,False,True,254,38,Utah,Colorado,28,13,,Salt Lake City,UT
+401282699,2021-11-26,2021-11-27T00:00Z,13,2,True,False,True,152,153,NC State,North Carolina,34,30,,Raleigh,NC
+401310753,2021-11-26,2021-11-26T17:00Z,13,2,True,False,True,21,68,San Diego St,Boise St,27,16,,Carson,CA
+401287952,2021-11-26,2021-11-26T17:00Z,13,2,True,False,True,251,2306,Texas,Kansas St,22,17,,Austin,TX
+401309595,2021-11-26,2021-11-26T17:00Z,13,2,True,False,True,2117,2199,C Michigan,E Michigan,31,10,,Mount Pleasant,MI
+401309596,2021-11-26,2021-11-26T17:00Z,13,2,True,False,True,189,195,Bowling Green,Ohio,21,10,,Bowling Green,OH
+401310755,2021-11-26,2021-11-26T18:00Z,13,2,True,False,True,167,328,New Mexico,Utah State,10,35,,Albuquerque,NM
+401282274,2021-11-26,2021-11-26T19:00Z,13,2,True,False,True,5,2638,UAB,UTEP,42,25,,Birmingham,AL
+401282145,2021-11-26,2021-11-26T20:30Z,13,2,True,False,True,8,142,Arkansas,Missouri,34,17,,Fayetteville,AR
+401301050,2021-11-26,2021-11-26T20:30Z,13,2,True,False,True,2116,58,UCF,South Florida,17,13,,Orlando,FL
+401309648,2021-11-26,2021-11-26T20:30Z,13,2,True,False,True,6,324,South Alabama,Coast Carolina,21,27,,Mobile,AL
+401310752,2021-11-26,2021-11-26T20:30Z,13,2,True,False,True,2005,2439,Air Force,UNLV,48,14,,USAF Academy,CO
+401287949,2021-11-26,2021-11-26T21:30Z,13,2,True,False,True,66,2628,Iowa State,TCU,48,14,,Ames,IA
+401309905,2021-11-26,2021-11-27T01:00Z,13,2,True,False,True,264,265,Washington,Washington St,13,40,,Seattle,WA

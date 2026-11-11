@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401441993,2022-12-16,2022-12-16T16:30Z,1,3,True,True,False,5,193,UAB,Miami OH,24,20,HomeTown Lenders Bahamas Bowl,Nassau,
+401441994,2022-12-16,2022-12-16T20:00Z,1,3,True,True,False,2653,2636,Troy,UTSA,18,12,Duluth Trading Cure Bowl,Orlando,FL
+401508850,2022-12-16,2022-12-17T00:00Z,1,3,True,False,False,2449,2916,N Dakota St,Incarnate Word,35,32,FCS Championship - Semifinals,Fargo,ND

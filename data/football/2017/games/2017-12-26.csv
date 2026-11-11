@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400953395,2017-12-26,2017-12-26T18:30Z,1,3,True,True,False,277,254,West Virginia,Utah,14,30,ZAXBY'S HEART OF DALLAS BOWL,Dallas,TX
+400953394,2017-12-26,2017-12-26T22:15Z,1,3,True,True,False,2459,150,N Illinois,Duke,14,36,QUICK LANE BOWL,Detroit,MI
+400953396,2017-12-26,2017-12-27T02:00Z,1,3,True,True,False,26,2306,UCLA,Kansas State,17,35,CACTUS BOWL,Phoenix,AZ

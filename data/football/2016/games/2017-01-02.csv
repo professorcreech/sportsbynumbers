@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400876111,2017-01-02,2017-01-02T22:00Z,1,3,True,True,False,213,30,Penn State,USC,49,52,Rose Bowl Game Pres. by Northwestern Mutual,Pasadena,CA
+400876112,2017-01-02,2017-01-03T01:50Z,1,3,True,True,False,201,2,Oklahoma,Auburn,35,19,Allstate Sugar Bowl,New Orleans,LA
+400876110,2017-01-02,2017-01-02T18:00Z,1,3,True,True,False,275,2711,Wisconsin,W Michigan,24,16,Goodyear Cotton Bowl Classic,Arlington,TX
+400876109,2017-01-02,2017-01-02T18:00Z,1,3,True,True,False,2294,57,Iowa,Florida,3,30,OUTBACK BOWL,Tampa,FL

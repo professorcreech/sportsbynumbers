@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401441998,2022-12-27,2022-12-27T17:00Z,1,3,True,True,False,2084,290,Buffalo,GA Southern,23,21,Camellia Bowl,Montgomery,AL
+401442000,2022-12-27,2022-12-27T20:15Z,1,3,True,True,False,328,235,Utah State,Memphis,10,38,SERVPRO First Responder Bowl,Dallas,TX
+401442002,2022-12-27,2022-12-27T23:45Z,1,3,True,True,False,151,324,East Carolina,Coastal Car,53,29,TicketSmarter Birmingham Bowl,Birmingham,AL
+401442005,2022-12-27,2022-12-28T03:25Z,1,3,True,True,False,197,275,Oklahoma St,Wisconsin,17,24,Guaranteed Rate Bowl,Phoenix,AZ

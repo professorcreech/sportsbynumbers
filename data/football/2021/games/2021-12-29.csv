@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331228,2021-12-29,2021-12-30T02:15Z,1,3,True,True,False,201,2483,Oklahoma,Oregon,47,32,Valero Alamo Bowl,San Antonio,TX
+401331227,2021-12-29,2021-12-29T22:45Z,1,3,True,True,False,66,228,Iowa State,Clemson,13,20,Cheez-It Bowl,Orlando,FL
+401331226,2021-12-29,2021-12-29T19:15Z,1,3,True,True,False,259,120,Virginia Tech,Maryland,10,54,New Era Pinstripe Bowl,Bronx,NY

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869124,2016-09-30,2016-10-01T01:00Z,5,2,True,False,True,264,24,Washington,Stanford,44,6,,Seattle,WA
+400868926,2016-09-30,2016-10-01T02:15Z,5,2,True,False,False,252,2649,BYU,Toledo,55,53,,Provo,UT
+400871308,2016-09-30,2016-09-30T23:00Z,5,2,True,False,True,159,219,Dartmouth,Penn,24,37,,Hanover,NH
+400871337,2016-09-30,2016-09-30T23:00Z,5,2,True,False,False,108,46,Harvard,Georgetown,31,17,,Cambridge,MA

@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401309627,2021-10-28,2021-10-28T23:30Z,9,2,True,False,True,324,2653,Coast Carolina,Troy,35,28,,Conway,SC
+401301033,2021-10-28,2021-10-28T23:30Z,9,2,True,False,True,151,58,East Carolina,South Florida,29,14,,Greenville,NC

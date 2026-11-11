@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401282759,2021-10-01,2021-10-02T00:00Z,5,2,True,False,True,120,2294,Maryland,Iowa,14,51,,College Park,MD
+401301012,2021-10-01,2021-10-01T23:30Z,5,2,True,False,True,202,248,Tulsa,Houston,10,45,,Tulsa,OK
+401309912,2021-10-01,2021-10-02T01:00Z,5,2,True,False,False,328,252,Utah State,BYU,20,34,,Logan,UT
+401328264,2021-10-01,2021-10-01T23:00Z,5,2,True,False,True,219,159,Penn,Dartmouth,7,31,,Philadelphia,PA

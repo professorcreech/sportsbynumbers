@@ -1,0 +1,31 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401110731,2019-08-29,2019-08-30T00:30Z,1,2,True,False,False,245,326,Texas A&M,Texas St,41,7,,College Station,TX
+401114223,2019-08-29,2019-08-30T02:15Z,1,2,True,False,False,252,254,BYU,Utah,12,30,,Provo,UT
+401117853,2019-08-29,2019-08-29T23:30Z,1,2,True,False,False,2116,50,UCF,Florida A&M,62,0,,Orlando,FL
+401117854,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,2132,26,Cincinnati,UCLA,24,14,,Cincinnati,OH
+401117855,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,41,2681,UConn,Wagner,24,21,,East Hartford,CT
+401119254,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,189,2415,Bowling Green,Morgan St,46,3,,Bowling Green,OH
+401119255,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,2084,2523,Buffalo,Robert Morris,38,10,,Buffalo,NY
+401127039,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,48,2169,Delaware,Delaware St,31,13,,Newark,DE
+401114246,2019-08-29,2019-08-29T23:30Z,1,2,True,False,False,98,2110,Western KY,Cent Arkansas,28,35,,Bowling Green,KY
+401135910,2019-08-29,2019-08-29T23:30Z,1,2,True,False,False,2429,2241,Charlotte,Gardner-Webb,49,28,,Charlotte,NC
+401111653,2019-08-29,2019-08-30T00:00Z,1,2,True,False,True,228,59,Clemson,Georgia Tech,52,14,,Clemson,SC
+401114236,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,2655,2229,Tulane,Florida Intl,42,14,,New Orleans,LA
+401114237,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,5,2011,UAB,Alabama St,24,19,,Birmingham,AL
+401128362,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,2545,55,SE Louisiana,Jax State,35,14,,Hammond,LA
+401119253,2019-08-29,2019-08-30T00:50Z,1,2,True,False,False,2117,399,C Michigan,Albany,38,21,,Mount Pleasant,MI
+401112229,2019-08-29,2019-08-30T01:00Z,1,2,True,False,False,135,2571,Minnesota,South Dakota St,28,21,,Minneapolis,MN
+401126954,2019-08-29,2019-08-30T01:00Z,1,2,True,False,False,2464,2623,N Arizona,Missouri St,37,23,,Flagstaff,AZ
+401114153,2019-08-29,2019-08-30T02:00Z,1,2,True,False,False,9,2309,Arizona St,Kent State,30,7,,Tempe,AZ
+401117493,2019-08-29,2019-08-30T02:00Z,1,2,True,False,False,23,2458,San Jose State,N Colorado,35,18,,San Jose,CA
+401128597,2019-08-29,2019-08-29T22:00Z,1,2,True,False,False,2413,2841,Morehead St,Union (KY),44,7,,Morehead,KY
+401127042,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,257,294,Richmond,Jacksonville,38,19,,Richmond,VA
+401127043,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,2619,2803,Stony Brook,Bryant,35,10,,Stony Brook,NY
+401128354,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,2198,2674,E Kentucky,Valparaiso,53,7,,Richmond,KY
+401128370,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,93,95,Murray St,Pikeville,59,20,,Murray,KY
+401128490,2019-08-29,2019-08-29T23:00Z,1,2,True,False,False,236,2197,Chattanooga,E Illinois,24,10,,Chattanooga,TN
+401127297,2019-08-29,2019-08-29T23:30Z,1,2,True,False,False,2546,79,SE Missouri,S Illinois,44,26,,Cape Girardeau,MO
+401128724,2019-08-29,2019-08-29T23:30Z,1,2,True,False,False,2630,2466,UT Martin,N'Western St,42,20,,Martin,TN
+401127029,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,2453,2710,North Alabama,W Illinois,26,17,,Florence,AL
+401127240,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,2046,2428,Austin Peay,NC Central,41,10,,Clarksville,TN
+401128709,2019-08-29,2019-08-30T00:00Z,1,2,True,False,False,2320,2064,Lamar,Bethel (TN),65,16,,Beaumont,TX

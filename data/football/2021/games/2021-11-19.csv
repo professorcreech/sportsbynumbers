@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401310751,2021-11-19,2021-11-20T04:30Z,12,2,True,False,True,2439,21,UNLV,San Diego St,20,28,,Las Vegas,NV
+401301045,2021-11-19,2021-11-20T02:00Z,12,2,True,False,True,248,235,Houston,Memphis,31,13,,Houston,TX
+401282264,2021-11-19,2021-11-20T01:00Z,12,2,True,False,True,2348,2572,Louisiana Tech,Southern Miss,19,35,,Ruston,LA
+401309899,2021-11-19,2021-11-20T02:00Z,12,2,True,False,True,265,12,Washington St,Arizona,44,18,,Pullman,WA
+401310747,2021-11-19,2021-11-20T02:00Z,12,2,True,False,True,2440,2005,Nevada,Air Force,39,41,,Reno,NV

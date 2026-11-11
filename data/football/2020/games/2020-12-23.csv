@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401256138,2020-12-23,2020-12-23T20:00Z,1,3,True,True,False,290,2348,GA Southern,Louisiana Tech,38,3,R+L Carriers New Orleans Bowl,New Orleans,LA
+401256139,2020-12-23,2020-12-24T00:00Z,1,3,True,True,False,2226,235,FAU,Memphis,10,25,Montgomery Bowl,Montgomery,AL

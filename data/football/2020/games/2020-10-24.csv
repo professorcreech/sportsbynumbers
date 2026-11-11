@@ -1,0 +1,45 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401237114,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,2633,333,Tennessee,Alabama,17,48,,Knoxville,TN
+401234622,2020-10-24,2020-10-24T19:41Z,8,2,True,False,True,221,87,Pitt,Notre Dame,3,45,,Pittsburgh,PA
+401247293,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,194,158,Ohio State,Nebraska,52,17,,Columbus,OH
+401236009,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,197,66,Oklahoma St,Iowa State,24,21,,Stillwater,OK
+401247295,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,84,213,Indiana,Penn State,36,35,,Bloomington,IN
+401212488,2020-10-24,2020-10-25T01:00Z,8,2,True,False,True,2567,2132,SMU,Cincinnati,13,42,,Dallas,TX
+401234620,2020-10-24,2020-10-25T00:00Z,8,2,True,False,True,2390,258,Miami,Virginia,19,14,,Miami Gardens,FL
+401240998,2020-10-24,2020-10-25T02:15Z,8,2,True,False,False,252,326,BYU,Texas St,52,14,,Provo,UT
+401234621,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,153,152,North Carolina,NC State,48,21,,Chapel Hill,NC
+401247294,2020-10-24,2020-10-24T23:30Z,8,2,True,False,True,135,130,Minnesota,Michigan,24,49,,Minneapolis,MN
+401234623,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,154,259,Wake Forest,Virginia Tech,23,16,,Winston-Salem,NC
+401236010,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,2306,2305,Kansas St,Kansas,55,14,,Manhattan,KS
+401207156,2020-10-24,2020-10-24T18:30Z,8,2,True,False,True,276,2226,Marshall,FAU,20,9,,Huntington,WV
+401215316,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,324,290,Coastal,GA Southern,28,14,,Conway,SC
+401207154,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,2429,2638,Charlotte,UTEP,38,28,,Charlotte,NC
+401212516,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,235,218,Memphis,Temple,41,29,,Memphis,TN
+401234618,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,228,183,Clemson,Syracuse,47,21,,Clemson,SC
+401234619,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,97,52,Louisville,Florida St,48,16,,Louisville,KY
+401236011,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,2628,201,TCU,Oklahoma,14,33,,Fort Worth,TX
+401237115,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,145,2,Ole Miss,Auburn,28,35,,Oxford,MS
+401240116,2020-10-24,2020-10-24T16:00Z,8,2,True,False,False,349,2382,Army,Mercer,49,3,,West Point,NY
+401247299,2020-10-24,2020-10-24T16:00Z,8,2,True,False,True,127,164,Michigan St,Rutgers,27,38,,East Lansing,MI
+401207160,2020-10-24,2020-10-24T17:00Z,8,2,True,False,False,2335,2572,Liberty,Southern Miss,56,35,,Lynchburg,VA
+401212524,2020-10-24,2020-10-24T18:00Z,8,2,True,False,True,2116,2655,UCF,Tulane,51,34,,Orlando,FL
+401207158,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,242,2393,Rice,MTSU,34,40,,Houston,TX
+401212552,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,2426,248,Navy,Houston,21,37,,Annapolis,MD
+401236008,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,251,239,Texas,Baylor,27,16,,Austin,TX
+401247296,2020-10-24,2020-10-24T19:30Z,8,2,True,False,True,2509,2294,Purdue,Iowa,24,20,,West Lafayette,IN
+401207102,2020-10-24,2020-10-24T20:00Z,8,2,True,False,False,98,236,Western KY,Chattanooga,13,10,,Bowling Green,KY
+401215317,2020-10-24,2020-10-24T20:00Z,8,2,True,False,True,2653,2247,Troy,Georgia St,34,36,,Troy,AL
+401234617,2020-10-24,2020-10-24T20:00Z,8,2,True,False,True,103,59,Boston College,Georgia Tech,48,27,,Chestnut Hill,MA
+401237122,2020-10-24,2020-10-24T20:00Z,8,2,True,False,True,142,96,Missouri,Kentucky,20,10,,Columbia,MO
+401236012,2020-10-24,2020-10-24T21:30Z,8,2,True,False,True,2641,277,Texas Tech,West Virginia,34,27,,Lubbock,TX
+401237118,2020-10-24,2020-10-24T23:00Z,8,2,True,False,True,99,2579,LSU,South Carolina,52,24,,Baton Rouge,LA
+401248997,2020-10-24,2020-10-24T23:00Z,8,2,True,False,True,68,328,Boise St,Utah State,42,13,,Boise,ID
+401248998,2020-10-24,2020-10-24T23:00Z,8,2,True,False,True,2440,2751,Nevada,Wyoming,37,34,,Reno,NV
+401250784,2020-10-24,2020-10-24T23:00Z,8,2,True,False,True,6,2433,South Alabama,UL Monroe,38,14,,Mobile,AL
+401247298,2020-10-24,2020-10-24T23:30Z,8,2,True,False,True,77,120,Northwestern,Maryland,43,3,,Evanston,IL
+401248994,2020-10-24,2020-10-24T23:30Z,8,2,True,False,True,278,62,Fresno St,Hawai'i,19,34,,Fresno,CA
+401207157,2020-10-24,2020-10-25T00:00Z,8,2,True,False,True,2636,2348,UTSA,Louisiana Tech,27,26,,San Antonio,TX
+401248993,2020-10-24,2020-10-25T02:30Z,8,2,True,False,True,23,2005,San José State,Air Force,17,6,,San Jose,CA
+401248996,2020-10-24,2020-10-25T02:30Z,8,2,True,False,True,21,2439,San Diego St,UNLV,34,6,,Carson,CA
+401248039,2020-10-24,2020-10-24T17:30Z,8,2,True,True,False,2617,2000,SF Austin,Abilene Chrstn,35,32,,Arlington,TX
+401239871,2020-10-24,2020-10-24T19:00Z,8,2,True,False,False,2198,2110,E Kentucky,C Arkansas,31,28,,Richmond,KY

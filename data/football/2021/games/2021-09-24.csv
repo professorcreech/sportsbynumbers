@@ -1,0 +1,6 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401310707,2021-09-24,2021-09-25T02:00Z,4,2,True,False,True,278,2439,Fresno St,UNLV,38,30,,Fresno,CA
+401282204,2021-09-24,2021-09-24T22:30Z,4,2,True,False,True,2429,2393,Charlotte,MTSU,42,39,,Charlotte,NC
+401282638,2021-09-24,2021-09-24T23:00Z,4,2,True,False,True,258,154,Virginia,Wake Forest,17,37,,Charlottesville,VA
+401282637,2021-09-24,2021-09-25T00:00Z,4,2,True,False,False,183,2335,Syracuse,Liberty,24,21,,Syracuse,NY
+401344143,2021-09-24,2021-09-24T23:00Z,4,2,True,False,True,108,225,Harvard,Brown,49,17,,Cambridge,MA

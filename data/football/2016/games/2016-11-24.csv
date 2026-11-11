@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869067,2016-11-24,2016-11-25T00:30Z,13,2,True,False,True,245,99,Texas A&M,LSU,39,54,,College Station,TX
+400873125,2016-11-24,2016-11-24T21:00Z,13,2,True,False,False,2011,2396,Alabama State,Miles,53,20,,Montgomery,AL

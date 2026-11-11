@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401121964,2019-11-07,2019-11-08T00:30Z,11,2,True,False,True,324,309,Coastal,Louisiana,7,48,,Conway,SC
+401117899,2019-11-07,2019-11-08T01:00Z,11,2,True,False,True,58,218,South Florida,Temple,7,17,,Tampa,FL

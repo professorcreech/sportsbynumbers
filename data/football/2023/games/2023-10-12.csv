@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401525862,2023-10-12,2023-10-12T23:00Z,7,2,True,False,True,248,277,Houston,West Virginia,41,39,,Houston,TX
+401531415,2023-10-12,2023-10-12T23:30Z,7,2,True,False,True,151,2567,East Carolina,SMU,10,31,,Greenville,NC
+401540036,2023-10-12,2023-10-12T23:00Z,7,2,True,False,True,2598,2681,Saint Francis,Wagner,31,7,,Loretto,PA

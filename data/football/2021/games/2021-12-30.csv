@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401331231,2021-12-30,2021-12-31T00:00Z,1,3,True,True,False,127,221,Michigan State,Pitt,31,21,Chick-fil-A Peach Bowl,Atlanta,GA
+401331229,2021-12-30,2021-12-30T16:30Z,1,3,True,True,False,2579,153,South Carolina,North Carolina,38,21,Duke's Mayo Bowl,Charlotte,NC
+401331230,2021-12-30,2021-12-30T20:00Z,1,3,True,True,False,2509,2633,Purdue,Tennessee,48,45,TransPerfect Music City Bowl,Nashville,TN
+401331232,2021-12-30,2021-12-31T03:30Z,1,3,True,True,False,9,275,Arizona St,Wisconsin,13,20,SRS Distribution Las Vegas Bowl,Las Vegas,NV

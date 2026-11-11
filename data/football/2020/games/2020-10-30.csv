@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401247302,2020-10-30,2020-10-30T23:30Z,9,2,True,False,True,120,135,Maryland,Minnesota,45,44,,College Park,MD
+401212533,2020-10-30,2020-10-31T01:00Z,9,2,True,False,True,202,151,Tulsa,East Carolina,34,30,,Tulsa,OK
+401249001,2020-10-30,2020-10-31T01:45Z,9,2,True,False,True,2751,62,Wyoming,Hawai'i,31,7,,Laramie,WY
+401247675,2020-10-30,2020-10-30T23:00Z,9,2,True,False,False,79,2546,S Illinois,SE Missouri,20,17,,Carbondale,IL

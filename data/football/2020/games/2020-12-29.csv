@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401256150,2020-12-29,2020-12-29T22:30Z,1,3,True,True,False,2390,197,Miami,Oklahoma St,34,37,Cheez-It Bowl,Orlando,FL
+401256151,2020-12-29,2020-12-30T02:00Z,1,3,True,True,False,38,251,Colorado,Texas,23,55,Valero Alamo Bowl,San Antonio,TX

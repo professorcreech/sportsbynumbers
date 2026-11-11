@@ -1,0 +1,8 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400935284,2017-09-29,2017-09-30T02:30Z,5,2,True,False,True,265,30,Washington St,USC,30,27,,Pullman,WA
+400937479,2017-09-29,2017-09-29T23:00Z,5,2,True,False,True,150,2390,Duke,Miami,6,31,,Durham,NC
+400935365,2017-09-29,2017-09-30T00:00Z,5,2,True,False,True,356,158,Illinois,Nebraska,6,28,,Champaign,IL
+400945262,2017-09-29,2017-09-30T00:00Z,5,2,True,False,False,328,252,Utah State,BYU,40,24,,Logan,UT
+400953833,2017-09-29,2017-09-29T23:00Z,5,2,True,False,True,219,159,Penn,Dartmouth,13,16,,Philadelphia,PA
+400976722,2017-09-29,2017-09-29T23:00Z,5,2,True,False,True,2583,2441,S Conn St,New Haven,17,31,,,
+400951403,2017-09-29,2017-09-30T01:00Z,5,2,True,False,True,2640,2016,Texas Southern,Alcorn State,17,24,,Houston,TX

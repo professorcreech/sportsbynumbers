@@ -1,0 +1,11 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401013354,2018-08-31,2018-09-01T01:00Z,1,2,True,False,False,275,98,Wisconsin,W Kentucky,34,3,,Madison,WI
+401012880,2018-08-31,2018-08-31T23:00Z,1,2,True,False,False,127,328,Mich. St.,Utah State,38,31,,East Lansing,MI
+401022512,2018-08-31,2018-09-01T01:00Z,1,2,True,False,False,24,21,Stanford,San Diego State,31,10,,Stanford,CA
+401020673,2018-08-31,2018-08-31T22:00Z,1,2,True,False,False,2711,183,W Michigan,Syracuse,42,55,,Kalamazoo,MI
+401020672,2018-08-31,2018-08-31T22:30Z,1,2,True,False,False,2199,2405,E Michigan,Monmouth,51,17,,Ypsilanti,MI
+401013089,2018-08-31,2018-08-31T23:00Z,1,2,True,False,False,150,349,Duke,Army,34,14,,Durham,NC
+401022517,2018-08-31,2018-09-01T01:00Z,1,2,True,False,False,2440,2502,Nevada,Portland State,72,19,,Reno,NV
+401012680,2018-08-31,2018-09-01T01:30Z,1,2,True,True,False,36,38,Colorado State,Colorado,13,45,,Denver,CO
+401040628,2018-08-31,2018-08-31T22:00Z,1,2,True,False,False,284,2986,Stonehill,Fairmont St,19,34,,,
+401030323,2018-08-31,2018-09-01T00:35Z,1,2,True,False,False,304,2714,Idaho State,Western St Colo,45,10,,Pocatello,ID

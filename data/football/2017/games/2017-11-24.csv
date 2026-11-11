@@ -1,0 +1,16 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400937529,2017-11-24,2017-11-24T17:00Z,13,2,True,False,True,221,2390,Pitt,Miami,24,14,,Pittsburgh,PA
+400934556,2017-11-24,2017-11-24T17:00Z,13,2,True,False,True,2628,239,TCU,Baylor,45,22,,Fort Worth,TX
+400941849,2017-11-24,2017-11-24T20:30Z,13,2,True,False,True,2116,58,UCF,USF,49,42,,Orlando,FL
+400937530,2017-11-24,2017-11-25T01:00Z,13,2,True,False,True,258,259,UVA,Virginia Tech,0,10,,Charlottesville,VA
+400945030,2017-11-24,2017-11-24T16:30Z,13,2,True,False,True,2649,2711,Toledo,W Michigan,37,10,,Toledo,OH
+400941850,2017-11-24,2017-11-24T17:00Z,13,2,True,False,True,248,2426,Houston,Navy,24,14,,Houston,TX
+400945028,2017-11-24,2017-11-24T17:00Z,13,2,True,False,True,2117,2459,Cent Michigan,N Illinois,31,24,,Mount Pleasant,MI
+400945029,2017-11-24,2017-11-24T18:00Z,13,2,True,False,True,2084,195,Buffalo,Ohio,31,24,,Buffalo,NY
+400933931,2017-11-24,2017-11-24T19:30Z,13,2,True,False,True,8,142,Arkansas,Missouri,45,48,,Fayetteville,AR
+400945308,2017-11-24,2017-11-24T20:30Z,13,2,True,False,True,21,167,San Diego State,New Mexico,35,10,,San Diego,CA
+400935417,2017-11-24,2017-11-24T21:00Z,13,2,True,False,True,158,2294,Nebraska,Iowa,14,56,,Lincoln,NE
+400944883,2017-11-24,2017-11-24T21:00Z,13,2,True,False,True,2653,326,Troy,Texas State,62,9,,Troy,AL
+400938668,2017-11-24,2017-11-25T00:00Z,13,2,True,False,True,2229,98,FIU,W Kentucky,41,17,,Miami,FL
+400934557,2017-11-24,2017-11-25T01:00Z,13,2,True,False,True,251,2641,Texas,Texas Tech,23,27,,Austin,TX
+400935326,2017-11-24,2017-11-25T03:30Z,13,2,True,False,True,26,25,UCLA,California,30,27,,Pasadena,CA

@@ -1,0 +1,5 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400941814,2017-10-06,2017-10-06T23:00Z,6,2,True,False,True,41,235,UConn,Memphis,31,70,,East Hartford,CT
+400945267,2017-10-06,2017-10-07T02:15Z,6,2,True,False,False,252,68,BYU,Boise St,7,24,,Provo,UT
+400976593,2017-10-06,2017-10-06T23:00Z,6,2,True,False,True,110242,2401,W Fla,Miss. College,28,14,,,
+400952232,2017-10-06,2017-10-06T23:30Z,6,2,True,False,True,2569,2415,S Carolina St,Morgan State,35,14,,Orangeburg,SC

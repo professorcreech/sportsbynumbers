@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400874859,2016-10-13,2016-10-13T23:00Z,7,2,True,False,True,2506,2405,Presbyterian,Monmouth,17,13,,Clinton,SC

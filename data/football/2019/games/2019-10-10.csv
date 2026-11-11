@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401112477,2019-10-10,2019-10-11T00:00Z,7,2,True,False,True,152,183,NC State,Syracuse,16,10,,Raleigh,NC
+401121951,2019-10-10,2019-10-11T01:15Z,7,2,True,False,True,326,2433,Texas St,UL Monroe,14,24,,San Marcos,TX
+401127209,2019-10-10,2019-10-10T22:00Z,7,2,True,False,True,2428,2065,NC Central,Bethune,13,27,,Durham,NC

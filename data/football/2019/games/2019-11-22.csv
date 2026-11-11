@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401117550,2019-11-22,2019-11-23T02:30Z,13,2,True,False,True,2751,36,Wyoming,Colorado St,17,7,,Laramie,WY
+401128688,2019-11-22,2019-11-23T00:30Z,13,2,True,False,True,2916,2110,Incarnate Word,Cent Arkansas,35,52,,San Antonio,TX

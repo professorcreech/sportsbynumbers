@@ -1,0 +1,7 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401249856,2020-11-04,2020-11-04T23:00Z,10,2,True,False,True,2309,2199,Kent State,E Michigan,27,23,,Kent,OH
+401249857,2020-11-04,2020-11-04T23:00Z,10,2,True,False,True,2006,2711,Akron,W Michigan,13,58,,Akron,OH
+401249859,2020-11-04,2020-11-05T00:00Z,10,2,True,False,True,2459,2084,N Illinois,Buffalo,30,49,,Dekalb,IL
+401249860,2020-11-04,2020-11-05T00:00Z,10,2,True,False,True,2117,195,C Michigan,Ohio,30,27,,Mount Pleasant,MI
+401249889,2020-11-04,2020-11-05T00:00Z,10,2,True,False,True,193,2050,Miami OH,Ball State,38,31,,Oxford,OH
+401249858,2020-11-04,2020-11-05T01:00Z,10,2,True,False,True,2649,189,Toledo,Bowling Green,38,3,,Toledo,OH

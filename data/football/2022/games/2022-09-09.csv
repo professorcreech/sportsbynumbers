@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401415613,2022-09-09,2022-09-09T23:30Z,2,2,True,False,False,2116,97,UCF,Louisville,14,20,,Orlando,FL
+401415214,2022-09-09,2022-09-10T01:00Z,2,2,True,False,True,167,68,New Mexico,Boise St,14,31,,Albuquerque,NM
+401435073,2022-09-09,2022-09-09T23:00Z,2,2,True,False,False,2771,2038,Merrimack,Assumption,45,17,,North Andover,MA

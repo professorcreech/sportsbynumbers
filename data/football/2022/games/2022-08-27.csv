@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401426532,2022-08-27,2022-08-27T16:00Z,1,2,True,False,False,98,2046,Western KY,Austin Peay,38,27,,Bowling Green,KY
+401405059,2022-08-27,2022-08-27T16:30Z,1,2,True,True,True,77,158,Northwestern,Nebraska,31,28,,Dublin,
+401413213,2022-08-27,2022-08-27T19:30Z,1,2,True,True,False,55,2617,J'Ville St,SF Austin,42,17,FCS Kickoff,Montgomery,AL
+401413256,2022-08-27,2022-08-27T19:30Z,1,2,True,False,False,2439,304,UNLV,Idaho St,52,21,,Las Vegas,NV
+401404146,2022-08-27,2022-08-27T20:00Z,1,2,True,False,False,328,41,Utah State,UConn,31,20,,Logan,UT
+401405058,2022-08-27,2022-08-27T20:00Z,1,2,True,False,False,356,2751,Illinois,Wyoming,38,6,,Champaign,IL
+401411090,2022-08-27,2022-08-27T21:00Z,1,2,True,False,False,52,2184,Florida St,Duquesne,47,7,,Tallahassee,FL
+401426530,2022-08-27,2022-08-27T23:00Z,1,2,True,False,True,2226,2429,FAU,Charlotte,43,13,,Boca Raton,FL
+401411091,2022-08-27,2022-08-28T00:15Z,1,2,True,False,False,153,50,North Carolina,FAMU,56,24,,Chapel Hill,NC
+401409235,2022-08-27,2022-08-28T02:00Z,1,2,True,False,False,166,2440,New Mexico St,Nevada,12,23,,Las Cruces,NM
+401426531,2022-08-27,2022-08-28T02:00Z,1,2,True,False,True,2638,249,UTEP,North Texas,13,31,,El Paso,TX
+401403853,2022-08-27,2022-08-28T02:30Z,1,2,True,False,False,62,238,Hawai'i,Vanderbilt,10,63,,Honolulu,HI
+401422922,2022-08-27,2022-08-27T23:00Z,1,2,True,False,False,2382,2413,Mercer,Morehead St,63,13,,Macon,GA
+401423448,2022-08-27,2022-08-27T23:00Z,1,2,True,True,False,2011,47,Alabama St,Howard,23,13,Cricket MEAC/SWAC Challenge Kickoff,Atlanta,GA

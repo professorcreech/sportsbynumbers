@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+400869527,2016-09-29,2016-09-30T00:00Z,5,2,True,False,True,248,41,Houston,UConn,42,14,,Houston,TX
+400869598,2016-09-29,2016-09-30T00:30Z,5,2,True,False,True,2641,2305,Texas Tech,Kansas,55,19,,Lubbock,TX
+400872786,2016-09-29,2016-09-29T23:30Z,5,2,True,False,True,2448,2261,NC A&T,Hampton,31,9,,Greensboro,NC
