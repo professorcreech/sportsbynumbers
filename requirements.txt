@@ -3,3 +3,4 @@ numpy>=1.26
 scipy>=1.11
 requests>=2.31
 pyarrow>=14
+lxml>=5.0
