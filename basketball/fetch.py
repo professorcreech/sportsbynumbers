@@ -205,7 +205,13 @@ def fetch_schedule(days_ahead: int | None = None) -> list[dict]:
     days = [today + timedelta(days=i) for i in range(max(n, 0))]
     with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
         per_day = list(pool.map(scoreboard, days))
-    return [g for rows in per_day for g in rows if not g["completed"]]
+    # A late game can be listed on two calendar days; keep each game once
+    seen, out = set(), []
+    for g in (g for rows in per_day for g in rows if not g["completed"]):
+        if g["game_id"] not in seen:
+            seen.add(g["game_id"])
+            out.append(g)
+    return out
 
 
 def fetch_prior_scores(season: int) -> None:

@@ -178,7 +178,7 @@
     const cols = [
       { key: "poll", label: poll.name && /playoff|cfp/i.test(poll.name) ? "CFP" : "AP", asc: true, val: (t) => (poll.ranks || {})[t.id] || null, html: (t) => (poll.ranks || {})[t.id] || "–" },
       { key: "team", label: "Team", left: true, cls: "name", html: (t) => teamLink(t.id, true), val: (t) => (teamById[t.id] || {}).short, asc: true },
-      { key: "rec", label: "Proj. record", html: (t) => Math.round(t.wins) + "-" + Math.round(t.losses), val: (t) => t.wins - t.losses },
+      { key: "rec", label: "Avg. final record", html: (t) => t.wins.toFixed(1) + "–" + t.losses.toFixed(1), val: (t) => t.wins - t.losses },
       { key: "conf_champ", label: "Win conf.", html: (t) => p100(t.conf_champ) },
       { key: "playoff", label: "Make CFP", html: (t) => "<b>" + p100(t.playoff) + "</b>" },
       { key: "bye", label: "Bye", html: (t) => p100(t.bye) },
