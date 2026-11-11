@@ -15,6 +15,19 @@ import pandas as pd
 from . import config, players, teams
 
 
+def _clean(x):
+    """Make data safe for browsers: missing values (NaN, None) become null, numpy types become plain."""
+    if isinstance(x, dict):
+        return {k: _clean(v) for k, v in x.items()}
+    if isinstance(x, (list, tuple)):
+        return [_clean(v) for v in x]
+    if isinstance(x, np.generic):
+        x = x.item()
+    if isinstance(x, float) and not np.isfinite(x):
+        return None
+    return x
+
+
 def _read(folder, pattern):
     frames = []
     for p in sorted(folder.glob(pattern)):
@@ -60,7 +73,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None) -> 
         p = p[p.team_id.isin(set(t.team_id))]
         p["rank"] = np.arange(1, len(p) + 1)
         for r in p.rename(columns={"def": "dfn"}).itertuples():
-            p_out.append({"id": r.player_id, "name": r.name, "team": r.team_id, "pos": r.pos, "gp": int(r.gp),
+            p_out.append({"id": r.player_id, "name": r.name, "team": r.team_id, "pos": r.pos if isinstance(r.pos, str) else "", "gp": int(r.gp),
                           "mpg": round(r.min / max(r.gp, 1), 1), "poss": int(r.poss),
                           "off": round(r.off, 2), "def": round(r.dfn, 2), "total": round(r.total, 2),
                           "prior": round(r.prior_off + r.prior_def, 2), "impact": round(r.impact, 2),
@@ -104,7 +117,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None) -> 
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up)):
-        (out_dir / f"{name}.json").write_text(json.dumps(obj, separators=(",", ":")))
+        (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     return {"model": model, "players": p, "teams": t}
 
 
