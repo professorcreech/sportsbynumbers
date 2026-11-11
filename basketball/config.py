@@ -43,6 +43,19 @@ PRESEASON_W_PROGRAM = 0.69
 PRESEASON_W_ROSTER = 0.5
 PRESEASON_GAMES = 2.7
 
+# ---- Tournament simulation ---------------------------------------------------------------
+# How far a team's true strength may be from today's rating on Selection Sunday (per 100 poss).
+# Measured on 2025-26: ratings moved ~5.2 from Dec 1, 4.2 from Jan 1, 2.8 from Feb 1 to March.
+BRACKET_DRIFT_PER_100_DAYS = 4.9   # grows with the square root of days left
+BRACKET_FINAL_SD = 2.5             # uncertainty that remains on tournament day
+
+
+def selection_sunday(season: int) -> date:
+    """The Sunday between March 11 and 17 (2023-2027 all fit this rule)."""
+    d = date(season, 3, 11)
+    return d.fromordinal(d.toordinal() + (6 - d.weekday()) % 7)
+
+
 # ---- Player model -----------------------------------------------------------
 PLAYER_LAMBDA = 3000.0        # ridge strength in possessions; re-tuned by cross-validation mid-season
 PLAYER_MIN_POSS_DISPLAY = 150 # players below this are kept out of the main table

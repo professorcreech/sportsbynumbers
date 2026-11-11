@@ -7,7 +7,7 @@
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
   const pct = (p) => Math.round(p * 100) + "%";
-  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "method"];
+  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "method"];
 
   let D = {};
   const teamById = {};
@@ -19,6 +19,7 @@
     const names = ["meta", "teams", "players", "lineups", "games"];
     const res = await Promise.all(names.map((n) => fetch("data/" + n + ".json").then((r) => { if (!r.ok) throw new Error(n); return r.json(); })));
     names.forEach((n, i) => (D[n] = res[i]));
+    D.bracket = await fetch("data/bracket.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
     D.teams.forEach((t) => (teamById[t.id] = t));
     $("#stamp").textContent = D.meta.season + " · updated " + new Date(D.meta.updated).toLocaleDateString(undefined, { month: "short", day: "numeric" });
     if (/simulat/i.test(D.meta.season)) {
@@ -247,6 +248,37 @@
     lineupTable($("#t-l"), D.lineups.filter((l) => l.team === id));
   }
 
+  function bracket(main) {
+    const B = D.bracket;
+    if (!B) { main.innerHTML = '<div><h1>Tournament Odds</h1><p class="lede">Tournament odds will appear after the next daily update.</p></div>'; return; }
+    const R = B.rounds, regionSel = recall("sbn-region") || "";
+    const head = '<div><h1>Tournament Odds</h1><p class="lede">Chances of reaching each round, from ' + B.sims.toLocaleString() +
+      " simulations of the projected " + B.field_size + "-team field. The field and seeds come from the " +
+      '<a href="' + esc(B.url) + '" target="_blank" rel="noopener">Bracket Matrix</a>, a consensus of ' + B.n_brackets +
+      " published brackets (" + esc(B.label) + (B.latest_bracket ? ", newest bracket " + esc(B.latest_bracket) : "") +
+      "). Games are played by this site's ratings, so a strong team on a low seed line can carry good odds.</p></div>" +
+      '<p class="note">' + B.days_to_selection + " days to Selection Sunday. Each simulation lets every team's true strength differ from today's rating by an amount that shrinks as the season goes on, measured from how much ratings moved between December and March last season. Regions are placed on an S-curve until the real bracket is announced; teams marked OR start in the opening round.</p>" +
+      '<div class="controls"><div class="field"><label for="b-r">Region</label><select id="b-r"><option value="">All regions</option>' +
+      [1, 2, 3, 4].map((r) => "<option value=\"" + r + "\"" + (String(r) === regionSel ? " selected" : "") + ">Region " + r + "</option>").join("") +
+      "</select></div></div><div id='b-t'></div>";
+    main.innerHTML = head;
+    const odds = (i) => (t) => t.odds[i];
+    const pctCell = (i) => (t) => { const v = t.odds[i]; return v >= 0.995 ? "✓" : v < 0.001 ? "<0.1" : (v * 100).toFixed(v < 0.1 ? 1 : 0); };
+    const cols = [
+      { key: "seed", label: "Seed", asc: true, html: (t) => t.seed + (t.opening ? '<span class="rk">OR</span>' : "") },
+      { key: "team", label: "Team", left: true, cls: "name", html: (t) => (teamById[t.id] ? teamLink(t.id) : esc(t.team)), asc: true },
+      { key: "region", label: "Reg", asc: true },
+    ];
+    [1, 2, 3, 4, 5, 6, 7].forEach((i) => cols.push({ key: "r" + i, label: R[i], val: odds(i), html: pctCell(i) }));
+    const draw = () => {
+      const r = $("#b-r").value;
+      store("sbn-region", r);
+      table($("#b-t"), cols, B.teams.filter((t) => !r || String(t.region) === r), "r7", { page: 100 });
+    };
+    $("#b-r").addEventListener("change", draw);
+    draw();
+  }
+
   function method(main) {
     const m = D.meta;
     main.innerHTML = '<div class="prose"><h1>How It Works</h1>' +
@@ -279,7 +311,7 @@
       else a.removeAttribute("aria-current");
     });
     if (h.startsWith("team-")) team(main, h.slice(5));
-    else ({ rankings, players, lineups, games, matchup, method })[view](main);
+    else ({ rankings, players, lineups, games, matchup, bracket, method })[view](main);
     window.scrollTo(0, 0);
   }
 

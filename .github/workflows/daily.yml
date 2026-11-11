@@ -63,6 +63,7 @@ jobs:
           if [ "$month" -ge 11 ] || [ "$month" -le 4 ]; then
             python -m basketball.bracketmatrix
             python -m basketball.run --fetch
+            python -m basketball.bracket || echo "Tournament odds not updated"
           else
             echo "Basketball is out of season; keeping last ratings."
           fi
