@@ -3,6 +3,7 @@
   "use strict";
   const $ = (s, el) => (el || document).querySelector(s);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const poss = (name) => (/s$/.test(name) ? name + "\u2019" : name + "\u2019s");  // Giants' / Duke's
   const f1 = (x) => (x == null ? "–" : Number(x).toFixed(1));
   const f2 = (x) => (x == null ? "–" : Number(x).toFixed(2));
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
@@ -279,13 +280,13 @@
       { o: z("rush_success", so.rush_success), d: z("d_rush_success", sd.d_rush_success),
         good: () => "Run game: " + O + " " + V("stays", "stay") + " on schedule on " + pc(so.rush_success) + " of runs (" + ordinal(so.rush_success_rk) + ", " + n1(so.rush_ypc) + " a carry) and " + Df + " " + V("allows", "allow") + " " + pc(sd.d_rush_success) + " (" + ordinal(sd.d_rush_success_rk) + ").",
         defStrong: () => Df + " " + V("stuffs", "stuff") + " the run: opponents succeed on " + pc(sd.d_rush_success) + " of runs (" + ordinal(sd.d_rush_success_rk) + "), " + n1(sd.d_rush_ypc) + " a carry.",
-        offWeak: () => O + "'s run game has struggled: " + pc(so.rush_success) + " success (" + ordinal(so.rush_success_rk) + "), " + n1(so.rush_ypc) + " a carry." },
+        offWeak: () => poss(O) + " run game has struggled: " + pc(so.rush_success) + " success (" + ordinal(so.rush_success_rk) + "), " + n1(so.rush_ypc) + " a carry." },
       { o: z("pass_ypa", so.pass_ypa), d: z("d_pass_ypa", sd.d_pass_ypa),
         good: () => "Passing game: " + O + " " + V("averages", "average") + " " + n1(so.pass_ypa) + " yards per dropback (" + ordinal(so.pass_ypa_rk) + ") and " + Df + " " + V("allows", "allow") + " " + n1(sd.d_pass_ypa) + " (" + ordinal(sd.d_pass_ypa_rk) + ").",
-        defStrong: () => Df + "'s pass defense allows just " + n1(sd.d_pass_ypa) + " yards per dropback (" + ordinal(sd.d_pass_ypa_rk) + ").",
-        offWeak: () => O + "'s passing game has sputtered: " + n1(so.pass_ypa) + " yards per dropback (" + ordinal(so.pass_ypa_rk) + ")." },
+        defStrong: () => poss(Df) + " pass defense allows just " + n1(sd.d_pass_ypa) + " yards per dropback (" + ordinal(sd.d_pass_ypa_rk) + ").",
+        offWeak: () => poss(O) + " passing game has sputtered: " + n1(so.pass_ypa) + " yards per dropback (" + ordinal(so.pass_ypa_rk) + ")." },
       { o: z("explosive", so.explosive), d: z("d_explosive", sd.d_explosive),
-        good: () => "Big plays: " + pc(so.explosive) + " of " + O + "'s snaps go for 12+ on the ground or 16+ through the air (" + ordinal(so.explosive_rk) + "); " + Df + " " + V("allows", "allow") + " " + pc(sd.d_explosive) + ".",
+        good: () => "Big plays: " + pc(so.explosive) + " of " + poss(O) + " snaps go for 12+ on the ground or 16+ through the air (" + ordinal(so.explosive_rk) + "); " + Df + " " + V("allows", "allow") + " " + pc(sd.d_explosive) + ".",
         defStrong: () => Df + " " + V("rarely gives up", "rarely give up") + " big plays (" + pc(sd.d_explosive) + " of snaps, " + ordinal(sd.d_explosive_rk) + ").",
         offWeak: () => O + " " + V("doesn't", "don't") + " generate many big plays (" + pc(so.explosive) + " of snaps, " + ordinal(so.explosive_rk) + ")." },
       { o: z("third_conv", so.third_conv), d: z("d_third_conv", sd.d_third_conv),
@@ -293,9 +294,9 @@
         defStrong: () => Df + " " + V("gets", "get") + " off the field on third down: opponents convert " + pc(sd.d_third_conv) + " (" + ordinal(sd.d_third_conv_rk) + ").",
         offWeak: () => O + " " + V("has struggled", "have struggled") + " on third down: " + pc(so.third_conv) + " conversions (" + ordinal(so.third_conv_rk) + ")." },
       { o: -z("sack_rate", so.sack_rate), d: -z("d_sack_rate", sd.d_sack_rate),
-        good: () => "Protection: " + O + " " + V("gives up", "give up") + " a sack on just " + pc(so.sack_rate, 1) + " of dropbacks (" + ordinal(so.sack_rate_rk) + ") and " + Df + "'s pass rush is quiet (" + pc(sd.d_sack_rate, 1) + ", " + ordinal(sd.d_sack_rate_rk) + ").",
+        good: () => "Protection: " + O + " " + V("gives up", "give up") + " a sack on just " + pc(so.sack_rate, 1) + " of dropbacks (" + ordinal(so.sack_rate_rk) + ") and " + poss(Df) + " pass rush is quiet (" + pc(sd.d_sack_rate, 1) + ", " + ordinal(sd.d_sack_rate_rk) + ").",
         defStrong: () => "Pass rush: " + Df + " " + V("sacks", "sack") + " the quarterback on " + pc(sd.d_sack_rate, 1) + " of dropbacks (" + ordinal(sd.d_sack_rate_rk) + ").",
-        offWeak: () => O + "'s line has leaked sacks: " + pc(so.sack_rate, 1) + " of dropbacks (" + ordinal(so.sack_rate_rk) + ")." },
+        offWeak: () => poss(O) + " line has leaked sacks: " + pc(so.sack_rate, 1) + " of dropbacks (" + ordinal(so.sack_rate_rk) + ")." },
       { o: -z("to_drive", so.to_drive), d: -z("d_to_drive", sd.d_to_drive),
         good: () => "Ball security: " + O + " " + V("turns", "turn") + " it over on " + pc(so.to_drive, 1) + " of drives (" + ordinal(so.to_drive_rk) + ") and " + Df + " " + V("forces", "force") + " few (" + pc(sd.d_to_drive, 1) + ", " + ordinal(sd.d_to_drive_rk) + ").",
         defStrong: () => "Takeaways: " + Df + " " + V("forces", "force") + " a turnover on " + pc(sd.d_to_drive, 1) + " of drives (" + ordinal(sd.d_to_drive_rk) + ").",
@@ -373,8 +374,8 @@
       (e.cons.length ? "<p><b>What could slow it down</b></p><ul>" + e.cons.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "") +
       (e.pros.length + e.cons.length ? "" : "<p>No clear edges either way.</p>") + "</div>";
     const tendCard = (T, t) => '<div class="card"><h3>' + esc(T.short) + "</h3>" + (t.length ? "<ul>" + t.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "<p>No strong tendencies stand out.</p>") + "</div>";
-    box.innerHTML = "<h2>When " + esc(A.short) + " has the ball</h2>" + unitTable(A, H, sa, sh, L) +
-      "<h2>When " + esc(H.short) + " has the ball</h2>" + unitTable(H, A, sh, sa, L) +
+    box.innerHTML = "<h2>When " + esc(A.short) + (LG.nfl ? " have" : " has") + " the ball</h2>" + unitTable(A, H, sa, sh, L) +
+      "<h2>When " + esc(H.short) + (LG.nfl ? " have" : " has") + " the ball</h2>" + unitTable(H, A, sh, sa, L) +
       "<h2>Scouting report</h2><p class='note'>Season averages from " + sa.games + " and " + sh.games + " games, not adjusted for opponents. A play is a success if it gains half the needed yards on 1st down, 70% on 2nd, or all of them on 3rd or 4th.</p>" +
       '<div class="grid">' + sideCard(A, eA) + sideCard(H, eH) + "</div>" +
       "<h3>Likely tendencies</h3><p class='note'>Inferred from the stats, not observed.</p><div class='grid'>" + tendCard(A, tA) + tendCard(H, tH) + "</div>";

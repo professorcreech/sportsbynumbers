@@ -3,6 +3,7 @@
   "use strict";
   const $ = (s, el) => (el || document).querySelector(s);
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const poss = (name) => (/s$/.test(name) ? name + "\u2019" : name + "\u2019s");  // Giants' / Duke's
   const f1 = (x) => (x == null ? "–" : Number(x).toFixed(1));
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
@@ -492,14 +493,14 @@
     const items = [
       { o: z("efg", so.efg), d: z("d_efg", sd.d_efg),
         good: () => O + " " + V("shoots", "shoot") + " well (" + pctf(so.efg) + " effective FG%, " + ordinal(so.efg_rk) + ") and " + Df + " " + V("gives up", "give up") + " good looks (" + pctf(sd.d_efg) + ", " + ordinal(sd.d_efg_rk) + " in defense).",
-        defStrong: () => Df + "'s defense holds teams to " + pctf(sd.d_efg) + " effective FG% (" + ordinal(sd.d_efg_rk) + ").",
+        defStrong: () => poss(Df) + " defense holds teams to " + pctf(sd.d_efg) + " effective FG% (" + ordinal(sd.d_efg_rk) + ").",
         offWeak: () => O + " " + V("has struggled", "have struggled") + " to score efficiently: " + pctf(so.efg) + " effective FG% (" + ordinal(so.efg_rk) + ")." },
       { o: z("three_pct", so.three_pct) + 0.3 * z("three_rate", so.three_rate), d: z("d_three_pct", sd.d_three_pct),
-        good: () => "Three-point line: " + O + " " + V("makes", "make") + " " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ") on " + pctf(so.three_rate, 0) + " of its shots; " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_three_pct) + " (" + ordinal(sd.d_three_pct_rk) + ").",
+        good: () => "Three-point line: " + O + " " + V("makes", "make") + " " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ") on " + pctf(so.three_rate, 0) + " of " + V("its", "their") + " shots; " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_three_pct) + " (" + ordinal(sd.d_three_pct_rk) + ").",
         defStrong: () => Df + " " + V("defends", "defend") + " the arc: opponents make " + pctf(sd.d_three_pct) + " of threes (" + ordinal(sd.d_three_pct_rk) + ").",
         offWeak: () => O + " " + V("has been", "have been") + " cold from three: " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ")." },
       { o: z("rim_pct", so.rim_pct) + 0.3 * z("rim_rate", so.rim_rate), d: z("d_rim_pct", sd.d_rim_pct),
-        good: () => "At the rim: " + O + " " + V("gets", "get") + " " + pctf(so.rim_rate, 0) + " of its shots there and finishes " + pctf(so.rim_pct) + " (" + ordinal(so.rim_pct_rk) + "); " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_rim_pct) + " (" + ordinal(sd.d_rim_pct_rk) + ").",
+        good: () => "At the rim: " + O + " " + V("gets", "get") + " " + pctf(so.rim_rate, 0) + " of " + V("its", "their") + " shots there and finishes " + pctf(so.rim_pct) + " (" + ordinal(so.rim_pct_rk) + "); " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_rim_pct) + " (" + ordinal(sd.d_rim_pct_rk) + ").",
         defStrong: () => Df + " " + V("protects", "protect") + " the rim: opponents finish " + pctf(sd.d_rim_pct) + " there (" + ordinal(sd.d_rim_pct_rk) + "), with a block rate " + ordinal(sd.blk_rate_rk) + " in the country.",
         offWeak: () => O + " " + V("hasn't", "haven't") + " finished well inside: " + pctf(so.rim_pct) + " at the rim (" + ordinal(so.rim_pct_rk) + ")." },
       { o: -z("tov", so.tov), d: -z("d_tov", sd.d_tov),
@@ -507,9 +508,9 @@
         defStrong: () => "Turnovers: " + Df + " " + V("forces", "force") + " them on " + pctf(sd.d_tov) + " of possessions (" + ordinal(sd.d_tov_rk) + ").",
         offWeak: () => O + " " + V("has been", "have been") + " loose with the ball: turnovers on " + pctf(so.tov) + " of possessions (" + ordinal(so.tov_rk) + ")." },
       { o: z("orb", so.orb), d: z("d_orb", sd.d_orb),
-        good: () => "Second chances: " + O + " " + V("grabs", "grab") + " " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ") and " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_orb, 0) + " (" + ordinal(sd.d_orb_rk) + ").",
+        good: () => "Second chances: " + O + " " + V("grabs", "grab") + " " + pctf(so.orb, 0) + " of " + V("its", "their") + " misses (" + ordinal(so.orb_rk) + ") and " + Df + " " + V("allows", "allow") + " " + pctf(sd.d_orb, 0) + " (" + ordinal(sd.d_orb_rk) + ").",
         defStrong: () => Df + " " + V("cleans", "clean") + " the defensive glass: opponents rebound only " + pctf(sd.d_orb, 0) + " of their misses (" + ordinal(sd.d_orb_rk) + ").",
-        offWeak: () => O + " " + V("rarely gets", "rarely get") + " second chances: " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ")." },
+        offWeak: () => O + " " + V("rarely gets", "rarely get") + " second chances: " + pctf(so.orb, 0) + " of " + V("its", "their") + " misses (" + ordinal(so.orb_rk) + ")." },
       { o: z("ftr", so.ftr), d: z("d_ftr", sd.d_ftr),
         good: () => "Free throws: " + O + " " + V("gets", "get") + " to the line often (" + Math.round(so.ftr * 100) + " FTA per 100 shots, " + ordinal(so.ftr_rk) + ") and " + Df + " " + V("fouls", "foul") + " a lot (" + Math.round(sd.d_ftr * 100) + ", " + ordinal(sd.d_ftr_rk) + ").",
         defStrong: () => Df + " " + V("defends", "defend") + " without fouling: " + Math.round(sd.d_ftr * 100) + " opponent FTA per 100 shots (" + ordinal(sd.d_ftr_rk) + ").",
@@ -637,8 +638,8 @@
       (mu ? "<p><b>Most-used five:</b> " + mu.players.map(esc).join(", ") + ' <span class="sub">' + Math.round(mu.poss) + " poss, net " + sgn(mu.net) + "</span></p>" : "") + "</div>";
 
     box.innerHTML =
-      "<h2>When " + esc(A.short) + " has the ball</h2>" + possessionTable(A, H, sa, sh, L) +
-      "<h2>When " + esc(H.short) + " has the ball</h2>" + possessionTable(H, A, sh, sa, L) +
+      "<h2>When " + esc(A.short) + (LG.nba ? " have" : " has") + " the ball</h2>" + possessionTable(A, H, sa, sh, L) +
+      "<h2>When " + esc(H.short) + (LG.nba ? " have" : " has") + " the ball</h2>" + possessionTable(H, A, sh, sa, L) +
       '<section class="prose" style="max-width:none"><h2>Scouting report</h2>' +
       '<p class="note">Based on ' + sa.games + " and " + sh.games + " games. Season averages, not adjusted for opponents" + (Math.min(sa.games, sh.games) < 8 ? "; early-season numbers swing a lot from game to game" : "") + ".</p>" +
       '<div class="grid">' +
