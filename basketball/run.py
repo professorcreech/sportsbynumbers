@@ -49,13 +49,15 @@ def load(season: int):
     stints = _read(d / "stints", "*.csv.gz")
     prior = pd.read_csv(d / "prior_scores.csv", dtype={"home_id": str, "away_id": str}) \
         if (d / "prior_scores.csv").exists() else None
-    shots = _read(d / "shots", "*.csv.gz") if (d / "shots").exists() else None
-    if shots is not None and len(shots):
-        shots = shots.drop_duplicates()
     rosters = pd.read_csv(d / "rosters.csv", dtype={"player_id": str, "team_id": str}) \
         if (d / "rosters.csv").exists() else None
-    load.shots = shots  # kept off the return value so existing callers don't change
     return tm, games, box, stints, prior, rosters
+
+
+def load_shots(season: int):
+    d = config.DATA_DIR / str(season)
+    shots = _read(d / "shots", "*.csv.gz") if (d / "shots").exists() else None
+    return shots.drop_duplicates() if shots is not None and len(shots) else None
 
 
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
@@ -190,7 +192,7 @@ def main():
         sched = fetch.fetch_schedule()
     tm, games, box, stints, prior, rosters = load(season)
     build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season,
-          shots=load.shots)
+          shots=load_shots(season))
 
 
 if __name__ == "__main__":

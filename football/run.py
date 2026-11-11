@@ -14,7 +14,7 @@ import pandas as pd
 
 from basketball.conferences import name as conf_name
 from basketball.run import _clean
-from . import config, teams
+from . import config, scouting, teams
 
 
 def _read(folder, pattern):
@@ -39,6 +39,11 @@ def load(season: int):
         games = games[games.completed.astype(bool)]
     drives = _read(d / "drives", "*.csv.gz")
     return tm, games, drives
+
+
+def load_plays(season: int) -> pd.DataFrame:
+    d = config.DATA_DIR / str(season)
+    return _read(d / "plays", "*.csv.gz") if (d / "plays").exists() else pd.DataFrame()
 
 
 def prior_for(season: int) -> dict:
@@ -93,7 +98,9 @@ def build(season: int, schedule: list[dict]) -> None:
             "model": {"ids": list(m["idx"]), "O": np.round(m["O"], 3).tolist(), "D": np.round(m["D"], 3).tolist()}}
     out = config.SITE_DATA_DIR
     out.mkdir(parents=True, exist_ok=True)
-    for name, obj in (("meta", meta), ("teams", out_t), ("games", up)):
+    plays = load_plays(season)
+    stats = scouting.team_profiles(plays, drives, set(t.team_id)) if len(plays) and len(drives) else {"league": {}, "teams": {}}
+    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)):
         (out / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     print(f"football: {len(games)} games, {len(t)} teams rated, {len(up)} upcoming")
 

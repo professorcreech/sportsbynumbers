@@ -273,7 +273,7 @@
       if (a === h) { $("#m-out").innerHTML = '<p class="lede">Choose two different teams.</p>'; return; }
       const p = predict(h, a, n);
       $("#m-out").innerHTML = p ? '<div class="grid">' + gameCard(Object.assign({ home: h, away: a, neutral: n }, p)) + "</div>" +
-        '<p class="lede">Projected margin ' + sgn(p.home_score - p.away_score) + " for " + esc(teamById[h].short) + ". Typical miss: about " + Math.round(D.meta.sd) + " points.</p>" : "";
+        '<p class="lede">Projected margin ' + sgn(p.home_score - p.away_score) + " for " + esc(teamById[h].short) + ". Typical miss: about " + Math.round(D.meta.sd) + ' points. <a href="' + gameHref({ away: a, home: h, neutral: n }) + '">Full matchup report →</a></p>' : "";
     };
     ["#m-a", "#m-h", "#m-v"].forEach((s) => $(s).addEventListener("change", draw));
     draw();
@@ -445,34 +445,44 @@
       "</tbody></table></div>";
   }
 
-  /* Plain-language edges for one side of the ball. Each edge combines how good the offense is at
-     something with how much the defense gives it up, both as z-scores against Division I. */
+  /* Plain-language edges for one side of the ball. o = how good the offense is at something,
+     d = how much the defense gives it up (z-scores vs. Division I, oriented so positive helps the
+     offense). The sentence names whichever side actually drives the edge. */
   function edges(offT, defT, so, sd, L) {
     const z = (k, v) => (v == null || !L[k] || !L[k].sd ? 0 : (v - L[k].mean) / L[k].sd);
+    const O = esc(offT.short), Df = esc(defT.short);
     const items = [
-      { k: "shooting", s: (z("efg", so.efg) + z("d_efg", sd.d_efg)) / 2,
-        good: () => esc(offT.short) + " shoots well (" + pctf(so.efg) + " effective FG%, " + ordinal(so.efg_rk) + ") and " + esc(defT.short) + " gives up good looks (" + pctf(sd.d_efg) + ", " + ordinal(sd.d_efg_rk) + " in defense).",
-        bad: () => esc(defT.short) + "'s defense holds teams to " + pctf(sd.d_efg) + " effective FG% (" + ordinal(sd.d_efg_rk) + "), a tough test for an offense shooting " + pctf(so.efg) + "." },
-      { k: "threes", s: ((z("three_pct", so.three_pct) + z("d_three_pct", sd.d_three_pct)) / 2) * (0.6 + Math.max(0, z("three_rate", so.three_rate)) * 0.4),
-        good: () => "Three-point line: " + esc(offT.short) + " makes " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ") and takes " + pctf(so.three_rate, 0) + " of its shots from deep; " + esc(defT.short) + " allows " + pctf(sd.d_three_pct) + ".",
-        bad: () => esc(defT.short) + " defends the arc well (opponents make " + pctf(sd.d_three_pct) + ", " + ordinal(sd.d_three_pct_rk) + "), against " + esc(offT.short) + "'s " + pctf(so.three_pct) + " shooting." },
-      { k: "rim", s: (z("rim_pct", so.rim_pct) + z("d_rim_pct", sd.d_rim_pct)) / 2 + 0.3 * z("rim_rate", so.rim_rate),
-        good: () => "At the rim: " + esc(offT.short) + " gets " + pctf(so.rim_rate, 0) + " of its shots there and finishes " + pctf(so.rim_pct) + "; " + esc(defT.short) + " allows " + pctf(sd.d_rim_pct) + " at the rim.",
-        bad: () => esc(defT.short) + " protects the rim (opponents finish " + pctf(sd.d_rim_pct) + ", block rate " + ordinal(sd.blk_rate_rk || 0) + "), which cuts into " + esc(offT.short) + "'s inside game." },
-      { k: "turnovers", s: -(z("tov", so.tov) + z("d_tov", sd.d_tov)) / 2,
-        good: () => "Ball security: " + esc(offT.short) + " turns it over on just " + pctf(so.tov) + " of possessions (" + ordinal(so.tov_rk) + ") and " + esc(defT.short) + " rarely forces them (" + pctf(sd.d_tov) + ").",
-        bad: () => "Turnovers: " + esc(defT.short) + " forces them on " + pctf(sd.d_tov) + " of possessions (" + ordinal(sd.d_tov_rk) + "); " + esc(offT.short) + " gives it away on " + pctf(so.tov) + "." },
-      { k: "glass", s: (z("orb", so.orb) + z("d_orb", sd.d_orb)) / 2,
-        good: () => "Second chances: " + esc(offT.short) + " grabs " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ") and " + esc(defT.short) + " allows " + pctf(sd.d_orb, 0) + ".",
-        bad: () => esc(defT.short) + " cleans the defensive glass (opponents rebound only " + pctf(sd.d_orb, 0) + " of misses, " + ordinal(sd.d_orb_rk) + ")." },
-      { k: "line", s: (z("ftr", so.ftr) + z("d_ftr", sd.d_ftr)) / 2,
-        good: () => "Free throws: " + esc(offT.short) + " gets to the line often (" + Math.round(so.ftr * 100) + " FTA per 100 shots, " + ordinal(so.ftr_rk) + ") and " + esc(defT.short) + " fouls a lot (" + Math.round(sd.d_ftr * 100) + ").",
-        bad: () => esc(defT.short) + " defends without fouling (" + Math.round(sd.d_ftr * 100) + " opponent FTA per 100 shots, " + ordinal(sd.d_ftr_rk) + ")." },
+      { o: z("efg", so.efg), d: z("d_efg", sd.d_efg),
+        good: () => O + " shoots well (" + pctf(so.efg) + " effective FG%, " + ordinal(so.efg_rk) + ") and " + Df + " gives up good looks (" + pctf(sd.d_efg) + ", " + ordinal(sd.d_efg_rk) + " in defense).",
+        defStrong: () => Df + "'s defense holds teams to " + pctf(sd.d_efg) + " effective FG% (" + ordinal(sd.d_efg_rk) + ").",
+        offWeak: () => O + " has struggled to score efficiently: " + pctf(so.efg) + " effective FG% (" + ordinal(so.efg_rk) + ")." },
+      { o: z("three_pct", so.three_pct) + 0.3 * z("three_rate", so.three_rate), d: z("d_three_pct", sd.d_three_pct),
+        good: () => "Three-point line: " + O + " makes " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ") on " + pctf(so.three_rate, 0) + " of its shots; " + Df + " allows " + pctf(sd.d_three_pct) + " (" + ordinal(sd.d_three_pct_rk) + ").",
+        defStrong: () => Df + " defends the arc: opponents make " + pctf(sd.d_three_pct) + " of threes (" + ordinal(sd.d_three_pct_rk) + ").",
+        offWeak: () => O + " has been cold from three: " + pctf(so.three_pct) + " (" + ordinal(so.three_pct_rk) + ")." },
+      { o: z("rim_pct", so.rim_pct) + 0.3 * z("rim_rate", so.rim_rate), d: z("d_rim_pct", sd.d_rim_pct),
+        good: () => "At the rim: " + O + " gets " + pctf(so.rim_rate, 0) + " of its shots there and finishes " + pctf(so.rim_pct) + " (" + ordinal(so.rim_pct_rk) + "); " + Df + " allows " + pctf(sd.d_rim_pct) + " (" + ordinal(sd.d_rim_pct_rk) + ").",
+        defStrong: () => Df + " protects the rim: opponents finish " + pctf(sd.d_rim_pct) + " there (" + ordinal(sd.d_rim_pct_rk) + "), with a block rate " + ordinal(sd.blk_rate_rk) + " in the country.",
+        offWeak: () => O + " hasn't finished well inside: " + pctf(so.rim_pct) + " at the rim (" + ordinal(so.rim_pct_rk) + ")." },
+      { o: -z("tov", so.tov), d: -z("d_tov", sd.d_tov),
+        good: () => "Ball security: " + O + " turns it over on just " + pctf(so.tov) + " of possessions (" + ordinal(so.tov_rk) + ") and " + Df + " rarely forces them (" + pctf(sd.d_tov) + ", " + ordinal(sd.d_tov_rk) + ").",
+        defStrong: () => "Turnovers: " + Df + " forces them on " + pctf(sd.d_tov) + " of possessions (" + ordinal(sd.d_tov_rk) + ").",
+        offWeak: () => O + " has been loose with the ball: turnovers on " + pctf(so.tov) + " of possessions (" + ordinal(so.tov_rk) + ")." },
+      { o: z("orb", so.orb), d: z("d_orb", sd.d_orb),
+        good: () => "Second chances: " + O + " grabs " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ") and " + Df + " allows " + pctf(sd.d_orb, 0) + " (" + ordinal(sd.d_orb_rk) + ").",
+        defStrong: () => Df + " cleans the defensive glass: opponents rebound only " + pctf(sd.d_orb, 0) + " of their misses (" + ordinal(sd.d_orb_rk) + ").",
+        offWeak: () => O + " rarely gets second chances: " + pctf(so.orb, 0) + " of its misses (" + ordinal(so.orb_rk) + ")." },
+      { o: z("ftr", so.ftr), d: z("d_ftr", sd.d_ftr),
+        good: () => "Free throws: " + O + " gets to the line often (" + Math.round(so.ftr * 100) + " FTA per 100 shots, " + ordinal(so.ftr_rk) + ") and " + Df + " fouls a lot (" + Math.round(sd.d_ftr * 100) + ", " + ordinal(sd.d_ftr_rk) + ").",
+        defStrong: () => Df + " defends without fouling: " + Math.round(sd.d_ftr * 100) + " opponent FTA per 100 shots (" + ordinal(sd.d_ftr_rk) + ").",
+        offWeak: () => O + " rarely gets to the line: " + Math.round(so.ftr * 100) + " FTA per 100 shots (" + ordinal(so.ftr_rk) + ")." },
     ];
-    const sorted = items.filter((i) => isFinite(i.s)).sort((a, b) => b.s - a.s);
-    const pros = sorted.filter((i) => i.s > 0.35).slice(0, 2).map((i) => ({ txt: i.good(), s: i.s, k: i.k }));
-    const cons = sorted.slice().reverse().filter((i) => i.s < -0.35).slice(0, 2).map((i) => ({ txt: i.bad(), s: i.s, k: i.k }));
-    return { pros, cons, all: sorted };
+    items.forEach((i) => (i.s = (i.o + i.d) / 2));
+    const ok = items.filter((i) => isFinite(i.s)).sort((a, b) => b.s - a.s);
+    return {
+      pros: ok.filter((i) => i.s > 0.35 && i.o > 0 && i.d > -0.3).slice(0, 2).map((i) => ({ txt: i.good() })),
+      cons: ok.slice().reverse().filter((i) => i.s < -0.35).slice(0, 2).map((i) => ({ txt: i.d <= i.o ? i.defStrong() : i.offWeak() })),
+    };
   }
 
   /* Tendencies we can only infer from the numbers */
