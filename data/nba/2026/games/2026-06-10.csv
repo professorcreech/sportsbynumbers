@@ -1,2 +1,2 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401859966,2026-06-10,False,False,True,18,24,107,106
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401859966,2026-06-10,False,False,True,18,24,107,106,2026-06-11T00:30Z,22|27|26|32,41|35|14|16,Draft Kings,NY -2.5,-2.5,216.5,-135.0,114.0,True

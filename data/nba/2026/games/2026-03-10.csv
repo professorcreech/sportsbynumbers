@@ -1,12 +1,12 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810791,2026-03-10,False,False,True,20,29,139,129
-401810792,2026-03-10,False,False,True,17,8,100,138
-401810793,2026-03-10,False,False,True,14,27,150,129
-401810794,2026-03-10,False,False,True,1,6,124,112
-401810795,2026-03-10,False,False,True,10,28,113,99
-401810796,2026-03-10,False,False,True,15,21,114,129
-401810797,2026-03-10,False,False,True,24,2,125,116
-401810798,2026-03-10,False,False,True,9,4,124,130
-401810799,2026-03-10,False,False,True,22,30,101,103
-401810800,2026-03-10,False,False,True,23,11,114,109
-401810801,2026-03-10,False,False,True,13,16,120,106
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810791,2026-03-10,False,False,True,20,29,139,129,2026-03-10T23:00Z,32|36|30|41,32|39|33|25,Draft Kings,PHI -4.5,-4.5,229.5,-192.0,160.0,True
+401810792,2026-03-10,False,False,True,17,8,100,138,2026-03-10T23:30Z,27|13|33|27,38|35|32|33,Draft Kings,DET -15.5,15.5,216.5,700.0,-1100.0,False
+401810793,2026-03-10,False,False,True,14,27,150,129,2026-03-10T23:30Z,40|36|37|37,29|33|35|32,Draft Kings,MIA -15.5,-15.5,235.5,-1200.0,750.0,True
+401810794,2026-03-10,False,False,True,1,6,124,112,2026-03-10T23:30Z,40|24|31|29,26|27|38|21,Draft Kings,ATL -9.5,-9.5,240.5,-425.0,330.0,True
+401810795,2026-03-10,False,False,True,10,28,113,99,2026-03-11T00:00Z,29|29|28|27,29|20|34|16,Draft Kings,HOU -4.5,-4.5,220.5,-192.0,160.0,True
+401810796,2026-03-10,False,False,True,15,21,114,129,2026-03-11T00:00Z,30|35|32|17,36|26|38|29,Draft Kings,PHX -2.5,2.5,219.5,110.0,-130.0,False
+401810797,2026-03-10,False,False,True,24,2,125,116,2026-03-11T00:00Z,29|29|39|28,31|27|32|26,Draft Kings,SA -3.5,-3.5,221.5,-162.0,136.0,True
+401810798,2026-03-10,False,False,True,9,4,124,130,2026-03-11T02:00Z,30|21|32|35|6,26|31|32|29|12,Draft Kings,GS -6.5,-6.5,227.5,-238.0,195.0,True
+401810799,2026-03-10,False,False,True,22,30,101,103,2026-03-11T02:00Z,34|21|27|19,20|26|32|25,Draft Kings,CHA -3.5,3.5,227.5,130.0,-155.0,False
+401810800,2026-03-10,False,False,True,23,11,114,109,2026-03-11T02:00Z,24|18|30|42,25|34|23|27,Draft Kings,SAC -3.5,-3.5,236.5,-162.0,136.0,True
+401810801,2026-03-10,False,False,True,13,16,120,106,2026-03-11T03:00Z,16|29|39|36,21|24|23|38,Draft Kings,MIN -2.5,2.5,229.5,120.0,-142.0,False

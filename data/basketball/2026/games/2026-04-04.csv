@@ -1,5 +1,5 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401858383,2026-04-04,True,False,True,239,201,69,82
-401858384,2026-04-04,True,False,True,156,277,70,87
-401856599,2026-04-04,True,False,True,12,130,73,91
-401856598,2026-04-04,True,False,True,41,356,71,62
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401858383,2026-04-04,True,False,True,239,201,69,82,2026-04-04T17:30Z,35|34,45|37,Draft Kings,BAY -1.5,-1.5,159.5,-122.0,102.0,True
+401858384,2026-04-04,True,False,True,156,277,70,87,2026-04-04T20:14Z,37|33,43|44,Draft Kings,WVU -1.5,1.5,137.5,110.0,-130.0,False
+401856599,2026-04-04,True,False,True,12,130,73,91,2026-04-05T01:19Z,32|41,48|43,Draft Kings,ARIZ -1.5,-1.5,157.5,-112.0,-108.0,True
+401856598,2026-04-04,True,False,True,41,356,71,62,2026-04-04T22:09Z,37|34,29|33,Draft Kings,ILL -1.5,1.5,139.5,110.0,-130.0,False

@@ -1,2 +1,2 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401873200,2026-05-24,False,False,True,24,25,103,82
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401873200,2026-05-24,False,False,True,24,25,103,82,2026-05-25T00:00Z,28|22|28|25,19|19|22|22,Draft Kings,SA -2.5,-2.5,219.5,-148.0,124.0,True

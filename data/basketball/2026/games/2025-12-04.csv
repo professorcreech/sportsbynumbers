@@ -1,12 +1,12 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401812290,2025-12-04,False,False,True,161,130196,86,38
-401828643,2025-12-04,False,False,True,2166,2643,79,63
-401826835,2025-12-04,False,False,True,58,328,74,61
-401823852,2025-12-04,False,True,True,2771,2520,68,66
-401820845,2025-12-04,False,False,True,2127,2684,124,63
-401817505,2025-12-04,False,True,True,2739,2523,78,80
-401823311,2025-12-04,False,True,True,2540,299,84,77
-401823261,2025-12-04,False,True,True,2463,2934,87,66
-401809153,2025-12-04,False,True,True,2239,13,91,94
-401809105,2025-12-04,False,True,True,300,27,73,60
-401809123,2025-12-04,False,True,True,62,302,75,69
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401812290,2025-12-04,False,False,True,161,130196,86,38,2025-12-04T21:00Z,44|42,21|17,,,,,,,
+401828643,2025-12-04,False,False,True,2166,2643,79,63,2025-12-05T00:00Z,36|43,29|34,Draft Kings,DAV -18.5,-18.5,137.5,-2400.0,1200.0,True
+401826835,2025-12-04,False,False,True,58,328,74,61,2025-12-05T00:00Z,41|33,20|41,Draft Kings,USF -2.5,-2.5,162.5,-135.0,114.0,True
+401823852,2025-12-04,False,True,True,2771,2520,68,66,2025-12-05T00:00Z,37|31,33|33,Draft Kings,MRMK -9.5,-9.5,138.5,-470.0,360.0,True
+401820845,2025-12-04,False,False,True,2127,2684,124,63,2025-12-05T00:00Z,74|50,24|39,,,,,,,
+401817505,2025-12-04,False,True,True,2739,2523,78,80,2025-12-05T00:00Z,33|45,36|44,Draft Kings,RMU -1.5,1.5,140.5,-108.0,-112.0,False
+401823311,2025-12-04,False,True,True,2540,299,84,77,2025-12-05T02:00Z,31|36|17,30|37|10,Draft Kings,UCSB -13.5,-13.5,141.5,-1200.0,750.0,True
+401823261,2025-12-04,False,True,True,2463,2934,87,66,2025-12-05T03:00Z,44|43,32|34,Draft Kings,CSUN -5.5,-5.5,155.5,-238.0,195.0,True
+401809153,2025-12-04,False,True,True,2239,13,91,94,2025-12-05T03:00Z,44|47,43|51,Draft Kings,CSUF -1.5,-1.5,177.5,-115.0,-105.0,True
+401809105,2025-12-04,False,True,True,300,27,73,60,2025-12-05T03:00Z,37|36,26|34,Draft Kings,UCI -13.5,-13.5,142.5,-1100.0,700.0,True
+401809123,2025-12-04,False,True,True,62,302,75,69,2025-12-05T04:59Z,33|42,28|41,,,,,,,

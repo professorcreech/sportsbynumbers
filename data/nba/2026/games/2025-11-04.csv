@@ -1,7 +1,7 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810020,2025-11-04,False,False,True,28,15,128,100
-401810021,2025-11-04,False,False,True,1,19,127,112
-401810022,2025-11-04,False,False,True,4,20,113,111
-401810023,2025-11-04,False,False,True,3,30,116,112
-401810024,2025-11-04,False,False,True,9,21,118,107
-401810025,2025-11-04,False,False,True,12,25,107,126
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods
+401810020,2025-11-04,False,False,True,28,15,128,100,2025-11-05T00:30Z,39|34|32|23,29|25|26|20
+401810021,2025-11-04,False,False,True,1,19,127,112,2025-11-05T01:00Z,32|32|34|29,23|24|30|35
+401810022,2025-11-04,False,False,True,4,20,113,111,2025-11-05T01:00Z,27|29|28|29,45|30|20|16
+401810023,2025-11-04,False,False,True,3,30,116,112,2025-11-05T01:00Z,33|28|26|29,30|29|34|19
+401810024,2025-11-04,False,False,True,9,21,118,107,2025-11-05T03:00Z,33|35|24|26,19|30|34|24
+401810025,2025-11-04,False,False,True,12,25,107,126,2025-11-05T04:00Z,33|24|29|21,23|33|38|32

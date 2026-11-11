@@ -1,8 +1,8 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401822903,2026-01-16,False,True,True,2507,156,93,88
-401814526,2026-01-16,False,True,True,2309,2649,87,84
-401827624,2026-01-16,False,True,True,2305,239,80,62
-401828376,2026-01-16,False,True,True,2168,2350,78,51
-401822902,2026-01-16,False,True,True,305,269,80,75
-401814524,2026-01-16,False,True,True,2050,195,76,71
-401830828,2026-01-16,False,True,True,68,36,79,73
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401822903,2026-01-16,False,True,True,2507,156,93,88,2026-01-16T23:30Z,45|48,46|42,Draft Kings,CREI -2.5,2.5,161.5,120.0,-142.0,False
+401814526,2026-01-16,False,True,True,2309,2649,87,84,2026-01-16T23:30Z,35|52,41|43,Draft Kings,KENT -5.5,-5.5,168.5,-238.0,195.0,True
+401827624,2026-01-16,False,True,True,2305,239,80,62,2026-01-17T01:00Z,43|37,37|25,Draft Kings,KU -7.5,-7.5,156.5,-360.0,285.0,True
+401828376,2026-01-16,False,True,True,2168,2350,78,51,2026-01-17T01:30Z,31|47,30|21,Draft Kings,DAY -16.5,-16.5,141.5,-2100.0,1100.0,True
+401822902,2026-01-16,False,True,True,305,269,80,75,2026-01-17T01:30Z,36|44,44|31,Draft Kings,DEP -2.5,-2.5,145.5,-148.0,124.0,True
+401814524,2026-01-16,False,True,True,2050,195,76,71,2026-01-17T01:30Z,44|32,31|40,Draft Kings,OHIO -5.5,5.5,147.5,190.0,-230.0,False
+401830828,2026-01-16,False,True,True,68,36,79,73,2026-01-17T03:45Z,39|40,30|43,Draft Kings,BOIS -5.5,-5.5,140.5,-245.0,200.0,True

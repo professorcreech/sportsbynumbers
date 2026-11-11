@@ -1,9 +1,9 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810357,2026-01-05,False,False,True,8,18,121,90
-401810358,2026-01-05,False,False,True,2,4,115,101
-401810359,2026-01-05,False,False,True,28,1,118,100
-401810360,2026-01-05,False,False,True,10,21,100,97
-401810361,2026-01-05,False,False,True,25,30,97,124
-401810362,2026-01-05,False,False,True,20,7,124,125
-401810363,2026-01-05,False,False,True,12,9,103,102
-401810364,2026-01-05,False,False,True,22,26,137,117
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810357,2026-01-05,False,False,True,8,18,121,90,2026-01-06T00:00Z,30|34|25|32,29|25|15|21,Draft Kings,NY -1.5,1.5,233.5,105.0,-125.0,False
+401810358,2026-01-05,False,False,True,2,4,115,101,2026-01-06T00:30Z,31|23|31|30,14|19|34|34,Draft Kings,BOS -10.5,-10.5,236.5,-455.0,350.0,True
+401810359,2026-01-05,False,False,True,28,1,118,100,2026-01-06T00:30Z,31|30|25|32,26|23|24|27,Draft Kings,TOR -2.5,-2.5,237.5,-135.0,114.0,True
+401810360,2026-01-05,False,False,True,10,21,100,97,2026-01-06T01:00Z,25|29|24|22,29|31|18|19,Draft Kings,HOU -8.5,-8.5,222.5,-305.0,245.0,True
+401810361,2026-01-05,False,False,True,25,30,97,124,2026-01-06T01:00Z,33|17|21|26,33|34|32|25,Draft Kings,OKC -15.5,-15.5,235.5,-1050.0,675.0,True
+401810362,2026-01-05,False,False,True,20,7,124,125,2026-01-06T01:30Z,26|32|35|27|4,29|29|29|33|5,Draft Kings,PHI -14.5,-14.5,228.5,-850.0,575.0,True
+401810363,2026-01-05,False,False,True,12,9,103,102,2026-01-06T03:00Z,31|24|21|27,19|32|13|38,Draft Kings,GS -3.5,3.5,222.5,136.0,-162.0,False
+401810364,2026-01-05,False,False,True,22,26,137,117,2026-01-06T03:00Z,36|42|36|23,26|31|26|34,Draft Kings,POR -5.5,-5.5,242.5,-230.0,190.0,True

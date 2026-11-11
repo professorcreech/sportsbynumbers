@@ -1,10 +1,10 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810960,2026-04-01,False,False,True,27,20,131,153
-401810962,2026-04-01,False,False,True,19,1,101,130
-401810961,2026-04-01,False,False,True,14,2,129,147
-401810858,2026-04-01,False,False,True,29,18,119,130
-401810963,2026-04-01,False,False,True,28,23,115,123
-401810964,2026-04-01,False,False,True,4,11,126,145
-401810965,2026-04-01,False,False,True,10,15,119,113
-401810967,2026-04-01,False,False,True,26,7,117,130
-401810968,2026-04-01,False,False,True,9,24,113,127
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810960,2026-04-01,False,False,True,27,20,131,153,2026-04-01T23:00Z,29|42|32|28,35|38|47|33,Draft Kings,PHI -14.5,14.5,239.5,750.0,-1200.0,False
+401810962,2026-04-01,False,False,True,19,1,101,130,2026-04-01T23:00Z,28|26|22|25,25|47|30|28,Draft Kings,ATL -2.5,2.5,235.5,120.0,-142.0,False
+401810961,2026-04-01,False,False,True,14,2,129,147,2026-04-01T23:30Z,33|24|45|27,53|27|32|35,Draft Kings,BOS -4.5,4.5,229.5,164.0,-198.0,False
+401810858,2026-04-01,False,False,True,29,18,119,130,2026-04-02T00:00Z,30|32|28|29,48|31|20|31,Draft Kings,NY -13.5,13.5,224.5,600.0,-900.0,False
+401810963,2026-04-01,False,False,True,28,23,115,123,2026-04-02T00:00Z,22|34|25|34,27|34|29|33,Draft Kings,TOR -12.5,-12.5,227.5,-750.0,525.0,True
+401810964,2026-04-01,False,False,True,4,11,126,145,2026-04-02T00:00Z,33|33|26|34,39|44|34|28,Draft Kings,CHI -3.5,-3.5,246.5,-170.0,142.0,True
+401810965,2026-04-01,False,False,True,10,15,119,113,2026-04-02T00:00Z,27|27|31|34,20|24|34|35,Draft Kings,HOU -19.5,-19.5,216.5,-2400.0,1200.0,True
+401810967,2026-04-01,False,False,True,26,7,117,130,2026-04-02T01:00Z,28|26|36|27,39|29|29|33,Draft Kings,DEN -17.5,17.5,249.5,1000.0,-1800.0,False
+401810968,2026-04-01,False,False,True,9,24,113,127,2026-04-02T02:00Z,26|23|34|30,35|35|26|31,Draft Kings,SA -14.5,14.5,228.5,700.0,-1100.0,False

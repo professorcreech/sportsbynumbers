@@ -1,5 +1,5 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401836746,2025-12-11,False,False,True,10,12,115,113
-401836747,2025-12-11,False,False,True,15,2,116,101
-401836748,2025-12-11,False,False,True,3,22,143,120
-401836749,2025-12-11,False,False,True,23,7,105,136
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401836746,2025-12-11,False,False,True,10,12,115,113,2025-12-12T01:00Z,29|22|29|35,29|25|28|31,Draft Kings,HOU -8.5,-8.5,221.5,-380.0,300.0,True
+401836747,2025-12-11,False,False,True,15,2,116,101,2025-12-12T01:00Z,29|31|27|29,35|32|13|21,Draft Kings,BOS -9.5,9.5,222.5,320.0,-410.0,False
+401836748,2025-12-11,False,False,True,3,22,143,120,2025-12-12T01:00Z,39|31|35|38,30|38|29|23,Draft Kings,POR -4.5,4.5,242.5,142.0,-170.0,False
+401836749,2025-12-11,False,False,True,23,7,105,136,2025-12-12T03:00Z,26|28|27|24,41|36|32|27,Draft Kings,DEN -10.5,10.5,239.5,370.0,-485.0,False

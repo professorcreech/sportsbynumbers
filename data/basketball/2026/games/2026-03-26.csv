@@ -1,5 +1,5 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401856569,2026-03-26,True,False,True,12,8,109,88
-401856568,2026-03-26,True,False,True,2509,251,79,77
-401856566,2026-03-26,True,False,True,248,356,55,65
-401856567,2026-03-26,True,False,True,158,2294,71,77
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401856569,2026-03-26,True,False,True,12,8,109,88,2026-03-27T02:06Z,54|55,43|45,Draft Kings,ARIZ -8.5,-8.5,166.5,-425.0,330.0,True
+401856568,2026-03-26,True,False,True,2509,251,79,77,2026-03-26T23:10Z,39|40,35|42,Draft Kings,PUR -8.5,-8.5,146.5,-455.0,350.0,True
+401856566,2026-03-26,True,False,True,248,356,55,65,2026-03-27T02:05Z,22|33,24|41,Draft Kings,HOU -2.5,-2.5,141.5,-142.0,120.0,True
+401856567,2026-03-26,True,False,True,158,2294,71,77,2026-03-26T23:30Z,46|25,43|34,Draft Kings,NEB -1.5,-1.5,131.5,-125.0,105.0,True

@@ -1,6 +1,6 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401851388,2026-03-15,True,True,True,130,2509,72,80
-401851571,2026-03-15,True,True,True,8,238,86,75
-401851437,2026-03-15,True,True,True,43,219,84,88
-401851277,2026-03-15,True,True,True,2670,2168,70,62
-401851229,2026-03-15,True,True,True,58,2724,70,55
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401851388,2026-03-15,True,True,True,130,2509,72,80,2026-03-15T19:30Z,38|34,38|42,Draft Kings,MICH -4.5,-4.5,149.5,-245.0,200.0,True
+401851571,2026-03-15,True,True,True,8,238,86,75,2026-03-15T17:00Z,41|45,39|36,Draft Kings,VAN -2.5,2.5,165.5,120.0,-142.0,False
+401851437,2026-03-15,True,True,True,43,219,84,88,2026-03-15T16:00Z,39|36|9,41|34|13,Draft Kings,YALE -9.5,-9.5,144.5,-535.0,400.0,True
+401851277,2026-03-15,True,True,True,2670,2168,70,62,2026-03-15T17:00Z,40|30,25|37,Draft Kings,VCU -3.5,-3.5,139.5,-166.0,140.0,True
+401851229,2026-03-15,True,True,True,58,2724,70,55,2026-03-15T19:15Z,33|37,26|29,Draft Kings,USF -6.5,-6.5,151.5,-270.0,220.0,True

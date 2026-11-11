@@ -1,4 +1,4 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401869396,2026-04-21,False,False,True,2,20,97,111
-401869378,2026-04-21,False,False,True,24,22,103,106
-401869397,2026-04-21,False,False,True,13,10,101,94
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401869396,2026-04-21,False,False,True,2,20,97,111,2026-04-21T23:00Z,28|26|23|20,25|37|22|27,Draft Kings,BOS -13.5,-13.5,218.5,-850.0,575.0,True
+401869378,2026-04-21,False,False,True,24,22,103,106,2026-04-22T00:00Z,28|29|23|23,27|30|22|27,Draft Kings,SA -11.5,-11.5,221.5,-650.0,470.0,True
+401869397,2026-04-21,False,False,True,13,10,101,94,2026-04-22T02:30Z,33|21|21|26,26|25|17|26,Draft Kings,HOU -5.5,5.5,209.5,190.0,-230.0,False

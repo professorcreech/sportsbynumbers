@@ -1,12 +1,12 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401825503,2026-02-08,False,True,True,194,130,61,82
-401827672,2026-02-08,False,True,True,277,2641,63,70
-401828218,2026-02-08,False,True,True,58,202,80,74
-401825504,2026-02-08,False,True,True,213,30,75,77
-401809359,2026-02-08,False,True,True,231,2430,64,67
-401828219,2026-02-08,False,True,True,2655,2724,61,75
-401828217,2026-02-08,False,True,True,235,2429,77,54
-401827671,2026-02-08,False,True,True,2132,2116,92,72
-401825502,2026-02-08,False,True,True,135,120,62,67
-401828216,2026-02-08,False,True,True,5,242,71,65
-401825501,2026-02-08,False,True,True,2294,77,76,70
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401825503,2026-02-08,False,True,True,194,130,61,82,2026-02-08T18:00Z,34|27,44|38,Draft Kings,MICH -8.5,8.5,161.5,370.0,-485.0,False
+401827672,2026-02-08,False,True,True,277,2641,63,70,2026-02-08T18:00Z,27|36,39|31,Draft Kings,TTU -4.5,4.5,139.5,180.0,-218.0,False
+401828218,2026-02-08,False,True,True,58,202,80,74,2026-02-08T17:00Z,39|41,35|39,Draft Kings,USF -4.5,-4.5,170.5,-218.0,180.0,True
+401825504,2026-02-08,False,True,True,213,30,75,77,2026-02-08T17:00Z,40|35,36|41,Draft Kings,USC -3.5,3.5,157.5,160.0,-192.0,False
+401809359,2026-02-08,False,True,True,231,2430,64,67,2026-02-08T18:00Z,32|32,39|28,Draft Kings,FUR -10.5,-10.5,149.5,-750.0,525.0,True
+401828219,2026-02-08,False,True,True,2655,2724,61,75,2026-02-08T19:00Z,26|35,31|44,Draft Kings,WICH -5.5,5.5,148.5,180.0,-218.0,False
+401828217,2026-02-08,False,True,True,235,2429,77,54,2026-02-08T19:00Z,37|40,17|37,Draft Kings,MEM -10.5,-10.5,144.5,-550.0,410.0,True
+401827671,2026-02-08,False,True,True,2132,2116,92,72,2026-02-08T19:00Z,40|52,28|44,Draft Kings,CIN -4.5,-4.5,146.5,-192.0,160.0,True
+401825502,2026-02-08,False,True,True,135,120,62,67,2026-02-08T19:00Z,33|29,32|35,Draft Kings,MINN -10.5,-10.5,138.5,-535.0,400.0,True
+401828216,2026-02-08,False,True,True,5,242,71,65,2026-02-08T20:00Z,34|37,33|32,Draft Kings,UAB -8.5,-8.5,153.5,-440.0,340.0,True
+401825501,2026-02-08,False,True,True,2294,77,76,70,2026-02-08T20:00Z,39|37,35|35,Draft Kings,IOWA -10.5,-10.5,139.5,-850.0,575.0,True

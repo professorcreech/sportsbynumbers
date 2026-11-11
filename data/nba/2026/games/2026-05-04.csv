@@ -1,3 +1,3 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401871159,2026-05-04,False,False,True,18,20,137,98
-401871152,2026-05-04,False,False,True,24,16,102,104
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401871159,2026-05-04,False,False,True,18,20,137,98,2026-05-05T00:00Z,33|41|35|28,25|26|27|20,Draft Kings,NY -7.5,-7.5,212.5,-290.0,235.0,True
+401871152,2026-05-04,False,False,True,24,16,102,104,2026-05-05T01:30Z,23|22|27|30,24|21|24|35,Draft Kings,SA -10.5,-10.5,218.5,-395.0,310.0,True

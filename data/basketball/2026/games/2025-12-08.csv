@@ -1,8 +1,8 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401828342,2025-12-08,False,False,True,338,2576,121,66
-401812581,2025-12-08,False,False,True,219,322,74,72
-401820846,2025-12-08,False,False,True,2127,2569,84,44
-401827090,2025-12-08,False,False,True,2572,2755,68,60
-401827017,2025-12-08,False,False,True,251,2582,95,69
-401819895,2025-12-08,False,False,True,2306,2400,108,49
-401808900,2025-12-08,False,True,True,2443,2916,84,83
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401828342,2025-12-08,False,False,True,338,2576,121,66,2025-12-08T17:00Z,65|56,22|44,,,,,,,
+401812581,2025-12-08,False,False,True,219,322,74,72,2025-12-08T23:00Z,41|33,33|39,Draft Kings,PENN -7.5,-7.5,150.5,-355.0,280.0,True
+401820846,2025-12-08,False,False,True,2127,2569,84,44,2025-12-09T00:00Z,33|51,20|24,Draft Kings,CHSO -12.5,-12.5,156.5,-1000.0,650.0,True
+401827090,2025-12-08,False,False,True,2572,2755,68,60,2025-12-09T01:00Z,29|39,31|29,Draft Kings,USM -8.5,-8.5,142.5,-410.0,320.0,True
+401827017,2025-12-08,False,False,True,251,2582,95,69,2025-12-09T01:00Z,46|49,27|42,Draft Kings,TEX -22.5,-22.5,158.5,-4500.0,1700.0,True
+401819895,2025-12-08,False,False,True,2306,2400,108,49,2025-12-09T01:00Z,55|53,21|28,Draft Kings,KSU -38.5,-38.5,160.5,,,True
+401808900,2025-12-08,False,True,True,2443,2916,84,83,2025-12-09T01:00Z,38|46,26|57,Draft Kings,UIW -1.5,1.5,148.5,110.0,-130.0,False

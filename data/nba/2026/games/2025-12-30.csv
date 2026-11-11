@@ -1,5 +1,5 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810313,2025-12-30,False,False,True,29,20,136,139
-401810314,2025-12-30,False,False,True,26,2,119,129
-401810315,2025-12-30,False,False,True,13,8,106,128
-401810316,2025-12-30,False,False,True,12,23,131,90
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810313,2025-12-30,False,False,True,29,20,136,139,2025-12-31T01:00Z,40|32|28|28|8,34|38|31|25|11,Draft Kings,PHI -1.5,1.5,235.5,102.0,-122.0,False
+401810314,2025-12-30,False,False,True,26,2,119,129,2025-12-31T02:00Z,38|26|32|23,31|28|40|30,Draft Kings,BOS -8.5,8.5,243.5,240.0,-298.0,False
+401810315,2025-12-30,False,False,True,13,8,106,128,2025-12-31T03:30Z,30|35|23|18,36|34|26|32,Draft Kings,DET -2.5,2.5,233.5,124.0,-148.0,False
+401810316,2025-12-30,False,False,True,12,23,131,90,2025-12-31T04:00Z,34|39|27|31,20|20|31|19,Draft Kings,LAC -9.5,-9.5,218.5,-375.0,295.0,True

@@ -1,2 +1,2 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810037,2025-11-06,False,False,True,21,12,115,102
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods
+401810037,2025-11-06,False,False,True,21,12,115,102,2025-11-07T02:00Z,31|17|40|27,27|24|23|28

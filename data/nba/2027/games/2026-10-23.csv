@@ -1,13 +1,13 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401909848,2026-10-23,False,False,True,15,4,125,132
-401909095,2026-10-23,False,False,True,2,18,107,103
-401909843,2026-10-23,False,False,True,30,1,81,128
-401909844,2026-10-23,False,False,True,11,6,105,121
-401909845,2026-10-23,False,False,True,19,16,93,115
-401909846,2026-10-23,False,False,True,27,28,102,112
-401909847,2026-10-23,False,False,True,14,8,111,128
-401909096,2026-10-23,False,False,True,24,10,110,114
-401909849,2026-10-23,False,False,True,26,3,120,119
-401909850,2026-10-23,False,False,True,9,29,108,111
-401909851,2026-10-23,False,False,True,13,12,125,117
-401909852,2026-10-23,False,False,True,23,22,120,128
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401909848,2026-10-23,False,False,True,15,4,125,132,2026-10-23T20:00Z,32|30|42|21,17|44|41|30,Draft Kings,MIL -1.5,-1.5,241.5,-118.0,-102.0,True
+401909095,2026-10-23,False,False,True,2,18,107,103,2026-10-23T23:00Z,26|24|33|24,27|22|24|30,Draft Kings,BOS -2.5,-2.5,220.5,-148.0,124.0,True
+401909843,2026-10-23,False,False,True,30,1,81,128,2026-10-23T23:00Z,20|23|19|19,33|35|29|31,Draft Kings,ATL -2.5,2.5,226.5,120.0,-142.0,False
+401909844,2026-10-23,False,False,True,11,6,105,121,2026-10-23T23:00Z,27|16|33|29,44|33|21|23,Draft Kings,IND -7.5,-7.5,241.5,-265.0,215.0,True
+401909845,2026-10-23,False,False,True,19,16,93,115,2026-10-23T23:00Z,20|25|15|33,26|31|29|29,Draft Kings,ORL -1.5,-1.5,234.5,-122.0,102.0,True
+401909846,2026-10-23,False,False,True,27,28,102,112,2026-10-23T23:00Z,21|31|25|25,34|26|21|31,Draft Kings,TOR -9.5,9.5,236.5,270.0,-340.0,False
+401909847,2026-10-23,False,False,True,14,8,111,128,2026-10-24T00:00Z,26|27|27|31,41|24|38|25,Draft Kings,DET -2.5,2.5,235.5,110.0,-130.0,False
+401909096,2026-10-23,False,False,True,24,10,110,114,2026-10-24T01:30Z,27|32|22|29,32|29|24|29,Draft Kings,SA -4.5,-4.5,224.5,-185.0,154.0,True
+401909849,2026-10-23,False,False,True,26,3,120,119,2026-10-24T01:30Z,31|31|24|34,28|24|38|29,Draft Kings,UTAH -1.5,-1.5,238.5,-112.0,-108.0,True
+401909850,2026-10-23,False,False,True,9,29,108,111,2026-10-24T02:00Z,34|22|34|18,33|27|24|27,Draft Kings,GS -4.5,-4.5,236.5,-162.0,136.0,True
+401909851,2026-10-23,False,False,True,13,12,125,117,2026-10-24T02:00Z,27|37|39|22,31|33|26|27,Draft Kings,LAL -8.5,-8.5,225.5,-360.0,285.0,True
+401909852,2026-10-23,False,False,True,23,22,120,128,2026-10-24T02:00Z,33|31|26|30,27|32|44|25,Draft Kings,POR -9.5,9.5,231.5,360.0,-470.0,False

@@ -1,10 +1,10 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810937,2026-03-29,False,False,True,15,12,113,127
-401810938,2026-03-29,False,False,True,11,14,135,118
-401810939,2026-03-29,False,False,True,17,23,116,99
-401810940,2026-03-29,False,False,True,30,2,99,114
-401810941,2026-03-29,False,False,True,28,19,139,87
-401810942,2026-03-29,False,False,True,22,27,123,88
-401810943,2026-03-29,False,False,True,3,10,102,134
-401810944,2026-03-29,False,False,True,25,18,111,100
-401810945,2026-03-29,False,False,True,7,9,116,93
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810937,2026-03-29,False,False,True,15,12,113,127,2026-03-29T19:30Z,25|21|28|39,29|28|39|31,Draft Kings,LAC -17.5,17.5,219.5,800.0,-1350.0,False
+401810938,2026-03-29,False,False,True,11,14,135,118,2026-03-29T21:00Z,34|45|29|27,36|39|32|11,Draft Kings,MIA -8.5,8.5,245.5,280.0,-355.0,False
+401810939,2026-03-29,False,False,True,17,23,116,99,2026-03-29T22:00Z,31|37|18|30,18|27|28|26,Draft Kings,BKN -1.5,-1.5,216.5,-120.0,100.0,True
+401810940,2026-03-29,False,False,True,30,2,99,114,2026-03-29T22:00Z,21|28|26|24,27|36|26|25,Draft Kings,CHA -2.5,-2.5,216.5,-135.0,114.0,True
+401810941,2026-03-29,False,False,True,28,19,139,87,2026-03-29T22:00Z,38|32|43|26,20|23|25|19,Draft Kings,TOR -1.5,-1.5,226.5,-122.0,102.0,True
+401810942,2026-03-29,False,False,True,22,27,123,88,2026-03-29T22:00Z,24|34|33|32,15|32|19|22,Draft Kings,POR -16.5,-16.5,235.5,-1650.0,950.0,True
+401810943,2026-03-29,False,False,True,3,10,102,134,2026-03-29T23:00Z,29|18|33|22,29|39|33|33,Draft Kings,HOU -5.5,5.5,226.5,205.0,-250.0,False
+401810944,2026-03-29,False,False,True,25,18,111,100,2026-03-29T23:30Z,26|27|31|27,23|29|26|22,Draft Kings,OKC -7.5,-7.5,223.5,-360.0,285.0,True
+401810945,2026-03-29,False,False,True,7,9,116,93,2026-03-30T02:00Z,23|23|40|30,28|25|21|19,Draft Kings,DEN -11.5,-11.5,238.5,-625.0,455.0,True

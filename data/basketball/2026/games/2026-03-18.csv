@@ -1,11 +1,11 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401856436,2026-03-18,True,False,True,2567,193,79,89
-401856437,2026-03-18,True,False,True,2329,2504,55,67
-401858344,2026-03-18,False,False,True,154,2426,82,72
-401858345,2026-03-18,False,False,True,2287,2309,79,58
-401858343,2026-03-18,False,False,True,3084,45,78,79
-401858346,2026-03-18,False,False,True,71,2168,66,80
-401858342,2026-03-18,False,False,True,167,2534,107,83
-401858341,2026-03-18,False,False,True,2440,93,89,75
-401858348,2026-03-18,False,False,True,36,2603,64,69
-401858347,2026-03-18,False,False,True,25,82,91,73
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401856436,2026-03-18,True,False,True,2567,193,79,89,2026-03-19T01:15Z,34|45,43|46,Draft Kings,SMU -6.5,-6.5,162.5,-310.0,250.0,True
+401856437,2026-03-18,True,False,True,2329,2504,55,67,2026-03-18T22:40Z,29|26,27|40,Draft Kings,LEH -3.5,-3.5,140.5,-166.0,140.0,True
+401858344,2026-03-18,False,False,True,154,2426,82,72,2026-03-18T23:00Z,38|44,34|38,Draft Kings,WAKE -9.5,-9.5,148.5,-600.0,440.0,True
+401858345,2026-03-18,False,False,True,2287,2309,79,58,2026-03-19T00:00Z,45|34,25|33,Draft Kings,ILST -4.5,-4.5,154.5,-192.0,160.0,True
+401858343,2026-03-18,False,False,True,3084,45,78,79,2026-03-19T00:00Z,29|49,45|34,Draft Kings,UVU -1.5,-1.5,152.5,-120.0,100.0,True
+401858346,2026-03-18,False,False,True,71,2168,66,80,2026-03-19T01:00Z,30|36,47|33,Draft Kings,DAY -2.5,2.5,141.5,130.0,-155.0,False
+401858342,2026-03-18,False,False,True,167,2534,107,83,2026-03-19T01:00Z,51|56,39|44,Draft Kings,UNM -11.5,-11.5,162.5,-800.0,550.0,True
+401858341,2026-03-18,False,False,True,2440,93,89,75,2026-03-19T02:00Z,41|48,39|36,Draft Kings,NEV -8.5,-8.5,159.5,-440.0,340.0,True
+401858348,2026-03-18,False,False,True,36,2603,64,69,2026-03-19T03:05Z,28|36,33|36,Draft Kings,CSU -5.5,-5.5,144.5,-250.0,205.0,True
+401858347,2026-03-18,False,False,True,25,82,91,73,2026-03-19T03:05Z,39|52,35|38,Draft Kings,CAL -6.5,-6.5,150.5,-290.0,235.0,True

@@ -1,5 +1,5 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401858381,2026-04-02,True,False,True,277,24,82,77
-401858382,2026-04-02,True,False,True,156,164,82,69
-401858361,2026-04-02,True,False,True,167,202,69,74
-401858362,2026-04-02,True,False,True,2,2287,88,66
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401858381,2026-04-02,True,False,True,277,24,82,77,2026-04-03T00:00Z,35|33|14,29|39|9,Draft Kings,WVU -2.5,-2.5,135.5,-135.0,114.0,True
+401858382,2026-04-02,True,False,True,156,164,82,69,2026-04-03T02:54Z,31|51,28|41,Draft Kings,CREI -4.5,-4.5,151.5,-218.0,180.0,True
+401858361,2026-04-02,True,False,True,167,202,69,74,2026-04-02T23:00Z,29|40,36|38,Draft Kings,UNM -2.5,-2.5,161.5,-162.0,136.0,True
+401858362,2026-04-02,True,False,True,2,2287,88,66,2026-04-03T01:47Z,51|37,38|28,Draft Kings,AUB -7.5,-7.5,149.5,-355.0,280.0,True

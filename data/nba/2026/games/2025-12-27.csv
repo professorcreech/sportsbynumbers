@@ -1,10 +1,10 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810287,2025-12-27,False,False,True,23,6,113,107
-401810288,2025-12-27,False,False,True,19,7,127,126
-401810289,2025-12-27,False,False,True,3,21,114,123
-401810290,2025-12-27,False,False,True,1,18,125,128
-401810291,2025-12-27,False,False,True,14,11,142,116
-401810292,2025-12-27,False,False,True,4,15,103,112
-401810293,2025-12-27,False,False,True,10,5,117,100
-401810294,2025-12-27,False,False,True,16,17,107,123
-401810295,2025-12-27,False,False,True,24,26,114,127
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810287,2025-12-27,False,False,True,23,6,113,107,2025-12-27T22:00Z,31|28|29|25,23|21|33|30,Draft Kings,DAL -2.5,2.5,233.5,120.0,-142.0,False
+401810288,2025-12-27,False,False,True,19,7,127,126,2025-12-28T00:00Z,23|25|36|43,31|31|31|33,Draft Kings,DEN -3.5,3.5,235.5,142.0,-170.0,False
+401810289,2025-12-27,False,False,True,3,21,114,123,2025-12-28T00:00Z,33|22|30|29,32|33|28|30,Draft Kings,PHX -4.5,4.5,241.5,154.0,-185.0,False
+401810290,2025-12-27,False,False,True,1,18,125,128,2025-12-28T01:00Z,27|28|34|36,33|35|30|30,Draft Kings,NY -5.5,5.5,244.5,185.0,-225.0,False
+401810291,2025-12-27,False,False,True,14,11,142,116,2025-12-28T01:00Z,29|30|39|44,28|32|34|22,Draft Kings,MIA -6.5,-6.5,233.5,-270.0,220.0,True
+401810292,2025-12-27,False,False,True,4,15,103,112,2025-12-28T01:00Z,26|24|30|23,28|26|31|27,Draft Kings,CHI -2.5,-2.5,233.5,-125.0,105.0,True
+401810293,2025-12-27,False,False,True,10,5,117,100,2025-12-28T01:00Z,32|28|30|27,24|22|17|37,Draft Kings,HOU -2.5,-2.5,231.5,-135.0,114.0,True
+401810294,2025-12-27,False,False,True,16,17,107,123,2025-12-28T01:00Z,30|33|23|21,33|29|36|25,Draft Kings,MIN -12.5,-12.5,224.5,-650.0,470.0,True
+401810295,2025-12-27,False,False,True,24,26,114,127,2025-12-28T01:00Z,40|20|27|27,32|38|28|29,Draft Kings,SA -14.5,-14.5,244.5,-800.0,550.0,True

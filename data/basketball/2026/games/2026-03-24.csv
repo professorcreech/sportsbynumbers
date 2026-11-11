@@ -1,3 +1,3 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401858357,2026-03-24,False,False,True,202,2724,83,79
-401858358,2026-03-24,False,False,True,167,2603,84,69
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401858357,2026-03-24,False,False,True,202,2724,83,79,2026-03-24T23:00Z,52|31,36|43,Draft Kings,TLSA -4.5,-4.5,154.5,-192.0,160.0,True
+401858358,2026-03-24,False,False,True,167,2603,84,69,2026-03-25T01:00Z,37|47,39|30,Draft Kings,UNM -10.5,-10.5,155.5,-625.0,455.0,True

@@ -1,2 +1,2 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401873197,2026-05-18,False,False,True,25,24,115,122
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401873197,2026-05-18,False,False,True,25,24,115,122,2026-05-19T00:30Z,27|17|29|28|7|7,27|24|29|21|7|14,Draft Kings,OKC -7.5,-7.5,219.5,-265.0,215.0,True

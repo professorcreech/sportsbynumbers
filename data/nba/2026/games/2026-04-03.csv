@@ -1,10 +1,10 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
-401810975,2026-04-03,False,False,True,30,11,129,108
-401810976,2026-04-03,False,False,True,20,16,115,103
-401810977,2026-04-03,False,False,True,17,1,107,141
-401810978,2026-04-03,False,False,True,18,4,136,96
-401810979,2026-04-03,False,False,True,10,26,140,106
-401810980,2026-04-03,False,False,True,29,28,96,128
-401810981,2026-04-03,False,False,True,15,2,101,133
-401810982,2026-04-03,False,False,True,6,19,127,138
-401810983,2026-04-03,False,False,True,23,3,117,113
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
+401810975,2026-04-03,False,False,True,30,11,129,108,2026-04-03T23:00Z,38|31|31|29,24|26|32|26,Draft Kings,CHA -15.5,-15.5,234.5,-1600.0,900.0,True
+401810976,2026-04-03,False,False,True,20,16,115,103,2026-04-03T23:00Z,19|22|42|32,17|30|24|32,Draft Kings,PHI -3.5,-3.5,233.5,-170.0,142.0,True
+401810977,2026-04-03,False,False,True,17,1,107,141,2026-04-03T23:30Z,25|30|30|22,35|36|27|43,Draft Kings,ATL -16.5,16.5,225.5,1000.0,-1800.0,False
+401810978,2026-04-03,False,False,True,18,4,136,96,2026-04-03T23:30Z,38|40|30|28,16|25|31|24,Draft Kings,NY -13.5,-13.5,236.5,-1200.0,750.0,True
+401810979,2026-04-03,False,False,True,10,26,140,106,2026-04-04T00:00Z,34|35|38|33,22|28|28|28,Draft Kings,HOU -18.5,-18.5,231.5,-2100.0,1100.0,True
+401810980,2026-04-03,False,False,True,29,28,96,128,2026-04-04T00:00Z,21|20|31|24,26|33|37|32,Draft Kings,TOR -14.5,14.5,233.5,700.0,-1100.0,False
+401810981,2026-04-03,False,False,True,15,2,101,133,2026-04-04T00:00Z,26|29|21|25,43|32|30|28,Draft Kings,BOS -17.5,17.5,217.5,1200.0,-2400.0,False
+401810982,2026-04-03,False,False,True,6,19,127,138,2026-04-04T00:30Z,31|27|34|35,38|33|40|27,Draft Kings,ORL -6.5,6.5,239.5,220.0,-270.0,False
+401810983,2026-04-03,False,False,True,23,3,117,113,2026-04-04T02:00Z,21|34|30|32,30|36|26|21,Draft Kings,NO -6.5,6.5,232.5,200.0,-245.0,False
