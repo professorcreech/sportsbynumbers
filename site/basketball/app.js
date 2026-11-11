@@ -134,7 +134,7 @@
       { key: "total", label: "Impact", html: (p) => '<b class="' + cls(p.total) + '">' + sgn(p.total, 2) + "</b>" },
       { key: "off", label: "Off", html: (p) => '<span class="' + cls(p.off) + '">' + sgn(p.off, 2) + "</span>" },
       { key: "def", label: "Def", html: (p) => '<span class="' + cls(p.def) + '">' + sgn(p.def, 2) + "</span>" },
-      { key: "prior", label: "Box est.", html: (p) => sgn(p.prior, 2) },
+      { key: "prior", label: "Prior", html: (p) => sgn(p.prior, 2) },
       { key: "poss", label: "Poss" },
       { key: "mpg", label: "MPG", html: (p) => f1(p.mpg) },
       { key: "ppg", label: "PPG", html: (p) => f1(p.ppg) },
@@ -144,7 +144,7 @@
 
   function players(main) {
     const minDefault = recall("sbn-minposs") || 150;
-    main.innerHTML = '<div><h1>Player Impact</h1><p class="lede">Estimated points per 100 possessions a player adds over an average player, at both ends, from who was on the floor when points were scored. Box est. is what the box score alone suggests.</p></div>' +
+    main.innerHTML = '<div><h1>Player Impact</h1><p class="lede">Estimated points per 100 possessions a player adds over an average player, at both ends, from who was on the floor when points were scored. Prior is where each player started this season: last season\'s rating carried forward for returning players, the box-score estimate for everyone else.</p></div>' +
       '<div class="controls"><div class="field"><label for="p-q">Search</label><input type="search" id="p-q" placeholder="Player or team"></div>' +
       '<div class="field"><label for="p-c">Conference</label><select id="p-c">' + confOptions() + "</select></div>" +
       '<div class="field"><label for="p-m">Min. possessions</label><input type="number" id="p-m" min="0" step="50" value="' + minDefault + '" style="width:110px"></div></div><div id="p-t"></div><div id="p-note"></div>';
@@ -384,6 +384,7 @@
       '<span class="eq">100 × points / possessions − μ = Σ Off[5 on offense] + Σ Def[5 on defense] + h·H/2 + ε</span>' +
       "<p>Teammates who always play together are hard to separate, so each player gets a normal prior centered on a box-score estimate. That box-score model is itself learned from the data: a first, heavily shrunk pass of the regression is regressed on per-40-minute box stats (points, shot attempts, free throws, threes, assists, turnovers and offensive rebounds for offense; steals, blocks, defensive rebounds and fouls for defense). The final rating is the posterior mean</p>" +
       '<span class="eq">β = prior + (XᵀWX + λI)⁻¹ XᵀW (y − X·prior)</span>' +
+      "<p>Returning players get a better starting point than the box score: their prior is " + Math.round((m.player_carry_weight || 0.8) * 100) + "% their own rating from last season, projected forward with the same carry-over rule as the preseason team ratings, and the rest the box-score estimate. Testing on held-out games this season, that beat the box score alone at every level of shrinkage.</p>" +
       "<p>with W the stint possessions. λ" + (m.lambda ? " (currently " + Math.round(m.lambda).toLocaleString() + " possessions)" : "") + " sets how much on-court evidence it takes to move a player off the box-score estimate. It is chosen by cross-validation: hold out every fifth game, fit on the rest, and keep the λ that best predicts scoring in the held-out stints. Defense is reported with the sign flipped so higher is better on both ends.</p>" +
       "<h2>Tournament odds</h2><p>The Bracket tab simulates the projected field (the Bracket Matrix consensus until Selection Sunday) 20,000 times. Each simulation draws every team's true strength around its rating, with a spread measured from how much ratings moved between December and March in 2025-26, then plays each game by the prediction formula above at its announced site. Tests on every tournament from 2012 to 2026 decided what else counts. Distance from campus to arena does: margins shift about 0.75 points per unit of log(1 + miles). A team's road and neutral-court form during the season doesn't, beyond its overall rating. A program's record against expectations in recent tournaments showed a small effect that didn't hold up when each tournament was predicted from the others, so it's shown only as context.</p>" +
       "<h2>Lineups</h2><p>Lineup numbers are raw on-court results per 100 possessions, not adjusted for opponents. Use them to see how a coach deploys a roster, and lean on the player ratings for talent.</p>" +

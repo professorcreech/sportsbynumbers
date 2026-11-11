@@ -12,7 +12,7 @@ from datetime import date, datetime, timezone
 import numpy as np
 import pandas as pd
 
-from . import config, players, positions, scouting, teams
+from . import config, conferences, players, positions, scouting, teams
 
 
 def _clean(x):
@@ -79,8 +79,9 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
     if len(stints):
         stints = stints.astype({"home_players": str, "away_players": str})
         # Re-tune shrinkage by cross-validation once there is enough data; early season uses the default
-        lam = players.tune_lambda(stints, box) if len(stints) > 40000 else config.PLAYER_LAMBDA
-        p = players.fit(stints, box, lam)
+        proj, cw = pre_info.get("player_proj"), config.PLAYER_CARRY_WEIGHT
+        lam = players.tune_lambda(stints, box, carry=proj, carry_weight=cw) if len(stints) > 40000 else config.PLAYER_LAMBDA
+        p = players.fit(stints, box, lam, carry=proj, carry_weight=cw)
     p_out = []
     if len(p):
         p = p[p.team_id.isin(set(t.team_id))]
@@ -128,7 +129,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
              g["home_score"], g["away_score"], g["home_win"], g["poss"]] for g in up]
     up = [g for g in up if str(g["start"]) < cutoff]
 
-    team_out = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": r.conf, "color": r.color,
+    team_out = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": conferences.name(r.conf), "color": r.color,
                  "rank": int(r.rank), "net": round(r.net, 2), "net_se": round(r.net_se, 2), "o": round(r.adj_o, 1),
                  "d": round(r.adj_d, 1), "tempo": round(r.tempo, 1), "w": int(r.wins), "l": int(r.losses),
                  "o_rank": 0, "d_rank": 0, "t_rank": 0,
@@ -142,7 +143,8 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "games": int(len(games)), "stints": int(len(stints)), "mu": round(model["mu"], 2), "tau": round(model["tau"], 2),
             "hca": round(model["hca"], 2), "sd": round(model["sd"], 2),
             "lambda": float(p.attrs.get("lambda", config.PLAYER_LAMBDA)) if len(p) else None,
-            "preseason": {k: v for k, v in pre_info.items() if k != "returning"},
+            "preseason": {k: v for k, v in pre_info.items() if k not in ("returning", "player_proj")},
+            "player_carry_weight": config.PLAYER_CARRY_WEIGHT if pre_info.get("player_proj") else 0,
             # Spread of the preseason belief about a team's net rating (per 100 possessions):
             # offense and defense priors each have variance s2 / (games * 68)
             "prior_sd": round(float(np.sqrt(2 * model["s2"] / ((prior_games or config.TEAM_PRIOR_GAMES) * 68.0))), 2),

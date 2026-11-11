@@ -203,7 +203,19 @@ def build_prior(season: int, rosters: pd.DataFrame | None, box_cur: pd.DataFrame
     blend = Blend(w_program=config.PRESEASON_W_PROGRAM, w_roster=config.PRESEASON_W_ROSTER,
                   games=config.PRESEASON_GAMES)
     info = {"source": f"{prev - 1}-{str(prev)[2:]} season + current rosters", "games": blend.games,
+            "player_proj": player_projection(prev_pl, roster_src, carry),
             "w_program": blend.w_program, "w_roster": blend.w_roster,
             "carry": {k: round(v, 2) for k, v in carry.beta.items()},
             "returning": dict(zip(roster.team_id, roster.returning_min.round(3)))}
     return combine(prog, roster, blend), info
+
+
+def player_projection(prev: pd.DataFrame, roster: pd.DataFrame, carry: Carry) -> dict:
+    """{player_id: (off, def)} expected this season from last season's rating (known players only)."""
+    p = roster[["player_id", "team_id"]].merge(
+        prev[["player_id", "team_id", "poss", "off", "def"]].rename(columns={"team_id": "prev_team"}), on="player_id")
+    p = p[p.poss >= carry.min_poss]
+    stay = (p.prev_team == p.team_id).to_numpy()
+    beta = np.where(stay, carry.beta["stay"], carry.beta["moved"])
+    alpha = np.where(stay, carry.alpha["stay"], carry.alpha["moved"])
+    return {pid: (a / 2 + b * o, a / 2 + b * d) for pid, a, b, o, d in zip(p.player_id, alpha, beta, p.off, p["def"])}

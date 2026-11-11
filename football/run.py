@@ -12,6 +12,7 @@ from datetime import date, datetime, timezone
 import numpy as np
 import pandas as pd
 
+from basketball.conferences import name as conf_name
 from basketball.run import _clean
 from . import config, teams
 
@@ -64,7 +65,7 @@ def build(season: int, schedule: list[dict]) -> None:
         for tid in t.team_id:
             ppd[tid] = (f.pts.get(tid, np.nan) / f.n.get(tid, np.nan), a.pts.get(tid, np.nan) / a.n.get(tid, np.nan))
 
-    out_t = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": r.conf, "div": r.div,
+    out_t = [{"id": r.team_id, "name": r.name, "short": r.short, "abbr": r.abbr, "conf": conf_name(r.conf), "div": r.div,
               "color": r.color, "rank": int(r.rank), "net": round(r.net, 2), "net_se": round(r.net_se, 2),
               "o": round(r.off, 1), "d": round(r.dfn, 1), "w": int(r.wins), "l": int(r.losses),
               "pre": None if r.pre is None or pd.isna(r.pre) else round(r.pre, 1),

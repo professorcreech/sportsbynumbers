@@ -83,7 +83,9 @@ def usable(stints: pd.DataFrame) -> pd.DataFrame:
     return stints[(n >= MIN_STINTS_PER_GAME) & (stints.poss > 0)]
 
 
-def _core(stints: pd.DataFrame, box: pd.DataFrame, lam: float):
+def _core(stints: pd.DataFrame, box: pd.DataFrame, lam: float, carry: dict | None = None, carry_weight: float = 0.0):
+    """carry: {player_id: (off, def)} projected from last season (def positive = better defender).
+    The prior for a returning player is carry_weight * carry + (1 - carry_weight) * box-score prior."""
     stints = usable(stints)
     players = sorted({p for col in ("home_players", "away_players") for s in stints[col].astype(str) for p in s.split()})
     pidx = {p: i for i, p in enumerate(players)}
@@ -105,12 +107,20 @@ def _core(stints: pd.DataFrame, box: pd.DataFrame, lam: float):
         prior[part] = F @ coef
         prior[part] -= np.average(prior[part], weights=poss_on + 1)  # average player = 0
 
+    if carry and carry_weight:
+        for p, (o, d) in carry.items():
+            i = pidx.get(p)
+            if i is not None:
+                prior[i] = carry_weight * o + (1 - carry_weight) * prior[i]
+                prior[n + i] = carry_weight * (-d) + (1 - carry_weight) * prior[n + i]
+
     # Pass 2: full posterior with the informed prior
     beta = _posterior(X, y, w, prior, lam)
     return beta, prior, pidx, mu, poss_on, rates
 
 
-def tune_lambda(stints: pd.DataFrame, box: pd.DataFrame, grid=(250, 500, 1000, 2000, 4000, 8000, 16000)) -> float:
+def tune_lambda(stints: pd.DataFrame, box: pd.DataFrame, grid=(250, 500, 1000, 2000, 4000, 8000, 16000),
+                carry: dict | None = None, carry_weight: float = 0.0) -> float:
     """Pick the ridge strength that best predicts scoring in held-out games (1 in 5)."""
     stints = usable(stints)
     games = stints.game_id.astype(str).unique()
@@ -119,7 +129,7 @@ def tune_lambda(stints: pd.DataFrame, box: pd.DataFrame, grid=(250, 500, 1000, 2
     train, test = stints[~is_test], stints[is_test & (stints.poss > 0)]
     best, best_err = None, np.inf
     for lam in grid:
-        beta, _, pidx, mu, _, _ = _core(train, box, lam)
+        beta, _, pidx, mu, _, _ = _core(train, box, lam, carry, carry_weight)
         n = len(pidx)
         known = test[test.home_players.map(lambda s: all(p in pidx for p in s.split()))
                      & test.away_players.map(lambda s: all(p in pidx for p in s.split()))]
@@ -131,10 +141,11 @@ def tune_lambda(stints: pd.DataFrame, box: pd.DataFrame, grid=(250, 500, 1000, 2
     return float(best)
 
 
-def fit(stints: pd.DataFrame, box: pd.DataFrame, lam: float | None = None) -> pd.DataFrame:
+def fit(stints: pd.DataFrame, box: pd.DataFrame, lam: float | None = None, carry: dict | None = None,
+        carry_weight: float = 0.0) -> pd.DataFrame:
     stints = stints.astype({"home_players": str, "away_players": str})
     lam = lam or config.PLAYER_LAMBDA
-    beta, prior, pidx, mu, poss_on, rates = _core(stints, box, lam)
+    beta, prior, pidx, mu, poss_on, rates = _core(stints, box, lam, carry, carry_weight)
     n = len(pidx)
     out = rates.copy()
     out["poss"] = poss_on

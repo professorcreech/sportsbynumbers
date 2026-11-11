@@ -80,6 +80,8 @@ def selection_sunday(season: int) -> date:
 
 
 # ---- Player model -----------------------------------------------------------
-PLAYER_LAMBDA = 3000.0        # ridge strength in possessions; re-tuned by cross-validation mid-season
+PLAYER_LAMBDA = 1500.0        # ridge strength in possessions; re-tuned by cross-validation mid-season
+PLAYER_CARRY_WEIGHT = 0.8     # returning players' prior: 80% last season's projected rating, 20% box score
+                              # (best of 0/50/80/100% on held-out Nov 2026 games, every lambda tried)
 PLAYER_MIN_POSS_DISPLAY = 150 # players below this are kept out of the main table
 LINEUP_MIN_POSS = 20
