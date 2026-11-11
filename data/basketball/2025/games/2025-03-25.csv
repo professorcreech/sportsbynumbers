@@ -1,0 +1,5 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401751954,2025-03-25,False,False,True,71,236,65,67
+401751955,2025-03-25,False,False,True,197,249,59,61
+401757001,2025-03-25,True,False,True,2916,2287,73,78
+401757003,2025-03-25,True,False,True,325,526,72,65
