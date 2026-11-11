@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401873009,2026-10-26,2026-10-27T00:15Z,7,2,True,False,False,21,6,Eagles,Cowboys,21,38,,Philadelphia,PA

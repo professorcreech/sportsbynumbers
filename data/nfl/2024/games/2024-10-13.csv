@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671802,2024-10-13,2024-10-13T13:30Z,6,2,True,True,False,3,30,Bears,Jaguars,35,16,NFL London Games,London,
+401671722,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,9,22,Packers,Cardinals,34,13,,Green Bay,WI
+401671820,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,10,11,Titans,Colts,17,20,,Nashville,TN
+401671619,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,17,34,Patriots,Texans,21,41,,Foxborough,MA
+401671735,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,18,27,Saints,Buccaneers,27,51,,New Orleans,LA
+401671714,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,21,5,Eagles,Browns,20,16,,Philadelphia,PA
+401671625,2024-10-13,2024-10-13T17:00Z,6,2,True,False,False,33,28,Ravens,Commanders,30,23,,Baltimore,MD
+401671655,2024-10-13,2024-10-13T20:05Z,6,2,True,False,False,7,24,Broncos,Chargers,16,23,,Denver,CO
+401671657,2024-10-13,2024-10-13T20:05Z,6,2,True,False,False,13,23,Raiders,Steelers,13,32,,Las Vegas,NV
+401671764,2024-10-13,2024-10-13T20:25Z,6,2,True,False,False,6,8,Cowboys,Lions,9,47,,Arlington,TX
+401671769,2024-10-13,2024-10-13T20:25Z,6,2,True,False,False,29,1,Panthers,Falcons,20,38,,Charlotte,NC
+401671791,2024-10-13,2024-10-14T00:20Z,6,2,True,False,False,19,4,Giants,Bengals,7,17,,East Rutherford,NJ

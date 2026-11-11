@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772725,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,4,30,Bengals,Jaguars,31,27,,Cincinnati,OH
+401772834,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,6,19,Cowboys,Giants,40,37,,Arlington,TX
+401772835,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,8,3,Lions,Bears,52,21,,Detroit,MI
+401772724,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,10,14,Titans,Rams,19,33,,Nashville,TN
+401772728,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,15,17,Dolphins,Patriots,27,33,,Miami Gardens,FL
+401772833,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,18,25,Saints,49ers,21,26,,New Orleans,LA
+401772727,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,20,2,Jets,Bills,10,30,,East Rutherford,NJ
+401772836,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,23,26,Steelers,Seahawks,17,31,,Pittsburgh,PA
+401772726,2025-09-14,2025-09-14T17:00Z,2,2,True,False,False,33,5,Ravens,Browns,41,17,,Baltimore,MD
+401772729,2025-09-14,2025-09-14T20:05Z,2,2,True,False,False,11,7,Colts,Broncos,29,28,,Indianapolis,IN
+401772730,2025-09-14,2025-09-14T20:05Z,2,2,True,False,False,22,29,Cardinals,Panthers,27,22,,Glendale,AZ
+401772837,2025-09-14,2025-09-14T20:25Z,2,2,True,False,False,12,21,Chiefs,Eagles,17,20,,Kansas City,MO
+401772919,2025-09-14,2025-09-15T00:20Z,2,2,True,False,False,16,1,Vikings,Falcons,6,22,,Minneapolis,MN

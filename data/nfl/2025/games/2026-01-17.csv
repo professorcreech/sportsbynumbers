@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772982,2026-01-17,2026-01-17T21:30Z,2,3,True,False,False,7,2,Broncos,Bills,33,30,AFC Divisional Playoffs,Denver,CO
+401772984,2026-01-17,2026-01-18T01:00Z,2,3,True,False,False,26,25,Seahawks,49ers,41,6,NFC Divisional Playoffs,Seattle,WA

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772710,2025-12-25,2025-12-25T18:00Z,17,2,True,False,False,28,6,Commanders,Cowboys,23,30,,Landover,MD
+401772711,2025-12-25,2025-12-25T21:30Z,17,2,True,False,False,16,8,Vikings,Lions,23,10,,Minneapolis,MN
+401772622,2025-12-25,2025-12-26T01:15Z,17,2,True,False,False,12,7,Chiefs,Broncos,13,20,,Kansas City,MO

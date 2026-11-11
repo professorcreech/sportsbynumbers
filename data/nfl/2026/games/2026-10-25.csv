@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401873011,2026-10-25,2026-10-25T13:30Z,7,2,True,True,False,18,23,Saints,Steelers,10,16,NFL Paris Game,Saint-Denis,
+401873017,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,1,25,Falcons,49ers,29,20,,Atlanta,GA
+401873013,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,10,5,Titans,Browns,24,27,,Nashville,TN
+401873014,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,16,11,Vikings,Colts,16,10,,Minneapolis,MN
+401873015,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,20,15,Jets,Dolphins,25,28,,East Rutherford,NJ
+401873018,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,29,27,Panthers,Buccaneers,13,43,,Charlotte,NC
+401873012,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,33,4,Ravens,Bengals,13,35,,Baltimore,MD
+401873016,2026-10-25,2026-10-25T17:00Z,7,2,True,False,False,34,19,Texans,Giants,21,27,,Houston,TX
+401873019,2026-10-25,2026-10-25T20:05Z,7,2,True,False,False,22,7,Cardinals,Broncos,16,30,,Glendale,AZ
+401873020,2026-10-25,2026-10-25T20:25Z,7,2,True,False,False,8,9,Lions,Packers,20,17,,Detroit,MI
+401873021,2026-10-25,2026-10-25T20:25Z,7,2,True,False,False,13,14,Raiders,Rams,21,35,,Las Vegas,NV
+401873022,2026-10-25,2026-10-26T00:20Z,7,2,True,False,False,26,12,Seahawks,Chiefs,20,3,,Seattle,WA

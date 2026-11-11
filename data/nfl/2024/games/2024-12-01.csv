@@ -1,0 +1,12 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671649,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,1,24,Falcons,Chargers,13,17,,Atlanta,GA
+401671627,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,4,23,Bengals,Steelers,38,44,,Cincinnati,OH
+401671726,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,16,22,Vikings,Cardinals,23,22,,Minneapolis,MN
+401671620,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,17,11,Patriots,Colts,24,25,,Foxborough,MA
+401671703,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,20,26,Jets,Seahawks,21,26,,East Rutherford,NJ
+401671743,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,28,10,Commanders,Titans,42,19,,Landover,MD
+401671705,2024-12-01,2024-12-01T18:00Z,13,2,True,False,False,30,34,Jaguars,Texans,20,23,,Jacksonville,FL
+401671753,2024-12-01,2024-12-01T21:05Z,13,2,True,False,False,18,14,Saints,Rams,14,21,,New Orleans,LA
+401671752,2024-12-01,2024-12-01T21:05Z,13,2,True,False,False,29,27,Panthers,Buccaneers,23,26,,Charlotte,NC
+401671666,2024-12-01,2024-12-01T21:25Z,13,2,True,False,False,33,21,Ravens,Eagles,19,24,,Baltimore,MD
+401671781,2024-12-01,2024-12-02T01:20Z,13,2,True,False,False,2,25,Bills,49ers,35,10,,Orchard Park,NY

@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772842,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,5,9,Browns,Packers,13,10,,Cleveland,OH
+401772733,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,10,11,Titans,Colts,20,41,,Nashville,TN
+401772731,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,16,4,Vikings,Bengals,48,10,,Minneapolis,MN
+401772732,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,17,23,Patriots,Steelers,14,21,,Foxborough,MA
+401772839,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,21,14,Eagles,Rams,33,26,,Philadelphia,PA
+401772840,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,27,20,Buccaneers,Jets,29,27,,Tampa,FL
+401772841,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,28,13,Commanders,Raiders,41,24,,Landover,MD
+401772838,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,29,1,Panthers,Falcons,30,0,,Charlotte,NC
+401772734,2025-09-21,2025-09-21T17:00Z,3,2,True,False,False,30,34,Jaguars,Texans,17,10,,Jacksonville,FL
+401772735,2025-09-21,2025-09-21T20:05Z,3,2,True,False,False,24,7,Chargers,Broncos,23,20,,Inglewood,CA
+401772736,2025-09-21,2025-09-21T20:05Z,3,2,True,False,False,26,18,Seahawks,Saints,44,13,,Seattle,WA
+401772844,2025-09-21,2025-09-21T20:25Z,3,2,True,False,False,3,6,Bears,Cowboys,31,14,,Chicago,IL
+401772843,2025-09-21,2025-09-21T20:25Z,3,2,True,False,False,25,22,49ers,Cardinals,16,15,,Santa Clara,CA
+401772920,2025-09-21,2025-09-22T00:20Z,3,2,True,False,False,19,12,Giants,Chiefs,9,22,,East Rutherford,NJ

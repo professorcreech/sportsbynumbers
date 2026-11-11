@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671727,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,1,18,Falcons,Saints,26,24,,Atlanta,GA
+401671871,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,3,14,Bears,Rams,24,18,,Chicago,IL
+401671643,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,9,16,Packers,Vikings,29,31,,Green Bay,WI
+401671867,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,11,23,Colts,Steelers,27,24,,Indianapolis,IN
+401671622,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,20,7,Jets,Broncos,9,10,,East Rutherford,NJ
+401671740,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,27,21,Buccaneers,Eagles,33,16,,Tampa,FL
+401671745,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,29,4,Panthers,Bengals,24,34,,Charlotte,NC
+401671857,2024-09-29,2024-09-29T17:00Z,4,2,True,False,False,34,30,Texans,Jaguars,24,20,,Houston,TX
+401671755,2024-09-29,2024-09-29T20:05Z,4,2,True,False,False,22,28,Cardinals,Commanders,14,42,,Glendale,AZ
+401671758,2024-09-29,2024-09-29T20:05Z,4,2,True,False,False,25,17,49ers,Patriots,30,13,,Santa Clara,CA
+401671672,2024-09-29,2024-09-29T20:25Z,4,2,True,False,False,13,5,Raiders,Browns,20,16,,Las Vegas,NV
+401671674,2024-09-29,2024-09-29T20:25Z,4,2,True,False,False,24,12,Chargers,Chiefs,10,17,,Inglewood,CA
+401671783,2024-09-29,2024-09-30T00:20Z,4,2,True,False,False,33,2,Ravens,Bills,35,10,,Baltimore,MD

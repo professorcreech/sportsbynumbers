@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772949,2025-12-18,2025-12-19T01:15Z,16,2,True,False,False,26,14,Seahawks,Rams,38,37,,Seattle,WA

@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671832,2024-12-28,2024-12-28T18:00Z,17,2,True,False,False,17,24,Patriots,Chargers,7,40,,Foxborough,MA
+401671835,2024-12-28,2024-12-28T21:30Z,17,2,True,False,False,4,7,Bengals,Broncos,30,24,,Cincinnati,OH
+401671829,2024-12-28,2024-12-29T01:00Z,17,2,True,False,False,14,22,Rams,Cardinals,13,9,,Inglewood,CA

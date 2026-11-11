@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772977,2026-01-11,2026-01-11T18:00Z,1,3,True,False,False,30,2,Jaguars,Bills,24,27,AFC Wild Card Playoffs,Jacksonville,FL
+401772980,2026-01-11,2026-01-11T21:30Z,1,3,True,False,False,21,25,Eagles,49ers,19,23,NFC Wild Card Playoffs,Philadelphia,PA
+401772978,2026-01-11,2026-01-12T01:15Z,1,3,True,False,False,17,24,Patriots,Chargers,16,3,AFC Wild Card Playoffs,Foxborough,MA

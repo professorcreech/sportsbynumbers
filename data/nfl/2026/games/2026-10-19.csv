@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401873008,2026-10-19,2026-10-20T00:15Z,6,2,True,False,False,25,28,49ers,Commanders,23,17,,Santa Clara,CA

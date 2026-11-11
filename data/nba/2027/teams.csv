@@ -1,0 +1,31 @@
+team_id,name,short,abbr,color,conf
+1,Atlanta Hawks,Hawks,ATL,c8102e,
+2,Boston Celtics,Celtics,BOS,008348,sec
+17,Brooklyn Nets,Nets,BKN,000000,
+30,Charlotte Hornets,Hornets,CHA,008ca8,big10
+4,Chicago Bulls,Bulls,CHI,ce1141,
+5,Cleveland Cavaliers,Cavaliers,CLE,860038,American
+6,Dallas Mavericks,Mavericks,DAL,0064b1,belt
+7,Denver Nuggets,Nuggets,DEN,0e2240,
+8,Detroit Pistons,Pistons,DET,1d428a,sec
+9,Golden State Warriors,Warriors,GS,fdb927,big12
+10,Houston Rockets,Rockets,HOU,ce0e2d,
+11,Indiana Pacers,Pacers,IND,0c2340,
+12,LA Clippers,Clippers,LAC,12173f,big12
+13,Los Angeles Lakers,Lakers,LAL,552583,bigw
+29,Memphis Grizzlies,Grizzlies,MEM,5d76a9,
+14,Miami Heat,Heat,MIA,98002e,
+15,Milwaukee Bucks,Bucks,MIL,00471b,
+16,Minnesota Timberwolves,Timberwolves,MIN,266092,bigw
+3,New Orleans Pelicans,Pelicans,NO,0a2240,
+18,New York Knicks,Knicks,NY,1d428a,
+25,Oklahoma City Thunder,Thunder,OKC,007ac1,acc
+19,Orlando Magic,Magic,ORL,0150b5,
+20,Philadelphia 76ers,76ers,PHI,1d428a,
+21,Phoenix Suns,Suns,PHX,29127a,pac12
+22,Portland Trail Blazers,Trail Blazers,POR,e03a3e,
+23,Sacramento Kings,Kings,SAC,5a2d81,mwest
+24,San Antonio Spurs,Spurs,SA,000000,acc
+28,Toronto Raptors,Raptors,TOR,d91244,bigw
+26,Utah Jazz,Jazz,UTAH,4e008e,big10
+27,Washington Wizards,Wizards,WSH,e31837,bigw

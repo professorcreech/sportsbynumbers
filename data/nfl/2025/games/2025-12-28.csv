@@ -1,0 +1,11 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772954,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,4,22,Bengals,Cardinals,37,14,,Cincinnati,OH
+401772807,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,5,23,Browns,Steelers,13,6,,Cleveland,OH
+401772809,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,10,18,Titans,Saints,26,34,,Nashville,TN
+401772915,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,11,30,Colts,Jaguars,17,23,,Indianapolis,IN
+401772916,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,15,27,Dolphins,Buccaneers,20,17,,Miami Gardens,FL
+401772808,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,20,17,Jets,Patriots,10,42,,East Rutherford,NJ
+401772952,2025-12-28,2025-12-28T18:00Z,17,2,True,False,False,29,26,Panthers,Seahawks,10,27,,Charlotte,NC
+401772950,2025-12-28,2025-12-28T21:05Z,17,2,True,False,False,13,19,Raiders,Giants,10,34,,Las Vegas,NV
+401772917,2025-12-28,2025-12-28T21:25Z,17,2,True,False,False,2,21,Bills,Eagles,12,13,,Orchard Park,NY
+401772935,2025-12-28,2025-12-29T01:20Z,17,2,True,False,False,25,3,49ers,Bears,42,38,,Santa Clara,CA

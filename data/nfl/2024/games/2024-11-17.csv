@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671869,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,3,9,Bears,Packers,19,20,,Chicago,IL
+401671642,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,8,30,Lions,Jaguars,52,6,,Detroit,MI
+401671824,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,10,16,Titans,Vikings,13,23,,Nashville,TN
+401671851,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,15,13,Dolphins,Raiders,34,19,,Miami Gardens,FL
+401671701,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,17,14,Patriots,Rams,22,28,,Foxborough,MA
+401671746,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,18,5,Saints,Browns,35,14,,New Orleans,LA
+401671782,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,20,11,Jets,Colts,27,28,,East Rutherford,NJ
+401671630,2024-11-17,2024-11-17T18:00Z,11,2,True,False,False,23,33,Steelers,Ravens,18,16,,Pittsburgh,PA
+401671748,2024-11-17,2024-11-17T21:05Z,11,2,True,False,False,7,1,Broncos,Falcons,38,6,,Denver,CO
+401671757,2024-11-17,2024-11-17T21:05Z,11,2,True,False,False,25,26,49ers,Seahawks,17,20,,Santa Clara,CA
+401671665,2024-11-17,2024-11-17T21:25Z,11,2,True,False,False,2,12,Bills,Chiefs,30,21,,Orchard Park,NY
+401671675,2024-11-17,2024-11-18T01:20Z,11,2,True,False,False,24,4,Chargers,Bengals,34,27,,Inglewood,CA

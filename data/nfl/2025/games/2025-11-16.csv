@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772631,2025-11-16,2025-11-16T14:30Z,11,2,True,True,False,15,28,Dolphins,Commanders,16,13,NFL Madrid Game,Madrid,
+401772882,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,1,29,Falcons,Panthers,27,30,,Atlanta,GA
+401772776,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,2,27,Bills,Buccaneers,44,32,,Orchard Park,NY
+401772881,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,10,34,Titans,Texans,13,16,,Nashville,TN
+401772880,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,16,3,Vikings,Bears,17,19,,Minneapolis,MN
+401772883,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,19,9,Giants,Packers,20,27,,East Rutherford,NJ
+401772774,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,23,4,Steelers,Bengals,34,12,,Pittsburgh,PA
+401772775,2025-11-16,2025-11-16T18:00Z,11,2,True,False,False,30,24,Jaguars,Chargers,35,6,,Jacksonville,FL
+401772884,2025-11-16,2025-11-16T21:05Z,11,2,True,False,False,14,26,Rams,Seahawks,21,19,,Inglewood,CA
+401772885,2025-11-16,2025-11-16T21:05Z,11,2,True,False,False,22,25,Cardinals,49ers,22,41,,Glendale,AZ
+401772777,2025-11-16,2025-11-16T21:25Z,11,2,True,False,False,5,33,Browns,Ravens,16,23,,Cleveland,OH
+401772778,2025-11-16,2025-11-16T21:25Z,11,2,True,False,False,7,12,Broncos,Chiefs,22,19,,Denver,CO
+401772928,2025-11-16,2025-11-17T01:20Z,11,2,True,False,False,21,8,Eagles,Lions,16,9,,Philadelphia,PA

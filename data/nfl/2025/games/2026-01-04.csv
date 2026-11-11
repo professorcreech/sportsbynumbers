@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772966,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,1,18,Falcons,Saints,19,17,,Atlanta,GA
+401772964,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,4,5,Bengals,Browns,18,20,,Cincinnati,OH
+401772968,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,16,9,Vikings,Packers,16,3,,Minneapolis,MN
+401772963,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,19,6,Giants,Cowboys,34,17,,East Rutherford,NJ
+401772970,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,30,10,Jaguars,Titans,41,7,,Jacksonville,FL
+401772962,2026-01-04,2026-01-04T18:00Z,18,2,True,False,False,34,11,Texans,Colts,38,30,,Houston,TX
+401772967,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,2,20,Bills,Jets,35,8,,Orchard Park,NY
+401772965,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,3,8,Bears,Lions,16,19,,Chicago,IL
+401772956,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,7,24,Broncos,Chargers,19,3,,Denver,CO
+401772957,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,13,12,Raiders,Chiefs,14,12,,Las Vegas,NV
+401772955,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,14,22,Rams,Cardinals,37,20,,Inglewood,CA
+401772958,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,17,15,Patriots,Dolphins,38,10,,Foxborough,MA
+401772959,2026-01-04,2026-01-04T21:25Z,18,2,True,False,False,21,28,Eagles,Commanders,17,24,,Philadelphia,PA
+401772960,2026-01-04,2026-01-05T01:20Z,18,2,True,False,False,23,33,Steelers,Ravens,26,24,,Pittsburgh,PA

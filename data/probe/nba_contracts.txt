@@ -1,0 +1,11 @@
+count: '8'
+pageIndex: '1'
+pageSize: '25'
+pageCount: '1'
+items: list[8]
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/contract'
+  --
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/contract'
+  --
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/contract'
+  --

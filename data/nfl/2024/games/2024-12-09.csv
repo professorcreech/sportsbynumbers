@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671690,2024-12-09,2024-12-10T01:15Z,14,2,True,False,False,6,4,Cowboys,Bengals,20,27,,Arlington,TX

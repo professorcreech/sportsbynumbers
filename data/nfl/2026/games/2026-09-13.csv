@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872925,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,4,27,Bengals,Buccaneers,33,27,,Cincinnati,OH
+401872923,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,8,18,Lions,Saints,31,30,,Detroit,MI
+401872924,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,10,20,Titans,Jets,10,23,,Nashville,TN
+401872659,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,11,33,Colts,Ravens,23,41,,Indianapolis,IN
+401872658,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,23,1,Steelers,Falcons,20,13,,Pittsburgh,PA
+401872661,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,29,3,Panthers,Bears,37,59,,Charlotte,NC
+401872922,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,30,5,Jaguars,Browns,34,10,,Jacksonville,FL
+401872660,2026-09-13,2026-09-13T17:00Z,1,2,True,False,False,34,2,Texans,Bills,31,36,,Houston,TX
+401872928,2026-09-13,2026-09-13T20:25Z,1,2,True,False,False,13,15,Raiders,Dolphins,27,13,,Las Vegas,NV
+401872927,2026-09-13,2026-09-13T20:25Z,1,2,True,False,False,16,9,Vikings,Packers,39,22,,Minneapolis,MN
+401872929,2026-09-13,2026-09-13T20:25Z,1,2,True,False,False,21,28,Eagles,Commanders,24,22,,Philadelphia,PA
+401872926,2026-09-13,2026-09-13T20:25Z,1,2,True,False,False,24,22,Chargers,Cardinals,14,26,,Inglewood,CA
+401872930,2026-09-13,2026-09-14T00:20Z,1,2,True,False,False,19,6,Giants,Cowboys,28,20,,East Rutherford,NJ

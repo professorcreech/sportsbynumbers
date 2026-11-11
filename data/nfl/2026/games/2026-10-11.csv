@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872981,2026-10-11,2026-10-11T13:30Z,5,2,True,True,False,30,21,Jaguars,Eagles,19,17,NFL London Games,London,
+401872990,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,9,3,Packers,Bears,31,7,,Green Bay,WI
+401872984,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,10,34,Titans,Texans,3,26,,Nashville,TN
+401872982,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,15,4,Dolphins,Bengals,24,31,,Miami Gardens,FL
+401872986,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,17,13,Patriots,Raiders,45,17,,Foxborough,MA
+401872987,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,18,16,Saints,Vikings,13,23,,New Orleans,LA
+401872983,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,20,5,Jets,Browns,17,12,,East Rutherford,NJ
+401872985,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,23,11,Steelers,Colts,34,22,,Pittsburgh,PA
+401872988,2026-10-11,2026-10-11T17:00Z,5,2,True,False,False,28,19,Commanders,Giants,27,27,,Landover,MD
+401872989,2026-10-11,2026-10-11T20:05Z,5,2,True,False,False,24,7,Chargers,Broncos,17,23,,Inglewood,CA
+401872991,2026-10-11,2026-10-11T20:25Z,5,2,True,False,False,22,8,Cardinals,Lions,21,45,,Glendale,AZ
+401872992,2026-10-11,2026-10-11T20:25Z,5,2,True,False,False,26,25,Seahawks,49ers,29,32,,Seattle,WA
+401872993,2026-10-11,2026-10-12T00:20Z,5,2,True,False,False,1,33,Falcons,Ravens,23,30,,Atlanta,GA

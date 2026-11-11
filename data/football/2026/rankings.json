@@ -1,0 +1,662 @@
+{
+"cfp": {
+"name": "Playoff Committee Rankings",
+"headline": "2026 NCAA Football Rankings - CFP Rankings Week 11",
+"date": "2026-11-10T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "61",
+"record": "8-1"
+},
+{
+"rank": 2,
+"team_id": "254",
+"record": "9-0"
+},
+{
+"rank": 3,
+"team_id": "333",
+"record": "7-2"
+},
+{
+"rank": 4,
+"team_id": "26",
+"record": "9-0"
+},
+{
+"rank": 5,
+"team_id": "87",
+"record": "8-1"
+},
+{
+"rank": 6,
+"team_id": "251",
+"record": "7-2"
+},
+{
+"rank": 7,
+"team_id": "2390",
+"record": "8-1"
+},
+{
+"rank": 8,
+"team_id": "2633",
+"record": "7-2"
+},
+{
+"rank": 9,
+"team_id": "84",
+"record": "8-1"
+},
+{
+"rank": 10,
+"team_id": "252",
+"record": "7-2"
+},
+{
+"rank": 11,
+"team_id": "96",
+"record": "7-2"
+},
+{
+"rank": 12,
+"team_id": "2641",
+"record": "8-1"
+},
+{
+"rank": 13,
+"team_id": "154",
+"record": "8-1"
+},
+{
+"rank": 14,
+"team_id": "248",
+"record": "7-2"
+},
+{
+"rank": 15,
+"team_id": "2294",
+"record": "7-2"
+},
+{
+"rank": 16,
+"team_id": "2483",
+"record": "6-3"
+},
+{
+"rank": 17,
+"team_id": "2579",
+"record": "6-3"
+},
+{
+"rank": 18,
+"team_id": "30",
+"record": "7-2"
+},
+{
+"rank": 19,
+"team_id": "145",
+"record": "6-3"
+},
+{
+"rank": 20,
+"team_id": "194",
+"record": "6-3"
+},
+{
+"rank": 21,
+"team_id": "99",
+"record": "6-3"
+},
+{
+"rank": 22,
+"team_id": "142",
+"record": "6-3"
+},
+{
+"rank": 23,
+"team_id": "12",
+"record": "7-2"
+},
+{
+"rank": 24,
+"team_id": "68",
+"record": "8-1"
+},
+{
+"rank": 25,
+"team_id": "197",
+"record": "6-3"
+}
+]
+},
+"ap": {
+"name": "AP Top 25",
+"headline": "2026 NCAA Football Rankings - AP Poll Week 11",
+"date": "2026-11-08T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "61",
+"record": "8-1"
+},
+{
+"rank": 2,
+"team_id": "254",
+"record": "9-0"
+},
+{
+"rank": 3,
+"team_id": "87",
+"record": "8-1"
+},
+{
+"rank": 4,
+"team_id": "26",
+"record": "9-0"
+},
+{
+"rank": 5,
+"team_id": "2390",
+"record": "8-1"
+},
+{
+"rank": 6,
+"team_id": "84",
+"record": "8-1"
+},
+{
+"rank": 7,
+"team_id": "333",
+"record": "7-2"
+},
+{
+"rank": 8,
+"team_id": "251",
+"record": "7-2"
+},
+{
+"rank": 9,
+"team_id": "2633",
+"record": "7-2"
+},
+{
+"rank": 10,
+"team_id": "2641",
+"record": "8-1"
+},
+{
+"rank": 11,
+"team_id": "154",
+"record": "8-1"
+},
+{
+"rank": 12,
+"team_id": "252",
+"record": "7-2"
+},
+{
+"rank": 13,
+"team_id": "96",
+"record": "7-2"
+},
+{
+"rank": 14,
+"team_id": "248",
+"record": "7-2"
+},
+{
+"rank": 15,
+"team_id": "30",
+"record": "7-2"
+},
+{
+"rank": 16,
+"team_id": "2294",
+"record": "7-2"
+},
+{
+"rank": 17,
+"team_id": "68",
+"record": "8-1"
+},
+{
+"rank": 18,
+"team_id": "2483",
+"record": "6-3"
+},
+{
+"rank": 19,
+"team_id": "145",
+"record": "6-3"
+},
+{
+"rank": 20,
+"team_id": "2579",
+"record": "6-3"
+},
+{
+"rank": 21,
+"team_id": "194",
+"record": "6-3"
+},
+{
+"rank": 22,
+"team_id": "12",
+"record": "7-2"
+},
+{
+"rank": 23,
+"team_id": "167",
+"record": "8-1"
+},
+{
+"rank": 24,
+"team_id": "99",
+"record": "6-3"
+},
+{
+"rank": 25,
+"team_id": "2567",
+"record": "7-2"
+}
+]
+},
+"usa": {
+"name": "AFCA Coaches Poll",
+"headline": "2026 NCAA Football Rankings - AFCA Coaches Poll Week 11",
+"date": "2026-11-08T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "61",
+"record": "8-1"
+},
+{
+"rank": 2,
+"team_id": "254",
+"record": "9-0"
+},
+{
+"rank": 3,
+"team_id": "87",
+"record": "8-1"
+},
+{
+"rank": 4,
+"team_id": "26",
+"record": "9-0"
+},
+{
+"rank": 5,
+"team_id": "84",
+"record": "8-1"
+},
+{
+"rank": 6,
+"team_id": "2390",
+"record": "8-1"
+},
+{
+"rank": 7,
+"team_id": "333",
+"record": "7-2"
+},
+{
+"rank": 8,
+"team_id": "251",
+"record": "7-2"
+},
+{
+"rank": 9,
+"team_id": "2633",
+"record": "7-2"
+},
+{
+"rank": 10,
+"team_id": "2641",
+"record": "8-1"
+},
+{
+"rank": 11,
+"team_id": "154",
+"record": "8-1"
+},
+{
+"rank": 12,
+"team_id": "252",
+"record": "7-2"
+},
+{
+"rank": 13,
+"team_id": "96",
+"record": "7-2"
+},
+{
+"rank": 14,
+"team_id": "30",
+"record": "7-2"
+},
+{
+"rank": 15,
+"team_id": "2294",
+"record": "7-2"
+},
+{
+"rank": 16,
+"team_id": "248",
+"record": "7-2"
+},
+{
+"rank": 17,
+"team_id": "145",
+"record": "6-3"
+},
+{
+"rank": 18,
+"team_id": "68",
+"record": "8-1"
+},
+{
+"rank": 19,
+"team_id": "2483",
+"record": "6-3"
+},
+{
+"rank": 20,
+"team_id": "194",
+"record": "6-3"
+},
+{
+"rank": 21,
+"team_id": "12",
+"record": "7-2"
+},
+{
+"rank": 22,
+"team_id": "99",
+"record": "6-3"
+},
+{
+"rank": 23,
+"team_id": "2567",
+"record": "7-2"
+},
+{
+"rank": 24,
+"team_id": "2579",
+"record": "6-3"
+},
+{
+"rank": 25,
+"team_id": "167",
+"record": "8-1"
+}
+]
+},
+"fcs": {
+"name": "FCS Coaches Poll",
+"headline": "2026 NCAA Football Rankings - FCS Coaches Poll Week 11",
+"date": "2026-11-09T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "2627",
+"record": "10-0"
+},
+{
+"rank": 2,
+"team_id": "147",
+"record": "9-1"
+},
+{
+"rank": 3,
+"team_id": "2754",
+"record": "8-2"
+},
+{
+"rank": 4,
+"team_id": "2571",
+"record": "8-2"
+},
+{
+"rank": 5,
+"team_id": "2464",
+"record": "8-2"
+},
+{
+"rank": 6,
+"team_id": "2046",
+"record": "8-2"
+},
+{
+"rank": 7,
+"team_id": "2617",
+"record": "9-1"
+},
+{
+"rank": 8,
+"team_id": "2320",
+"record": "8-2"
+},
+{
+"rank": 9,
+"team_id": "2635",
+"record": "9-1"
+},
+{
+"rank": 10,
+"team_id": "233",
+"record": "7-3"
+},
+{
+"rank": 11,
+"team_id": "2382",
+"record": "8-2"
+},
+{
+"rank": 12,
+"team_id": "149",
+"record": "7-3"
+},
+{
+"rank": 12,
+"team_id": "155",
+"record": "7-4"
+},
+{
+"rank": 14,
+"team_id": "2405",
+"record": "8-2"
+},
+{
+"rank": 15,
+"team_id": "2329",
+"record": "8-2"
+},
+{
+"rank": 16,
+"team_id": "2097",
+"record": "8-2"
+},
+{
+"rank": 17,
+"team_id": "2287",
+"record": "7-3"
+},
+{
+"rank": 18,
+"team_id": "2569",
+"record": "8-2"
+},
+{
+"rank": 19,
+"team_id": "108",
+"record": "7-1"
+},
+{
+"rank": 20,
+"team_id": "2692",
+"record": "6-4"
+},
+{
+"rank": 21,
+"team_id": "304",
+"record": "6-4"
+},
+{
+"rank": 22,
+"team_id": "2296",
+"record": "7-2"
+},
+{
+"rank": 23,
+"team_id": "163",
+"record": "6-2"
+},
+{
+"rank": 24,
+"team_id": "2000",
+"record": "5-5"
+},
+{
+"rank": 25,
+"team_id": "399",
+"record": "6-4"
+}
+]
+},
+"afca": {
+"name": "AFCA Division III Coaches Poll",
+"headline": "2026 NCAA Football Rankings - AFCA Div III Week 11",
+"date": "2026-11-09T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "396",
+"record": "9-0"
+},
+{
+"rank": 2,
+"team_id": "2745",
+"record": "9-0"
+},
+{
+"rank": 3,
+"team_id": "2600",
+"record": "9-0"
+},
+{
+"rank": 4,
+"team_id": "3071",
+"record": "8-1"
+},
+{
+"rank": 5,
+"team_id": "2810",
+"record": "8-0"
+},
+{
+"rank": 6,
+"team_id": "272",
+"record": "8-1"
+},
+{
+"rank": 7,
+"team_id": "143",
+"record": "9-0"
+},
+{
+"rank": 8,
+"team_id": "3112",
+"record": "9-0"
+},
+{
+"rank": 9,
+"team_id": "452",
+"record": "9-0"
+},
+{
+"rank": 10,
+"team_id": "2782",
+"record": "9-0"
+},
+{
+"rank": 11,
+"team_id": "188",
+"record": "9-0"
+},
+{
+"rank": 12,
+"team_id": "2685",
+"record": "7-2"
+},
+{
+"rank": 13,
+"team_id": "2371",
+"record": "8-1"
+},
+{
+"rank": 14,
+"team_id": "129738",
+"record": "9-0"
+},
+{
+"rank": 15,
+"team_id": "386",
+"record": "8-1"
+},
+{
+"rank": 16,
+"team_id": "2802",
+"record": "7-2"
+},
+{
+"rank": 17,
+"team_id": "83",
+"record": "8-1"
+},
+{
+"rank": 18,
+"team_id": "216",
+"record": "8-1"
+},
+{
+"rank": 19,
+"team_id": "2812",
+"record": "8-1"
+},
+{
+"rank": 20,
+"team_id": "81",
+"record": "8-1"
+},
+{
+"rank": 21,
+"team_id": "262",
+"record": "9-0"
+},
+{
+"rank": 22,
+"team_id": "390",
+"record": "8-1"
+},
+{
+"rank": 23,
+"team_id": "203",
+"record": "7-1"
+},
+{
+"rank": 23,
+"team_id": "2302",
+"record": "7-2"
+},
+{
+"rank": 25,
+"team_id": "411",
+"record": "8-1"
+}
+]
+}
+}

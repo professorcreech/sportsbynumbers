@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671688,2024-11-04,2024-11-05T01:15Z,9,2,True,False,False,12,27,Chiefs,Buccaneers,30,24,,Kansas City,MO

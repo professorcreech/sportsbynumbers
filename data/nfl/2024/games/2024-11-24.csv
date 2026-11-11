@@ -1,0 +1,12 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671870,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,3,16,Bears,Vikings,27,30,,Chicago,IL
+401671866,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,11,8,Colts,Lions,6,24,,Indianapolis,IN
+401671847,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,15,17,Dolphins,Patriots,34,15,,Miami Gardens,FL
+401671638,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,19,27,Giants,Buccaneers,7,30,,East Rutherford,NJ
+401671715,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,28,6,Commanders,Cowboys,26,34,,Landover,MD
+401671651,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,29,12,Panthers,Chiefs,27,30,,Charlotte,NC
+401671858,2024-11-24,2024-11-24T18:00Z,12,2,True,False,False,34,10,Texans,Titans,27,32,,Houston,TX
+401671656,2024-11-24,2024-11-24T21:05Z,12,2,True,False,False,13,7,Raiders,Broncos,19,29,,Las Vegas,NV
+401671768,2024-11-24,2024-11-24T21:25Z,12,2,True,False,False,9,25,Packers,49ers,38,10,,Green Bay,WI
+401671775,2024-11-24,2024-11-24T21:25Z,12,2,True,False,False,26,22,Seahawks,Cardinals,16,6,,Seattle,WA
+401671794,2024-11-24,2024-11-25T01:20Z,12,2,True,False,False,14,21,Rams,Eagles,20,37,,Inglewood,CA

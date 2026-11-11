@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671801,2024-10-20,2024-10-20T13:30Z,7,2,True,True,False,30,17,Jaguars,Patriots,32,16,NFL London Games,London,
+401671730,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,1,26,Falcons,Seahawks,14,34,,Atlanta,GA
+401671616,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,2,10,Bills,Titans,34,10,,Orchard Park,NY
+401671853,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,5,4,Browns,Bengals,14,21,,Cleveland,OH
+401671644,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,9,34,Packers,Texans,24,22,,Green Bay,WI
+401671864,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,11,15,Colts,Dolphins,16,10,,Indianapolis,IN
+401671724,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,16,8,Vikings,Lions,29,31,,Minneapolis,MN
+401671710,2024-10-20,2024-10-20T17:00Z,7,2,True,False,False,19,21,Giants,Eagles,3,28,,East Rutherford,NJ
+401671663,2024-10-20,2024-10-20T20:05Z,7,2,True,False,False,14,13,Rams,Raiders,20,15,,Inglewood,CA
+401671640,2024-10-20,2024-10-20T20:05Z,7,2,True,False,False,28,29,Commanders,Panthers,40,7,,Landover,MD
+401671777,2024-10-20,2024-10-20T20:25Z,7,2,True,False,False,25,12,49ers,Chiefs,18,28,,Santa Clara,CA
+401671785,2024-10-20,2024-10-21T00:20Z,7,2,True,False,False,23,20,Steelers,Jets,37,15,,Pittsburgh,PA

@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872933,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,1,29,Falcons,Panthers,3,34,,Atlanta,GA
+401872937,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,3,16,Bears,Vikings,3,9,,Chicago,IL
+401872939,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,10,21,Titans,Eagles,20,24,,Nashville,TN
+401872946,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,17,23,Patriots,Steelers,20,3,,Foxborough,MA
+401872936,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,20,9,Jets,Packers,17,20,,East Rutherford,NJ
+401872935,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,27,5,Buccaneers,Browns,19,23,,Tampa,FL
+401872938,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,33,18,Ravens,Saints,17,24,,Baltimore,MD
+401872934,2026-09-20,2026-09-20T17:00Z,2,2,True,False,False,34,4,Texans,Bengals,6,20,,Houston,TX
+401872940,2026-09-20,2026-09-20T20:05Z,2,2,True,False,False,7,30,Broncos,Jaguars,20,13,,Denver,CO
+401872941,2026-09-20,2026-09-20T20:05Z,2,2,True,False,False,24,13,Chargers,Raiders,14,26,,Inglewood,CA
+401872944,2026-09-20,2026-09-20T20:25Z,2,2,True,False,False,6,28,Cowboys,Commanders,37,20,,Arlington,TX
+401872943,2026-09-20,2026-09-20T20:25Z,2,2,True,False,False,22,26,Cardinals,Seahawks,7,31,,Glendale,AZ
+401872942,2026-09-20,2026-09-20T20:25Z,2,2,True,False,False,25,15,49ers,Dolphins,35,13,,Santa Clara,CA
+401872945,2026-09-20,2026-09-21T00:20Z,2,2,True,False,False,12,11,Chiefs,Colts,33,30,,Kansas City,MO

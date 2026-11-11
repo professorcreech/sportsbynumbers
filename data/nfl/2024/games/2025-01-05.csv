@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671827,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,1,29,Falcons,Panthers,38,44,,Atlanta,GA
+401671840,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,6,28,Cowboys,Commanders,19,23,,Arlington,TX
+401671844,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,9,3,Packers,Bears,22,24,,Green Bay,WI
+401671826,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,10,34,Titans,Texans,14,23,,Nashville,TN
+401671837,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,11,30,Colts,Jaguars,26,23,,Indianapolis,IN
+401671831,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,17,2,Patriots,Bills,23,16,,Foxborough,MA
+401671841,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,21,19,Eagles,Giants,20,13,,Philadelphia,PA
+401671828,2025-01-05,2025-01-05T18:00Z,18,2,True,False,False,27,18,Buccaneers,Saints,27,19,,Tampa,FL
+401671838,2025-01-05,2025-01-05T21:25Z,18,2,True,False,False,7,12,Broncos,Chiefs,38,0,,Denver,CO
+401671839,2025-01-05,2025-01-05T21:25Z,18,2,True,False,False,13,24,Raiders,Chargers,20,34,,Las Vegas,NV
+401671830,2025-01-05,2025-01-05T21:25Z,18,2,True,False,False,14,26,Rams,Seahawks,25,30,,Inglewood,CA
+401671833,2025-01-05,2025-01-05T21:25Z,18,2,True,False,False,20,15,Jets,Dolphins,32,20,,East Rutherford,NJ
+401671845,2025-01-05,2025-01-05T21:25Z,18,2,True,False,False,22,25,Cardinals,49ers,47,24,,Glendale,AZ
+401671843,2025-01-05,2025-01-06T01:20Z,18,2,True,False,False,8,16,Lions,Vikings,31,9,,Detroit,MI

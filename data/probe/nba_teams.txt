@@ -1,0 +1,295 @@
+sports: list[1]
+  id: '40'
+  leagues: list[1]
+    abbreviation: 'NBA'
+    id: '46'
+    name: 'National Basketball Association'
+    season: dict
+      displayName: '2026-27'
+      year: '2027'
+    shortName: 'NBA'
+    slug: 'nba'
+    teams: list[30]
+      team: dict
+        abbreviation: 'ATL'
+        alternateColor: 'fdb927'
+        color: 'c8102e'
+        displayName: 'Atlanta Hawks'
+        id: '1'
+        isActive: 'True'
+        isAllStar: 'False'
+        links: list[6]
+          href: 'https://www.espn.com/nba/team/_/name/atl/atlanta-hawks'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'clubhouse'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Clubhouse'
+          text: 'Clubhouse'
+          --
+          href: 'https://www.espn.com/nba/team/roster/_/name/atl/atlanta-hawks'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'roster'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Roster'
+          text: 'Roster'
+          --
+          href: 'https://www.espn.com/nba/team/stats/_/name/atl/atlanta-hawks'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'stats'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Statistics'
+          text: 'Statistics'
+          --
+        location: 'Atlanta'
+        logos: list[16]
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/atl.png'
+          rel: list[2]
+            'full'
+            --
+            'default'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500-dark/atl.png'
+          rel: list[2]
+            'full'
+            --
+            'dark'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png'
+          rel: list[2]
+            'full'
+            --
+            'scoreboard'
+            --
+          width: '500'
+          --
+        name: 'Hawks'
+        nickname: 'Atlanta'
+        shortDisplayName: 'Hawks'
+        slug: 'atlanta-hawks'
+        uid: 's:40~l:46~t:1'
+      --
+      team: dict
+        abbreviation: 'BOS'
+        alternateColor: 'ffffff'
+        color: '008348'
+        displayName: 'Boston Celtics'
+        id: '2'
+        isActive: 'True'
+        isAllStar: 'False'
+        links: list[6]
+          href: 'https://www.espn.com/nba/team/_/name/bos/boston-celtics'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'clubhouse'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Clubhouse'
+          text: 'Clubhouse'
+          --
+          href: 'https://www.espn.com/nba/team/roster/_/name/bos/boston-celtics'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'roster'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Roster'
+          text: 'Roster'
+          --
+          href: 'https://www.espn.com/nba/team/stats/_/name/bos/boston-celtics'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'stats'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Statistics'
+          text: 'Statistics'
+          --
+        location: 'Boston'
+        logos: list[16]
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/bos.png'
+          rel: list[2]
+            'full'
+            --
+            'default'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500-dark/bos.png'
+          rel: list[2]
+            'full'
+            --
+            'dark'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png'
+          rel: list[2]
+            'full'
+            --
+            'scoreboard'
+            --
+          width: '500'
+          --
+        name: 'Celtics'
+        nickname: 'Boston'
+        shortDisplayName: 'Celtics'
+        slug: 'boston-celtics'
+        uid: 's:40~l:46~t:2'
+      --
+      team: dict
+        abbreviation: 'BKN'
+        alternateColor: 'ffffff'
+        color: '000000'
+        displayName: 'Brooklyn Nets'
+        id: '17'
+        isActive: 'True'
+        isAllStar: 'False'
+        links: list[6]
+          href: 'https://www.espn.com/nba/team/_/name/bkn/brooklyn-nets'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'clubhouse'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Clubhouse'
+          text: 'Clubhouse'
+          --
+          href: 'https://www.espn.com/nba/team/roster/_/name/bkn/brooklyn-nets'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'roster'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Roster'
+          text: 'Roster'
+          --
+          href: 'https://www.espn.com/nba/team/stats/_/name/bkn/brooklyn-nets'
+          isExternal: 'False'
+          isHidden: 'False'
+          isPremium: 'False'
+          language: 'en-US'
+          rel: list[3]
+            'stats'
+            --
+            'desktop'
+            --
+            'team'
+            --
+          shortText: 'Statistics'
+          text: 'Statistics'
+          --
+        location: 'Brooklyn'
+        logos: list[16]
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/bkn.png'
+          rel: list[2]
+            'full'
+            --
+            'default'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500-dark/bkn.png'
+          rel: list[2]
+            'full'
+            --
+            'dark'
+            --
+          width: '500'
+          --
+          alt: ''
+          height: '500'
+          href: 'https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png'
+          rel: list[2]
+            'full'
+            --
+            'scoreboard'
+            --
+          width: '500'
+          --
+        name: 'Nets'
+        nickname: 'Brooklyn'
+        shortDisplayName: 'Nets'
+        slug: 'brooklyn-nets'
+        uid: 's:40~l:46~t:17'
+      --
+    uid: 's:40~l:46'
+    year: '2027'
+    --
+  name: 'Basketball'
+  slug: 'basketball'
+  uid: 's:40'
+  --

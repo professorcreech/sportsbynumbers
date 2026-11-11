@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671816,2024-10-17,2024-10-18T00:15Z,7,2,True,False,False,18,7,Saints,Broncos,10,33,,New Orleans,LA

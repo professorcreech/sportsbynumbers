@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772812,2025-09-22,2025-09-23T00:15Z,3,2,True,False,False,33,8,Ravens,Lions,30,38,,Baltimore,MD

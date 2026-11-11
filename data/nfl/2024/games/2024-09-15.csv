@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671709,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,6,18,Cowboys,Saints,19,44,,Arlington,TX
+401671721,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,8,27,Lions,Buccaneers,16,20,,Detroit,MI
+401671723,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,9,11,Packers,Colts,16,10,,Green Bay,WI
+401671636,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,10,20,Titans,Jets,17,24,,Nashville,TN
+401671645,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,16,25,Vikings,49ers,23,17,,Minneapolis,MN
+401671702,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,17,26,Patriots,Seahawks,20,23,,Foxborough,MA
+401671716,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,28,19,Commanders,Giants,21,18,,Landover,MD
+401671652,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,29,24,Panthers,Chargers,3,26,,Charlotte,NC
+401671635,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,30,5,Jaguars,Browns,13,18,,Jacksonville,FL
+401671624,2024-09-15,2024-09-15T17:00Z,2,2,True,False,False,33,13,Ravens,Raiders,23,26,,Baltimore,MD
+401671754,2024-09-15,2024-09-15T20:05Z,2,2,True,False,False,22,14,Cardinals,Rams,41,10,,Glendale,AZ
+401671668,2024-09-15,2024-09-15T20:25Z,2,2,True,False,False,7,23,Broncos,Steelers,6,13,,Denver,CO
+401671670,2024-09-15,2024-09-15T20:25Z,2,2,True,False,False,12,4,Chiefs,Bengals,26,25,,Kansas City,MO
+401671786,2024-09-15,2024-09-16T00:20Z,2,2,True,False,False,34,3,Texans,Bears,19,13,,Houston,TX

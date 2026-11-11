@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671855,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,5,19,Browns,Giants,15,21,,Cleveland,OH
+401671823,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,10,9,Titans,Packers,14,30,,Nashville,TN
+401671865,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,11,3,Colts,Bears,21,16,,Indianapolis,IN
+401671646,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,16,34,Vikings,Texans,34,7,,Minneapolis,MN
+401671736,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,18,21,Saints,Eagles,12,15,,New Orleans,LA
+401671632,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,23,24,Steelers,Chargers,20,10,,Pittsburgh,PA
+401671741,2024-09-22,2024-09-22T17:00Z,3,2,True,False,False,27,7,Buccaneers,Broncos,7,26,,Tampa,FL
+401671658,2024-09-22,2024-09-22T20:05Z,3,2,True,False,False,13,29,Raiders,Panthers,22,36,,Las Vegas,NV
+401671662,2024-09-22,2024-09-22T20:05Z,3,2,True,False,False,26,15,Seahawks,Dolphins,24,3,,Seattle,WA
+401671763,2024-09-22,2024-09-22T20:25Z,3,2,True,False,False,6,33,Cowboys,Ravens,25,28,,Arlington,TX
+401671772,2024-09-22,2024-09-22T20:25Z,3,2,True,False,False,14,25,Rams,49ers,27,24,,Inglewood,CA
+401671771,2024-09-22,2024-09-22T20:25Z,3,2,True,False,False,22,8,Cardinals,Lions,13,20,,Glendale,AZ
+401671793,2024-09-22,2024-09-23T00:20Z,3,2,True,False,False,1,12,Falcons,Chiefs,17,22,,Atlanta,GA

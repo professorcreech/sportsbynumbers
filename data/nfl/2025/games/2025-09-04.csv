@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772510,2025-09-04,2025-09-05T00:20Z,1,2,True,False,False,21,6,Eagles,Cowboys,24,20,,Philadelphia,PA

@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772947,2025-12-04,2025-12-05T01:15Z,14,2,True,False,False,8,6,Lions,Cowboys,44,30,,Detroit,MI

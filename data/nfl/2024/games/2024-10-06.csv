@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671804,2024-10-06,2024-10-06T13:30Z,5,2,True,True,False,16,20,Vikings,Jets,23,17,NFL London Games,London,
+401671872,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,3,29,Bears,Panthers,36,10,,Chicago,IL
+401671626,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,4,33,Bengals,Ravens,38,41,,Cincinnati,OH
+401671700,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,17,15,Patriots,Dolphins,10,15,,Foxborough,MA
+401671718,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,28,5,Commanders,Browns,34,13,,Landover,MD
+401671633,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,30,11,Jaguars,Colts,37,34,,Jacksonville,FL
+401671859,2024-10-06,2024-10-06T17:00Z,5,2,True,False,False,34,2,Texans,Bills,23,20,,Houston,TX
+401671747,2024-10-06,2024-10-06T20:05Z,5,2,True,False,False,7,13,Broncos,Raiders,34,18,,Denver,CO
+401671756,2024-10-06,2024-10-06T20:05Z,5,2,True,False,False,25,22,49ers,Cardinals,23,24,,Santa Clara,CA
+401671679,2024-10-06,2024-10-06T20:25Z,5,2,True,False,False,14,9,Rams,Packers,19,24,,Inglewood,CA
+401671680,2024-10-06,2024-10-06T20:25Z,5,2,True,False,False,26,19,Seahawks,Giants,20,29,,Seattle,WA
+401671784,2024-10-06,2024-10-07T01:45Z,5,2,True,False,False,23,6,Steelers,Cowboys,17,20,,Pittsburgh,PA

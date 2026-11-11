@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671687,2024-10-07,2024-10-08T00:15Z,5,2,True,False,False,12,18,Chiefs,Saints,26,13,,Kansas City,MO

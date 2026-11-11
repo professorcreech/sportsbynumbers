@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671819,2024-10-10,2024-10-11T00:15Z,6,2,True,False,False,26,25,Seahawks,49ers,24,36,,Seattle,WA

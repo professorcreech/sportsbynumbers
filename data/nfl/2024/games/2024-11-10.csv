@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671803,2024-11-10,2024-11-10T14:30Z,10,2,True,True,False,29,19,Panthers,Giants,20,17,NFL Munich Game,Munich,
+401671873,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,3,17,Bears,Patriots,3,19,,Chicago,IL
+401671863,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,11,2,Colts,Bills,20,30,,Indianapolis,IN
+401671637,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,12,7,Chiefs,Broncos,16,14,,Kansas City,MO
+401671733,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,18,1,Saints,Falcons,20,17,,New Orleans,LA
+401671742,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,27,25,Buccaneers,49ers,20,23,,Tampa,FL
+401671641,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,28,23,Commanders,Steelers,27,28,,Landover,MD
+401671708,2024-11-10,2024-11-10T18:00Z,10,2,True,False,False,30,16,Jaguars,Vikings,7,12,,Jacksonville,FL
+401671751,2024-11-10,2024-11-10T21:05Z,10,2,True,False,False,24,10,Chargers,Titans,27,17,,Inglewood,CA
+401671676,2024-11-10,2024-11-10T21:25Z,10,2,True,False,False,6,21,Cowboys,Eagles,6,34,,Arlington,TX
+401671678,2024-11-10,2024-11-10T21:25Z,10,2,True,False,False,22,20,Cardinals,Jets,31,6,,Glendale,AZ
+401671787,2024-11-10,2024-11-11T01:20Z,10,2,True,False,False,34,8,Texans,Lions,23,26,,Houston,TX

@@ -1,0 +1,446 @@
+timestamp: '2026-11-11T07:25:04Z'
+status: 'success'
+season: dict
+  year: '2027'
+  displayName: '2026-27'
+  type: '2'
+  name: 'Regular Season'
+athletes: list[18]
+  id: '4278039'
+  uid: 's:40~l:46~a:4278039'
+  guid: 'a67ef214-b56f-ca43-1558-7b2d13432f63'
+  alternateIds: dict
+    sdr: '4278039'
+  firstName: 'Nickeil'
+  lastName: 'Alexander-Walker'
+  fullName: 'Nickeil Alexander-Walker'
+  displayName: 'Nickeil Alexander-Walker'
+  shortName: 'N. Alexander-Walker'
+  weight: '205.0'
+  displayWeight: '205 lbs'
+  height: '77.0'
+  displayHeight: '6\' 5"'
+  age: '28'
+  dateOfBirth: '1998-09-02T07:00Z'
+  debutYear: '2019'
+  links: list[13]
+    language: 'en-US'
+    rel: list[3]
+      'playercard'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/_/id/4278039/nickeil-alexander-walker'
+    text: 'Player Card'
+    shortText: 'Player Card'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[3]
+      'stats'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/stats/_/id/4278039/nickeil-alexander-walker'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[4]
+      'stats'
+      --
+      'sportscenter'
+      --
+      'app'
+      --
+    href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4278039&section=stats'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+  birthPlace: dict
+    city: 'Toronto'
+    state: 'ON'
+    country: 'Canada'
+  college: dict
+    id: '259'
+    guid: '865a50a7-47c4-34a4-b25f-2d7182c0b521'
+    mascot: 'Hokies'
+    name: 'Virginia Tech'
+    shortName: 'Virginia Tech'
+    abbrev: 'VT'
+    logos: list[2]
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/259.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'default'
+        --
+      lastUpdated: '2025-12-19T22:33Z'
+      --
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/259.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'dark'
+        --
+      lastUpdated: '2025-12-19T22:35Z'
+      --
+  slug: 'nickeil-alexander-walker'
+  headshot: dict
+    href: 'https://a.espncdn.com/i/headshots/nba/players/full/4278039.png'
+    alt: 'Nickeil Alexander-Walker'
+  jersey: '7'
+  position: dict
+    id: '3'
+    name: 'Guard'
+    displayName: 'Guard'
+    abbreviation: 'G'
+    leaf: 'False'
+  injuries: list[0]
+  teams: list[1]
+    $ref: 'http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
+    --
+  contracts: list[8]
+    salary: '14403710'
+    season: dict
+      year: '2027'
+      startDate: '2026-09-30T07:00Z'
+      endDate: '2027-06-26T06:59Z'
+    --
+    salary: '15161800'
+    season: dict
+      year: '2026'
+      startDate: '2025-10-01T07:00Z'
+      endDate: '2026-06-27T06:59Z'
+    --
+    salary: '4312500'
+    season: dict
+      year: '2025'
+      startDate: '2024-09-24T07:00Z'
+      endDate: '2025-06-27T06:59Z'
+    --
+  experience: dict
+    years: '8'
+  contract: dict
+    birdStatus: '0'
+    baseYearCompensation: dict
+      active: 'False'
+    poisonPillProvision: dict
+      active: 'False'
+    incomingTradeValue: '14403710'
+    outgoingTradeValue: '14403710'
+    minimumSalaryException: 'False'
+    optionType: '0'
+    salary: '14403710'
+    salaryRemaining: '0'
+    yearsRemaining: '3'
+    season: dict
+      year: '2027'
+      startDate: '2026-09-30T07:00Z'
+      endDate: '2027-06-26T06:59Z'
+    tradeKicker: dict
+      active: 'False'
+      percentage: '0.0'
+      value: '0'
+      tradeValue: '0'
+    tradeRestriction: 'False'
+    unsignedForeignPick: 'False'
+    active: 'True'
+  status: dict
+    id: '1'
+    name: 'Active'
+    type: 'active'
+    abbreviation: 'Active'
+  --
+  id: '4869342'
+  uid: 's:40~l:46~a:4869342'
+  guid: '7b066993-61be-35fd-9070-c1b9a57c7b31'
+  alternateIds: dict
+    sdr: '4869342'
+  firstName: 'Dyson'
+  lastName: 'Daniels'
+  fullName: 'Dyson Daniels'
+  displayName: 'Dyson Daniels'
+  shortName: 'D. Daniels'
+  weight: '199.0'
+  displayWeight: '199 lbs'
+  height: '79.0'
+  displayHeight: '6\' 7"'
+  age: '23'
+  dateOfBirth: '2003-03-17T08:00Z'
+  links: list[13]
+    language: 'en-US'
+    rel: list[3]
+      'playercard'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/_/id/4869342/dyson-daniels'
+    text: 'Player Card'
+    shortText: 'Player Card'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[3]
+      'stats'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/stats/_/id/4869342/dyson-daniels'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[4]
+      'stats'
+      --
+      'sportscenter'
+      --
+      'app'
+      --
+    href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4869342&section=stats'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+  birthPlace: dict
+    city: 'Bendigo'
+    state: 'VIC'
+    country: 'Australia'
+  slug: 'dyson-daniels'
+  headshot: dict
+    href: 'https://a.espncdn.com/i/headshots/nba/players/full/4869342.png'
+    alt: 'Dyson Daniels'
+  jersey: '5'
+  position: dict
+    id: '3'
+    name: 'Guard'
+    displayName: 'Guard'
+    abbreviation: 'G'
+    leaf: 'False'
+  injuries: list[0]
+  teams: list[1]
+    $ref: 'http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
+    --
+  contracts: list[5]
+    salary: '25000000'
+    season: dict
+      year: '2027'
+      startDate: '2026-09-30T07:00Z'
+      endDate: '2027-06-26T06:59Z'
+    --
+    salary: '7707709'
+    season: dict
+      year: '2026'
+      startDate: '2025-10-01T07:00Z'
+      endDate: '2026-06-27T06:59Z'
+    --
+    salary: '6059520'
+    season: dict
+      year: '2025'
+      startDate: '2024-09-24T07:00Z'
+      endDate: '2025-06-27T06:59Z'
+    --
+  experience: dict
+    years: '5'
+  contract: dict
+    birdStatus: '0'
+    baseYearCompensation: dict
+      active: 'False'
+    poisonPillProvision: dict
+      active: 'False'
+    incomingTradeValue: '25000000'
+    outgoingTradeValue: '25000000'
+    minimumSalaryException: 'False'
+    optionType: '0'
+    salary: '25000000'
+    salaryRemaining: '0'
+    yearsRemaining: '4'
+    season: dict
+      year: '2027'
+      startDate: '2026-09-30T07:00Z'
+      endDate: '2027-06-26T06:59Z'
+    tradeKicker: dict
+      active: 'False'
+      percentage: '0.0'
+      value: '0'
+      tradeValue: '0'
+    tradeRestriction: 'False'
+    unsignedForeignPick: 'False'
+    active: 'True'
+  status: dict
+    id: '1'
+    name: 'Active'
+    type: 'active'
+    abbreviation: 'Active'
+  --
+  id: '4431941'
+  uid: 's:40~l:46~a:4431941'
+  guid: '24b6b6e6-585d-3f85-bd97-f840195322bb'
+  alternateIds: dict
+    sdr: '4431941'
+  firstName: 'RayJ'
+  lastName: 'Dennis'
+  fullName: 'RayJ Dennis'
+  displayName: 'RayJ Dennis'
+  shortName: 'R. Dennis'
+  weight: '180.0'
+  displayWeight: '180 lbs'
+  height: '74.0'
+  displayHeight: '6\' 2"'
+  age: '25'
+  dateOfBirth: '2001-03-30T08:00Z'
+  links: list[13]
+    language: 'en-US'
+    rel: list[3]
+      'playercard'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/_/id/4431941/rayj-dennis'
+    text: 'Player Card'
+    shortText: 'Player Card'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[3]
+      'stats'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/stats/_/id/4431941/rayj-dennis'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[4]
+      'stats'
+      --
+      'sportscenter'
+      --
+      'app'
+      --
+    href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4431941&section=stats'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+  birthPlace: dict
+    city: 'Plainfield'
+    state: 'IL'
+    country: 'USA'
+  college: dict
+    id: '239'
+    guid: '8f0deb82-f6b1-34ef-b835-d95f4f6689ec'
+    mascot: 'Bears'
+    name: 'Baylor'
+    shortName: 'Baylor'
+    abbrev: 'BAY'
+    logos: list[2]
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/239.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'default'
+        --
+      lastUpdated: '2025-12-23T01:44Z'
+      --
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/239.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'dark'
+        --
+      lastUpdated: '2025-12-23T01:44Z'
+      --
+  slug: 'rayj-dennis'
+  headshot: dict
+    href: 'https://a.espncdn.com/i/headshots/nba/players/full/4431941.png'
+    alt: 'RayJ Dennis'
+  jersey: '10'
+  position: dict
+    id: '3'
+    name: 'Guard'
+    displayName: 'Guard'
+    abbreviation: 'G'
+    leaf: 'False'
+  injuries: list[0]
+  teams: list[1]
+    $ref: 'http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
+    --
+  contracts: list[2]
+    salary: '0'
+    season: dict
+      year: '2026'
+      startDate: '2025-10-01T07:00Z'
+      endDate: '2026-06-27T06:59Z'
+    --
+    salary: '0'
+    season: dict
+      year: '2025'
+      startDate: '2024-09-24T07:00Z'
+      endDate: '2025-06-27T06:59Z'
+    --
+  experience: dict
+    years: '3'
+  status: dict
+    id: '1'
+    name: 'Active'
+    type: 'active'
+    abbreviation: 'Active'
+  --
+coach: list[1]
+  id: '52120'
+  firstName: 'Quin'
+  lastName: 'Snyder'
+  experience: '12'
+  --
+team: dict
+  id: '1'
+  abbreviation: 'ATL'
+  location: 'Atlanta'
+  name: 'Hawks'
+  displayName: 'Atlanta Hawks'
+  clubhouse: 'https://www.espn.com/nba/team/_/name/atl/atlanta-hawks'
+  color: 'c8102e'
+  logo: 'https://a.espncdn.com/i/teamlogos/nba/500/atl.png'
+  recordSummary: '7-5'
+  seasonSummary: '2026-27'
+  standingSummary: '1st in Southeast Division'

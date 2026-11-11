@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872953,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,2,24,Bills,Chargers,24,16,,Orchard Park,NY
+401872949,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,5,29,Browns,Panthers,21,18,,Cleveland,OH
+401872954,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,8,20,Lions,Jets,31,24,,Detroit,MI
+401872951,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,11,34,Colts,Texans,19,17,,Indianapolis,IN
+401872952,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,15,12,Dolphins,Chiefs,10,24,,Miami Gardens,FL
+401872956,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,19,10,Giants,Titans,12,7,,East Rutherford,NJ
+401872950,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,23,4,Steelers,Bengals,30,27,,Pittsburgh,PA
+401872955,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,28,26,Commanders,Seahawks,33,31,,Landover,MD
+401872957,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,30,17,Jaguars,Patriots,35,6,,Jacksonville,FL
+401872958,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,25,22,49ers,Cardinals,36,30,,Santa Clara,CA
+401872959,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,27,16,Buccaneers,Vikings,16,23,,Tampa,FL
+401872960,2026-09-27,2026-09-27T20:25Z,3,2,True,True,False,6,33,Cowboys,Ravens,31,34,NFL Rio Game,Rio De Janeiro,
+401872961,2026-09-27,2026-09-27T20:25Z,3,2,True,False,False,18,13,Saints,Raiders,27,35,,New Orleans,LA
+401872962,2026-09-27,2026-09-28T00:20Z,3,2,True,False,False,7,14,Broncos,Rams,30,26,,Denver,CO

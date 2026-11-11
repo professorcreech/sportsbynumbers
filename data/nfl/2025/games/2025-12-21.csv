@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772802,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,5,2,Browns,Bills,20,23,,Cleveland,OH
+401772910,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,6,24,Cowboys,Chargers,17,34,,Arlington,TX
+401772803,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,10,12,Titans,Chiefs,26,9,,Nashville,TN
+401772934,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,15,4,Dolphins,Bengals,21,45,,Miami Gardens,FL
+401772801,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,18,20,Saints,Jets,29,6,,New Orleans,LA
+401772911,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,19,16,Giants,Vikings,13,16,,East Rutherford,NJ
+401772912,2025-12-21,2025-12-21T18:00Z,16,2,True,False,False,29,27,Panthers,Buccaneers,23,20,,Charlotte,NC
+401772913,2025-12-21,2025-12-21T21:05Z,16,2,True,False,False,7,30,Broncos,Jaguars,20,34,,Denver,CO
+401772914,2025-12-21,2025-12-21T21:05Z,16,2,True,False,False,22,1,Cardinals,Falcons,19,26,,Glendale,AZ
+401772806,2025-12-21,2025-12-21T21:25Z,16,2,True,False,False,8,23,Lions,Steelers,24,29,,Detroit,MI
+401772805,2025-12-21,2025-12-21T21:25Z,16,2,True,False,False,34,13,Texans,Raiders,23,21,,Houston,TX
+401772804,2025-12-21,2025-12-22T01:20Z,16,2,True,False,False,33,17,Ravens,Patriots,24,28,,Baltimore,MD

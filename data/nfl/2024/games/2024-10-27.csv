@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671667,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,4,21,Bengals,Eagles,17,37,,Cincinnati,OH
+401671852,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,5,33,Browns,Ravens,29,24,,Cleveland,OH
+401671720,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,8,10,Lions,Titans,52,14,,Detroit,MI
+401671850,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,15,22,Dolphins,Cardinals,27,28,,Miami Gardens,FL
+401671618,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,17,20,Patriots,Jets,25,22,,Foxborough,MA
+401671739,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,27,1,Buccaneers,Falcons,26,31,,Tampa,FL
+401671707,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,30,9,Jaguars,Packers,27,30,,Jacksonville,FL
+401671856,2024-10-27,2024-10-27T17:00Z,8,2,True,False,False,34,11,Texans,Colts,23,20,,Houston,TX
+401671750,2024-10-27,2024-10-27T20:05Z,8,2,True,False,False,24,18,Chargers,Saints,26,8,,Inglewood,CA
+401671760,2024-10-27,2024-10-27T20:05Z,8,2,True,False,False,26,2,Seahawks,Bills,10,31,,Seattle,WA
+401671600,2024-10-27,2024-10-27T20:25Z,8,2,True,False,False,7,29,Broncos,Panthers,28,14,,Denver,CO
+401671671,2024-10-27,2024-10-27T20:25Z,8,2,True,False,False,13,12,Raiders,Chiefs,20,27,,Las Vegas,NV
+401671599,2024-10-27,2024-10-27T20:25Z,8,2,True,False,False,28,3,Commanders,Bears,18,15,,Landover,MD
+401671795,2024-10-27,2024-10-28T00:20Z,8,2,True,False,False,25,6,49ers,Cowboys,30,24,,Santa Clara,CA

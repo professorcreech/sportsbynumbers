@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772891,2025-11-27,2025-11-27T18:00Z,13,2,True,False,False,8,9,Lions,Packers,24,31,,Detroit,MI
+401772694,2025-11-27,2025-11-27T21:30Z,13,2,True,False,False,6,12,Cowboys,Chiefs,31,28,,Arlington,TX
+401772930,2025-11-27,2025-11-28T01:20Z,13,2,True,False,False,33,4,Ravens,Bengals,14,32,,Baltimore,MD

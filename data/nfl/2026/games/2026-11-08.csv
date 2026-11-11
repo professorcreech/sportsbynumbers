@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401873038,2026-11-08,2026-11-08T14:30Z,9,2,True,True,False,1,4,Falcons,Bengals,17,34,NFL Madrid Game,Madrid,
+401873040,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,11,6,Colts,Cowboys,23,27,,Indianapolis,IN
+401873045,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,12,20,Chiefs,Jets,35,12,,Kansas City,MO
+401873042,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,15,8,Dolphins,Lions,9,19,,Miami Gardens,FL
+401873039,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,18,5,Saints,Browns,23,22,,New Orleans,LA
+401873044,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,21,19,Eagles,Giants,11,19,,Philadelphia,PA
+401873043,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,28,14,Commanders,Rams,13,20,,Landover,MD
+401873041,2026-11-08,2026-11-08T18:00Z,9,2,True,False,False,29,7,Panthers,Broncos,21,26,,Charlotte,NC
+401873046,2026-11-08,2026-11-08T21:05Z,9,2,True,False,False,24,34,Chargers,Texans,22,44,,Inglewood,CA
+401873049,2026-11-08,2026-11-08T21:25Z,9,2,True,False,False,17,9,Patriots,Packers,27,45,,Foxborough,MA
+401873047,2026-11-08,2026-11-08T21:25Z,9,2,True,False,False,25,13,49ers,Raiders,38,17,,Santa Clara,CA
+401873048,2026-11-08,2026-11-08T21:25Z,9,2,True,False,False,26,22,Seahawks,Cardinals,17,3,,Seattle,WA
+401873050,2026-11-08,2026-11-09T01:20Z,9,2,True,False,False,3,27,Bears,Buccaneers,27,24,,Chicago,IL

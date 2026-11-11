@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772979,2026-01-10,2026-01-10T21:30Z,1,3,True,False,False,29,14,Panthers,Rams,31,34,NFC Wild Card Playoffs,Charlotte,NC
+401772981,2026-01-10,2026-01-11T01:00Z,1,3,True,False,False,3,9,Bears,Packers,31,27,NFC Wild Card Playoffs,Chicago,IL

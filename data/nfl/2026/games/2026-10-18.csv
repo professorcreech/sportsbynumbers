@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872996,2026-10-18,2026-10-18T13:30Z,6,2,True,True,False,30,34,Jaguars,Texans,31,34,NFL London Games,London,
+401872999,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,1,3,Falcons,Bears,23,31,,Atlanta,GA
+401872997,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,5,33,Browns,Ravens,13,10,,Cleveland,OH
+401873003,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,11,10,Colts,Titans,20,26,,Indianapolis,IN
+401873001,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,17,20,Patriots,Jets,26,19,,Foxborough,MA
+401873000,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,19,18,Giants,Saints,27,34,,East Rutherford,NJ
+401872998,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,21,29,Eagles,Panthers,14,25,,Philadelphia,PA
+401873002,2026-10-18,2026-10-18T17:00Z,6,2,True,False,False,27,23,Buccaneers,Steelers,19,26,,Tampa,FL
+401873004,2026-10-18,2026-10-18T20:05Z,6,2,True,False,False,14,22,Rams,Cardinals,16,18,,Inglewood,CA
+401873006,2026-10-18,2026-10-18T20:25Z,6,2,True,False,False,12,24,Chiefs,Chargers,22,6,,Kansas City,MO
+401873005,2026-10-18,2026-10-18T20:25Z,6,2,True,False,False,13,2,Raiders,Bills,30,33,,Las Vegas,NV
+401873007,2026-10-18,2026-10-19T00:20Z,6,2,True,False,False,9,6,Packers,Cowboys,23,13,,Green Bay,WI

@@ -1,0 +1,33 @@
+team_id,conf,name,abbr,short,div,color
+17,AFC,New England Patriots,NE,Patriots,NFL,002a5c
+30,AFC,Jacksonville Jaguars,JAX,Jaguars,NFL,007487
+23,AFC,Pittsburgh Steelers,PIT,Steelers,NFL,000000
+34,AFC,Houston Texans,HOU,Texans,NFL,021018
+2,AFC,Buffalo Bills,BUF,Bills,NFL,00338d
+24,AFC,Los Angeles Chargers,LAC,Chargers,NFL,0080c6
+11,AFC,Indianapolis Colts,IND,Colts,NFL,003b75
+33,AFC,Baltimore Ravens,BAL,Ravens,NFL,29126f
+15,AFC,Miami Dolphins,MIA,Dolphins,NFL,008e97
+4,AFC,Cincinnati Bengals,CIN,Bengals,NFL,fb4f14
+12,AFC,Kansas City Chiefs,KC,Chiefs,NFL,e31837
+5,AFC,Cleveland Browns,CLE,Browns,NFL,472a08
+13,AFC,Las Vegas Raiders,LV,Raiders,NFL,000000
+20,AFC,New York Jets,NYJ,Jets,NFL,115740
+10,AFC,Tennessee Titans,TEN,Titans,NFL,4495d2
+7,AFC,Denver Broncos,DEN,Broncos,NFL,0a2343
+3,NFC,Chicago Bears,CHI,Bears,NFL,0b1c3a
+21,NFC,Philadelphia Eagles,PHI,Eagles,NFL,06424d
+29,NFC,Carolina Panthers,CAR,Panthers,NFL,0085ca
+14,NFC,Los Angeles Rams,LAR,Rams,NFL,003594
+25,NFC,San Francisco 49ers,SF,49ers,NFL,aa0000
+9,NFC,Green Bay Packers,GB,Packers,NFL,204e32
+16,NFC,Minnesota Vikings,MIN,Vikings,NFL,4f2683
+8,NFC,Detroit Lions,DET,Lions,NFL,0076b6
+27,NFC,Tampa Bay Buccaneers,TB,Buccaneers,NFL,bd1c36
+1,NFC,Atlanta Falcons,ATL,Falcons,NFL,a71930
+6,NFC,Dallas Cowboys,DAL,Cowboys,NFL,002a5c
+18,NFC,New Orleans Saints,NO,Saints,NFL,d3bc8d
+28,NFC,Washington Commanders,WSH,Commanders,NFL,5a1414
+19,NFC,New York Giants,NYG,Giants,NFL,003c7f
+22,NFC,Arizona Cardinals,ARI,Cardinals,NFL,a40227
+26,NFC,Seattle Seahawks,SEA,Seahawks,NFL,002a5c

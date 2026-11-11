@@ -1,0 +1,12 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772760,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,1,15,Falcons,Dolphins,10,34,,Atlanta,GA
+401772758,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,4,20,Bengals,Jets,38,39,,Cincinnati,OH
+401772868,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,17,5,Patriots,Browns,32,13,,Foxborough,MA
+401772867,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,21,19,Eagles,Giants,38,20,,Philadelphia,PA
+401772865,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,29,2,Panthers,Bills,9,40,,Charlotte,NC
+401772759,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,33,3,Ravens,Bears,30,16,,Baltimore,MD
+401772866,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,34,25,Texans,49ers,26,15,,Houston,TX
+401772869,2025-10-26,2025-10-26T20:05Z,8,2,True,False,False,18,27,Saints,Buccaneers,3,23,,New Orleans,LA
+401772762,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,7,6,Broncos,Cowboys,44,24,,Denver,CO
+401772761,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,11,10,Colts,Titans,38,14,,Indianapolis,IN
+401772925,2025-10-26,2025-10-27T00:20Z,8,2,True,False,False,23,9,Steelers,Packers,25,35,,Pittsburgh,PA

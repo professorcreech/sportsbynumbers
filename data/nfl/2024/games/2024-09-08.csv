@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671744,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,1,23,Falcons,Steelers,10,18,,Atlanta,GA
+401671617,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,2,22,Bills,Cardinals,34,28,,Orchard Park,NY
+401671719,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,3,10,Bears,Titans,24,17,,Chicago,IL
+401671628,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,4,17,Bengals,Patriots,10,16,,Cincinnati,OH
+401671861,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,11,34,Colts,Texans,27,29,,Indianapolis,IN
+401671849,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,15,30,Dolphins,Jaguars,20,17,,Miami Gardens,FL
+401671734,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,18,29,Saints,Panthers,47,10,,New Orleans,LA
+401671712,2024-09-08,2024-09-08T17:00Z,1,2,True,False,False,19,16,Giants,Vikings,6,28,,East Rutherford,NJ
+401671659,2024-09-08,2024-09-08T20:05Z,1,2,True,False,False,24,13,Chargers,Raiders,22,10,,Inglewood,CA
+401671664,2024-09-08,2024-09-08T20:05Z,1,2,True,False,False,26,7,Seahawks,Broncos,26,20,,Seattle,WA
+401671761,2024-09-08,2024-09-08T20:25Z,1,2,True,False,False,5,6,Browns,Cowboys,17,33,,Cleveland,OH
+401671770,2024-09-08,2024-09-08T20:25Z,1,2,True,False,False,27,28,Buccaneers,Commanders,37,20,,Tampa,FL
+401671792,2024-09-08,2024-09-09T00:20Z,1,2,True,False,False,8,14,Lions,Rams,26,20,,Detroit,MI

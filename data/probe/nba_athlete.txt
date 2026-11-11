@@ -1,0 +1,136 @@
+$ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039?lang=en&'
+id: '4278039'
+uid: 's:40~l:46~a:4278039'
+guid: 'a67ef214-b56f-ca43-1558-7b2d13432f63'
+type: 'basketball'
+alternateIds: dict
+  sdr: '4278039'
+firstName: 'Nickeil'
+lastName: 'Alexander-Walker'
+fullName: 'Nickeil Alexander-Walker'
+displayName: 'Nickeil Alexander-Walker'
+shortName: 'N. Alexander-Walker'
+weight: '205.0'
+displayWeight: '205 lbs'
+height: '77.0'
+displayHeight: '6\' 5"'
+age: '28'
+dateOfBirth: '1998-09-02T07:00Z'
+debutYear: '2019'
+links: list[13]
+  language: 'en-US'
+  rel: list[3]
+    'playercard'
+    --
+    'desktop'
+    --
+    'athlete'
+    --
+  href: 'https://www.espn.com/nba/player/_/id/4278039/nickeil-alexander-walker'
+  text: 'Player Card'
+  shortText: 'Player Card'
+  isExternal: 'False'
+  isPremium: 'False'
+  --
+  language: 'en-US'
+  rel: list[3]
+    'stats'
+    --
+    'desktop'
+    --
+    'athlete'
+    --
+  href: 'https://www.espn.com/nba/player/stats/_/id/4278039/nickeil-alexander-walker'
+  text: 'Stats'
+  shortText: 'Stats'
+  isExternal: 'False'
+  isPremium: 'False'
+  --
+  language: 'en-US'
+  rel: list[4]
+    'stats'
+    --
+    'sportscenter'
+    --
+    'app'
+    --
+  href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4278039&section=stats'
+  text: 'Stats'
+  shortText: 'Stats'
+  isExternal: 'False'
+  isPremium: 'False'
+  --
+birthPlace: dict
+  city: 'Toronto'
+  state: 'ON'
+  country: 'Canada'
+college: dict
+  $ref: 'http://sports.core.api.espn.com/v2/colleges/259?lang=en&region=us'
+slug: 'nickeil-alexander-walker'
+headshot: dict
+  href: 'https://a.espncdn.com/i/headshots/nba/players/full/4278039.png'
+  alt: 'Nickeil Alexander-Walker'
+jersey: '7'
+position: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/positions/3?lang=en&regio'
+  id: '3'
+  name: 'Guard'
+  displayName: 'Guard'
+  abbreviation: 'G'
+  leaf: 'False'
+linked: 'True'
+team: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
+statistics: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/statisti'
+contracts: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/contract'
+experience: dict
+  years: '8'
+collegeAthlete: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball/athle'
+active: 'True'
+contract: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/contract'
+  birdStatus: '0'
+  baseYearCompensation: dict
+    active: 'False'
+  poisonPillProvision: dict
+    active: 'False'
+  incomingTradeValue: '14403710'
+  outgoingTradeValue: '14403710'
+  minimumSalaryException: 'False'
+  optionType: '0'
+  salary: '14403710'
+  salaryRemaining: '0'
+  yearsRemaining: '3'
+  season: dict
+    $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027?lang=en&regi'
+  team: dict
+    $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
+  tradeKicker: dict
+    active: 'False'
+    percentage: '0.0'
+    value: '0'
+    tradeValue: '0'
+  tradeRestriction: 'False'
+  unsignedForeignPick: 'False'
+  active: 'True'
+draft: dict
+  displayText: 'Year: 2019 Round: 1 Pick: 17'
+  round: '1'
+  year: '2019'
+  selection: '17'
+  team: dict
+    $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2019/teams/17?lan'
+  pick: dict
+    $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/2019/draft/rounds'
+status: dict
+  id: '1'
+  name: 'Active'
+  type: 'active'
+  abbreviation: 'Active'
+statisticslog: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/statisti'
+seasons: dict
+  $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/4278039/seasons?'

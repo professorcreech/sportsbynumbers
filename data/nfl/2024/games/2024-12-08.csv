@@ -1,0 +1,12 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671821,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,10,30,Titans,Jaguars,6,10,,Nashville,TN
+401671848,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,15,20,Dolphins,Jets,32,26,,Miami Gardens,FL
+401671648,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,16,1,Vikings,Falcons,42,21,,Minneapolis,MN
+401671601,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,19,18,Giants,Saints,11,14,,East Rutherford,NJ
+401671713,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,21,29,Eagles,Panthers,22,16,,Philadelphia,PA
+401671631,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,23,5,Steelers,Browns,27,14,,Pittsburgh,PA
+401671654,2024-12-08,2024-12-08T18:00Z,14,2,True,False,False,27,13,Buccaneers,Raiders,28,13,,Tampa,FL
+401671660,2024-12-08,2024-12-08T21:05Z,14,2,True,False,False,22,26,Cardinals,Seahawks,18,30,,Glendale,AZ
+401671773,2024-12-08,2024-12-08T21:25Z,14,2,True,False,False,14,2,Rams,Bills,44,42,,Inglewood,CA
+401671774,2024-12-08,2024-12-08T21:25Z,14,2,True,False,False,25,3,49ers,Bears,38,13,,Santa Clara,CA
+401671788,2024-12-08,2024-12-09T01:20Z,14,2,True,False,False,12,24,Chiefs,Chargers,19,17,,Kansas City,MO

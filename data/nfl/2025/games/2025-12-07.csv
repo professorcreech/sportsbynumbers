@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772900,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,1,26,Falcons,Seahawks,9,37,,Atlanta,GA
+401772902,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,2,4,Bills,Bengals,39,34,,Orchard Park,NY
+401772898,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,5,10,Browns,Titans,29,31,,Cleveland,OH
+401772899,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,16,28,Vikings,Commanders,31,0,,Minneapolis,MN
+401772790,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,20,15,Jets,Dolphins,10,34,,East Rutherford,NJ
+401772792,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,27,18,Buccaneers,Saints,20,24,,Tampa,FL
+401772793,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,30,11,Jaguars,Colts,36,19,,Jacksonville,FL
+401772791,2025-12-07,2025-12-07T18:00Z,14,2,True,False,False,33,23,Ravens,Steelers,22,27,,Baltimore,MD
+401772794,2025-12-07,2025-12-07T21:05Z,14,2,True,False,False,13,7,Raiders,Broncos,17,24,,Las Vegas,NV
+401772897,2025-12-07,2025-12-07T21:25Z,14,2,True,False,False,9,3,Packers,Bears,28,21,,Green Bay,WI
+401772901,2025-12-07,2025-12-07T21:25Z,14,2,True,False,False,22,14,Cardinals,Rams,17,45,,Glendale,AZ
+401772932,2025-12-07,2025-12-08T01:20Z,14,2,True,False,False,12,34,Chiefs,Texans,10,20,,Kansas City,MO

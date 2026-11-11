@@ -1,0 +1,9 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
+401909853,2026-10-24,False,False,True,30,14,115,110
+401909854,2026-10-24,False,False,True,5,17,125,121
+401909855,2026-10-24,False,False,True,20,15,127,116
+401909857,2026-10-24,False,False,True,4,27,120,124
+401909858,2026-10-24,False,False,True,6,24,106,122
+401909856,2026-10-24,False,False,True,1,10,114,121
+401909859,2026-10-24,False,False,True,7,3,141,135
+401909860,2026-10-24,False,False,True,21,9,131,122

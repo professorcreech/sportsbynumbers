@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671854,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,5,12,Browns,Chiefs,7,21,,Cleveland,OH
+401671825,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,10,4,Titans,Bengals,27,37,,Nashville,TN
+401671737,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,18,28,Saints,Commanders,19,20,,New Orleans,LA
+401671639,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,19,33,Giants,Ravens,14,35,,East Rutherford,NJ
+401671731,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,29,6,Panthers,Cowboys,14,30,,Charlotte,NC
+401671706,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,30,20,Jaguars,Jets,25,32,,Jacksonville,FL
+401671860,2024-12-15,2024-12-15T18:00Z,15,2,True,False,False,34,15,Texans,Dolphins,20,12,,Houston,TX
+401671669,2024-12-15,2024-12-15T21:25Z,15,2,True,False,False,7,11,Broncos,Colts,31,13,,Denver,CO
+401671681,2024-12-15,2024-12-15T21:25Z,15,2,True,False,False,8,2,Lions,Bills,42,48,,Detroit,MI
+401671766,2024-12-15,2024-12-15T21:25Z,15,2,True,False,False,21,23,Eagles,Steelers,27,13,,Philadelphia,PA
+401671677,2024-12-15,2024-12-15T21:25Z,15,2,True,False,False,22,17,Cardinals,Patriots,30,17,,Glendale,AZ
+401671762,2024-12-15,2024-12-15T21:25Z,15,2,True,False,False,24,27,Chargers,Buccaneers,17,40,,Inglewood,CA
+401671796,2024-12-15,2024-12-16T01:20Z,15,2,True,False,False,26,9,Seahawks,Packers,13,30,,Seattle,WA

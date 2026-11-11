@@ -1,0 +1,15 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401872965,2026-10-04,2026-10-04T13:30Z,4,2,True,True,False,28,11,Commanders,Colts,13,30,NFL London Games,London,
+401872971,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,2,17,Bills,Patriots,26,29,,Orchard Park,NY
+401872972,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,3,20,Bears,Jets,23,12,,Chicago,IL
+401872969,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,4,30,Bengals,Jaguars,17,22,,Cincinnati,OH
+401872966,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,19,22,Giants,Cardinals,36,24,,East Rutherford,NJ
+401872970,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,21,14,Eagles,Rams,20,24,,Philadelphia,PA
+401872968,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,27,9,Buccaneers,Packers,14,17,,Tampa,FL
+401872973,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,33,10,Ravens,Titans,24,18,,Baltimore,MD
+401872967,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,34,6,Texans,Cowboys,30,34,,Houston,TX
+401872974,2026-10-04,2026-10-04T20:05Z,4,2,True,False,False,16,15,Vikings,Dolphins,15,10,,Minneapolis,MN
+401872976,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,13,12,Raiders,Chiefs,27,30,,Las Vegas,NV
+401872975,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,25,7,49ers,Broncos,24,14,,Santa Clara,CA
+401872977,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,26,24,Seahawks,Chargers,30,23,,Seattle,WA
+401872978,2026-10-04,2026-10-05T00:20Z,4,2,True,False,False,29,8,Panthers,Lions,32,26,,Charlotte,NC

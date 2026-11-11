@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772816,2025-10-20,2025-10-20T23:00Z,7,2,True,False,False,8,27,Lions,Buccaneers,24,9,,Detroit,MI
+401772826,2025-10-20,2025-10-21T02:00Z,7,2,True,False,False,26,34,Seahawks,Texans,27,19,,Seattle,WA

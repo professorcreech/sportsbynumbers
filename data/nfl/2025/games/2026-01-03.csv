@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772969,2026-01-03,2026-01-03T21:30Z,18,2,True,False,False,27,29,Buccaneers,Panthers,16,14,,Tampa,FL
+401772961,2026-01-03,2026-01-04T01:00Z,18,2,True,False,False,25,26,49ers,Seahawks,3,13,,Santa Clara,CA

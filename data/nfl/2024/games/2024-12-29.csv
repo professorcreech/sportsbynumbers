@@ -1,0 +1,10 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671495,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,2,20,Bills,Jets,40,14,,Orchard Park,NY
+401671738,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,18,13,Saints,Raiders,10,25,,New Orleans,LA
+401671846,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,19,11,Giants,Colts,45,33,,East Rutherford,NJ
+401671765,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,21,6,Eagles,Cowboys,41,7,,Philadelphia,PA
+401671653,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,27,29,Buccaneers,Panthers,48,14,,Tampa,FL
+401671634,2024-12-29,2024-12-29T18:00Z,17,2,True,False,False,30,10,Jaguars,Titans,20,13,,Jacksonville,FL
+401671877,2024-12-29,2024-12-29T21:05Z,17,2,True,False,False,5,15,Browns,Dolphins,3,20,,Cleveland,OH
+401671725,2024-12-29,2024-12-29T21:25Z,17,2,True,False,False,16,9,Vikings,Packers,27,25,,Minneapolis,MN
+401671842,2024-12-29,2024-12-30T01:20Z,17,2,True,False,False,28,1,Commanders,Falcons,30,24,,Landover,MD

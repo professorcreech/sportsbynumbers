@@ -1,0 +1,1308 @@
+timestamp: '2026-11-11T07:25:16Z'
+status: 'success'
+season: dict
+  year: '2026'
+  displayName: '2026'
+  type: '2'
+  name: 'Regular Season'
+athletes: list[6]
+  position: 'offense'
+  items: list[28]
+    id: '4912218'
+    uid: 's:20~l:28~a:4912218'
+    guid: '0fdecc73-7b90-3cca-8bfc-a5d585ca037f'
+    alternateIds: dict
+      sdr: '4912218'
+    firstName: 'Cyrus'
+    lastName: 'Allen'
+    fullName: 'Cyrus Allen'
+    displayName: 'Cyrus Allen'
+    shortName: 'C. Allen'
+    weight: '180.0'
+    displayWeight: '180 lbs'
+    height: '71.0'
+    displayHeight: '5\' 11"'
+    age: '23'
+    dateOfBirth: '2003-02-11T08:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4912218/cyrus-allen'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4912218/cyrus-allen'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4912218&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'New Orleans'
+      state: 'LA'
+      country: 'USA'
+    college: dict
+      id: '2132'
+      guid: '2a9e6a6d-aa16-3525-a5f4-2aee8a1a77e6'
+      mascot: 'Bearcats'
+      name: 'Cincinnati'
+      shortName: 'Cincinnati'
+      abbrev: 'CIN'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2132.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+    slug: 'cyrus-allen'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4912218.png'
+      alt: 'Cyrus Allen'
+    jersey: '13'
+    position: dict
+      id: '1'
+      name: 'Wide Receiver'
+      displayName: 'Wide Receiver'
+      abbreviation: 'WR'
+      leaf: 'True'
+      parent: dict
+        id: '70'
+        name: 'Offense'
+        displayName: 'Offense'
+        abbreviation: 'OFF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[0]
+    experience: dict
+      years: '0'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '5093923'
+    uid: 's:20~l:28~a:5093923'
+    guid: '34c7d591-aa63-39eb-8c0c-6f510119b467'
+    alternateIds: dict
+      sdr: '5093923'
+    firstName: 'Andrew'
+    lastName: 'Armstrong'
+    fullName: 'Andrew Armstrong'
+    displayName: 'Andrew Armstrong'
+    shortName: 'A. Armstrong'
+    weight: '210.0'
+    displayWeight: '210 lbs'
+    height: '76.0'
+    displayHeight: '6\' 4"'
+    age: '26'
+    dateOfBirth: '2000-10-31T08:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/5093923/andrew-armstrong'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/5093923/andrew-armstrong'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:5093923&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Dallas'
+      state: 'TX'
+      country: 'USA'
+    college: dict
+      id: '8'
+      guid: '54db9ad2-a897-3768-ae50-f0390c0b5f03'
+      mascot: 'Razorbacks'
+      name: 'Arkansas'
+      shortName: 'Arkansas'
+      abbrev: 'ARK'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/8.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-19T23:48Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/8.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-19T23:47Z'
+        --
+    slug: 'andrew-armstrong'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/5093923.png'
+      alt: 'Andrew Armstrong'
+    jersey: '85'
+    position: dict
+      id: '1'
+      name: 'Wide Receiver'
+      displayName: 'Wide Receiver'
+      abbreviation: 'WR'
+      leaf: 'True'
+      parent: dict
+        id: '70'
+        name: 'Offense'
+        displayName: 'Offense'
+        abbreviation: 'OFF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[1]
+      salary: '590000'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      --
+    experience: dict
+      years: '1'
+    contract: dict
+      optionType: '0'
+      salary: '590000'
+      bonus: '0'
+      yearsRemaining: '0'
+      signedThrough: '2026'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '4566190'
+    uid: 's:20~l:28~a:4566190'
+    guid: 'a9cde512-baa7-3b6c-89e3-c2666e4ebe35'
+    alternateIds: dict
+      sdr: '4566190'
+    firstName: 'Kahlil'
+    lastName: 'Benson'
+    fullName: 'Kahlil Benson'
+    displayName: 'Kahlil Benson'
+    shortName: 'K. Benson'
+    weight: '319.0'
+    displayWeight: '319 lbs'
+    height: '78.0'
+    displayHeight: '6\' 6"'
+    age: '24'
+    dateOfBirth: '2002-08-20T07:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4566190/kahlil-benson'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4566190/kahlil-benson'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4566190&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Southaven'
+      state: 'MS'
+      country: 'USA'
+    college: dict
+      id: '84'
+      guid: '792ba7c6-9f41-3563-a1a4-fdef86947037'
+      mascot: 'Hoosiers'
+      name: 'Indiana'
+      shortName: 'Indiana'
+      abbrev: 'IU'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/84.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/84.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-30T19:45Z'
+        --
+    slug: 'kahlil-benson'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4566190.png'
+      alt: 'Kahlil Benson'
+    jersey: '70'
+    position: dict
+      id: '46'
+      name: 'Offensive Tackle'
+      displayName: 'Offensive Tackle'
+      abbreviation: 'OT'
+      leaf: 'True'
+      parent: dict
+        id: '70'
+        name: 'Offense'
+        displayName: 'Offense'
+        abbreviation: 'OFF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[0]
+    experience: dict
+      years: '0'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+  --
+  position: 'defense'
+  items: list[25]
+    id: '4612387'
+    uid: 's:20~l:28~a:4612387'
+    guid: '45821a7f-80e2-3d49-9a7a-812328831448'
+    alternateIds: dict
+      sdr: '4612387'
+    firstName: 'Felix'
+    lastName: 'Anudike-Uzomah'
+    fullName: 'Felix Anudike-Uzomah'
+    displayName: 'Felix Anudike-Uzomah'
+    shortName: 'F. Anudike-Uzomah'
+    weight: '255.0'
+    displayWeight: '255 lbs'
+    height: '76.0'
+    displayHeight: '6\' 4"'
+    age: '24'
+    dateOfBirth: '2002-01-24T08:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4612387/felix-anudike-uzomah'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4612387/felix-anudike-uzomah'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4612387&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Kansas City'
+      state: 'MO'
+      country: 'USA'
+    college: dict
+      id: '2306'
+      guid: '0135af66-f39d-3608-accc-238ac49793b6'
+      mascot: 'Wildcats'
+      name: 'Kansas State'
+      shortName: 'Kansas St'
+      abbrev: 'KSU'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2306.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+    slug: 'felix-anudike-uzomah'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4612387.png'
+      alt: 'Felix Anudike-Uzomah'
+    jersey: '91'
+    position: dict
+      id: '31'
+      name: 'Defensive End'
+      displayName: 'Defensive End'
+      abbreviation: 'DE'
+      leaf: 'True'
+      parent: dict
+        id: '71'
+        name: 'Defense'
+        displayName: 'Defense'
+        abbreviation: 'DEF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[4]
+      salary: '6344776'
+      season: dict
+        year: '2023'
+        startDate: '2023-08-01T07:00Z'
+        endDate: '2024-02-15T07:59Z'
+      --
+      salary: '1287174'
+      season: dict
+        year: '2024'
+        startDate: '2024-08-01T07:00Z'
+        endDate: '2025-02-15T07:59Z'
+      --
+      salary: '1824348'
+      season: dict
+        year: '2025'
+        startDate: '2025-07-31T07:00Z'
+        endDate: '2026-02-12T07:59Z'
+      --
+    experience: dict
+      years: '4'
+    contract: dict
+      optionType: '0'
+      salary: '2361522'
+      bonus: '0'
+      yearsRemaining: '0'
+      signedThrough: '2026'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '4602389'
+    uid: 's:20~l:28~a:4602389'
+    guid: '3aac9221-9c7f-3b55-a13f-5037dafd24a1'
+    alternateIds: dict
+      sdr: '4602389'
+    firstName: 'Jeffrey'
+    lastName: 'Bassa'
+    fullName: 'Jeffrey Bassa'
+    displayName: 'Jeffrey Bassa'
+    shortName: 'J. Bassa'
+    weight: '235.0'
+    displayWeight: '235 lbs'
+    height: '74.0'
+    displayHeight: '6\' 2"'
+    age: '24'
+    dateOfBirth: '2002-09-20T07:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4602389/jeffrey-bassa'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4602389/jeffrey-bassa'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4602389&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Salt Lake City'
+      state: 'UT'
+      country: 'USA'
+    college: dict
+      id: '2483'
+      guid: '94cc8326-138d-3d76-8f6e-65e8744e6d92'
+      mascot: 'Ducks'
+      name: 'Oregon'
+      shortName: 'Oregon'
+      abbrev: 'ORE'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2483.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-23T01:44Z'
+        --
+    slug: 'jeffrey-bassa'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4602389.png'
+      alt: 'Jeffrey Bassa'
+    jersey: '31'
+    position: dict
+      id: '30'
+      name: 'Linebacker'
+      displayName: 'Linebacker'
+      abbreviation: 'LB'
+      leaf: 'True'
+      parent: dict
+        id: '71'
+        name: 'Defense'
+        displayName: 'Defense'
+        abbreviation: 'DEF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[0]
+    experience: dict
+      years: '2'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '4362759'
+    uid: 's:20~l:28~a:4362759'
+    guid: '8ac8367c-97de-a1da-459d-d8b0539f49bb'
+    alternateIds: dict
+      sdr: '4362759'
+    firstName: 'Nick'
+    lastName: 'Bolton'
+    fullName: 'Nick Bolton'
+    displayName: 'Nick Bolton'
+    shortName: 'N. Bolton'
+    weight: '237.0'
+    displayWeight: '237 lbs'
+    height: '71.0'
+    displayHeight: '5\' 11"'
+    age: '26'
+    dateOfBirth: '2000-03-10T08:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4362759/nick-bolton'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4362759/nick-bolton'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4362759&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Frisco'
+      state: 'TX'
+      country: 'USA'
+    college: dict
+      id: '142'
+      guid: 'd6890e67-a13d-326b-9c9b-4cc708773883'
+      mascot: 'Tigers'
+      name: 'Missouri'
+      shortName: 'Missouri'
+      abbrev: 'MIZ'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/142.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-19T23:48Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/142.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-19T23:47Z'
+        --
+    slug: 'nick-bolton'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4362759.png'
+      alt: 'Nick Bolton'
+    jersey: '32'
+    position: dict
+      id: '30'
+      name: 'Linebacker'
+      displayName: 'Linebacker'
+      abbreviation: 'LB'
+      leaf: 'True'
+      parent: dict
+        id: '71'
+        name: 'Defense'
+        displayName: 'Defense'
+        abbreviation: 'DEF'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[7]
+      salary: '2262936'
+      season: dict
+        year: '2021'
+        startDate: '2021-07-17T07:00Z'
+        endDate: '2022-02-16T07:59Z'
+      --
+      salary: '925184'
+      season: dict
+        year: '2022'
+        startDate: '2022-08-01T07:00Z'
+        endDate: '2023-02-15T07:59Z'
+      --
+      salary: '1190368'
+      season: dict
+        year: '2023'
+        startDate: '2023-08-01T07:00Z'
+        endDate: '2024-02-15T07:59Z'
+      --
+    experience: dict
+      years: '6'
+    contract: dict
+      optionType: '0'
+      salary: '15000000'
+      bonus: '0'
+      salaryRemaining: '15000000'
+      yearsRemaining: '1'
+      signedThrough: '2027'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+  --
+  position: 'specialTeam'
+  items: list[3]
+    id: '4361496'
+    uid: 's:20~l:28~a:4361496'
+    guid: '6413ecd2-2eea-bc64-9bd1-0536f0ca9500'
+    alternateIds: dict
+      sdr: '4361496'
+    firstName: 'Matt'
+    lastName: 'Araiza'
+    fullName: 'Matt Araiza'
+    displayName: 'Matt Araiza'
+    shortName: 'M. Araiza'
+    weight: '200.0'
+    displayWeight: '200 lbs'
+    height: '73.0'
+    displayHeight: '6\' 1"'
+    age: '26'
+    dateOfBirth: '2000-05-16T07:00Z'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/4361496/matt-araiza'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/4361496/matt-araiza'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:4361496&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'San Diego'
+      state: 'CA'
+      country: 'USA'
+    college: dict
+      id: '21'
+      guid: 'cacb8e71-840f-3b1a-a701-70018799b810'
+      mascot: 'Aztecs'
+      name: 'San Diego State'
+      shortName: 'San Diego St'
+      abbrev: 'SDSU'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/21.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-24T20:19Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/21.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-24T20:18Z'
+        --
+    slug: 'matt-araiza'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/4361496.png'
+      alt: 'Matt Araiza'
+    jersey: '14'
+    position: dict
+      id: '23'
+      name: 'Punter'
+      displayName: 'Punter'
+      abbreviation: 'P'
+      leaf: 'True'
+      parent: dict
+        id: '72'
+        name: 'Special Teams'
+        displayName: 'Special Teams'
+        abbreviation: 'ST'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[3]
+      salary: '795000'
+      season: dict
+        year: '2024'
+        startDate: '2024-08-01T07:00Z'
+        endDate: '2025-02-15T07:59Z'
+      --
+      salary: '960000'
+      season: dict
+        year: '2025'
+        startDate: '2025-07-31T07:00Z'
+        endDate: '2026-02-12T07:59Z'
+      --
+      salary: '1075000'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      --
+    experience: dict
+      years: '3'
+    contract: dict
+      optionType: '0'
+      salary: '1075000'
+      bonus: '0'
+      yearsRemaining: '0'
+      signedThrough: '2026'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '3055899'
+    uid: 's:20~l:28~a:3055899'
+    guid: '5aabffc1-7ac1-5d1e-e94f-1386ec369d23'
+    alternateIds: dict
+      sdr: '3055899'
+    firstName: 'Harrison'
+    lastName: 'Butker'
+    fullName: 'Harrison Butker'
+    displayName: 'Harrison Butker'
+    shortName: 'H. Butker'
+    weight: '205.0'
+    displayWeight: '205 lbs'
+    height: '76.0'
+    displayHeight: '6\' 4"'
+    age: '31'
+    dateOfBirth: '1995-07-14T07:00Z'
+    debutYear: '2017'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/3055899/harrison-butker'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/3055899/harrison-butker'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:3055899&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Decatur'
+      state: 'GA'
+      country: 'USA'
+    college: dict
+      id: '59'
+      guid: '09d600fd-3be9-3989-9b0d-cde3ce89c14d'
+      mascot: 'Yellow Jackets'
+      name: 'Georgia Tech'
+      shortName: 'Georgia Tech'
+      abbrev: 'GT'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/59.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-19T22:33Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/59.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-19T22:35Z'
+        --
+    slug: 'harrison-butker'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/3055899.png'
+      alt: 'Harrison Butker'
+    jersey: '7'
+    position: dict
+      id: '22'
+      name: 'Place kicker'
+      displayName: 'Place Kicker'
+      abbreviation: 'PK'
+      leaf: 'True'
+      parent: dict
+        id: '72'
+        name: 'Special Teams'
+        displayName: 'Special Teams'
+        abbreviation: 'ST'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[12]
+      salary: '382941'
+      season: dict
+        year: '2017'
+        startDate: '2017-08-02T07:00Z'
+        endDate: '2018-02-07T07:59Z'
+      --
+      salary: '555000'
+      season: dict
+        year: '2018'
+        startDate: '2018-08-02T07:00Z'
+        endDate: '2019-02-06T07:59Z'
+      --
+      salary: '4145000'
+      season: dict
+        year: '2019'
+        startDate: '2019-07-31T07:00Z'
+        endDate: '2020-02-06T07:59Z'
+      --
+    experience: dict
+      years: '10'
+    contract: dict
+      optionType: '0'
+      salary: '5905000'
+      bonus: '0'
+      salaryRemaining: '11695000'
+      yearsRemaining: '2'
+      signedThrough: '2028'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+    id: '16665'
+    uid: 's:20~l:28~a:16665'
+    guid: 'a0122c51-2cbc-a5b2-32d3-89c5a544fa99'
+    alternateIds: dict
+      sdr: '2317570'
+    firstName: 'James'
+    lastName: 'Winchester'
+    fullName: 'James Winchester'
+    displayName: 'James Winchester'
+    shortName: 'J. Winchester'
+    weight: '240.0'
+    displayWeight: '240 lbs'
+    height: '75.0'
+    displayHeight: '6\' 3"'
+    age: '37'
+    dateOfBirth: '1989-08-06T07:00Z'
+    debutYear: '2015'
+    links: list[12]
+      language: 'en-US'
+      rel: list[3]
+        'playercard'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/_/id/16665/james-winchester'
+      text: 'Player Card'
+      shortText: 'Player Card'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[3]
+        'stats'
+        --
+        'desktop'
+        --
+        'athlete'
+        --
+      href: 'https://www.espn.com/nfl/player/stats/_/id/16665/james-winchester'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+      language: 'en-US'
+      rel: list[4]
+        'stats'
+        --
+        'sportscenter'
+        --
+        'app'
+        --
+      href: 'sportscenter://x-callback-url/showClubhouse?uid=s:20~l:28~a:16665&section=stats'
+      text: 'Stats'
+      shortText: 'Stats'
+      isExternal: 'False'
+      isPremium: 'False'
+      --
+    birthPlace: dict
+      city: 'Washington'
+      state: 'OK'
+      country: 'USA'
+    college: dict
+      id: '201'
+      guid: '5c89e0cf-7ac7-3621-a83e-48a835ee34d1'
+      mascot: 'Sooners'
+      name: 'Oklahoma'
+      shortName: 'Oklahoma'
+      abbrev: 'OU'
+      logos: list[2]
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/201.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'default'
+          --
+        lastUpdated: '2025-12-19T23:48Z'
+        --
+        href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/201.png'
+        width: '500'
+        height: '500'
+        alt: ''
+        rel: list[2]
+          'full'
+          --
+          'dark'
+          --
+        lastUpdated: '2025-12-19T23:47Z'
+        --
+    slug: 'james-winchester'
+    headshot: dict
+      href: 'https://a.espncdn.com/i/headshots/nfl/players/full/16665.png'
+      alt: 'James Winchester'
+    jersey: '41'
+    position: dict
+      id: '78'
+      name: 'Long Snapper'
+      displayName: 'Long Snapper'
+      abbreviation: 'LS'
+      leaf: 'True'
+      parent: dict
+        id: '72'
+        name: 'Special Teams'
+        displayName: 'Special Teams'
+        abbreviation: 'ST'
+        leaf: 'False'
+    injuries: list[0]
+    teams: list[1]
+      $ref: 'http://sports.core.api.espn.pvt/v2/sports/football/leagues/nfl/seasons/2026/teams/12?lang='
+      --
+    contracts: list[12]
+      salary: '440850'
+      season: dict
+        year: '2015'
+        startDate: '2015-08-05T07:00Z'
+        endDate: '2016-02-10T07:59Z'
+      --
+      salary: '525000'
+      season: dict
+        year: '2016'
+        startDate: '2016-08-03T07:00Z'
+        endDate: '2017-02-09T07:59Z'
+      --
+      salary: '1125000'
+      season: dict
+        year: '2017'
+        startDate: '2017-08-02T07:00Z'
+        endDate: '2018-02-07T07:59Z'
+      --
+    experience: dict
+      years: '12'
+    contract: dict
+      optionType: '0'
+      salary: '1700000'
+      bonus: '0'
+      yearsRemaining: '0'
+      signedThrough: '2026'
+      season: dict
+        year: '2026'
+        startDate: '2026-08-06T07:00Z'
+        endDate: '2027-02-16T07:59Z'
+      active: 'True'
+    status: dict
+      id: '1'
+      name: 'Active'
+      type: 'active'
+      abbreviation: 'Active'
+    --
+  --
+coach: list[1]
+  id: '17553'
+  firstName: 'Andy'
+  lastName: 'Reid'
+  experience: '27'
+  --
+team: dict
+  id: '12'
+  abbreviation: 'KC'
+  location: 'Kansas City'
+  name: 'Chiefs'
+  displayName: 'Kansas City Chiefs'
+  clubhouse: 'https://www.espn.com/nfl/team/_/name/kc/kansas-city-chiefs'
+  color: 'e31837'
+  logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/kc.png'
+  recordSummary: '6-2'
+  seasonSummary: '2026'
+  standingSummary: '2nd in AFC West'

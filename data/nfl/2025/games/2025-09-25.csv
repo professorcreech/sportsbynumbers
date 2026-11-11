@@ -1,0 +1,2 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401772938,2025-09-25,2025-09-26T00:15Z,4,2,True,False,False,22,26,Cardinals,Seahawks,20,23,,Glendale,AZ

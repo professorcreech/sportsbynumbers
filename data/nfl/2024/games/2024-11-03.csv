@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401671728,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,1,6,Falcons,Cowboys,27,21,,Atlanta,GA
+401671493,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,2,15,Bills,Dolphins,30,27,,Orchard Park,NY
+401671704,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,4,13,Bengals,Raiders,41,24,,Cincinnati,OH
+401671629,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,5,24,Browns,Chargers,10,27,,Cleveland,OH
+401671822,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,10,17,Titans,Patriots,20,17,,Nashville,TN
+401671711,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,19,28,Giants,Commanders,22,27,,East Rutherford,NJ
+401671650,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,29,18,Panthers,Saints,23,22,,Charlotte,NC
+401671623,2024-11-03,2024-11-03T18:00Z,9,2,True,False,False,33,7,Ravens,Broncos,41,10,,Baltimore,MD
+401671797,2024-11-03,2024-11-03T21:05Z,9,2,True,False,False,21,30,Eagles,Jaguars,28,23,,Philadelphia,PA
+401671661,2024-11-03,2024-11-03T21:05Z,9,2,True,False,False,22,3,Cardinals,Bears,29,9,,Glendale,AZ
+401671767,2024-11-03,2024-11-03T21:25Z,9,2,True,False,False,9,8,Packers,Lions,14,24,,Green Bay,WI
+401671776,2024-11-03,2024-11-03T21:25Z,9,2,True,False,False,26,14,Seahawks,Rams,20,26,,Seattle,WA
+401671647,2024-11-03,2024-11-04T01:20Z,9,2,True,False,False,16,11,Vikings,Colts,21,13,,Minneapolis,MN
