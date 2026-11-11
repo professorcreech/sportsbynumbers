@@ -50,6 +50,29 @@ BRACKET_DRIFT_PER_100_DAYS = 4.9   # grows with the square root of days left
 BRACKET_FINAL_SD = 2.5             # uncertainty that remains on tournament day
 
 
+# Distance edge in tournament games (tests/tournament_factors.py, 2012-2026 tournaments):
+# margin moves by -0.75 points per unit of log(1 + miles from campus), team minus opponent.
+TOURNEY_LOG_DISTANCE = -0.75
+
+# Announced sites (lat, lon). Regions are listed in the order they're filled by the S-curve.
+TOURNEY_SITES = {
+    2027: {
+        "opening": {"Dayton": (39.7589, -84.1916), "Wichita": (37.6872, -97.3301)},
+        # Arenas, so a team is never sent to its own home floor
+        "venues": {"Dayton": "UD Arena", "Wichita": "INTRUST Bank Arena", "Pittsburgh": "PPG Paints Arena",
+                   "Omaha": "CHI Health Center", "Fort Worth": "Dickies Arena", "Spokane": "Numerica Veterans Arena",
+                   "Charlotte": "Spectrum Center", "Minneapolis": "Target Center", "Louisville": "KFC Yum! Center",
+                   "Sacramento": "Golden 1 Center"},
+        "first": {"Pittsburgh": (40.4406, -79.9959), "Omaha": (41.2565, -95.9345), "Fort Worth": (32.7555, -97.3308),
+                  "Spokane": (47.6588, -117.4260), "Charlotte": (35.2271, -80.8431), "Minneapolis": (44.9778, -93.2650),
+                  "Louisville": (38.2527, -85.7585), "Sacramento": (38.5816, -121.4944)},
+        "regional": {"South (San Antonio)": (29.4241, -98.4936), "West (Los Angeles)": (34.0522, -118.2437),
+                     "Midwest (Kansas City)": (39.0997, -94.5786), "East (New York)": (40.7128, -74.0060)},
+        "final": {"Detroit": (42.3314, -83.0458)},
+    },
+}
+
+
 def selection_sunday(season: int) -> date:
     """The Sunday between March 11 and 17 (2023-2027 all fit this rule)."""
     d = date(season, 3, 11)

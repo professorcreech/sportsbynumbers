@@ -251,23 +251,28 @@
   function bracket(main) {
     const B = D.bracket;
     if (!B) { main.innerHTML = '<div><h1>Tournament Odds</h1><p class="lede">Tournament odds will appear after the next daily update.</p></div>'; return; }
-    const R = B.rounds, regionSel = recall("sbn-region") || "";
-    const head = '<div><h1>Tournament Odds</h1><p class="lede">Chances of reaching each round, from ' + B.sims.toLocaleString() +
+    const R = B.rounds, names = B.region_names || ["Region 1", "Region 2", "Region 3", "Region 4"];
+    const regionSel = recall("sbn-region") || "";
+    main.innerHTML = '<div><h1>Tournament Odds</h1><p class="lede">Chances of reaching each round, from ' + B.sims.toLocaleString() +
       " simulations of the projected " + B.field_size + "-team field. The field and seeds come from the " +
       '<a href="' + esc(B.url) + '" target="_blank" rel="noopener">Bracket Matrix</a>, a consensus of ' + B.n_brackets +
       " published brackets (" + esc(B.label) + (B.latest_bracket ? ", newest bracket " + esc(B.latest_bracket) : "") +
       "). Games are played by this site's ratings, so a strong team on a low seed line can carry good odds.</p></div>" +
-      '<p class="note">' + B.days_to_selection + " days to Selection Sunday. Each simulation lets every team's true strength differ from today's rating by an amount that shrinks as the season goes on, measured from how much ratings moved between December and March last season. Regions are placed on an S-curve until the real bracket is announced; teams marked OR start in the opening round.</p>" +
+      '<p class="note">' + B.days_to_selection + " days to Selection Sunday. Each simulation lets every team's true strength differ from today's rating by an amount that shrinks as the season goes on. Teams on the top four seed lines are placed at the nearest open region and first-weekend site in S-curve order, never on their own home floor; teams marked OR start in the opening round." +
+      (B.distance_coef ? " Every game includes the distance edge measured in past tournaments: about 2 points for a team 50 miles from the arena against one 1,000 miles away." : "") + "</p>" +
       '<div class="controls"><div class="field"><label for="b-r">Region</label><select id="b-r"><option value="">All regions</option>' +
-      [1, 2, 3, 4].map((r) => "<option value=\"" + r + "\"" + (String(r) === regionSel ? " selected" : "") + ">Region " + r + "</option>").join("") +
-      "</select></div></div><div id='b-t'></div>";
-    main.innerHTML = head;
+      names.map((n, i) => '<option value="' + (i + 1) + '"' + (String(i + 1) === regionSel ? " selected" : "") + ">" + esc(n) + "</option>").join("") +
+      "</select></div></div><div id='b-t'></div>" +
+      '<p class="note">Last 4 tournaments: wins and losses, and average points per game above or below what the ratings expected. Shown for context only; across 2012–2026, past over- or under-performance didn\'t reliably carry into the next tournament, so it doesn\'t move the odds.</p>';
     const odds = (i) => (t) => t.odds[i];
     const pctCell = (i) => (t) => { const v = t.odds[i]; return v >= 0.995 ? "✓" : v < 0.001 ? "<0.1" : (v * 100).toFixed(v < 0.1 ? 1 : 0); };
+    const shortRegion = (n) => String(n).split(" ")[0];
     const cols = [
       { key: "seed", label: "Seed", asc: true, html: (t) => t.seed + (t.opening ? '<span class="rk">OR</span>' : "") },
       { key: "team", label: "Team", left: true, cls: "name", html: (t) => (teamById[t.id] ? teamLink(t.id) : esc(t.team)), asc: true },
-      { key: "region", label: "Reg", asc: true },
+      { key: "region", label: "Region", left: true, asc: true, html: (t) => esc(shortRegion(names[t.region - 1])) },
+      { key: "site", label: "First weekend", left: true, asc: true, html: (t) => (t.site ? esc(t.site) + (t.miles != null ? '<span class="rk">' + t.miles.toLocaleString() + " mi</span>" : "") : "–"), val: (t) => t.miles },
+      { key: "rec", label: "Last 4", html: (t) => (t.record ? t.record.wins + "-" + (t.record.games - t.record.wins) + '<span class="rk ' + cls(t.record.vs_exp) + '">' + sgn(t.record.vs_exp) + "</span>" : "–"), val: (t) => (t.record ? t.record.vs_exp : null) },
     ];
     [1, 2, 3, 4, 5, 6, 7].forEach((i) => cols.push({ key: "r" + i, label: R[i], val: odds(i), html: pctCell(i) }));
     const draw = () => {
@@ -298,6 +303,7 @@
       "<p>Teammates who always play together are hard to separate, so each player gets a normal prior centered on a box-score estimate. That box-score model is itself learned from the data: a first, heavily shrunk pass of the regression is regressed on per-40-minute box stats (points, shot attempts, free throws, threes, assists, turnovers and offensive rebounds for offense; steals, blocks, defensive rebounds and fouls for defense). The final rating is the posterior mean</p>" +
       '<span class="eq">β = prior + (XᵀWX + λI)⁻¹ XᵀW (y − X·prior)</span>' +
       "<p>with W the stint possessions. λ" + (m.lambda ? " (currently " + Math.round(m.lambda).toLocaleString() + " possessions)" : "") + " sets how much on-court evidence it takes to move a player off the box-score estimate. It is chosen by cross-validation: hold out every fifth game, fit on the rest, and keep the λ that best predicts scoring in the held-out stints. Defense is reported with the sign flipped so higher is better on both ends.</p>" +
+      "<h2>Tournament odds</h2><p>The Bracket tab simulates the projected field (the Bracket Matrix consensus until Selection Sunday) 20,000 times. Each simulation draws every team's true strength around its rating, with a spread measured from how much ratings moved between December and March in 2025-26, then plays each game by the prediction formula above at its announced site. Tests on every tournament from 2012 to 2026 decided what else counts. Distance from campus to arena does: margins shift about 0.75 points per unit of log(1 + miles). A team's road and neutral-court form during the season doesn't, beyond its overall rating. A program's record against expectations in recent tournaments showed a small effect that didn't hold up when each tournament was predicted from the others, so it's shown only as context.</p>" +
       "<h2>Lineups</h2><p>Lineup numbers are raw on-court results per 100 possessions, not adjusted for opponents. Use them to see how a coach deploys a roster, and lean on the player ratings for talent.</p>" +
       "<h2>Data</h2><p>Box scores and play-by-play come from ESPN's public scoreboard feed, pulled after each day's games. Stints with lineup gaps (a missed substitution in the feed) are dropped rather than guessed.</p></div>";
   }
