@@ -60,7 +60,11 @@ jobs:
           git config user.email "sportsbynumbers-bot@users.noreply.github.com"
           git add data site
           git diff --cached --quiet || git commit -m "Daily update $(date -u +%F)"
-          git push
+          # Code may have been pushed while this ran; data and code never touch the same files
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            sleep 5
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:
