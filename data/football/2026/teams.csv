@@ -77,16 +77,16 @@ team_id,conf,name,abbr,short,div,color
 87,ind,Notre Dame Fighting Irish,ND,Notre Dame,FBS,062340
 41,ind,UConn Huskies,CONN,UConn,FBS,0c2340
 2649,midam,Toledo Rockets,TOL,Toledo,FBS,0b2240
-195,midam,Ohio Bobcats,OHIO,Ohio,FBS,154734
 2711,midam,Western Michigan Broncos,WMU,W Michigan,FBS,532e1f
 2084,midam,Buffalo Bulls,BUF,Buffalo,FBS,005bbb
+195,midam,Ohio Bobcats,OHIO,Ohio,FBS,154734
 193,midam,Miami (OH) RedHawks,M-OH,Miami OH,FBS,c41230
-113,midam,Massachusetts Minutemen,MASS,UMass,FBS,881c1c
 2117,midam,Central Michigan Chippewas,CMU,C Michigan,FBS,4c0027
+113,midam,Massachusetts Minutemen,MASS,UMass,FBS,881c1c
 2199,midam,Eastern Michigan Eagles,EMU,E Michigan,FBS,006938
-2050,midam,Ball State Cardinals,BALL,Ball State,FBS,ba0c2f
 189,midam,Bowling Green Falcons,BGSU,Bowling Green,FBS,fd5000
 2309,midam,Kent State Golden Flashes,KENT,Kent State,FBS,002664
+2050,midam,Ball State Cardinals,BALL,Ball State,FBS,ba0c2f
 16,midam,Sacramento State Hornets,SAC,Sacramento St,FBS,00573C
 2006,midam,Akron Zips,AKR,Akron,FBS,041e42
 167,mwest,New Mexico Lobos,UNM,New Mexico,FBS,ba0c2f
