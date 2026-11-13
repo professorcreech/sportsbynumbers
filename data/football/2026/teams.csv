@@ -1,6 +1,6 @@
 team_id,conf,name,abbr,short,div,color
-249,American,North Texas Mean Green,UNT,North Texas,FBS,068f33
 235,American,Memphis Tigers,MEM,Memphis,FBS,004991
+249,American,North Texas Mean Green,UNT,North Texas,FBS,068f33
 2636,American,UTSA Roadrunners,UTSA,UTSA,FBS,0c2340
 2226,American,Florida Atlantic Owls,FAU,FAU,FBS,003366
 58,American,South Florida Bulls,USF,South Florida,FBS,006747
@@ -126,14 +126,14 @@ team_id,conf,name,abbr,short,div,color
 256,belt,James Madison Dukes,JMU,James Madison,FBS,450084
 290,belt,Georgia Southern Eagles,GASO,GA Southern,FBS,041e42
 2247,belt,Georgia State Panthers,GAST,Georgia St,FBS,0039a6
-2026,belt,App State Mountaineers,APP,App State,FBS,000000
 276,belt,Marshall Thundering Herd,MRSH,Marshall,FBS,00b140
+2026,belt,App State Mountaineers,APP,App State,FBS,000000
 324,belt,Coastal Carolina Chanticleers,CCU,Coastal,FBS,006f71
 295,belt,Old Dominion Monarchs,ODU,Old Dominion,FBS,003768
 2348,belt,Louisiana Tech Bulldogs,LT,Louisiana Tech,FBS,003087
 309,belt,Louisiana Ragin' Cajuns,UL,Louisiana,FBS,ce181e
-6,belt,South Alabama Jaguars,USA,South Alabama,FBS,00205b
 2032,belt,Arkansas State Red Wolves,ARST,Arkansas St,FBS,cc092f
+6,belt,South Alabama Jaguars,USA,South Alabama,FBS,00205b
 2653,belt,Troy Trojans,TROY,Troy,FBS,862633
 2572,belt,Southern Miss Golden Eagles,USM,Southern Miss,FBS,ffc72c
 2433,belt,UL Monroe Warhawks,ULM,UL Monroe,FBS,840029

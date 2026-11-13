@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401862824,2026-11-12,2026-11-13T01:00Z,11,2,True,False,True,58,235,South Florida,Memphis,41,52,,Tampa,FL
+401869969,2026-11-12,2026-11-13T02:00Z,11,2,True,False,True,2433,309,UL Monroe,Louisiana,21,42,,Monroe,LA
