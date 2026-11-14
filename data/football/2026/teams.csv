@@ -19,8 +19,8 @@ team_id,conf,name,abbr,short,div,color
 150,acc,Duke Blue Devils,DUKE,Duke,FBS,00539b
 97,acc,Louisville Cardinals,LOU,Louisville,FBS,c9001f
 228,acc,Clemson Tigers,CLEM,Clemson,FBS,f56600
-221,acc,Pittsburgh Panthers,PITT,Pitt,FBS,003594
 259,acc,Virginia Tech Hokies,VT,Virginia Tech,FBS,6a2c3e
+221,acc,Pittsburgh Panthers,PITT,Pitt,FBS,003594
 153,acc,North Carolina Tar Heels,UNC,North Carolina,FBS,7bafd4
 52,acc,Florida State Seminoles,FSU,Florida St,FBS,782f40
 24,acc,Stanford Cardinal,STAN,Stanford,FBS,8c1515
@@ -33,8 +33,8 @@ team_id,conf,name,abbr,short,div,color
 254,big12,Utah Utes,UTAH,Utah,FBS,be0000
 2641,big12,Texas Tech Red Raiders,TTU,Texas Tech,FBS,da291c
 252,big12,BYU Cougars,BYU,BYU,FBS,0047ba
-248,big12,Houston Cougars,HOU,Houston,FBS,c8102e
 12,big12,Arizona Wildcats,ARIZ,Arizona,FBS,cc0033
+248,big12,Houston Cougars,HOU,Houston,FBS,c8102e
 239,big12,Baylor Bears,BAY,Baylor,FBS,154734
 197,big12,Oklahoma State Cowboys,OKST,Oklahoma St,FBS,fe5c00
 9,big12,Arizona State Sun Devils,ASU,Arizona St,FBS,ffc627
@@ -53,8 +53,8 @@ team_id,conf,name,abbr,short,div,color
 2483,big10,Oregon Ducks,ORE,Oregon,FBS,00934b
 194,big10,Ohio State Buckeyes,OSU,Ohio State,FBS,ba0c2f
 275,big10,Wisconsin Badgers,WIS,Wisconsin,FBS,a00000
-356,big10,Illinois Fighting Illini,ILL,Illinois,FBS,ff5f05
 77,big10,Northwestern Wildcats,NU,Northwestern,FBS,492f92
+356,big10,Illinois Fighting Illini,ILL,Illinois,FBS,ff5f05
 135,big10,Minnesota Golden Gophers,MINN,Minnesota,FBS,5e0a2f
 213,big10,Penn State Nittany Lions,PSU,Penn State,FBS,061440
 264,big10,Washington Huskies,WASH,Washington,FBS,33006f
@@ -147,8 +147,8 @@ team_id,conf,name,abbr,short,div,color
 253,bsky,Southern Utah Thunderbirds,SUU,Southern Utah,FCS,c72026
 13,bsky,Cal Poly Mustangs,CP,Cal Poly,FCS,1E4D2B
 2458,bsky,Northern Colorado Bears,UNCO,N Colorado,FCS,13558D
-2502,bsky,Portland State Vikings,PRST,Portland St,FCS,00311e
 331,bsky,Eastern Washington Eagles,EWU,E Washington,FCS,a10022
+2502,bsky,Portland State Vikings,PRST,Portland St,FCS,00311e
 3101,bsky,Utah Tech Trailblazers,UTU,Utah Tech,FCS,000000
 2405,caa,Monmouth Hawks,MONM,Monmouth,FCS,051844
 2097,caa,Campbell Fighting Camels,CAM,Campbell,FCS,000000
