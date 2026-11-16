@@ -112,13 +112,13 @@ team_id,conf,name,abbr,short,div,color
 251,sec,Texas Longhorns,TEX,Texas,FBS,af5c37
 2633,sec,Tennessee Volunteers,TENN,Tennessee,FBS,ff8200
 96,sec,Kentucky Wildcats,UK,Kentucky,FBS,0033a0
+201,sec,Oklahoma Sooners,OU,Oklahoma,FBS,990000
+57,sec,Florida Gators,FLA,Florida,FBS,0021a5
 145,sec,Ole Miss Rebels,MISS,Ole Miss,FBS,13294b
 2579,sec,South Carolina Gamecocks,SC,South Carolina,FBS,73000a
-57,sec,Florida Gators,FLA,Florida,FBS,0021a5
 2,sec,Auburn Tigers,AUB,Auburn,FBS,002b5c
 99,sec,LSU Tigers,LSU,LSU,FBS,461d76
 142,sec,Missouri Tigers,MIZ,Missouri,FBS,f1b82d
-201,sec,Oklahoma Sooners,OU,Oklahoma,FBS,990000
 8,sec,Arkansas Razorbacks,ARK,Arkansas,FBS,a32136
 344,sec,Mississippi State Bulldogs,MSST,Mississippi St,FBS,5d1725
 245,sec,Texas A&M Aggies,TA&M,Texas A&M,FBS,500000

@@ -1,0 +1,13 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
+401873053,2026-11-15,2026-11-15T14:30Z,10,2,True,True,False,8,17,Lions,Patriots,35,10,NFL Munich Game,Munich,
+401873058,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,1,12,Falcons,Chiefs,13,35,,Atlanta,GA
+401873056,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,5,34,Browns,Texans,27,24,,Cleveland,OH
+401873060,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,9,16,Packers,Vikings,10,30,,Green Bay,WI
+401873057,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,10,30,Titans,Jaguars,23,40,,Nashville,TN
+401873059,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,11,15,Colts,Dolphins,24,22,,Indianapolis,IN
+401873055,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,18,29,Saints,Panthers,17,20,,New Orleans,LA
+401873054,2026-11-15,2026-11-15T18:00Z,10,2,True,False,False,20,2,Jets,Bills,12,31,,East Rutherford,NJ
+401873062,2026-11-15,2026-11-15T21:05Z,10,2,True,False,False,13,26,Raiders,Seahawks,13,21,,Las Vegas,NV
+401873061,2026-11-15,2026-11-15T21:05Z,10,2,True,False,False,22,14,Cardinals,Rams,6,34,,Glendale,AZ
+401873063,2026-11-15,2026-11-15T21:25Z,10,2,True,False,False,6,25,Cowboys,49ers,40,46,,Arlington,TX
+401873064,2026-11-15,2026-11-16T01:20Z,10,2,True,False,False,4,23,Bengals,Steelers,38,18,,Cincinnati,OH
