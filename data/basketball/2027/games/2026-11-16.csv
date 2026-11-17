@@ -1,34 +1,34 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
-401924265,2026-11-16,False,False,True,26,299,105,66,2026-11-17T03:00Z,53|52,20|46,DraftKings,UCLA -30.5,-30.5,144.5,,,True
-401920962,2026-11-16,False,False,True,2413,124809,104,69,2026-11-16T16:00Z,48|56,30|39,,,,,,,
-401929371,2026-11-16,False,False,True,2453,2225,87,49,2026-11-16T17:00Z,40|47,30|19,,,,,,,
-401911211,2026-11-16,False,False,True,45,366,94,57,2026-11-16T17:00Z,42|52,26|31,,,,,,,
-401929419,2026-11-16,False,False,True,2638,50,79,46,2026-11-16T19:00Z,41|38,29|17,DraftKings,UTEP -20.5,-20.5,142.5,-4000.0,1600.0,True
-401921087,2026-11-16,False,False,True,2378,314,75,67,2026-11-16T23:00Z,30|45,27|40,DraftKings,IONA -2.5,2.5,143.5,124.0,-148.0,False
-401916298,2026-11-16,False,False,True,120,2016,117,57,2026-11-16T23:00Z,60|57,30|27,DraftKings,MD -34.5,-34.5,154.5,,,True
-401916317,2026-11-16,False,False,True,194,2504,86,59,2026-11-16T23:30Z,34|52,29|30,DraftKings,OSU -32.5,-32.5,154.5,,,True
-401928841,2026-11-16,False,False,True,2309,2198,49,65,2026-11-17T00:00Z,25|24,31|34,DraftKings,KENT -9.5,-9.5,161.5,-520.0,390.0,True
-401927352,2026-11-16,False,False,True,2428,3229,117,71,2026-11-17T00:00Z,60|57,37|34,,,,,,,
-401925864,2026-11-16,False,False,True,202,98,67,64,2026-11-17T00:00Z,26|41,40|24,DraftKings,TLSA -5.5,-5.5,158.5,-278.0,225.0,True
-401922240,2026-11-16,False,False,True,56,2227,91,56,2026-11-17T00:00Z,40|51,27|29,,,,,,,
-401921804,2026-11-16,False,False,True,96,2755,88,59,2026-11-17T00:00Z,36|52,30|29,DraftKings,UK -28.5,-28.5,152.5,-50000.0,4000.0,True
-401921182,2026-11-16,False,False,True,219,111949,75,53,2026-11-17T00:00Z,37|38,22|31,,,,,,,
-401919807,2026-11-16,False,False,True,112358,2900,70,79,2026-11-17T00:00Z,36|34,30|49,DraftKings,STMN -1.5,1.5,145.5,-112.0,-108.0,False
-401918075,2026-11-16,False,False,True,228,2643,87,51,2026-11-17T00:00Z,38|49,28|23,DraftKings,CLEM -24.5,-24.5,142.5,-6500.0,2000.0,True
-401911240,2026-11-16,False,False,True,259,257,85,68,2026-11-17T00:00Z,41|44,23|45,DraftKings,VT -12.5,-12.5,151.5,-1050.0,675.0,True
-401906783,2026-11-16,False,False,True,61,294,107,62,2026-11-17T00:00Z,50|57,31|31,DraftKings,UGA -21.5,-21.5,153.5,-5000.0,1800.0,True
-401927364,2026-11-16,False,False,True,2181,2627,79,83,2026-11-17T00:30Z,33|46,35|48,DraftKings,DRKE -8.5,-8.5,146.5,-455.0,350.0,True
-401926153,2026-11-16,False,False,True,2546,111166,115,45,2026-11-17T00:30Z,61|54,18|27,,,,,,,
-401929411,2026-11-16,False,False,True,2571,561,107,67,2026-11-17T01:00Z,48|59,32|35,,,,,,,
-401928997,2026-11-16,False,False,True,2674,502,106,35,2026-11-17T01:00Z,52|54,20|15,,,,,,,
-401920735,2026-11-16,False,False,True,77,171,53,75,2026-11-17T01:00Z,19|34,28|47,DraftKings,NU -12.5,-12.5,139.5,-850.0,575.0,True
-401917964,2026-11-16,False,False,True,2623,2000,73,64,2026-11-17T01:00Z,31|42,24|40,DraftKings,MOST -5.5,-5.5,140.5,-230.0,190.0,True
-401917917,2026-11-16,False,False,True,197,2110,99,66,2026-11-17T01:00Z,49|50,35|31,DraftKings,OKST -18.5,-18.5,162.5,-3600.0,1500.0,True
-401916307,2026-11-16,False,False,True,135,2710,99,63,2026-11-17T01:00Z,54|45,27|36,DraftKings,MINN -33.5,-33.5,135.5,,,True
-401909798,2026-11-16,False,False,True,2306,149,86,45,2026-11-17T01:00Z,40|46,22|23,DraftKings,KSU -14.5,-14.5,153.5,-1650.0,950.0,True
-401920808,2026-11-16,False,False,True,245,2545,101,69,2026-11-17T01:30Z,43|58,40|29,DraftKings,TA&M -33.5,-33.5,162.5,,,True
-401917981,2026-11-16,False,False,True,2433,2937,118,81,2026-11-17T01:30Z,63|55,36|45,,,,,,,
-401929192,2026-11-16,False,False,True,204,2837,109,71,2026-11-17T02:30Z,55|54,40|31,DraftKings,ORST -16.5,-16.5,154.5,-1650.0,950.0,True
-401926228,2026-11-16,False,False,True,2172,2145,101,63,2026-11-17T03:00Z,50|51,34|29,,,,,,,
-401920373,2026-11-16,False,False,True,28,2640,97,92,2026-11-17T03:00Z,52|45,49|43,DraftKings,UCSD -18.5,-18.5,156.5,-3200.0,1400.0,True
-401917532,2026-11-16,False,False,True,2608,2502,94,78,2026-11-17T03:00Z,44|50,38|40,DraftKings,SMC -18.5,-18.5,151.5,-3200.0,1400.0,True
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401924265,2026-11-16,False,False,True,26,299,105,66,2026-11-17T03:00Z,53|52,20|46,DraftKings,UCLA -30.5,-30.5,144.5,,,True,Michael Irving|Kelly Pfeifer|Anthony Burris,3729,
+401920962,2026-11-16,False,False,True,2413,124809,104,69,2026-11-16T16:00Z,48|56,30|39,,,,,,,,Jabir Walker|Kyle Bottoms|James Curran,1032,
+401929371,2026-11-16,False,False,True,2453,2225,87,49,2026-11-16T17:00Z,40|47,30|19,,,,,,,,Donta Carter|Michael Woods|Chuck McCoy,3000,
+401911211,2026-11-16,False,False,True,45,366,94,57,2026-11-16T17:00Z,42|52,26|31,,,,,,,,Greg Gerritsen|Leslie Jones|Justin McKie,1737,
+401929419,2026-11-16,False,False,True,2638,50,79,46,2026-11-16T19:00Z,41|38,29|17,DraftKings,UTEP -20.5,-20.5,142.5,-4000.0,1600.0,True,Randy Heimerman|Mike Littlewood|Jourdan Love,3573,
+401921087,2026-11-16,False,False,True,2378,314,75,67,2026-11-16T23:00Z,30|45,27|40,DraftKings,IONA -2.5,2.5,143.5,124.0,-148.0,False,"Matt Potter|Tim Smith|Edward Corbett, Jr",695,
+401916298,2026-11-16,False,False,True,120,2016,117,57,2026-11-16T23:00Z,60|57,30|27,DraftKings,MD -34.5,-34.5,154.5,,,True,Verne Harris|Tim Comer|Brian Dorsey,8933,
+401916317,2026-11-16,False,False,True,194,2504,86,59,2026-11-16T23:30Z,34|52,29|30,DraftKings,OSU -32.5,-32.5,154.5,,,True,Keith Kimble|Paul Szelc|Jeffrey Anderson,8305,
+401928841,2026-11-16,False,False,True,2309,2198,49,65,2026-11-17T00:00Z,25|24,31|34,DraftKings,KENT -9.5,-9.5,161.5,-520.0,390.0,True,Steve McJunkins|Crystal Hogan|Ian  Caldwell,1271,
+401927352,2026-11-16,False,False,True,2428,3229,117,71,2026-11-17T00:00Z,60|57,37|34,,,,,,,,Jemel Spearman|Galen Durant|Warren Michael,2325,
+401925864,2026-11-16,False,False,True,202,98,67,64,2026-11-17T00:00Z,26|41,40|24,DraftKings,TLSA -5.5,-5.5,158.5,-278.0,225.0,True,Chuck Jones|Pat Adams|Wil Howard,3267,
+401922240,2026-11-16,False,False,True,56,2227,91,56,2026-11-17T00:00Z,40|51,27|29,,,,,,,,Nick Nadeau|Felix Fuerte|Garrett Jones,1013,
+401921804,2026-11-16,False,False,True,96,2755,88,59,2026-11-17T00:00Z,36|52,30|29,DraftKings,UK -28.5,-28.5,152.5,-50000.0,4000.0,True,Steven Anderson|Rob Rorke|John Johnson,19155,
+401921182,2026-11-16,False,False,True,219,111949,75,53,2026-11-17T00:00Z,37|38,22|31,,,,,,,,Steven Perry|Gordon Bentley|Michael Session,1208,
+401919807,2026-11-16,False,False,True,112358,2900,70,79,2026-11-17T00:00Z,36|34,30|49,DraftKings,STMN -1.5,1.5,145.5,-112.0,-108.0,False,Michael Palau|Jason Stallworth|Justin Wallace,321,
+401918075,2026-11-16,False,False,True,228,2643,87,51,2026-11-17T00:00Z,38|49,28|23,DraftKings,CLEM -24.5,-24.5,142.5,-6500.0,2000.0,True,Lee Cassell|Mike Millione|Joe Switzer,5358,
+401911240,2026-11-16,False,False,True,259,257,85,68,2026-11-17T00:00Z,41|44,23|45,DraftKings,VT -12.5,-12.5,151.5,-1050.0,675.0,True,Roger Ayers|A.J. Desai|Connor Mooney,5604,
+401906783,2026-11-16,False,False,True,61,294,107,62,2026-11-17T00:00Z,50|57,31|31,DraftKings,UGA -21.5,-21.5,153.5,-5000.0,1800.0,True,Patrick Evans|Bart Lenox|K.B. Burdett Jr.,5746,
+401927364,2026-11-16,False,False,True,2181,2627,79,83,2026-11-17T00:30Z,33|46,35|48,DraftKings,DRKE -8.5,-8.5,146.5,-455.0,350.0,True,Randy  McCall|Bret Smith|Eric Curry,2993,
+401926153,2026-11-16,False,False,True,2546,111166,115,45,2026-11-17T00:30Z,61|54,18|27,,,,,,,,Ed Crenshaw Jr.|Jake Keller|Bob Franklin,1023,
+401929411,2026-11-16,False,False,True,2571,561,107,67,2026-11-17T01:00Z,48|59,32|35,,,,,,,,David Walker|Kristyne Esparza|Derek Henry,1920,
+401928997,2026-11-16,False,False,True,2674,502,106,35,2026-11-17T01:00Z,52|54,20|15,,,,,,,,Rick Crawford|Jeff Malham|Eric Dust,1743,
+401920735,2026-11-16,False,False,True,77,171,53,75,2026-11-17T01:00Z,19|34,28|47,DraftKings,NU -12.5,-12.5,139.5,-850.0,575.0,True,Mike Reed|Alfred Smith|Jason Phillips,3874,
+401917964,2026-11-16,False,False,True,2623,2000,73,64,2026-11-17T01:00Z,31|42,24|40,DraftKings,MOST -5.5,-5.5,140.5,-230.0,190.0,True,Jason Baker|Todd Austin|Lucas Santos,2319,
+401917917,2026-11-16,False,False,True,197,2110,99,66,2026-11-17T01:00Z,49|50,35|31,DraftKings,OKST -18.5,-18.5,162.5,-3600.0,1500.0,True,John Gaffney|Michael Greenstein|Kipp Kissinger,4323,
+401916307,2026-11-16,False,False,True,135,2710,99,63,2026-11-17T01:00Z,54|45,27|36,DraftKings,MINN -33.5,-33.5,135.5,,,True,Brian McNutt|Randy Richardson|Luke Schumer,6831,
+401909798,2026-11-16,False,False,True,2306,149,86,45,2026-11-17T01:00Z,40|46,22|23,DraftKings,KSU -14.5,-14.5,153.5,-1650.0,950.0,True,Tony Padilla|Doug Sirmons|Justin Shamion,6046,
+401920808,2026-11-16,False,False,True,245,2545,101,69,2026-11-17T01:30Z,43|58,40|29,DraftKings,TA&M -33.5,-33.5,162.5,,,True,Doug Shows|Garrick Shannon|Vladimir Voyard-Tadal,6420,
+401917981,2026-11-16,False,False,True,2433,2937,118,81,2026-11-17T01:30Z,63|55,36|45,,,,,,,,Rodrick Dixon|Hunter Allen|Michael Wallace,1270,
+401929192,2026-11-16,False,False,True,204,2837,109,71,2026-11-17T02:30Z,55|54,40|31,DraftKings,ORST -16.5,-16.5,154.5,-1650.0,950.0,True,Deron White|Marques Pettigrew|Chris Merlo,2426,
+401926228,2026-11-16,False,False,True,2172,2145,101,63,2026-11-17T03:00Z,50|51,34|29,,,,,,,,Tony Chiazza|Chance Moore|Jacob Hirz,593,
+401920373,2026-11-16,False,False,True,28,2640,97,92,2026-11-17T03:00Z,52|45,49|43,DraftKings,UCSD -18.5,-18.5,156.5,-3200.0,1400.0,True,Antinio Petty|Matthew Ruskasin|Tommy Johnson,1632,
+401917532,2026-11-16,False,False,True,2608,2502,94,78,2026-11-17T03:00Z,44|50,38|40,DraftKings,SMC -18.5,-18.5,151.5,-3200.0,1400.0,True,Darron George|Gregory Nixon|Clarence Armstrong,2716,
