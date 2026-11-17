@@ -90,5 +90,47 @@ def main():
         print(f"probe {name}: {len(text)} chars")
 
 
+def game_context():
+    """What each feed says about weather, officials, venue and injuries, and which play types exist.
+
+    Writes data/probe/context_<league>.txt for college football, NFL, college basketball and the NBA."""
+    feeds = {
+        "cfb": ("football/college-football", {"groups": 80}),
+        "nfl": ("football/nfl", {}),
+        "mcbb": ("basketball/mens-college-basketball", {"groups": 50}),
+        "nba": ("basketball/nba", {}),
+    }
+    for key, (path, extra) in feeds.items():
+        base = f"https://site.api.espn.com/apis/site/v2/sports/{path}"
+        sb = get(f"{base}/scoreboard", {**extra, "limit": 200}) or {}
+        evs = [e for e in sb.get("events", []) if (e.get("status", {}).get("type", {}) or {}).get("completed")]
+        text = f"scoreboard events: {len(sb.get('events', []))}, completed: {len(evs)}\n"
+        if sb.get("events"):
+            e0 = sb["events"][0]
+            comp = (e0.get("competitions") or [{}])[0]
+            text += "SCOREBOARD weather: " + json.dumps(e0.get("weather")) + "\n"
+            text += "SCOREBOARD venue: " + json.dumps(comp.get("venue"))[:400] + "\n"
+            text += "SCOREBOARD notes/odds: " + json.dumps(comp.get("odds"))[:400] + "\n"
+        types, officials, n = {}, 0, 0
+        for e in evs[:6]:
+            s = get(f"{base}/summary", {"event": e["id"]}) or {}
+            gi = s.get("gameInfo") or {}
+            if n == 0:
+                text += "GAMEINFO: " + json.dumps(gi)[:2500] + "\n"
+                text += "INJURIES: " + json.dumps(s.get("injuries"))[:1200] + "\n"
+                text += "SUMMARY KEYS: " + ", ".join(s.keys()) + "\n"
+            officials += len(gi.get("officials") or [])
+            n += 1
+            plays = s.get("plays") or [p for d in (s.get("drives") or {}).get("previous", []) for p in d.get("plays", [])]
+            for p in plays:
+                t = (p.get("type") or {}).get("text", "?")
+                types[t] = types.get(t, 0) + 1
+        text += f"officials listed across {n} games: {officials}\n"
+        text += "PLAY TYPES: " + json.dumps(sorted(types.items(), key=lambda kv: -kv[1])[:80]) + "\n"
+        (OUT / f"context_{key}.txt").write_text(text[:30000])
+        print(f"probe context_{key}: {len(text)} chars")
+
+
 if __name__ == "__main__":
     main()
+    game_context()

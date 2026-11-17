@@ -337,7 +337,11 @@ def run(site_dir=None, n_sims: int = 20000) -> dict | None:
     out = {"source": "Bracket Matrix", "url": "http://www.bracketmatrix.com/", "label": info["label"],
            "latest_bracket": info["latest_bracket"], "n_brackets": info["n_brackets"], "field_size": len(field),
            "rounds": ROUNDS, "sims": n_sims, "days_to_selection": days_left, "unmatched": missing,
-           "region_names": br["region_names"], "distance_coef": config.TOURNEY_LOG_DISTANCE if sites else None,
+           "region_names": br["region_names"],
+           # Bracket layout for the picture: per region, 16 slots in game order (a slot with two ids is a
+           # First Four game); semifinal pairings by region number
+           "slots": br["regions"], "semis": [[int(a) + 1, int(b) + 1] for a, b in br["semis"]],
+           "distance_coef": config.TOURNEY_LOG_DISTANCE if sites else None,
            "teams": sorted(rows, key=lambda r: -r["odds"][-1])}
     (site_dir / "bracket.json").write_text(json.dumps(out, separators=(",", ":")))
     print(f"bracket: {len(field)} teams simulated {n_sims:,} times; favorite "

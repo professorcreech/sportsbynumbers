@@ -52,6 +52,11 @@ a { color: var(--accent); }
 }
 .brand .num { color: var(--accent); font-family: var(--font-data); font-size: 15px; font-weight: 600; letter-spacing: 0; }
 .sport { font: 600 13px/1 var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.sportnav { display: flex; gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 999px; }
+.sportnav a { padding: 5px 10px; border-radius: 999px; font: 700 12px/1 var(--font-body); letter-spacing: .06em; color: var(--muted); text-decoration: none; }
+.sportnav a:hover { color: var(--fg); }
+.sportnav a[aria-current="page"] { background: var(--accent); color: var(--panel); }
+.sportnav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .stamp { margin-left: auto; font: 12px var(--font-data); color: var(--muted); }
 .tabs { display: flex; gap: 2px; overflow-x: auto; width: 100%; scrollbar-width: none; }
 .tabs a {
@@ -188,3 +193,19 @@ footer { color: var(--muted); font-size: 12px; padding-block: 0 32px; }
 @media (prefers-reduced-motion: no-preference) {
   .prob span, .bar b { transition: width .3s ease; }
 }
+
+/* Projected bracket */
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.bracket { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(168px, 1fr); gap: 14px; overflow-x: auto; padding-bottom: 8px; }
+.bracket .rd { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.bracket .rd h3 { font: 600 11px var(--font-body); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.bracket .col { display: flex; flex-direction: column; justify-content: space-around; gap: 10px; flex: 1; }
+.bgame { display: block; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--fg); text-decoration: none; font-size: 13px; overflow: hidden; }
+.bgame:hover { border-color: var(--accent); }
+.bgame > div { display: flex; justify-content: space-between; gap: 8px; padding: 5px 8px; }
+.bgame > div + div { border-top: 1px solid var(--line); }
+.bgame .w { font-weight: 700; }
+.bgame .l { color: var(--muted); }
+.bgame .sd { color: var(--muted); font: 11px var(--font-data); margin-right: 6px; }
+.bgame .p { font-family: var(--font-data); font-size: 12px; }
+.bgame .ff { font-size: 10px; color: var(--muted); margin-left: 4px; }

@@ -351,7 +351,7 @@
       (B.distance_coef ? " Every game includes the distance edge measured in past tournaments: about 2 points for a team 50 miles from the arena against one 1,000 miles away." : "") + "</p>" +
       '<div class="controls"><div class="field"><label for="b-r">Region</label><select id="b-r"><option value="">All regions</option>' +
       names.map((n, i) => '<option value="' + (i + 1) + '"' + (String(i + 1) === regionSel ? " selected" : "") + ">" + esc(n) + "</option>").join("") +
-      "</select></div></div><div id='b-t'></div>" +
+      '</select></div><div class="field"><label>View</label><div class="seg" id="b-v"><button type="button" data-v="table">Table</button><button type="button" data-v="bracket">Bracket</button></div></div></div><div id="b-t"></div>' +
       '<p class="note">Last 4 tournaments: wins and losses, and average points per game above or below what the ratings expected. Shown for context only; across 2012–2026, past over- or under-performance didn\'t reliably carry into the next tournament, so it doesn\'t move the odds.</p>';
     const odds = (i) => (t) => t.odds[i];
     const pctCell = (i) => (t) => { const v = t.odds[i]; return v >= 0.995 ? "✓" : v < 0.001 ? "<0.1" : (v * 100).toFixed(v < 0.1 ? 1 : 0); };
@@ -364,13 +364,75 @@
       { key: "rec", label: "Last 4", html: (t) => (t.record ? t.record.wins + "-" + (t.record.games - t.record.wins) + '<span class="rk ' + cls(t.record.vs_exp) + '">' + sgn(t.record.vs_exp) + "</span>" : "–"), val: (t) => (t.record ? t.record.vs_exp : null) },
     ];
     [1, 2, 3, 4, 5, 6, 7].forEach((i) => cols.push({ key: "r" + i, label: R[i], val: odds(i), html: pctCell(i) }));
+    let view = recall("sbn-bview") === "bracket" && B.slots ? "bracket" : "table";
     const draw = () => {
       const r = $("#b-r").value;
       store("sbn-region", r);
-      table($("#b-t"), cols, B.teams.filter((t) => !r || String(t.region) === r), "r7", { page: 100 });
+      store("sbn-bview", view);
+      document.querySelectorAll("#b-v button").forEach((b) => b.classList.toggle("on", b.dataset.v === view));
+      $("#b-r").closest(".field").style.display = view === "bracket" ? "none" : "";
+      if (view === "bracket") bracketView($("#b-t"), B);
+      else table($("#b-t"), cols, B.teams.filter((t) => !r || String(t.region) === r), "r7", { page: 100 });
     };
     $("#b-r").addEventListener("change", draw);
+    document.querySelectorAll("#b-v button").forEach((b) => b.addEventListener("click", () => { view = b.dataset.v; draw(); }));
     draw();
+  }
+
+  // Projected bracket: every game goes to the team the ratings favor at a neutral site; the number beside
+  // each team is its win chance in that game. (The table's odds also weigh site and rating uncertainty.)
+  function bracketView(el, B) {
+    if (!B.slots) { el.innerHTML = '<p class="note">The bracket picture appears after the next daily update.</p>'; return; }
+    const byId = Object.fromEntries(B.teams.map((t) => [t.id, t]));
+    const nm = (id) => (teamById[id] ? teamById[id].short : byId[id] ? byId[id].team : id);
+    const seed = (id) => (byId[id] ? byId[id].seed : "");
+    const names = B.region_names || ["Region 1", "Region 2", "Region 3", "Region 4"];
+    // Win chance of a over b; falls back to simulation odds for a team the ratings don't know
+    const game = (a, b, round) => {
+      let p;
+      if (teamById[a] && teamById[b]) p = predict(a, b, true).home_win;
+      else { const oa = (byId[a] || { odds: [] }).odds[round] || 0.01, ob = (byId[b] || { odds: [] }).odds[round] || 0.01; p = oa / (oa + ob); }
+      return { a, b, p, w: p >= 0.5 ? a : b };
+    };
+    const card = (g, tag) => {
+      const row = (id, p) => '<div class="' + (g.w === id ? "w" : "l") + '"><span><span class="sd">' + seed(id) + "</span>" + esc(nm(id)) + (tag && g.w === id ? '<span class="ff">' + tag + "</span>" : "") +
+        '</span><span class="p">' + Math.round(p * 100) + "%</span></div>";
+      const href = teamById[g.a] && teamById[g.b] ? "#vs-" + g.a + "-" + g.b + "-n" : "#bracket";
+      return '<a class="bgame" href="' + href + '">' + row(g.a, g.p) + row(g.b, 1 - g.p) + "</a>";
+    };
+    const names4 = ["Round of 64", "Round of 32", "Sweet 16", "Elite 8"];
+    const firstFour = [];
+    const regions = B.slots.map((slots) => {
+      let cur = slots.map((sl) => {
+        if (sl.length === 1) return { id: sl[0], ff: false };
+        const g = game(sl[0], sl[1], 1); firstFour.push(g); return { id: g.w, ff: true };
+      });
+      const rounds = [];
+      for (let rd = 0; rd < 4; rd++) {
+        const games = [], next = [];
+        for (let i = 0; i < cur.length; i += 2) { const g = game(cur[i].id, cur[i + 1].id, rd + 2); games.push([g, cur[i].ff || cur[i + 1].ff ? cur : null, cur[i], cur[i + 1]]); next.push({ id: g.w, ff: false }); }
+        rounds.push(games); cur = next;
+      }
+      return { rounds, champ: cur[0].id };
+    });
+    const sel = Number(recall("sbn-bregion")) || 1;
+    const tabs = '<div class="seg" id="b-reg">' + names.map((n, i) => '<button type="button" data-r="' + (i + 1) + '" class="' + (sel === i + 1 ? "on" : "") + '">' + esc(String(n).split(" ")[0]) + "</button>").join("") +
+      '<button type="button" data-r="5" class="' + (sel === 5 ? "on" : "") + '">Final Four</button></div>';
+    let body;
+    if (sel <= 4) {
+      const R = regions[sel - 1];
+      body = '<div class="bracket">' + R.rounds.map((games, rd) => '<div class="rd"><h3>' + names4[rd] + '</h3><div class="col">' +
+        games.map(([g, , x, y]) => card(g, rd === 0 && (x.ff || y.ff) ? "" : "")).join("") + "</div></div>").join("") +
+        '<div class="rd"><h3>Region winner</h3><div class="col"><div class="bgame"><div class="w"><span><span class="sd">' + seed(R.champ) + "</span>" + esc(nm(R.champ)) + "</span></div></div></div></div></div>";
+    } else {
+      const semis = B.semis.map(([a, b]) => game(regions[a - 1].champ, regions[b - 1].champ, 6));
+      const fin = game(semis[0].w, semis[1].w, 7);
+      body = '<div class="bracket"><div class="rd"><h3>Final Four</h3><div class="col">' + semis.map((g) => card(g)).join("") + '</div></div><div class="rd"><h3>Championship</h3><div class="col">' + card(fin) +
+        '</div></div><div class="rd"><h3>Champion</h3><div class="col"><div class="bgame"><div class="w"><span><span class="sd">' + seed(fin.w) + "</span>" + esc(nm(fin.w)) + "</span></div></div></div></div></div>" +
+        (firstFour.length ? '<h3 style="margin:16px 0 8px">First Four</h3><div class="bracket">' + firstFour.map((g) => '<div class="rd"><div class="col">' + card(g) + "</div></div>").join("") + "</div>" : "");
+    }
+    el.innerHTML = tabs + body + '<p class="note">Projected from today\'s ratings, one game at a time. Click a game for the full matchup report. The probabilities are for that single game at a neutral site; the table view gives each team\'s chance to reach every round.</p>';
+    el.querySelectorAll("#b-reg button").forEach((b) => b.addEventListener("click", () => { store("sbn-bregion", b.dataset.r); bracketView(el, B); }));
   }
 
   const money = (x) => (x == null ? "–" : (Math.abs(x) >= 1e6 ? (x < 0 ? "−$" : "$") + (Math.abs(x) / 1e6).toFixed(1) + "M" : (x < 0 ? "−$" : "$") + Math.round(Math.abs(x) / 1e3) + "K"));
