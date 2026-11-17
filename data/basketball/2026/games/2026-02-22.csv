@@ -1,22 +1,22 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
-401825534,2026-02-22,False,True,True,127,194,66,60,2026-02-22T18:00Z,23|43,26|34,Draft Kings,MSU -10.5,-10.5,146.5,-700.0,500.0,True
-401825535,2026-02-22,False,True,True,275,2294,84,71,2026-02-22T21:00Z,40|44,41|30,Draft Kings,WIS -2.5,-2.5,147.5,-170.0,142.0,True
-401828679,2026-02-22,False,True,True,322,44,61,75,2026-02-22T17:00Z,31|30,34|41,Draft Kings,AMER -3.5,3.5,141.5,154.0,-185.0,False
-401828240,2026-02-22,False,True,True,235,5,67,78,2026-02-22T17:00Z,30|37,46|32,Draft Kings,MEM -5.5,-5.5,152.5,-250.0,205.0,True
-401824435,2026-02-22,False,True,True,2083,107,63,72,2026-02-22T17:00Z,30|33,31|41,Draft Kings,BUCK -2.5,-2.5,142.5,-148.0,124.0,True
-401824375,2026-02-22,False,True,True,2329,104,70,67,2026-02-22T17:00Z,29|41,28|39,Draft Kings,BU -2.5,2.5,141.5,114.0,-135.0,False
-401813394,2026-02-22,False,True,True,2520,315,67,62,2026-02-22T17:00Z,27|40,28|34,Draft Kings,NIA -1.5,1.5,131.5,102.0,-122.0,False
-401824312,2026-02-22,False,True,True,2771,314,88,86,2026-02-22T18:00Z,36|32|9|11,33|35|9|9,Draft Kings,MRMK -6.5,-6.5,136.5,,,True
-401817676,2026-02-22,False,True,True,2174,2739,74,70,2026-02-22T18:00Z,31|43,28|42,Draft Kings,DETM -1.5,-1.5,147.5,-115.0,-105.0,True
-401813343,2026-02-22,False,True,True,2368,2529,65,63,2026-02-22T18:00Z,33|32,36|27,Draft Kings,MRST -7.5,-7.5,146.5,-395.0,310.0,True
-401828242,2026-02-22,False,True,True,2655,242,81,75,2026-02-22T19:00Z,36|45,33|42,Draft Kings,TULN -4.5,-4.5,147.5,-245.0,200.0,True
-401820593,2026-02-22,False,True,True,2514,2217,79,85,2026-02-22T19:00Z,36|43,39|46,Draft Kings,QUIN -6.5,-6.5,150.5,-310.0,250.0,True
-401817680,2026-02-22,False,True,True,2754,94,64,58,2026-02-22T19:00Z,35|29,15|43,Draft Kings,YSU -2.5,-2.5,152.5,-135.0,114.0,True
-401817679,2026-02-22,False,True,True,2750,2523,68,81,2026-02-22T19:00Z,29|39,39|42,Draft Kings,WRST -4.5,-4.5,146.5,-198.0,164.0,True
-401817678,2026-02-22,False,True,True,325,2870,86,92,2026-02-22T19:00Z,40|46,43|49,Draft Kings,PFW -3.5,3.5,163.5,145.0,-175.0,False
-401813431,2026-02-22,False,True,True,2561,2612,72,63,2026-02-22T19:00Z,37|35,23|40,Draft Kings,SIE -5.5,-5.5,135.5,,,True
-401813370,2026-02-22,False,True,True,116,2099,68,47,2026-02-22T19:00Z,20|48,24|23,Draft Kings,MSM -7.5,-7.5,137.5,-340.0,270.0,True
-401812081,2026-02-22,False,True,True,2182,119,68,62,2026-02-22T19:00Z,33|35,27|35,Draft Kings,TOW -2.5,2.5,130.5,130.0,-155.0,False
-401817677,2026-02-22,False,True,True,2473,270,81,70,2026-02-22T20:00Z,41|40,34|36,Draft Kings,OAK -5.5,-5.5,159.5,-270.0,220.0,True
-401828243,2026-02-22,False,True,True,202,2636,100,74,2026-02-22T21:00Z,53|47,37|37,Draft Kings,TLSA -21.5,-21.5,159.5,-5000.0,1800.0,True
-401828241,2026-02-22,False,True,True,249,2226,73,72,2026-02-22T21:00Z,32|41,34|38,Draft Kings,UNT -2.5,-2.5,140.5,-148.0,124.0,True
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401825534,2026-02-22,False,True,True,127,194,66,60,2026-02-22T18:00Z,23|43,26|34,DraftKings,MSU -10.5,-10.5,146.5,-700.0,500.0,True,D.J. Carstensen|Kelly Pfeifer|Jason Phillips,14797,
+401825535,2026-02-22,False,True,True,275,2294,84,71,2026-02-22T21:00Z,40|44,41|30,DraftKings,WIS -2.5,-2.5,147.5,-170.0,142.0,True,Michael Irving|Ron Groover|Nate Harris,16838,
+401828679,2026-02-22,False,True,True,322,44,61,75,2026-02-22T17:00Z,31|30,34|41,DraftKings,AMER -3.5,3.5,141.5,154.0,-185.0,False,Scott Bennett|Ernest Hamilton III|Brandon Kamil,1144,
+401828240,2026-02-22,False,True,True,235,5,67,78,2026-02-22T17:00Z,30|37,46|32,DraftKings,MEM -5.5,-5.5,152.5,-250.0,205.0,True,Doug Shows|Steven Anderson|Bart Lenox,9541,
+401824435,2026-02-22,False,True,True,2083,107,63,72,2026-02-22T17:00Z,30|33,31|41,DraftKings,BUCK -2.5,-2.5,142.5,-148.0,124.0,True,Sean Campbell|Joe Switzer|Jack Loughran,901,
+401824375,2026-02-22,False,True,True,2329,104,70,67,2026-02-22T17:00Z,29|41,28|39,DraftKings,BU -2.5,2.5,141.5,114.0,-135.0,False,Phil Sallustio Jr.|Vasili Mallios|Andre Roberson,774,
+401813394,2026-02-22,False,True,True,2520,315,67,62,2026-02-22T17:00Z,27|40,28|34,DraftKings,NIA -1.5,1.5,131.5,102.0,-122.0,False,Clarence Armstrong|Nathan Hall|Michael Nardone,989,
+401824312,2026-02-22,False,True,True,2771,314,88,86,2026-02-22T18:00Z,36|32|9|11,33|35|9|9,DraftKings,MRMK -6.5,-6.5,136.5,,,True,Brian Zink|Adam Vandenburgh|Mikerlange Fleury,2109,
+401817676,2026-02-22,False,True,True,2174,2739,74,70,2026-02-22T18:00Z,31|43,28|42,DraftKings,DETM -1.5,-1.5,147.5,-115.0,-105.0,True,David Walker|Brian Dorsey|Mike  Pearson,1887,
+401813343,2026-02-22,False,True,True,2368,2529,65,63,2026-02-22T18:00Z,33|32,36|27,DraftKings,MRST -7.5,-7.5,146.5,-395.0,310.0,True,Ed Corliss|Tyler Sandmann|Steven Perry Jr.,1354,
+401828242,2026-02-22,False,True,True,2655,242,81,75,2026-02-22T19:00Z,36|45,33|42,DraftKings,TULN -4.5,-4.5,147.5,-245.0,200.0,True,Byron Jarrett|Owen Shortt|K.B. Burdett Jr.,1957,
+401820593,2026-02-22,False,True,True,2514,2217,79,85,2026-02-22T19:00Z,36|43,39|46,DraftKings,QUIN -6.5,-6.5,150.5,-310.0,250.0,True,Brandon Cruz|Tim Smith|Mike Evans,1474,
+401817680,2026-02-22,False,True,True,2754,94,64,58,2026-02-22T19:00Z,35|29,15|43,DraftKings,YSU -2.5,-2.5,152.5,-135.0,114.0,True,Larry Scirotto|Jermaine  Rogers|Blanca Burns,2344,
+401817679,2026-02-22,False,True,True,2750,2523,68,81,2026-02-22T19:00Z,29|39,39|42,DraftKings,WRST -4.5,-4.5,146.5,-198.0,164.0,True,Brian McNutt|John Floyd|John Washo,4659,
+401817678,2026-02-22,False,True,True,325,2870,86,92,2026-02-22T19:00Z,40|46,43|49,DraftKings,PFW -3.5,3.5,163.5,145.0,-175.0,False,Steve Honacki|King  Whetstone|Tariq Lucas,2186,
+401813431,2026-02-22,False,True,True,2561,2612,72,63,2026-02-22T19:00Z,37|35,23|40,DraftKings,SIE -5.5,-5.5,135.5,,,True,Nathan Farrell|John Cahill Jr.|Tommy Morrissey,6113,
+401813370,2026-02-22,False,True,True,116,2099,68,47,2026-02-22T19:00Z,20|48,24|23,DraftKings,MSM -7.5,-7.5,137.5,-340.0,270.0,True,Tony Chiazza|Greg Evans|Tom Deneen,2626,
+401812081,2026-02-22,False,True,True,2182,119,68,62,2026-02-22T19:00Z,33|35,27|35,DraftKings,TOW -2.5,2.5,130.5,130.0,-155.0,False,Sean Hull|0|Evon Burroughs,1237,
+401817677,2026-02-22,False,True,True,2473,270,81,70,2026-02-22T20:00Z,41|40,34|36,DraftKings,OAK -5.5,-5.5,159.5,-270.0,220.0,True,Earl Walton|Tim Comer|Aran Hart,2686,
+401828243,2026-02-22,False,True,True,202,2636,100,74,2026-02-22T21:00Z,53|47,37|37,DraftKings,TLSA -21.5,-21.5,159.5,-5000.0,1800.0,True,Lee Cassell|Keith Kimble|Courtney Green,3618,
+401828241,2026-02-22,False,True,True,249,2226,73,72,2026-02-22T21:00Z,32|41,34|38,DraftKings,UNT -2.5,-2.5,140.5,-148.0,124.0,True,Jeb Hartness|Paul Szelc|Vladimir Voyard-Tadal,3237,

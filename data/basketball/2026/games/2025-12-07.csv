@@ -1,49 +1,49 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
-401823448,2025-12-07,False,False,True,2250,2454,109,58,2025-12-08T02:00Z,53|56,28|30,Draft Kings,GONZ -42.5,-42.5,166.5,,,True
-401812265,2025-12-07,False,False,True,333,2636,97,55,2025-12-07T19:00Z,56|41,17|38,Draft Kings,ALA -33.5,-33.5,171.5,,,True
-401817268,2025-12-07,False,False,True,153,46,81,61,2025-12-07T22:00Z,44|37,39|22,Draft Kings,UNC -10.5,-10.5,149.5,-700.0,500.0,True
-401819902,2025-12-07,True,False,True,2641,99,82,58,2025-12-07T20:00Z,47|35,26|32,Draft Kings,TTU -5.5,-5.5,154.5,-225.0,185.0,True
-401819885,2025-12-07,True,False,True,2305,142,80,60,2025-12-07T18:00Z,33|47,25|35,Draft Kings,KU -5.5,-5.5,150.5,-270.0,220.0,True
-401826816,2025-12-07,False,False,True,349,417,111,53,2025-12-07T17:00Z,46|65,27|26,,,,,,,
-401820157,2025-12-07,False,False,True,2426,2005,61,56,2025-12-07T17:00Z,24|37,25|31,Draft Kings,NAVY -9.5,-9.5,133.5,-520.0,390.0,True
-401829354,2025-12-07,False,False,True,282,88,77,55,2025-12-07T18:00Z,35|42,27|28,Draft Kings,INST -11.5,-11.5,158.5,-675.0,490.0,True
-401826956,2025-12-07,False,False,True,2900,2692,88,65,2025-12-07T18:00Z,47|41,23|42,Draft Kings,STMN -7.5,-7.5,154.5,-345.0,275.0,True
-401823192,2025-12-07,False,True,True,2771,2217,74,63,2025-12-07T18:00Z,39|35,30|33,Draft Kings,MRMK -3.5,-3.5,144.5,-185.0,154.0,True
-401812650,2025-12-07,False,False,True,111,2115,73,56,2025-12-07T18:00Z,35|38,21|35,Draft Kings,NE -1.5,-1.5,138.5,-120.0,100.0,True
-401830122,2025-12-07,False,False,True,292,2046,63,50,2025-12-07T19:00Z,31|32,30|20,Draft Kings,RGV -2.5,-2.5,151.5,-155.0,130.0,True
-401828644,2025-12-07,False,False,True,2166,2608,61,70,2025-12-07T19:00Z,24|37,27|43,Draft Kings,SMC -8.5,8.5,137.5,320.0,-410.0,False
-401824892,2025-12-07,False,False,True,2193,2839,78,62,2025-12-07T19:00Z,35|43,23|39,,,,,,,
-401823726,2025-12-07,False,True,True,2529,314,69,81,2025-12-07T19:00Z,32|37,36|45,Draft Kings,SHU -1.5,-1.5,163.5,-118.0,-102.0,True
-401823490,2025-12-07,False,False,True,2382,2476,100,50,2025-12-07T19:00Z,57|43,26|24,,,,,,,
-401823233,2025-12-07,False,False,True,526,2226,76,81,2025-12-07T19:00Z,37|39,36|45,Draft Kings,FAU -2.5,2.5,150.5,120.0,-142.0,False
-401820802,2025-12-07,False,False,True,2429,328,53,79,2025-12-07T19:00Z,30|23,44|35,Draft Kings,USU -10.5,10.5,139.5,440.0,-600.0,False
-401820583,2025-12-07,False,True,True,2514,2520,72,58,2025-12-07T19:00Z,38|34,20|38,Draft Kings,QUIN -14.5,-14.5,147.5,-1350.0,800.0,True
-401820214,2025-12-07,False,False,True,2385,2062,80,51,2025-12-07T19:00Z,45|35,22|29,,,,,,,
-401818305,2025-12-07,False,False,True,43,82,80,66,2025-12-07T19:00Z,35|45,32|34,Draft Kings,YALE -12.5,-12.5,148.5,-1000.0,650.0,True
-401813381,2025-12-07,False,True,True,2612,315,71,43,2025-12-07T19:00Z,32|39,19|24,Draft Kings,SPU -5.5,-5.5,131.5,-230.0,190.0,True
-401813354,2025-12-07,False,True,True,2561,2099,74,52,2025-12-07T19:00Z,41|33,23|29,Draft Kings,SIE -17.5,-17.5,131.5,-2100.0,1100.0,True
-401813309,2025-12-07,False,True,True,2368,2363,80,68,2025-12-07T19:00Z,33|47,33|35,Draft Kings,MRST -7.5,-7.5,140.5,-345.0,275.0,True
-401812385,2025-12-07,False,False,True,2515,2598,89,56,2025-12-07T19:30Z,45|44,32|24,Draft Kings,RAD -13.5,-13.5,154.5,-1000.0,650.0,True
-401829449,2025-12-07,False,False,True,2617,2433,96,76,2025-12-07T20:00Z,47|49,37|39,Draft Kings,SFA -19.5,-19.5,142.5,,,True
-401827156,2025-12-07,False,False,True,2630,2011,74,64,2025-12-07T20:00Z,30|44,35|29,Draft Kings,UTM -6.5,-6.5,144.5,-218.0,180.0,True
-401826902,2025-12-07,False,False,True,2348,3120,89,37,2025-12-07T20:00Z,40|49,11|26,,,,,,,
-401817189,2025-12-07,False,False,True,139,2117,107,65,2025-12-07T20:00Z,52|55,32|33,Draft Kings,SLU -24.5,-24.5,160.5,,,True
-401828298,2025-12-07,False,False,True,2097,3229,149,62,2025-12-07T21:00Z,75|74,21|41,,,,,,,
-401826730,2025-12-07,True,False,True,344,2539,62,65,2025-12-07T21:00Z,22|40,30|35,Draft Kings,MSST -4.5,-4.5,150.5,-192.0,160.0,True
-401824828,2025-12-07,False,False,True,2116,119,86,61,2025-12-07T21:00Z,47|39,27|34,Draft Kings,UCF -9.5,-9.5,148.5,-440.0,340.0,True
-401823423,2025-12-07,False,False,True,189,486,131,50,2025-12-07T21:00Z,71|60,26|24,,,,,,,
-401817471,2025-12-07,False,False,True,24,2439,74,75,2025-12-07T21:00Z,39|35,38|37,Draft Kings,STAN -9.5,-9.5,164.5,-470.0,360.0,True
-401817448,2025-12-07,False,False,True,221,2275,73,80,2025-12-07T21:00Z,23|50,36|44,Draft Kings,PITT -8.5,-8.5,134.5,-425.0,330.0,True
-401811972,2025-12-07,False,False,True,2393,2057,62,83,2025-12-07T21:30Z,31|31,35|48,Draft Kings,BEL -3.5,3.5,153.5,136.0,-162.0,False
-401808934,2025-12-07,False,True,True,2545,2466,68,76,2025-12-07T21:30Z,29|39,25|51,Draft Kings,SELA -7.5,-7.5,133.5,-340.0,270.0,True
-401828312,2025-12-07,False,False,True,55,2040,66,39,2025-12-07T22:00Z,32|34,23|16,,,,,,,
-401824953,2025-12-07,False,False,True,288,2010,92,58,2025-12-07T22:00Z,35|57,28|30,Draft Kings,LIP -11.5,-11.5,146.5,-750.0,525.0,True
-401824139,2025-12-07,False,False,True,265,2440,64,78,2025-12-07T22:00Z,32|32,31|47,Draft Kings,WSU -2.5,-2.5,145.5,-135.0,114.0,True
-401820835,2025-12-07,False,False,True,158,156,71,50,2025-12-07T22:00Z,33|38,19|31,Draft Kings,NEB -5.5,-5.5,155.5,-225.0,185.0,True
-401817510,2025-12-07,False,True,True,2750,2739,86,58,2025-12-07T22:00Z,40|46,34|24,Draft Kings,WRST -6.5,-6.5,142.5,-290.0,235.0,True
-401817460,2025-12-07,True,False,True,2567,245,93,80,2025-12-07T22:00Z,41|36|16,27|50|3,Draft Kings,TA&M -1.5,1.5,164.5,105.0,-125.0,False
-401827000,2025-12-07,False,False,True,2627,2096,93,63,2025-12-07T22:30Z,53|40,23|40,,,,,,,
-401812255,2025-12-07,False,False,True,249,2628,55,65,2025-12-07T22:30Z,37|18,31|34,Draft Kings,TCU -9.5,9.5,135.5,360.0,-470.0,False
-401824939,2025-12-07,False,False,True,2837,2110,75,68,2025-12-07T23:00Z,32|43,35|33,Draft Kings,ETAM -2.5,-2.5,145.5,-135.0,114.0,True
-401829434,2025-12-07,False,False,True,2535,172,93,90,2025-12-08T00:00Z,42|51,50|40,Draft Kings,SAM -2.5,-2.5,166.5,-148.0,124.0,True
-401824129,2025-12-07,False,False,True,2547,2638,75,68,2025-12-08T01:00Z,37|38,31|37,Draft Kings,SEA -12.5,-12.5,136.5,-950.0,625.0,True
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401823448,2025-12-07,False,False,True,2250,2454,109,58,2025-12-08T02:00Z,53|56,28|30,DraftKings,GONZ -42.5,-42.5,166.5,,,True,D.J. Carstensen|Deldre Carr|Justin Shamion,6000,
+401812265,2025-12-07,False,False,True,333,2636,97,55,2025-12-07T19:00Z,56|41,17|38,DraftKings,ALA -33.5,-33.5,171.5,,,True,Courtney Green|Lucas Santos|Michael Wallace,13474,
+401817268,2025-12-07,False,False,True,153,46,81,61,2025-12-07T22:00Z,44|37,39|22,DraftKings,UNC -10.5,-10.5,149.5,-700.0,500.0,True,Ron Groover|Bert Smith|Roger Ayers,18583,
+401819902,2025-12-07,True,False,True,2641,99,82,58,2025-12-07T20:00Z,47|35,26|32,DraftKings,TTU -5.5,-5.5,154.5,-225.0,185.0,True,Joe Lindsay|Doug Sirmons|Chance Moore,0,
+401819885,2025-12-07,True,False,True,2305,142,80,60,2025-12-07T18:00Z,33|47,25|35,DraftKings,KU -5.5,-5.5,150.5,-270.0,220.0,True,Tony Chiazza|Marques Pettigrew|Jeffrey Anderson,15407,
+401826816,2025-12-07,False,False,True,349,417,111,53,2025-12-07T17:00Z,46|65,27|26,,,,,,,,Phil Sallustio Jr.|Javed Trotman|Kenny Long,620,
+401820157,2025-12-07,False,False,True,2426,2005,61,56,2025-12-07T17:00Z,24|37,25|31,DraftKings,NAVY -9.5,-9.5,133.5,-520.0,390.0,True,Jeff Clark|Mike Millione|Scott Bennett,1928,
+401829354,2025-12-07,False,False,True,282,88,77,55,2025-12-07T18:00Z,35|42,27|28,DraftKings,INST -11.5,-11.5,158.5,-675.0,490.0,True,,4198,
+401826956,2025-12-07,False,False,True,2900,2692,88,65,2025-12-07T18:00Z,47|41,23|42,DraftKings,STMN -7.5,-7.5,154.5,-345.0,275.0,True,Bret Wegenke|Dan Dorian|Greg Gerritsen,1998,
+401823192,2025-12-07,False,True,True,2771,2217,74,63,2025-12-07T18:00Z,39|35,30|33,DraftKings,MRMK -3.5,-3.5,144.5,-185.0,154.0,True,Matt Lavigne|Tom Deneen|Tim Smith,1193,
+401812650,2025-12-07,False,False,True,111,2115,73,56,2025-12-07T18:00Z,35|38,21|35,DraftKings,NE -1.5,-1.5,138.5,-120.0,100.0,True,Lamar Simpson|Tim Clougherty|Greg Evans,653,
+401830122,2025-12-07,False,False,True,292,2046,63,50,2025-12-07T19:00Z,31|32,30|20,DraftKings,RGV -2.5,-2.5,151.5,-155.0,130.0,True,Andre Crawford|Ross Cullins|Adrian  Judie,930,
+401828644,2025-12-07,False,False,True,2166,2608,61,70,2025-12-07T19:00Z,24|37,27|43,DraftKings,SMC -8.5,8.5,137.5,320.0,-410.0,False,Clarence Armstrong|Eric Lewis|Tommy Morrissey,2692,
+401824892,2025-12-07,False,False,True,2193,2839,78,62,2025-12-07T19:00Z,35|43,23|39,,,,,,,,,1991,
+401823726,2025-12-07,False,True,True,2529,314,69,81,2025-12-07T19:00Z,32|37,36|45,DraftKings,SHU -1.5,-1.5,163.5,-118.0,-102.0,True,Tony Henderson|John Cahill Jr.|Ed Corbett Jr.,822,
+401823490,2025-12-07,False,False,True,2382,2476,100,50,2025-12-07T19:00Z,57|43,26|24,,,,,,,,Sidney Cohen|Corey Taylor|Evan Berg,626,
+401823233,2025-12-07,False,False,True,526,2226,76,81,2025-12-07T19:00Z,37|39,36|45,DraftKings,FAU -2.5,2.5,150.5,120.0,-142.0,False,Josue  Nieves|Shane Land|Christopher Merb,2574,
+401820802,2025-12-07,False,False,True,2429,328,53,79,2025-12-07T19:00Z,30|23,44|35,DraftKings,USU -10.5,10.5,139.5,440.0,-600.0,False,Olandis Poole|Shaun Seales|Owen Shortt,2530,
+401820583,2025-12-07,False,True,True,2514,2520,72,58,2025-12-07T19:00Z,38|34,20|38,DraftKings,QUIN -14.5,-14.5,147.5,-1350.0,800.0,True,Matt Potter|Mikerlange Fleury|Mike Palua,1042,
+401820214,2025-12-07,False,False,True,2385,2062,80,51,2025-12-07T19:00Z,45|35,22|29,,,,,,,,Ron Tyburski|John Barley|Tony Santiago,321,
+401818305,2025-12-07,False,False,True,43,82,80,66,2025-12-07T19:00Z,35|45,32|34,DraftKings,YALE -12.5,-12.5,148.5,-1000.0,650.0,True,Michael Luckie|Michael Kitts|Daniel Basile,799,
+401813381,2025-12-07,False,True,True,2612,315,71,43,2025-12-07T19:00Z,32|39,19|24,DraftKings,SPU -5.5,-5.5,131.5,-230.0,190.0,True,Brian  O'Connell|Nathan Farrell|Scott Gooden,482,
+401813354,2025-12-07,False,True,True,2561,2099,74,52,2025-12-07T19:00Z,41|33,23|29,DraftKings,SIE -17.5,-17.5,131.5,-2100.0,1100.0,True,Brandon Cruz|Ed Corliss|Josh Anderson,4439,
+401813309,2025-12-07,False,True,True,2368,2363,80,68,2025-12-07T19:00Z,33|47,33|35,DraftKings,MRST -7.5,-7.5,140.5,-345.0,275.0,True,Nathan Hall|Michael Nardone|Steven Perry Jr.,1356,
+401812385,2025-12-07,False,False,True,2515,2598,89,56,2025-12-07T19:30Z,45|44,32|24,DraftKings,RAD -13.5,-13.5,154.5,-1000.0,650.0,True,Mark Schnur|Joe Switzer|Kellen Milliner,924,
+401829449,2025-12-07,False,False,True,2617,2433,96,76,2025-12-07T20:00Z,47|49,37|39,DraftKings,SFA -19.5,-19.5,142.5,,,True,Rodrick Dixon|Winston Trotter|Eric Kronebusch,982,
+401827156,2025-12-07,False,False,True,2630,2011,74,64,2025-12-07T20:00Z,30|44,35|29,DraftKings,UTM -6.5,-6.5,144.5,-218.0,180.0,True,Ed Crenshaw Jr.|Kevin Driver|Chris Duprey,1166,
+401826902,2025-12-07,False,False,True,2348,3120,89,37,2025-12-07T20:00Z,40|49,11|26,,,,,,,,Brent Dugas|Drew Larson|John Jenkins Jr.,1967,
+401817189,2025-12-07,False,False,True,139,2117,107,65,2025-12-07T20:00Z,52|55,32|33,DraftKings,SLU -24.5,-24.5,160.5,,,True,Steven Anderson|Randy Richardson|Ryan Sassano,4446,
+401828298,2025-12-07,False,False,True,2097,3229,149,62,2025-12-07T21:00Z,75|74,21|41,,,,,,,,Bill Covington Jr.|J.W. Lucas|Trey Styons,1077,
+401826730,2025-12-07,True,False,True,344,2539,62,65,2025-12-07T21:00Z,22|40,30|35,DraftKings,MSST -4.5,-4.5,150.5,-192.0,160.0,True,Don Daily|Darron George|Wil Howard,0,
+401824828,2025-12-07,False,False,True,2116,119,86,61,2025-12-07T21:00Z,47|39,27|34,DraftKings,UCF -9.5,-9.5,148.5,-440.0,340.0,True,Bret Smith|Kipp Kissinger|James Duke,5346,
+401823423,2025-12-07,False,False,True,189,486,131,50,2025-12-07T21:00Z,71|60,26|24,,,,,,,,Jeff Spedoske|Mason Siler|Adam Sensibaugh,1804,
+401817471,2025-12-07,False,False,True,24,2439,74,75,2025-12-07T21:00Z,39|35,38|37,DraftKings,STAN -9.5,-9.5,164.5,-470.0,360.0,True,Justin Porterfield|A.J. Desai|Chase Shaw,3981,
+401817448,2025-12-07,False,False,True,221,2275,73,80,2025-12-07T21:00Z,23|50,36|44,DraftKings,PITT -8.5,-8.5,134.5,-425.0,330.0,True,Pat Driscoll|Evon Burroughs|Jemel Spearman,4660,
+401811972,2025-12-07,False,False,True,2393,2057,62,83,2025-12-07T21:30Z,31|31,35|48,DraftKings,BEL -3.5,3.5,153.5,136.0,-162.0,False,Jason Baker|Craig Murley|Pat Adams,3168,
+401808934,2025-12-07,False,True,True,2545,2466,68,76,2025-12-07T21:30Z,29|39,25|51,DraftKings,SELA -7.5,-7.5,133.5,-340.0,270.0,True,Garrett Theriot|Jon Tjon-Joe-Pin|Kael Saloy,331,
+401828312,2025-12-07,False,False,True,55,2040,66,39,2025-12-07T22:00Z,32|34,23|16,,,,,,,,Ryan  Christian|Anthony Eades|Allen Sutton,1124,
+401824953,2025-12-07,False,False,True,288,2010,92,58,2025-12-07T22:00Z,35|57,28|30,DraftKings,LIP -11.5,-11.5,146.5,-750.0,525.0,True,Brian Hagedorn|Kevin Chambliss|Chuck McCoy,853,
+401824139,2025-12-07,False,False,True,265,2440,64,78,2025-12-07T22:00Z,32|32,31|47,DraftKings,WSU -2.5,-2.5,145.5,-135.0,114.0,True,Randy  McCall|Tony Padilla|Michael Mojica,2548,
+401820835,2025-12-07,False,False,True,158,156,71,50,2025-12-07T22:00Z,33|38,19|31,DraftKings,NEB -5.5,-5.5,155.5,-225.0,185.0,True,Keith Kimble|Paul Szelc|Edwin  Young,15256,
+401817510,2025-12-07,False,True,True,2750,2739,86,58,2025-12-07T22:00Z,40|46,34|24,DraftKings,WRST -6.5,-6.5,142.5,-290.0,235.0,True,Mike Littlewood|Tim Comer|Brian Dorsey,3056,
+401817460,2025-12-07,True,False,True,2567,245,93,80,2025-12-07T22:00Z,41|36|16,27|50|3,DraftKings,TA&M -1.5,1.5,164.5,105.0,-125.0,False,Lee Cassell|Bart Lenox|Vladimir Voyard-Tadal,2800,
+401827000,2025-12-07,False,False,True,2627,2096,93,63,2025-12-07T22:30Z,53|40,23|40,,,,,,,,Tyler Kumpf|Randal Anders|Tommy Johnson,1351,
+401812255,2025-12-07,False,False,True,249,2628,55,65,2025-12-07T22:30Z,37|18,31|34,DraftKings,TCU -9.5,9.5,135.5,360.0,-470.0,False,Michael Greenstein|Antinio Petty|K.B. Burdett,0,
+401824939,2025-12-07,False,False,True,2837,2110,75,68,2025-12-07T23:00Z,32|43,35|33,DraftKings,ETAM -2.5,-2.5,145.5,-135.0,114.0,True,Danny Chance|Albert Buckles|Marcus Hawkins,413,
+401829434,2025-12-07,False,False,True,2535,172,93,90,2025-12-08T00:00Z,42|51,50|40,DraftKings,SAM -2.5,-2.5,166.5,-148.0,124.0,True,Barry Mathis|Art Vaulk|Glenn Truitt,1413,
+401824129,2025-12-07,False,False,True,2547,2638,75,68,2025-12-08T01:00Z,37|38,31|37,DraftKings,SEA -12.5,-12.5,136.5,-950.0,625.0,True,Rick Crawford|Gregory Nixon|Chris Hudson,1253,

@@ -1,2 +1,2 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav
-401856600,2026-04-06,True,False,True,130,41,69,63,2026-04-07T00:50Z,33|36,29|34,Draft Kings,MICH -6.5,-6.5,146.5,-285.0,230.0,True
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401856600,2026-04-06,True,False,True,130,41,69,63,2026-04-07T00:50Z,33|36,29|34,DraftKings,MICH -6.5,-6.5,146.5,-285.0,230.0,True,James Breeding|Kipp Kissinger|Jeff Anderson,70720,

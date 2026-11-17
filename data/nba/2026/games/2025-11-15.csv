@@ -1,6 +1,6 @@
-game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods
-401810083,2025-11-15,False,False,True,5,29,108,100,2025-11-15T22:00Z,28|26|22|32,32|29|23|16
-401810084,2025-11-15,False,False,True,30,25,96,109,2025-11-16T00:00Z,30|22|18|26,30|25|32|22
-401810085,2025-11-15,False,False,True,11,28,111,129,2025-11-16T00:00Z,29|24|32|26,32|30|39|28
-401810086,2025-11-15,False,False,True,15,13,95,119,2025-11-16T01:00Z,18|16|38|23,30|35|27|27
-401810087,2025-11-15,False,False,True,16,7,112,123,2025-11-16T01:00Z,31|29|26|26,29|26|32|36
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,officials,attendance,indoor
+401810083,2025-11-15,False,False,True,5,29,108,100,2025-11-15T22:00Z,28|26|22|32,32|29|23|16,Jason Goldenberg|Ray Acosta|John Conley,19432,
+401810084,2025-11-15,False,False,True,30,25,96,109,2025-11-16T00:00Z,30|22|18|26,30|25|32|22,Derrick Collins|Josh Tiven|Nate Green,19469,
+401810085,2025-11-15,False,False,True,11,28,111,129,2025-11-16T00:00Z,29|24|32|26,32|30|39|28,James Williams|J.T. Orr|John Butler,17274,
+401810086,2025-11-15,False,False,True,15,13,95,119,2025-11-16T01:00Z,18|16|38|23,30|35|27|27,Pat Fraher|Kevin Cutler|Brandon Adair,17341,
+401810087,2025-11-15,False,False,True,16,7,112,123,2025-11-16T01:00Z,31|29|26|26,29|26|32|36,Marat Kogut|Curtis Blair|Robert Hussey,18978,
