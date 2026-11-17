@@ -14,7 +14,7 @@ import pandas as pd
 import requests
 
 from . import config
-from .parse import parse_shots, parse_summary
+from .parse import parse_flow, parse_shots, parse_summary
 
 session = requests.Session()
 session.headers["User-Agent"] = "sportsbynumbers/1.0"
@@ -169,7 +169,7 @@ def fetch_day(season: int, day: date) -> int:
     summaries = []
     with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
         summaries = list(pool.map(lambda g: get(f"{config.ESPN}/summary", {"event": g["game_id"]}), games))
-    g_rows, b_rows, s_rows, shot_rows = [], [], [], []
+    g_rows, b_rows, s_rows, shot_rows, flow_rows = [], [], [], [], []
     for sb, summ in zip(games, summaries):
         game, box, stints = parse_summary(summ) if summ else (None, [], [])
         if game is None:  # fall back to scoreboard result so team ratings still see the game
@@ -184,6 +184,10 @@ def fetch_day(season: int, day: date) -> int:
                 shot_rows += parse_shots(summ, game)
             except Exception:
                 pass
+            try:
+                flow_rows += parse_flow(summ, game)
+            except Exception:
+                pass
     d = season_dir(season)
     name = day.isoformat()
     pd.DataFrame(g_rows).to_csv(d / "games" / f"{name}.csv", index=False)
@@ -194,6 +198,9 @@ def fetch_day(season: int, day: date) -> int:
     if shot_rows:
         (d / "shots").mkdir(exist_ok=True)
         pd.DataFrame(shot_rows).to_csv(d / "shots" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
+    if flow_rows:
+        (d / "flow").mkdir(exist_ok=True)
+        pd.DataFrame(flow_rows).to_csv(d / "flow" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     return len(g_rows)
 
 

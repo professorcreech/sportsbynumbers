@@ -294,3 +294,67 @@ def parse_shots(summary: dict, game: dict) -> list[dict]:
             "x": x, "y": y,
         })
     return rows
+
+
+def _clock_seconds(text) -> float | None:
+    """'19:34' -> 1174; '0:45.3' -> 45.3; '12.4' -> 12.4."""
+    try:
+        t = str(text).strip()
+        if ":" in t:
+            m, sec = t.split(":", 1)
+            return int(m) * 60 + float(sec)
+        return float(t)
+    except (TypeError, ValueError):
+        return None
+
+
+def parse_flow(summary: dict, game: dict) -> list[dict]:
+    """The game as a sequence of events with the score after each, for late-game situation profiles.
+
+    One row per shot, free throw, rebound, turnover, steal, block, foul or timeout. Substitutions and
+    period markers are left out (stints already cover them). team_id is the team that performed the
+    event (the one committing a foul or turnover, the one rebounding)."""
+    rows = []
+    for k, p in enumerate(summary.get("plays", []) or []):
+        t = ((p.get("type") or {}).get("text") or "")
+        low = t.lower().replace("\n", " ")
+        team = str((p.get("team") or {}).get("id", "")) if p.get("team") else ""
+        if not team:
+            continue
+        sec = _clock_seconds((p.get("clock") or {}).get("displayValue"))
+        period = _int((p.get("period") or {}).get("number"), 0)
+        if sec is None or not period:
+            continue
+        text = (p.get("text") or "").lower()
+        row = {"game_id": game["game_id"], "seq": k, "period": period, "sec": round(sec, 1), "team_id": team,
+               "ev": "", "made": False, "three": False, "rim": False, "ast": False, "player_id": "",
+               "hs": _int(p.get("homeScore")), "as": _int(p.get("awayScore"))}
+        parts = p.get("participants") or []
+        if parts:
+            row["player_id"] = str((parts[0].get("athlete") or {}).get("id", ""))
+        if p.get("shootingPlay"):
+            is_ft = "free throw" in low or "freethrow" in low.replace(" ", "")
+            row["ev"] = "ft" if is_ft else "fg"
+            row["made"] = bool(p.get("scoringPlay"))
+            if not is_ft:
+                row["three"] = (p.get("pointsAttempted") == 3) or ("three point" in text) or ("3-pt" in text)
+                row["rim"] = any(w in low for w in ("dunk", "layup", "lay up", "alley", "tip"))
+                row["ast"] = row["made"] and len(parts) > 1 and "assist" in text
+        elif "offensive rebound" in low:
+            row["ev"] = "oreb"
+        elif "defensive rebound" in low:
+            row["ev"] = "dreb"
+        elif "steal" in low:
+            row["ev"] = "stl"
+        elif "block" in low:
+            row["ev"] = "blk"
+        elif "turnover" in low:
+            row["ev"] = "tov"
+        elif "foul" in low:
+            row["ev"] = "foul"
+        elif "timeout" in low.replace(" ", "").replace("-", ""):
+            row["ev"] = "tmo"
+        else:
+            continue
+        rows.append(row)
+    return rows

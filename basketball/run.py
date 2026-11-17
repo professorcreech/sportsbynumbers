@@ -61,6 +61,17 @@ def load_shots(season: int):
     return shots.drop_duplicates() if shots is not None and len(shots) else None
 
 
+def load_prior_games(season: int):
+    d = config.DATA_DIR / str(season)
+    return _read(d / "games", "*.csv") if (d / "games").exists() else None
+
+
+def load_flow(season: int):
+    d = config.DATA_DIR / str(season)
+    f = _read(d / "flow", "*.csv.gz") if (d / "flow").exists() else None
+    return f.drop_duplicates(["game_id", "seq"]) if f is not None and len(f) else None
+
+
 REPLACEMENT = -2.0    # a freely available player is ~2 points per 100 possessions below average
 POINTS_PER_WIN = 30.0  # NBA: ~2.7 wins per point of average margin over 82 games
 MIN_SALARY = 1.3e6     # roughly the league minimum; pay above it is what buys wins
@@ -143,7 +154,8 @@ def _absences(p: pd.DataFrame, injuries: dict) -> dict:
 
 
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
-          season: int | None = None, shots=None, injuries: dict | None = None) -> dict:
+          season: int | None = None, shots=None, injuries: dict | None = None,
+          flow=None, flow_prev=None, games_prev=None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     games = games[games.completed.astype(bool)] if "completed" in games else games
@@ -260,11 +272,18 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             "model": {"ids": list(model["idx"].keys()), "O": np.round(model["O"], 3).tolist(),
                       "D": np.round(model["D"], 3).tolist(), "T": np.round(model["T"], 3).tolist()}}
     stats_out = scouting.team_profiles(games, box, shots, set(t.team_id)) if len(box) else {"league": {}, "teams": {}}
+    situations_out = None
+    if flow is not None:
+        try:
+            from . import situations
+            situations_out = situations.build(flow, games, flow_prev, games_prev, names=dict(zip(box.player_id, box.name)))
+        except Exception as e:  # a problem here should never block the ratings
+            print(f"situations: skipped ({e})")
     value_out = player_value(p, t, season) if (config.IS_NBA and season and len(p)) else None
     schedule_out = {"fields": ["id", "start", "neutral", "home", "away", "home_name", "away_name",
                                "home_score", "away_score", "home_win", "poss", "b2b"], "games": full}
     for name, obj in (("meta", meta), ("teams", team_out), ("players", p_out), ("lineups", lu_out), ("games", up),
-                      ("schedule", schedule_out), ("teamstats", stats_out)) + ((("value", value_out),) if value_out else ()):
+                      ("schedule", schedule_out), ("teamstats", stats_out)) + ((("value", value_out),) if value_out else ()) + ((("situations", situations_out),) if situations_out else ()):
         (out_dir / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     return {"model": model, "players": p, "teams": t}
 
@@ -304,7 +323,8 @@ def main():
                 print(f"injuries: skipped ({e})")
     tm, games, box, stints, prior, rosters = load(season)
     build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season,
-          shots=load_shots(season), injuries=injuries)
+          shots=load_shots(season), injuries=injuries, flow=load_flow(season),
+          flow_prev=load_flow(season - 1), games_prev=load_prior_games(season - 1))
 
 
 if __name__ == "__main__":
