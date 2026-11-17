@@ -497,6 +497,81 @@
       "<h2>Data</h2><p>Box scores and play-by-play come from ESPN's public scoreboard feed, pulled after each day's games. Stints with lineup gaps (a missed substitution in the feed) are dropped rather than guessed.</p></div>";
   }
 
+  /* ===================== Late-game situations (basketball/situations.py) ===================== */
+  let SIT = null;
+  function loadSituations() {
+    if (!SIT) SIT = fetch("data/situations.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    return SIT;
+  }
+
+  // Weighted blend of a metric over several situations (weights = possessions)
+  function blendSit(states, keys, field) {
+    let num = 0, den = 0;
+    keys.forEach((k) => { const v = states[k]; if (v && v[field] != null && v.n > 0) { num += v[field] * v.n; den += v.n; } });
+    return den ? num / den : null;
+  }
+
+  function situationSection(A, H, away, home, S, spread, sd) {
+    if (!S || !S.teams[away] || !S.teams[home]) return "";
+    const W = S.window.g, T = LG.minutes * 60, gl = S.league.g, hl = S.league.h;
+    const label = Object.fromEntries(S.states.g), hlabel = Object.fromEntries(S.states.h);
+    const ta = S.teams[away], th = S.teams[home];
+    const mm = Math.floor(W / 60);
+    // Chance each team is in each score situation when the closing window starts
+    const frac = (T - W) / T, mean = spread * frac, sdt = sd * Math.sqrt(frac);
+    const edge = { d11: [-99, -11], d6: [-10, -6], d1: [-5, -1], t0: [0, 0], u1: [1, 5], u6: [6, 10], u11: [11, 99] };
+    const prob = (k, side) => normCdf((edge[k][1] + 0.5 - side * mean) / sdt) - normCdf((edge[k][0] - 0.5 - side * mean) / sdt);
+    const keys = S.states.g.map((x) => x[0]);
+    const chances = '<div class="table-box"><table><thead><tr><th class="l">At the ' + mm + ":00 mark of the second " + (LG.nba ? "half" : "half") + "…</th><th>" + esc(A.short) + "</th><th>" + esc(H.short) +
+      "</th></tr></thead><tbody>" + keys.map((k) => "<tr><td class='l'>" + esc(label[k] === "Tied" ? "Tied" : label[k].replace("Down", "Trailing by").replace("Up", "Leading by")) + "</td><td>" + pct(prob(k, -1)) + "</td><td>" + pct(prob(k, 1)) + "</td></tr>").join("") +
+      "</tbody></table></div>";
+    const lead = (id, d) => d;
+    // One table per team: what it does (and what opponents do against it) in each situation
+    const val = (v, base, kind) => {
+      if (v == null) return "–";
+      const dlt = kind === "pct" ? (v - base) * 100 : v - base;
+      const txt = kind === "pct" ? Math.round(v * 100) + "%" : v.toFixed(1);
+      return txt + '<span class="rk">' + (Math.abs(dlt) < 0.5 ? "·" : sgn(dlt, kind === "pct" ? 0 : 1)) + "</span>";
+    };
+    const cols = [["Poss", "n", null], ["Sec/poss", "tempo", "num"], ["3PA", "three", "pct"], ["Rim", "rim", "pct"], ["Ast’d", "ast", "pct"], ["TO/100", "tov", "num"], ["FTA/100", "fta", "num"],
+      ["Opp 3PA", "o_three", "pct"], ["Opp FTA/100", "o_fta", "num"], ["Opp TO/100", "o_tov", "num"]];
+    const tbl = (T_, t, win, names, L) => '<div class="table-box"><table><thead><tr><th class="l">Situation</th>' + cols.map((c) => "<th>" + c[0] + "</th>").join("") + "</tr></thead><tbody>" +
+      Object.keys(names).map((k) => { const v = t[win][k], l = L[k]; return "<tr><td class='l'>" + esc(names[k]) + "</td>" +
+        cols.map((c) => "<td>" + (c[2] == null ? (v ? Math.round(v.n) : "–") : v && l ? val(v[c[1]], l[c[1]], c[2]) : "–") + "</td>").join("") + "</tr>"; }).join("") + "</tbody></table></div>";
+    // Plain-language reads
+    const lg2 = (f, ks, L) => blendSit(L, ks, f);
+    const insights = (Tm, t, Opp, o) => {
+      const out = [];
+      const trail = ["d6", "d1"], lead_ = ["u1", "u6"];
+      const dv = (f, ks, who, L) => { const v = blendSit(who, ks, f), b = blendSit(L, ks, f); return v == null || b == null ? null : { v, b, d: v - b }; };
+      const tempo = dv("tempo", trail, t.g, gl), three = dv("three", trail, t.g, gl), ast = dv("ast", trail, t.g, gl), tov = dv("tov", trail, t.g, gl);
+      if (tempo && Math.abs(tempo.d) >= 1.5) out.push("When trailing by up to 10 late, " + esc(Tm.short) + (tempo.d < 0 ? " speeds up" : " slows down") + ": " + tempo.v.toFixed(0) + " seconds a possession against a league " + tempo.b.toFixed(0) + ".");
+      if (three && Math.abs(three.d) >= 0.04) out.push("Trailing, " + (three.d > 0 ? "more" : "fewer") + " of its shots are threes: " + Math.round(three.v * 100) + "% against a league " + Math.round(three.b * 100) + "%.");
+      if (ast && Math.abs(ast.d) >= 0.06) out.push("Trailing, " + (ast.d > 0 ? "the ball keeps moving" : "it goes to isolation more") + ": " + Math.round(ast.v * 100) + "% of baskets assisted against a league " + Math.round(ast.b * 100) + "%.");
+      if (tov && tov.d >= 4) out.push("Turnover risk climbs when it is chasing: " + tov.v.toFixed(0) + " per 100 possessions against a league " + tov.b.toFixed(0) + ".");
+      const lf = dv("o_fta", trail, t.g, gl), lt = dv("o_tov", lead_, t.g, gl), lf2 = dv("o_fta", lead_, t.g, gl);
+      if (lf2 && lf2.d >= 6) out.push("Protecting a lead, " + esc(Tm.short) + " fouls a lot (opponents shoot " + lf2.v.toFixed(0) + " free throws per 100 possessions against a league " + lf2.b.toFixed(0) + "): a comeback team that gets to the line has an edge.");
+      if (lt && lt.d >= 3) out.push("Ahead, it pressures the ball: opponents turn it over " + lt.v.toFixed(0) + " times per 100 against a league " + lt.b.toFixed(0) + ".");
+      if (lt && lt.d <= -3) out.push("Ahead, it rarely forces turnovers (" + lt.v.toFixed(0) + " per 100 against a league " + lt.b.toFixed(0) + "), so a trailing opponent can run offense without fear.");
+      const u = (t.use || {}).trail || [];
+      const top = u.find((x) => x.share - x.base >= 0.05 && x.name);
+      if (top) out.push("The ball finds " + esc(top.name) + " when it is behind late: " + Math.round(top.share * 100) + "% of late shots, free throws and turnovers while trailing (" + Math.round(top.base * 100) + "% over the whole game). Plan to defend him first.");
+      return out;
+    };
+    const ia = insights(A, ta, H, th), ih = insights(H, th, A, ta);
+    const li = (x) => "<li>" + x + "</li>";
+    const card = (T_, items) => '<div class="card"><h3>' + esc(T_.short) + "</h3>" + (items.length ? "<ul>" + items.map(li).join("") + "</ul>" : "<p>Nothing stands out against the league in these situations yet.</p>") + "</div>";
+    const n = (t) => Math.round(Object.values(t.g).reduce((a, v) => a + (v.n || 0), 0));
+    return '<section class="prose" style="max-width:none"><h2>Late-game situations</h2>' +
+      '<p class="note">What each team has done in the last ' + mm + " minutes of the game, by score. Small samples (about " + Math.min(n(ta), n(th)) + " possessions each in total, with last season counted at half weight) are pulled toward the league average, so a number here only differs from the league when the evidence is real. Small gray numbers show the difference from the league in that same situation. These are habits, not plans: play-by-play doesn’t record the defense called.</p>" +
+      "<h3>How likely is each situation?</h3>" + chances +
+      "<h3>What to expect</h3><div class='grid'>" + card(A, ia) + card(H, ih) + "</div>" +
+      "<h3>" + esc(A.short) + ": last " + mm + " minutes of games</h3>" + tbl(A, ta, "g", label, gl) +
+      "<h3>" + esc(H.short) + ": last " + mm + " minutes of games</h3>" + tbl(H, th, "g", label, gl) +
+      '<details class="how"><summary>End of the first half (last ' + Math.floor(S.window.h / 60) + " minutes)</summary>" +
+      "<h3>" + esc(A.short) + "</h3>" + tbl(A, ta, "h", hlabel, hl) + "<h3>" + esc(H.short) + "</h3>" + tbl(H, th, "h", hlabel, hl) + "</details></section>";
+  }
+
   /* ===================== Matchup page: prediction, comparison, scouting, lineups ===================== */
   let STATS = null;
   function loadStats() {
@@ -735,7 +810,15 @@
       '<div class="card"><h3>' + esc(H.short) + "</h3>" + (tH.length ? "<ul>" + tH.map((x) => "<li>" + x + "</li>").join("") + "</ul>" : "<p>No strong tendencies stand out yet.</p>") + "</div></div>" +
       "<h3>Lineups for this matchup</h3><p class='note'>A starting point for game planning, not a substitute for film: built from player impact ratings and box-score profiles, with extra weight on what counters the opponent's strengths.</p>" +
       '<div class="grid">' + lineupBlock(A, sugA, mostUsed(away)) + lineupBlock(H, sugH, mostUsed(home)) + "</div></section>" +
+      '<div id="m-sit"></div>' +
       "<h2>Key players</h2>" + '<div class="grid two"><div><h3>' + esc(A.short) + "</h3>" + playerList(away) + "</div><div><h3>" + esc(H.short) + "</h3>" + playerList(home) + "</div></div>";
+    fillSituations(away, home, A, H, spread, sd);
+  }
+
+  async function fillSituations(away, home, A, H, spread, sd) {
+    const S = await loadSituations();
+    const el = $("#m-sit");
+    if (el && S) { try { el.innerHTML = situationSection(A, H, away, home, S, spread, sd); } catch (e) { console.error(e); } }
   }
 
   async function gamePage(main, id) {
@@ -749,7 +832,7 @@
   // "holds up" only if, fit on one part of the data, it improved predictions on the rest.
   function factorTable() {
     const rows = LG.nba ? [
-      ["Missing rotation players (injuries, rest)", "Yes", "About 0.8 points per point of missing impact; biggest single gain. Needs reliable pregame injury reports, not yet wired in"],
+      ["Missing rotation players (injuries, rest)", "Yes", "About 0.8 points per point of missing impact; the biggest single gain. In the predictions for games in the next three days, from ESPN's pregame injury lists"],
       ["Second night of a back-to-back", "Yes", "About −1.8 points; now in the predictions"],
       ["Days of rest, travel distance, time zones", "No", "Nothing beyond the back-to-back"],
       ["Hot or cold last five games", "No", "Significant in one half of the season, reversed in the other"],
@@ -761,7 +844,7 @@
       ["Betting market", "Benchmark", "The closing line beats this model (11.2 vs 11.7 points); adding the model to the line doesn't help"],
     ] : [
       ["Coaching change and the new coach's record elsewhere", "Yes", "Helped all 12 held-out seasons; now in the preseason ratings"],
-      ["Missing rotation players (injuries)", "Yes", "About 0.5 points per point of missing impact when a key player sits; needs pregame injury reports, not yet wired in"],
+      ["Missing rotation players (injuries)", "Yes", "About 0.5 points per point of missing impact when a key player sits. Not used: ESPN publishes no college injury reports"],
       ["A coach's record at his current school", "No", "Already inside last season's rating"],
       ["Coach's past NCAA tournament overperformance", "No", "Helped 7 of 12 tournaments: no better than a coin flip"],
       ["Program's tournament reputation", "No", "Not reliably"],
