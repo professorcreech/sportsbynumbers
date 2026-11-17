@@ -1,0 +1,6 @@
+scoreboard events: 70, completed: 0
+SCOREBOARD weather: {"displayValue": "Mostly clear", "temperature": 47, "highTemperature": 47, "conditionId": "34", "link": {"language": "en-US", "rel": ["49008"], "href": "http://www.accuweather.com/en/us/waldo-stadium-mi/49007/hourly-weather-forecast/53595_poi?day=1&hbhhour=18&lang=en-us", "text": "Weather", "shortText": "Weather", "isExternal": true, "isPremium": false}}
+SCOREBOARD venue: {"id": "3980", "fullName": "Waldo Stadium", "address": {"city": "Kalamazoo", "state": "MI", "country": "USA"}, "indoor": false}
+SCOREBOARD notes/odds: [{"provider": {"id": "100", "name": "DraftKings", "priority": 1, "logos": [{"href": "https://a.espncdn.com/i/betting/Draftkings_Light.svg", "rel": ["light"]}, {"href": "https://a.espncdn.com/i/betting/Draftkings_Dark.svg", "rel": ["dark"]}], "displayName": "DraftKings"}, "details": "WMU -14.5", "overUnder": 46.5, "spread": -14.5, "awayTeamOdds": {"favorite": false, "underdog": true, "team": {"id":
+officials listed across 0 games: 0
+PLAY TYPES: []

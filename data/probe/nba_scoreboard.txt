@@ -35,7 +35,7 @@ leagues: list[1]
       --
       'dark'
       --
-    lastUpdated: '2026-11-10T14:57Z'
+    lastUpdated: '2026-11-16T18:45Z'
     --
   calendarType: 'day'
   calendarIsWhitelist: 'True'
@@ -1113,6 +1113,77 @@ events: list[8]
       lang: 'en'
       region: 'us'
       --
+    headlines: list[1]
+      type: 'Recap'
+      description: '— Grayson Allen scored 27 points, Naz Reid added 25 points and 13 rebounds and the Charlot'
+      shortLinkText: 'Grayson Allen scores 27, Naz Reid adds 25 as Hornets beat Cavaliers 124-112 to snap 6-game'
+      video: list[1]
+        id: '50438211'
+        source: 'espn'
+        headline: 'Cleveland Cavaliers vs. Charlotte Hornets: Game Highlights'
+        thumbnail: 'https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1110/a739ce17-b600-46fa-b67'
+        duration: '74'
+        tracking: dict
+          coverageType: 'Final Game Highlight'
+          leagueName: 'NBA'
+          program: 'NBA'
+          sportName: 'basketball'
+          trackingId: 'dm_20261110_NBA_cleveland_cavaliers_vs_charlotte_hornets_game_highlights'
+          trackingName: 'NBA_One-Play (Cleveland Cavaliers vs. Charlotte Hornets: Game Highlights) 2026/11/10 ESHEE'
+        deviceRestrictions: dict
+          devices: list[5]
+            'settop'
+            --
+            'tablet'
+            --
+            'handset'
+            --
+          type: 'whitelist'
+        geoRestrictions: dict
+          countries: list[104]
+            'PR'
+            --
+            'HN'
+            --
+            'PY'
+            --
+          type: 'whitelist'
+        links: dict
+          api: dict
+            artwork: dict
+              ...
+            self: dict
+              ...
+          mobile: dict
+            href: 'https://watch.auth.api.espn.com/video/auth/brightcove/53728516-d799-45e9-a444-5e80fe2dfacd'
+            alert: dict
+              ...
+            progressiveDownload: dict
+              ...
+            source: dict
+              ...
+            streaming: dict
+              ...
+          source: dict
+            href: 'https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1110/a739ce17-b600-46fa-b672-'
+            HD: dict
+              ...
+            HLS: dict
+              ...
+            flash: dict
+              ...
+            full: dict
+              ...
+            mezzanine: dict
+              ...
+          sportscenter: dict
+            href: 'sportscenter://x-callback-url/showVideo?videoID=50438211&videoDSI=255e245d23b54'
+          web: dict
+            href: 'https://www.espn.com/video/clip/_/id/50438211/game-highlights'
+            self: dict
+              ...
+        --
+      --
     highlights: list[1]
       id: '50438211'
       cerebroId: '6af281dd2f5e962a8dd06b50'
@@ -1200,77 +1271,6 @@ events: list[8]
         sportName: 'basketball'
         trackingId: 'dm_20261110_NBA_cleveland_cavaliers_vs_charlotte_hornets_game_highlights'
         trackingName: 'NBA_One-Play (Cleveland Cavaliers vs. Charlotte Hornets: Game Highlights) 2026/11/10 ESHEE'
-      --
-    headlines: list[1]
-      type: 'Recap'
-      description: '— Grayson Allen scored 27 points, Naz Reid added 25 points and 13 rebounds and the Charlot'
-      shortLinkText: 'Grayson Allen scores 27, Naz Reid adds 25 as Hornets beat Cavaliers 124-112 to snap 6-game'
-      video: list[1]
-        id: '50438211'
-        source: 'espn'
-        headline: 'Cleveland Cavaliers vs. Charlotte Hornets: Game Highlights'
-        thumbnail: 'https://espnmedia-cdn.akamaized.net/espn/media/common/wsc/2026/1110/a739ce17-b600-46fa-b67'
-        duration: '74'
-        tracking: dict
-          coverageType: 'Final Game Highlight'
-          leagueName: 'NBA'
-          program: 'NBA'
-          sportName: 'basketball'
-          trackingId: 'dm_20261110_NBA_cleveland_cavaliers_vs_charlotte_hornets_game_highlights'
-          trackingName: 'NBA_One-Play (Cleveland Cavaliers vs. Charlotte Hornets: Game Highlights) 2026/11/10 ESHEE'
-        deviceRestrictions: dict
-          devices: list[5]
-            'settop'
-            --
-            'tablet'
-            --
-            'handset'
-            --
-          type: 'whitelist'
-        geoRestrictions: dict
-          countries: list[104]
-            'PR'
-            --
-            'HN'
-            --
-            'PY'
-            --
-          type: 'whitelist'
-        links: dict
-          api: dict
-            artwork: dict
-              ...
-            self: dict
-              ...
-          mobile: dict
-            href: 'https://watch.auth.api.espn.com/video/auth/brightcove/53728516-d799-45e9-a444-5e80fe2dfacd'
-            alert: dict
-              ...
-            progressiveDownload: dict
-              ...
-            source: dict
-              ...
-            streaming: dict
-              ...
-          source: dict
-            href: 'https://espnmedia-cdn.akamaized.net/espn/media/16x9/wsc/2026/1110/a739ce17-b600-46fa-b672-'
-            HD: dict
-              ...
-            HLS: dict
-              ...
-            flash: dict
-              ...
-            full: dict
-              ...
-            mezzanine: dict
-              ...
-          sportscenter: dict
-            href: 'sportscenter://x-callback-url/showVideo?videoID=50438211&videoDSI=255e245d23b54'
-          web: dict
-            href: 'https://www.espn.com/video/clip/_/id/50438211/game-highlights'
-            self: dict
-              ...
-        --
       --
     --
   links: list[5]

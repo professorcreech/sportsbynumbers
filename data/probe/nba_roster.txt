@@ -1,4 +1,4 @@
-timestamp: '2026-11-11T07:25:04Z'
+timestamp: '2026-11-17T08:03:50Z'
 status: 'success'
 season: dict
   year: '2027'
@@ -167,6 +167,116 @@ athletes: list[18]
     type: 'active'
     abbreviation: 'Active'
   --
+  id: '4684443'
+  uid: 's:40~l:46~a:4684443'
+  guid: 'ac6443aa-0eff-370f-b514-2c8a5e201791'
+  alternateIds: dict
+    sdr: '4684443'
+  firstName: 'Rafael'
+  lastName: 'Castro'
+  fullName: 'Rafael Castro'
+  displayName: 'Rafael Castro'
+  shortName: 'R. Castro'
+  weight: '224.0'
+  displayWeight: '224 lbs'
+  height: '81.0'
+  displayHeight: '6\' 9"'
+  age: '23'
+  dateOfBirth: '2003-03-30T08:00Z'
+  links: list[13]
+    language: 'en-US'
+    rel: list[3]
+      'playercard'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/_/id/4684443/rafael-castro'
+    text: 'Player Card'
+    shortText: 'Player Card'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[3]
+      'stats'
+      --
+      'desktop'
+      --
+      'athlete'
+      --
+    href: 'https://www.espn.com/nba/player/stats/_/id/4684443/rafael-castro'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+    language: 'en-US'
+    rel: list[4]
+      'stats'
+      --
+      'sportscenter'
+      --
+      'app'
+      --
+    href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4684443&section=stats'
+    text: 'Stats'
+    shortText: 'Stats'
+    isExternal: 'False'
+    isPremium: 'False'
+    --
+  birthPlace: dict
+    city: 'Dover'
+    state: 'NJ'
+    country: 'USA'
+  college: dict
+    id: '45'
+    guid: 'c4306fc1-fce4-31f6-ab5e-c3972f8a6d43'
+    mascot: 'Revolutionaries'
+    name: 'George Washington'
+    shortName: 'G Washington'
+    abbrev: 'GW'
+    logos: list[2]
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/45.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'default'
+        --
+      lastUpdated: '2022-12-09T16:51Z'
+      --
+      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/45.png'
+      width: '500'
+      height: '500'
+      alt: ''
+      rel: list[2]
+        'full'
+        --
+        'dark'
+        --
+      lastUpdated: '2022-12-09T16:48Z'
+      --
+  slug: 'rafael-castro'
+  position: dict
+    id: '7'
+    name: 'Forward'
+    displayName: 'Forward'
+    abbreviation: 'F'
+    leaf: 'False'
+  injuries: list[0]
+  contracts: list[0]
+  experience: dict
+    years: '0'
+  status: dict
+    id: '1'
+    name: 'Active'
+    type: 'active'
+    abbreviation: 'Active'
+  --
   id: '4869342'
   uid: 's:40~l:46~a:4869342'
   guid: '7b066993-61be-35fd-9070-c1b9a57c7b31'
@@ -297,135 +407,6 @@ athletes: list[18]
     type: 'active'
     abbreviation: 'Active'
   --
-  id: '4431941'
-  uid: 's:40~l:46~a:4431941'
-  guid: '24b6b6e6-585d-3f85-bd97-f840195322bb'
-  alternateIds: dict
-    sdr: '4431941'
-  firstName: 'RayJ'
-  lastName: 'Dennis'
-  fullName: 'RayJ Dennis'
-  displayName: 'RayJ Dennis'
-  shortName: 'R. Dennis'
-  weight: '180.0'
-  displayWeight: '180 lbs'
-  height: '74.0'
-  displayHeight: '6\' 2"'
-  age: '25'
-  dateOfBirth: '2001-03-30T08:00Z'
-  links: list[13]
-    language: 'en-US'
-    rel: list[3]
-      'playercard'
-      --
-      'desktop'
-      --
-      'athlete'
-      --
-    href: 'https://www.espn.com/nba/player/_/id/4431941/rayj-dennis'
-    text: 'Player Card'
-    shortText: 'Player Card'
-    isExternal: 'False'
-    isPremium: 'False'
-    --
-    language: 'en-US'
-    rel: list[3]
-      'stats'
-      --
-      'desktop'
-      --
-      'athlete'
-      --
-    href: 'https://www.espn.com/nba/player/stats/_/id/4431941/rayj-dennis'
-    text: 'Stats'
-    shortText: 'Stats'
-    isExternal: 'False'
-    isPremium: 'False'
-    --
-    language: 'en-US'
-    rel: list[4]
-      'stats'
-      --
-      'sportscenter'
-      --
-      'app'
-      --
-    href: 'sportscenter://x-callback-url/showClubhouse?uid=s:40~l:46~a:4431941&section=stats'
-    text: 'Stats'
-    shortText: 'Stats'
-    isExternal: 'False'
-    isPremium: 'False'
-    --
-  birthPlace: dict
-    city: 'Plainfield'
-    state: 'IL'
-    country: 'USA'
-  college: dict
-    id: '239'
-    guid: '8f0deb82-f6b1-34ef-b835-d95f4f6689ec'
-    mascot: 'Bears'
-    name: 'Baylor'
-    shortName: 'Baylor'
-    abbrev: 'BAY'
-    logos: list[2]
-      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500/239.png'
-      width: '500'
-      height: '500'
-      alt: ''
-      rel: list[2]
-        'full'
-        --
-        'default'
-        --
-      lastUpdated: '2025-12-23T01:44Z'
-      --
-      href: 'https://a.espncdn.com/i/teamlogos/ncaa/500-dark/239.png'
-      width: '500'
-      height: '500'
-      alt: ''
-      rel: list[2]
-        'full'
-        --
-        'dark'
-        --
-      lastUpdated: '2025-12-23T01:44Z'
-      --
-  slug: 'rayj-dennis'
-  headshot: dict
-    href: 'https://a.espncdn.com/i/headshots/nba/players/full/4431941.png'
-    alt: 'RayJ Dennis'
-  jersey: '10'
-  position: dict
-    id: '3'
-    name: 'Guard'
-    displayName: 'Guard'
-    abbreviation: 'G'
-    leaf: 'False'
-  injuries: list[0]
-  teams: list[1]
-    $ref: 'http://sports.core.api.espn.pvt/v2/sports/basketball/leagues/nba/seasons/2027/teams/1?lang'
-    --
-  contracts: list[2]
-    salary: '0'
-    season: dict
-      year: '2026'
-      startDate: '2025-10-01T07:00Z'
-      endDate: '2026-06-27T06:59Z'
-    --
-    salary: '0'
-    season: dict
-      year: '2025'
-      startDate: '2024-09-24T07:00Z'
-      endDate: '2025-06-27T06:59Z'
-    --
-  experience: dict
-    years: '3'
-  status: dict
-    id: '1'
-    name: 'Active'
-    type: 'active'
-    abbreviation: 'Active'
-  --
 coach: list[1]
   id: '52120'
   firstName: 'Quin'
@@ -441,6 +422,6 @@ team: dict
   clubhouse: 'https://www.espn.com/nba/team/_/name/atl/atlanta-hawks'
   color: 'c8102e'
   logo: 'https://a.espncdn.com/i/teamlogos/nba/500/atl.png'
-  recordSummary: '7-5'
+  recordSummary: '8-6'
   seasonSummary: '2026-27'
   standingSummary: '1st in Southeast Division'

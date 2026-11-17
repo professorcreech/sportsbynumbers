@@ -1,4 +1,4 @@
-timestamp: '2026-11-11T07:25:16Z'
+timestamp: '2026-11-17T08:04:01Z'
 status: 'success'
 season: dict
   year: '2026'
@@ -7,7 +7,7 @@ season: dict
   name: 'Regular Season'
 athletes: list[6]
   position: 'offense'
-  items: list[28]
+  items: list[29]
     id: '4912218'
     uid: 's:20~l:28~a:4912218'
     guid: '0fdecc73-7b90-3cca-8bfc-a5d585ca037f'
@@ -1303,6 +1303,6 @@ team: dict
   clubhouse: 'https://www.espn.com/nfl/team/_/name/kc/kansas-city-chiefs'
   color: 'e31837'
   logo: 'https://a.espncdn.com/i/teamlogos/nfl/500/kc.png'
-  recordSummary: '6-2'
+  recordSummary: '7-2'
   seasonSummary: '2026'
-  standingSummary: '2nd in AFC West'
+  standingSummary: '1st in AFC West'

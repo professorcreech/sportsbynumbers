@@ -1,0 +1,9 @@
+scoreboard events: 33, completed: 33
+SCOREBOARD weather: null
+SCOREBOARD venue: {"id": "479", "fullName": "Pauley Pavilion", "address": {"city": "Los Angeles", "state": "CA"}, "indoor": true}
+SCOREBOARD notes/odds: null
+GAMEINFO: {"venue": {"id": "479", "guid": "43bff979-8dc4-393c-ba1b-0e063a051f08", "fullName": "Pauley Pavilion", "address": {"city": "Los Angeles", "state": "CA"}, "grass": false, "images": [{"href": "https://a.espncdn.com/i/venues/mens-college-basketball/day/479.jpg", "width": 2000, "height": 1125, "alt": "", "rel": ["full", "day"]}]}, "attendance": 3729, "officials": [{"fullName": "Michael Irving", "displayName": "Michael Irving", "position": {"name": "Referee", "displayName": "Referee", "id": "40"}, "order": 1}, {"fullName": "Kelly Pfeifer", "displayName": "Kelly Pfeifer", "position": {"name": "Referee", "displayName": "Referee", "id": "40"}, "order": 2}, {"fullName": "Anthony Burris", "displayName": "Anthony Burris", "position": {"name": "Referee", "displayName": "Referee", "id": "40"}, "order": 3}]}
+INJURIES: null
+SUMMARY KEYS: boxscore, format, gameInfo, leaders, broadcasts, pickcenter, odds, againstTheSpread, news, plays, winprobability, videos, header, wallclockAvailable, meta, standings
+officials listed across 6 games: 18
+PLAY TYPES: [["Substitution", 826], ["JumpShot", 462], ["Defensive Rebound", 285], ["LayUpShot", 222], ["MadeFreeThrow", 205], ["PersonalFoul", 196], ["Lost Ball Turnover", 183], ["Offensive Rebound", 149], ["Steal", 114], ["OfficialTVTimeOut", 50], ["Dead Ball Rebound", 38], ["Block Shot", 35], ["DunkShot", 31], ["ShortTimeOut", 19], ["Jumpball", 18], ["TipShot", 17], ["End Period", 12], ["End Game", 6], ["RegularTimeOut", 2], ["Technical Foul", 2], ["Coach's Challenge (Overturned)", 1]]
