@@ -120,8 +120,30 @@ def _played_night_before(starts: dict, team: str, start) -> bool:
     return any(pd.Timedelta(hours=12) <= t - s <= pd.Timedelta(hours=36) for s in starts.get(str(team), []))
 
 
+def _absences(p: pd.DataFrame, injuries: dict) -> dict:
+    """{game_id: {team_id: (points per 100 lost, [{name, status, pts}])}} from pregame injury lists."""
+    if not len(p) or not injuries:
+        return {}
+    val = {r.player_id: (r.min / max(r.gp, 1), r.total, r.name) for r in p.itertuples()}
+    out = {}
+    for gid, by_team in injuries.items():
+        out[gid] = {}
+        for tid, rows in by_team.items():
+            lost, notes = 0.0, []
+            for r in rows:
+                w = config.AVAILABILITY_STATUS_WEIGHT.get(str(r["status"]).strip().lower(), 0.0)
+                mpg, total, name = val.get(r["id"], (0, 0, None))
+                if not w or mpg < 10:   # only rotation players move the prediction
+                    continue
+                pts = w * mpg / 40 * total
+                lost += pts
+                notes.append({"name": name or r["name"], "status": r["status"], "pts": round(float(pts), 1)})
+            out[gid][tid] = (lost, notes)
+    return out
+
+
 def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, rosters=None,
-          season: int | None = None, shots=None) -> dict:
+          season: int | None = None, shots=None, injuries: dict | None = None) -> dict:
     out_dir = out_dir or config.SITE_DATA_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
     games = games[games.completed.astype(bool)] if "completed" in games else games
@@ -175,6 +197,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
 
     # Upcoming games with predictions
     starts = _team_starts(games, schedule)
+    absent = _absences(p, injuries or {}) if config.AVAILABILITY_BETA else {}
     up = []
     for g in schedule:
         pr = teams.predict(model, g["home_id"], g["away_id"], g.get("neutral", False))
@@ -187,12 +210,22 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
             if shift:
                 pr["home_score"] += shift; pr["away_score"] -= shift
                 pr["home_win"] = float(norm.cdf((pr["home_score"] - pr["away_score"]) / model["sd"]))
+        inj = None
+        if pr and g["game_id"] in absent:
+            ab = absent[g["game_id"]]
+            lh, nh = ab.get(str(g["home_id"]), (0.0, []))
+            la, na = ab.get(str(g["away_id"]), (0.0, []))
+            shift = config.AVAILABILITY_BETA * (la - lh) * pr["poss"] / 100
+            if nh or na:
+                pr["home_score"] += shift / 2; pr["away_score"] -= shift / 2
+                pr["home_win"] = float(norm.cdf((pr["home_score"] - pr["away_score"]) / model["sd"]))
+                inj = {"h": nh, "a": na, "shift": round(float(shift), 1)}
         if pr:
             up.append({"id": g["game_id"], "start": g.get("start") or g.get("date"), "neutral": bool(g.get("neutral")),
                        "home": g["home_id"], "away": g["away_id"],
                        "home_name": names.get(g["home_id"], g.get("home_name")), "away_name": names.get(g["away_id"], g.get("away_name")),
                        "home_score": round(pr["home_score"], 1), "away_score": round(pr["away_score"], 1),
-                       "home_win": round(pr["home_win"], 3), "poss": round(pr["poss"], 1), "b2b": b2b})
+                       "home_win": round(pr["home_win"], 3), "poss": round(pr["poss"], 1), "b2b": b2b, "inj": inj})
     up.sort(key=lambda g: str(g["start"]))
     # The Games tab opens on the next three days; the full schedule is a separate, compact file
     # that loads only when someone searches for a team.
@@ -259,14 +292,19 @@ def main():
               None, sched, "Simulated test season")
         return
     season = a.season or config.season_for(date.today())
-    sched = []
+    sched, injuries = [], None
     if a.fetch:
         from . import fetch
         fetch.update(season)
         sched = fetch.fetch_schedule()
+        if config.AVAILABILITY_BETA:   # NBA publishes pregame injury lists
+            try:
+                injuries = fetch.fetch_injuries(sched)
+            except Exception as e:     # never block the ratings on this
+                print(f"injuries: skipped ({e})")
     tm, games, box, stints, prior, rosters = load(season)
     build(tm, games, box, stints, prior, sched, f"{season - 1}-{str(season)[2:]}", rosters=rosters, season=season,
-          shots=load_shots(season))
+          shots=load_shots(season), injuries=injuries)
 
 
 if __name__ == "__main__":

@@ -48,7 +48,17 @@ def parse_header(summary: dict) -> dict | None:
         "home_periods": "|".join(str(_int(x.get("displayValue", x.get("value")))) for x in teams["home"].get("linescores") or []),
         "away_periods": "|".join(str(_int(x.get("displayValue", x.get("value")))) for x in teams["away"].get("linescores") or []),
         **parse_odds(summary),
+        **parse_context(summary),
     }
+
+
+def parse_context(summary: dict) -> dict:
+    """Officiating crew, attendance and venue type from gameInfo (saved for later analysis)."""
+    gi = summary.get("gameInfo") or {}
+    refs = [o.get("displayName") or o.get("fullName") for o in gi.get("officials") or []]
+    venue = gi.get("venue") or {}
+    return {"officials": "|".join(r for r in refs if r), "attendance": gi.get("attendance"),
+            "indoor": venue.get("indoor")}
 
 
 def parse_odds(summary: dict) -> dict:

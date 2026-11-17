@@ -650,6 +650,15 @@
     if (!A || !H) { main.innerHTML = '<p class="lede">That matchup isn’t available. <a href="#games">Back to games</a></p>'; return; }
     // A scheduled game carries the server's prediction, which includes any back-to-back adjustment
     const p = game && game.home_score != null ? { home_score: game.home_score, away_score: game.away_score, poss: game.poss, home_win: game.home_win } : predict(home, away, neutral);
+    const injNote = () => {
+      if (!game || !game.inj) return "";
+      const side = (T, list) => list.length ? "<b>" + esc(T.short) + "</b>: " + list.map((x) => esc(x.name) + " (" + esc(x.status) + ", " + sgn(-x.pts, 1) + ")").join(", ") : "";
+      const parts = [side(A, game.inj.a), side(H, game.inj.h)].filter(Boolean);
+      if (!parts.length) return "";
+      const sh = game.inj.shift;
+      return '<p class="note">Injury report: ' + parts.join(" · ") + ". Missing rotation players are worth about " + (Math.abs(sh) < 0.05 ? "nothing net" : Math.abs(sh).toFixed(1) + " points toward " + esc((sh > 0 ? H : A).short)) +
+        " in this prediction (the effect of absences held up across the 2025-26 season; day-to-day players count 40%, an assumption not yet tested).</p>";
+    };
     const tired = game && game.b2b ? [...game.b2b].map((s) => (s === "h" ? H : A).short) : [];
     const m = D.meta.model, idx = {};
     m.ids.forEach((id, i) => (idx[id] = i));
@@ -671,6 +680,7 @@
       "</dd></div><div><dt>Possessions</dt><dd>" + Math.round(p.poss) + "</dd></div></dl>" +
       '<p class="lede">The model expects ' + esc(fav.short) + " to win by about " + Math.abs(spread).toFixed(1) + ", but a single game is noisy: margins miss by about " + Math.round(sd) +
       " points on average. Eight times out of ten the final margin should land between " + rangeTxt(lo80) + " and " + rangeTxt(hi80) + ". The shaded areas below are each team's win chance.</p>" +
+      injNote() +
       (tired.length ? '<p class="note">' + esc(tired.join(" and ")) + (tired.length > 1 ? " are both" : /s$/.test(tired[0]) ? " are" : " is") + " playing the second night of a back-to-back" +
         (tired.length > 1 ? ", so the adjustments cancel." : ", which costs about " + f1(D.meta.b2b) + " points in this prediction (the effect held up across the 2025-26 season).") + "</p>" : "") +
       marginChart(spread, sd, H.short, A.short) +

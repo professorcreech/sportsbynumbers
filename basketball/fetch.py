@@ -247,3 +247,29 @@ def update(season: int | None = None, force: bool = False) -> None:
             n = fetch_day(season, day)
             print(f"{day}: {n} games")
         day += timedelta(days=1)
+
+
+def fetch_injuries(schedule: list, days: int = 3) -> dict:
+    """Pregame injury lists for games in the next few days: {game_id: {team_id: [{id, name, status}]}}.
+
+    Each day's lists are also saved under data/<league>/injuries/ so their value can be tested later."""
+    import json
+    from datetime import datetime, timedelta, timezone
+    cutoff = (datetime.now(timezone.utc) + timedelta(days=days)).strftime("%Y-%m-%dT%H:%M")
+    ids = [g["game_id"] for g in schedule if str(g.get("start") or g.get("date")) < cutoff]
+    out = {}
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        sums = list(pool.map(lambda i: get(f"{config.ESPN}/summary", {"event": i}), ids))
+    for gid, s in zip(ids, sums):
+        teams = {}
+        for blk in (s or {}).get("injuries") or []:
+            tid = str((blk.get("team") or {}).get("id"))
+            rows = [{"id": str((i.get("athlete") or {}).get("id")), "name": (i.get("athlete") or {}).get("displayName"),
+                     "status": i.get("status"), "date": i.get("date")} for i in blk.get("injuries") or []]
+            teams[tid] = [r for r in rows if r["id"] != "None"]
+        out[gid] = teams
+    if out:
+        d = config.DATA_DIR / "injuries"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{date.today().isoformat()}.json").write_text(json.dumps(out, separators=(",", ":")))
+    return out

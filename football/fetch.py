@@ -30,6 +30,24 @@ def season_dir(season: int):
     return d
 
 
+def _weather(w: dict | None) -> dict:
+    """Forecast or conditions ESPN lists for the game: temperature (F), wind gusts (mph), sky."""
+    w = w or {}
+    return {"wx_temp": w.get("temperature"), "wx_gust": w.get("gust") or w.get("windSpeed"),
+            "wx_sky": w.get("displayValue"), "wx_precip": w.get("precipitation")}
+
+
+def game_context(summ: dict) -> dict:
+    """Officiating crew, attendance and any weather in the summary (saved for later analysis)."""
+    gi = summ.get("gameInfo") or {}
+    refs = [o.get("displayName") or o.get("fullName") for o in gi.get("officials") or []]
+    referee = next((o.get("displayName") for o in gi.get("officials") or [] if (o.get("position") or {}).get("name") == "Referee"), None)
+    out = {"officials": "|".join(r for r in refs if r), "referee": referee, "attendance": gi.get("attendance")}
+    if gi.get("weather"):
+        out.update({k: v for k, v in _weather(gi["weather"]).items() if v is not None})
+    return out
+
+
 def scoreboard(day: date) -> list[dict]:
     out = {}
     for div, grp in config.GROUPS.items():
@@ -51,6 +69,8 @@ def scoreboard(day: date) -> list[dict]:
                 "home_pts": _int(teams["home"].get("score")), "away_pts": _int(teams["away"].get("score")),
                 "note": "; ".join(n.get("headline", "") for n in comp.get("notes", []) if n.get("headline")),
                 "city": addr.get("city"), "state": addr.get("state"),
+                "indoor": (comp.get("venue") or {}).get("indoor"),
+                **_weather(ev.get("weather") or comp.get("weather")),
             }
     return list(out.values())
 
@@ -148,6 +168,7 @@ def fetch_day(season: int, day: date) -> int:
     drv, ply = [], []
     for g, s in zip(games, summaries):
         if s:
+            g.update(game_context(s))
             try:
                 a, b = parse_summary(s, g)
                 drv += a

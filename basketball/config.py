@@ -48,6 +48,12 @@ HCA_PRIOR = 2.4 if IS_NBA else 4.3   # home-court swing per 100 possessions (NBA
 # 1.8 points of margin, consistently in both halves of the season. College back-to-backs are rare
 # outside holiday tournaments and showed no reliable effect, so none is applied there.
 B2B_PENALTY = 1.8 if IS_NBA else 0.0
+# Missing rotation players (tests/factors.py, 2025-26 NBA): a team's expected points lost to absences
+# (minutes/40 x rating, summed over players averaging 10+ minutes) moves the margin by about 0.8 times
+# that amount, in both halves of the season. Applied to games in the next three days, when ESPN's
+# pregame injury lists exist. "Day-to-day" players count part-way; that weight is an assumption, untested.
+AVAILABILITY_BETA = 0.8 if IS_NBA else 0.0
+AVAILABILITY_STATUS_WEIGHT = {"out": 1.0, "out for season": 1.0, "suspension": 1.0, "day-to-day": 0.4, "questionable": 0.4, "doubtful": 0.8}
 HCA_PRIOR_GAMES = 1500        # games of evidence the home-court prior is worth (a full season has ~5,500)
 
 # ---- Preseason prior (see basketball/preseason.py and tests/preseason_study.py) ----------
