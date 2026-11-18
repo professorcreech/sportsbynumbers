@@ -1,4 +1,136 @@
 {
+"cfp": {
+"name": "Playoff Committee Rankings",
+"headline": "2026 NCAA Football Rankings - CFP Rankings Week 12",
+"date": "2026-11-17T08:00Z",
+"ranks": [
+{
+"rank": 1,
+"team_id": "61",
+"record": "9-1"
+},
+{
+"rank": 2,
+"team_id": "254",
+"record": "10-0"
+},
+{
+"rank": 3,
+"team_id": "333",
+"record": "8-2"
+},
+{
+"rank": 4,
+"team_id": "26",
+"record": "10-0"
+},
+{
+"rank": 5,
+"team_id": "251",
+"record": "8-2"
+},
+{
+"rank": 6,
+"team_id": "87",
+"record": "9-1"
+},
+{
+"rank": 7,
+"team_id": "2390",
+"record": "9-1"
+},
+{
+"rank": 8,
+"team_id": "84",
+"record": "9-1"
+},
+{
+"rank": 9,
+"team_id": "2633",
+"record": "8-2"
+},
+{
+"rank": 10,
+"team_id": "252",
+"record": "8-2"
+},
+{
+"rank": 11,
+"team_id": "154",
+"record": "9-1"
+},
+{
+"rank": 12,
+"team_id": "2641",
+"record": "9-1"
+},
+{
+"rank": 13,
+"team_id": "2483",
+"record": "7-3"
+},
+{
+"rank": 14,
+"team_id": "194",
+"record": "7-3"
+},
+{
+"rank": 15,
+"team_id": "2294",
+"record": "8-2"
+},
+{
+"rank": 16,
+"team_id": "96",
+"record": "7-3"
+},
+{
+"rank": 17,
+"team_id": "68",
+"record": "9-1"
+},
+{
+"rank": 18,
+"team_id": "30",
+"record": "7-3"
+},
+{
+"rank": 19,
+"team_id": "12",
+"record": "7-3"
+},
+{
+"rank": 20,
+"team_id": "248",
+"record": "7-3"
+},
+{
+"rank": 21,
+"team_id": "2579",
+"record": "6-4"
+},
+{
+"rank": 22,
+"team_id": "201",
+"record": "6-4"
+},
+{
+"rank": 23,
+"team_id": "97",
+"record": "7-3"
+},
+{
+"rank": 24,
+"team_id": "57",
+"record": "6-4"
+},
+{
+"rank": 25,
+"team_id": "145",
+"record": "6-4"
+}
+]
+},
 "ap": {
 "name": "AP Top 25",
 "headline": "2026 NCAA Football Rankings - AP Poll Week 12",
