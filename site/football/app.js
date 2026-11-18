@@ -200,6 +200,8 @@
         "<p>μ is the average score (" + m.mu + " this season). h is +1 for the home offense, −1 for the road offense and 0 at a neutral site (London, Mexico City and other international games), so H is the full home-field edge, currently " + m.hfa + " points. Net = O − D is the expected margin against an average NFL team on a neutral field.</p>" +
         "<p>The fit is Bayesian ridge regression. Each team starts from last season's final rating, with " + Math.round(m.prior_keep * 100) + "% carried over and worth about " + m.prior_games + " games of evidence. NFL rosters turn over more than college programs' reputations suggest, so less of last season carries forward than in college football.</p>" +
         "<h2>Predictions</h2><p>Each side's projected points are μ plus its offense, the opponent's defense and its share of home field. The win chance treats the actual margin as normal around the projected spread with a standard deviation of " + m.sd + " points.</p>" +
+        "<h2>Situations and strategy</h2><p>Every play is sorted by down and distance, field position and score. For each situation (1st down, 2nd and 3rd down by distance, red zone, goal to go, and trailing or leading by 9 or more in the second half) the page measures how often a team passes, how often plays succeed (half the yards to go on 1st down, 70% on 2nd, all of them on 3rd or 4th), how often they are explosive (runs of 12+ yards, passes of 16+) and, on 3rd down, how often the team converts. The same is measured for what each defense allows. A team has only a few dozen plays in most situations, so each rate is pulled toward the league rate (worth " + 30 + " plays) and last season’s plays count at " + (LG.nfl ? "a quarter" : "half") + " weight. The matchup page adds a team’s success rate to the opposing defense’s success rate allowed, relative to the league, to find the best and worst spots to attack. Fourth-down aggressiveness is the share of 4th-and-short and 4th-and-medium plays near scoring range where the team went for it.</p>" +
+        "<p>What the data can’t show: ESPN’s play-by-play has no formations, personnel, play-action, blitzes or coverages, so zone versus man and pressure packages are not claimed. Sacks are the only pressure signal. The play clock is stale within a drive, so tempo is not measured. Weather and officiating crews are being recorded for each game and will be tested for predictive value before they are used.</p>" +
         "<h2>Coming next</h2><p>Player value and salary-cap efficiency: which teams get the most performance per cap dollar.</p></div>";
       return;
     }
@@ -212,7 +214,9 @@
       "<h2>Predictions</h2><p>Each side's projected points are μ plus its offense, the opponent's defense and its share of home field. The win chance treats the actual margin as normal around the projected spread with a standard deviation of " + m.sd + " points, measured from how far this season's games landed from their fitted margins.</p>" +
       "<h2>Points per drive</h2><p>The Teams table also shows raw points per drive for and against, from ESPN's drive charts. They aren't adjusted for opponents; they show how efficiently each side of the ball turns possessions into points.</p>" +
       "<h2>Playoff odds</h2><p>The Playoff tab simulates the rest of the season 10,000 times with these ratings, ranks teams by strength of record with a small credit for rating, builds the 12-team field by the 2026 rules (Power 4 champions, the top Group of Six team, Notre Dame if it ranks in the top 12, the rest at-large; byes for the top four) and plays the bracket. The committee is people, not a formula, so treat the selection step as an informed approximation.</p>" +
-      "<h2>Bowl games: a study</h2><p>Following Delen, Cogdell and Kasap (2012, <i>International Journal of Forecasting</i> 28(2), 543–552), we compared ways of predicting bowl winners on every FBS postseason game from 2018 to 2025 (319 games), training each season's model only on earlier seasons. Features were measured at the end of the regular season: these ratings, win percentage, non-conference and conference records, average margin, points for and against, schedule strength, last-three-games form, conference strength, games played and days off.</p>" +
+      "<h2>Situations and strategy</h2><p>Every play is sorted by down and distance, field position and score. For each situation (1st down, 2nd and 3rd down by distance, red zone, goal to go, and trailing or leading by 9 or more in the second half) the page measures how often a team passes, how often plays succeed (half the yards to go on 1st down, 70% on 2nd, all of them on 3rd or 4th), how often they are explosive (runs of 12+ yards, passes of 16+) and, on 3rd down, how often the team converts. The same is measured for what each defense allows. A team has only a few dozen plays in most situations, so each rate is pulled toward the league rate (worth " + 30 + " plays) and last season’s plays count at " + (LG.nfl ? "a quarter" : "half") + " weight. The matchup page adds a team’s success rate to the opposing defense’s success rate allowed, relative to the league, to find the best and worst spots to attack. Fourth-down aggressiveness is the share of 4th-and-short and 4th-and-medium plays near scoring range where the team went for it.</p>" +
+        "<p>What the data can’t show: ESPN’s play-by-play has no formations, personnel, play-action, blitzes or coverages, so zone versus man and pressure packages are not claimed. Sacks are the only pressure signal. The play clock is stale within a drive, so tempo is not measured. Weather and officiating crews are being recorded for each game and will be tested for predictive value before they are used.</p>" +
+        "<h2>Bowl games: a study</h2><p>Following Delen, Cogdell and Kasap (2012, <i>International Journal of Forecasting</i> 28(2), 543–552), we compared ways of predicting bowl winners on every FBS postseason game from 2018 to 2025 (319 games), training each season's model only on earlier seasons. Features were measured at the end of the regular season: these ratings, win percentage, non-conference and conference records, average margin, points for and against, schedule strength, last-three-games form, conference strength, games played and days off.</p>" +
       '<div class="table-box"><table><thead><tr><th class="l">Method</th><th>Correct</th><th>Log loss</th><th>Brier</th></tr></thead><tbody>' +
       "<tr><td class='l'>Random forest, all features</td><td>61.4%</td><td>0.658</td><td>0.233</td></tr>" +
       "<tr><td class='l'>Logistic regression, rating gap only</td><td>60.2%</td><td>0.664</td><td>0.236</td></tr>" +
@@ -332,6 +336,72 @@
     return out;
   }
 
+  /* ===================== Situations and strategy (football/situations.py) ===================== */
+  let SIT = null;
+  const loadSit = () => (SIT = SIT || fetch("data/situations.json").then((r) => (r.ok ? r.json() : null)).catch(() => null));
+
+  function situationSection(A, H, away, home, S, spread, sd, game) {
+    if (!S || !S.teams[away] || !S.teams[home]) return "";
+    const ta = S.teams[away], th = S.teams[home], L = S.league, lab = Object.fromEntries(S.situations);
+    const keys = S.situations.map((x) => x[0]);
+    const li = (x) => "<li>" + x + "</li>";
+    // Where does each side's offense have the edge? Own success plus what the other defense allows, against the league
+    const edgeRows = (O, o, D, d) => keys.filter((k) => !["chase", "protect"].includes(k) && o[k] && d[k] && L[k]).map((k) => {
+      const lg = L[k].succ, own = o[k].succ, allow = d[k].d_succ;
+      return { k, n: o[k].n, pass: o[k].pass, own, allow, lg, edge: ((own - lg) + (allow - lg)) * 100 };
+    });
+    const read = (O, o, D, d) => {
+      const rows = edgeRows(O, o, D, d).filter((r) => r.n >= 12);
+      const best = rows.slice().sort((a, b) => b.edge - a.edge).filter((r) => r.edge >= 3).slice(0, 3);
+      const worst = rows.slice().sort((a, b) => a.edge - b.edge).filter((r) => r.edge <= -3).slice(0, 2);
+      const line = (r) => "<b>" + esc(lab[r.k]) + "</b>: " + esc(O.short) + " succeeds on " + pc(r.own) + " of plays (league " + pc(r.lg) + "), and " + esc(D.short) + " allows " + pc(r.allow) + "; passes " + pc(r.pass) + " of the time.";
+      const out = { best: best.map(line), worst: worst.map(line), extra: [] };
+      // Habits when the game script changes
+      const lc = L.chase.pass, lp = L.protect.pass;
+      if (o.chase && o.chase.n >= 20 && Math.abs(o.chase.pass - lc) >= 0.05) out.extra.push("Trailing by 9+ in the second half, " + esc(O.short) + " passes " + pc(o.chase.pass) + " of the time (league " + pc(lc) + ").");
+      if (o.protect && o.protect.n >= 20 && Math.abs(o.protect.pass - lp) >= 0.05) out.extra.push("Leading by 9+ in the second half, it passes " + pc(o.protect.pass) + " (league " + pc(lp) + "), " + (o.protect.pass > lp ? "so the clock is less of a priority than usual." : "so it leans on the run to burn clock."));
+      const rz = o.rz, gl = o.gl;
+      if (rz && rz.n >= 20 && Math.abs(rz.pass - L.rz.pass) >= 0.06) out.extra.push("In the red zone it " + (rz.pass > L.rz.pass ? "throws more" : "runs more") + " than most: " + pc(rz.pass) + " passes (league " + pc(L.rz.pass) + ").");
+      if (gl && gl.n >= 12 && Math.abs(gl.pass - L.gl.pass) >= 0.08) out.extra.push("Inside the 5 it passes " + pc(gl.pass) + " of the time (league " + pc(L.gl.pass) + ").");
+      const ex = (k) => (o[k] && d[k] ? (o[k].expl + d[k].d_expl) / 2 : null);
+      const e1 = ex("d1");
+      if (e1 != null && e1 - L.d1.expl >= 0.02) out.extra.push("Explosive plays are likely on 1st down: " + esc(O.short) + " hits them on " + pc(o.d1.expl) + " and " + esc(D.short) + " allows " + pc(d.d1.d_expl) + " (league " + pc(L.d1.expl) + ").");
+      return out;
+    };
+    const rA = read(A, ta, H, th), rH = read(H, th, A, ta);
+    const card = (T, r) => '<div class="card"><h3>' + esc(T.short) + " on offense</h3>" +
+      (r.best.length ? "<p><b>Best spots to attack</b></p><ul>" + r.best.map(li).join("") + "</ul>" : "<p>No situation clearly favors it yet.</p>") +
+      (r.worst.length ? "<p><b>Spots to avoid or scheme around</b></p><ul>" + r.worst.map(li).join("") + "</ul>" : "") +
+      (r.extra.length ? "<p><b>Habits</b></p><ul>" + r.extra.map(li).join("") + "</ul>" : "") + "</div>";
+    // Full table for one offense against the other defense
+    const tbl = (O, o, D, d) => '<div class="table-box"><table><thead><tr><th class="l">Situation</th><th>Plays</th><th>Pass</th><th>Success</th><th>' + esc(D.short) + " allows</th><th>Edge</th></tr></thead><tbody>" +
+      edgeRows(O, o, D, d).map((r) => "<tr><td class='l'>" + esc(lab[r.k]) + "</td><td>" + Math.round(r.n) + "</td><td>" + pc(r.pass) + "</td><td>" + pc(r.own) + '<span class="rk">' + sgn((r.own - r.lg) * 100, 0) + "</span></td><td>" +
+        pc(r.allow) + '<span class="rk">' + sgn((r.allow - r.lg) * 100, 0) + "</span></td><td class='" + cls(r.edge) + "'>" + sgn(r.edge, 0) + "</td></tr>").join("") + "</tbody></table></div>";
+    // Game script: who is likely to be chasing at the start of the 4th quarter
+    const frac = 0.75, mean = spread * frac, sdt = sd * Math.sqrt(frac);
+    const script = (side) => { const m = side * mean; return [normCdf((-8.5 - m) / sdt), normCdf((8.5 - m) / sdt) - normCdf((-8.5 - m) / sdt), 1 - normCdf((8.5 - m) / sdt)]; };
+    const sa = script(-1), sh = script(1);
+    const scriptTbl = '<div class="table-box"><table><thead><tr><th class="l">At the start of the 4th quarter…</th><th>' + esc(A.short) + "</th><th>" + esc(H.short) + "</th></tr></thead><tbody>" +
+      ["Trailing by 9+", "Within one score (8 or less)", "Leading by 9+"].map((t, i) => "<tr><td class='l'>" + t + "</td><td>" + pct(sa[i]) + "</td><td>" + pct(sh[i]) + "</td></tr>").join("") + "</tbody></table></div>";
+    // Fourth down
+    const f4 = (T, t) => S.fourth.map(([k]) => { const v = t.fourth && t.fourth[k]; return v ? pc(v.go) + '<span class="rk">' + sgn((v.go - S.league_fourth[k].go) * 100, 0) + "</span>" : "–"; });
+    const fa = f4(A, ta), fh = f4(H, th);
+    const f4tbl = '<div class="table-box"><table><thead><tr><th class="l">Go-for-it rate on 4th down</th><th>' + esc(A.short) + "</th><th>" + esc(H.short) + "</th><th>League</th></tr></thead><tbody>" +
+      S.fourth.map(([k, name], i) => "<tr><td class='l'>" + esc(name) + "</td><td>" + fa[i] + "</td><td>" + fh[i] + "</td><td>" + pc(S.league_fourth[k].go) + "</td></tr>").join("") + "</tbody></table></div>";
+    const aggressive = [[A, ta], [H, th]].map(([T, t]) => { const v = t.fourth && t.fourth.short; const lgv = S.league_fourth.short.go;
+      return v && v.n >= 6 && Math.abs(v.go - lgv) >= 0.08 ? esc(T.short) + (v.go > lgv ? " is aggressive" : " is conservative") + " on 4th & short: it goes for it " + pc(v.go) + " of the time (league " + pc(lgv) + ")." : null; }).filter(Boolean);
+    const wx = game && (game.indoor != null || game.temp != null) ? '<p class="note">' + (game.indoor ? "Indoor game. " : "") + (game.temp != null ? "Forecast: " + Math.round(game.temp) + "°F" + (game.sky ? ", " + esc(String(game.sky).toLowerCase()) : "") + (game.gust ? ", gusts to " + Math.round(game.gust) + " mph" : "") + ". " : "") +
+      "Weather is being recorded game by game so its effect on scoring and play-calling can be tested; it is not used in the prediction yet.</p>" : "";
+    return '<section class="prose" style="max-width:none"><h2>Situations and strategy</h2>' +
+      "<p class='note'>How each team plays by down and distance and by score, from play-by-play. Small samples are pulled toward the league average (and last season counts at partial weight), so a gap only shows when the evidence is real. ESPN’s play-by-play doesn’t record formations, play-action, blitzes or coverage, so none of those are claimed here; sacks are the only pressure signal.</p>" + wx +
+      "<h3>Likely game script</h3>" + scriptTbl +
+      "<h3>Where each offense can attack</h3><p class='note'>Edge = how far the team’s own success rate and the opposing defense’s success rate allowed sit above the league in that situation, added together (percentage points).</p>" +
+      '<div class="grid">' + card(A, rA) + card(H, rH) + "</div>" +
+      "<h3>Fourth down</h3>" + f4tbl + (aggressive.length ? "<ul>" + aggressive.map(li).join("") + "</ul>" : "") +
+      "<h3>" + esc(A.short) + " offense vs. " + esc(H.short) + " defense</h3>" + tbl(A, ta, H, th) +
+      "<h3>" + esc(H.short) + " offense vs. " + esc(A.short) + " defense</h3>" + tbl(H, th, A, ta) + "</section>";
+  }
+
   async function matchupPage(main, away, home, neutral, game) {
     const A = teamById[away], H = teamById[home];
     if (!A || !H) { main.innerHTML = '<p class="lede">That matchup isn’t available. <a href="#games">Back to games</a></p>'; return; }
@@ -378,7 +448,9 @@
       "<h2>When " + esc(H.short) + (LG.nfl ? " have" : " has") + " the ball</h2>" + unitTable(H, A, sh, sa, L) +
       "<h2>Scouting report</h2><p class='note'>Season averages from " + sa.games + " and " + sh.games + " games, not adjusted for opponents. A play is a success if it gains half the needed yards on 1st down, 70% on 2nd, or all of them on 3rd or 4th.</p>" +
       '<div class="grid">' + sideCard(A, eA) + sideCard(H, eH) + "</div>" +
-      "<h3>Likely tendencies</h3><p class='note'>Inferred from the stats, not observed.</p><div class='grid'>" + tendCard(A, tA) + tendCard(H, tH) + "</div>";
+      "<h3>Likely tendencies</h3><p class='note'>Inferred from the stats, not observed.</p><div class='grid'>" + tendCard(A, tA) + tendCard(H, tH) + "</div>" +
+      '<div id="m-sit"></div>';
+    loadSit().then((SS) => { const el = $("#m-sit"); if (el && SS) { try { el.innerHTML = situationSection(A, H, away, home, SS, spread, sd, game); } catch (e) { console.error(e); } } });
   }
 
   async function gamePage(main, id) {

@@ -109,7 +109,9 @@ def build(season: int, schedule: list[dict]) -> None:
                        "home": g["home_id"], "away": g["away_id"],
                        "home_name": names.get(g["home_id"], g.get("home_name")), "away_name": names.get(g["away_id"], g.get("away_name")),
                        "home_score": round(p["home_score"], 1), "away_score": round(p["away_score"], 1),
-                       "home_win": round(p["home_win"], 3), "note": g.get("note") or ""})
+                       "home_win": round(p["home_win"], 3), "note": g.get("note") or "",
+                       # forecast ESPN lists for the game (recorded for testing; not used in the prediction)
+                       "indoor": g.get("indoor"), "temp": g.get("wx_temp"), "sky": g.get("wx_sky"), "gust": g.get("wx_gust")})
     meta = {"season": f"{season}",
             "league": {"key": config.LEAGUE, "nfl": config.IS_NFL, "level": "NFL" if config.IS_NFL else "Division I",
                        "short": "NFL" if config.IS_NFL else "D-I"}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
@@ -120,6 +122,16 @@ def build(season: int, schedule: list[dict]) -> None:
     out.mkdir(parents=True, exist_ok=True)
     plays = load_plays(season)
     stats = scouting.team_profiles(plays, drives, set(t.team_id)) if len(plays) and len(drives) else {"league": {}, "teams": {}}
+    sit = None
+    if len(plays):
+        try:
+            from . import situations
+            prev_dir = config.DATA_DIR / str(season - 1)
+            plays_prev = load_plays(season - 1) if (prev_dir / "plays").exists() else None
+            games_prev = load(season - 1)[1] if (prev_dir / "games").exists() else None
+            sit = situations.build(plays, games, plays_prev, games_prev, set(t.team_id))
+        except Exception as e:  # never block the ratings
+            print(f"situations: skipped ({e})")
     po = None
     if not config.IS_NFL and len(remaining) and "season_type" in remaining:
         reg = remaining[pd.to_numeric(remaining.season_type, errors="coerce") == 2]
@@ -132,7 +144,7 @@ def build(season: int, schedule: list[dict]) -> None:
                              ("playoff", "bye", "conf_champ", "quarter", "semi", "final", "title")},
                              "wins": round(float(r.wins), 1), "losses": round(float(r.losses), 1), "sor": round(float(r.sor), 2)}
                             for r in keep.itertuples()]}
-    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)) + ((("playoff", po),) if po else ()):
+    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)) + ((("playoff", po),) if po else ()) + ((("situations", sit),) if sit else ()):
         (out / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     print(f"football: {len(games)} games, {len(t)} teams rated, {len(up)} upcoming")
 
