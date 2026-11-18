@@ -320,6 +320,50 @@
       '<p class="legend"><span class="key prior"></span>Preseason belief <span class="key post"></span>Current belief, after this season\'s games <span class="axis-note">Net points per 100 possessions vs. an average team</span></p></section>';
   }
 
+  // Strongest and weakest position group, measured against the team's own conference
+  const GROUPS = [["G", "Guards"], ["F", "Forwards"], ["C", "Centers"]];
+  function groupStrength() {
+    if (GROUPS.cache) return GROUPS.cache;
+    const by = {};
+    D.players.forEach((p) => {
+      const g = p.pos || "";
+      if (!by[p.team]) by[p.team] = {};
+      const x = by[p.team][g] || (by[p.team][g] = { share: 0, total: 0, off: 0, def: 0, top: [] });
+      const w = (p.mpg || 0) / LG.minutes;   // fraction of the game he is on the floor
+      x.share += w; x.total += w * p.total; x.off += w * p.off; x.def += w * p.def; x.top.push(p);
+    });
+    return (GROUPS.cache = by);
+  }
+
+  function rosterBalance(t) {
+    const by = groupStrength(), mine = by[t.id];
+    if (!mine) return "";
+    const peers = Object.values(teamById).filter((x) => x.conf === t.conf && by[x.id]);
+    if (peers.length < 3) return "";
+    const rows = GROUPS.map(([k, name]) => {
+      const val = (x) => (by[x.id][k] ? by[x.id][k].total : 0);
+      const avg = (f) => peers.reduce((a, x) => a + (by[x.id][k] ? by[x.id][k][f] : 0), 0) / peers.length;
+      const me = mine[k] || { share: 0, total: 0, off: 0, def: 0, top: [] };
+      const rank = peers.filter((x) => val(x) > me.total).length + 1;
+      const top = me.top.slice().sort((a, b) => b.mpg * b.total - a.mpg * a.total).slice(0, 2).filter((p) => p.mpg >= 8);
+      return { k, name, me, vs: me.total - avg("total"), vsO: me.off - avg("off"), vsD: me.def - avg("def"), rank, top, share: me.share };
+    }).filter((r) => r.share >= 0.15);
+    if (rows.length < 2) return "";
+    const sorted = rows.slice().sort((a, b) => a.vs - b.vs);
+    const weak = sorted[0], strong = sorted[sorted.length - 1];
+    const which = (r) => (Math.abs(r.vsO) > Math.abs(r.vsD) ? "mostly on offense (" + sgn(r.vsO, 1) + ")" : "mostly on defense (" + sgn(r.vsD, 1) + ")");
+    const short = esc(t.short || t.name);
+    const lede = weak.vs < -0.4
+      ? "Against " + esc(t.conf) + " competition, " + short + "’s weakest spot is <b>" + weak.name.toLowerCase() + "</b>: " + sgn(weak.vs, 1) + " points per 100 possessions against the average conference team (rank " + weak.rank + " of " + peers.length + "), " + which(weak) + ". That’s where a development plan or a recruit helps most." +
+        (strong.vs > 0.4 ? " The strongest group is " + strong.name.toLowerCase() + " (" + sgn(strong.vs, 1) + ", rank " + strong.rank + ")." : "")
+      : short + " is balanced against " + esc(t.conf) + " competition: no position group sits clearly below the conference average.";
+    return "<h2>Roster balance</h2><p class='lede'>" + lede + "</p>" +
+      '<div class="table-box"><table class="findings"><thead><tr><th class="l">Group</th><th>Minutes</th><th>Adds, per 100</th><th>vs. ' + esc(t.conf) + '</th><th>Rank</th><th>Offense</th><th>Defense</th><th class="l">Leaders</th></tr></thead><tbody>' +
+      rows.map((r) => "<tr><td class='l'>" + r.name + "</td><td>" + Math.round(r.share * 100 / Math.max(rows.reduce((a, x) => a + x.share, 0), 0.01)) + "%</td><td class='" + cls(r.me.total) + "'>" + sgn(r.me.total, 1) + "</td><td class='" + cls(r.vs) + "'>" + sgn(r.vs, 1) + "</td><td>" + r.rank + " of " + peers.length +
+        "</td><td class='" + cls(r.vsO) + "'>" + sgn(r.vsO, 1) + "</td><td class='" + cls(r.vsD) + "'>" + sgn(r.vsD, 1) + "</td><td class='l'>" + (r.top.length ? r.top.map((p) => esc(p.name)).join(", ") : "–") + "</td></tr>").join("") + "</tbody></table></div>" +
+      '<p class="note">Each group’s impact ratings, weighted by minutes played, compared with the average team in the conference (offense and defense columns are also versus that average). Positions are the listed ones, with height used where none is listed (marked on the player table); a guard or forward who plays big minutes counts for his listed group.</p>';
+  }
+
   function team(main, id) {
     const t = teamById[id];
     if (!t) { main.innerHTML = '<p class="lede">That team isn’t in the current ratings. <a href="#rankings">Back to rankings</a></p>'; return; }
@@ -330,6 +374,7 @@
       "<div><dt>Offense</dt><dd>" + f1(t.o) + '<span class="rk">' + t.o_rank + "</span></dd></div><div><dt>Defense</dt><dd>" + f1(t.d) + '<span class="rk">' + t.d_rank + "</span></dd></div>" +
       "<div><dt>Tempo</dt><dd>" + f1(t.tempo) + "</dd></div></dl>" +
       beliefChart(t) +
+      rosterBalance(t) +
       (up.length ? "<h2>Next up</h2><div class='grid'>" + up.map(gameCard).join("") + "</div>" : "") +
       "<h2>Players</h2><div><div id='t-p'></div><div id='t-pn'></div></div><h2>Lineups</h2><div id='t-l'></div>";
     table($("#t-p"), playerCols(false), roster, "poss");

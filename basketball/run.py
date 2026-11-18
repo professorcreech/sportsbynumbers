@@ -276,7 +276,7 @@ def build(tm, games, box, stints, prior, schedule, label: str, out_dir=None, ros
     if flow is not None:
         try:
             from . import situations
-            situations_out = situations.build(flow, games, flow_prev, games_prev, names=dict(zip(box.player_id, box.name)))
+            situations_out = situations.build(flow, games, flow_prev, games_prev, names=dict(zip(box.player_id, box.name)), teams_in=set(t.team_id))
         except Exception as e:  # a problem here should never block the ratings
             print(f"situations: skipped ({e})")
     value_out = player_value(p, t, season) if (config.IS_NBA and season and len(p)) else None

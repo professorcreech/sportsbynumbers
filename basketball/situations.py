@@ -167,9 +167,13 @@ def _league(counts: pd.DataFrame, expo: pd.DataFrame) -> dict:
 
 
 def build(flow: pd.DataFrame | None, games: pd.DataFrame, flow_prev: pd.DataFrame | None = None,
-          games_prev: pd.DataFrame | None = None, names: dict | None = None) -> dict | None:
+          games_prev: pd.DataFrame | None = None, names: dict | None = None, teams_in: set | None = None) -> dict | None:
     if flow is None or not len(flow):
         return None
+    if teams_in:   # only games between rated teams, so the league baseline is the league being scouted
+        games = games[games.home_id.isin(teams_in) & games.away_id.isin(teams_in)]
+        if games_prev is not None:
+            games_prev = games_prev[games_prev.home_id.isin(teams_in) & games_prev.away_id.isin(teams_in)]
     parts, expos = [_prepare(flow, games, 1.0)], [_exposure(flow, games, 1.0)]
     if flow_prev is not None and len(flow_prev) and games_prev is not None:
         parts.append(_prepare(flow_prev, games_prev, PRIOR_SEASON_WEIGHT))
