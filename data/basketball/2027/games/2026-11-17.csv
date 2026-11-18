@@ -1,0 +1,10 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401906773,2026-11-17,True,False,True,57,87,86,78,2026-11-17T21:51Z,47|39,32|46,DraftKings,FLA -14.5,-14.5,150.5,-1600.0,900.0,True,Mike Littlewood|Bill Covington Jr.|Owen Shortt,3923,
+401920511,2026-11-17,True,False,True,248,164,85,73,2026-11-17T19:00Z,45|40,30|43,DraftKings,HOU -16.5,-16.5,143.5,-2400.0,1200.0,True,Jeb Hartness|Gregory Nixon|Earl Watson,0,
+401920904,2026-11-17,False,False,True,48,111914,93,47,2026-11-17T16:00Z,49|44,21|26,,,,,,,,Mick Fieldbinder|Dan Powers|Steve Divine,1237,
+401928360,2026-11-17,False,False,True,2582,2347,100,58,2026-11-17T17:00Z,54|46,32|26,,,,,,,,Earnie Pheal|Jeremy Campbell|Joseph Guyton,4286,
+401927381,2026-11-17,True,False,True,93,2275,82,66,2026-11-17T17:00Z,43|39,33|33,DraftKings,MUR -11.5,-11.5,146.5,-700.0,500.0,True,John St. Clair|Craig Jefferys|Keith Patterson,2612,
+401923325,2026-11-17,False,False,True,2349,2612,66,51,2026-11-17T23:00Z,24|42,26|25,DraftKings,UML -4.5,-4.5,127.5,-205.0,170.0,True,Nathan Hall|Jason Bradwell|Vasili Mallios,396,
+401920953,2026-11-17,True,False,True,79,2335,78,87,2026-11-17T23:00Z,30|48,44|43,DraftKings,SIU -1.5,-1.5,144.5,-135.0,114.0,True,Ryan  Christian|Jason Deering|Kyle Bowen,168,
+401912230,2026-11-17,False,False,True,349,2368,68,73,2026-11-17T23:00Z,41|27,35|38,DraftKings,ARMY -1.5,-1.5,131.5,-118.0,-102.0,True,Jack Loughran|Brandon Kamil,664,
+401926834,2026-11-17,False,False,True,2619,182,104,47,2026-11-17T23:30Z,49|55,22|25,,,,,,,,Sean Campbell|Ryan Corbett|Dan Basile,893,
