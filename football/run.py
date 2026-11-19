@@ -132,6 +132,16 @@ def build(season: int, schedule: list[dict]) -> None:
             sit = situations.build(plays, games, plays_prev, games_prev, set(t.team_id))
         except Exception as e:  # never block the ratings
             print(f"situations: skipped ({e})")
+    ros = None
+    try:
+        from . import roster
+        rf = config.DATA_DIR / str(season) / "roster.csv"
+        if rf.exists():
+            pl = _read(config.DATA_DIR / str(season) / "players", "*.csv.gz") if (config.DATA_DIR / str(season) / "players").exists() else pd.DataFrame()
+            ros = roster.build(pd.read_csv(rf, dtype={"team_id": str, "player_id": str}),
+                               pl.astype({"team_id": str, "player_id": str}) if len(pl) else pl, games, tm)
+    except Exception as e:  # never block the ratings
+        print(f"roster: skipped ({e})")
     po = None
     if not config.IS_NFL and len(remaining) and "season_type" in remaining:
         reg = remaining[pd.to_numeric(remaining.season_type, errors="coerce") == 2]
@@ -144,7 +154,7 @@ def build(season: int, schedule: list[dict]) -> None:
                              ("playoff", "bye", "conf_champ", "quarter", "semi", "final", "title")},
                              "wins": round(float(r.wins), 1), "losses": round(float(r.losses), 1), "sor": round(float(r.sor), 2)}
                             for r in keep.itertuples()]}
-    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)) + ((("playoff", po),) if po else ()) + ((("situations", sit),) if sit else ()):
+    for name, obj in (("meta", meta), ("teams", out_t), ("games", up), ("teamstats", stats)) + ((("playoff", po),) if po else ()) + ((("situations", sit),) if sit else ()) + ((("roster", ros),) if ros else ()):
         (out / f"{name}.json").write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     print(f"football: {len(games)} games, {len(t)} teams rated, {len(up)} upcoming")
 

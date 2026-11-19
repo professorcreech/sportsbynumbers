@@ -384,7 +384,23 @@
     box.innerHTML = "<h2>Unit balance</h2><p class='lede'>Where " + esc(t.short) + " stands against " + esc(t.conf) + " competition, unit by unit. Gaps are in standard deviations of the national spread, so a unit " +
       "well below the conference is where development, scheme or recruiting pays off most.</p><ul>" + sentence("off", "Offense") + sentence("def", "Defense") + "</ul>" +
       "<h3>Offense</h3>" + tbl("off") + "<h3>Defense</h3>" + tbl("def") +
-      "<p class='note'>Season averages from " + S.teams[id].games + " games, not adjusted for opponents. These are play-by-play unit results, not player ratings: ESPN’s football feed here has no player-level stats yet, so the table can say a team’s pass defense is weak but not which position group is responsible.</p>";
+      "<p class='note'>Season averages from " + S.teams[id].games + " games, not adjusted for opponents. These are play-by-play unit results, not player ratings.</p>";
+    const R = await (fetch("data/roster.json").then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    const T = R && R.teams[id];
+    if (!T) return;
+    const gs = Object.keys(R.groups).filter((g) => T[g]);
+    const meas = gs.filter((g) => T[g].z != null).sort((a, b) => T[a].z - T[b].z);
+    const weak = meas.filter((g) => T[g].z <= -0.4).slice(0, 2), strong = meas.slice().reverse().filter((g) => T[g].z >= 0.4).slice(0, 2);
+    const nm = (g) => R.groups[g].toLowerCase() + " (" + ordinal(T[g].conf_rank) + " of " + T[g].conf_n + " in the " + esc(t.conf) + ")";
+    const leaving = gs.filter((g) => T[g].n >= 3 && T[g].seniors / T[g].n >= 0.3).sort((a, b) => T[b].seniors / T[b].n - T[a].seniors / T[a].n).slice(0, 2);
+    const rrows = gs.map((g) => { const x = T[g]; return "<tr><td class='l'>" + esc(R.groups[g]) + "</td><td>" + x.n + "</td><td>" + x.seniors + "</td><td>" + (x.wt || "–") + "</td><td class='l'>" +
+      (x.metric != null ? esc(R.labels[g]) + ": <b>" + x.metric.toFixed(1) + "</b>" : "<span class='note'>no counting stats</span>") + "</td><td>" + (x.conf_rank ? x.conf_rank + " of " + x.conf_n : "–") + "</td><td class='" + cls(x.z) + "'>" + (x.z != null ? sgn(x.z, 1) + " sd" : "–") +
+      "</td><td class='l'>" + (x.top || []).map((p) => esc(p.name) + " <span class='note'>" + esc(p.line) + "</span>").join("<br>") + "</td></tr>"; }).join("");
+    box.insertAdjacentHTML("beforeend", "<h2>Position groups</h2><p class='lede'>" + (meas.length ? "Production by group against " + esc(t.conf) + " teams. " +
+      (weak.length ? "Weakest: " + weak.map(nm).join(" and ") + ". " : "No clearly weak group. ") + (strong.length ? "Strongest: " + strong.map(nm).join(" and ") + ". " : "") : "") +
+      (leaving.length ? "Most seniors (likely gone next year): " + leaving.map((g) => R.groups[g].toLowerCase() + " (" + T[g].seniors + " of " + T[g].n + ")").join(" and ") + "." : "") + "</p>" +
+      '<div class="table-box"><table class="findings"><thead><tr><th class="l">Group</th><th>Players</th><th>Seniors</th><th>Avg lbs</th><th class="l">Production measure</th><th>Conf. rank</th><th>vs. conf.</th><th class="l">Top producers</th></tr></thead><tbody>' + rrows + "</tbody></table></div>" +
+      "<p class='note'>Built from box scores, which count what players did but not how many snaps they played, so a group’s number reflects its best players’ output, not depth. Offensive linemen have no counting stats; their row shows size and experience only. Seniors include graduate students.</p>");
   }
 
   /* ===================== Situations and strategy (football/situations.py) ===================== */

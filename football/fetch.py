@@ -25,7 +25,7 @@ def _int(x, default=0):
 
 def season_dir(season: int):
     d = config.DATA_DIR / str(season)
-    for sub in ("games", "drives", "plays"):
+    for sub in ("games", "drives", "plays", "players"):
         (d / sub).mkdir(parents=True, exist_ok=True)
     return d
 
@@ -157,6 +157,85 @@ def parse_summary(summ: dict, game: dict):
     return drives, plays
 
 
+# (category, label) -> column for the per-player box score
+_PLAYER_COLS = {
+    ("passing", "YDS"): "pass_yds", ("passing", "TD"): "pass_td", ("passing", "INT"): "pass_int",
+    ("rushing", "CAR"): "rush_car", ("rushing", "YDS"): "rush_yds", ("rushing", "TD"): "rush_td",
+    ("receiving", "REC"): "rec", ("receiving", "YDS"): "rec_yds", ("receiving", "TD"): "rec_td",
+    ("defensive", "TOT"): "tkl", ("defensive", "SOLO"): "solo", ("defensive", "SACKS"): "sacks",
+    ("defensive", "TFL"): "tfl", ("defensive", "PD"): "pd", ("defensive", "QB HUR"): "hur",
+    ("interceptions", "INT"): "def_int", ("fumbles", "LOST"): "fum_lost",
+    ("punting", "NO"): "punts", ("punting", "AVG"): "punt_avg",
+}
+
+
+def _num(x):
+    try:
+        return float(str(x).replace(",", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def parse_players(summ: dict, game: dict) -> list[dict]:
+    """One row per player per game from the box score: what each player produced. (No snap counts in the feed.)"""
+    rows = {}
+    for tm in (summ.get("boxscore") or {}).get("players") or []:
+        tid = str((tm.get("team") or {}).get("id", ""))
+        for cat in tm.get("statistics") or []:
+            name, labels = cat.get("name"), cat.get("labels") or []
+            for a in cat.get("athletes") or []:
+                ath = a.get("athlete") or {}
+                pid = str(ath.get("id", ""))
+                if not pid:
+                    continue
+                r = rows.setdefault((tid, pid), {"game_id": game["game_id"], "team_id": tid, "player_id": pid,
+                                                 "name": ath.get("displayName") or ath.get("fullName")})
+                for lab, val in zip(labels, a.get("stats") or []):
+                    if name == "passing" and lab == "C/ATT" and "/" in str(val):
+                        c, at = str(val).split("/", 1)
+                        r["pass_cmp"], r["pass_att"] = _num(c), _num(at)
+                    elif name == "kicking" and lab == "FG" and "/" in str(val):
+                        m, at = str(val).split("/", 1)
+                        r["fg_made"], r["fg_att"] = _num(m), _num(at)
+                    elif (name, lab) in _PLAYER_COLS:
+                        r[_PLAYER_COLS[(name, lab)]] = _num(val)
+    return list(rows.values())
+
+
+def fetch_roster(season: int, max_age_days: float = 7) -> None:
+    """Every team's roster (position, class, height, weight), refreshed weekly: roster.csv."""
+    import time
+    f = season_dir(season) / "roster.csv"
+    if f.exists() and time.time() - f.stat().st_mtime < max_age_days * 86400:
+        return
+    teams = season_dir(season) / "teams.csv"
+    if not teams.exists():
+        return
+    ids = [str(t) for t in pd.read_csv(teams, dtype={"team_id": str}).team_id]
+
+    def one(tid):
+        out = []
+        try:
+            data = get(f"{config.ESPN}/teams/{tid}/roster") or {}
+        except Exception:
+            return out
+        for grp in data.get("athletes") or []:
+            for a in grp.get("items") or []:
+                pos = a.get("position") or {}
+                out.append({"team_id": tid, "player_id": str(a.get("id")), "name": a.get("displayName") or a.get("fullName"),
+                            "pos": pos.get("abbreviation"), "jersey": a.get("jersey"),
+                            "class": (a.get("experience") or {}).get("abbreviation"),
+                            "years": (a.get("experience") or {}).get("years"),
+                            "height": a.get("height"), "weight": a.get("weight")})
+        return out
+
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        rows = [r for rs in pool.map(one, ids) for r in rs]
+    if len(rows) > 500:
+        pd.DataFrame(rows).to_csv(f, index=False)
+        print(f"roster: {len(rows)} players on {len(ids)} teams")
+
+
 def fetch_day(season: int, day: date) -> int:
     d = season_dir(season)
     games = [g for g in scoreboard(day) if g["completed"]]
@@ -165,7 +244,7 @@ def fetch_day(season: int, day: date) -> int:
         return 0
     with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
         summaries = list(pool.map(lambda g: get(f"{config.ESPN}/summary", {"event": g["game_id"]}), games))
-    drv, ply = [], []
+    drv, ply, pls = [], [], []
     for g, s in zip(games, summaries):
         if s:
             g.update(game_context(s))
@@ -173,6 +252,7 @@ def fetch_day(season: int, day: date) -> int:
                 a, b = parse_summary(s, g)
                 drv += a
                 ply += b
+                pls += parse_players(s, g)
             except Exception as e:
                 print(f"  could not parse {g['game_id']}: {e}")
     name = day.isoformat()
@@ -181,6 +261,8 @@ def fetch_day(season: int, day: date) -> int:
         pd.DataFrame(drv).to_csv(d / "drives" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     if ply:
         pd.DataFrame(ply).to_csv(d / "plays" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
+    if pls:
+        pd.DataFrame(pls).to_csv(d / "players" / f"{name}.csv.gz", index=False, compression={"method": "gzip", "mtime": 0})
     return len(games)
 
 
@@ -226,10 +308,15 @@ def update(season: int | None = None, force: bool = False) -> None:
     if season == config.season_for(today):
         fetch_rankings(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
+    have_pl = {p.name.split(".")[0] for p in (d / "players").glob("*.csv.gz")}
+    fetch_roster(season)
     day, last = config.season_start(season), min(today - timedelta(days=1), config.season_end(season))
     recent = last - timedelta(days=config.REFETCH_DAYS - 1)
     while day <= last:
-        if force or day.isoformat() not in have or day >= recent:
+        iso = day.isoformat()
+        # one-time backfill of box scores for the current season's earlier days
+        need_pl = season == config.season_for(today) and iso in have and iso not in have_pl and (d / "games" / f"{iso}.csv").stat().st_size > 5
+        if force or iso not in have or day >= recent or need_pl:
             n = fetch_day(season, day)
             if n:
                 print(f"{day}: {n} games")
