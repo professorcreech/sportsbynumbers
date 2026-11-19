@@ -46,14 +46,15 @@ LABEL = {"QB": "adjusted yards per pass attempt", "RB": "yards per carry", "WR":
 
 
 def _line(g: str, r) -> str:
-    f = lambda c: int(r.get(c, 0) or 0)
+    v = lambda c: 0.0 if pd.isna(r.get(c)) else float(r.get(c))
+    f = lambda c: int(v(c))
     if g == "QB":
         return f"{f('pass_cmp')}/{f('pass_att')}, {f('pass_yds')} yds, {f('pass_td')} TD, {f('pass_int')} INT"
     if g == "RB":
         return f"{f('rush_car')} car, {f('rush_yds')} yds, {f('rush_td')} TD"
     if g == "WR":
         return f"{f('rec')} rec, {f('rec_yds')} yds, {f('rec_td')} TD"
-    return f"{f('tkl')} tkl, {f('tfl')} TFL, {r.get('sacks', 0) or 0:g} sacks, {f('pd')} PD, {f('def_int')} INT"
+    return f"{f('tkl')} tkl, {f('tfl')} TFL, {v('sacks'):g} sacks, {f('pd')} PD, {f('def_int')} INT"
 
 
 SORT = {"QB": "pass_att", "RB": "rush_car", "WR": "rec_yds", "DL": "sacks", "LB": "tkl", "DB": "tkl"}
@@ -68,7 +69,9 @@ def build(roster: pd.DataFrame, players: pd.DataFrame, games: pd.DataFrame, team
     r["senior"] = r["class"].astype(str).str.upper().isin(SENIOR)
     r["w"] = pd.to_numeric(r.weight, errors="coerce")
     if players is not None and len(players):
-        p = players.merge(r[["team_id", "player_id", "g"]], on=["team_id", "player_id"], how="left")
+        num = [c for c in players.columns if c not in ("game_id", "team_id", "player_id", "name", "punt_avg")]
+        season = players.groupby(["team_id", "player_id"], as_index=False).agg({**{c: "sum" for c in num}, "name": "last"})
+        p = season.merge(r[["team_id", "player_id", "g"]], on=["team_id", "player_id"], how="left")
         gp = pd.concat([games.home_id, games.away_id]).value_counts()
     else:
         p, gp = pd.DataFrame(), pd.Series(dtype=float)
