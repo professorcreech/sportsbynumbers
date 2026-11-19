@@ -7,6 +7,14 @@ The approach throughout is Bayesian: every rating starts from an informed prior 
 this year's roster) and moves toward what this season's games say as evidence accumulates.
 Every modeling choice below was tested on games the model hadn't seen.
 
+## Track record
+
+`tools/ledger.py` runs after every daily build. It saves each game's prediction (last one made before tip-off,
+for games in the next 36 hours), grades it when the final score arrives, and writes `site/<sport>/data/record.json`
+for the **Record** tab: picks right, calibration by confidence, weekly results, how the model compares with the
+betting line where one exists, and per-team gaps between result and prediction (with their margin of noise).
+Files: `data/<sport>/ledger.csv`. `python -m tools.ledger --backfill` rebuilds earlier days from the site's git history.
+
 ## Sports
 
 | Section | Engine | Season | What it has |

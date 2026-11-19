@@ -8,7 +8,7 @@
   const sgn = (x, d = 1) => (x == null ? "–" : (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x).toFixed(d));
   const cls = (x) => (x > 0.05 ? "pos" : x < -0.05 ? "neg" : "");
   const pct = (p) => (p >= 0.995 ? ">99%" : p <= 0.005 ? "<1%" : Math.round(p * 100) + "%");
-  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "value", "method"];
+  const VIEWS = ["rankings", "players", "lineups", "games", "matchup", "bracket", "value", "record", "method"];
 
   let D = {};
   let LG = { nba: false, level: "Division I", short: "D-I", minutes: 40 };  // replaced by meta.league on load
@@ -908,6 +908,8 @@
       rows.map((r) => "<tr><td class='l'>" + esc(r[0]) + "</td><td class='l'>" + esc(r[1]) + "</td><td class='l'>" + esc(r[2]) + "</td></tr>").join("") + "</tbody></table></div>";
   }
 
+  function record(main) { return window.SBN_record(main, teamById); }
+
   function route() {
     const h = location.hash.slice(1) || "rankings";
     const main = $("#main");
@@ -919,7 +921,7 @@
     if (h.startsWith("team-")) team(main, h.slice(5));
     else if (h.startsWith("game-")) gamePage(main, h.slice(5));
     else if (h.startsWith("vs-")) { const [a, b, n] = h.slice(3).split("-"); matchupPage(main, a, b, n === "n", null); }
-    else ({ rankings, players, lineups, games, matchup, bracket, value, method })[view](main);
+    else ({ rankings, players, lineups, games, matchup, bracket, value, record, method })[view](main);
     window.scrollTo(0, 0);
   }
 

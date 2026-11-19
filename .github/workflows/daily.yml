@@ -136,6 +136,10 @@ jobs:
             echo "NFL is out of season; keeping last ratings."
           fi
 
+      - name: Prediction record
+        continue-on-error: true   # grading must never block the update
+        run: python -m tools.ledger
+
       - name: Save new data
         run: |
           git config user.name  "sportsbynumbers-bot"
