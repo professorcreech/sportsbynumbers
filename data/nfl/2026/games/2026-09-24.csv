@@ -1,2 +1,2 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401872948,2026-09-24,2026-09-25T00:15Z,3,2,True,False,False,9,1,Packers,Falcons,14,35,,Green Bay,WI
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401872948,2026-09-24,2026-09-25T00:15Z,3,2,True,False,False,9,1,Packers,Falcons,14,35,,Green Bay,WI,False,,,,,Dino Paganelli|Dyrol Prioleau|Jeff Seeman|Keith Parham|Shawn Smith|Tra Blake|Jay Bilbo,Shawn Smith,76955

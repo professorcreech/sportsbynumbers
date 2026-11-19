@@ -1,2 +1,2 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401872657,2026-09-10,2026-09-11T00:35Z,1,2,True,True,False,14,25,Rams,49ers,7,27,NFL Melbourne Game,Melbourne,VIC
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401872657,2026-09-10,2026-09-11T00:35Z,1,2,True,True,False,14,25,Rams,49ers,7,27,NFL Melbourne Game,Melbourne,VIC,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Jim Quirk|Alex Kemp|Mike Carr|Brandon Ellison,Alex Kemp,100021

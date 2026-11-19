@@ -1,4 +1,4 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401866458,2026-11-10,2026-11-11T00:00Z,11,2,True,False,True,2006,2711,Akron,W Michigan,14,42,,Akron,OH
-401866459,2026-11-10,2026-11-11T00:00Z,11,2,True,False,True,189,2309,Bowling Green,Kent State,33,28,,Bowling Green,OH
-401866460,2026-11-10,2026-11-11T01:00Z,11,2,True,False,True,193,195,Miami OH,Ohio,34,17,,Oxford,OH
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401866458,2026-11-10,2026-11-11T00:00Z,11,2,True,False,True,2006,2711,Akron,W Michigan,14,42,,Akron,OH,False,,,,,,,4243
+401866459,2026-11-10,2026-11-11T00:00Z,11,2,True,False,True,189,2309,Bowling Green,Kent State,33,28,,Bowling Green,OH,False,,,,,,,10254
+401866460,2026-11-10,2026-11-11T01:00Z,11,2,True,False,True,193,195,Miami OH,Ohio,34,17,,Oxford,OH,False,,,,,,,17156

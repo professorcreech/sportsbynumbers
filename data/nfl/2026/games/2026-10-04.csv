@@ -1,15 +1,15 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401872965,2026-10-04,2026-10-04T13:30Z,4,2,True,True,False,28,11,Commanders,Colts,13,30,NFL London Games,London,
-401872971,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,2,17,Bills,Patriots,26,29,,Orchard Park,NY
-401872972,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,3,20,Bears,Jets,23,12,,Chicago,IL
-401872969,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,4,30,Bengals,Jaguars,17,22,,Cincinnati,OH
-401872966,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,19,22,Giants,Cardinals,36,24,,East Rutherford,NJ
-401872970,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,21,14,Eagles,Rams,20,24,,Philadelphia,PA
-401872968,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,27,9,Buccaneers,Packers,14,17,,Tampa,FL
-401872973,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,33,10,Ravens,Titans,24,18,,Baltimore,MD
-401872967,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,34,6,Texans,Cowboys,30,34,,Houston,TX
-401872974,2026-10-04,2026-10-04T20:05Z,4,2,True,False,False,16,15,Vikings,Dolphins,15,10,,Minneapolis,MN
-401872976,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,13,12,Raiders,Chiefs,27,30,,Las Vegas,NV
-401872975,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,25,7,49ers,Broncos,24,14,,Santa Clara,CA
-401872977,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,26,24,Seahawks,Chargers,30,23,,Seattle,WA
-401872978,2026-10-04,2026-10-05T00:20Z,4,2,True,False,False,29,8,Panthers,Lions,32,26,,Charlotte,NC
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401872965,2026-10-04,2026-10-04T13:30Z,4,2,True,True,False,28,11,Commanders,Colts,13,30,NFL London Games,London,,False,,,,,Greg Bradley|Paul King|Dale Shaw|Alan Eck|David Oliver|Grantis Bell|Anthony Flemming,Alan Eck,60907
+401872971,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,2,17,Bills,Patriots,26,29,,Orchard Park,NY,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Brian Bolinger|Frank LeBlanc|Scott Campbell,Bill Vinovich,60606
+401872972,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,3,20,Bears,Jets,23,12,,Chicago,IL,False,,,,,Derick Bowers|Carl Cheffers|Martin Hankins|Nathan Jones|Dominique Pender|Derek Anderson|Quentin Givens,Carl Cheffers,59702
+401872969,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,4,30,Bengals,Jaguars,17,22,,Cincinnati,OH,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,66625
+401872966,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,19,22,Giants,Cardinals,36,24,,East Rutherford,NJ,False,,,,,Dino Paganelli|Dyrol Prioleau|Jeff Seeman|Keith Parham|Shawn Smith|Tra Blake|Jay Bilbo,Shawn Smith,80893
+401872970,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,21,14,Eagles,Rams,20,24,,Philadelphia,PA,False,,,,,Max Causey|Frank Steratore|Craig Wrolstad|Rich Martinez|Brandon Cruse|Jeff Shears|John Braun,Craig Wrolstad,69879
+401872968,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,27,9,Buccaneers,Packers,14,17,,Tampa,FL,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Jim Quirk|Alex Kemp|Mike Carr|Brandon Ellison,Alex Kemp,61467
+401872973,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,33,10,Ravens,Titans,24,18,,Baltimore,MD,False,,,,,Carl Johnson|Tab Slaughter|Shawn Hochuli|Justin Larrew|Jimmy Russell|Patrick Holt|Jason Ledet,Shawn Hochuli,70101
+401872967,2026-10-04,2026-10-04T17:00Z,4,2,True,False,False,34,6,Texans,Cowboys,30,34,,Houston,TX,True,,,,,Sarah Thomas|Brad Allen|Chad Hill|Walter Flowers|Tyree Walton|Marcus Woods|Frederick Dimpfel VI,Brad Allen,71227
+401872974,2026-10-04,2026-10-04T20:05Z,4,2,True,False,False,16,15,Vikings,Dolphins,15,10,,Minneapolis,MN,True,,,,,Trawick Boger|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Danny Short|Glen Fucik,Adrian Hill,66752
+401872976,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,13,12,Raiders,Chiefs,27,30,,Las Vegas,NV,True,,,,,Greg Yette|David Meslow|Patrick Turner|Bryan Neale|Kevin Codey|Brad Rogers|Joe Blubaugh,Brad Rogers,62593
+401872975,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,25,7,49ers,Broncos,24,14,,Santa Clara,CA,False,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Tripp Sutter|Brett Bergman|Courtney Brown,Ronald Torbert,70776
+401872977,2026-10-04,2026-10-04T20:25Z,4,2,True,False,False,26,24,Seahawks,Chargers,30,23,,Seattle,WA,False,,,,,Greg Meyer|Scott Novak|John Jenkins|Mike Morton|Mark Stewart|Don Willard|Brian Sakowski,Scott Novak,68691
+401872978,2026-10-04,2026-10-05T00:20Z,4,2,True,False,False,29,8,Panthers,Lions,32,26,,Charlotte,NC,False,,,,,Greg Wilson|Clay Martin|Eugene Hall|Steven Woods|Jerod Phillips|Alonzo Ramsey III|Brian Perry,Clay Martin,73436

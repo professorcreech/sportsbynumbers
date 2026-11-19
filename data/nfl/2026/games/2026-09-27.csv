@@ -1,15 +1,15 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401872953,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,2,24,Bills,Chargers,24,16,,Orchard Park,NY
-401872949,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,5,29,Browns,Panthers,21,18,,Cleveland,OH
-401872954,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,8,20,Lions,Jets,31,24,,Detroit,MI
-401872951,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,11,34,Colts,Texans,19,17,,Indianapolis,IN
-401872952,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,15,12,Dolphins,Chiefs,10,24,,Miami Gardens,FL
-401872956,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,19,10,Giants,Titans,12,7,,East Rutherford,NJ
-401872950,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,23,4,Steelers,Bengals,30,27,,Pittsburgh,PA
-401872955,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,28,26,Commanders,Seahawks,33,31,,Landover,MD
-401872957,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,30,17,Jaguars,Patriots,35,6,,Jacksonville,FL
-401872958,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,25,22,49ers,Cardinals,36,30,,Santa Clara,CA
-401872959,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,27,16,Buccaneers,Vikings,16,23,,Tampa,FL
-401872960,2026-09-27,2026-09-27T20:25Z,3,2,True,True,False,6,33,Cowboys,Ravens,31,34,NFL Rio Game,Rio De Janeiro,
-401872961,2026-09-27,2026-09-27T20:25Z,3,2,True,False,False,18,13,Saints,Raiders,27,35,,New Orleans,LA
-401872962,2026-09-27,2026-09-28T00:20Z,3,2,True,False,False,7,14,Broncos,Rams,30,26,,Denver,CO
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401872953,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,2,24,Bills,Chargers,24,16,,Orchard Park,NY,False,,,,,Clete Blakeman|James Coleman|Greg Meyer|Kent Payne|Tab Slaughter|Karina Tovar|Andy Warner,Clete Blakeman,60361
+401872949,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,5,29,Browns,Panthers,21,18,,Cleveland,OH,False,,,,,Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dave Hawkshaw|Dale Keller|Stephen Ray,Land Clark,65023
+401872954,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,8,20,Lions,Jets,31,24,,Detroit,MI,True,,,,,Greg Yette|David Meslow|Patrick Turner|Bryan Neale|Kevin Codey|Brad Rogers|Joe Blubaugh,Brad Rogers,63193
+401872951,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,11,34,Colts,Texans,19,17,,Indianapolis,IN,True,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Tripp Sutter|Courtney Brown|John Braun,Ronald Torbert,63400
+401872952,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,15,12,Dolphins,Chiefs,10,24,,Miami Gardens,FL,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,59216
+401872956,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,19,10,Giants,Titans,12,7,,East Rutherford,NJ,False,,,,,Greg Bradley|Paul King|Dale Shaw|Alan Eck|David Oliver|Grantis Bell|Frederick Dimpfel VI,Alan Eck,79919
+401872950,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,23,4,Steelers,Bengals,30,27,,Pittsburgh,PA,False,,,,,Greg Wilson|Clay Martin|Eugene Hall|Steven Woods|Jerod Phillips|Alonzo Ramsey III|Brian Perry,Clay Martin,66816
+401872955,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,28,26,Commanders,Seahawks,33,31,,Landover,MD,False,,,,,Derick Bowers|Carl Cheffers|Martin Hankins|Nathan Jones|Dominique Pender|Derek Anderson|Quentin Givens,Carl Cheffers,64027
+401872957,2026-09-27,2026-09-27T17:00Z,3,2,True,False,False,30,17,Jaguars,Patriots,35,6,,Jacksonville,FL,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Jim Quirk|Alex Kemp|Mike Carr|Brandon Ellison,Alex Kemp,42156
+401872958,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,25,22,49ers,Cardinals,36,30,,Santa Clara,CA,False,,,,,Sarah Thomas|Brad Allen|Chad Hill|Anthony Flemming|Walter Flowers|Tyree Walton|Marcus Woods,Brad Allen,70687
+401872959,2026-09-27,2026-09-27T20:05Z,3,2,True,False,False,27,16,Buccaneers,Vikings,16,23,,Tampa,FL,False,,,,,Scott Novak|Mike Morton|Tony Josselyn|Mark Stewart|Don Willard|Brian Sakowski|Gabriel DeLeon,Scott Novak,61212
+401872960,2026-09-27,2026-09-27T20:25Z,3,2,True,True,False,6,33,Cowboys,Ravens,31,34,NFL Rio Game,Rio De Janeiro,,False,,,,,Allen Baynes|John Hussey|Tim Podraza|John Jenkins|Matt Edwards|Duane Heydt,John Hussey,72792
+401872961,2026-09-27,2026-09-27T20:25Z,3,2,True,False,False,18,13,Saints,Raiders,27,35,,New Orleans,LA,True,,,,,Trawick Boger|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Danny Short|Glen Fucik,Adrian Hill,70006
+401872962,2026-09-27,2026-09-28T00:20Z,3,2,True,False,False,7,14,Broncos,Rams,30,26,,Denver,CO,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Brian Bolinger|Frank LeBlanc|Scott Campbell,Bill Vinovich,76333
