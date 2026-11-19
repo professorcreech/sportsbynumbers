@@ -36,7 +36,7 @@
   function teamLink(id, withConf) {
     const t = teamById[id];
     if (!t) return esc(id);
-    return '<span class="dot" style="background:#' + esc(t.color) + '"></span>' + esc(t.short || t.name) +
+    return '<a href="#team-' + esc(id) + '" style="color:inherit;text-decoration:none"><span class="dot" style="background:#' + esc(t.color) + '"></span>' + esc(t.short || t.name) + "</a>" +
       (withConf ? '<span class="sub">' + esc([t.conf, LG.nfl ? "" : t.div].filter(Boolean).join(" · ")) + "</span>" : "");
   }
   function netBar(x, max) {
@@ -336,6 +336,57 @@
     return out;
   }
 
+  /* ===================== Team page: unit balance against the conference ===================== */
+  const UNITS = [
+    ["off", "Run game", "rush_success", true, "Rush success rate"], ["off", "Pass game", "pass_success", true, "Pass success rate"],
+    ["off", "Pass protection", "sack_rate", false, "Sacks taken per dropback"], ["off", "Big plays", "explosive", true, "Explosive play rate"],
+    ["off", "Third down", "third_conv", true, "3rd-down conversion"], ["off", "Red zone", "rz_td", true, "Red-zone TD rate"], ["off", "Ball security", "to_drive", false, "Turnovers per drive"],
+    ["def", "Run defense", "d_rush_success", false, "Rush success allowed"], ["def", "Pass defense", "d_pass_success", false, "Pass success allowed"],
+    ["def", "Pass rush", "d_sack_rate", true, "Sack rate"], ["def", "Big-play prevention", "d_explosive", false, "Explosive plays allowed"],
+    ["def", "Third-down defense", "d_third_conv", false, "3rd-down conversion allowed"], ["def", "Red-zone defense", "d_rz_td", false, "Red-zone TD rate allowed"], ["def", "Takeaways", "d_to_drive", true, "Takeaways per drive"],
+  ];
+
+  async function teamPage(main, id) {
+    const t = teamById[id];
+    if (!t) { main.innerHTML = '<p class="lede">That team isn’t in the current ratings. <a href="#rankings">Back to rankings</a></p>'; return; }
+    const up = D.games.filter((g) => g.home === id || g.away === id);
+    main.innerHTML = '<div><p class="note" style="margin:0"><a href="#rankings">← Teams</a></p><h1><span class="dot" style="background:#' + esc(t.color) + ';width:16px;height:16px"></span>' + esc(t.name) + '</h1><p class="lede">' +
+      esc([t.conf, LG.nfl ? "" : t.div].filter(Boolean).join(" · ")) + " · " + t.w + "-" + t.l + "</p></div>" +
+      '<dl class="kv"><div><dt>Rank</dt><dd>' + t.rank + "</dd></div><div><dt>Net</dt><dd class='" + cls(t.net) + "'>" + sgn(t.net) + "</dd></div><div><dt>Offense</dt><dd>" + f1(t.o) + '<span class="rk">' + t.o_rank +
+      "</span></dd></div><div><dt>Defense</dt><dd>" + f1(t.d) + '<span class="rk">' + t.d_rank + "</span></dd></div></dl>" +
+      (up.length ? "<h2>Next up</h2><div class='grid'>" + up.map(gameCard).join("") + "</div>" : "") + '<div id="t-bal"><p class="lede">Loading unit profile…</p></div>';
+    const S = await loadStats();
+    const box = $("#t-bal");
+    if (!box) return;
+    if (!S || !S.teams[id]) { box.innerHTML = ""; return; }
+    const peers = D.teams.filter((x) => x.conf === t.conf && S.teams[x.id] && (S.teams[x.id].games || 0) > 0);
+    if (peers.length < 3) { box.innerHTML = ""; return; }
+    const rows = UNITS.map(([side, name, key, hi, label]) => {
+      const sd = (S.league[key] || {}).sd, v = S.teams[id][key];
+      if (!sd || v == null) return null;
+      const vals = peers.map((x) => S.teams[x.id][key]).filter((x) => x != null);
+      const avg = vals.reduce((a, b) => a + b, 0) / vals.length;
+      const z = ((v - avg) / sd) * (hi ? 1 : -1);               // positive = better than the conference
+      const rank = vals.filter((x) => (hi ? x > v : x < v)).length + 1;
+      return { side, name, key, label, v, avg, z, rank, n: vals.length, nat: S.teams[id][key + "_rk"], pctVal: !["to_drive", "d_to_drive"].includes(key) };
+    }).filter(Boolean);
+    const fmt = (r, x) => (r.key.endsWith("to_drive") ? x.toFixed(2) : (x * 100).toFixed(1) + "%");
+    const part = (side) => rows.filter((r) => r.side === side).sort((a, b) => a.z - b.z);
+    const sentence = (side, word) => {
+      const rs = part(side), w = rs.filter((r) => r.z <= -0.4).slice(0, 2), b = rs.slice().reverse().filter((r) => r.z >= 0.4).slice(0, 2);
+      if (!w.length && !b.length) return "";
+      return "<li><b>" + word + ":</b> " + (w.length ? "weakest " + w.map((r) => r.name.toLowerCase() + " (" + ordinal(r.rank) + " of " + r.n + " in the " + esc(t.conf) + ")").join(" and ") : "no clear weakness") +
+        (b.length ? "; strongest " + b.map((r) => r.name.toLowerCase() + " (" + ordinal(r.rank) + ")").join(" and ") : "") + ".</li>";
+    };
+    const tbl = (side) => '<div class="table-box"><table class="findings"><thead><tr><th class="l">Unit</th><th class="l">Measure</th><th>' + esc(t.short) + "</th><th>" + esc(t.conf) + " avg</th><th>Conf. rank</th><th>National</th><th>vs. conf.</th></tr></thead><tbody>" +
+      rows.filter((r) => r.side === side).map((r) => "<tr><td class='l'>" + esc(r.name) + "</td><td class='l'>" + esc(r.label) + "</td><td>" + fmt(r, r.v) + "</td><td>" + fmt(r, r.avg) + "</td><td>" + r.rank + " of " + r.n +
+        "</td><td>" + (r.nat ? ordinal(r.nat) : "–") + "</td><td class='" + cls(r.z) + "'>" + sgn(r.z, 1) + " sd</td></tr>").join("") + "</tbody></table></div>";
+    box.innerHTML = "<h2>Unit balance</h2><p class='lede'>Where " + esc(t.short) + " stands against " + esc(t.conf) + " competition, unit by unit. Gaps are in standard deviations of the national spread, so a unit " +
+      "well below the conference is where development, scheme or recruiting pays off most.</p><ul>" + sentence("off", "Offense") + sentence("def", "Defense") + "</ul>" +
+      "<h3>Offense</h3>" + tbl("off") + "<h3>Defense</h3>" + tbl("def") +
+      "<p class='note'>Season averages from " + S.teams[id].games + " games, not adjusted for opponents. These are play-by-play unit results, not player ratings: ESPN’s football feed here has no player-level stats yet, so the table can say a team’s pass defense is weak but not which position group is responsible.</p>";
+  }
+
   /* ===================== Situations and strategy (football/situations.py) ===================== */
   let SIT = null;
   const loadSit = () => (SIT = SIT || fetch("data/situations.json").then((r) => (r.ok ? r.json() : null)).catch(() => null));
@@ -461,12 +512,13 @@
 
   function route() {
     const h = location.hash.slice(1) || "rankings";
-    const view = (h.startsWith("game-") || h.startsWith("vs-")) ? "games" : VIEWS.includes(h) ? h : "rankings";
+    const view = h.startsWith("team-") ? "rankings" : (h.startsWith("game-") || h.startsWith("vs-")) ? "games" : VIEWS.includes(h) ? h : "rankings";
     document.querySelectorAll(".tabs a").forEach((a) => {
       if (a.getAttribute("href") === "#" + view) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     });
-    if (h.startsWith("game-")) gamePage($("#main"), h.slice(5));
+    if (h.startsWith("team-")) teamPage($("#main"), h.slice(5));
+    else if (h.startsWith("game-")) gamePage($("#main"), h.slice(5));
     else if (h.startsWith("vs-")) { const [a, b, n] = h.slice(3).split("-"); matchupPage($("#main"), a, b, n === "n", null); }
     else ({ rankings, games, matchup, playoff, method })[view]($("#main"));
     window.scrollTo(0, 0);
