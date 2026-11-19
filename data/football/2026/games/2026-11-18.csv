@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401866467,2026-11-18,2026-11-19T00:00Z,12,2,True,False,True,113,2006,UMass,Akron,33,34,,Amherst,MA,False,,,,,,,6698
+401866469,2026-11-18,2026-11-19T00:30Z,12,2,True,False,True,2084,2117,Buffalo,C Michigan,40,21,,Buffalo,NY,False,,,,,,,5452
