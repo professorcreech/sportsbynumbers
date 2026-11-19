@@ -1,0 +1,4 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401910007,2026-11-18,False,False,True,5,29,121,124,2026-11-19T00:00Z,37|35|27|22,30|41|29|24,DraftKings,CLE -4.5,-4.5,239.5,-185.0,155.0,True,Marc Davis|Sean Corbin|Jenna Schroeder,19432,
+401910008,2026-11-18,False,False,True,11,10,104,119,2026-11-19T00:00Z,28|18|30|28,39|23|31|26,DraftKings,HOU -7.5,7.5,224.5,262.0,-326.0,False,Kevin Scott|Jason Goldenberg|Rodney Mott,17274,
+401910010,2026-11-18,False,False,True,19,20,116,121,2026-11-19T00:00Z,40|29|28|19,27|37|28|29,DraftKings,ORL -4.5,-4.5,218.5,-174.0,146.0,True,Scott Foster|Gediminas Petraitis|Mousa Dagher,19365,
