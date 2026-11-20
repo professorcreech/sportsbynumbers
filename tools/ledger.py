@@ -135,6 +135,45 @@ def _team_rows(g: pd.DataFrame, ranks: dict, n_teams: int) -> dict:
     return out
 
 
+def _core(led: pd.DataFrame) -> dict | None:
+    """Headline numbers for a set of graded predictions."""
+    g = led.dropna(subset=["home_pts", "away_pts"]).copy()
+    g = g[(g.p_home != 0.5) & (g.home_pts != g.away_pts)]
+    if not len(g):
+        return None
+    actual = g.home_pts - g.away_pts
+    won = (actual > 0).astype(int)
+    hit = ((g.p_home > 0.5).astype(int) == won).astype(int)
+    conf = np.where(g.p_home > 0.5, g.p_home, 1 - g.p_home)
+    d = {"n": int(len(g)), "hit": int(hit.sum()), "brier": round(float(((g.p_home - won) ** 2).mean()), 4),
+         "mae": round(float((actual - g.margin).abs().mean()), 2), "home_rate": round(float(won.mean()), 3),
+         "avg_conf": round(float(conf.mean()), 3)}
+    if "line_spread" in g and g.line_spread.notna().sum() >= 10:
+        m = g.dropna(subset=["line_spread"])
+        m = m[m.line_spread != 0]
+        d["market"] = {"n": int(len(m)), "model_hit": int(hit[m.index].sum()),
+                       "market_hit": int(((m.line_spread < 0).astype(int) == won[m.index]).sum()),
+                       "model_mae": round(float((actual[m.index] - m.margin).abs().mean()), 2),
+                       "market_mae": round(float((actual[m.index] + m.line_spread).abs().mean()), 2)}
+    return d
+
+
+def _replay(league: str, g: pd.DataFrame) -> dict | None:
+    """Last season's replay (tools/replay.py): the whole season, and the same dates a year earlier."""
+    f = ROOT / "data" / league / "replay.csv"
+    if not f.exists() or not len(g):
+        return None
+    r = pd.read_csv(f, dtype={"game_id": str, "home": str, "away": str})
+    full = _core(r)
+    if not full:
+        return None
+    st = pd.to_datetime(r.start, utc=True)
+    cur = pd.to_datetime(g.start, utc=True)
+    lo, hi = cur.min() - pd.Timedelta(days=364), cur.max() - pd.Timedelta(days=364)
+    same = _core(r[(st >= lo) & (st <= hi + pd.Timedelta(days=1))])
+    return {"full": full, "same": same, "from": str(lo.date()), "to": str(hi.date())}
+
+
 def summarize(league: str, led: pd.DataFrame) -> dict | None:
     g = led.dropna(subset=["home_pts", "away_pts"]).copy()
     g = g[(g.p_home != 0.5) & (g.home_pts != g.away_pts)]
@@ -175,6 +214,7 @@ def summarize(league: str, led: pd.DataFrame) -> dict | None:
         ranks = {str(t["id"]): t["rank"] for t in tj}
     except Exception:
         ranks = {}
+    out["replay"] = _replay(league, g)
     out["big_top"] = max(10, ceil(0.1 * max(len(ranks), 1)))
     out["teams"] = _team_rows(g, ranks, len(ranks)) if len(g) else {}
     last = g.tail(40).iloc[::-1]

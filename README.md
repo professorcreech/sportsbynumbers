@@ -13,7 +13,7 @@ Every modeling choice below was tested on games the model hadn't seen.
 for games in the next 36 hours), grades it when the final score arrives, and writes `site/<sport>/data/record.json`
 for the **Record** tab: picks right, calibration by confidence, weekly results, how the model compares with the
 betting line where one exists, and per-team gaps between result and prediction (with their margin of noise).
-Files: `data/<sport>/ledger.csv`. `python -m tools.ledger --backfill` rebuilds earlier days from the site's git history.
+Files: `data/<sport>/ledger.csv`. `tools/replay.py` replays last season game by game (refit on only earlier games, from last season's prior) into `data/<sport>/replay.csv`, so the tab can compare this season with the same dates a year ago. `python -m tools.ledger --backfill` rebuilds earlier days from the site's git history.
 
 ## Sports
 
