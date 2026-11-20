@@ -1,0 +1,2 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401920517,2026-11-19,True,False,True,277,57,72,85,2026-11-19T19:30Z,30|42,40|45,DraftKings,FLA -8.5,8.5,147.5,320.0,-410.0,False,Mike Littlewood|Gregory Nixon|Byron Jarrett,0,
