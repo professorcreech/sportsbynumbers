@@ -1,12 +1,12 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772760,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,1,15,Falcons,Dolphins,10,34,,Atlanta,GA
-401772758,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,4,20,Bengals,Jets,38,39,,Cincinnati,OH
-401772868,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,17,5,Patriots,Browns,32,13,,Foxborough,MA
-401772867,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,21,19,Eagles,Giants,38,20,,Philadelphia,PA
-401772865,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,29,2,Panthers,Bills,9,40,,Charlotte,NC
-401772759,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,33,3,Ravens,Bears,30,16,,Baltimore,MD
-401772866,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,34,25,Texans,49ers,26,15,,Houston,TX
-401772869,2025-10-26,2025-10-26T20:05Z,8,2,True,False,False,18,27,Saints,Buccaneers,3,23,,New Orleans,LA
-401772762,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,7,6,Broncos,Cowboys,44,24,,Denver,CO
-401772761,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,11,10,Colts,Titans,38,14,,Indianapolis,IN
-401772925,2025-10-26,2025-10-27T00:20Z,8,2,True,False,False,23,9,Steelers,Packers,25,35,,Pittsburgh,PA
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772760,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,1,15,Falcons,Dolphins,10,34,,Atlanta,GA,True,,,,,,,71344
+401772758,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,4,20,Bengals,Jets,38,39,,Cincinnati,OH,False,,,,,Terry Brown|Greg Meyer|Roy Ellison|Scott Novak|Mark Stewart|Don Willard|Brian Sakowski,Scott Novak,65526
+401772868,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,17,5,Patriots,Browns,32,13,,Foxborough,MA,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,64628
+401772867,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,21,19,Eagles,Giants,38,20,,Philadelphia,PA,False,,,,,,,69879
+401772865,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,29,2,Panthers,Bills,9,40,,Charlotte,NC,False,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,73505
+401772759,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,33,3,Ravens,Bears,30,16,,Baltimore,MD,False,,,,,Dino Paganelli|Dyrol Prioleau|Jeff Seeman|Boris Cheek|Shawn Smith|Tra Blake|Jay Bilbo,Shawn Smith,70045
+401772866,2025-10-26,2025-10-26T17:00Z,8,2,True,False,False,34,25,Texans,49ers,26,15,,Houston,TX,True,,,,,Greg Bradley|Paul King|Dale Shaw|Alan Eck|David Oliver|Nathan Jones|Grantis Bell,Alan Eck,70581
+401772869,2025-10-26,2025-10-26T20:05Z,8,2,True,False,False,18,27,Saints,Buccaneers,3,23,,New Orleans,LA,True,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Brian Bolinger|Frank LeBlanc|Courtney Brown,Ronald Torbert,70038
+401772762,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,7,6,Broncos,Cowboys,44,24,,Denver,CO,False,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|John Jenkins|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,75877
+401772761,2025-10-26,2025-10-26T20:25Z,8,2,True,False,False,11,10,Colts,Titans,38,14,,Indianapolis,IN,True,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,65816
+401772925,2025-10-26,2025-10-27T00:20Z,8,2,True,False,False,23,9,Steelers,Packers,25,35,,Pittsburgh,PA,False,,,,,Tim Podraza|Jim Quirk|Shawn Hochuli|Jimmy Russell|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,67386

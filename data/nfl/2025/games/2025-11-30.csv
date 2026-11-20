@@ -1,12 +1,12 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772785,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,5,25,Browns,49ers,8,26,,Cleveland,OH
-401772786,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,10,30,Titans,Jaguars,3,25,,Nashville,TN
-401772787,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,11,34,Colts,Texans,16,20,,Indianapolis,IN
-401772892,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,15,18,Dolphins,Saints,21,17,,Miami Gardens,FL
-401772893,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,20,1,Jets,Falcons,27,24,,East Rutherford,NJ
-401772895,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,27,22,Buccaneers,Cardinals,20,17,,Tampa,FL
-401772894,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,29,14,Panthers,Rams,31,28,,Charlotte,NC
-401772896,2025-11-30,2025-11-30T21:05Z,13,2,True,False,False,26,16,Seahawks,Vikings,26,0,,Seattle,WA
-401772789,2025-11-30,2025-11-30T21:25Z,13,2,True,False,False,23,2,Steelers,Bills,7,26,,Pittsburgh,PA
-401772788,2025-11-30,2025-11-30T21:25Z,13,2,True,False,False,24,13,Chargers,Raiders,31,14,,Inglewood,CA
-401772931,2025-11-30,2025-12-01T01:20Z,13,2,True,False,False,28,7,Commanders,Broncos,26,27,,Landover,MD
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772785,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,5,25,Browns,49ers,8,26,,Cleveland,OH,False,,,,,,,64042
+401772786,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,10,30,Titans,Jaguars,3,25,,Nashville,TN,False,,,,,,,54098
+401772787,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,11,34,Colts,Texans,16,20,,Indianapolis,IN,True,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,65977
+401772892,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,15,18,Dolphins,Saints,21,17,,Miami Gardens,FL,False,,,,,Greg Bradley|Paul King|Dale Shaw|Ryan Dickson|Alan Eck|David Oliver|Grantis Bell,Alan Eck,63864
+401772893,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,20,1,Jets,Falcons,27,24,,East Rutherford,NJ,False,,,,,Tim Podraza|Jim Quirk|Shawn Hochuli|Jimmy Russell|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,70012
+401772895,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,27,22,Buccaneers,Cardinals,20,17,,Tampa,FL,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Tripp Sutter|Dale Keller|Scott Walker,Bill Vinovich,61103
+401772894,2025-11-30,2025-11-30T18:00Z,13,2,True,False,False,29,14,Panthers,Rams,31,28,,Charlotte,NC,False,,,,,,,71292
+401772896,2025-11-30,2025-11-30T21:05Z,13,2,True,False,False,26,16,Seahawks,Vikings,26,0,,Seattle,WA,False,,,,,Clete Blakeman|James Coleman|Kent Payne|Jonah Monroe|Scott Campbell|Karina Tovar|Andy Warner,Clete Blakeman,68790
+401772789,2025-11-30,2025-11-30T21:25Z,13,2,True,False,False,23,2,Steelers,Bills,7,26,,Pittsburgh,PA,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Alex Kemp|Mike Carr|Lo van Pham|Brandon Ellison,Alex Kemp,66068
+401772788,2025-11-30,2025-11-30T21:25Z,13,2,True,False,False,24,13,Chargers,Raiders,31,14,,Inglewood,CA,False,,,,,,,71018
+401772931,2025-11-30,2025-12-01T01:20Z,13,2,True,False,False,28,7,Commanders,Broncos,26,27,,Landover,MD,False,,,,,Keith Washington|Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Jeff Hutcheon,Land Clark,63159

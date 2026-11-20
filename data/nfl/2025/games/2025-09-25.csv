@@ -1,2 +1,2 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772938,2025-09-25,2025-09-26T00:15Z,4,2,True,False,False,22,26,Cardinals,Seahawks,20,23,,Glendale,AZ
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772938,2025-09-25,2025-09-26T00:15Z,4,2,True,False,False,22,26,Cardinals,Seahawks,20,23,,Glendale,AZ,True,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Alex Kemp|Mike Carr|Lo van Pham|Brandon Ellison,Alex Kemp,65016

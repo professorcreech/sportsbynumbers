@@ -1,13 +1,13 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772633,2025-10-05,2025-10-05T13:30Z,5,2,True,True,False,5,16,Browns,Vikings,17,21,NFL London Games,London,
-401772851,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,11,13,Colts,Raiders,40,6,,Indianapolis,IN
-401772744,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,18,19,Saints,Giants,26,14,,New Orleans,LA
-401772850,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,20,6,Jets,Cowboys,22,37,,East Rutherford,NJ
-401772745,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,21,7,Eagles,Broncos,17,21,,Philadelphia,PA
-401772852,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,29,15,Panthers,Dolphins,27,24,,Charlotte,NC
-401772743,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,33,34,Ravens,Texans,10,44,,Baltimore,MD
-401772747,2025-10-05,2025-10-05T20:05Z,5,2,True,False,False,22,10,Cardinals,Titans,21,22,,Glendale,AZ
-401772746,2025-10-05,2025-10-05T20:05Z,5,2,True,False,False,26,27,Seahawks,Buccaneers,35,38,,Seattle,WA
-401772854,2025-10-05,2025-10-05T20:25Z,5,2,True,False,False,4,8,Bengals,Lions,24,37,,Cincinnati,OH
-401772853,2025-10-05,2025-10-05T20:25Z,5,2,True,False,False,24,28,Chargers,Commanders,10,27,,Inglewood,CA
-401772922,2025-10-05,2025-10-06T00:20Z,5,2,True,False,False,2,17,Bills,Patriots,20,23,,Orchard Park,NY
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772633,2025-10-05,2025-10-05T13:30Z,5,2,True,True,False,5,16,Browns,Vikings,17,21,NFL London Games,London,,False,,,,,Barry Anderson|Terry Brown|Scott Novak|Tony Josselyn|Mark Stewart|Don Willard|Brian Sakowski,Scott Novak,61082
+401772851,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,11,13,Colts,Raiders,40,6,,Indianapolis,IN,True,,,,,Rusty Baynes|Greg Meyer|Sean Petty|Alex Kemp|Mike Carr|Lo van Pham|Brandon Ellison,Alex Kemp,64955
+401772744,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,18,19,Saints,Giants,26,14,,New Orleans,LA,True,,,,,Greg Bradley|Paul King|Dale Shaw|John Jenkins|Alan Eck|David Oliver|Grantis Bell,Alan Eck,70008
+401772850,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,20,6,Jets,Cowboys,22,37,,East Rutherford,NJ,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,81738
+401772745,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,21,7,Eagles,Broncos,17,21,,Philadelphia,PA,False,,,,,Trawick Boger|Derick Bowers|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Clay Reynard,Adrian Hill,69879
+401772852,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,29,15,Panthers,Dolphins,27,24,,Charlotte,NC,False,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,72301
+401772743,2025-10-05,2025-10-05T17:00Z,5,2,True,False,False,33,34,Ravens,Texans,10,44,,Baltimore,MD,False,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,70077
+401772747,2025-10-05,2025-10-05T20:05Z,5,2,True,False,False,22,10,Cardinals,Titans,21,22,,Glendale,AZ,True,,,,,Dino Paganelli|Dyrol Prioleau|Jeff Seeman|Boris Cheek|Shawn Smith|Tra Blake|Jay Bilbo,Shawn Smith,64280
+401772746,2025-10-05,2025-10-05T20:05Z,5,2,True,False,False,26,27,Seahawks,Buccaneers,35,38,,Seattle,WA,False,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,68804
+401772854,2025-10-05,2025-10-05T20:25Z,5,2,True,False,False,4,8,Bengals,Lions,24,37,,Cincinnati,OH,False,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|Nathan Jones|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,66115
+401772853,2025-10-05,2025-10-05T20:25Z,5,2,True,False,False,24,28,Chargers,Commanders,10,27,,Inglewood,CA,False,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,71021
+401772922,2025-10-05,2025-10-06T00:20Z,5,2,True,False,False,2,17,Bills,Patriots,20,23,,Orchard Park,NY,False,,,,,Tim Podraza|Jim Quirk|Shawn Hochuli|Jimmy Russell|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,70802

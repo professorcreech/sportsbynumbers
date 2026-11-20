@@ -1,13 +1,13 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772780,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,3,23,Bears,Steelers,31,28,,Chicago,IL
-401772781,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,4,17,Bengals,Patriots,20,26,,Cincinnati,OH
-401772888,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,8,19,Lions,Giants,34,27,,Detroit,MI
-401772887,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,9,16,Packers,Vikings,23,6,,Green Bay,WI
-401772886,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,10,26,Titans,Seahawks,24,30,,Nashville,TN
-401772779,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,12,11,Chiefs,Colts,23,20,,Kansas City,MO
-401772782,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,33,20,Ravens,Jets,23,10,,Baltimore,MD
-401772784,2025-11-23,2025-11-23T21:05Z,12,2,True,False,False,13,5,Raiders,Browns,10,24,,Las Vegas,NV
-401772783,2025-11-23,2025-11-23T21:05Z,12,2,True,False,False,22,30,Cardinals,Jaguars,24,27,,Glendale,AZ
-401772890,2025-11-23,2025-11-23T21:25Z,12,2,True,False,False,6,21,Cowboys,Eagles,24,21,,Arlington,TX
-401772889,2025-11-23,2025-11-23T21:25Z,12,2,True,False,False,18,1,Saints,Falcons,10,24,,New Orleans,LA
-401772929,2025-11-23,2025-11-24T01:20Z,12,2,True,False,False,14,27,Rams,Buccaneers,34,7,,Inglewood,CA
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772780,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,3,23,Bears,Steelers,31,28,,Chicago,IL,False,,,,,,,59658
+401772781,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,4,17,Bengals,Patriots,20,26,,Cincinnati,OH,False,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,65659
+401772888,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,8,19,Lions,Giants,34,27,,Detroit,MI,True,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,64238
+401772887,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,9,16,Packers,Vikings,23,6,,Green Bay,WI,False,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|Nathan Jones|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,77991
+401772886,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,10,26,Titans,Seahawks,24,30,,Nashville,TN,False,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Brian Bolinger|Frank LeBlanc|Courtney Brown,Ronald Torbert,60487
+401772779,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,12,11,Chiefs,Colts,23,20,,Kansas City,MO,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,73611
+401772782,2025-11-23,2025-11-23T18:00Z,12,2,True,False,False,33,20,Ravens,Jets,23,10,,Baltimore,MD,False,,,,,Clete Blakeman|James Coleman|Kent Payne|Jonah Monroe|Scott Campbell|Karina Tovar|Andy Warner,Clete Blakeman,70029
+401772784,2025-11-23,2025-11-23T21:05Z,12,2,True,False,False,13,5,Raiders,Browns,10,24,,Las Vegas,NV,True,,,,,Tim Podraza|Jim Quirk|Shawn Hochuli|Jimmy Russell|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,62244
+401772783,2025-11-23,2025-11-23T21:05Z,12,2,True,False,False,22,30,Cardinals,Jaguars,24,27,,Glendale,AZ,True,,,,,Terry Brown|Scott Novak|Mike Morton|Tony Josselyn|Mark Stewart|Don Willard|Brian Sakowski,Scott Novak,62413
+401772890,2025-11-23,2025-11-23T21:25Z,12,2,True,False,False,6,21,Cowboys,Eagles,24,21,,Arlington,TX,True,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Tripp Sutter|Dale Keller|Scott Walker,Bill Vinovich,93068
+401772889,2025-11-23,2025-11-23T21:25Z,12,2,True,False,False,18,1,Saints,Falcons,10,24,,New Orleans,LA,True,,,,,Greg Meyer|David Meslow|Patrick Turner|Bryan Neale|Kevin Codey|Brad Rogers|Joe Blubaugh,Brad Rogers,70005
+401772929,2025-11-23,2025-11-24T01:20Z,12,2,True,False,False,14,27,Rams,Buccaneers,34,7,,Inglewood,CA,False,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,75545

@@ -1,14 +1,14 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772830,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,1,27,Falcons,Buccaneers,20,23,,Atlanta,GA
-401772829,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,5,4,Browns,Bengals,16,17,,Cleveland,OH
-401772719,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,11,15,Colts,Dolphins,33,8,,Indianapolis,IN
-401772720,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,17,13,Patriots,Raiders,13,20,,Foxborough,MA
-401772718,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,18,22,Saints,Cardinals,13,20,,New Orleans,LA
-401772721,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,20,23,Jets,Steelers,32,34,,East Rutherford,NJ
-401772827,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,28,19,Commanders,Giants,21,6,,Landover,MD
-401772828,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,30,29,Jaguars,Panthers,26,10,,Jacksonville,FL
-401772832,2025-09-07,2025-09-07T20:05Z,1,2,True,False,False,7,10,Broncos,Titans,20,12,,Denver,CO
-401772831,2025-09-07,2025-09-07T20:05Z,1,2,True,False,False,26,25,Seahawks,49ers,13,17,,Seattle,WA
-401772722,2025-09-07,2025-09-07T20:25Z,1,2,True,False,False,9,8,Packers,Lions,27,13,,Green Bay,WI
-401772723,2025-09-07,2025-09-07T20:25Z,1,2,True,False,False,14,34,Rams,Texans,14,9,,Inglewood,CA
-401772918,2025-09-07,2025-09-08T00:20Z,1,2,True,False,False,2,33,Bills,Ravens,41,40,,Orchard Park,NY
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772830,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,1,27,Falcons,Buccaneers,20,23,,Atlanta,GA,True,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,71610
+401772829,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,5,4,Browns,Bengals,16,17,,Cleveland,OH,False,,,,,Trawick Boger|Derick Bowers|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Clay Reynard,Adrian Hill,65599
+401772719,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,11,15,Colts,Dolphins,33,8,,Indianapolis,IN,True,,,,,Rick Patterson|Sarah Thomas|Brad Allen|Chad Hill|Walter Flowers|Tyree Walton|Marcus Woods,Brad Allen,64065
+401772720,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,17,13,Patriots,Raiders,13,20,,Foxborough,MA,False,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Brian Bolinger|Frank LeBlanc|Courtney Brown,Ronald Torbert,64628
+401772718,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,18,22,Saints,Cardinals,13,20,,New Orleans,LA,True,,,,,Terry Brown|Scott Novak|Mike Morton|Tony Josselyn|Mark Stewart|Don Willard|Brian Sakowski,Scott Novak,70006
+401772721,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,20,23,Jets,Steelers,32,34,,East Rutherford,NJ,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Tripp Sutter|Dale Keller|Scott Walker,Bill Vinovich,83253
+401772827,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,28,19,Commanders,Giants,21,6,,Landover,MD,False,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,64544
+401772828,2025-09-07,2025-09-07T17:00Z,1,2,True,False,False,30,29,Jaguars,Panthers,26,10,,Jacksonville,FL,False,,,,,Dana McKenzie|Terrence Miles|Mearl Robinson|Anthony Jeffries|Terry Killens Jr.|Thomas Eaton|Alex Moore,Alex Moore,59957
+401772832,2025-09-07,2025-09-07T20:05Z,1,2,True,False,False,7,10,Broncos,Titans,20,12,,Denver,CO,False,,,,,Sean Petty|Scott Helverson|Alex Kemp|Mike Carr|Lo van Pham|Brandon Ellison|Quentin Givens,Alex Kemp,73747
+401772831,2025-09-07,2025-09-07T20:05Z,1,2,True,False,False,26,25,Seahawks,49ers,13,17,,Seattle,WA,False,,,,,Tim Podraza|Jim Quirk|Shawn Hochuli|Jimmy Russell|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,68752
+401772722,2025-09-07,2025-09-07T20:25Z,1,2,True,False,False,9,8,Packers,Lions,27,13,,Green Bay,WI,False,,,,,Clete Blakeman|James Coleman|Kent Payne|Jonah Monroe|Scott Campbell|Karina Tovar|Andy Warner,Clete Blakeman,77239
+401772723,2025-09-07,2025-09-07T20:25Z,1,2,True,False,False,14,34,Rams,Texans,14,9,,Inglewood,CA,False,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,71346
+401772918,2025-09-07,2025-09-08T00:20Z,1,2,True,False,False,2,33,Bills,Ravens,41,40,,Orchard Park,NY,False,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,70745

@@ -1,2 +1,2 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772941,2025-10-16,2025-10-17T00:15Z,7,2,True,False,False,4,23,Bengals,Steelers,33,31,,Cincinnati,OH
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772941,2025-10-16,2025-10-17T00:15Z,7,2,True,False,False,4,23,Bengals,Steelers,33,31,,Cincinnati,OH,False,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,66569

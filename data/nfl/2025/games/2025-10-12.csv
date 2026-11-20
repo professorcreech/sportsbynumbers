@@ -1,13 +1,13 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772634,2025-10-12,2025-10-12T13:30Z,6,2,True,True,False,20,7,Jets,Broncos,11,13,NFL London Games,London,
-401772856,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,11,22,Colts,Cardinals,31,27,,Indianapolis,IN
-401772750,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,15,24,Dolphins,Chargers,27,29,,Miami Gardens,FL
-401772751,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,18,17,Saints,Patriots,19,25,,New Orleans,LA
-401772748,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,23,5,Steelers,Browns,23,9,,Pittsburgh,PA
-401772858,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,29,6,Panthers,Cowboys,30,27,,Charlotte,NC
-401772857,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,30,26,Jaguars,Seahawks,12,20,,Jacksonville,FL
-401772855,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,33,14,Ravens,Rams,3,17,,Baltimore,MD
-401772859,2025-10-12,2025-10-12T20:05Z,6,2,True,False,False,13,10,Raiders,Titans,20,10,,Las Vegas,NV
-401772752,2025-10-12,2025-10-12T20:25Z,6,2,True,False,False,9,4,Packers,Bengals,27,18,,Green Bay,WI
-401772749,2025-10-12,2025-10-12T20:25Z,6,2,True,False,False,27,25,Buccaneers,49ers,30,19,,Tampa,FL
-401772923,2025-10-12,2025-10-13T00:20Z,6,2,True,False,False,12,8,Chiefs,Lions,30,17,,Kansas City,MO
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772634,2025-10-12,2025-10-12T13:30Z,6,2,True,True,False,20,7,Jets,Broncos,11,13,NFL London Games,London,,False,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,61155
+401772856,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,11,22,Colts,Cardinals,31,27,,Indianapolis,IN,True,,,,,Greg Meyer|Tim Podraza|Jim Quirk|Shawn Hochuli|Patrick Holt|Jason Ledet|Larry Smith,Shawn Hochuli,65523
+401772750,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,15,24,Dolphins,Chargers,27,29,,Miami Gardens,FL,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Tripp Sutter|Dale Keller|Scott Walker,Bill Vinovich,65592
+401772751,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,18,17,Saints,Patriots,19,25,,New Orleans,LA,True,,,,,Trawick Boger|Derick Bowers|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Clay Reynard,Adrian Hill,70042
+401772748,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,23,5,Steelers,Browns,23,9,,Pittsburgh,PA,False,,,,,Barry Anderson|Ronald Torbert|Keith Washington|Ryan Dickson|Brian Bolinger|Frank LeBlanc|Courtney Brown,Ronald Torbert,66738
+401772858,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,29,6,Panthers,Cowboys,30,27,,Charlotte,NC,False,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,71619
+401772857,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,30,26,Jaguars,Seahawks,12,20,,Jacksonville,FL,False,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,61056
+401772855,2025-10-12,2025-10-12T17:00Z,6,2,True,False,False,33,14,Ravens,Rams,3,17,,Baltimore,MD,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Alex Kemp|Mike Carr|Lo van Pham|Brandon Ellison,Alex Kemp,70055
+401772859,2025-10-12,2025-10-12T20:05Z,6,2,True,False,False,13,10,Raiders,Titans,20,10,,Las Vegas,NV,True,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|Nathan Jones|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,61981
+401772752,2025-10-12,2025-10-12T20:25Z,6,2,True,False,False,9,4,Packers,Bengals,27,18,,Green Bay,WI,False,,,,,Rick Patterson|Sarah Thomas|Brad Allen|Chad Hill|Walter Flowers|Tyree Walton|Marcus Woods,Brad Allen,78277
+401772749,2025-10-12,2025-10-12T20:25Z,6,2,True,False,False,27,25,Buccaneers,49ers,30,19,,Tampa,FL,False,,,,,Greg Yette|David Meslow|Patrick Turner|Bryan Neale|Kevin Codey|Brad Rogers|Joe Blubaugh,Brad Rogers,62411
+401772923,2025-10-12,2025-10-13T00:20Z,6,2,True,False,False,12,8,Chiefs,Lions,30,17,,Kansas City,MO,False,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,73543

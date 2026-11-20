@@ -1,3 +1,3 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772816,2025-10-20,2025-10-20T23:00Z,7,2,True,False,False,8,27,Lions,Buccaneers,24,9,,Detroit,MI
-401772826,2025-10-20,2025-10-21T02:00Z,7,2,True,False,False,26,34,Seahawks,Texans,27,19,,Seattle,WA
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772816,2025-10-20,2025-10-20T23:00Z,7,2,True,False,False,8,27,Lions,Buccaneers,24,9,,Detroit,MI,True,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,64656
+401772826,2025-10-20,2025-10-21T02:00Z,7,2,True,False,False,26,34,Seahawks,Texans,27,19,,Seattle,WA,False,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|Nathan Jones|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,68632

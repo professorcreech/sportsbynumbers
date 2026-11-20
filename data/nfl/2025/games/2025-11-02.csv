@@ -1,13 +1,13 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772765,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,4,3,Bengals,Bears,42,47,,Cincinnati,OH
-401772871,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,8,16,Lions,Vikings,24,27,,Detroit,MI
-401772872,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,9,29,Packers,Panthers,13,16,,Green Bay,WI
-401772764,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,10,24,Titans,Chargers,20,27,,Nashville,TN
-401772763,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,17,1,Patriots,Falcons,24,23,,Foxborough,MA
-401772767,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,19,25,Giants,49ers,24,34,,East Rutherford,NJ
-401772766,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,23,11,Steelers,Colts,27,20,,Pittsburgh,PA
-401772870,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,34,7,Texans,Broncos,15,18,,Houston,TX
-401772873,2025-11-02,2025-11-02T21:05Z,9,2,True,False,False,13,30,Raiders,Jaguars,29,30,,Las Vegas,NV
-401772874,2025-11-02,2025-11-02T21:05Z,9,2,True,False,False,14,18,Rams,Saints,34,10,,Inglewood,CA
-401772768,2025-11-02,2025-11-02T21:25Z,9,2,True,False,False,2,12,Bills,Chiefs,28,21,,Orchard Park,NY
-401772926,2025-11-02,2025-11-03T01:20Z,9,2,True,False,False,28,26,Commanders,Seahawks,14,38,,Landover,MD
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772765,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,4,3,Bengals,Bears,42,47,,Cincinnati,OH,False,,,,,Clete Blakeman|James Coleman|Kent Payne|Jonah Monroe|Scott Campbell|Karina Tovar|Andy Warner,Clete Blakeman,66264
+401772871,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,8,16,Lions,Vikings,24,27,,Detroit,MI,True,,,,,Greg Wilson|Clay Martin|Steven Woods|Jerod Phillips|Dave Hawkshaw|Alonzo Ramsey III|Brian Perry,Clay Martin,64642
+401772872,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,9,29,Packers,Panthers,13,16,,Green Bay,WI,False,,,,,Tom Stephan|Brad Freeman|Mark Pellis|Jabir Walker|Land Clark|Dominique Pender|Jeff Hutcheon,Land Clark,77864
+401772764,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,10,24,Titans,Chargers,20,27,,Nashville,TN,False,,,,,Rusty Baynes|Derick Bowers|Sean Petty|Scott Helverson|Alex Kemp|Lo van Pham|Brandon Ellison,Alex Kemp,58592
+401772763,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,17,1,Patriots,Falcons,24,23,,Foxborough,MA,False,,,,,Rick Patterson|Sarah Thomas|Brad Allen|Chad Hill|Walter Flowers|Tyree Walton|Marcus Woods,Brad Allen,64628
+401772767,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,19,25,Giants,49ers,24,34,,East Rutherford,NJ,False,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,83258
+401772766,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,23,11,Steelers,Colts,27,20,,Pittsburgh,PA,False,,,,,Frank Steratore|Craig Wrolstad|Rich Martinez|Danny Short|Brandon Cruse|Jeff Shears|Brett Bergman,Craig Wrolstad,66677
+401772870,2025-11-02,2025-11-02T18:00Z,9,2,True,False,False,34,7,Texans,Broncos,15,18,,Houston,TX,True,,,,,Barry Anderson|Greg Meyer|Ronald Torbert|Keith Washington|Ryan Dickson|Brian Bolinger|Frank LeBlanc,Ronald Torbert,70471
+401772873,2025-11-02,2025-11-02T21:05Z,9,2,True,False,False,13,30,Raiders,Jaguars,29,30,,Las Vegas,NV,True,,,,,Greg Bradley|Paul King|Dale Shaw|John Jenkins|Alan Eck|David Oliver|Grantis Bell,Alan Eck,62080
+401772874,2025-11-02,2025-11-02T21:05Z,9,2,True,False,False,14,18,Rams,Saints,34,10,,Inglewood,CA,False,,,,,Dino Paganelli|Dyrol Prioleau|Jeff Seeman|Boris Cheek|Shawn Smith|Tra Blake|Jay Bilbo,Shawn Smith,72055
+401772768,2025-11-02,2025-11-02T21:25Z,9,2,True,False,False,2,12,Bills,Chiefs,28,21,,Orchard Park,NY,False,,,,,Carl Cheffers|Martin Hankins|Eugene Hall|Nathan Jones|Daniel Gallagher|Derek Anderson|Quentin Givens,Carl Cheffers,71024
+401772926,2025-11-02,2025-11-03T01:20Z,9,2,True,False,False,28,26,Commanders,Seahawks,14,38,,Landover,MD,False,,,,,Bill Vinovich|Jimmy Buchanan|Todd Prukop|Aaron Santi|Tripp Sutter|Dale Keller|Scott Walker,Bill Vinovich,64197

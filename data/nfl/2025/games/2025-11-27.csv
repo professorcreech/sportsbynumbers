@@ -1,4 +1,4 @@
-game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state
-401772891,2025-11-27,2025-11-27T18:00Z,13,2,True,False,False,8,9,Lions,Packers,24,31,,Detroit,MI
-401772694,2025-11-27,2025-11-27T21:30Z,13,2,True,False,False,6,12,Cowboys,Chiefs,31,28,,Arlington,TX
-401772930,2025-11-27,2025-11-28T01:20Z,13,2,True,False,False,33,4,Ravens,Bengals,14,32,,Baltimore,MD
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401772891,2025-11-27,2025-11-27T18:00Z,13,2,True,False,False,8,9,Lions,Packers,24,31,,Detroit,MI,True,,,,,Terrence Miles|Ronald Torbert|Patrick Turner|John Jenkins|Terry Killens Jr.|Dominique Pender|Walter Flowers,Ronald Torbert,66662
+401772694,2025-11-27,2025-11-27T21:30Z,13,2,True,False,False,6,12,Cowboys,Chiefs,31,28,,Arlington,TX,True,,,,,Allen Baynes|John Hussey|Carl Johnson|Max Causey|Matt Edwards|Anthony Flemming|Duane Heydt,John Hussey,93739
+401772930,2025-11-27,2025-11-28T01:20Z,13,2,True,False,False,33,4,Ravens,Bengals,14,32,,Baltimore,MD,False,,,,,,,70066
