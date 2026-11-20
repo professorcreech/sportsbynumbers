@@ -1,0 +1,5 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401910019,2026-11-19,False,False,True,29,9,126,98,2026-11-20T01:00Z,31|24|37|34,24|23|26|25,DraftKings,MEM -5.5,-5.5,225.5,-205.0,171.0,True,Marat Kogut|Jacyn Goble|Scott Twardoski,15019,
+401910020,2026-11-19,False,False,True,15,22,114,124,2026-11-20T01:00Z,21|37|34|22,24|36|36|28,DraftKings,POR -9.5,9.5,230.5,301.0,-380.0,False,Mitchell Ervin|Justin Van Duyne|Kladji Mulla,13545,
+401910021,2026-11-19,False,False,True,16,18,99,102,2026-11-20T01:00Z,26|24|28|21,33|32|25|12,DraftKings,NY -1.5,1.5,216.5,-104.0,-113.0,False,J.B. DeRosa|Ray Acosta|Nate Cearley,0,
+401910022,2026-11-19,False,False,True,24,12,124,112,2026-11-20T01:00Z,24|33|35|32,21|33|34|24,DraftKings,SA -15.5,-15.5,224.5,-1020.0,660.0,True,Brian Forte|Kevin Cutler|Brandon Schwab,18532,

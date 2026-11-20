@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401862830,2026-11-19,2026-11-20T00:30Z,12,2,True,False,True,218,242,Temple,Rice,27,31,,Philadelphia,PA,False,,,,,,,10411
+401868314,2026-11-19,2026-11-20T00:00Z,12,2,True,False,True,2617,2466,SF Austin,N'Western St,66,0,,Nacogdoches,TX,False,,,,,,,5673
+401868323,2026-11-19,2026-11-20T00:00Z,12,2,True,False,True,2447,2545,Nicholls,SE Louisiana,10,38,,Thibodaux,LA,False,,,,,,,6322

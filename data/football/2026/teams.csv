@@ -10,9 +10,9 @@ team_id,conf,name,abbr,short,div,color
 349,American,Army Black Knights,ARMY,Army,FBS,000000
 2655,American,Tulane Green Wave,TULN,Tulane,FBS,006747
 2426,American,Navy Midshipmen,NAVY,Navy,FBS,00225b
+242,American,Rice Owls,RICE,Rice,FBS,00205b
 218,American,Temple Owls,TEM,Temple,FBS,a41e35
 2429,American,Charlotte 49ers,CLT,Charlotte,FBS,005035
-242,American,Rice Owls,RICE,Rice,FBS,00205b
 2390,acc,Miami Hurricanes,MIA,Miami,FBS,f47423
 154,acc,Wake Forest Demon Deacons,WAKE,Wake Forest,FBS,ceb888
 97,acc,Louisville Cardinals,LOU,Louisville,FBS,c9001f
@@ -238,10 +238,10 @@ team_id,conf,name,abbr,short,div,color
 2617,land,Stephen F. Austin Lumberjacks,SFA,SF Austin,FCS,393996
 2320,land,Lamar Cardinals,LAM,Lamar,FCS,000000
 2916,land,Incarnate Word Cardinals,UIW,Incarnate Word,FCS,000000
+2545,land,SE Louisiana Lions,SELA,SE Louisiana,FCS,215732
 2377,land,McNeese Cowboys,MCN,McNeese,FCS,00529C
 2277,land,Houston Christian Huskies,HCU,Hou Christian,FCS,00539c
 292,land,UT Rio Grande Valley Vaqueros,RGV,UT Rio Grande,FCS,888888
-2545,land,SE Louisiana Lions,SELA,SE Louisiana,FCS,215732
 2447,land,Nicholls Colonels,NICH,Nicholls,FCS,C41230
 2837,land,East Texas A&M Lions,ETAM,East Texas A&M,FCS,000000
 2466,land,Northwestern State Demons,NWST,N'Western St,FCS,492F91
