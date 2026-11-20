@@ -175,6 +175,10 @@ def main():
     if a.fetch:
         fetch.update(season)
         sched = fetch.fetch_schedule()
+        try:
+            fetch.fetch_injuries(sched)
+        except Exception as e:  # never block the ratings
+            print(f"injuries: skipped ({e})")
     build(season, sched)
 
 

@@ -283,6 +283,39 @@ def fetch_schedule(days_ahead: int | None = None) -> list[dict]:
     return out
 
 
+def fetch_injuries(schedule: list, days: int = 3) -> None:
+    """NFL pregame injury reports for games in the next few days, saved by day under data/nfl/injuries/ so their value
+    (for example a starting quarterback out) can be tested once enough games have been played. ESPN lists none for college."""
+    if not config.IS_NFL:
+        return
+    import json
+    from datetime import datetime, timezone
+    cutoff = (datetime.now(timezone.utc) + timedelta(days=days)).strftime("%Y-%m-%dT%H:%M")
+    ids = [g["game_id"] for g in schedule if str(g.get("start") or g.get("date")) < cutoff]
+    if not ids:
+        return
+    with ThreadPoolExecutor(config.FETCH_WORKERS) as pool:
+        sums = list(pool.map(lambda i: get(f"{config.ESPN}/summary", {"event": i}), ids))
+    out = {}
+    for gid, sm in zip(ids, sums):
+        teams = {}
+        for blk in (sm or {}).get("injuries") or []:
+            tid = str((blk.get("team") or {}).get("id"))
+            rows = []
+            for i in blk.get("injuries") or []:
+                a = i.get("athlete") or {}
+                if a.get("id"):
+                    rows.append({"id": str(a["id"]), "name": a.get("displayName"), "pos": (a.get("position") or {}).get("abbreviation"),
+                                 "status": i.get("status"), "date": i.get("date")})
+            teams[tid] = rows
+        out[gid] = teams
+    if out:
+        d = config.DATA_DIR / "injuries"
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{date.today().isoformat()}.json").write_text(json.dumps(out, separators=(",", ":")))
+        print(f"injuries: {sum(len(v) for t in out.values() for v in t.values())} listed for {len(out)} games")
+
+
 def fetch_rankings(season: int) -> None:
     """Current polls (AP, coaches, and the Playoff committee's rankings when released), compactly."""
     if config.IS_NFL:
@@ -309,13 +342,14 @@ def update(season: int | None = None, force: bool = False) -> None:
         fetch_rankings(season)
     have = {p.name.split(".")[0] for p in (d / "games").glob("*.csv")}
     have_pl = {p.name.split(".")[0] for p in (d / "players").glob("*.csv.gz")}
-    fetch_roster(season)
+    if season == config.season_for(today):
+        fetch_roster(season)   # ESPN only serves current rosters
     day, last = config.season_start(season), min(today - timedelta(days=1), config.season_end(season))
     recent = last - timedelta(days=config.REFETCH_DAYS - 1)
     while day <= last:
         iso = day.isoformat()
         # one-time backfill of box scores for the current season's earlier days
-        need_pl = season == config.season_for(today) and iso in have and iso not in have_pl and (d / "games" / f"{iso}.csv").stat().st_size > 5
+        need_pl = iso in have and iso not in have_pl and (d / "games" / f"{iso}.csv").stat().st_size > 5
         if force or iso not in have or day >= recent or need_pl:
             n = fetch_day(season, day)
             if n:
