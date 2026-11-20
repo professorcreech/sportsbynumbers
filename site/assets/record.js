@@ -6,6 +6,13 @@
   const pc = (x, d = 0) => (x == null ? "–" : (x * 100).toFixed(d) + "%");
   const dateStr = (s) => { const d = new Date(s); return isNaN(d) ? "" : d.toLocaleDateString(undefined, { month: "short", day: "numeric" }); };
 
+  /* Method-tab text, shared by every sport. */
+  window.SBN_recordMethod = function () {
+    return "<h2>Track record</h2><p>Every morning the update saves the prediction for each game starting in the next 36 hours and refreshes it until the game starts, so the number kept is the last one made before the game, with injuries and rest applied. When the final score arrives the game is graded. “Picks right” counts the side given more than 50%. The Brier score is the average of (stated chance − what happened)², where what happened is 1 for a home win and 0 for a loss; 0 is perfect and 0.25 is what always saying 50% earns. The calibration table groups games by the model’s confidence and checks whether that share of them came true. Days before the ledger existed were rebuilt from the site’s published history, using only what was published before each game.</p>" +
+      "<p><b>Last-season replay.</b> To judge this season against a fair benchmark, last season is replayed game by game: for each day the ratings are refit on only the games before it, starting from the same kind of preseason prior (last season’s results). The replay has no rosters, injuries or coaching changes, since those weren’t saved as they stood on each past day, so it measures the core rating model; on this season’s football games it reproduces the live predictions almost exactly (average difference 0.0002 in win probability). Comparisons use the same calendar dates in both seasons, because early-season slates are more lopsided, and the page says when a gap is larger than luck would explain.</p>" +
+      "<p><b>Team gaps.</b> A team’s average result minus its prediction is pulled toward zero by an amount set by how much real team-to-team spread the data show beyond luck (empirical Bayes). Where none shows, the page says so rather than ranking noise. In last season’s and this season’s full replays a team’s gap persisted within a season but not from one season to the next, so it is read as a team improving or declining during the year or luck, not a lasting knack. Betting lines appear only as a yardstick for these scores and are never an input to any prediction.</p>";
+  };
+
   window.SBN_record = async function (main, teamById) {
     main.innerHTML = '<p class="lede">Loading the track record…</p>';
     const R = await fetch("data/record.json").then((r) => (r.ok ? r.json() : null)).catch(() => null);
