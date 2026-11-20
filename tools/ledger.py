@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 LEAGUES = {"basketball": "Men’s college basketball", "nba": "NBA", "football": "College football", "nfl": "NFL"}
 WINDOW_H = 36
 COLS = ["game_id", "start", "home", "away", "home_name", "away_name", "neutral", "p_home", "margin", "snap",
-        "home_pts", "away_pts", "line_spread"]
+        "home_pts", "away_pts", "line_spread", "temp", "gust", "indoor"]
 
 
 def _ts(x) -> pd.Timestamp | None:
@@ -41,7 +41,8 @@ def _rows_from(obj) -> list[dict]:
         try:
             out.append({"game_id": str(g["id"]), "start": g["start"], "home": str(g["home"]), "away": str(g["away"]),
                         "home_name": g.get("home_name"), "away_name": g.get("away_name"), "neutral": int(bool(g.get("neutral"))),
-                        "p_home": float(g["home_win"]), "margin": round(float(g["home_score"]) - float(g["away_score"]), 2)})
+                        "p_home": float(g["home_win"]), "margin": round(float(g["home_score"]) - float(g["away_score"]), 2),
+                        "temp": g.get("temp"), "gust": g.get("gust"), "indoor": g.get("indoor")})
         except (KeyError, TypeError, ValueError):
             continue
     return out
