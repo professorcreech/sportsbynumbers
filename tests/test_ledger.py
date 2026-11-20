@@ -24,4 +24,4 @@ def test_grade_and_summary(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "ROOT", tmp_path)
     s = ledger.summarize("nba", g)
     assert (s["n"], s["hit"]) == (2, 1)
-    assert s["teams"]["1"]["n"] == 2 and s["teams"]["1"]["res"] == round(((10 - 6) + (-10 - 4)) / 2, 2)
+    assert s["teams"]["1"]["n"] == 2 and s["teams"]["1"]["raw"] == round(((10 - 6) + (-10 - 4)) / 2, 2)

@@ -123,16 +123,42 @@ def _team_rows(g: pd.DataFrame, ranks: dict, n_teams: int) -> dict:
             rows.append({"team": tid, "res": sgn * (r.actual - r.margin), "hit": bool(r.hit), "big": (ranks.get(opp) or 999) <= big and (ranks.get(tid) or 999) > 0,
                          "fav": (r.p_home if side == "h" else 1 - r.p_home) >= 0.5, "won": (sgn * r.actual) > 0})
     t = pd.DataFrame(rows)
+    # How much of the team-to-team spread is real? Variance of team averages minus what luck alone would produce.
+    g = t.groupby("team").res.agg(["size", "mean", "var"])
+    g = g[g["size"] >= 3]
+    sig2 = float(t.res.var()) if len(t) > 2 else 1.0
+    tau2 = max(float(g["mean"].var() - (sig2 / g["size"]).mean()), 0.0) if len(g) > 10 else 0.0
     out = {}
     for tid, x in t.groupby("team"):
+        n_ = len(x)
+        lam = tau2 / (tau2 + sig2 / n_) if tau2 > 0 else 0.0
         d = {"n": int(len(x)), "hit": int(x.hit.sum()), "won": int(x.won.sum()),
-             "res": round(float(x.res.mean()), 2), "se": round(float(x.res.std(ddof=1) / sqrt(len(x))), 2) if len(x) > 1 else None,
+             "raw": round(float(x.res.mean()), 2), "res": round(lam * float(x.res.mean()), 2),
+             "se": round(float(sqrt(lam * sig2 / n_)), 2),
              "sd": round(float(x.res.std(ddof=1)), 2) if len(x) > 2 else None}
         b = x[x.big]
         if len(b) >= 2:
             d["big_n"], d["big_res"] = int(len(b)), round(float(b.res.mean()), 2)
         out[tid] = d
-    return out
+    return {"teams": out, "tau": round(sqrt(tau2), 2), "noise_se": round(sqrt(sig2 / max(g["size"].median() if len(g) else 1, 1)), 2)}
+
+def _persistence(league: str) -> dict | None:
+    """Do teams keep beating (or missing) their predictions? Uses the two full replays (last season, this season so far)."""
+    fa, fb = ROOT / "data" / league / "replay.csv", ROOT / "data" / league / "replay_now.csv"
+    if not (fa.exists() and fb.exists()):
+        return None
+
+    def per_team(d):
+        d = d.assign(res=(d.home_pts - d.away_pts) - d.margin).sort_values("start")
+        return pd.concat([pd.DataFrame({"t": d.home.astype(str), "r": d.res}), pd.DataFrame({"t": d.away.astype(str), "r": -d.res})])
+    A, B = per_team(pd.read_csv(fa)), per_team(pd.read_csv(fb))
+    A["half"] = A.groupby("t").cumcount() % 2
+    h = A.groupby(["t", "half"]).r.mean().unstack().dropna()
+    m = A.groupby("t").r.agg(["size", "mean"]).join(B.groupby("t").r.mean().rename("b"), how="inner")
+    m = m[m["size"] >= 10]
+    if len(h) < 15 or len(m) < 15:
+        return None
+    return {"within": round(float(np.corrcoef(h[0], h[1])[0, 1]), 2), "across": round(float(np.corrcoef(m["mean"], m.b)[0, 1]), 2), "teams": int(len(m))}
 
 
 def _core(led: pd.DataFrame) -> dict | None:
@@ -216,7 +242,9 @@ def summarize(league: str, led: pd.DataFrame) -> dict | None:
         ranks = {}
     out["replay"] = _replay(league, g)
     out["big_top"] = max(10, ceil(0.1 * max(len(ranks), 1)))
-    out["teams"] = _team_rows(g, ranks, len(ranks)) if len(g) else {}
+    tr = _team_rows(g, ranks, len(ranks)) if len(g) else {"teams": {}, "tau": 0, "noise_se": 0}
+    out["teams"], out["team_tau"], out["team_noise"] = tr["teams"], tr["tau"], tr["noise_se"]
+    out["persist"] = _persistence(league)
     last = g.tail(40).iloc[::-1]
     out["recent"] = [{"start": r.start, "home": r.home_name, "away": r.away_name, "p": round(float(r.p_home), 3),
                       "pred": round(float(r.margin), 1), "actual": int(r.actual), "hit": int(r.hit), "neutral": int(r.neutral)} for r in last.itertuples()]

@@ -45,6 +45,14 @@
         (R.market && b.market ? row("Model miss minus line’s miss", (x) => (x.market ? x.market.model_mae - x.market.market_mae : null), (v) => (v == null ? "–" : sgn(v))) : "") +
         "</tbody></table></div><p class='note'>On the same dates the hit rate is " + pc(rate(a), 1) + " now against " + pc(rate(b), 1) + " then. " + verdict + " Lower is better for Brier score and for misses.</p>";
     }
+    const pr = R.persist;
+    const persistTxt = pr ? " In last season’s and this season’s full replays, a team’s gap versus prediction in one half of a season correlated " + pr.within.toFixed(2) + " with the other half, but only " + sgn(pr.across, 2).replace("+", "") +
+      " from one season to the next (" + pr.teams + " teams). So a gap is mostly a team improving or declining during the year, or luck, not a lasting knack for beating predictions." : "";
+    const real = R.team_tau > 0;
+    const teamsHtml = "<h2>Teams: do some beat their predictions?</h2><p class='lede'>" + (real ?
+      "“Avg. result vs. prediction” is how many points better (+) or worse (−) a team has finished than the model expected, pulled toward zero in proportion to how little of it can be told apart from luck (the real spread between teams is about " + R.team_tau.toFixed(1) + " points; a single team’s average is uncertain by far more with this few games)." :
+      "So far no team’s gap versus its prediction can be told apart from luck: with this few games per team, the differences between teams are what chance alone would produce. Rankings of ‘over-’ and ‘under-performers’ would only list noise, so none are shown.") + persistTxt + "</p>" +
+      (real ? '<p><label>Show: <select id="rec-sort">' + Object.entries(SORTS).map(([k, v]) => '<option value="' + k + '">' + v[0] + "</option>").join("") + '</select></label></p><div id="rec-teams"></div>' : "");
     const pickRate = R.hit / R.n, mk = R.market;
     main.innerHTML = "<h1>Track record</h1><p class='lede'>Every prediction is saved before the game starts and graded once the final score is in, so this is the model’s real record, not a re-fit after the fact. " +
       esc(R.name) + " since " + dateStr(R.first) + ": " + R.n + " games graded so far.</p>" +
@@ -59,8 +67,7 @@
       "<p class='note'>If the model is honest, the last two columns match. Small groups wander: with 30 games, 10 points either way is ordinary luck.</p>" +
       "<h2>By week</h2><div class='table-box'><table class='findings'><thead><tr><th class='l'>Week of</th><th>Games</th><th>Right</th><th>%</th></tr></thead><tbody>" +
       R.weekly.slice().reverse().map((w) => "<tr><td class='l'>" + dateStr(w.week + "T12:00") + "</td><td>" + w.n + "</td><td>" + w.hit + "</td><td>" + pc(w.hit / w.n) + "</td></tr>").join("") + "</tbody></table></div>" +
-      "<h2>Teams</h2><p class='lede'>“Avg. result vs. prediction” is how many points better (+) or worse (−) the team has finished than the model expected, on average; the ± is its margin of noise. Swing is how much that gap varies game to game. A team needs a lot of games before any of this is more than luck, so lists start at " + min + " games and the ± matters.</p>" +
-      '<p><label>Show: <select id="rec-sort">' + Object.entries(SORTS).map(([k, v]) => '<option value="' + k + '">' + v[0] + "</option>").join("") + '</select></label></p><div id="rec-teams"></div>' +
+      teamsHtml +
       "<h2>Latest results</h2><div class='table-box'><table class='findings'><thead><tr><th class='l'>Game</th><th>Chance (home)</th><th>Predicted margin</th><th>Actual</th><th></th></tr></thead><tbody>" +
       R.recent.map((g) => "<tr><td class='l'>" + dateStr(g.start) + " · " + esc(g.away) + (g.neutral ? " vs " : " @ ") + esc(g.home) + "</td><td>" + pc(g.p) + "</td><td>" + sgn(g.pred) + "</td><td>" + sgn(g.actual, 0) + "</td><td class='" + (g.hit ? "pos" : "neg") + "'>" + (g.hit ? "✓" : "✗") + "</td></tr>").join("") + "</tbody></table></div>" +
       "<p class='note'>Margins are home team minus visitor. Predictions before " + dateStr(R.first) + " were not saved.</p>";
@@ -70,7 +77,6 @@
       $("#rec-teams").innerHTML = rows.length ? tbl(rows) : "<p class='note'>Not enough games yet for this view.</p>";
     };
     const $ = (s) => main.querySelector(s);
-    $("#rec-sort").addEventListener("change", show);
-    show();
+    if (real) { $("#rec-sort").addEventListener("change", show); show(); }
   };
 })();
