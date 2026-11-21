@@ -241,7 +241,6 @@ def summarize(league: str, led: pd.DataFrame) -> dict | None:
         ranks = {str(t["id"]): t["rank"] for t in tj}
     except Exception:
         ranks = {}
-    out["replay"] = _replay(league, g)
     out["big_top"] = max(10, ceil(0.1 * max(len(ranks), 1)))
     tr = _team_rows(g, ranks, len(ranks)) if len(g) else {"teams": {}, "tau": 0, "noise_se": 0}
     out["teams"], out["team_tau"], out["team_noise"] = tr["teams"], tr["tau"], tr["noise_se"]

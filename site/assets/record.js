@@ -9,8 +9,7 @@
   /* Method-tab text, shared by every sport. */
   window.SBN_recordMethod = function () {
     return "<h2>Track record</h2><p>Every morning the update saves the prediction for each game starting in the next 36 hours and refreshes it until the game starts, so the number kept is the last one made before the game, with injuries and rest applied. When the final score arrives the game is graded. “Picks right” counts the side given more than 50%. The Brier score is the average of (stated chance − what happened)², where what happened is 1 for a home win and 0 for a loss; 0 is perfect and 0.25 is what always saying 50% earns. The calibration table groups games by the model’s confidence and checks whether that share of them came true. Days before the ledger existed were rebuilt from the site’s published history, using only what was published before each game.</p>" +
-      "<p><b>Last-season replay.</b> To judge this season against a fair benchmark, last season is replayed game by game: for each day the ratings are refit on only the games before it, starting from the same kind of preseason prior (last season’s results). The replay has no rosters, injuries or coaching changes, since those weren’t saved as they stood on each past day, so it measures the core rating model; on this season’s football games it reproduces the live predictions almost exactly (average difference 0.0002 in win probability). Comparisons use the same calendar dates in both seasons, because early-season slates are more lopsided, and the page says when a gap is larger than luck would explain.</p>" +
-      "<p><b>Team gaps.</b> A team’s average result minus its prediction is pulled toward zero by an amount set by how much real team-to-team spread the data show beyond luck (empirical Bayes). Where none shows, the page says so rather than ranking noise. In last season’s and this season’s full replays a team’s gap persisted within a season but not from one season to the next, so it is read as a team improving or declining during the year or luck, not a lasting knack. Betting lines appear only as a yardstick for these scores and are never an input to any prediction.</p>";
+      "<p><b>Team gaps.</b> A team’s average result minus its prediction is pulled toward zero by an amount set by how much real team-to-team spread the data show beyond luck (empirical Bayes). Where none shows, the page says so rather than ranking noise. In past seasons’ replays (each day refit on only the games before it) a team’s gap persisted within a season but not from one season to the next, so it is read as a team improving or declining during the year or luck, not a lasting knack. Betting lines appear only as a yardstick for these scores and are never an input to any prediction.</p>";
   };
 
   window.SBN_record = async function (main, teamById) {
@@ -32,26 +31,6 @@
       bigw: ["Worst against top teams", (a, b) => (a.big_res ?? 99) - (b.big_res ?? 99), (t) => t.big_n >= 2],
     };
 
-    const P = R.replay;
-    let yoy = "";
-    if (P && P.same) {
-      const a = { n: R.n, hit: R.hit, brier: R.brier, mae: R.mae, market: R.market }, b = P.same, f = P.full;
-      const row = (lab, fn, fmt) => "<tr><td class='l'>" + lab + "</td><td>" + fmt(fn(a)) + "</td><td>" + fmt(fn(b)) + "</td><td>" + fmt(fn(f)) + "</td></tr>";
-      const rate = (x) => x.hit / x.n;
-      const se = Math.sqrt(((a.hit + b.hit) / (a.n + b.n)) * (1 - (a.hit + b.hit) / (a.n + b.n)) * (1 / a.n + 1 / b.n));
-      const diff = rate(a) - rate(b);
-      const verdict = Math.abs(diff) < 2 * se ? "That gap is within normal game-to-game luck for samples this size (about ±" + Math.round(2 * se * 100) + " points)." :
-        "That gap is bigger than luck alone usually explains (about ±" + Math.round(2 * se * 100) + " points).";
-      yoy = "<h2>This season vs. last season</h2><p class='lede'>Last season replayed game by game: for each game, the model is refit on only the games before it, starting from the same kind of preseason prior. " +
-        "The replay uses past results only, with no rosters, injuries or coaching changes, so differences partly reflect those added inputs. Compare the same dates, because early-season slates are lopsided.</p>" +
-        "<div class='table-box'><table class='findings'><thead><tr><th class='l'></th><th>This season<br><span class='note'>" + dateStr(R.first) + " – now</span></th><th>Last season, same dates<br><span class='note'>" + dateStr(P.from + "T12:00") + " – " + dateStr(P.to + "T12:00") + "</span></th><th>Last season, full</th></tr></thead><tbody>" +
-        row("Games", (x) => x.n, (v) => v.toLocaleString()) +
-        row("Picks right", rate, (v) => pc(v, 1)) +
-        row("Brier score", (x) => x.brier, (v) => v.toFixed(3)) +
-        row("Avg. miss (points)", (x) => x.mae, (v) => v.toFixed(1)) +
-        (R.market && b.market ? row("Model miss minus line’s miss", (x) => (x.market ? x.market.model_mae - x.market.market_mae : null), (v) => (v == null ? "–" : sgn(v))) : "") +
-        "</tbody></table></div><p class='note'>On the same dates the hit rate is " + pc(rate(a), 1) + " now against " + pc(rate(b), 1) + " then. " + verdict + " Lower is better for Brier score and for misses.</p>";
-    }
     const pr = R.persist;
     const persistTxt = pr ? " In last season’s and this season’s full replays, a team’s gap versus prediction in one half of a season correlated " + pr.within.toFixed(2) + " with the other half, but only " + sgn(pr.across, 2).replace("+", "") +
       " from one season to the next (" + pr.teams + " teams). So a gap is mostly a team improving or declining during the year, or luck, not a lasting knack for beating predictions." : "";
@@ -69,7 +48,7 @@
       "<div><dt>Brier score</dt><dd>" + R.brier.toFixed(3) + '<span class="rk">coin flip ' + R.brier_coin.toFixed(2) + "</span></dd></div></dl>" +
       (mk ? "<p class='lede'>On the " + mk.n + " games that also had a betting line, the model picked " + mk.model_hit + " winners and the line’s favorite picked " + mk.market_hit + "; the average miss was " + mk.model_mae.toFixed(1) + " points for the model and " + mk.market_mae.toFixed(1) + " for the line.</p>" : "") +
       "<p class='note'>Brier score is the average squared gap between the stated chance and what happened (0 is perfect, 0.25 is always saying 50%). The home team won " + pc(R.home_rate) + " of these games, so that is what blind “pick the home team” would score.</p>" +
-      yoy + "<h2>Do the percentages mean what they say?</h2><div class='table-box'><table class='findings'><thead><tr><th class='l'>Model’s confidence in its pick</th><th>Games</th><th>Said</th><th>Happened</th></tr></thead><tbody>" +
+      "<h2>Do the percentages mean what they say?</h2><div class='table-box'><table class='findings'><thead><tr><th class='l'>Model’s confidence in its pick</th><th>Games</th><th>Said</th><th>Happened</th></tr></thead><tbody>" +
       R.bins.map((b) => "<tr><td class='l'>" + Math.round(b.lo * 100) + "–" + (b.hi >= 1 ? "100" : Math.round(b.hi * 100)) + "%</td><td>" + b.n + "</td><td>" + pc(b.pred) + "</td><td>" + pc(b.hit) + "</td></tr>").join("") + "</tbody></table></div>" +
       "<p class='note'>If the model is honest, the last two columns match. Small groups wander: with 30 games, 10 points either way is ordinary luck.</p>" +
       "<h2>By week</h2><div class='table-box'><table class='findings'><thead><tr><th class='l'>Week of</th><th>Games</th><th>Right</th><th>%</th></tr></thead><tbody>" +
