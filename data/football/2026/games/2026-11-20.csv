@@ -4,3 +4,4 @@ game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,aw
 401858303,2026-11-20,2026-11-21T00:30Z,12,2,True,False,True,150,228,Duke,Clemson,10,20,,Durham,NC,False,,,,,,,25311
 401866468,2026-11-20,2026-11-21T00:30Z,12,2,True,False,True,2649,189,Toledo,Bowling Green,19,0,,Toledo,OH,False,,,,,,,29216
 401864545,2026-11-20,2026-11-21T01:00Z,12,2,True,False,True,2005,2638,Air Force,UTEP,52,3,,USAF Academy,CO,False,,,,,,,16180
+401864542,2026-11-20,2026-11-21T02:00Z,12,2,True,False,True,2751,167,Wyoming,New Mexico,17,24,,Laramie,WY,False,,,,,,,22002

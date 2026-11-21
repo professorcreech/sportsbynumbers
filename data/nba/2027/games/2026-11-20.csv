@@ -5,5 +5,6 @@ game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts
 401909308,2026-11-20,False,False,True,8,28,102,105,2026-11-21T00:30Z,23|25|24|30,26|28|23|28,DraftKings,DET -6.5,-6.5,215.5,-277.0,227.0,True,James Williams|Dedric Taylor|J.B. DeRosa,20178,
 401909309,2026-11-20,False,False,True,4,27,94,98,2026-11-21T01:00Z,29|31|9|25,22|30|23|23,DraftKings,CHI -2.5,-2.5,237.5,-135.0,114.0,True,James Capers|Derrick Collins|Eric Lewis,0,
 401909310,2026-11-20,False,False,True,25,3,126,120,2026-11-21T01:00Z,33|23|36|34,36|28|34|22,DraftKings,OKC -11.5,-11.5,229.5,-479.0,368.0,True,Ed Malloy|Andy Nagy|Intae Hwang,18203,
-401909311,2026-11-20,False,False,True,26,21,101,111,2026-11-21T02:30Z,23|26|27|25,26|35|28|22,DraftKings,PHX -4.5,4.5,226.5,160.0,-192.0,False,Tyler Ford|Brent Barnaky|Che Flores,17867,
+401909311,2026-11-20,False,False,True,26,21,101,111,2026-11-21T02:30Z,23|26|27|25,26|35|28|22,DraftKings,PHX -4.5,4.5,226.5,160.0,-192.0,False,Brent Barnaky|Che Flores|Tyler Ford,17867,
+401909312,2026-11-20,False,False,True,7,10,133,124,2026-11-21T03:00Z,31|31|37|34,33|27|42|22,DraftKings,HOU -1.5,1.5,227.5,102.0,-121.0,False,Zach Zarba|Karl Lane|Dannica Baroody,19566,
 401909313,2026-11-20,False,False,True,13,23,106,104,2026-11-21T03:00Z,28|26|28|24,28|34|22|20,DraftKings,LAL -14.5,-14.5,229.5,-840.0,580.0,True,John Goble|Ashley Moyer-Gleich|Robert Hussey,19057,
