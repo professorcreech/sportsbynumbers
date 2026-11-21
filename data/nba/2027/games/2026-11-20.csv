@@ -1,0 +1,9 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401909305,2026-11-20,False,False,True,1,30,111,97,2026-11-21T00:00Z,23|33|31|24,31|26|19|21,DraftKings,ATL -7.5,-7.5,219.5,-264.0,217.0,True,Josh Tiven|Jacyn Goble|Leon Wood,15488,
+401909306,2026-11-20,False,False,True,17,19,111,113,2026-11-21T00:30Z,25|36|27|23,38|24|29|22,DraftKings,ORL -6.5,6.5,224.5,206.0,-249.0,False,Bill Kennedy|Mark Lindsay|Sha'Rae Mitchell,17067,
+401909307,2026-11-20,False,False,True,5,11,128,119,2026-11-21T00:30Z,29|33|43|23,29|32|22|36,DraftKings,CLE -6.5,-6.5,235.5,-244.0,201.0,True,Sean Wright|Nick Buchert|Tyler Ricks,19432,
+401909308,2026-11-20,False,False,True,8,28,102,105,2026-11-21T00:30Z,23|25|24|30,26|28|23|28,DraftKings,DET -6.5,-6.5,215.5,-277.0,227.0,True,James Williams|Dedric Taylor|J.B. DeRosa,20178,
+401909309,2026-11-20,False,False,True,4,27,94,98,2026-11-21T01:00Z,29|31|9|25,22|30|23|23,DraftKings,CHI -2.5,-2.5,237.5,-135.0,114.0,True,James Capers|Derrick Collins|Eric Lewis,0,
+401909310,2026-11-20,False,False,True,25,3,126,120,2026-11-21T01:00Z,33|23|36|34,36|28|34|22,DraftKings,OKC -11.5,-11.5,229.5,-479.0,368.0,True,Ed Malloy|Andy Nagy|Intae Hwang,18203,
+401909311,2026-11-20,False,False,True,26,21,101,111,2026-11-21T02:30Z,23|26|27|25,26|35|28|22,DraftKings,PHX -4.5,4.5,226.5,160.0,-192.0,False,Tyler Ford|Brent Barnaky|Che Flores,17867,
+401909313,2026-11-20,False,False,True,13,23,106,104,2026-11-21T03:00Z,28|26|28|24,28|34|22|20,DraftKings,LAL -14.5,-14.5,229.5,-840.0,580.0,True,John Goble|Ashley Moyer-Gleich|Robert Hussey,19057,

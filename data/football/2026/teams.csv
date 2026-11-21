@@ -17,8 +17,8 @@ team_id,conf,name,abbr,short,div,color
 154,acc,Wake Forest Demon Deacons,WAKE,Wake Forest,FBS,ceb888
 97,acc,Louisville Cardinals,LOU,Louisville,FBS,c9001f
 2567,acc,SMU Mustangs,SMU,SMU,FBS,a80000
-150,acc,Duke Blue Devils,DUKE,Duke,FBS,00539b
 228,acc,Clemson Tigers,CLEM,Clemson,FBS,f56600
+150,acc,Duke Blue Devils,DUKE,Duke,FBS,00539b
 221,acc,Pittsburgh Panthers,PITT,Pitt,FBS,003594
 259,acc,Virginia Tech Hokies,VT,Virginia Tech,FBS,6a2c3e
 52,acc,Florida State Seminoles,FSU,Florida St,FBS,782f40
@@ -39,10 +39,10 @@ team_id,conf,name,abbr,short,div,color
 9,big12,Arizona State Sun Devils,ASU,Arizona St,FBS,ffc627
 197,big12,Oklahoma State Cowboys,OKST,Oklahoma St,FBS,fe5c00
 2116,big12,UCF Knights,UCF,UCF,FBS,000000
-66,big12,Iowa State Cyclones,ISU,Iowa State,FBS,ae192d
 2628,big12,TCU Horned Frogs,TCU,TCU,FBS,4d1979
 277,big12,West Virginia Mountaineers,WVU,West Virginia,FBS,eaaa00
 2132,big12,Cincinnati Bearcats,CIN,Cincinnati,FBS,000000
+66,big12,Iowa State Cyclones,ISU,Iowa State,FBS,ae192d
 2305,big12,Kansas Jayhawks,KU,Kansas,FBS,0051ba
 38,big12,Colorado Buffaloes,COLO,Colorado,FBS,cfb87c
 2306,big12,Kansas State Wildcats,KSU,Kansas St,FBS,330a57
@@ -89,9 +89,9 @@ team_id,conf,name,abbr,short,div,color
 2050,midam,Ball State Cardinals,BALL,Ball State,FBS,ba0c2f
 2006,midam,Akron Zips,AKR,Akron,FBS,041e42
 16,midam,Sacramento State Hornets,SAC,Sacramento St,FBS,00573C
+2005,mwest,Air Force Falcons,AF,Air Force,FBS,003594
 167,mwest,New Mexico Lobos,UNM,New Mexico,FBS,ba0c2f
 2449,mwest,North Dakota State Bison,NDSU,N Dakota St,FBS,01402A
-2005,mwest,Air Force Falcons,AF,Air Force,FBS,003594
 2751,mwest,Wyoming Cowboys,WYO,Wyoming,FBS,492f24
 2439,mwest,UNLV Rebels,UNLV,UNLV,FBS,cf0a2c
 23,mwest,San José State Spartans,SJSU,San José St,FBS,0038a8
