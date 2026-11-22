@@ -11,6 +11,7 @@ from datetime import date, datetime, timezone
 
 import numpy as np
 import pandas as pd
+from scipy.stats import norm
 
 from basketball.conferences import name as conf_name
 from basketball.run import _clean
@@ -101,9 +102,24 @@ def build(season: int, schedule: list[dict]) -> None:
     # The Games tab shows the next eight days; the playoff simulation uses everything left
     horizon = (datetime.now(timezone.utc) + pd.Timedelta(days=8)).strftime("%Y-%m-%dT%H:%M")
     remaining = pd.DataFrame(schedule)
+    qb_adj = {}
+    try:
+        from . import qb
+        pdir = config.DATA_DIR / str(season) / "players"
+        inj_f = config.DATA_DIR / "injuries" / f"{date.today().isoformat()}.json"
+        qb_adj = qb.adjustments(_read(pdir, "*.csv.gz") if pdir.exists() else pd.DataFrame(), games, schedule,
+                                json.loads(inj_f.read_text()) if inj_f.exists() else None)
+    except Exception as e:  # never block the ratings
+        print(f"qb: skipped ({e})")
     up = []
     for g in [x for x in schedule if str(x.get("start") or x.get("date")) < horizon]:
         p = teams.predict(m, g["home_id"], g["away_id"], g.get("neutral", False))
+        qa = qb_adj.get(str(g["game_id"]))
+        if p and qa:
+            sh = qa.get(str(g["home_id"]), {}).get("shift", 0.0) - qa.get(str(g["away_id"]), {}).get("shift", 0.0)
+            p["home_score"] += sh / 2
+            p["away_score"] -= sh / 2
+            p["home_win"] = float(norm.cdf((p["home_score"] - p["away_score"]) / m["sd"]))
         if p and (g["home_id"] in names or g["away_id"] in names):
             up.append({"id": g["game_id"], "start": g.get("start"), "neutral": bool(g.get("neutral")),
                        "home": g["home_id"], "away": g["away_id"],
@@ -111,7 +127,8 @@ def build(season: int, schedule: list[dict]) -> None:
                        "home_score": round(p["home_score"], 1), "away_score": round(p["away_score"], 1),
                        "home_win": round(p["home_win"], 3), "note": g.get("note") or "",
                        # forecast ESPN lists for the game (recorded for testing; not used in the prediction)
-                       "indoor": g.get("indoor"), "temp": g.get("wx_temp"), "sky": g.get("wx_sky"), "gust": g.get("wx_gust")})
+                       "indoor": g.get("indoor"), "temp": g.get("wx_temp"), "sky": g.get("wx_sky"), "gust": g.get("wx_gust"),
+                       "qb": {("h" if k == str(g["home_id"]) else "a"): v for k, v in (qa or {}).items()} or None})
     meta = {"season": f"{season}",
             "league": {"key": config.LEAGUE, "nfl": config.IS_NFL, "level": "NFL" if config.IS_NFL else "Division I",
                        "short": "NFL" if config.IS_NFL else "D-I"}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),

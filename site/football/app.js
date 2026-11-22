@@ -118,6 +118,7 @@
       '<div class="row"><span class="t">' + (g.neutral ? "" : "@ ") + teamLink(g.home) + '</span><span class="s">' + f1(g.home_score) + "</span></div>" +
       '<div class="prob" role="img" aria-label="Home win probability ' + pct(g.home_win) + '"><span class="a" style="width:' + (100 - g.home_win * 100) + '%"></span><span class="h" style="width:' + g.home_win * 100 + '%"></span></div>' +
       '<div class="probtxt"><span>' + pct(1 - g.home_win) + "</span><span>" + esc((teamById[fav] || {}).abbr || "") + " by " + Math.abs(spread).toFixed(1) + "</span><span>" + pct(g.home_win) + "</span></div>" +
+      (g.qb ? '<p class="note" style="margin:6px 0 0">' + ["a", "h"].filter((k) => g.qb[k]).map((k) => esc(g.qb[k].why) + " (" + sgn(g.qb[k].shift, 1) + " pts to that team)").join("; ") + "</p>" : "") +
       '<a class="more-link" href="' + gameHref(g) + '">Matchup details →</a></article>';
   }
 
