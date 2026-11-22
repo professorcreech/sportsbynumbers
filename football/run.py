@@ -104,7 +104,7 @@ def build(season: int, schedule: list[dict]) -> None:
     remaining = pd.DataFrame(schedule)
     qb_adj = {}
     try:
-        from . import qb
+        from . import availability as qb
         pdir = config.DATA_DIR / str(season) / "players"
         inj_f = config.DATA_DIR / "injuries" / f"{date.today().isoformat()}.json"
         qb_adj = qb.adjustments(_read(pdir, "*.csv.gz") if pdir.exists() else pd.DataFrame(), games, schedule,
@@ -128,7 +128,7 @@ def build(season: int, schedule: list[dict]) -> None:
                        "home_win": round(p["home_win"], 3), "note": g.get("note") or "",
                        # forecast ESPN lists for the game (recorded for testing; not used in the prediction)
                        "indoor": g.get("indoor"), "temp": g.get("wx_temp"), "sky": g.get("wx_sky"), "gust": g.get("wx_gust"),
-                       "qb": {("h" if k == str(g["home_id"]) else "a"): v for k, v in (qa or {}).items()} or None})
+                       "avail": {("h" if k == str(g["home_id"]) else "a"): v for k, v in (qa or {}).items()} or None})
     meta = {"season": f"{season}",
             "league": {"key": config.LEAGUE, "nfl": config.IS_NFL, "level": "NFL" if config.IS_NFL else "Division I",
                        "short": "NFL" if config.IS_NFL else "D-I"}, "updated": datetime.now(timezone.utc).isoformat(timespec="minutes"),
