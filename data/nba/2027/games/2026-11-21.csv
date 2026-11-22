@@ -1,7 +1,7 @@
 game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
-401910023,2026-11-21,False,False,True,20,15,132,129,2026-11-21T18:00Z,29|31|38|34,30|29|33|37,DraftKings,PHI -11.5,-11.5,231.5,-620.0,455.0,True,Jason Goldenberg|Tre Maddox|Jonathan Sterling,21043,
-401910024,2026-11-21,False,False,True,18,22,97,96,2026-11-22T00:30Z,40|26|15|16,23|20|29|24,DraftKings,POR -1.5,1.5,213.5,102.0,-121.0,False,Matt Myers|Gediminas Petraitis|John Butler,19812,
-401910025,2026-11-21,False,False,True,6,12,110,100,2026-11-22T01:00Z,23|29|26|32,26|18|30|26,DraftKings,DAL -4.5,-4.5,230.5,-191.0,160.0,True,Tony Brothers|Karl Lane|John Conley,19888,
-401910026,2026-11-21,False,False,True,16,29,104,95,2026-11-22T01:00Z,28|28|27|21,34|12|16|33,DraftKings,MIN -5.5,-5.5,227.5,-218.0,181.0,True,Brian Forte|Kevin Cutler|Brandon Adair,0,
-401910027,2026-11-21,False,False,True,24,3,114,91,2026-11-22T01:00Z,32|29|28|25,29|16|21|25,DraftKings,SA -19.5,-19.5,226.5,-1700.0,940.0,True,Justin Van Duyne|Suyash Mehta|Mousa Dagher,18708,
-401910028,2026-11-21,False,False,True,23,2,97,96,2026-11-22T03:00Z,25|16|35|21,27|27|13|29,DraftKings,BOS -12.5,12.5,217.5,453.0,-620.0,False,Sean Corbin|Brett Nansel|Tyler Ford,15416,
+401910023,2026-11-21,False,False,True,20,15,132,129,2026-11-21T18:00Z,29|31|38|34,30|29|33|37,Draft Kings,PHI -11.5,-11.5,231.5,-620.0,455.0,True,Jason Goldenberg|Tre Maddox|Jonathan Sterling,21043,
+401910024,2026-11-21,False,False,True,18,22,97,96,2026-11-22T00:30Z,40|26|15|16,23|20|29|24,Draft Kings,POR -1.5,1.5,213.5,102.0,-121.0,False,Matt Myers|Gediminas Petraitis|John Butler,19812,
+401910025,2026-11-21,False,False,True,6,12,110,100,2026-11-22T01:00Z,23|29|26|32,26|18|30|26,Draft Kings,DAL -4.5,-4.5,230.5,-191.0,160.0,True,Tony Brothers|Karl Lane|John Conley,19888,
+401910026,2026-11-21,False,False,True,16,29,104,95,2026-11-22T01:00Z,28|28|27|21,34|12|16|33,Draft Kings,MIN -5.5,-5.5,227.5,-218.0,181.0,True,Brian Forte|Kevin Cutler|Brandon Adair,0,
+401910027,2026-11-21,False,False,True,24,3,114,91,2026-11-22T01:00Z,32|29|28|25,29|16|21|25,Draft Kings,SA -19.5,-19.5,226.5,-1700.0,940.0,True,Justin Van Duyne|Suyash Mehta|Mousa Dagher,18708,
+401910028,2026-11-21,False,False,True,23,2,97,96,2026-11-22T03:00Z,25|16|35|21,27|27|13|29,Draft Kings,BOS -12.5,12.5,217.5,453.0,-620.0,False,Sean Corbin|Brett Nansel|Tyler Ford,15416,
