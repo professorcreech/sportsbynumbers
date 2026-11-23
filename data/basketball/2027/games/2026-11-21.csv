@@ -1,6 +1,6 @@
 game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
 401925756,2026-11-21,False,False,True,127,2174,91,70,2026-11-21T17:00Z,42|49,27|43,Draft Kings,MSU -40.5,-40.5,150.5,,,True,Mike Littlewood|Paul Szelc|Alex Landis,14797,
-401909567,2026-11-21,True,False,True,150,265,78,74,2026-11-22T04:00Z,44|34,31|43,Draft Kings,DUKE -24.5,-24.5,149.5,-8000.0,2200.0,True,Tony Padilla|Kipp Kissinger|Jeffrey Anderson,0,
+401909567,2026-11-21,True,False,True,150,265,78,74,2026-11-22T04:00Z,44|34,31|43,Draft Kings,DUKE -24.5,-24.5,149.5,-8000.0,2200.0,True,Tony Padilla|Kipp Kissinger|Jeffrey Anderson,5437,
 401921776,2026-11-21,False,False,True,222,130,79,73,2026-11-22T00:00Z,34|45,29|44,Draft Kings,MICH -3.5,3.5,159.5,145.0,-175.0,False,Brian  O'Connell|John Gaffney|Tony Chiazza,11625,
 401921811,2026-11-21,False,False,True,99,2511,106,75,2026-11-21T18:00Z,52|54,40|35,Draft Kings,LSU -25.5,-25.5,173.5,-9000.0,2500.0,True,Brian Dorsey|Wil Howard|Vladimir Voyard-Tadal,7327,
 401924884,2026-11-21,False,False,True,2083,2561,87,93,2026-11-21T16:00Z,48|39,49|44,Draft Kings,SIE -6.5,6.5,161.5,220.0,-270.0,False,Michael Luckie|Sean Campbell|Joe Switzer,632,
