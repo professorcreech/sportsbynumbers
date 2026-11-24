@@ -99,6 +99,77 @@ def _fourth_counts(p: pd.DataFrame) -> pd.DataFrame:
     return pd.concat(rows).groupby(["team", "sit"], as_index=False).sum(numeric_only=True)
 
 
+# ---- Play-call tendencies by down (run/pass rate by field position and yards to go; direction where the feed has it)
+TEND = [
+    ("t1a", "1st down, backed up (own 1–10)"), ("t1b", "1st down, own territory (own 11–39)"),
+    ("t1c", "1st down, midfield (40–60)"), ("t1d", "1st down, opponent territory (opp 21–39)"),
+    ("t1e", "1st down, red zone (inside the 20)"),
+    ("t2s", "2nd & short (1–3)"), ("t2m", "2nd & medium (4–6)"), ("t2l", "2nd & long (7+)"),
+    ("t3a", "3rd & 1"), ("t3b", "3rd & 2–3"), ("t3c", "3rd & 4–6"), ("t3d", "3rd & 7–10"), ("t3e", "3rd & 11+"),
+]
+K_T = 25.0
+FOURTH_T = [("f1", "4th & 1"), ("f2", "4th & 2–3"), ("f3", "4th & 4–7"), ("f4", "4th & 8+")]
+ZONES = [("own", "in own territory (own 49 or deeper)"), ("mid", "between midfield and the opponent’s 36"), ("fg", "inside the opponent’s 35")]
+
+
+def _tmasks(s: pd.DataFrame) -> dict:
+    d, dist, y = s.down, s.distance, s.ytg
+    return {
+        "t1a": (d == 1) & (y >= 90), "t1b": (d == 1) & y.between(61, 89), "t1c": (d == 1) & y.between(40, 60),
+        "t1d": (d == 1) & y.between(21, 39), "t1e": (d == 1) & (y <= 20),
+        "t2s": (d == 2) & (dist <= 3), "t2m": (d == 2) & dist.between(4, 6), "t2l": (d == 2) & (dist >= 7),
+        "t3a": (d == 3) & (dist <= 1), "t3b": (d == 3) & dist.between(2, 3), "t3c": (d == 3) & dist.between(4, 6),
+        "t3d": (d == 3) & dist.between(7, 10), "t3e": (d == 3) & (dist >= 11),
+    }
+
+
+def _tend_counts(p: pd.DataFrame) -> pd.DataFrame:
+    s = p[p.scrim & p.distance.notna() & p.ytg.notna()]
+    rows = []
+    for key, mask in _tmasks(s).items():
+        x = s[mask]
+        base = pd.DataFrame({"n": x.w, "pass": x.pass_ * x.w, "succ": x.success * x.w, "yds": x.yards.clip(-10, 40) * x.w})
+        for role, team in (("off", x.offense), ("def", x.defense)):
+            rows.append(base.assign(team=team.to_numpy(), role=role, sit=key))
+    return pd.concat(rows).groupby(["team", "role", "sit"], as_index=False).sum(numeric_only=True)
+
+
+def _fourth_t_counts(p: pd.DataFrame) -> pd.DataFrame:
+    f = p[(p.down == 4) & p.distance.notna() & p.ytg.notna()].copy()
+    f["kind"] = np.select([f.scrim, f.type.eq("Punt"), f.type.str.startswith("Field Goal") | f.type.str.startswith("Blocked Field Goal")],
+                          ["go", "punt", "fg"], "")
+    f = f[f.kind != ""]
+    f["zone"] = np.select([f.ytg >= 50, f.ytg >= 36], ["own", "mid"], "fg")
+    f["band"] = np.select([f.distance <= 1, f.distance <= 3, f.distance <= 7], ["f1", "f2", "f3"], "f4")
+    out = f.groupby(["offense", "band", "zone"]).apply(
+        lambda g: pd.Series({"n": g.w.sum(), "go": (g.w * (g.kind == "go")).sum(), "punt": (g.w * (g.kind == "punt")).sum(),
+                             "fg": (g.w * (g.kind == "fg")).sum()}), include_groups=False).reset_index()
+    return out.rename(columns={"offense": "team"})
+
+
+def _dir_counts(p: pd.DataFrame) -> pd.DataFrame:
+    """Direction and depth shares among plays whose text carried them (mostly NFL)."""
+    for c in ("rdir", "rgap", "pdepth", "pdir", "gun"):
+        if c not in p:
+            p[c] = "" if c != "gun" else False
+    for c in ("rdir", "rgap", "pdepth", "pdir"):
+        p[c] = p[c].fillna("")
+    s = p[p.scrim & p.distance.notna()]
+    r = s[s.rush & (s.rdir != "")]
+    q = s[s.pass_ & ~s.sack & (s.pdir != "")]
+    rows = []
+    for ctx, rm, qm in (("all", r.distance >= 0, q.distance >= 0), ("short", r.distance <= 3, q.distance <= 3),
+                        ("late", (r.down >= 3), (q.down >= 3))):
+        rr, qq = r[rm], q[qm]
+        rows.append(pd.DataFrame({"team": rr.offense, "ctx": ctx, "k": "r_" + rr.rdir, "w": rr.w}))
+        rows.append(pd.DataFrame({"team": rr.offense, "ctx": ctx, "k": "g_" + rr.rgap, "w": rr.w}))
+        rows.append(pd.DataFrame({"team": qq.offense, "ctx": ctx, "k": "p_" + qq.pdir, "w": qq.w}))
+        rows.append(pd.DataFrame({"team": qq.offense, "ctx": ctx, "k": "d_" + qq.pdepth.replace("", "unk"), "w": qq.w}))
+        rows.append(pd.DataFrame({"team": rr.offense, "ctx": ctx, "k": "r_n", "w": rr.w}))
+        rows.append(pd.DataFrame({"team": qq.offense, "ctx": ctx, "k": "p_n", "w": qq.w}))
+    return pd.concat(rows).groupby(["team", "ctx", "k"], as_index=False).w.sum()
+
+
 def build(plays: pd.DataFrame | None, games: pd.DataFrame, plays_prev: pd.DataFrame | None = None,
           games_prev: pd.DataFrame | None = None, teams_in: set | None = None) -> dict | None:
     if plays is None or not len(plays) or not len(games):
@@ -106,13 +177,14 @@ def build(plays: pd.DataFrame | None, games: pd.DataFrame, plays_prev: pd.DataFr
     parts = [(plays, games, 1.0)]
     if plays_prev is not None and len(plays_prev) and games_prev is not None and len(games_prev):
         parts.append((plays_prev, games_prev, PRIOR_SEASON_WEIGHT))
-    counts, fourth = [], []
+    counts, fourth, tcs, f4t, dcs = [], [], [], [], []
     for pl, gm, w in parts:
         if teams_in:   # only games between rated teams, so the league baseline is the league being scouted
             gm = gm[gm.home_id.isin(teams_in) & gm.away_id.isin(teams_in)]
         pp = _prepare(pl, gm, w)
         counts.append(_counts(pp))
         fourth.append(_fourth_counts(pp))
+        tcs.append(_tend_counts(pp)); f4t.append(_fourth_t_counts(pp)); dcs.append(_dir_counts(pp))
     c = pd.concat(counts).groupby(["team", "role", "sit"], as_index=False).sum(numeric_only=True)
     f4 = pd.concat(fourth).groupby(["team", "sit"], as_index=False).sum(numeric_only=True)
 
@@ -128,6 +200,72 @@ def build(plays: pd.DataFrame | None, games: pd.DataFrame, plays_prev: pd.DataFr
 
     def shrink(num, den, base, k):
         return (num + k * base) / (den + k)
+
+
+    tc = pd.concat(tcs).groupby(["team", "role", "sit"], as_index=False).sum(numeric_only=True)
+    tl = {}
+    for sit, grp in tc[tc.role == "off"].groupby("sit"):
+        a = grp.sum(numeric_only=True)
+        tl[sit] = {"pass": a["pass"] / a.n, "succ": a.succ / a.n, "yds": a.yds / a.n}
+    tidx = tc.set_index(["team", "role", "sit"])
+    ft = pd.concat(f4t).groupby(["team", "band", "zone"], as_index=False).sum(numeric_only=True)
+    fl = {}
+    for (b, z), grp in ft.groupby(["band", "zone"]):
+        a = grp.sum(numeric_only=True)
+        fl[b + z] = {"go": a.go / a.n, "punt": a.punt / a.n, "fg": a.fg / a.n, "n": float(a.n)}
+    dc = pd.concat(dcs).groupby(["team", "ctx", "k"], as_index=False).w.sum()
+    didx = dc.set_index(["team", "ctx", "k"]).w
+    dleague = dc.groupby(["ctx", "k"]).w.sum()
+
+    def shr(num, den, base, k):
+        return (num + k * base) / (den + k)
+
+    def tend_for(t):
+        out = {}
+        for sit, _ in TEND:
+            L = tl.get(sit)
+            if not L:
+                continue
+            o = tidx.loc[(t, "off", sit)] if (t, "off", sit) in tidx.index else None
+            e = tidx.loc[(t, "def", sit)] if (t, "def", sit) in tidx.index else None
+            n, nd = (float(o.n) if o is not None else 0.0), (float(e.n) if e is not None else 0.0)
+            out[sit] = {"n": round(n), "pass": round(float(shr(o["pass"] if o is not None else 0, n, L["pass"], K_T)), 3),
+                        "succ": round(float(shr(o.succ if o is not None else 0, n, L["succ"], K_T)), 3),
+                        "yds": round(float(shr(o.yds if o is not None else 0, n, L["yds"], K_T)), 2),
+                        "d_n": round(nd), "d_pass": round(float(shr(e["pass"] if e is not None else 0, nd, L["pass"], K_T)), 3)}
+        f = {}
+        for b, _ in FOURTH_T:
+            for z, _ in ZONES:
+                key = b + z
+                L = fl.get(key)
+                r = ft[(ft.team == t) & (ft.band == b) & (ft.zone == z)]
+                n = float(r.n.iloc[0]) if len(r) else 0.0
+                if L and n > 0:
+                    g = lambda c: float(r[c].iloc[0]) if len(r) else 0.0
+                    f[key] = {"n": round(n, 1), "go": round(float(shr(g("go"), n, L["go"], K_FOURTH)), 3),
+                              "punt": round(float(shr(g("punt"), n, L["punt"], K_FOURTH)), 3),
+                              "fg": round(float(shr(g("fg"), n, L["fg"], K_FOURTH)), 3)}
+        out["fourth"] = f
+        dr = {}
+        for ctx in ("all", "short", "late"):
+            rn, pn = float(didx.get((t, ctx, "r_n"), 0.0)), float(didx.get((t, ctx, "p_n"), 0.0))
+            blk = {"run_n": round(rn), "pass_n": round(pn)}
+            for k, den in (("r_left", rn), ("r_middle", rn), ("r_right", rn), ("g_end", rn), ("g_tackle", rn), ("g_guard", rn), ("g_middle", rn),
+                           ("p_left", pn), ("p_middle", pn), ("p_right", pn), ("d_short", pn), ("d_deep", pn)):
+                blk[k] = round(float(didx.get((t, ctx, k), 0.0)) / den, 3) if den else None
+            dr[ctx] = blk
+        out["dir"] = dr
+        return out
+
+    def dir_league():
+        res = {}
+        for ctx in ("all", "short", "late"):
+            rn, pn = float(dleague.get((ctx, "r_n"), 0.0)), float(dleague.get((ctx, "p_n"), 0.0))
+            res[ctx] = {"run_n": round(rn), "pass_n": round(pn)}
+            for k, den in (("r_left", rn), ("r_middle", rn), ("r_right", rn), ("p_left", pn), ("p_middle", pn), ("p_right", pn),
+                           ("d_short", pn), ("d_deep", pn)):
+                res[ctx][k] = round(float(dleague.get((ctx, k), 0.0)) / den, 3) if den else None
+        return res
 
     teams = {}
     idx = c.set_index(["team", "role", "sit"])
@@ -161,7 +299,10 @@ def build(plays: pd.DataFrame | None, games: pd.DataFrame, plays_prev: pd.DataFr
             if L:
                 fo[sit] = {"n": round(n, 1), "go": round(shrink(go, n, L["go"], K_FOURTH), 3)}
         d["fourth"] = fo
+        d["tend"] = tend_for(t)
         teams[t] = d
     out_league = {k: {a: (None if b is None else round(float(b), 3)) for a, b in v.items()} for k, v in league.items()}
     out_l4 = {k: {a: round(float(b), 3) for a, b in v.items()} for k, v in lg4.items()}
-    return {"situations": SITUATIONS, "fourth": FOURTH, "league": out_league, "league_fourth": out_l4, "teams": teams}
+    return {"situations": SITUATIONS, "fourth": FOURTH, "league": out_league, "league_fourth": out_l4, "teams": teams,
+            "tend": TEND, "fourth_t": FOURTH_T, "zones": ZONES, "league_tend": {k: {a: round(float(b), 3) for a, b in v.items()} for k, v in tl.items()},
+            "league_f4": {k: {a: round(float(b), 3) for a, b in v.items()} for k, v in fl.items()}, "league_dir": dir_league()}

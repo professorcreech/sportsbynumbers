@@ -6,6 +6,7 @@ One small file per day per table under data/football/<season>/:
     plays/<day>.csv.gz       one row per scrimmage play: down, distance, yards to goal, type, yards gained
 """
 from __future__ import annotations
+import re
 
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, timedelta
@@ -119,6 +120,36 @@ def fetch_teams(season: int) -> None:
     df.to_csv(season_dir(season) / "teams.csv", index=False)
 
 
+_RDIR = re.compile(r"\b(left|right)\s+(end|tackle|guard)\b|\bup the middle\b|\b(?:middle|center)\b", re.I)
+_PASS = re.compile(r"pass\s+(?:incomplete\s+)?(short|deep)?\s*(left|right|middle)?", re.I)
+
+
+def play_tags(text: str) -> dict:
+    """Direction, depth and shotgun flag from ESPN play text. Only the NFL feed carries these consistently;
+    most college plays have none, so the fields are left blank rather than guessed."""
+    t = text or ""
+    out = {"gun": "shotgun" in t.lower(), "rdir": "", "rgap": "", "pdepth": "", "pdir": ""}
+    m = _RDIR.search(t)
+    if m:
+        if m.group(1):
+            out["rdir"], out["rgap"] = m.group(1).lower(), m.group(2).lower()
+        else:
+            out["rdir"], out["rgap"] = "middle", "middle"
+    m = _PASS.search(t)
+    if m and (m.group(1) or m.group(2)):
+        out["pdepth"], out["pdir"] = (m.group(1) or "").lower(), (m.group(2) or "").lower()
+    return out
+
+
+def _lacks_tags(path) -> bool:
+    import gzip
+    try:
+        with gzip.open(path, "rt") as f:
+            return "rdir" not in f.readline()
+    except (OSError, EOFError):
+        return False
+
+
 def parse_summary(summ: dict, game: dict):
     """Drives and scrimmage plays for one game."""
     drives, plays = [], []
@@ -153,7 +184,8 @@ def parse_summary(summ: dict, game: dict):
                           "ytg": _int(st.get("yardsToEndzone"), None), "type": t,
                           "yards": _int(p.get("statYardage")), "penalty": bool(p.get("isPenalty")),
                           "turnover": bool(p.get("isTurnover")), "scoring": bool(p.get("scoringPlay")),
-                          "home_score": _int(p.get("homeScore")), "away_score": _int(p.get("awayScore"))})
+                          "home_score": _int(p.get("homeScore")), "away_score": _int(p.get("awayScore")),
+                          **play_tags(p.get("text", ""))})
     return drives, plays
 
 
@@ -350,7 +382,8 @@ def update(season: int | None = None, force: bool = False) -> None:
         iso = day.isoformat()
         # one-time backfill of box scores for the current season's earlier days
         need_pl = iso in have and iso not in have_pl and (d / "games" / f"{iso}.csv").stat().st_size > 5
-        if force or iso not in have or day >= recent or need_pl:
+        need_tag = iso in have and _lacks_tags(d / "plays" / f"{iso}.csv.gz")   # one-time pickup of direction/depth tags
+        if force or iso not in have or day >= recent or need_pl or need_tag:
             n = fetch_day(season, day)
             if n:
                 print(f"{day}: {n} games")

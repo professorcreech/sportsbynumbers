@@ -467,6 +467,42 @@
       S.fourth.map(([k, name], i) => "<tr><td class='l'>" + esc(name) + "</td><td>" + fa[i] + "</td><td>" + fh[i] + "</td><td>" + pc(S.league_fourth[k].go) + "</td></tr>").join("") + "</tbody></table></div>";
     const aggressive = [[A, ta], [H, th]].map(([T, t]) => { const v = t.fourth && t.fourth.short; const lgv = S.league_fourth.short.go;
       return v && v.n >= 6 && Math.abs(v.go - lgv) >= 0.08 ? esc(T.short) + (v.go > lgv ? " is aggressive" : " is conservative") + " on 4th & short: it goes for it " + pc(v.go) + " of the time (league " + pc(lgv) + ")." : null; }).filter(Boolean);
+    // Play-call tendencies by down: run/pass by field position and yards to go, plus direction where the feed has it
+    const tendBlock = () => {
+      if (!S.tend || !ta.tend || !th.tend) return "";
+      const LT = S.league_tend, lbl = Object.fromEntries(S.tend);
+      const one = (T, t) => '<div class="table-box"><table><thead><tr><th class="l">' + esc(T.short) + ' offense</th><th>Plays</th><th>Pass</th><th>League</th><th>Success</th><th>Yds/play</th></tr></thead><tbody>' +
+        S.tend.map(([k, name]) => { const v = t.tend[k]; if (!v || !LT[k]) return ""; const d = (v.pass - LT[k].pass) * 100;
+          return "<tr><td class='l'>" + esc(name) + "</td><td>" + v.n + "</td><td><b>" + pc(v.pass) + "</b>" + (v.n >= 15 && Math.abs(d) >= 5 ? '<span class="rk">' + sgn(d, 0) + "</span>" : "") + "</td><td>" + pc(LT[k].pass) + "</td><td>" + pc(v.succ) + "</td><td>" + v.yds.toFixed(1) + "</td></tr>"; }).join("") + "</tbody></table></div>";
+      const notes = [[A, ta], [H, th]].map(([T, t]) => {
+        const out = [], x = t.tend;
+        const chk = (k, txt) => { const v = x[k]; if (v && LT[k] && v.n >= 15 && Math.abs(v.pass - LT[k].pass) >= 0.08) out.push(txt(v, LT[k])); };
+        chk("t1a", (v, l) => "Backed up inside its own 10 on 1st down it " + (v.pass > l.pass ? "throws more" : "runs more") + " than most: " + pc(v.pass) + " passes (league " + pc(l.pass) + ").");
+        chk("t1c", (v, l) => "On 1st down near midfield it passes " + pc(v.pass) + " (league " + pc(l.pass) + ").");
+        chk("t3a", (v, l) => "On 3rd & 1 it passes " + pc(v.pass) + " of the time (league " + pc(l.pass) + ").");
+        chk("t3b", (v, l) => "On 3rd & 2–3 it passes " + pc(v.pass) + " (league " + pc(l.pass) + ").");
+        chk("t3d", (v, l) => "On 3rd & 7–10 it passes " + pc(v.pass) + " (league " + pc(l.pass) + ").");
+        return out.length ? "<p><b>" + esc(T.short) + "</b></p><ul>" + out.map(li).join("") + "</ul>" : "";
+      }).join("");
+      // 4th down: what it does, by distance and zone
+      const ft = (T, t) => { const rows = S.fourth_t.flatMap(([b, bn]) => S.zones.map(([z, zn]) => { const v = t.tend.fourth[b + z]; const l = S.league_f4[b + z];
+          return v && l && v.n >= 3 ? "<tr><td class='l'>" + esc(bn + ", " + zn) + "</td><td>" + Math.round(v.n) + "</td><td><b>" + pc(v.go) + "</b></td><td>" + pc(v.punt) + "</td><td>" + pc(v.fg) + "</td><td>" + pc(l.go) + "</td></tr>" : ""; })).join("");
+        return rows ? '<div class="table-box"><table><thead><tr><th class="l">' + esc(T.short) + ' on 4th down</th><th>Tries</th><th>Go</th><th>Punt</th><th>Kick</th><th>League go</th></tr></thead><tbody>' + rows + "</tbody></table></div>" : ""; };
+      // Direction (only where ESPN's play text has it; nearly all NFL, few college plays)
+      const dirCard = (T, t) => { const a = t.tend.dir && t.tend.dir.all, sh = t.tend.dir && t.tend.dir.short, ld = S.league_dir;
+        if (!a) return ""; const ps = [];
+        const pick = (b, rk, lk, names) => names.map(([k, nm]) => nm + " " + pc(b[k])).join(", ");
+        if (a.run_n >= 25) ps.push("<li><b>Runs</b> (" + a.run_n + " with a direction): " + pick(a, "r", "", [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + ". By gap: " + pick(a, "g", "", [["g_end", "outside (end)"], ["g_tackle", "tackle"], ["g_guard", "guard"], ["g_middle", "up the middle"]]) + ".</li>");
+        if (sh && sh.run_n >= 15) ps.push("<li><b>Short-yardage runs</b> (3 or fewer to go, " + sh.run_n + "): " + pick(sh, "r", "", [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + ".</li>");
+        if (a.pass_n >= 25) ps.push("<li><b>Passes</b> (" + a.pass_n + " with a side): " + pick(a, "p", "", [["p_left", "left"], ["p_middle", "middle"], ["p_right", "right"]]) + (a.d_short != null ? "; short " + pc(a.d_short) + ", deep " + pc(a.d_deep) + " of those labelled by depth" : "") + ".</li>");
+        return ps.length ? "<p><b>" + esc(T.short) + "</b></p><ul>" + ps.join("") + "</ul>" : ""; };
+      const dirs = dirCard(A, ta) + dirCard(H, th);
+      return "<h3>Play-call tendencies by down</h3><p class='note'>Pass rate = share of run and pass plays that were passes (sacks count as passes). “Success” means gaining 50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd or 4th. Rates are pulled toward the league average when a team has few plays in a spot; small ± chips show the gap to the league only when the sample is at least 15 plays.</p>" +
+        (notes ? "<div class='grid'><div>" + notes + "</div></div>" : "") + '<div class="grid">' + one(A, ta) + one(H, th) + "</div>" +
+        '<div class="grid">' + ft(A, ta) + ft(H, th) + "</div>" +
+        (dirs ? "<h4>Direction and depth</h4>" + dirs + "<p class='note'>ESPN labels run direction and pass side/depth in its play text mostly for NFL games; most college plays carry none, so these are shares of the plays that were labelled, and appear only once a team has a decent sample. Formations, personnel, play-action and coverage are not available.</p>" :
+          "<p class='note'>Run direction and pass depth are not shown: ESPN’s play text doesn’t include them for enough of this league’s plays. Formations and personnel aren’t available either.</p>");
+    };
     const wx = game && (game.indoor != null || game.temp != null) ? '<p class="note">' + (game.indoor ? "Indoor game. " : "") + (game.temp != null ? "Forecast: " + Math.round(game.temp) + "°F" + (game.sky ? ", " + esc(String(game.sky).toLowerCase()) : "") + (game.gust ? ", gusts to " + Math.round(game.gust) + " mph" : "") + ". " : "") +
       "Weather is being recorded game by game so its effect on scoring and play-calling can be tested; it is not used in the prediction yet.</p>" : "";
     return '<section class="prose" style="max-width:none"><h2>Situations and strategy</h2>' +
@@ -474,7 +510,7 @@
       "<h3>Likely game script</h3>" + scriptTbl +
       "<h3>Where each offense can attack</h3><p class='note'>Edge = how far the team’s own success rate and the opposing defense’s success rate allowed sit above the league in that situation, added together (percentage points).</p>" +
       '<div class="grid">' + card(A, rA) + card(H, rH) + "</div>" +
-      "<h3>Fourth down</h3>" + f4tbl + (aggressive.length ? "<ul>" + aggressive.map(li).join("") + "</ul>" : "") +
+      tendBlock() + "<h3>Fourth down</h3>" + f4tbl + (aggressive.length ? "<ul>" + aggressive.map(li).join("") + "</ul>" : "") +
       "<h3>" + esc(A.short) + " offense vs. " + esc(H.short) + " defense</h3>" + tbl(A, ta, H, th) +
       "<h3>" + esc(H.short) + " offense vs. " + esc(A.short) + " defense</h3>" + tbl(H, th, A, ta) + "</section>";
   }
