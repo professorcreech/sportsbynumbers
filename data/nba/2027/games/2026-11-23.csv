@@ -1,0 +1,11 @@
+game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
+401910036,2026-11-23,False,False,True,30,29,111,117,2026-11-24T00:00Z,32|28|22|29,28|34|27|28,Draft Kings,MEM -2.5,2.5,213.5,125.0,-148.0,False,James Williams|Tre Maddox|JP Primm,18018,
+401910037,2026-11-23,False,False,True,20,22,111,128,2026-11-24T00:00Z,32|37|23|19,30|39|32|27,Draft Kings,POR -1.5,1.5,230.5,-108.0,-110.0,False,Kevin Cutler|Scott Twardoski|Sha'Rae Mitchell,21512,
+401910038,2026-11-23,False,False,True,11,25,125,120,2026-11-24T00:30Z,27|29|40|29,27|24|40|29,Draft Kings,OKC -4.5,4.5,226.5,160.0,-191.0,False,Tony Brothers|John Conley|Ashley Moyer-Gleich,17274,
+401910039,2026-11-23,False,False,True,28,15,111,116,2026-11-24T00:30Z,28|25|27|31,28|21|36|31,Draft Kings,TOR -10.5,-10.5,222.5,-421.0,330.0,True,Sean Wright|Jacyn Goble|Matt Myers,18969,
+401910040,2026-11-23,False,False,True,16,17,142,116,2026-11-24T00:30Z,41|33|41|27,28|33|30|25,Draft Kings,MIN -10.5,-10.5,223.5,-521.0,396.0,True,Scott Foster|John Butler|Agon Abazi,18329,
+401910041,2026-11-23,False,False,True,4,5,122,108,2026-11-24T01:00Z,27|45|21|29,30|20|39|19,Draft Kings,CLE -8.5,8.5,240.5,282.0,-352.0,False,Ed Malloy|Natalie Sago|Brent Haskill,20150,
+401910042,2026-11-23,False,False,True,3,21,119,123,2026-11-24T01:00Z,35|19|29|26|10,31|25|23|30|14,Draft Kings,PHX -3.5,3.5,232.5,131.0,-155.0,False,Eric Dalen|J.B. DeRosa|Brandon Adair,16875,
+401910043,2026-11-23,False,False,True,10,12,116,104,2026-11-24T01:30Z,25|22|38|31,15|28|32|29,Draft Kings,HOU -13.5,-13.5,222.5,-700.0,504.0,True,Justin Van Duyne|Jonathan Sterling|Mousa Dagher,18055,
+401910044,2026-11-23,False,False,True,13,26,109,94,2026-11-24T03:00Z,30|23|25|31,20|22|35|17,Draft Kings,LAL -13.5,-13.5,224.5,-750.0,530.0,True,Mark Lindsay|Sean Corbin|Simone Jelks,19057,
+401910045,2026-11-23,False,False,True,23,24,107,123,2026-11-24T03:00Z,28|23|23|33,19|41|32|31,Draft Kings,SA -8.5,8.5,222.5,249.0,-308.0,False,Brent Barnaky|J.T. Orr|CJ Washington,15301,
