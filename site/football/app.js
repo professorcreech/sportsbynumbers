@@ -467,13 +467,19 @@
       S.fourth.map(([k, name], i) => "<tr><td class='l'>" + esc(name) + "</td><td>" + fa[i] + "</td><td>" + fh[i] + "</td><td>" + pc(S.league_fourth[k].go) + "</td></tr>").join("") + "</tbody></table></div>";
     const aggressive = [[A, ta], [H, th]].map(([T, t]) => { const v = t.fourth && t.fourth.short; const lgv = S.league_fourth.short.go;
       return v && v.n >= 6 && Math.abs(v.go - lgv) >= 0.08 ? esc(T.short) + (v.go > lgv ? " is aggressive" : " is conservative") + " on 4th & short: it goes for it " + pc(v.go) + " of the time (league " + pc(lgv) + ")." : null; }).filter(Boolean);
-    // Play-call tendencies by down: run/pass by field position and yards to go, plus direction where the feed has it
+    // Play-call tendencies by down: one comparison table for both teams (run/pass by field position and yards to go)
     const tendBlock = () => {
       if (!S.tend || !ta.tend || !th.tend) return "";
-      const LT = S.league_tend, lbl = Object.fromEntries(S.tend);
-      const one = (T, t) => '<div class="table-box"><table><thead><tr><th class="l">' + esc(T.short) + ' offense</th><th>Plays</th><th>Pass</th><th>League</th><th>Success</th><th>Yds/play</th></tr></thead><tbody>' +
-        S.tend.map(([k, name]) => { const v = t.tend[k]; if (!v || !LT[k]) return ""; const d = (v.pass - LT[k].pass) * 100;
-          return "<tr><td class='l'>" + esc(name) + "</td><td>" + v.n + "</td><td><b>" + pc(v.pass) + "</b>" + (v.n >= 15 && Math.abs(d) >= 5 ? '<span class="rk">' + sgn(d, 0) + "</span>" : "") + "</td><td>" + pc(LT[k].pass) + "</td><td>" + pc(v.succ) + "</td><td>" + v.yds.toFixed(1) + "</td></tr>"; }).join("") + "</tbody></table></div>";
+      const LT = S.league_tend;
+      const chip = (v, l) => { const d = (v.pass - l.pass) * 100; return v.n >= 15 && Math.abs(d) >= 5 ? ' <span class="' + (d > 0 ? "up" : "dn") + '">' + sgn(d, 0) + "</span>" : ""; };
+      const cell = (v, l) => v ? "<b>" + pc(v.pass) + "</b>" + chip(v, l) + "<small>n=" + v.n + "</small>" : "–";
+      const succ = (v) => v ? pc(v.succ) : "–";
+      const short = (n) => n.replace(/^1st down, /, "").replace(/^2nd & /, "").replace(/^3rd & /, "");
+      const rows = (title, keys, pre) => '<tr class="grp"><td colspan="6">' + title + "</td></tr>" + keys.map((k) => { const nm = Object.fromEntries(S.tend)[k]; const a = ta.tend[k], h = th.tend[k], l = LT[k]; if (!l || !a || !h) return "";
+        return "<tr><td class='l'>" + esc(pre + short(nm)) + "</td><td class='sep'>" + cell(a, l) + "</td><td>" + cell(h, l) + "</td><td class='sep'>" + pc(l.pass) + "</td><td class='sep'>" + succ(a) + "</td><td>" + succ(h) + "</td></tr>"; }).join("");
+      const head = '<thead><tr><th class="l" rowspan="2">Situation</th><th colspan="2" class="sep">Pass rate</th><th class="sep" rowspan="2">League</th><th colspan="2" class="sep">Success</th></tr><tr><th class="sep">' + esc(A.short) + "</th><th>" + esc(H.short) + '</th><th class="sep">' + esc(A.short) + "</th><th>" + esc(H.short) + "</th></tr></thead>";
+      const tendTbl = '<div class="table-box"><table class="cmp">' + head + "<tbody>" +
+        rows("1st down, by field position", ["t1a", "t1b", "t1c", "t1d", "t1e"], "") + rows("2nd down, by yards to go", ["t2s", "t2m", "t2l"], "") + rows("3rd down, by yards to go", ["t3a", "t3b", "t3c", "t3d", "t3e"], "") + "</tbody></table></div>";
       const notes = [[A, ta], [H, th]].map(([T, t]) => {
         const out = [], x = t.tend;
         const chk = (k, txt) => { const v = x[k]; if (v && LT[k] && v.n >= 15 && Math.abs(v.pass - LT[k].pass) >= 0.08) out.push(txt(v, LT[k])); };
@@ -482,25 +488,27 @@
         chk("t3a", (v, l) => "On 3rd & 1 it passes " + pc(v.pass) + " of the time (league " + pc(l.pass) + ").");
         chk("t3b", (v, l) => "On 3rd & 2–3 it passes " + pc(v.pass) + " (league " + pc(l.pass) + ").");
         chk("t3d", (v, l) => "On 3rd & 7–10 it passes " + pc(v.pass) + " (league " + pc(l.pass) + ").");
-        return out.length ? "<p><b>" + esc(T.short) + "</b></p><ul>" + out.map(li).join("") + "</ul>" : "";
+        return out.length ? '<div class="card"><h3>' + esc(T.short) + "</h3><ul>" + out.map(li).join("") + "</ul></div>" : "";
       }).join("");
-      // 4th down: what it does, by distance and zone
-      const ft = (T, t) => { const rows = S.fourth_t.flatMap(([b, bn]) => S.zones.map(([z, zn]) => { const v = t.tend.fourth[b + z]; const l = S.league_f4[b + z];
-          return v && l && v.n >= 3 ? "<tr><td class='l'>" + esc(bn + ", " + zn) + "</td><td>" + Math.round(v.n) + "</td><td><b>" + pc(v.go) + "</b></td><td>" + pc(v.punt) + "</td><td>" + pc(v.fg) + "</td><td>" + pc(l.go) + "</td></tr>" : ""; })).join("");
-        return rows ? '<div class="table-box"><table><thead><tr><th class="l">' + esc(T.short) + ' on 4th down</th><th>Tries</th><th>Go</th><th>Punt</th><th>Kick</th><th>League go</th></tr></thead><tbody>' + rows + "</tbody></table></div>" : ""; };
+      // 4th down: what each team does, by distance and zone, as a go / punt / kick bar
+      const zn = { own: "Own side of midfield", mid: "Midfield to opp. 36", fg: "Opp. 35 or closer" };
+      const bar = (v) => v ? '<div class="split" title="Go ' + pc(v.go) + " · Punt " + pc(v.punt) + " · Kick " + pc(v.fg) + '"><i class="go" style="width:' + v.go * 100 + '%"></i><i class="pu" style="width:' + v.punt * 100 + '%"></i><i class="fg" style="width:' + v.fg * 100 + '%"></i></div><small>go ' + pc(v.go) + " · punt " + pc(v.punt) + " · kick " + pc(v.fg) + " · " + Math.round(v.n) + "</small>" : "–";
+      const f4rows = S.fourth_t.map(([b, bn]) => '<tr class="grp"><td colspan="4">' + esc(bn) + "</td></tr>" + S.zones.map(([z]) => { const a = ta.tend.fourth[b + z], h = th.tend.fourth[b + z], l = S.league_f4[b + z];
+        return (a && a.n >= 3) || (h && h.n >= 3) ? "<tr><td class='l'>" + zn[z] + "</td><td class='sep'>" + bar(a && a.n >= 3 ? a : null) + "</td><td>" + bar(h && h.n >= 3 ? h : null) + "</td><td class='sep'>" + (l ? pc(l.go) : "–") + "</td></tr>" : ""; }).join("")).join("");
+      const f4tbl2 = '<div class="table-box"><table class="cmp"><thead><tr><th class="l">Situation</th><th class="sep">' + esc(A.short) + "</th><th>" + esc(H.short) + '</th><th class="sep">League<br>go rate</th></tr></thead><tbody>' + f4rows + "</tbody></table></div>" +
+        '<p class="split-key"><span><i style="background:var(--accent)"></i>Go for it</span><span><i style="background:var(--muted);opacity:.55"></i>Punt</span><span><i style="background:var(--fg);opacity:.35"></i>Field goal</span><span>Last number = tries (weighted)</span></p>';
       // Direction (only where ESPN's play text has it; nearly all NFL, few college plays)
-      const dirCard = (T, t) => { const a = t.tend.dir && t.tend.dir.all, sh = t.tend.dir && t.tend.dir.short, ld = S.league_dir;
-        if (!a) return ""; const ps = [];
-        const pick = (b, rk, lk, names) => names.map(([k, nm]) => nm + " " + pc(b[k])).join(", ");
-        if (a.run_n >= 25) ps.push("<li><b>Runs</b> (" + a.run_n + " with a direction): " + pick(a, "r", "", [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + ". By gap: " + pick(a, "g", "", [["g_end", "outside (end)"], ["g_tackle", "tackle"], ["g_guard", "guard"], ["g_middle", "up the middle"]]) + ".</li>");
-        if (sh && sh.run_n >= 15) ps.push("<li><b>Short-yardage runs</b> (3 or fewer to go, " + sh.run_n + "): " + pick(sh, "r", "", [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + ".</li>");
-        if (a.pass_n >= 25) ps.push("<li><b>Passes</b> (" + a.pass_n + " with a side): " + pick(a, "p", "", [["p_left", "left"], ["p_middle", "middle"], ["p_right", "right"]]) + (a.d_short != null ? "; short " + pc(a.d_short) + ", deep " + pc(a.d_deep) + " of those labelled by depth" : "") + ".</li>");
-        return ps.length ? "<p><b>" + esc(T.short) + "</b></p><ul>" + ps.join("") + "</ul>" : ""; };
+      const pick = (b, names) => names.map(([k, nm]) => nm + " <b>" + pc(b[k]) + "</b>").join(" · ");
+      const dirCard = (T, t) => { const a = t.tend.dir && t.tend.dir.all, sh = t.tend.dir && t.tend.dir.short; if (!a) return ""; const ps = [];
+        if (a.run_n >= 25) ps.push("<li><b>Runs</b> (" + a.run_n + " labelled): " + pick(a, [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + "<br><span class='note'>By gap: " + pick(a, [["g_end", "outside"], ["g_tackle", "tackle"], ["g_guard", "guard"], ["g_middle", "middle"]]) + "</span></li>");
+        if (sh && sh.run_n >= 15) ps.push("<li><b>Short-yardage runs</b> (3 or fewer to go, " + sh.run_n + "): " + pick(sh, [["r_left", "left"], ["r_middle", "middle"], ["r_right", "right"]]) + "</li>");
+        if (a.pass_n >= 25) ps.push("<li><b>Passes</b> (" + a.pass_n + " labelled): " + pick(a, [["p_left", "left"], ["p_middle", "middle"], ["p_right", "right"]]) + (a.d_short != null ? "<br><span class='note'>Depth: short " + pc(a.d_short) + ", deep " + pc(a.d_deep) + "</span>" : "") + "</li>");
+        return ps.length ? '<div class="card"><h3>' + esc(T.short) + "</h3><ul>" + ps.join("") + "</ul></div>" : ""; };
       const dirs = dirCard(A, ta) + dirCard(H, th);
-      return "<h3>Play-call tendencies by down</h3><p class='note'>Pass rate = share of run and pass plays that were passes (sacks count as passes). “Success” means gaining 50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd or 4th. Rates are pulled toward the league average when a team has few plays in a spot; small ± chips show the gap to the league only when the sample is at least 15 plays.</p>" +
-        (notes ? "<div class='grid'><div>" + notes + "</div></div>" : "") + '<div class="grid">' + one(A, ta) + one(H, th) + "</div>" +
-        '<div class="grid">' + ft(A, ta) + ft(H, th) + "</div>" +
-        (dirs ? "<h4>Direction and depth</h4>" + dirs + "<p class='note'>ESPN labels run direction and pass side/depth in its play text mostly for NFL games; most college plays carry none, so these are shares of the plays that were labelled, and appear only once a team has a decent sample. Formations, personnel, play-action and coverage are not available.</p>" :
+      return "<h3>Play-call tendencies by down</h3><p class='note'>Pass rate = share of run and pass plays that were passes (sacks count as passes). Success = gaining 50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd. Rates are pulled toward the league average when a team has few plays in a spot; the green/orange chip shows the gap to the league (points) once there are 15+ plays.</p>" +
+        (notes ? '<div class="grid">' + notes + "</div>" : "") + tendTbl +
+        "<h3>Fourth-down choices</h3>" + f4tbl2 +
+        (dirs ? "<h3>Direction and depth</h3><div class='grid'>" + dirs + "</div><p class='note'>ESPN labels run direction and pass side/depth in its play text mostly for NFL games; most college plays carry none, so these are shares of the plays that were labelled. Formations, personnel, play-action and coverage are not available.</p>" :
           "<p class='note'>Run direction and pass depth are not shown: ESPN’s play text doesn’t include them for enough of this league’s plays. Formations and personnel aren’t available either.</p>");
     };
     const wx = game && (game.indoor != null || game.temp != null) ? '<p class="note">' + (game.indoor ? "Indoor game. " : "") + (game.temp != null ? "Forecast: " + Math.round(game.temp) + "°F" + (game.sky ? ", " + esc(String(game.sky).toLowerCase()) : "") + (game.gust ? ", gusts to " + Math.round(game.gust) + " mph" : "") + ". " : "") +
@@ -510,9 +518,9 @@
       "<h3>Likely game script</h3>" + scriptTbl +
       "<h3>Where each offense can attack</h3><p class='note'>Edge = how far the team’s own success rate and the opposing defense’s success rate allowed sit above the league in that situation, added together (percentage points).</p>" +
       '<div class="grid">' + card(A, rA) + card(H, rH) + "</div>" +
-      tendBlock() + "<h3>Fourth down</h3>" + f4tbl + (aggressive.length ? "<ul>" + aggressive.map(li).join("") + "</ul>" : "") +
-      "<h3>" + esc(A.short) + " offense vs. " + esc(H.short) + " defense</h3>" + tbl(A, ta, H, th) +
-      "<h3>" + esc(H.short) + " offense vs. " + esc(A.short) + " defense</h3>" + tbl(H, th, A, ta) + "</section>";
+      tendBlock() + "<h3>Fourth-down aggressiveness</h3>" + f4tbl + (aggressive.length ? "<ul>" + aggressive.map(li).join("") + "</ul>" : "") +
+      '<details class="more"><summary>Full situation tables: ' + esc(A.short) + " offense vs. " + esc(H.short) + ' defense</summary><div class="inner">' + tbl(A, ta, H, th) + "</div></details>" +
+      '<details class="more"><summary>Full situation tables: ' + esc(H.short) + " offense vs. " + esc(A.short) + ' defense</summary><div class="inner">' + tbl(H, th, A, ta) + "</div></details></section>";
   }
 
   async function matchupPage(main, away, home, neutral, game) {
