@@ -209,3 +209,5 @@ footer { color: var(--muted); font-size: 12px; padding-block: 0 32px; }
 .bgame .sd { color: var(--muted); font: 11px var(--font-data); margin-right: 6px; }
 .bgame .p { font-family: var(--font-data); font-size: 12px; }
 .bgame .ff { font-size: 10px; color: var(--muted); margin-left: 4px; }
+
+th[title] { cursor: help; text-decoration: underline dotted var(--muted, #8a94a6); text-underline-offset: 4px; }

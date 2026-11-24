@@ -409,7 +409,7 @@
       { key: "rec", label: "Last 4", html: (t) => (t.record ? t.record.wins + "-" + (t.record.games - t.record.wins) + '<span class="rk ' + cls(t.record.vs_exp) + '">' + sgn(t.record.vs_exp) + "</span>" : "–"), val: (t) => (t.record ? t.record.vs_exp : null) },
     ];
     [1, 2, 3, 4, 5, 6, 7].forEach((i) => cols.push({ key: "r" + i, label: R[i], val: odds(i), html: pctCell(i) }));
-    let view = recall("sbn-bview") === "bracket" && B.slots ? "bracket" : "table";
+    let view = recall("sbn-bview") === "table" || !B.slots ? "table" : "bracket";   // bracket view unless the visitor last chose the table
     const draw = () => {
       const r = $("#b-r").value;
       store("sbn-region", r);
