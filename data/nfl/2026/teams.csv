@@ -19,10 +19,10 @@ team_id,conf,name,abbr,short,div,color
 8,NFC,Detroit Lions,DET,Lions,NFL,0076b6
 3,NFC,Chicago Bears,CHI,Bears,NFL,0b1c3a
 16,NFC,Minnesota Vikings,MIN,Vikings,NFL,4f2683
-19,NFC,New York Giants,NYG,Giants,NFL,003c7f
-9,NFC,Green Bay Packers,GB,Packers,NFL,204e32
-26,NFC,Seattle Seahawks,SEA,Seahawks,NFL,002a5c
 14,NFC,Los Angeles Rams,LAR,Rams,NFL,003594
+19,NFC,New York Giants,NYG,Giants,NFL,003c7f
+26,NFC,Seattle Seahawks,SEA,Seahawks,NFL,002a5c
+9,NFC,Green Bay Packers,GB,Packers,NFL,204e32
 29,NFC,Carolina Panthers,CAR,Panthers,NFL,0085ca
 6,NFC,Dallas Cowboys,DAL,Cowboys,NFL,002a5c
 28,NFC,Washington Commanders,WSH,Commanders,NFL,5a1414

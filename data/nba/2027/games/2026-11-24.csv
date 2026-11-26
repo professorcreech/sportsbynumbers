@@ -1,4 +1,4 @@
 game_id,date,neutral,conference_game,completed,home_id,away_id,home_pts,away_pts,start,home_periods,away_periods,line_provider,line_details,line_spread,line_total,line_home_ml,line_away_ml,line_home_fav,officials,attendance,indoor
-401909314,2026-11-24,False,False,True,19,8,86,104,2026-11-25T00:00Z,22|14|25|25,16|32|25|31,DraftKings,ORL -3.5,-3.5,210.5,-150.0,126.0,True,John Goble|Karl Lane|Evan Scott,19352,
-401909315,2026-11-24,False,False,True,27,2,116,131,2026-11-25T01:00Z,28|21|40|27,34|46|24|27,DraftKings,BOS -10.5,10.5,218.5,351.0,-452.0,False,Marat Kogut|Ben Taylor|Jenna Reneau,20028,
-401909316,2026-11-24,False,False,True,7,6,101,120,2026-11-25T03:00Z,17|22|38|24,24|34|26|36,DraftKings,DEN -7.5,-7.5,234.5,-277.0,227.0,True,Andy Nagy|Justin Van Duyne|Nate Green,20023,
+401909314,2026-11-24,False,False,True,19,8,86,104,2026-11-25T00:00Z,22|14|25|25,16|32|25|31,Draft Kings,ORL -3.5,-3.5,210.5,-150.0,126.0,True,John Goble|Karl Lane|Evan Scott,19352,
+401909315,2026-11-24,False,False,True,27,2,116,131,2026-11-25T01:00Z,28|21|40|27,34|46|24|27,Draft Kings,BOS -10.5,10.5,218.5,351.0,-452.0,False,Marat Kogut|Ben Taylor|Jenna Reneau,20028,
+401909316,2026-11-24,False,False,True,7,6,101,120,2026-11-25T03:00Z,17|22|38|24,24|34|26|36,Draft Kings,DEN -7.5,-7.5,234.5,-277.0,227.0,True,Andy Nagy|Justin Van Duyne|Nate Green,20023,
