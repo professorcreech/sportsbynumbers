@@ -1,0 +1,4 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401873081,2026-11-26,2026-11-26T18:00Z,12,2,True,False,False,8,3,Lions,Bears,35,39,,Detroit,MI,True,,,,,Carl Johnson|Tab Slaughter|Shawn Hochuli|Justin Larrew|Jimmy Russell|Patrick Holt|Jason Ledet,Shawn Hochuli,64316
+401873080,2026-11-26,2026-11-26T21:30Z,12,2,True,False,False,6,21,Cowboys,Eagles,38,39,,Arlington,TX,True,,,,,Trawick Boger|James Coleman|Adrian Hill|Greg Steed|Roy Ellison|Julian Mapp|Frank LeBlanc,Adrian Hill,93417
+401873082,2026-11-26,2026-11-27T01:20Z,12,2,True,False,False,2,12,Bills,Chiefs,13,10,,Orchard Park,NY,False,,,,,Rusty Baynes|Sean Petty|Scott Helverson|Jim Quirk|Alex Kemp|Mike Carr|Brandon Ellison,Alex Kemp,60223

@@ -1,0 +1,3 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401856879,2026-11-26,2026-11-27T01:00Z,13,2,True,False,True,2641,2628,Texas Tech,TCU,48,27,,Lubbock,TX,False,,,,,,,60229
+401868354,2026-11-26,2026-11-26T20:00Z,13,2,True,False,False,2011,2657,Alabama St,Tuskegee,45,0,,Montgomery,AL,False,,,,,,,16867

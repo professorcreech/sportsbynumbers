@@ -16,18 +16,18 @@ team_id,conf,name,abbr,short,div,color
 15,AFC,Miami Dolphins,MIA,Dolphins,NFL,008e97
 10,AFC,Tennessee Titans,TEN,Titans,NFL,4495d2
 25,NFC,San Francisco 49ers,SF,49ers,NFL,aa0000
-8,NFC,Detroit Lions,DET,Lions,NFL,0076b6
 3,NFC,Chicago Bears,CHI,Bears,NFL,0b1c3a
+8,NFC,Detroit Lions,DET,Lions,NFL,0076b6
 16,NFC,Minnesota Vikings,MIN,Vikings,NFL,4f2683
 14,NFC,Los Angeles Rams,LAR,Rams,NFL,003594
 19,NFC,New York Giants,NYG,Giants,NFL,003c7f
 26,NFC,Seattle Seahawks,SEA,Seahawks,NFL,002a5c
 9,NFC,Green Bay Packers,GB,Packers,NFL,204e32
 29,NFC,Carolina Panthers,CAR,Panthers,NFL,0085ca
-6,NFC,Dallas Cowboys,DAL,Cowboys,NFL,002a5c
 28,NFC,Washington Commanders,WSH,Commanders,NFL,5a1414
+6,NFC,Dallas Cowboys,DAL,Cowboys,NFL,002a5c
+21,NFC,Philadelphia Eagles,PHI,Eagles,NFL,06424d
 27,NFC,Tampa Bay Buccaneers,TB,Buccaneers,NFL,bd1c36
 1,NFC,Atlanta Falcons,ATL,Falcons,NFL,a71930
 18,NFC,New Orleans Saints,NO,Saints,NFL,d3bc8d
-21,NFC,Philadelphia Eagles,PHI,Eagles,NFL,06424d
 22,NFC,Arizona Cardinals,ARI,Cardinals,NFL,a40227
