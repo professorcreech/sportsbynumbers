@@ -3,15 +3,15 @@ team_id,conf,name,abbr,short,div,color
 235,American,Memphis Tigers,MEM,Memphis,FBS,004991
 151,American,East Carolina Pirates,ECU,East Carolina,FBS,582c83
 249,American,North Texas Mean Green,UNT,North Texas,FBS,068f33
-202,American,Tulsa Golden Hurricane,TLSA,Tulsa,FBS,003595
 2226,American,Florida Atlantic Owls,FAU,FAU,FBS,003366
+202,American,Tulsa Golden Hurricane,TLSA,Tulsa,FBS,003595
 2655,American,Tulane Green Wave,TULN,Tulane,FBS,006747
 5,American,UAB Blazers,UAB,UAB,FBS,1a5632
 58,American,South Florida Bulls,USF,South Florida,FBS,006747
 349,American,Army Black Knights,ARMY,Army,FBS,000000
 2426,American,Navy Midshipmen,NAVY,Navy,FBS,00225b
-242,American,Rice Owls,RICE,Rice,FBS,00205b
 218,American,Temple Owls,TEM,Temple,FBS,a41e35
+242,American,Rice Owls,RICE,Rice,FBS,00205b
 2429,American,Charlotte 49ers,CLT,Charlotte,FBS,005035
 2390,acc,Miami Hurricanes,MIA,Miami,FBS,f47423
 154,acc,Wake Forest Demon Deacons,WAKE,Wake Forest,FBS,ceb888
@@ -25,9 +25,9 @@ team_id,conf,name,abbr,short,div,color
 259,acc,Virginia Tech Hokies,VT,Virginia Tech,FBS,6a2c3e
 103,acc,Boston College Eagles,BC,Boston College,FBS,8c2232
 152,acc,NC State Wolfpack,NCSU,NC State,FBS,cc0000
-52,acc,Florida State Seminoles,FSU,Florida St,FBS,782f40
 183,acc,Syracuse Orange,SYR,Syracuse,FBS,000e54
 153,acc,North Carolina Tar Heels,UNC,North Carolina,FBS,7bafd4
+52,acc,Florida State Seminoles,FSU,Florida St,FBS,782f40
 25,acc,California Golden Bears,CAL,California,FBS,041e42
 59,acc,Georgia Tech Yellow Jackets,GT,Georgia Tech,FBS,b3a369
 254,big12,Utah Utes,UTAH,Utah,FBS,be0000
@@ -41,25 +41,25 @@ team_id,conf,name,abbr,short,div,color
 2116,big12,UCF Knights,UCF,UCF,FBS,000000
 2132,big12,Cincinnati Bearcats,CIN,Cincinnati,FBS,000000
 66,big12,Iowa State Cyclones,ISU,Iowa State,FBS,ae192d
-277,big12,West Virginia Mountaineers,WVU,West Virginia,FBS,eaaa00
 2628,big12,TCU Horned Frogs,TCU,TCU,FBS,4d1979
-2305,big12,Kansas Jayhawks,KU,Kansas,FBS,0051ba
+277,big12,West Virginia Mountaineers,WVU,West Virginia,FBS,eaaa00
 38,big12,Colorado Buffaloes,COLO,Colorado,FBS,cfb87c
+2305,big12,Kansas Jayhawks,KU,Kansas,FBS,0051ba
 2306,big12,Kansas State Wildcats,KSU,Kansas St,FBS,330a57
 26,big10,UCLA Bruins,UCLA,UCLA,FBS,2774ae
-84,big10,Indiana Hoosiers,IU,Indiana,FBS,970310
 2294,big10,Iowa Hawkeyes,IOWA,Iowa,FBS,231f20
+84,big10,Indiana Hoosiers,IU,Indiana,FBS,970310
 2483,big10,Oregon Ducks,ORE,Oregon,FBS,00934b
 30,big10,USC Trojans,USC,USC,FBS,9d2235
 275,big10,Wisconsin Badgers,WIS,Wisconsin,FBS,a00000
 194,big10,Ohio State Buckeyes,OSU,Ohio State,FBS,ba0c2f
 264,big10,Washington Huskies,WASH,Washington,FBS,33006f
 158,big10,Nebraska Cornhuskers,NEB,Nebraska,FBS,e31937
-135,big10,Minnesota Golden Gophers,MINN,Minnesota,FBS,5e0a2f
 356,big10,Illinois Fighting Illini,ILL,Illinois,FBS,ff5f05
 130,big10,Michigan Wolverines,MICH,Michigan,FBS,00274c
 77,big10,Northwestern Wildcats,NU,Northwestern,FBS,492f92
 213,big10,Penn State Nittany Lions,PSU,Penn State,FBS,061440
+135,big10,Minnesota Golden Gophers,MINN,Minnesota,FBS,5e0a2f
 120,big10,Maryland Terrapins,MD,Maryland,FBS,ce1126
 164,big10,Rutgers Scarlet Knights,RUTG,Rutgers,FBS,ce0e2d
 2509,big10,Purdue Boilermakers,PUR,Purdue,FBS,ceb888
@@ -78,8 +78,8 @@ team_id,conf,name,abbr,short,div,color
 41,ind,UConn Huskies,CONN,UConn,FBS,0c2340
 2649,midam,Toledo Rockets,TOL,Toledo,FBS,0b2240
 2084,midam,Buffalo Bulls,BUF,Buffalo,FBS,005bbb
-195,midam,Ohio Bobcats,OHIO,Ohio,FBS,154734
 193,midam,Miami (OH) RedHawks,M-OH,Miami OH,FBS,c41230
+195,midam,Ohio Bobcats,OHIO,Ohio,FBS,154734
 2711,midam,Western Michigan Broncos,WMU,W Michigan,FBS,532e1f
 2117,midam,Central Michigan Chippewas,CMU,C Michigan,FBS,4c0027
 113,midam,Massachusetts Minutemen,MASS,UMass,FBS,881c1c
@@ -87,8 +87,8 @@ team_id,conf,name,abbr,short,div,color
 189,midam,Bowling Green Falcons,BGSU,Bowling Green,FBS,fd5000
 2050,midam,Ball State Cardinals,BALL,Ball State,FBS,ba0c2f
 2309,midam,Kent State Golden Flashes,KENT,Kent State,FBS,002664
-2006,midam,Akron Zips,AKR,Akron,FBS,041e42
 16,midam,Sacramento State Hornets,SAC,Sacramento St,FBS,00573C
+2006,midam,Akron Zips,AKR,Akron,FBS,041e42
 167,mwest,New Mexico Lobos,UNM,New Mexico,FBS,ba0c2f
 2449,mwest,North Dakota State Bison,NDSU,N Dakota St,FBS,01402A
 2005,mwest,Air Force Falcons,AF,Air Force,FBS,003594
@@ -111,18 +111,18 @@ team_id,conf,name,abbr,short,div,color
 251,sec,Texas Longhorns,TEX,Texas,FBS,af5c37
 2633,sec,Tennessee Volunteers,TENN,Tennessee,FBS,ff8200
 333,sec,Alabama Crimson Tide,ALA,Alabama,FBS,9e1b32
-201,sec,Oklahoma Sooners,OU,Oklahoma,FBS,990000
 57,sec,Florida Gators,FLA,Florida,FBS,0021a5
-96,sec,Kentucky Wildcats,UK,Kentucky,FBS,0033a0
 145,sec,Ole Miss Rebels,MISS,Ole Miss,FBS,13294b
+201,sec,Oklahoma Sooners,OU,Oklahoma,FBS,990000
+96,sec,Kentucky Wildcats,UK,Kentucky,FBS,0033a0
 2,sec,Auburn Tigers,AUB,Auburn,FBS,002b5c
 142,sec,Missouri Tigers,MIZ,Missouri,FBS,f1b82d
 2579,sec,South Carolina Gamecocks,SC,South Carolina,FBS,73000a
 99,sec,LSU Tigers,LSU,LSU,FBS,461d76
 344,sec,Mississippi State Bulldogs,MSST,Mississippi St,FBS,5d1725
 8,sec,Arkansas Razorbacks,ARK,Arkansas,FBS,a32136
-245,sec,Texas A&M Aggies,TA&M,Texas A&M,FBS,500000
 238,sec,Vanderbilt Commodores,VAN,Vanderbilt,FBS,000000
+245,sec,Texas A&M Aggies,TA&M,Texas A&M,FBS,500000
 256,belt,James Madison Dukes,JMU,James Madison,FBS,450084
 290,belt,Georgia Southern Eagles,GASO,GA Southern,FBS,041e42
 2026,belt,App State Mountaineers,APP,App State,FBS,000000

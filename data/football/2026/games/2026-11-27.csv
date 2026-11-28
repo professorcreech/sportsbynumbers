@@ -1,0 +1,14 @@
+game_id,date,start,week,season_type,completed,neutral,conference_game,home_id,away_id,home_name,away_name,home_pts,away_pts,note,city,state,indoor,wx_temp,wx_gust,wx_sky,wx_precip,officials,referee,attendance
+401856880,2026-11-27,2026-11-28T02:00Z,13,2,True,False,True,254,277,Utah,West Virginia,52,28,,Salt Lake City,UT,False,,,,,,,51544
+401856756,2026-11-27,2026-11-28T00:30Z,13,2,True,False,True,245,251,Texas A&M,Texas,6,16,,College Station,TX,False,,,,,,,109570
+401858536,2026-11-27,2026-11-27T17:08Z,13,2,True,False,True,2294,158,Iowa,Nebraska,31,7,,Iowa City,IA,False,,,,,,,69250
+401856759,2026-11-27,2026-11-27T20:30Z,13,2,True,False,False,52,57,Florida St,Florida,10,26,,Tallahassee,FL,False,,,,,,,67277
+401856762,2026-11-27,2026-11-27T17:00Z,13,2,True,False,True,145,344,Ole Miss,Mississippi St,41,17,,Oxford,MS,False,,,,,,,67000
+401862840,2026-11-27,2026-11-27T17:00Z,13,2,True,False,True,2636,202,UTSA,Tulsa,28,22,,San Antonio,TX,True,,,,,,,17302
+401866472,2026-11-27,2026-11-27T17:00Z,13,2,True,False,True,2006,2084,Akron,Buffalo,9,17,,Akron,OH,False,,,,,,,4270
+401866473,2026-11-27,2026-11-27T17:00Z,13,2,True,False,True,195,2649,Ohio,Toledo,31,34,,Athens,OH,False,,,,,,,11385
+401869930,2026-11-27,2026-11-27T20:00Z,13,2,True,False,True,6,2026,South Alabama,App State,20,13,,Mobile,AL,False,,,,,,,11352
+401862838,2026-11-27,2026-11-27T20:30Z,13,2,True,False,True,235,218,Memphis,Temple,31,35,,Memphis,TN,False,,,,,,,30610
+401864549,2026-11-27,2026-11-27T20:30Z,13,2,True,False,False,23,2449,San José St,N Dakota St,31,38,,San Jose,CA,False,,,,,,,14012
+401864546,2026-11-27,2026-11-27T21:30Z,13,2,True,False,True,167,2005,New Mexico,Air Force,42,19,,Albuquerque,NM,False,,,,,,,29261
+401858544,2026-11-27,2026-11-28T00:30Z,13,2,True,False,True,275,135,Wisconsin,Minnesota,28,5,,Madison,WI,False,,,,,,,72651
